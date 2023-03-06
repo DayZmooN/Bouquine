@@ -1,1 +1,31 @@
 /*# sourceMappingURL=style.css.map */
+body{
+    margin:0;
+    padding:0;
+    }
+
+    @font-face{
+        font-family:'QuattrocentoSans-Regular';
+        src: url(../fonts/QuattrocentoSans-Regular.ttf);
+    }
+    @font-face{
+        font-family:'QuattrocentoSans-Bold';
+        src: url(../fonts/QuattrocentoSans-Bold.ttf);
+    }
+    @font-face{
+        font-family:'LRT Oksana';
+        src: url(../fonts/LRT\ Oksana.ttf);
+    }
+    @font-face{
+        font-family:'LRT Oksana Bold';
+        src: url(../fonts/LRT\ Oksana\ Bold.ttf);
+    }
+    @font-face{
+        font-family:'LRT Oksana Italic';
+        src: url(../fonts/LRT\ Oksana\ Italic.ttf);
+    }
+    
+    a{
+        text-decoration: none;
+        
+    }
