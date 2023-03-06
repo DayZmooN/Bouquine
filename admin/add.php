@@ -9,7 +9,29 @@
 </head>
 
 <body>
-    <form method="POST">
+<?php
+require_once '../connexion.php';
+
+if (isset($_POST['submit'])) {
+    $ISBN = addslashes($_POST['ISBN']);
+    $title = addslashes($_POST['title']);
+    $author = addslashes($_POST['author']);
+    $editor = addslashes($_POST['editor']);
+    $collection = addslashes($_POST['collection']);
+    $publication_date = addslashes($_POST['publication_date']);
+    $genre = addslashes($_POST['genre']);
+    $id_category = addslashes($_POST['id_category']);
+    $summary = addslashes($_POST['summary']);
+
+    $addreq="INSERT INTO `book`(`ISBN`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES ('$ISBN','$title','$author','$editor','$collection','$publication_date','$genre','$id_category','$summary')";
+    $db->query($addreq);
+    
+    $_SESSION['sucess'] = "Produit ajouté avec succès !";
+    header('Location: article.php');
+    exit();
+}
+?>
+    <form action="#" method="POST">
         <label for="ISBN">ISBN</label>
         <input type="text" name="ISBN" id="ISBN">
         <br>
@@ -37,27 +59,7 @@
         <label for="summary">summary</label>
         <input type="text" name="summary" id="summary">
         <br>
-        <button>Enregistrer</button>
+        <button type="submit" name="submit" value="Post">Submit</button>
     </form>
 </body>
-<?php
-require_once '../connexion.php';
- 
-	if(ISSET($_POST['insert'])){
-		try{
-			$firstname = $_POST['firstname'];
-			$lastname = $_POST['lastname'];
-			$username = $_POST['username'];
-			$password = $_POST['password'];
-			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$sql = "INSERT INTO `user` (`firstname`, `lastname`, `username`, `password`) VALUES ('$firstname', '$lastname', '$username', '$password')";
-			$db->exec($sql);
-		}catch(PDOException $e){
-			echo $e->getMessage();
-		}
- 
-		echo "<script>alert('Successfully inserted data!')</script>";
-		echo "<script>window.location='index.php'</script>";
-	}
-?>
 </html>
