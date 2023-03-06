@@ -1,1 +1,43 @@
-/*# sourceMappingURL=style-admin.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*.................HEADER DASHBOARD............*/
+#headerDashboard {
+  max-width: 1300px;
+  width: 800px;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#headerDashboard > #titrePage {
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#headerDashboard > #infoAdmin {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#headerDashboard > #infoAdmin > .notif:hover {
+  cursor: pointer;
+}
+
+#sectionDashboard {
+  background-color: #858585;
+  width: 400px;
+}
+#sectionDashboard > #logo > .bouquine {
+  width: 400px;
+  height: 140px;
+  border-bottom: 1px solid black;
+}/*# sourceMappingURL=style-admin.css.map */
