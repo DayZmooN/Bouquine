@@ -21,6 +21,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles</title>
 </head>
+
 <body>
 <h1>Liste des articles</h1>
     <table>
