@@ -46,7 +46,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                 <tr>
                     <td><?= $article['id_book'] ?></td>
                     <td><?= $article['ISBN'] ?></td>
-                    <td><?= $article['image'] ?></td>
+                    <td><img src="<?= $article['image'] ?>.jpg" alt=""><?= $article['image'] ?></td>
                     <td><?= $article['title'] ?></td>
                     <td><?= $article['author'] ?></td>
                     <td><?= $article['editor'] ?></td>

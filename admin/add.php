@@ -9,31 +9,35 @@
 </head>
 
 <body>
-<?php
-require_once '../connexion.php';
+    <?php
+    require_once '../connexion.php';
 
-if (isset($_POST['submit'])) {
-    $ISBN = addslashes($_POST['ISBN']);
-    $title = addslashes($_POST['title']);
-    $author = addslashes($_POST['author']);
-    $editor = addslashes($_POST['editor']);
-    $collection = addslashes($_POST['collection']);
-    $publication_date = addslashes($_POST['publication_date']);
-    $genre = addslashes($_POST['genre']);
-    $id_category = addslashes($_POST['id_category']);
-    $summary = addslashes($_POST['summary']);
+    if (isset($_POST['submit'])) {
+        $ISBN = addslashes($_POST['ISBN']);
+        $image = addslashes($_POST['image']);
+        $title = addslashes($_POST['title']);
+        $author = addslashes($_POST['author']);
+        $editor = addslashes($_POST['editor']);
+        $collection = addslashes($_POST['collection']);
+        $publication_date = addslashes($_POST['publication_date']);
+        $genre = addslashes($_POST['genre']);
+        $id_category = addslashes($_POST['id_category']);
+        $summary = addslashes($_POST['summary']);
 
-    $addreq="INSERT INTO `book`(`ISBN`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES ('$ISBN','$title','$author','$editor','$collection','$publication_date','$genre','$id_category','$summary')";
-    $db->query($addreq);
-    
-    $_SESSION['sucess'] = "Produit ajouté avec succès !";
-    header('Location: article.php');
-    exit();
-}
-?>
+        $addreq = "INSERT INTO `book`(`ISBN`,`image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES ('$ISBN','$image','$title','$author','$editor','$collection','$publication_date','$genre','$id_category','$summary')";
+        $db->query($addreq);
+
+        $_SESSION['sucess'] = "Produit ajouté avec succès !";
+        header('Location: article.php');
+        exit();
+    }
+    ?>
     <form action="#" method="POST">
         <label for="ISBN">ISBN</label>
         <input type="text" name="ISBN" id="ISBN">
+        <br>
+        <label for="image">Cover</label>
+        <input type="text" name="image" id="image">
         <br>
         <label for="title">Title</label>
         <input type="text" name="title" id="title">
@@ -62,4 +66,5 @@ if (isset($_POST['submit'])) {
         <button type="submit" name="submit" value="Post">Submit</button>
     </form>
 </body>
+
 </html>
