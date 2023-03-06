@@ -10,7 +10,33 @@
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header class="container-fluid" header>
+        <div class="container">
+            <img id="logo" src="./image/logo.png" alt="Logo Bouquine">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Catalogue</a></li>
+                    <li><a href="#">Parcourir</a></li>
+                    <!-- barre de recherche  -->
+                    <li>
+                        <form action="/recherche" id="rechercher" method="get">
+                            <input id="search" name="searching" type="text" placeholder="Tapez votre recherche" />
+                            <input id="btn-search" type="submit" value="Recherche" />
+                        </form>
+                        <!-- fin barre de recherche  -->
+                    </li>
+                    <li> <a href="#">Infos pratiques</a></li>
+                </ul>
 
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- END HEADER -->
 </body>
 
 </html>
