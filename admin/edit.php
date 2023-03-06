@@ -12,7 +12,7 @@ $id = $_GET['id'];
 
     while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
     ?>
-        <h1>Modification article : "<?= $article['title'] ?>"</h1>
+        <h1>Modification de l'article : "<?= $article['title'] ?>, édition : <?= $article['editor'] ?>"</h1>
         <table>
             <thead>
                 <th>ID</th>
@@ -32,17 +32,17 @@ $id = $_GET['id'];
                 <tr>
                     <form action="#" method="POST">
                         <td><?= $article['id_book'] ?></td>
-                        <td><input type="text" name="ISBN" value="<?= $article['ISBN'] ?>"></td>
-                        <td><input type="text" name="image" value="<?= $article['image'] ?>"></td>
+                        <td><input type="text" name="ISBN" value="<?= $article['ISBN'] ?>" size="8"></td>
+                        <td><input type="text" name="image" value="<?= $article['image'] ?>" size="8"></td>
                         <td><input type="text" name="title" value="<?= $article['title'] ?>"></td>
                         <td><input type="text" name="author" value="<?= $article['author'] ?>"></td>
                         <td><input type="text" name="editor" value="<?= $article['editor'] ?>"></td>
-                        <td><input type="text" name="collection" value="<?= $article['collection'] ?>"></td>
+                        <td><input type="text" name="collection" value="<?= $article['collection'] ?>" size="8"></td>
                         <td><input type="text" name="publication_date" value="<?= $article['publication_date'] ?>"></td>
                         <td><input type="text" name="genre" value="<?= $article['genre'] ?>"></td>
-                        <td><input type="text" name="id_category" value="<?= $article['id_category'] ?>"></td>
+                        <td><input type="text" name="id_category" value="<?= $article['id_category'] ?>" size="4"></td>
                         <td><input type="text" name="summary" value="<?= $article['summary'] ?>"></td>
-                        <td><input type="text" name="status" value="<?= $article['status'] ?>"></td>
+                        <td><input type="text" name="status" value="<?= $article['status'] ?>" size="1"></td>
                 </tr>
             </tbody>
         <?php }

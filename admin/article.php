@@ -2,11 +2,9 @@
 require_once '../connexion.php';
 
 // READ
-// Requête SQL
+// Requête SQL -> Récupère TOUTES les données de TOUS les books de la DB
 $sql = 'SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book`';
-// Prépare la requête
 $query = $db->prepare($sql);
-// Execute la requête
 $query->execute();
 // Stocke requête dans tableau associatif
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -24,6 +22,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 <h1>Liste des articles</h1>
+<h2><a href="add.php">Ajouter un nouvel article</a></h2>
     <table>
         <thead>
             <th>ID</th>
@@ -64,6 +63,5 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         ?>
         </tbody>
     </table>
-    <a href="add.php">Ajouter</a>
 </body>
 </html>
