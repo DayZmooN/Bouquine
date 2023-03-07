@@ -3,6 +3,7 @@
             <input type="file" name="file" accept="image/*" />
             <button type="submit">Enregistrer</button>
             <?php
+            session_start();
 
             if(isset($_FILES['file'])){
                 require_once '../connexion.php';
@@ -13,6 +14,8 @@
 
                 $req = $db->prepare("UPDATE `book` SET `image`= (?) WHERE `id_book`= $id");
                 $req->execute([$name]);
+
+                header('Location: ./article.php');
             }
             ?>
 </form>

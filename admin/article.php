@@ -3,12 +3,10 @@ require_once '../connexion.php';
 
 // READ
 // Requête SQL -> Récupère TOUTES les données de TOUS les books de la DB
-$sql = 'SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book`';
-$query = $db->prepare($sql);
+$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book`');
 $query->execute();
 // Stocke requête dans tableau associatif
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +55,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $article['summary'] ?></td>
                     <td><?= $article['status'] ?></td>
                     <td><a href="edit.php?id=<?= $article['id_book'] ?>">Modifier</a>  <a href="delete.php?id=<?= $article['id_book'] ?>">Supprimer</a>
-                    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a></td>
+                    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+                    <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a></td>
                 </tr>
         <?php
             }
