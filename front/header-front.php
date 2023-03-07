@@ -38,10 +38,10 @@
                         <!-- barre de recherche  -->
                         <div class="header-search">
                             <div class="search">
-                                <input type="search" name="search" placeholder="Tapez votre recherche">
+                                <input type="search" name="search" placeholder="Rechercher">
+
                             </div>
                     </ul>
-
                 </nav>
 
             </div>
