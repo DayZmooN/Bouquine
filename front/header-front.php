@@ -1,3 +1,4 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,48 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- /<link rel="stylesheet" href="../css/bootstrap.min.css"> -->
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="container-fluid" header>
-        <div class="container">
-            <img id="logo" src="../image/logo.png" alt="Logo Bouquine">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">Parcourir</a></li>
-                    <!-- sous menu parcourir -->
+    <header>
+        <div class="header-main">
+
+            <div class="logo">
+                <a><img src="../image/logo1.png"></a>
+            </div>
+            <div class="nav">
+                <nav id="navbar">
                     <ul>
-                        <li><a href="#">Fantaisie</li></a>
-                        <li><a href="#">Romance</li></a>
-                        <li><a href="#">Action</li></a>
-                        <li><a href="#">Aventure</li></a>
-                        <li><a href="#">Histoire</li></a>
-                        <li><a href="#">Fantastique</li></a>
-                        <li><a href="#">Thriller</li></a>
+                        <li><a href='#'>Catalogue</a></li>
+                        <li><a href='#'>Parcourir</a>
+                            <ul>
+
+                                <li><a href='#'>Action</a></li>
+                                <li><a href='#'>Romance</a></li>
+                                <li><a href='#'>Fantaisie</a></li>
+                                <li><a href='#'>Thriller</a></li>
+                                <li><a href='#'>Aventure</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>Infos pratiques</a></li>
+
+                        <!-- barre de recherche  -->
+                        <div class="header-search">
+                            <div class="search">
+                                <input type="search" name="search" placeholder="Tapez votre recherche">
+                            </div>
                     </ul>
-                    <!-- end sous menu parcourir -->
-                </ul>
-                <!-- barre de recherche  -->
-                <li>
-                    <form action="/recherche" id="rechercher" method="get">
-                        <input id="search" name="searching" type="text" placeholder="Tapez votre recherche" />
-                        <input id="btn-search" type="submit" value="Recherche" />
-                    </form>
-                    <!-- fin barre de recherche  -->
-                </li>
-                <li> <a href="#">Infos pratiques</a></li>
-                </ul>
 
-            </nav>
-            <a href="#"><img id="connexion" src="../image/utilisateur.png" alt="icône compte utilisateur"></a>
+                </nav>
 
+            </div>
+            <div class="connexion">
+                <a href="#"><img id="user" src="../image/user.png" alt="icône de connexion utilisateur"></a>
+            </div>
         </div>
 
     </header>
-
 
     <!-- END HEADER -->
 </body>

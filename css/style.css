@@ -1,31 +1,154 @@
-/*# sourceMappingURL=style.css.map */
-body{
-    margin:0;
-    padding:0;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    @font-face{
-        font-family:'QuattrocentoSans-Regular';
-        src: url(../fonts/QuattrocentoSans-Regular.ttf);
-    }
-    @font-face{
-        font-family:'QuattrocentoSans-Bold';
-        src: url(../fonts/QuattrocentoSans-Bold.ttf);
-    }
-    @font-face{
-        font-family:'LRT Oksana';
-        src: url(../fonts/LRT\ Oksana.ttf);
-    }
-    @font-face{
-        font-family:'LRT Oksana Bold';
-        src: url(../fonts/LRT\ Oksana\ Bold.ttf);
-    }
-    @font-face{
-        font-family:'LRT Oksana Italic';
-        src: url(../fonts/LRT\ Oksana\ Italic.ttf);
-    }
-    
-    a{
-        text-decoration: none;
+@font-face {
+    font-family: 'QuattrocentoSans-Regular';
+    src: url(../fonts/QuattrocentoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'QuattrocentoSans-Bold';
+    src: url(../fonts/QuattrocentoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana';
+    src: url(../fonts/LRT\ Oksana.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Bold';
+    src: url(../fonts/LRT\ Oksana\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Italic';
+    src: url(../fonts/LRT\ Oksana\ Italic.ttf);
+}
+
+li {
+    list-style-type: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+.header-main {
+    width: 100%;
+    background-color: #FFB34E;
+    height: 150px;
+    align-items: center;
+    display: flex;
+
+}
+
+.logo img {
+
+    width: 400px;
+    height: 100%;
+
+}
+
+.logo {
+
+    width: 400px;
+
+}
+
+.nav {
+    width: 100%;
+
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0 50px;
+    font-family: 'QuattrocentoSans-Bold';
+    font-size: 1rem;
+
+}
+
+#navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#navbar ul li a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#navbar ul li:hover>ul {
+    display: block;
+}
+
+#navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F4B97A;
+    border-radius: 10%;
+
+}
+
+#navbar ul ul li {
+    display: block;
+}
+#navbar ul li:hover {
+    border: 2px solid orange ;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 10px;
+  
+
+}
+
+#navbar ul ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.search{
+    padding-bottom: 10px;
+
+}
+.search input {
+    background-color: #F4B97A;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 250px;
+    height: 35px;
+    margin-left: 40px;
+ 
+}
+
+.connexion {
+    width: 80px;
+    height: 60px;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+#user {
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
         
-    }
+}
+ 
+
+/* END HEADER
