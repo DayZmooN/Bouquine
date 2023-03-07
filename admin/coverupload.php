@@ -1,6 +1,6 @@
 <form action="#" method="POST" enctype="multipart/form-data">
             <label for="file">Cover</label>
-            <input type="file" name="file">
+            <input type="file" name="file" accept="image/*" />
             <button type="submit">Enregistrer</button>
             <?php
 
