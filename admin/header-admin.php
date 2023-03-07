@@ -11,15 +11,17 @@
 </head>
 <body>
 <header id="headerDashboard" >
-    <div id="titrePage">
-        <h1>dashboard</h1>
-    </div>
+    
+        <h1 id="titrePage">dashboard</h1>
+    
 
     <div id="infoAdmin">
-        <img class="notif" src="../image/boutonNotificationDashboard.png" alt="bouton cloche de notifications">
-        <img src="../image/adminDashboard.png" alt="icone administrateur">
-        <p>Admin</p>
-        <img src="../image/deconnexionDashboard.png" alt="bouton de deconnexion" color-size="red">
+        <div id="identity">
+            <img src="../image/adminDashboard.png" alt="icone administrateur">
+            <p>Admin</p>
+        </div>
+        <img class="notif" src="../image/boutonNotificationDashboard.png" alt="bouton cloche de notifications" title="voir vos notifications">
+        <img class="deco" src="../image/deconnexionDashboard.png" alt="bouton de deconnexion" title="vous deconnectez">
     </div>
 </header>
 
@@ -31,7 +33,7 @@
         <nav>
             <ul>
                 <li><img src="../image/tableauDeBord.png" alt="icone du dashboard"> <a href="#">Tableau de bord</a></li>
-                <li><img src="../image/articleDashboard.png" alt="icone articles du dashboard"><a href="#">Articles</a></li>
+                <li><img src="../image/articleDashboard.png" alt="icone articles du dashboard"><a href="./article-admin.php">Articles</a></li>
                 <li><img src="../image/catégorieDashboard.png" alt="icone catégorie du dashboard"><a href="#">Catégories</a></li>
                 <li><img src="../image/genresDashboard.png" alt="icone genres du dashboard"><a href="#">Genre</a></li>
                 <li><img src="../image/userDashboard.png" alt="icone user du dashboard"><a href="#">Users</a></li>
