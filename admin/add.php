@@ -39,28 +39,28 @@
         <label for="image">Cover</label>
         <input type="text" name="image" id="image">
         <br>
-        <label for="title">Title</label>
+        <label for="title">Titre</label>
         <input type="text" name="title" id="title">
         <br>
-        <label for="author">Author</label>
+        <label for="author">Auteur</label>
         <input type="text" name="author" id="author">
         <br>
-        <label for="editor">editor</label>
+        <label for="editor">Éditeur</label>
         <input type="text" name="editor" id="editor">
         <br>
-        <label for="collection">collection</label>
+        <label for="collection">Collection</label>
         <input type="text" name="collection" id="collection">
         <br>
-        <label for="publication_date">Date de publication :<br>0000-00-00</label>
+        <label for="publication_date">Date de publication :<br>Année - m.m-j.j</label>
         <input type="text" name="publication_date" id="publication_date">
         <br>
-        <label for="genre">genre</label>
+        <label for="genre">Genre</label>
         <input type="text" name="genre" id="genre">
         <br>
-        <label for="id_category">Categorie</label>
+        <label for="id_category">Catégorie</label>
         <input type="number" name="id_category" id="id_category">
         <br>
-        <label for="summary">summary</label>
+        <label for="summary">Résumé</label>
         <input type="text" name="summary" id="summary">
         <br>
         <button type="submit" name="submit" value="Post">Submit</button>

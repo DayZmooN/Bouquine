@@ -27,7 +27,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         <thead>
             <th>ID</th>
             <th>ISBN</th>
-            <th>image</th>
+            <th>Nom de cover</th>
             <th>Titre</th>
             <th>Auteur</th>
             <th>Éditeur</th>
@@ -46,7 +46,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                 <tr>
                     <td><?= $article['id_book'] ?></td>
                     <td><?= $article['ISBN'] ?></td>
-                    <td><img src="<?= $article['image'] ?>.jpg" alt=""><?= $article['image'] ?></td>
+                    <td><?= $article['image'] ?></td>
                     <td><?= $article['title'] ?></td>
                     <td><?= $article['author'] ?></td>
                     <td><?= $article['editor'] ?></td>
@@ -56,7 +56,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $article['id_category'] ?></td>
                     <td><?= $article['summary'] ?></td>
                     <td><?= $article['status'] ?></td>
-                    <td><a href="edit.php?id=<?= $article['id_book'] ?>">Modifier</a>  <a href="delete.php?id=<?= $article['id_book'] ?>">Supprimer</a></td>
+                    <td><a href="edit.php?id=<?= $article['id_book'] ?>">Modifier</a>  <a href="delete.php?id=<?= $article['id_book'] ?>">Supprimer</a>
+                    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a></td>
                 </tr>
         <?php
             }

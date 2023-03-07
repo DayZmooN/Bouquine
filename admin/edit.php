@@ -17,7 +17,7 @@ $id = $_GET['id'];
             <thead>
                 <th>ID</th>
                 <th>ISBN</th>
-                <th>image</th>
+                <th>Nom de couverture</th>
                 <th>Titre</th>
                 <th>Auteur</th>
                 <th>Éditeur</th>
