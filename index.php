@@ -1,3 +1,12 @@
+<?php
+require_once './front/header-front.php';
+session_start();
+if (!isset($_SESSION["user"])) {
+    header("location: ./front/connexion.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
