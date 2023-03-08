@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION["admin"])) {
-    header("location: ./connexion-admin.php");
+    header("location: ./dashboard-admin.php");
     exit;
 }
 
@@ -12,3 +12,4 @@ include_once './header-admin.php';
 ?>
 
 <h1>test admin</h1>
+<li class="item button"><a href="./deconnexion-admin.php">Deconexion</a></li>

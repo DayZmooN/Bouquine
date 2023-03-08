@@ -37,7 +37,7 @@ if (!empty($_POST)) {
 
         $query = $db->prepare($sql);
         $query->bindValue(":password", $pass, PDO::PARAM_STR);
-        $query->bindValue(":username", $pseudo, PDO::PARAM_STR);
+        $query->bindValue(":username", $username, PDO::PARAM_STR);
         $query->bindValue(":lastname", $_POST["lastname"], PDO::PARAM_STR);
         $query->bindValue(":mail", $_POST["mail"], PDO::PARAM_STR);
         $query->bindValue(":phone", $_POST["phone"], PDO::PARAM_STR);
@@ -51,12 +51,11 @@ if (!empty($_POST)) {
         //on stocke dans $_SESSION LES information de l'utilisateur
         $_SESSION["user"] = [
             "id" => $id,
-            "username" => $username["username"],
+            "username" => $username,
             "mail" => $_POST["mail"],
             "lastname" => $_POST["lastname"],
             "phone" => $_POST["phone"],
-            "birthdate" => $_POST["birthdate"],
-            "roles" => $user["roles"]
+            "birthdate" => $_POST["birthdate"]
         ];
         // on peut rediriger vers la page de profil (par exemple )
         header("location: dashboard.php");

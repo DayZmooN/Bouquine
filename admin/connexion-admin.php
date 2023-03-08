@@ -26,7 +26,7 @@ if (!empty($_POST)) {
         $admin = $queryAdmin->fetch(PDO::FETCH_ASSOC);
 
         // si l'administrateur existe
-        if ($admin->rowCount() === 1) {
+        if ($admin) {
             // on vérifie le mot de passe
             if (!password_verify($_POST["password"], $admin["password"])) {
             }
@@ -44,7 +44,7 @@ if (!empty($_POST)) {
 }
 
 // on inclut le header 
-include_once './admin/header-admin.php';
+include_once './header-admin.php';
 ?>
 <h1>connexion</h1>
 
