@@ -20,7 +20,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 <h1>Liste des articles</h1>
-<h2><a href="add.php">Ajouter un nouvel article</a></h2>
+<h2><a href="add.php" class="add">Ajouter un nouvel article</a></h2>
     <table>
         <thead>
             <th>ID</th>
@@ -54,7 +54,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $article['id_category'] ?></td>
                     <td><?= $article['summary'] ?></td>
                     <td><?= $article['status'] ?></td>
-                    <td><a href="edit.php?id=<?= $article['id_book'] ?>">Modifier</a>  <a href="delete.php?id=<?= $article['id_book'] ?>">Supprimer</a>
+                    <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>  <a href="delete.php?id=<?= $article['id_book'] ?>" class="delete">Supprimer</a>
                     <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
                     <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a></td>
                 </tr>
