@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #F4B97A;
+}
+
 @font-face {
     font-family: 'QuattrocentoSans-Regular';
     src: url(../fonts/QuattrocentoSans-Regular.ttf);
@@ -40,6 +44,11 @@ ul li a {
 
 
 /* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+}
 
 .header-main {
     width: 100%;
@@ -87,8 +96,8 @@ ul li a {
 #navbar ul ul {
     display: none;
     position: absolute;
-    /* top: 100%; */
-    /* left: 0; */
+    top: 100%;
+    left: 0;
     margin: 20px 0 0 0;
     background-color: #F4B97A;
     border-radius: 10%;
@@ -105,8 +114,8 @@ ul li a {
     margin-top: 10px;
     padding: 10px;
 
-
 }
+
 
 #navbar ul ul li a {
     padding: 10px 20px;
@@ -151,9 +160,31 @@ ul li a {
 
 }
 
-
 /* END HEADER
+/* MEDIA QUERIES HEADER */
 
+@media screen and (max-width:400px) {
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger span {
+        display: block;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* fin media queries header */
 /* EN TETE  */
 .parallax-section {
     width: 100%;
@@ -181,7 +212,6 @@ h1 {
     height: 90px;
     padding-top: 90px;
     color: #fff;
-
 }
 
 #explain {
@@ -192,8 +222,6 @@ h1 {
     text-align: right;
     padding-top: 100px;
     color: #fff;
-
-
 }
 
 /* media queries 
@@ -241,6 +269,10 @@ h1 {
     border-radius: 5px;
 }
 
+.item img:hover {
+    opacity: 40%;
+}
+
 .item {
     flex: 0 0 calc(25% - 40px);
     display: flex;
@@ -248,6 +280,222 @@ h1 {
     align-items: center;
 }
 
+#resume {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #F47826;
+    border-radius: 50px;
+    background-color: #F47826;
+    margin: 10px;
+}
+
+#resume a {
+    text-decoration: none;
+}
+
 .title .author p {
     text-align: center;
 }
+
+.title {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    line-height: 10px;
+
+}
+
+.author {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    line-height: 10px;
+
+}
+
+/* END SECTION POPULAIRES  */
+
+/* SECTION NOUVEAUTES  */
+
+#new {
+    width: 100%;
+    height: 600px;
+    background-color: #F47826;
+}
+
+#nouveautes {
+    width: 100%;
+    height: 50px;
+    font-family: 'QuattrocentoSans-Regular';
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.slider {
+    width: 800px;
+    height: 450px;
+    margin: 80px auto;
+    position: relative;
+
+}
+
+.slider-view {
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+
+}
+
+.slide-container {
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.slide-container img {
+    width: 800px;
+    height: 400px;
+    padding: 50px;
+}
+
+.slide-container img:hover {
+    opacity: 50%;
+}
+
+.slider-nav {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-nav a {
+
+    box-shadow: 0px 0px 5px 0px rgba(229, 111, 8, 0.882);
+    display: inline-block;
+    background-color: #ab7137;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    border-radius: 5px;
+}
+
+.slider-nav a:hover {
+    background-color: #F47826;
+    box-shadow: 0px 0px 5px 0px rgba(246, 161, 4, 0.8);
+}
+
+#slide2:target .slide-container {
+    transform: translateX(-800px);
+}
+
+#slide3:target .slide-container {
+    transform: translateX(-1600px);
+}
+
+#slide4:target .slide-container {
+    transform: translateX(-2400px);
+}
+
+#slide5:target .slide-container {
+    transform: translateX(-3200px);
+}
+
+/* end of section nouveautés */
+
+/* section genre préférés */
+.gender {
+    width: 100%;
+    height: 1200px;
+    background-color: #F47826;
+}
+
+#prefers {
+    width: 100%;
+    height: 80px;
+    font-family: 'QuattrocentoSans-Regular';
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#romance {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    line-height: 10px;
+    margin: 20px;
+    text-transform: uppercase;
+    margin-left: 60px;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.item1 img {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.item1 img:hover {
+    opacity: 40%;
+}
+
+.item1 {
+    flex: 0 0 calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#see {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #F47826;
+    border-radius: 50px;
+    background-color: #F47826;
+    position: relative;
+    float: right;
+  }
+
+#see a {
+    text-decoration: none;
+ }
+
+.title .author p {
+    text-align: center;
+}
+
+.title {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    line-height: 10px;
+}
+
+.author {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    line-height: 10px;
+}
+/* debut fantaisie */

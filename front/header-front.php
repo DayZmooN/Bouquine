@@ -19,11 +19,16 @@
             <div class="logo">
                 <a><img src="../image/logo1.png"></a>
             </div>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="nav">
                 <nav id="navbar">
                     <ul>
                         <li><a href='#'>Catalogue</a></li>
-                        <li><a href='#'>Parcourir</a>
+                        <li>Parcourir
                             <ul>
 
                                 <li><a href='#'>Action</a></li>
