@@ -148,42 +148,173 @@ require_once './header-front.php';
 
                 </div>
 
-<!-- debut genre fantaisie -->
+                <!-- debut genre fantaisie -->
 
-<div class="genre">
-              
-                <h3 id="fantaisie">Fantaisie</h3>
+                <div class="genre">
 
-                <div class="container">
-                    <div class="item2">
-                        <a href="#"><img src="../image/circe.jpg" alt="Circé de Madeleine MILLER"></a>
-                        <p class="title">Circé </p><br>
-                        <p class="author">Madeleine MILLER</p>
+                    <h3 id="fantaisie">Fantaisie</h3>
+
+                    <div class="container">
+                        <div class="item2">
+                            <a href="#"><img src="../image/circe.jpg" alt="Circé de Madeleine MILLER"></a>
+                            <p class="title">Circé </p><br>
+                            <p class="author">Madeleine MILLER</p>
+                        </div>
+                        <div class="item2"><a href="#"><img src="../image/assasin royal.jpg" alt="L'assasin royal de Robin HOBB"></a>
+                            <p class="title">L'assasin royal</p><br>
+                            <p class="author">Robin HOBB</p>
+                        </div>
+                        <div class="item2"><a href="#"><img src="../image/la-croisade-eternelle.jpg" alt="La croisade éternelle de Victor Fleury"></a>
+                            <p class="title">La croisade éternelle </p><br>
+                            <p class="author">Victor Fleury</p>
+                        </div>
+
+                        <div class="item2"><a href="#"><img src="../image/sistine.jpg" alt="Sixtine de Caroline VERMALLE"></a>
+                            <p class="title">Sixtine</p><br>
+                            <p class="author">Caroline VERMALLE</p>
+                        </div>
+
+                        <button id="see" type="button"><a href="#">Voir plus</a></button>
+
+
                     </div>
-                    <div class="item2"><a href="#"><img src="../image/assasin royal.jpg" alt="L'assasin royal de Robin HOBB"></a>
-                        <p class="title">L'assasin royal</p><br>
-                        <p class="author">Robin HOBB</p>
-                    </div>
-                    <div class="item2"><a href="#"><img src="../image/la-croisade-eternelle.jpg" alt="La croisade éternelle de Victor Fleury"></a>
-                        <p class="title">La croisade éternelle </p><br>
-                        <p class="author">Victor Fleury</p>
-                    </div>
 
-                    <div class="item2"><a href="#"><img src="../image/sistine.jpg" alt="Sixtine de Caroline VERMALLE"></a>
-                        <p class="title">Sixtine</p><br>
-                        <p class="author">Caroline VERMALLE</p>
-                    </div>
+                    <!-- début genre action -->
 
-                    <button id="see" type="button"><a href="#">Voir plus</a></button>
+                    <div class="genre">
+
+                        <h3 id="action">Action</h3>
+
+                        <div class="container">
+                            <div class="item3">
+                                <a href="#"><img src="../image/pris en otage.jpg" alt="Pris en otage de Pierre Martinet"></a>
+                                <p class="title">Pris en otage </p><br>
+                                <p class="author">Pierre MARTINET</p>
+                            </div>
+                            <div class="item3"><a href="#"><img src="../image/la vague.jpg" alt="La vague de Tod STRASSER"></a>
+                                <p class="title">La vague</p><br>
+                                <p class="author">Tod STRASSER</p>
+                            </div>
+                            <div class="item3"><a href="#"><img src="../image/outsphere.jpg" alt="Outsphère de Guy-Roger DUVERT"></a>
+                                <p class="title">Outsphère </p><br>
+                                <p class="author">Guy-Roger DUVERT</p>
+                            </div>
+
+                            <div class="item3"><a href="#"><img src="../image/l espion du pape.jpg" alt="L'espion du pape de Philippe Madral et François Migeat"></a>
+                                <p class="title">L'espion du pape</p><br>
+                                <p class="author">Philippe MADRAL et<br> François Migeat</p>
+                            </div>
+
+                            <button id="see" type="button"><a href="#">Voir plus</a></button>
 
 
-                </div>
-
-
+                        </div>
 
 
 
         </section>
+        <!-- END SECTION GENRE LES PLUS LUS  -->
+        <!-- SECTION TEXTE -->
+
+        <section id="text">
+            <div class="texte">
+                <p class="bouquine">BOUQUINE c’est :<br></p>
+                <ul class="list">
+                    <li>La recherche de livres : Les utilisateurs<br> peuvent effectuer des recherches
+                        en<br> ligne pour trouver des livres disponibles.</li>
+
+                    <li>La réservation de livres : possibilité de<br> réserver des livres en ligne
+                        pour les emprunter à une date ultérieure.</li>
+
+                    <li>Le prêt de livres : possibilité<br> d' emprunter
+                        les livres réservés et les<br> retirer à la bibliothèque.</li>
+
+                    <li>Le renouvellement de prêts :<br> possibilité renouveler
+                        leurs emprunts<br> en ligne pour prolonger la période de prêt.</li>
+
+                    <li>La consultation et lecture sur place.</li>
+
+                </ul>
+
+            </div>
+            <div class="img">
+                <img class="image" src="../image/femme-livre.png" alt="Retrouvez le plaisir de la lecture avec Bouquine ">
+            </div>
+
+        </section>
+
+        <!-- END SECTION TEXTE -->
+
+        <!-- SECTION NEWSLETTER -->
+
+
+        <section class="parallax-section newsletter">
+            <div class="parallax parallax1 news">
+
+                <h2 id="titl">Newsletter gratuite</h2>
+                <div class="formulaire">
+                    <form action="subscribing-newsletter" method="post">
+                        <label for="email">E-mail:</label>
+                        <input id="email" name="subscriber_email" type="email" />
+                        <button id="send" type="submit">S'abonner </button>
+                </div>
+                </form>
+                <p class="abonner">N'hésitez pas à vous abonner pour recevoir en exclusivité chaque mois les 
+                    dernières nouveautés et évènements de la bibliothèque.Nous ne vous enverrons pas de spam
+                     ni ne partagerons vos informations.</p>
+
+            </div>
+            </section>
+            <!-- END SECTION NEWSLETTER -->
+
+            <!-- SECTION CONTACT -->
+
+            <section id="contact">
+
+            <div class="container-contact">
+            <h2 id="us">Contact</h2>
+            <div class="localisation">
+                <a href="#"><img src="../image/localisation.png" alt="adresse de bouquine"></a>
+                <p class="adress">21 rue du Calidon 01000 <br>Saint Denis les Bourg</p>
+            </div>
+            <div class="horaire">
+            <img src="../image/clock.svg" alt="horaire de bouquine">
+                <p class="hour">Du lundi au Samedi <br>de 9h à 18h non stop</p>
+            </div>
+            
+            <div class="mail">
+            <a href="#"><img src="../image/enveloppe.png" alt="contactez-nous par mail ou tel"></a>
+                <p class="contactus">Tél:04.74.21.23.63 <br>Mail:bouquine@orange.fr</p>
+            </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            </section>
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
     </main>
 
 

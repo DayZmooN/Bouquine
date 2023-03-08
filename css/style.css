@@ -473,11 +473,85 @@ h1 {
     background-color: #F47826;
     position: relative;
     float: right;
-  }
+}
 
 #see a {
     text-decoration: none;
- }
+}
+
+.title .author p {
+    text-align: center;
+}
+
+.title {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    line-height: 10px;
+}
+
+.author {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    /* margin-bottom: 20px; */
+    line-height: 10px;
+}
+
+/* debut fantaisie */
+
+#fantaisie {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    line-height: 10px;
+    margin: 40px;
+    text-transform: uppercase;
+    margin-left: 60px;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.item2 img {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.item2 img:hover {
+    opacity: 40%;
+}
+
+.item2 {
+    flex: 0 0 calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#see {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #F47826;
+    border-radius: 50px;
+    background-color: #F47826;
+    position: relative;
+    float: right;
+}
+
+#see a {
+    text-decoration: none;
+}
 
 .title .author p {
     text-align: center;
@@ -498,4 +572,270 @@ h1 {
     margin-bottom: 10px;
     line-height: 10px;
 }
-/* debut fantaisie */
+
+/* debut action  */
+#action {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    line-height: 10px;
+    margin: 40px;
+    text-transform: uppercase;
+    margin-left: 60px;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.item3 img {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.item3 img:hover {
+    opacity: 40%;
+}
+
+.item3 {
+    flex: 0 0 calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#see {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #F47826;
+    border-radius: 50px;
+    background-color: #F47826;
+    position: relative;
+    float: right;
+}
+
+#see a {
+    text-decoration: none;
+}
+
+.title .author p {
+    text-align: center;
+}
+
+.title {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    line-height: 10px;
+
+}
+
+.author {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    line-height: 10px;
+    margin: 10px 0;
+}
+
+/* END GENRE PLUS LUS  */
+
+/* SECTION TEXTE  */
+#text {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.texte {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding-left: 30px;
+    margin-top: 70px;
+    margin-left: 70px;
+    background-color: #F47826;
+}
+
+.bouquine {
+    font-size: 1.8rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+
+.list li {
+    font-size: 1.4rem;
+    font-family: 'QuattrocentoSans-Regular';
+    list-style-type: square;
+    margin-left: 20px;
+
+}
+
+.image {
+    width: 500px;
+    height: 500px;
+    margin-top: 70px;
+    margin-right: 100px;
+    border-radius: 40px;
+
+}
+
+/* END SECTION TEXTE */
+
+/* SECTION NEWSLETTER */
+.parallax-section .newsletter {
+    width: 100%;
+    height: 500px;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletter {
+    width: 100%;
+    height: 350px;
+}
+
+.news {
+    width: 100%;
+    height: 400px;
+    background-image: url(../image/newsletter.png);
+    position: absolute;
+}
+
+#titl {
+    font-family: 'QuattrocentoSans-Regular';
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.formulaire {
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: 'QuattrocentoSans-Bold';
+    color: white;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #987047;
+   
+   
+}
+
+#send {
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'QuattrocentoSans-Regular';
+    color: white;
+    background-color: #987047;
+    border-radius: 50px;
+    position: relative;
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+}
+.abonner{
+    width: 800px;
+    height: 100px;
+    font-size: 1.2rem;
+    font-weight:600;
+    font-family: 'QuattrocentoSans-Regular';
+    color:white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+     
+   }
+
+
+/* end section newsletter */
+
+/* section contact */
+
+#contact{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.container-contact{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#us {
+    width: 150px;
+    height: 100px;
+    font-family: 'QuattrocentoSans-Bold';
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+  
+}
+.localisation{
+    width: 400px;
+    height: 400px;
+}
+.localisation img{
+    width: 100px;
+    height: 100px;
+    margin-top: 120px;
+}
+.horaire{
+    width: 400px;
+    height: 400px;
+    margin-top: 120px;
+}
+.horaire img{
+    width: 100px;
+    height: 100px;
+}
+.mail{
+    width: 400px;
+    height: 400px;
+    margin-top: 120px;
+}
+.mail img{
+    width: 100px;
+    height: 100px;
+}
