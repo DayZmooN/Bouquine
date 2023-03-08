@@ -29,7 +29,7 @@ while ($book = $req->fetch(PDO::FETCH_ASSOC)) {
         foreach ($result as $genre) {
         ?>
             <tr>
-                <td><input type="checkbox" value="<?= $genre['id_genre'] ?>" name="check"><?= $genre['id_genre'] ?></td>
+                <td><input type="checkbox" value="<?= $genre['id_genre'] ?>" name="check_list[]"><?= $genre['id_genre'] ?></td>
                 <td><?= $genre['libel_genre'] ?></td>
             </tr>
         <?php
@@ -39,9 +39,16 @@ while ($book = $req->fetch(PDO::FETCH_ASSOC)) {
 </table>
 <button type="submit" value="submit" name="submit">submit</button>
 <?php
-//if(isset $_POST['submit']){
-//    $req = $db->prepare('INSERT INTO `genre_book`(`id_book`, `id_genre`) VALUES ('$id','7')');
-  //  $req->execute();
-//}
+if(isset ($_POST['submit'])){
+    if(!empty($_POST['check_list'])){
+        foreach($_POST['check_list'] as $id_genre){
+        $id = $_GET['id'];
+        $req = "INSERT INTO `genre_book`(`id_book`, `id_genre`) VALUES ('$id','$id_genre')";
+        $db->query($req);
+        }
+    }else {
+        echo "<b> Please select at least one option !</b>";
+    }
+}
 ?>
 </form>
