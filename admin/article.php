@@ -57,7 +57,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
                     <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
 
-                    <a href="#" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
+                    <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
 
                     <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
 
