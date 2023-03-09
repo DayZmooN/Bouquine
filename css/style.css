@@ -46,10 +46,9 @@ ul li a {
 /* HEADER */
 
 header {
-    position: fixed;	
+    position: sticky;	
     top: 0;
-	left: 0;
-	right: 0;
+	
 }
 
 .header-main {
@@ -190,7 +189,7 @@ header {
 /* EN TETE  */
 .parallax-section {
     width: 100%;
-    height: 450px;
+    height: 400px;
 }
 
 .parallax {
@@ -212,7 +211,7 @@ h1 {
     text-transform: uppercase;
     width: 1000px;
     height: 90px;
-    padding-top: 90px;
+    padding-top: 80px;
     color: black;
 }
 
@@ -222,7 +221,7 @@ h1 {
     font-family: 'QuattrocentoSans-Bold';
     font-size: 1.8rem;
     text-align: right;
-    padding-top: 100px;
+    padding-top: 70px;
     color: black;
 }
 
