@@ -8,9 +8,8 @@ define("DBNAME", "bouquine");
 //on definit le dns (data source Name) de connexion
 $dsn = "mysql:dbname=" . DBNAME . ";host=" . DBHOST;
 // new = c'est pour cree une nouvellle instance d'object PDO 
-
 try {
-    // on se connecte a la de donées en instanciant" PDO
+    // on se connecte a la de donées en instance" PDO
     $db = new PDO($dsn, DBUSER, DBPASS);
 
     //on definit le charset a utf8
