@@ -44,22 +44,95 @@ if (!empty($_POST)) {
 }
 
 // on inclut le header 
-include_once './header-admin.php';
+
 ?>
-<h1>connexion</h1>
 
-<form method="post">
 
-    <div>
-        <label for="mail">Email-Admin</label>
-        <input type="email" name="mail" id="mail">
-    </div>
-    <div>
-        <label for="password">Mot de passe</label>
-        <input type="password" name="password" id="password">
-    </div>
-    <div>
-        <button type="submit">Me Connexion</button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="../css/style-admin.css">
+
+
+</head>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="../css/style-admin.css">
+
+
+</head>
+
+<body>
+
+
+    <aside id="side-bar">
+        <div id="logo">
+            <img src="../image/logoAdmin.png" alt="logo du site bouquine">
+        </div>
+
+
+    </aside>
+
+
+    <div class="test">
+        <header id="headerDashboard">
+
+
+
+        </header>
+
+        <main class="multitaches">
+            <h1 class="multiTitre">connexion</h1>
+            <form method="post">
+                <div>
+                    <label for="mail">Email-Admin</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <button type="submit">Me Connexion</button>
+                </div>
+
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
     </div>
 
-</form>
+</body>
+
+</html>

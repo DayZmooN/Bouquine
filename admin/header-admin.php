@@ -21,8 +21,8 @@
             <div id="menu-admin">
                 <nav>
                     <ul>
-                        <li><img src="../image/tableauDeBord.png" alt="icone du dashboard"> <a href="./dashboard.php">Tableau de bord</a></li>
-                        <li><img src="../image/articleDashboard.png" alt="icone articles du dashboard"><a href="./article-admin.php">Articles</a></li>
+                        <li><img src="../image/tableauDeBord.png" alt="icone du dashboard"> <a href="./dashboard-admin.php">Tableau de bord</a></li>
+                        <li><img src="../image/articleDashboard.png" alt="icone articles du dashboard"><a href="./article.php">Articles</a></li>
                         <li><img src="../image/catégorieDashboard.png" alt="icone catégorie du dashboard"><a href="./categorie.php">Catégories</a></li>
                         <li><img src="../image/genresDashboard.png" alt="icone genres du dashboard"><a href="./genre.php">Genre</a></li>
                         <li><img src="../image/userDashboard.png" alt="icone user du dashboard"><a href="./user.php">Users</a></li>

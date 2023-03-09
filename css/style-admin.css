@@ -7,8 +7,8 @@ a {
   text-decoration: none;
 }
 
-/*....................HEADER-ADMIN DASHBOARD....................*/
-/*.....section + nav.....*/
+/*....................HEADER-ADMIN INCLUDE....................*/
+/*.....section logo + nav.....*/
 #side-bar {
   max-width: 500px;
   width: 25%;
@@ -40,11 +40,16 @@ a {
   color: black;
 }
 
+/*.....fin.....*/
+/*.....header + icones.....*/
 .test {
   width: 75%;
   height: 100vh;
   float: right;
   background-color: white;
+  /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
+  /*....................DASHBOARD....................*/
+  /*....................CSS.CLASS.INCLUDER....................*/
 }
 .test > #headerDashboard {
   height: 130px;
@@ -63,33 +68,28 @@ a {
 .test > #headerDashboard > p {
   margin-top: 35px;
 }
-
-/*....................DASHBOARD....................*/
-#temporaire {
+.test > .multitaches {
+  width: 100%;
+  background-color: #F2D5D5;
+}
+.test > .multitaches > .multiTitre {
+  width: 100%;
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.test .multitaches > #temporaire {
   width: 1000px;
   height: 200px;
   border: 1px solid black;
 }
-
-#dernier-ajout {
+.test .multitaches > #dernier-ajout {
   width: 100%;
   padding-top: 20px;
   text-transform: uppercase;
   text-align: center;
 }
-
-/*....................ARTICLE-ADMIN....................*/
-.multitaches {
-  width: 100%;
-  background-color: #F2D5D5;
-}
-.multitaches > .multiTitre {
-  width: 100%;
-  padding-top: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.multitaches > #menu-article {
+.test .multitaches > #menu-article {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -97,23 +97,23 @@ a {
   margin-left: 50px;
   padding-top: 20px;
 }
-.multitaches > #menu-article > form {
+.test .multitaches > #menu-article > form {
   display: flex;
   flex-direction: row;
 }
-.multitaches > #menu-article > form > .recherche {
+.test .multitaches > #menu-article > form > .recherche {
   padding-left: 10px;
   border: 0;
   border-radius: 100px;
 }
-.multitaches > #menu-article > form > button {
+.test .multitaches > #menu-article > form > button {
   width: 50px;
   height: 50px;
   border: 0;
   border-radius: 100px;
   margin-right: 50px;
 }
-.multitaches > #menu-recherche-article {
+.test .multitaches > #menu-recherche-article {
   width: 500px;
   display: flex;
   flex-direction: row;
@@ -121,10 +121,10 @@ a {
   margin-left: 100px;
   padding-top: 20px;
 }
-.multitaches > #menu-recherche-article > #nav-search > nav {
+.test .multitaches > #menu-recherche-article > #nav-search > nav {
   display: none;
 }
-.multitaches .articleList {
+.test .articleList {
   width: 800px;
   height: 49px;
   display: flex;
