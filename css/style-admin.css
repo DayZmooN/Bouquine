@@ -43,13 +43,22 @@ a {
 /*.....fin.....*/
 /*.....header + icones.....*/
 .test {
+  max-width: 1200px;
   width: 75%;
-  height: 100vh;
+  height: 100 vh;
   float: right;
   background-color: white;
   /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
-  /*....................DASHBOARD....................*/
-  /*....................CSS.CLASS.INCLUDER....................*/
+  /*....................CSS.CONNEXION....................*/
+  /*....................FIN.CSS.CONNEXION....................*/
+  /*....................CSS.DASHBOARD....................*/
+  /*....................FIN.DASHBOARD....................*/
+  /*....................CSS.ARTICLES....................*/
+  /*....................FIN.CSS.ARTICLES....................*/
+  /*....................CSS.CATEGORIES....................*/
+  /*....................FIN.CSS.CATEGORIES....................*/
+  /*....................CSS.GENRES....................*/
+  /*....................FIN.CSS.GENRES....................*/
 }
 .test > #headerDashboard {
   height: 130px;
@@ -78,6 +87,49 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
+.test .multitache > form {
+  width: 500px;
+  height: 350px;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-left: 350px;
+  background-color: #FFDAA4;
+}
+.test .multitache > form > .Titre {
+  width: 100%;
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.test .multitache > form > #mail, .test .multitache > form #pass {
+  width: 300px;
+  height: 50px;
+  margin: 30px 100px;
+}
+.test .multitache > form > #mail > input, .test .multitache > form #pass > input {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.test .multitache > form > #connect {
+  width: 100px;
+}
+.test .multitache > form > #connect > button {
+  width: 100px;
+  height: 25px;
+  margin: 50px 200px;
+  box-shadow: 1px 1px 10px 1px grey;
+  background-color: #81D9E5;
+  border: 0;
+  border-radius: 20px;
+}
+.test .multitache > form > #connect > button:hover {
+  cursor: pointer;
+}
 .test .multitaches > #temporaire {
   width: 1000px;
   height: 200px;
@@ -100,17 +152,21 @@ a {
 .test .multitaches > #menu-article > form {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
 }
 .test .multitaches > #menu-article > form > .recherche {
   padding-left: 10px;
   border: 0;
   border-radius: 100px;
+  width: 300px;
+  height: 50px;
 }
 .test .multitaches > #menu-article > form > button {
   width: 50px;
   height: 50px;
   border: 0;
   border-radius: 100px;
+  margin-left: -50px;
   margin-right: 50px;
 }
 .test .multitaches > #menu-recherche-article {
@@ -119,12 +175,45 @@ a {
   flex-direction: row;
   justify-content: space-around;
   margin-left: 100px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .test .multitaches > #menu-recherche-article > #nav-search > nav {
+  width: 200px;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul {
+  width: 200px;
+  margin-top: 10px;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li {
+  width: 100px;
+  height: 50px;
+  background-color: #696969;
+  list-style-type: none;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li > a {
+  width: 100px;
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li > ul {
+  width: 100px;
   display: none;
 }
-.test .articleList {
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li > ul > li {
+  width: 100px;
+  list-style-type: none;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li > ul > li > a {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
+  float: right;
+}
+.test .multitaches > .articleList {
   width: 800px;
   height: 49px;
   display: flex;
