@@ -1,5 +1,6 @@
 <?php
 require_once './header-front.php';
+// require_once './footer-front.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,7 @@ require_once './header-front.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
-    <!-- /<link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    
 </head>
 
 <body>
@@ -88,31 +89,13 @@ require_once './header-front.php';
 
         <section id="new">
             <h2 id="nouveautes">Nouveautés</h2>
-            <div class="slider">
-                <div class="slider-view">
-                    <div id="slide1">
-                        <div id="slide2">
-                            <div id="slide3">
-                                <div id="slide4">
+            <ul class=slider>
 
-                                    <div class="slide-container">
-                                        <img src="../image/cohen.jpg" alt="Livres romans français ">
-                                        <img src="../image/livres nature.jpg" alt="Livres de nature collection de poche">
-                                        <img src="../image/roman jeunesse.jpg" alt="Livres roman jeunesse de poche">
-                                        <img src="../image/stephen king.jpg" alt="Collection de livres de Stephen King ">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#slide1"></a>
-                        <a href="#slide2"></a>
-                        <a href="#slide3"></a>
-                        <a href="#slide4"></a>
+                <li><img src="../image/cohen.jpg" alt></li>
+                <li><img src="../image/livres nature.jpg" alt></li>
+                <li><img src="../image/stephen king.jpg" alt></li>
 
-                    </div>
-                </div>
+            </ul>
 
         </section>
         <!-- end section nouveautes  -->
@@ -350,7 +333,7 @@ require_once './header-front.php';
             </div>
 
         </section>
-<!-- end section avis lecteur  -->
+        <!-- end section avis lecteur  -->
     </main>
 
 </body>

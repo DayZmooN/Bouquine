@@ -46,8 +46,10 @@ ul li a {
 /* HEADER */
 
 header {
-    position: sticky;
+    position: fixed;	
     top: 0;
+	left: 0;
+	right: 0;
 }
 
 .header-main {
@@ -217,7 +219,7 @@ h1 {
 #explain {
     width: 1000px;
     height: 250px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Bold';
     font-size: 1.8rem;
     text-align: right;
     padding-top: 100px;
@@ -259,8 +261,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-
 }
 
 .item img {
@@ -321,7 +321,7 @@ h1 {
 
 #new {
     width: 100%;
-    height: 600px;
+    height: 400px;
     background-color: #F47826;
 }
 
@@ -334,76 +334,77 @@ h1 {
     color: black;
     font-weight: bold;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .slider {
-    width: 800px;
-    height: 450px;
-    margin: 80px auto;
+    height: 300px;
     position: relative;
-
-}
-
-.slider-view {
-    width: 800px;
-    height: 450px;
     overflow: hidden;
-
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    margin: auto;
+    border: 1px solid #fff;
 }
 
-.slide-container {
-    display: grid;
-    grid-auto-flow: column;
+.slider [src] {
 
-}
-
-.slide-container img {
-    width: 800px;
-    height: 400px;
-    padding: 50px;
-}
-
-.slide-container img:hover {
-    opacity: 50%;
-}
-
-.slider-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     position: absolute;
+    opacity: 0;
+    left: 0;
+    height: 300px;
     width: 100%;
-    text-align: center;
+    animation: slide 9s linear infinite
 }
 
-.slider-nav a {
+.slider [src="../image/cohen.jpg"] {
 
-    box-shadow: 0px 0px 5px 0px rgba(229, 111, 8, 0.882);
-    display: inline-block;
-    background-color: #ab7137;
-    width: 20px;
-    height: 20px;
-    margin: 0 3px;
-    border-radius: 5px;
+
+    animation-delay: 3s
 }
 
-.slider-nav a:hover {
-    background-color: #F47826;
-    box-shadow: 0px 0px 5px 0px rgba(246, 161, 4, 0.8);
+.slider [src="../image/livres nature.jpg"] {
+
+
+    animation-delay: 6s
 }
 
-#slide2:target .slide-container {
-    transform: translateX(-800px);
-}
+@keyframes slide {
 
-#slide3:target .slide-container {
-    transform: translateX(-1600px);
-}
+    0% {
 
-#slide4:target .slide-container {
-    transform: translateX(-2400px);
-}
+        opacity: 0
+    }
 
-#slide5:target .slide-container {
-    transform: translateX(-3200px);
+    12% {
+
+        opacity: 1;
+        transform: scale(1.03)
+    }
+
+    25% {
+
+        opacity: 1;
+        transform: scale(1.06);
+
+    }
+
+    37% {
+
+        opacity: 0;
+        transform: scale(1.30);
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+    }
+
 }
 
 /* end of section nouveautés */
@@ -582,7 +583,6 @@ h1 {
     margin: 40px;
     text-transform: uppercase;
     margin-left: 60px;
-
 }
 
 .container {
@@ -635,7 +635,6 @@ h1 {
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 800;
     line-height: 10px;
-
 }
 
 .author {
@@ -656,7 +655,6 @@ h1 {
     height: 700px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .texte {
@@ -683,7 +681,6 @@ h1 {
     font-family: 'QuattrocentoSans-Regular';
     list-style-type: square;
     margin-left: 20px;
-
 }
 
 .image {
@@ -692,7 +689,6 @@ h1 {
     margin-top: 70px;
     margin-right: 100px;
     border-radius: 40px;
-
 }
 
 /* END SECTION TEXTE */
@@ -700,7 +696,7 @@ h1 {
 /* SECTION NEWSLETTER */
 .parallax-section .newsletter {
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 .parallax {
@@ -710,15 +706,19 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax.parallax1.news{
+    width: 100%;
+    height: 400px;
+}
 
-.newsletter {
+/* .newsletter {
     width: 100%;
     height: 350px;
-}
+} */
 
 .news {
     width: 100%;
-    height: 400px;
+    height: 300px;
     position: absolute;
 }
 
@@ -729,7 +729,7 @@ h1 {
     color: black;
     font-weight: bold;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .formulaire {
@@ -751,7 +751,7 @@ input {
     width: 400px;
     height: 40px;
     border-radius: 10px;
-    background-color: #b56f2a;
+    background-color: #d98f21e3;
 }
 
 #send {
@@ -761,7 +761,7 @@ input {
     font-weight: bold;
     font-family: 'QuattrocentoSans-Regular';
     color: black;
-    background-color: #b56f2a;
+    background-color: #d98f21e3;
     border-radius: 50px;
     position: relative;
     float: right;
@@ -786,6 +786,7 @@ input {
 #contact {
     width: 1100px;
     height: 500px;
+    
 }
 
 .container-contact {
@@ -795,6 +796,8 @@ input {
     align-items: baseline;
     margin-left: 130px;
     margin-top: 60px;
+   
+   
 }
 
 #us {
@@ -805,7 +808,8 @@ input {
     font-size: 2rem;
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    
 }
 
 .localisation {
@@ -830,7 +834,6 @@ input {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
     color: black;
-
 }
 
 .horaire img {
@@ -847,6 +850,7 @@ input {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
     color: black;
+   
 }
 
 .mail img {
@@ -897,7 +901,6 @@ a:hover {
 .parallax-section .compteur {
     width: 100%;
     height: 350px;
-
 }
 
 .parallax {
@@ -907,7 +910,6 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../image/compteur.jpg);
-
 }
 
 .stat {
@@ -916,7 +918,6 @@ a:hover {
     border: 5px solid #F47826;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 1px #F4B97A;
-
 }
 
 .parallax.parallax1.count {
@@ -925,7 +926,6 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 p.livre {
@@ -949,7 +949,7 @@ p.livre {
 #lecteur {
     width: 100%;
     height: 400px;
-
+   
 }
 
 h2.lector {
@@ -961,7 +961,6 @@ h2.lector {
     text-transform: uppercase;
     font-size: 1.8rem;
     color: rgb(0, 0, 0);
-
 }
 
 .avis {
@@ -995,7 +994,6 @@ h3.name {
     float: right;
     margin-right: 30px;
     border-radius: 50%;
-
 }
 
 p.value {
@@ -1009,3 +1007,72 @@ p.value {
 }
 
 /* end section avis lecteur  */
+
+/* SECTION FOOTER */
+
+footer {
+    /* position: absolute; */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  
+}
+
+#end {
+    width: 100%;
+    height: 100px;
+    background-color: hsl(38, 89%, 48%);
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img.img1 {
+    width: 100px;
+    height: 100px;
+}
+
+img.social {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.pol {
+    width: 120px;
+    height: 50px;
+    font-family: 'QuattrocentoSans-regular';
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: center;
+}
+
+.politique {
+    width: 250px;
+    height: 50px;
+    font-family: 'QuattrocentoSans-regular';
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+p#copy {
+    /* width: 200px;
+    height: 50px; */
+    font-family: 'QuattrocentoSans-Bold';
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.copyright {
+    width: 100%;
+    height: 30px;
+    background-color: hsl(38, 89%, 48%);
+
+}
+
+/* end footer */
