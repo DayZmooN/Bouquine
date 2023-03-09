@@ -202,7 +202,7 @@ require_once './header-front.php';
 
                             <div class="item3"><a href="#"><img src="../image/l espion du pape.jpg" alt="L'espion du pape de Philippe Madral et François Migeat"></a>
                                 <p class="title">L'espion du pape</p><br>
-                                <p class="author">Philippe MADRAL et<br> François Migeat</p>
+                                <p class="author">Philippe MADRAL</p>
                             </div>
 
                             <button id="see" type="button"><a href="#">Voir plus</a></button>
@@ -257,35 +257,38 @@ require_once './header-front.php';
                         <label for="email">E-mail:</label>
                         <input id="email" name="subscriber_email" type="email" />
                         <button id="send" type="submit">S'abonner </button>
+
+                    </form>
                 </div>
-                </form>
-                <p class="abonner">N'hésitez pas à vous abonner pour recevoir en exclusivité chaque mois les 
+                <p class="abonner">N'hésitez pas à vous abonner pour recevoir en exclusivité chaque mois les
                     dernières nouveautés et évènements de la bibliothèque.Nous ne vous enverrons pas de spam
-                     ni ne partagerons vos informations.</p>
+                    ni ne partagerons vos informations.</p>
 
             </div>
-            </section>
-            <!-- END SECTION NEWSLETTER -->
+        </section>
+        <!-- END SECTION NEWSLETTER -->
 
-            <!-- SECTION CONTACT -->
+        <!-- SECTION CONTACT -->
 
-            <section id="contact">
-
-            <div class="container-contact">
+        <section id="contact">
             <h2 id="us">Contact</h2>
-            <div class="localisation">
-                <a href="#"><img src="../image/localisation.png" alt="adresse de bouquine"></a>
-                <p class="adress">21 rue du Calidon 01000 <br>Saint Denis les Bourg</p>
-            </div>
-            <div class="horaire">
-            <img src="../image/clock.svg" alt="horaire de bouquine">
-                <p class="hour">Du lundi au Samedi <br>de 9h à 18h non stop</p>
-            </div>
-            
-            <div class="mail">
-            <a href="#"><img src="../image/enveloppe.png" alt="contactez-nous par mail ou tel"></a>
-                <p class="contactus">Tél:04.74.21.23.63 <br>Mail:bouquine@orange.fr</p>
-            </div>
+            <div class="container-contact">
+
+                <div class="localisation">
+                    <a href="https://goo.gl/maps/jTEf4EwKz4geiEws5"><img src="../image/localisation.png" alt="adresse de bouquine"></a>
+                    <p class="adress">21 rue du Calidon<br> 01000 <br>Saint Denis les Bourg</p>
+                </div>
+                <div class="horaire">
+                    <img src="../image/clock.svg" alt="horaire de bouquine">
+                    <p class="hour">Du lundi au Samedi <br>de 9h à 18h non stop</p>
+                </div>
+
+                <div class="mail">
+                    <img src="../image/enveloppe.png" alt="contactez-nous par mail ou tel"></a>
+                    <p class="contactus"><a href="tel:+3374212363"> &nbsp; &nbsp; &nbsp;Tél:04.74.21.23.63 </a><br>
+                        <a href="mailto:bouquine@orange.fr">Mail:bouquine@orange.fr
+                    </p></a>
+                </div>
 
 
 
@@ -299,14 +302,14 @@ require_once './header-front.php';
 
 
 
-            </section>
+        </section>
 
 
 
 
 
 
-      
+
 
 
 
