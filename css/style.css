@@ -211,7 +211,7 @@ h1 {
     width: 1000px;
     height: 90px;
     padding-top: 90px;
-    color: #fff;
+    color: black;
 }
 
 #explain {
@@ -221,7 +221,7 @@ h1 {
     font-size: 1.8rem;
     text-align: right;
     padding-top: 100px;
-    color: #fff;
+    color: black;
 }
 
 /* media queries 
@@ -719,7 +719,6 @@ h1 {
 .news {
     width: 100%;
     height: 400px;
-    background-image: url(../image/newsletter.png);
     position: absolute;
 }
 
@@ -727,7 +726,7 @@ h1 {
     font-family: 'QuattrocentoSans-Regular';
     text-transform: uppercase;
     font-size: 2rem;
-    color: white;
+    color: black;
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
@@ -745,7 +744,7 @@ h1 {
 label {
     font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Bold';
-    color: white;
+    color: black;
 }
 
 input {
@@ -761,7 +760,7 @@ input {
     font-size: 1rem;
     font-weight: bold;
     font-family: 'QuattrocentoSans-Regular';
-    color: white;
+    color: black;
     background-color: #b56f2a;
     border-radius: 50px;
     position: relative;
@@ -776,7 +775,7 @@ input {
     font-size: 1.3rem;
     font-weight: 500;
     font-family: 'QuattrocentoSans-Regular';
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -785,7 +784,7 @@ input {
 /* section contact */
 
 #contact {
-    width: 100%;
+    width: 1100px;
     height: 500px;
 }
 
@@ -794,18 +793,19 @@ input {
     height: 400px;
     display: flex;
     align-items: baseline;
-    /* margin-left: 170px; */
+    margin-left: 130px;
+    margin-top: 60px;
 }
 
 #us {
-    width: 100%;
+    width: 1300px;
     height: 70px;
     font-family: 'QuattrocentoSans-Bold';
     text-transform: uppercase;
     font-size: 2rem;
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .localisation {
@@ -830,7 +830,7 @@ input {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
     color: black;
-    
+
 }
 
 .horaire img {
@@ -846,8 +846,9 @@ input {
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
-    color:black;
+    color: black;
 }
+
 .mail img {
     width: 100px;
     height: 100px;
@@ -861,6 +862,7 @@ a {
 a:link {
     color: #000;
 }
+
 a:visited {
     color: #e600e6;
     border-bottom: 1px solid #b3b3b3;
@@ -882,8 +884,128 @@ a:hover {
 .contactus {
     margin-top: 30px;
 }
+
 .contactus p a {
     width: 200px;
     height: 70px;
     text-align: center;
 }
+
+/* END SECTION CONTACT */
+
+/* SECTION COMPTEUR  */
+.parallax-section .compteur {
+    width: 100%;
+    height: 350px;
+
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../image/compteur.jpg);
+
+}
+
+.stat {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #F47826;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 1px #F4B97A;
+
+}
+
+.parallax.parallax1.count {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+p.livre {
+    font-size: 1.5rem;
+    font-family: 'QuattrocentoSans-Bold';
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#stars {
+    width: 190px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+/* END SECTION COMPTEUR  */
+
+/* SECTION AVIS DES LECTEURS  */
+
+#lecteur {
+    width: 100%;
+    height: 400px;
+
+}
+
+h2.lector {
+    width: 300 px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'QuattrocentoSans-Bold';
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+
+}
+
+.avis {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #F47826;
+    border-radius: 40px;
+    background-color: #F47826;
+}
+
+h3.name {
+    width: 140px;
+    height: 10px;
+    font-family: 'QuattrocentoSans-regular';
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.notice img {
+    width: 70px;
+    height: 70px;
+    float: right;
+    margin-right: 30px;
+    border-radius: 50%;
+
+}
+
+p.value {
+    font-family: 'QuattrocentoSans-regular';
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-top: 100px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* end section avis lecteur  */

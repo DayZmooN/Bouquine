@@ -289,42 +289,69 @@ require_once './header-front.php';
                         <a href="mailto:bouquine@orange.fr">Mail:bouquine@orange.fr
                     </p></a>
                 </div>
-
-
-
-
             </div>
+        </section>
 
+        <!-- END SECTION CONTACT -->
 
+        <!-- SECTION COMPTEUR -->
 
+        <section class="parallax-section compteur">
+            <div class="parallax parallax1 count">
+                <div class="stat">
+                    <p class="livre">Livres disponibles</p>
+                    <p class="livre">+4000 livres</p>
+                </div>
+                <div class="stat">
+                    <p class="livre">Livres empruntés</p>
+                    <p class="livre">1500 livres</p>
+                </div>
+                <div class="stat">
+                    <p class="livre">Visiteurs</p>
+                    <p class="livre">3500</p>
+                </div>
 
-
-
-
+                <div class="stat">
+                    <p class="livre">Satisfaction client</p>
+                    <img id="stars" src="../image/stars.png" alt="nombre d'étoiles pour les avis ">
+                    <p class="livre">4.5/5</p>
+                </div>
+            </div>
 
         </section>
 
+        <!-- END SECTION COMPTEUR  -->
 
+        <!-- SECTION AVIS DES LECTEURS  -->
 
+        <section id="lecteur">
+            <h2 class="lector">Avis des lecteurs</h2>
+            <div class="avis">
+                <div class="notice">
+                    <h3 class="name">Cécile Randu</h3>
+                    <img src="../image/avis1.jpg" alt="avis favorable ">
+                    <p class="value">La bibliothèque Bouquine est un lieu d'apprentissage formidable pour les
+                        enfants. Ma famille et moi-même
+                        aimons passer du temps à y lire ensemble.</p>
+                </div>
+                <div class="notice">
+                    <h3 class="name">Cédric Durand</h3>
+                    <img src="../image/avis2.jpg" alt="avis favorable ">
+                    <p class="value">Très bonne bibliothèque, endroit calme, large choix de livres. Idéal pour tous les étudiants.
+                        Personnel très compétent et réactif! <br>Je recommande fortement! </p>
+                </div>
+                <div class="notice">
+                    <h3 class="name">Anaïs Dunand</h3>
+                    <img src="../image/avis3.jpg" alt="avis favorable ">
+                    <p class="value">Réservation en ligne pour plus de rapidité, service et personnel agréable.<br>
+                        Je recommande vivement. </p>
+                </div>
 
+            </div>
 
-
-
-
-
-
-
-
-
-
-
+        </section>
+<!-- end section avis lecteur  -->
     </main>
-
-
-
-
-
-
 
 </body>
 
