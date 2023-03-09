@@ -27,7 +27,7 @@
     <div id="menu-recherche-article">
         <h2 >liste des articles</h2>
 
-        
+        <div id="nav-search">
             <img src="../image/filtre.png" alt="icones de reglages des criteres d'affichage" title="filtre de recherche">
             <nav>
                 <ul>
@@ -51,8 +51,140 @@
                     </li>
                 </ul>
             </nav>
-        
+        </div>
 
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="articleList">
+        <h3>titre du livre</h3>
+        <p>date de publication</p>
+        <p>auteur</p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
     </div>
 
     <div class="articleList">
@@ -71,8 +203,11 @@
 
 
 </main>
+</div>
 
+<!-- </body>
 
+</html> -->
 
 
 

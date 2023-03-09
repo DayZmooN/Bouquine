@@ -39,28 +39,30 @@ a {
 
     &>#logo > img {
         width: 100%;
-      
+      border-bottom: 1px solid black;
 
 
 
     }
 
     &>#menu-admin {
-      
+
+        
 
 
 
         &>nav {
-            
+           
            
 
 
             &>ul {
-              
+                
 
                  &>li {
-                     width: 400px;
-                     height: 79px;
+                     max-width: 400px;
+                     width: 100%;
+                     height: 80px;
                      display: flex;
                      flex-direction: row;
                      justify-content: space-evenly;
@@ -87,14 +89,21 @@ a {
 
 }
 
-#headerDashboard {
+.test {
+    //max-width: 1200px;
     width: 75%;
     height: 100vh;
     float: right;
-    background-color: $fondRose;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    background-color: white;
+    
+    & > #headerDashboard{
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+
+    
     
     
         
@@ -115,6 +124,8 @@ a {
          & > p{
             margin-top: 35px;
          }
+        
+    }
 
         
 
@@ -126,17 +137,34 @@ a {
     
 }
 
+
+/*....................DASHBOARD....................*/
+
+#temporaire{
+    width: 1000px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#dernier-ajout{
+    width: 100%;
+        padding-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+}
 /*....................ARTICLE-ADMIN....................*/
 
 .multitaches{
+    width: 100%;
     
     background-color: $fondRose;
-    //border: 1px solid black;
+    
     
 
 
     & > .multiTitre{
         width: 100%;
+        padding-top: 20px;
         text-transform: uppercase;
         text-align: center;
         
@@ -147,7 +175,64 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-left: 50px;
+        padding-top: 20px;
+       
+        & > form{
+            display: flex;
+            flex-direction: row;
+
+            & > .recherche{
+                padding-left: 10px;
+                border: 0;
+                border-radius: 100px;
+            }
+
+            & > button{
+                width: 50px;
+                height: 50px;
+                border: 0;
+                border-radius: 100px;
+                margin-right: 50px;
+            }
+        }
+        
+    }
+
+    & > #menu-recherche-article{
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 100px;
+        padding-top: 20px;
+
+        & > #nav-search{
+
+            
+
+
+            & > nav{
+                display: none;
+            }
+        }
+    }
+
+
+
+
+
+
+    .articleList{
+        width: 800px;
+        height: 49px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
         border: 1px solid black;
+        background-color: #AAAAAA;
+        margin: 10px 200px;
     }
     
 }

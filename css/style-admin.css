@@ -18,10 +18,12 @@ a {
 }
 #side-bar > #logo > img {
   width: 100%;
+  border-bottom: 1px solid black;
 }
 #side-bar > #menu-admin > nav > ul > li {
-  width: 400px;
-  height: 79px;
+  max-width: 400px;
+  width: 100%;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -38,33 +40,52 @@ a {
   color: black;
 }
 
-#headerDashboard {
+.test {
   width: 75%;
   height: 100vh;
   float: right;
-  background-color: #F2D5D5;
+  background-color: white;
+}
+.test > #headerDashboard {
+  height: 130px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-#headerDashboard > .notif {
+.test > #headerDashboard > .notif {
   width: 32px;
   height: 32px;
   margin: 30px 10px;
 }
-#headerDashboard > .notif:hover {
+.test > #headerDashboard > .notif:hover {
   cursor: pointer;
 }
-#headerDashboard > p {
+.test > #headerDashboard > p {
   margin-top: 35px;
+}
+
+/*....................DASHBOARD....................*/
+#temporaire {
+  width: 1000px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+#dernier-ajout {
+  width: 100%;
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*....................ARTICLE-ADMIN....................*/
 .multitaches {
+  width: 100%;
   background-color: #F2D5D5;
 }
 .multitaches > .multiTitre {
   width: 100%;
+  padding-top: 20px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -73,5 +94,44 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+.multitaches > #menu-article > form {
+  display: flex;
+  flex-direction: row;
+}
+.multitaches > #menu-article > form > .recherche {
+  padding-left: 10px;
+  border: 0;
+  border-radius: 100px;
+}
+.multitaches > #menu-article > form > button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 100px;
+  margin-right: 50px;
+}
+.multitaches > #menu-recherche-article {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 100px;
+  padding-top: 20px;
+}
+.multitaches > #menu-recherche-article > #nav-search > nav {
+  display: none;
+}
+.multitaches .articleList {
+  width: 800px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   border: 1px solid black;
+  background-color: #AAAAAA;
+  margin: 10px 200px;
 }/*# sourceMappingURL=style-admin.css.map */
