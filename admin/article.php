@@ -14,7 +14,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
     <div id="menu-article">
         <form action="" method="post">
-            <input class="recherche" type="search" name="recherche" style="width: 300px; height: 50px;" placeholder="rechercher directement un ouvrage" >
+            <input class="recherche" type="search" name="recherche"  placeholder="rechercher directement un ouvrage" >
             <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
         </form>
         <a href="#">ajouter de nouveaux livres</a>
@@ -30,8 +30,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <li><a href="#">dates</a>
                         <ul>
                             <li><a href="#">+ recent au plus ancien</a></li>
-                        </ul>
+                        
                             <li><a href="#">plus ancien au plus recent</a></li>
+                        </ul>
                     </li>
 
                     <li><a href="#">categories</a>

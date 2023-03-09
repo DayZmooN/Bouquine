@@ -23,8 +23,6 @@ a {
 
 /*....................HEADER-ADMIN INCLUDE....................*/
 
-
-
 /*.....section logo + nav.....*/
 #side-bar {
     max-width: 500px;
@@ -77,9 +75,9 @@ a {
 
 /*.....header + icones.....*/
 .test {
-    //max-width: 1200px;
+    max-width: 1200px;
     width: 75%;
-    height: 100vh;
+    height: 100 vh;
     float: right;
     background-color: white;
     
@@ -107,6 +105,7 @@ a {
 
     & > .multitaches{
         width: 100%;
+        
         background-color: $fondRose;
         
         & > .multiTitre{
@@ -116,10 +115,69 @@ a {
             text-align: center;
             
         }   
-}
+    }
 /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
 
-/*....................DASHBOARD....................*/
+/*....................CSS.CONNEXION....................*/
+
+.multitache > form{
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 100px;
+    margin-left: 350px;
+    background-color: $remplissage ;
+
+    & > .Titre{
+        width: 100%;
+        padding-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    & > #mail, #pass{
+        width: 300px;
+        height: 50px;
+        margin: 30px 100px;
+        //border: 1px solid black;
+        
+        & > input{
+            width: 300px; 
+            height: 50px;
+            border-radius: 50px;
+            border: 0;
+            background-color: white ;
+            padding-left: 10px;
+            margin-top: 20px;
+        
+        }
+       
+
+    }
+
+    & > #connect{
+        width: 100px;
+
+        & > button{
+            width: 100px;
+            height: 25px;
+            margin: 50px 200px;
+            box-shadow: 1px 1px 10px 1px grey;
+            background-color: #81D9E5;
+            border: 0;
+            border-radius: 20px;
+
+        }
+
+        & > button:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+/*....................FIN.CSS.CONNEXION....................*/
+
+/*....................CSS.DASHBOARD....................*/
 
 .multitaches > #temporaire{
     width: 1000px;
@@ -129,78 +187,152 @@ a {
 
 .multitaches > #dernier-ajout{
     width: 100%;
-        padding-top: 20px;
-        text-transform: uppercase;
-        text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
-/*....................CSS.CLASS.INCLUDER....................*/
+/*....................FIN.DASHBOARD....................*/
 
-
+/*....................CSS.ARTICLES....................*/
 
 .multitaches > #menu-article{
-        width: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    padding-top: 20px;
+       
+    & > form{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        margin-left: 50px;
-        padding-top: 20px;
-       
-        & > form{
-            display: flex;
-            flex-direction: row;
+        margin-top: 50px;
 
-            & > .recherche{
-                padding-left: 10px;
-                border: 0;
-                border-radius: 100px;
-            }
-
-            & > button{
-                width: 50px;
-                height: 50px;
-                border: 0;
-                border-radius: 100px;
-                margin-right: 50px;
-            }
+        & > .recherche{
+            padding-left: 10px;
+            border: 0;
+            border-radius: 100px;
+            width: 300px; 
+            height: 50px;
         }
-        
+
+        & > button{
+            width: 50px;
+            height: 50px;
+            border: 0;
+            border-radius: 100px;
+            margin-left: -50px;
+            margin-right: 50px;
+        }
     }
+}
 
 .multitaches > #menu-recherche-article{
-        width: 500px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 100px;
-        padding-top: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 100px;
+    padding-top: 50px;
 
-        & > #nav-search{
+    & > #nav-search{
 
-            
+        & > nav{
+            width: 200px;
+            //border: 1px solid black;
+            //display: none;
+
+            & > ul {
+                width:200px;
+                
+                margin-top: 10px;
+
+                & > li{
+                    width:100px;
+                    height: 50px;
+                    background-color: $grisBtn;
+                    list-style-type: none;
+                    
+                    border-top: 1px solid black;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                    
+                       
+
+                    & > a{
+                        width: 100px;
+                        //height: 50px;
+                        display: block;
+                        margin-top: 16px;
+                        text-align: center;
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    }
+
+                    & > ul{
+                        width:100px;
+                        display: none;
+
+                        & > li{
+                            width:100px;
+                            
+                            list-style-type: none;
+
+                            & > a{
+                                width:100px;
+                                height: 50px;
+                                border: 1px solid black;
+                                float: right;
+
+                            }
+                        }
+                    }
+                }
+                
 
 
-            & > nav{
-                display: none;
             }
         }
     }
-
-
-
-
-
-
-    .articleList{
-        width: 800px;
-        height: 49px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        border: 1px solid black;
-        background-color: #AAAAAA;
-        margin: 10px 200px;
-    }
-    
 }
+
+.multitaches > .articleList{
+    width: 800px;
+    height: 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #AAAAAA;
+    margin: 10px 200px;
+}
+
+/*....................FIN.CSS.ARTICLES....................*/
+
+/*....................CSS.CATEGORIES....................*/
+
+
+
+/*....................FIN.CSS.CATEGORIES....................*/
+
+/*....................CSS.GENRES....................*/
+
+
+
+/*....................FIN.CSS.GENRES....................*/
+
+
+
+
+
+
+
+}//crochet de fermeture de .test (nom temporaire)
 

@@ -94,19 +94,19 @@ if (!empty($_POST)) {
 
         </header>
 
-        <main class="multitaches">
-            <h1 class="multiTitre">connexion</h1>
+        <main class="multitache">
             <form method="post">
-                <div>
-                    <label for="mail">Email-Admin</label>
-                    <input type="email" name="mail" id="mail">
+                <h1 class="Titre">connexion</h1>
+                <div id="mail" >
+                    <label for="mail"></label>
+                    <input type="email" name="mail" id="mail" placeholder="entrez votre mail" >
                 </div>
-                <div>
-                    <label for="password">Mot de passe</label>
-                    <input type="password" name="password" id="password">
+                <div id="pass" >
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="entrez votre mot de passe"  >
                 </div>
-                <div>
-                    <button type="submit">Me Connexion</button>
+                <div id="connect" >
+                    <button type="submit">connect</button>
                 </div>
 
             </form>
