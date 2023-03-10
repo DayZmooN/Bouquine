@@ -19,11 +19,11 @@
             <div class="logo">
                 <a><img src="../image/logo1.png"></a>
             </div>
-            <div class="burger">
+            <!-- <div class="burger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </div> -->
             <div class="nav">
                 <nav id="navbar">
                     <ul>
