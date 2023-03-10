@@ -48,6 +48,7 @@ ul li a {
 header {
     position: sticky;
     top: 0;
+    z-index: 2;
 
 }
 
@@ -257,11 +258,16 @@ h1 {
 
 .container {
     width: 100%;
+    /* display: flex; */
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+}
+.contain-book{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
-
 .item img {
     width: 200px;
     height: 300px;
@@ -1296,3 +1302,9 @@ p.author2 {
     border-radius: 5px;
 }
 /* END SECTION PAGE RESUME */
+
+/* SECTION CATALOGUE */
+#catalogue{
+    width: 100%;
+    height: auto;
+}

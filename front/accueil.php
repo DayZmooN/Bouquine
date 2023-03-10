@@ -33,6 +33,7 @@ require_once './footer-front.php';
                 <h2 class="popular">Les plus populaires </h2>
             </div>
             <div class="container">
+                <div class="contain-book">
                 <div class="item">
                     <a href="#"><img src="../image/star wars.jpg" alt="Star wars de Mike CHEN"></a>
                     <button id="resume" type="button"><a href="#">Résumé</a></button>
@@ -55,7 +56,8 @@ require_once './footer-front.php';
                     <p class="title">DARK ROMANCE</p><br>
                     <p class="author">Péneloppe DOUGLAS</p>
                 </div>
-
+                </div>
+                <div class="contain-book">
                 <div class="item"><img src="../image/circe.jpg" alt="Circé de Madeleine MILLER  "></a>
                     <button id="resume" type="button"><a href="#">Résumé</a></button>
                     <p class="title">CIRCE</p><br>
@@ -79,7 +81,7 @@ require_once './footer-front.php';
                     <p class="title">CREPUSCULE</p><br>
                     <p class="author">Philippe CLAUDEL</p>
                 </div>
-
+                </div>
             </div>
         </section>
 
