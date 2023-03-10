@@ -54,7 +54,8 @@ header {
 
 .header-main {
     width: 100%;
-    background-color: hsl(38, 89%, 48%);;
+    background-color: hsl(38, 89%, 48%);
+    ;
     height: 120px;
     align-items: center;
     display: flex;
@@ -236,8 +237,18 @@ h1 {
 /* SECTION LES PLUS POPULAIRES */
 .populaire {
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-color: #F4B97A;
+
+}
+
+.container {
+    width: 80%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .popular {
@@ -256,33 +267,27 @@ h1 {
     padding-top: 20px;
 }
 
-.container {
+.contain-book {
     width: 100%;
-    /* display: flex; */
-    /* justify-content: space-between;
-    flex-wrap: wrap; */
-}
-.contain-book{
-    width: 100%;
-    height: auto;
+    height: 400px;
     display: flex;
-    justify-content: space-between;
+
+    align-items: baseline;
 }
-.item img {
-    width: 200px;
+
+.contain-book img {
     height: 300px;
     border-radius: 5px;
 }
 
-.item img:hover {
+.contain-book img:hover {
     opacity: 40%;
 }
 
-.item {
-    flex: 0 0 calc(25% - 40px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.item-title {
+    width: 120px;
+    height: 40px;
+
 }
 
 #resume {
@@ -291,14 +296,19 @@ h1 {
     border: 1px solid #F47826;
     border-radius: 50px;
     background-color: #F47826;
-    margin: 10px;
+
 }
 
 #resume a {
     text-decoration: none;
 }
 
-.title .author p {
+p.title {
+    text-align: center;
+
+}
+
+p.author {
     text-align: center;
 }
 
@@ -444,7 +454,7 @@ h1 {
 
 }
 
-.container {
+.container1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -518,7 +528,7 @@ h1 {
 
 }
 
-.container {
+.container2 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -590,7 +600,7 @@ h1 {
     margin-left: 60px;
 }
 
-.container {
+.container3 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1017,13 +1027,13 @@ p.value {
 /* SECTION FOOTER */
 
 footer {
-    
+
     position: fixed;
     z-index: 2;
     bottom: 0;
     left: 0;
     right: 0;
- }
+}
 
 #end {
     width: 100%;
@@ -1301,10 +1311,79 @@ p.author2 {
     height: 350px;
     border-radius: 5px;
 }
+
 /* END SECTION PAGE RESUME */
 
 /* SECTION CATALOGUE */
-#catalogue{
+#catalogue {
     width: 100%;
     height: auto;
+}
+
+.catal {
+    width: 100%;
+    height: 800px;
+}
+
+.searching {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+h2.catalog {
+    font-size: 3rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+
+}
+
+.search1 input {
+    background-color: #f5850ec7;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+
+}
+
+.search1 input[type="search"] {
+    text-align: justify;
+    font-style: italic;
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 800;
+
+}
+
+ img.loupe {
+    width: 50px;
+    height: 50px;
+  
+}
+.loupe-search{
+    width: 50px;
+    height: 50px;
+}
+img.setting {
+    width: 45px;
+    height: 45px;
+    margin-top: 20px;
+}
+
+#catalogue .search1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.item4 img {
+    height: 300px;
 }
