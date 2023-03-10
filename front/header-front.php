@@ -38,7 +38,7 @@
                                 <li><a href='#'>Aventure</a></li>
                             </ul>
                         </li>
-                        <li><a href='#'>Infos pratiques</a></li>
+                        <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
 
                         <!-- barre de recherche  -->
                         <div class="header-search">
