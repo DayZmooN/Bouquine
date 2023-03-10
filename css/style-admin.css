@@ -259,10 +259,19 @@ a {
   height: 50px;
   border-radius: 50px;
   border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 20px;
 }
 .test .multitaches > #formulaire > .edition-date > .date {
   width: 170px;
+  margin-left: 10px;
+}
+.test .multitaches > #formulaire > .edition-date > .publication {
+  width: 70px;
+  height: 70px;
+  padding-left: 1px;
+  text-align: center;
 }
 .test .multitaches > #formulaire > .select {
   width: 500px;

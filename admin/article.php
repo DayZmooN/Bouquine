@@ -74,7 +74,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-<?php include './includeClose.php'; ?>  '
+<?php include './includeClose.php'; ?>  
 
 
 
