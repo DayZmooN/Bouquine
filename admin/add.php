@@ -34,6 +34,40 @@
     }
     ?>
     <h1 class="multiTitre">formulaire ajout de livre</h1>
+    <form action="#" method="POST">
+        <label for="ISBN">ISBN</label>
+        <input type="text" name="ISBN" id="ISBN">
+        <br>
+        <label for="image">Cover</label>
+        <input type="text" name="image" id="image">
+        <br>
+        <label for="title">Titre</label>
+        <input type="text" name="title" id="title">
+        <br>
+        <label for="author">Auteur</label>
+        <input type="text" name="author" id="author">
+        <br>
+        <label for="editor">Éditeur</label>
+        <input type="text" name="editor" id="editor">
+        <br>
+        <label for="collection">Collection</label>
+        <input type="text" name="collection" id="collection">
+        <br>
+        <label for="publication_date">Date <br>publication :</label>
+        <input type="date" name="publication_date" id="publication_date">
+        <br>
+        <label for="genre">Genre</label>
+        <input type="text" name="genre" id="genre">
+        <br>
+        <label for="id_category">Catégorie</label>
+        <input type="number" name="id_category" id="id_category">
+        <br>
+        <label for="summary">Résumé</label>
+        <input type="text" name="summary" id="summary">
+        <br>
+        <button type="submit" name="submit" value="Post">Submit</button>
+    </form>
+</body>
 
     <form id="formulaire" action="#" method="POST">
         <div class="titre-auteur">
