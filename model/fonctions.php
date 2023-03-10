@@ -124,11 +124,11 @@ try{
     $reqdel->bindParam('id',$id, PDO::PARAM_INT);
     $reqdel->execute();
     $_SESSION["success"] = "Votre article à bien été supprimé";
-    header('Location: ./category.php');
+    header('Location: ');
     exit();
 }catch (PDOException $e){
     $_SESSION["error"] = "Votre article n'a pas été supprimé";
-    header('Location: ./category.php');
+    header('Location: ');
     exit();
 }
 ?>

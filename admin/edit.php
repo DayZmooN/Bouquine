@@ -1,6 +1,6 @@
 <?php
 require_once '../connexion.php';
-
+session_start();
 $id = $_GET['id'];
 ?>
 
@@ -46,7 +46,6 @@ $id = $_GET['id'];
                 </tr>
             </tbody>
         <?php }
-    session_start();
     if (isset($_POST['submit'])) {
         $id = $_GET['id'];
         $ISBN = addslashes($_POST['ISBN']);
