@@ -114,6 +114,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,23 +123,27 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-<h1>Liste des articles</h1>
-<h2><a href="add.php">Ajouter un nouvel article</a></h2>
-    <table>
-        <thead>
-            <th>ID</th>
-            <th>ISBN</th>
-            <th>Nom de cover</th>
-            <th>Titre</th>
-            <th>Auteur</th>
-            <th>Éditeur</th>
-            <th>Collection</th>
-            <th>Date de publication</th>
-            <th>Genre</th>
-            <th>id_category</th>
-            <th>Résumé</th>
-            <th>Status</th>
-        </thead>
+    <<<<<<< HEAD <h1>Liste des articles</h1>
+        <h2><a href="add.php">Ajouter un nouvel article</a></h2>
+        =======
+        <h1>Liste des articles</h1>
+        <h2><a href="add.php" class="add">Ajouter un nouvel article</a></h2>
+        >>>>>>> 4a443cc6d4556389edb5dfe9094186c7d5cc8b69
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>ISBN</th>
+                <th>Nom de cover</th>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Éditeur</th>
+                <th>Collection</th>
+                <th>Date de publication</th>
+                <th>Genre</th>
+                <th>id_category</th>
+                <th>Résumé</th>
+                <th>Status</th>
+            </thead>
 
         <tbody>
         <?php
