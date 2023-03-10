@@ -51,110 +51,64 @@
 
         <div class="edition-date">
 
-            
                 <label for="editor"></label>
                 <input type="text" name="editor" id="editor" placeholder="Éditeur">
             
-
-           
-            <input class="date" type="date" name="publication_date" id="publication_date" placeholder="Éditeur">
-                <label for="publication_date">Publication </label>
+                <input class="date" type="date" name="publication_date" id="publication_date" placeholder="Éditeur">
+                <label class="publication"  for="publication_date">Publication </label>
             
-            
-
         </div>
 
         <div class="select">
-        <label for="id_category">Catégorie</label>
-        <select name="id_category" id="id_category">
-            <option value="BD">b.d</option>
-            <option value="Comics">comics</option>
-            <option value="Documentaire">documentaire</option>
-            <option value="Jeunesse">Jeunesse</option>
-            <option value="Mangas">mangas</option>
-            <option value="Poésie">poésie</option>
-            <option value="Romans">romans</option>
-            <option value="Théatre">théatre</option>
-        </select>
 
-        <label for="genre">Genre</label>
-        <select type="text" name="genre" id="genre">
-            <option value="action">action</option>
-            <option value="aventure">aventure</option>
-            <option value="drame">drame</option>
-            <option value="fantasie">fantasie</option>
-            <option value="historique">historique</option>
-            <option value="horreur">horreur</option>
-            <option value="policier">policier</option>
-            <option value="romance">romance</option>
-            <option value="science-fiction">science-fiction</option>
-            <option value="thriller">thriller</option>
-        </select>
+            <label for="id_category">Catégorie</label>
+            <select name="id_category" id="id_category">
+                <option value="BD">b.d</option>
+                <option value="Comics">comics</option>
+                <option value="Documentaire">documentaire</option>
+                <option value="Jeunesse">Jeunesse</option>
+                <option value="Mangas">mangas</option>
+                <option value="Poésie">poésie</option>
+                <option value="Romans">romans</option>
+                <option value="Théatre">théatre</option>
+            </select>
 
-        <label for="collection">Collection</label>
-        <select type="text" name="collection" id="collection" placeholder="">
-            <option value="collection1">collection 1</option>
-            <option value="collection2">collection 2</option>
-            <option value="collection3">collection 3</option>
-            <option value="collection4">collection 4</option>
-            <option value="collection5">collection 5</option>
-        </select>
+            <label for="genre">Genre</label>
+            <select type="text" name="genre" id="genre">
+                <option value="action">action</option>
+                <option value="aventure">aventure</option>
+                <option value="drame">drame</option>
+                <option value="fantasie">fantasie</option>
+                <option value="historique">historique</option>
+                <option value="horreur">horreur</option>
+                <option value="policier">policier</option>
+                <option value="romance">romance</option>
+                <option value="science-fiction">science-fiction</option>
+                <option value="thriller">thriller</option>
+            </select>
 
+            <label for="collection">Collection</label>
+            <select type="text" name="collection" id="collection" placeholder="">
+                <option value="collection1">collection 1</option>
+                <option value="collection2">collection 2</option>
+                <option value="collection3">collection 3</option>
+                <option value="collection4">collection 4</option>
+                <option value="collection5">collection 5</option>
+            </select>
+
+            <label for="image">Couverture</label>
+            <input type="file" name="image" id="image">
+
+        </div>
+
+        <div class="resume">
+
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary"> </textarea>
             
-
         </div>
 
-        <div>
-
-        
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        <label for="image">Couverture</label>
-        <input type="file" name="image" id="image" placeholder="">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <label for="summary">Résumé</label>
-        <input type="text" name="summary" id="summary">
-        
-        <button  type="submit" name="submit" value="Post">Submit</button>
+        <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard"> </a>
     </form>
 
-    </main>
-</div>
-
-</body>
-
-</html>
+<?php include './includeClose.php'; ?>
