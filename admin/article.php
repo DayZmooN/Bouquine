@@ -1,5 +1,5 @@
 <?php
-require_once '../connexion.php';
+require_once './auth.php';
 
 // READ
 // Requête SQL -> Récupère TOUTES les données de TOUS les books de la DB
@@ -11,6 +11,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,8 +20,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-<h1>Liste des articles</h1>
-<h2><a href="add.php">Ajouter un nouvel article</a></h2>
+    <h1>Liste des articles</h1>
+    <h2><a href="add.php">Ajouter un nouvel article</a></h2>
     <table>
         <thead>
             <th>ID</th>
@@ -38,9 +39,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         </thead>
 
         <tbody>
-        <?php
-            foreach($result as $article){
-        ?>
+            <?php
+            foreach ($result as $article) {
+            ?>
                 <tr>
                     <td><?= $article['id_book'] ?></td>
                     <td><?= $article['ISBN'] ?></td>
@@ -54,14 +55,18 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $article['id_category'] ?></td>
                     <td><?= $article['summary'] ?></td>
                     <td><?= $article['status'] ?></td>
-                    <td><a href="edit.php?id=<?= $article['id_book'] ?>">Modifier</a>  <a href="delete.php?id=<?= $article['id_book'] ?>">Supprimer</a>
-                    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
-                    <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a></td>
+                    <td><a href="edit.php?id=<?= $article['id_book'] ?>">Modifier</a> <a href="delete.php?id=<?= $article['id_book'] ?>">Supprimer</a>
+                        <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+                        <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+                    </td>
                 </tr>
-        <?php
+            <?php
             }
-        ?>
+            ?>
         </tbody>
     </table>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
