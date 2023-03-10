@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add</title>
+    <title>Ajouter un livre</title>
 </head>
 
 <body>
     <?php
     require_once '../connexion.php';
+    session_start();
 
     if (isset($_POST['submit'])) {
         $ISBN = addslashes($_POST['ISBN']);
