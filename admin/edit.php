@@ -38,7 +38,7 @@ $id = $_GET['id'];
                         <td><input type="text" name="author" value="<?= $article['author'] ?>"></td>
                         <td><input type="text" name="editor" value="<?= $article['editor'] ?>"></td>
                         <td><input type="text" name="collection" value="<?= $article['collection'] ?>" size="8"></td>
-                        <td><input type="text" name="publication_date" value="<?= $article['publication_date'] ?>"></td>
+                        <td><input type="date" name="publication_date" value="<?= $article['publication_date'] ?>"></td>
                         <td><input type="text" name="genre" value="<?= $article['genre'] ?>"></td>
                         <td><input type="text" name="id_category" value="<?= $article['id_category'] ?>" size="4"></td>
                         <td><input type="text" name="summary" value="<?= $article['summary'] ?>"></td>

@@ -51,8 +51,8 @@
         <label for="collection">Collection</label>
         <input type="text" name="collection" id="collection">
         <br>
-        <label for="publication_date">Date de publication :<br>Année - m.m-j.j</label>
-        <input type="text" name="publication_date" id="publication_date">
+        <label for="publication_date">Date <br>publication :</label>
+        <input type="date" name="publication_date" id="publication_date">
         <br>
         <label for="genre">Genre</label>
         <input type="text" name="genre" id="genre">
