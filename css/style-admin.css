@@ -135,7 +135,6 @@ a {
 .test .multitaches > #temporaire {
   width: 1000px;
   height: 200px;
-  border: 1px solid black;
 }
 .test .multitaches > #dernier-ajout {
   width: 100%;
