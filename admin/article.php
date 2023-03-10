@@ -17,7 +17,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             <input class="recherche" type="search" name="recherche"  placeholder="rechercher directement un ouvrage" >
             <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
         </form>
-        <a href="#">ajouter de nouveaux livres</a>
+        <a href="./add.php">ajouter de nouveaux livres</a>
     </div>
 
     <div id="menu-recherche-article">
@@ -68,16 +68,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-    </main>
-</div>
 
 
 
 
 
 
-
-
+<?php include './includeClose.php'; ?>  '
 
 
 
@@ -167,7 +164,3 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         <?php
             }
         ?>
-        </tbody>
-    </table>
-</body>
-</html> -->
