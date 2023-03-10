@@ -238,13 +238,13 @@ a {
     & > #nav-search{
 
         & > nav{
-            width: 200px;
+            width: 100px;
             //border: 1px solid black;
             //display: none;
 
             & > ul {
-                width:200px;
-                
+                width:100px;
+                margin-left: -40px;
                 margin-top: 10px;
 
                 & > li{
@@ -252,7 +252,6 @@ a {
                     height: 50px;
                     background-color: $grisBtn;
                     list-style-type: none;
-                    
                     border-top: 1px solid black;
                     border-left: 1px solid black;
                     border-right: 1px solid black;
@@ -261,9 +260,10 @@ a {
 
                     & > a{
                         width: 100px;
-                        //height: 50px;
+                        height: 50px;
+                        line-height: 100%;
                         display: block;
-                        margin-top: 16px;
+                        padding-top: 16px;
                         text-align: center;
                         
                         
@@ -276,21 +276,21 @@ a {
                     }
 
                     & > ul{
-                        width:100px;
-                        display: none;
+                        width:99px;
+                        margin-left: 102px;
+                        //display: none;
 
                         & > li{
                             width:100px;
+                    height: 50px;
+                    background-color: $grisBtn;
+                    list-style-type: none;
+                    
+                    border-top: 1px solid black;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+
                             
-                            list-style-type: none;
-
-                            & > a{
-                                width:100px;
-                                height: 50px;
-                                border: 1px solid black;
-                                float: right;
-
-                            }
                         }
                     }
                 }
@@ -315,6 +315,66 @@ a {
 }
 
 /*....................FIN.CSS.ARTICLES....................*/
+/*....................CSS.FORMULAIRE.AJOUT....................*/
+.multitaches > #formulaire{
+    max-width: 1000px;
+    margin-left: 25px;
+    & > .titre-auteur{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 25px;
+
+        & > input{
+            width: 500px; 
+            height: 50px;
+            border-radius: 50px;
+            border: 0;
+            padding-left: 10px;
+            margin-top: 20px;
+            
+        }
+
+    }
+
+    & > .edition-date{
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 25px;
+        
+
+        & > input{
+            
+            width: 240px; //-80
+            height: 50px;
+            border-radius: 50px;
+            border: 0;
+            //padding-left: 10px;
+            margin-top: 20px;
+        }
+            
+        & > .date{
+                width: 170px;
+                
+                
+        }
+        
+
+    }
+
+    & > .select{
+        width: 500px;
+        margin-top: 20px;
+        margin-left: 25px;
+
+    }
+}
+
+
+/*....................FIN.FORMULAIRE.AJOUT....................*/
 
 /*....................CSS.CATEGORIES....................*/
 
