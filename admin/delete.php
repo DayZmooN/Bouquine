@@ -14,4 +14,3 @@ try{
     header('Location: ./article.php');
     exit();
 }
-?>

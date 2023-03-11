@@ -20,60 +20,56 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    <<<<<<< HEAD <h1>Liste des articles</h1>
-        <h2><a href="add.php">Ajouter un nouvel article</a></h2>
-        =======
-        <h1>Liste des articles</h1>
-        <h2><a href="add.php" class="add">Ajouter un nouvel article</a></h2>
-        >>>>>>> 4a443cc6d4556389edb5dfe9094186c7d5cc8b69
-        <table>
-            <thead>
-                <th>ID</th>
-                <th>ISBN</th>
-                <th>Nom de cover</th>
-                <th>Titre</th>
-                <th>Auteur</th>
-                <th>Éditeur</th>
-                <th>Collection</th>
-                <th>Date de publication</th>
-                <th>Genre</th>
-                <th>id_category</th>
-                <th>Résumé</th>
-                <th>Status</th>
-            </thead>
+    <h1>Liste des articles</h1>
+    <h2><a href="add.php" class="add">Ajouter un nouvel article</a></h2>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>ISBN</th>
+            <th>Nom de cover</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Éditeur</th>
+            <th>Collection</th>
+            <th>Date de publication</th>
+            <th>Genre</th>
+            <th>id_category</th>
+            <th>Résumé</th>
+            <th>Status</th>
+        </thead>
 
-            <tbody>
-                <?php
-                foreach ($result as $article) {
-                ?>
-                    <tr>
-                        <td><?= $article['id_book'] ?></td>
-                        <td><?= $article['ISBN'] ?></td>
-                        <td><?= $article['image'] ?></td>
-                        <td><?= $article['title'] ?></td>
-                        <td><?= $article['author'] ?></td>
-                        <td><?= $article['editor'] ?></td>
-                        <td><?= $article['collection'] ?></td>
-                        <td><?= $article['publication_date'] ?></td>
-                        <td><?= $article['genre'] ?></td>
-                        <td><?= $article['id_category'] ?></td>
-                        <td><?= $article['summary'] ?></td>
-                        <td><?= $article['status'] ?></td>
+        <tbody>
+            <?php
+            foreach ($result as $article) {
+            ?>
+                <tr>
+                    <td><?= $article['id_book'] ?></td>
+                    <td><?= $article['ISBN'] ?></td>
+                    <td><?= $article['image'] ?></td>
+                    <td><?= $article['title'] ?></td>
+                    <td><?= $article['author'] ?></td>
+                    <td><?= $article['editor'] ?></td>
+                    <td><?= $article['collection'] ?></td>
+                    <td><?= $article['publication_date'] ?></td>
+                    <td><?= $article['genre'] ?></td>
+                    <td><?= $article['id_category'] ?></td>
+                    <td><?= $article['summary'] ?></td>
+                    <td><?= $article['status'] ?></td>
 
-                        <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
+                    <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
 
-                            <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
+                        <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
 
-                            <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+                        <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
 
-                            <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
-                        </td>
-                    </tr>
-                <?php
-                }
-                ?>
-            </tbody>
-            <script src="./JS/admin.js"></script>
+                        <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+                    </td>
+                </tr>
+            <?php
+            }
+            ?>
+        </tbody>
+        <script src="./JS/admin.js"></script>
 </body>
 
 </html>
