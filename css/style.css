@@ -1693,5 +1693,74 @@ label[for="accept"] {
     vertical-align: middle;
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-
 }
+
+/* END INSCRIPTION */
+
+/* PAGE RECHERCHE AVANCEE */
+
+.filter {
+    max-width: auto;
+    height: auto;
+}
+
+.filter-container {
+    margin: 20px auto;
+    max-width: 600px;
+    height: 1000px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+input[type="number"] {
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    padding: 10px;
+    background-color: #74EC8D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+/* END PAGE RECHERCHE AVANCEE */
+
+/* DASHBOARD USER */
