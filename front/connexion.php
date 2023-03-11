@@ -28,10 +28,10 @@
      </div>
      <p class="email">ou utiliser mon adresse e-mail :</p>
 
-     <form>
+     <form action="#" method="POST">
      <div class="inputs">
-       <input type="email" placeholder="Email" />
-       <input type="password" placeholder="Mot de passe">
+       <input type="email" id="mail" name="mail" placeholder="Email" />
+       <input type="password" id="password" name="password" placeholder="Mot de passe">
      </div>
      
      <p class="inscription"><a href="#">J'ai oublié mon mot de passe</a><br>
