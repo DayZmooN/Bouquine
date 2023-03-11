@@ -1463,7 +1463,7 @@ h2.infos {
 ol.consignes {
     list-style-type: decimal;
     text-align: center;
-    font-family: 'QuattrocentoSans-Regular',sans-serif;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
 
 }
@@ -1520,7 +1520,7 @@ form {
 
 h2.connect {
     font-size: 2rem;
-    font-family: 'QuattrocentoSans-Regular',sans-serif;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
     text-align: center;
     color: #eb7371;
@@ -1556,7 +1556,7 @@ p.email {
     text-align: center;
     margin-top: 120px;
     font-size: 1.3rem;
-    font-family: 'QuattrocentoSans-Regular',sans-serif;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 600;
 }
 
@@ -1611,6 +1611,7 @@ form button {
     justify-content: space-around;
     align-items: center;
 }
+
 .img-book {
     /* width: 50%; */
     height: 600px;
@@ -1627,14 +1628,21 @@ form button {
     height: 100%;
     margin-top: 20px;
 }
+
 .form-logo {
     width: 30%;
- }
-h2.sus-form{
+}
+
+h2.sus-form {
     font-size: 1.8rem;
     font-family: 'QuattrocentoSans-Bold';
     font-weight: 400;
-  }
+}
+
+.input {
+    height: 550px;
+    margin-bottom: 50px;
+}
 
 .input label {
     display: block;
@@ -1663,6 +1671,27 @@ button[type="submit"] {
     background-color: #74EC8D;
     padding: 10px 20px;
     border-radius: 5px;
-    /* border: none; */
     cursor: pointer;
+}
+
+.checkbox {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+label[for="accept"] {
+    display: inline-block;
+    /* margin: 0; */
+    vertical-align: middle;
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+
 }

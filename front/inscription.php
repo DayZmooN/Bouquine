@@ -16,7 +16,7 @@
 <body>
     <section id="suscribe">
         <div class="container-suscribe">
-        <!-- <h2 class="sus-form">Créer un compte</h2> -->
+            <!-- <h2 class="sus-form">Créer un compte</h2> -->
             <div class="img-book">
                 <img src="../image/etudiant.jpg" alt="Un étudiant porte un livre dnas les mains">
 
@@ -37,12 +37,14 @@
                         <input type="email" id="mail" name="mail" placeholder="Adresse mail" />
                         <label>Confirmez votre e-mail</label>
                         <input type="email" id="mail" name="mail" placeholder="Confirmation mail" />
-                        <label>Mot de passe(8 caractères minimum requis )</label>
-                        <input type="password" id="password" name="password" placeholder="Mot de passe"
-                        minlength="8" required>
+                        <label>Mot de passe (8 caractères minimum requis )</label>
+                        <input type="password" id="password" name="password" placeholder="Mot de passe" minlength="8" required>
+                       <div class="checkbox">
+                        <input type="checkbox" id="accept" required>
+                        <label for="accept">J'accepte les conditions générales de confidentialité<br>
+                    et d'utilisation </label>
                     </div>
-
-
+                    </div>
                     <div align="center">
                         <button type="submit"><a href="#"> Créer mon compte</button></a>
                     </div>
@@ -50,27 +52,7 @@
 
             </div>
 
-
-
-
-
-
         </div class="container-suscribe">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
 
 
