@@ -38,12 +38,13 @@ a {
 #side-bar > #menu-admin > nav > ul > li > a {
   width: 150px;
   color: black;
+  font-size: 1.4rem;
 }
 
 /*.....fin.....*/
 /*.....header + icones.....*/
 .test {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 75%;
   height: 100 vh;
   float: right;
@@ -55,12 +56,13 @@ a {
   /*....................FIN.DASHBOARD....................*/
   /*....................CSS.ARTICLES....................*/
   /*....................FIN.CSS.ARTICLES....................*/
-  /*....................CSS.FORMULAIRE.AJOUT....................*/
+  /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
   /*....................FIN.FORMULAIRE.AJOUT....................*/
   /*....................CSS.CATEGORIES....................*/
   /*....................FIN.CSS.CATEGORIES....................*/
   /*....................CSS.GENRES....................*/
   /*....................FIN.CSS.GENRES....................*/
+  /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
 }
 .test > #headerDashboard {
   height: 130px;
@@ -71,13 +73,13 @@ a {
 .test > #headerDashboard > .notif {
   width: 32px;
   height: 32px;
-  margin: 30px 10px;
+  margin: 50px 10px;
 }
 .test > #headerDashboard > .notif:hover {
   cursor: pointer;
 }
 .test > #headerDashboard > p {
-  margin-top: 35px;
+  margin-top: 55px;
 }
 .test > .multitaches {
   width: 100%;
@@ -85,7 +87,7 @@ a {
 }
 .test > .multitaches > .multiTitre {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 40px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -103,12 +105,14 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-.test .multitache > form > #mail, .test .multitache > form #pass {
+.test .multitache > form > #mail,
+.test .multitache > form #pass {
   width: 300px;
   height: 50px;
   margin: 30px 100px;
 }
-.test .multitache > form > #mail > input, .test .multitache > form #pass > input {
+.test .multitache > form > #mail > input,
+.test .multitache > form #pass > input {
   width: 300px;
   height: 50px;
   border-radius: 50px;
@@ -135,6 +139,8 @@ a {
 .test .multitaches > #temporaire {
   width: 1000px;
   height: 200px;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 .test .multitaches > #dernier-ajout {
   width: 100%;
@@ -170,6 +176,16 @@ a {
   margin-left: -50px;
   margin-right: 50px;
 }
+.test .multitaches > #menu-article > a {
+  width: 300px;
+  margin-top: 50px;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: #FFDAA4;
+}
 .test .multitaches > #menu-recherche-article {
   width: 500px;
   display: flex;
@@ -178,43 +194,108 @@ a {
   margin-left: 100px;
   padding-top: 50px;
 }
+.test .multitaches > #menu-recherche-article > h2, .test .multitaches > #menu-recherche-article img {
+  margin-left: 50px;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > img:hover + nav {
+  display: block;
+  margin-right: 50px;
+}
 .test .multitaches > #menu-recherche-article > #nav-search > nav {
-  width: 100px;
+  display: none;
 }
 .test .multitaches > #menu-recherche-article > #nav-search > nav > ul {
-  width: 100px;
-  margin-left: -40px;
-  margin-top: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li {
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree {
   width: 100px;
   height: 50px;
   background-color: #696969;
   list-style-type: none;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li > a {
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuDate {
+  display: block;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuCategorie {
+  display: block;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuGenre {
+  display: block;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > a {
   width: 100px;
   height: 50px;
-  line-height: 100%;
-  display: block;
-  padding-top: 16px;
+  line-height: 50px;
   text-align: center;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li > ul {
-  width: 99px;
-  margin-left: 102px;
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate {
+  position: absolute;
+  width: 100px;
+  margin-left: 200px;
+  display: none;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > li > ul > li {
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate > li {
   width: 100px;
   height: 50px;
   background-color: #696969;
   list-style-type: none;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-top: 0;
+  margin-left: 0;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie {
+  position: absolute;
+  width: 100px;
+  margin-left: 200px;
+  text-align: center;
+  display: none;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie > li {
+  width: 100px;
+  height: 50px;
+  background-color: #696969;
+  list-style-type: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-top: -78px;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre {
+  position: absolute;
+  width: 100px;
+  margin-left: 200px;
+  text-align: center;
+  display: none;
+}
+.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre > li {
+  width: 100px;
+  height: 50px;
+  background-color: #696969;
+  list-style-type: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-top: -130px;
 }
 .test .multitaches > .articleList {
   width: 800px;
@@ -228,52 +309,189 @@ a {
   margin: 10px 200px;
 }
 .test .multitaches > #formulaire {
-  max-width: 1000px;
-  margin-left: 25px;
+  max-width: 1080px;
+  width: 100%;
+  height: 520px;
+  background-color: #FFF5EE;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  margin-left: 60px;
+  margin-top: 20px;
 }
-.test .multitaches > #formulaire > .titre-auteur {
-  width: 50%;
+.test .multitaches > #formulaire > #gauche {
+  width: 60%;
+}
+.test .multitaches > #formulaire > #gauche > .titre-auteur {
+  width: 100% x;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 25px;
+  margin-right: 50px;
 }
-.test .multitaches > #formulaire > .titre-auteur > input {
-  width: 500px;
+.test .multitaches > #formulaire > #gauche > .titre-auteur > input {
+  width: 100%;
   height: 50px;
   border-radius: 50px;
   border: 0;
   padding-left: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
+  background-color: #FFDAA4;
 }
-.test .multitaches > #formulaire > .edition-date {
-  width: 500px;
+.test .multitaches > #formulaire > #gauche > .edition-date {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-left: 25px;
 }
-.test .multitaches > #formulaire > .edition-date > input {
-  width: 240px;
+.test .multitaches > #formulaire > #gauche > .edition-date > input {
+  width: 100%;
   height: 50px;
   border-radius: 50px;
   border: 0;
   padding-left: 10px;
+  margin-top: 40px;
+  margin-right: 60px;
+  background-color: #FFDAA4;
+}
+.test .multitaches > #formulaire > #gauche > .edition-date > .date {
+  width: 100%;
   padding-right: 10px;
-  margin-top: 20px;
+  margin-left: -20px;
+  background-color: #FFDAA4;
 }
-.test .multitaches > #formulaire > .edition-date > .date {
-  width: 170px;
-  margin-left: 10px;
+.test .multitaches > #formulaire > #gauche > .edition-date > .publication {
+  padding-right: 40px;
+  margin-top: 55px;
 }
-.test .multitaches > #formulaire > .edition-date > .publication {
-  width: 70px;
-  height: 70px;
-  padding-left: 1px;
-  text-align: center;
-}
-.test .multitaches > #formulaire > .select {
-  width: 500px;
-  margin-top: 20px;
+.test .multitaches > #formulaire > #gauche > .multiSelect {
+  width: 100%;
+  padding-top: 40px;
   margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.test .multitaches > #formulaire > #gauche > .multiSelect > .select > select {
+  border-radius: 10px;
+  border-color: #FFDAA4;
+}
+.test .multitaches > #formulaire > #droite {
+  width: 40%;
+}
+.test .multitaches > #formulaire > #droite > .resume {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.test .multitaches > #formulaire > #droite > .resume > .label1 {
+  margin-top: 20px;
+}
+.test .multitaches > #formulaire > #droite > .resume > .label2 {
+  margin-top: 20px;
+}
+.test .multitaches > #formulaire > #droite > .resume > textarea {
+  border-radius: 10px;
+  border-color: #FFDAA4;
+  margin-top: 20px;
+}
+.test .multitaches > #formulaire > #droite > .resume > .choixImg {
+  width: 250px;
+  height: 70px;
+  margin-top: 20px;
+}
+.test .multitaches > #formulaire > #droite > a {
+  margin-left: 300px;
+}
+.test .multitaches > .categorieList {
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 350px;
+  text-align: center;
+  background-color: #FFDAA4;
+}
+.test .multitaches > .categorieList > h2 {
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+.test .multitaches > .categorieList > ol {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 150px;
+  list-style-type: none;
+}
+.test .multitaches > .categorieList > ol > li {
+  flex-basis: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.test .multitaches > .categorieList > button {
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #696969;
+  border-radius: 25px;
+}
+.test .multitaches > .categorieList > button > a {
+  color: white;
+}
+.test .multitaches > .categorieGenre {
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 350px;
+  text-align: center;
+  background-color: #FFDAA4;
+}
+.test .multitaches > .categorieGenre > h2 {
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+.test .multitaches > .categorieGenre > ol {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 150px;
+  list-style-type: none;
+}
+.test .multitaches > .categorieGenre > ol > li {
+  flex-basis: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.test .multitaches > .categorieGenre > button {
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #696969;
+  border-radius: 25px;
+}
+.test .multitaches > .categorieGenre > button > a {
+  color: white;
+}
+.test .multitaches > #ajout-categorie {
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+}
+.test .multitaches > #ajout-categorie > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=style-admin.css.map */

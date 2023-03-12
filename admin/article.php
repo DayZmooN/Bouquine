@@ -26,23 +26,22 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         <div id="nav-search">
             <img src="../image/filtre.png" alt="icones de reglages des criteres d'affichage" title="filtre de recherche">
             <nav>
-                <ul>
-                    <li><a href="#">dates</a>
-                        <ul>
-                            <li><a href="#">+ recent au plus ancien</a></li>
-                        
-                            <li><a href="#">plus ancien au plus recent</a></li>
+                <ul  >
+                    <li class="entree">
+                        <a href="#">dates</a>
+                        <ul class="sousMenuDate">
+                            <li><a href="#">+ recent </a></li>
                         </ul>
                     </li>
-
-                    <li><a href="#">categories</a>
-                        <ul>
+                
+                    <li class="entree"><a href="#">categories</a>
+                        <ul class="sousMenuCategorie">
                             <li><a href="#">liste des catégories</a></li>
                         </ul>
                     </li>
-
-                    <li><a href="#">genres</a>
-                        <ul>
+                
+                    <li class="entree"><a href="#">genres</a>
+                        <ul class="sousMenuGenre">
                             <li><a href="#">liste des genres</a></li>
                         </ul>
                     </li>
