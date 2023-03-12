@@ -19,7 +19,7 @@
     </ol>
 
 
-    <button> <a href="#">modifier / supprimer</a> </button>
+    <button> <a href="./addCategorie.php">modifier / supprimer</a> </button>
 
 
 

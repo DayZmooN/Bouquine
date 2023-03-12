@@ -1,4 +1,4 @@
-$fondRose : #F2D5D5;
+$fondRose : #c8c8c8;
 $remplissage : #FFDAA4;
 $grisBtn : #696969;
 $grisFiltre : #807373;
@@ -79,13 +79,14 @@ a {
     width: 75%;
     height: 100 vh;
     float: right;
-    background-color: white;
+    background-color: $fondRose;
 
     &>#headerDashboard {
         height: 130px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        background-color: white;
 
         &>.notif {
             width: 32px;
@@ -105,7 +106,7 @@ a {
 
     &>.multitaches {
         width: 100%;
-
+        height: 82vh;
         background-color: $fondRose;
 
         &>.multiTitre {
@@ -113,6 +114,7 @@ a {
             padding-top: 40px;
             text-transform: uppercase;
             text-align: center;
+            background-color: $fondRose;
 
         }
     }
@@ -607,25 +609,230 @@ a {
 /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
 
     .multitaches > #ajout-categorie{
-        width: 100%;
-        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         margin-top: 100px;
+
         
         
-        & > form{
-            
+        
+        & > .ajout{
+
+            width: 300px;
+            height: 300px;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow:1px 1px 10px 1px grey ;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+
+            & > .newCat{
+                width: 200px;
+                height: 50px;
+                border: 0;
+                border-radius: 25px;
+                text-align: center;
+                font-size: 1.1rem;
+                
+            }
+            
+
+            & > button{
+                width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+
+                & > a{
+                    font-size: 1.1rem;
+                   color: white;
+                }
+                
+            }
+        }
+
+        & > .modifierSupp {
+            width: 500px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow:1px 1px 10px 1px grey ;
+
+            & > #selection{
+                width: 350px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                & > #id_category {
+                    width: 150px;
+                    height: 30px;
+                  margin-right: 10px;
+                  border-radius: 50px;
+                  border-color: $remplissage;
+                  text-align: center;
+                  font-size: 1.1rem;
+                }
+                
+                & > .modifCat {
+                  margin-right: 10px;
+                  width: 150px;
+                  height: 30px;
+                  text-align: center;
+                  font-size: 1.1rem;
+                  border-radius: 50px;
+                  border: 0;
+                }
+            }
+            
+            
+            
+            button {
+              margin-right: 10px;
+              width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+
+                & > a{
+                    font-size: 1.1rem;
+                   color: white;
+                }
+            }
         }
     }
 
+    .multitaches > #ajout-genre{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
 
+        
+        
+        
+        & > .ajout{
 
+            width: 300px;
+            height: 300px;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow:1px 1px 10px 1px grey ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
 
+            & > .newGenre{
+                width: 200px;
+                height: 50px;
+                border: 0;
+                border-radius: 25px;
+                text-align: center;
+                font-size: 1.1rem;
+                
+            }
+            
 
+            & > button{
+                width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
 
+                & > a{
+                    font-size: 1.1rem;
+                   color: white;
+                }
+                
+            }
+        }
+
+        & > .modifierSupp {
+            width: 500px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow:1px 1px 10px 1px grey ;
+
+            & > #selection{
+                width: 350px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                & > #genre {
+                    width: 150px;
+                    height: 30px;
+                  margin-right: 10px;
+                  border-radius: 50px;
+                  border-color: $remplissage;
+                  text-align: center;
+                  font-size: 1.1rem;
+                }
+                
+                & > .modifGenre {
+                  margin-right: 10px;
+                  width: 150px;
+                  height: 30px;
+                  text-align: center;
+                  font-size: 1.1rem;
+                  border-radius: 50px;
+                  border: 0;
+                }
+            }
+            
+            
+            
+            button {
+              margin-right: 10px;
+              width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+
+                & > a{
+                    font-size: 1.1rem;
+                   color: white;
+                }
+            }
+        }
+    }
 
 }
+    
+
+
+
+
+
+
+
+
 
 //crochet de fermeture de .test (nom temporaire)

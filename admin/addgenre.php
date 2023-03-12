@@ -63,17 +63,19 @@ include './header-admin.php';
 // </form> -->
 
 
-<h1 class="multiTitre">modifications catégories</h1>
+<h1 class="multiTitre">modifications genres</h1>
 
 <div id="ajout-genre">
-     <form action="" method="post">
-          <div class="ajout">
-               <input class="recherche" type="search" name="recherche" placeholder="nouveau genre">
-               <button><a href="./add.php">ajouter</a></button>
-          </div>
+    <form class="ajout" action="" method="post">
 
-          <div class="modifierSupp">
-               <select name="id_category" id="id_category">
+        <input class="newGenre" type="text" name="recherche" placeholder="nouveau genre">
+        <button><a href="./add.php">ajouter</a></button>
+
+    </form>
+
+    <form class="modifierSupp" action="" method="post">
+        <div id="selection">
+                <select type="text" name="genre" id="genre">
                     <option value="">selectionner</option>
                     <option value="action">action</option>
                     <option value="aventure">aventure</option>
@@ -85,13 +87,17 @@ include './header-admin.php';
                     <option value="romance">romance</option>
                     <option value="science-fiction">science-fiction</option>
                     <option value="thriller">thriller</option>
-               </select>
+                </select>
+            
+            <input class="modifGenre" type="search" name="recherche" placeholder="nouveau nom">
+        </div>
 
-               <input class="recherche" type="search" name="recherche" placeholder="">
-               <button><a href="./add.php">modifier</a></button>
-               <button><a href="./add.php">supprimer</a></button>
-          </div>
-     </form>
+        <div id="choice">
+            <button><a href="./add.php">modifier</a></button>
+            <button><a href="./add.php">supprimer</a></button>
+        </div>
+
+    </form>
 
 </div>
 

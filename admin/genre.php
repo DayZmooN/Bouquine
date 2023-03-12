@@ -29,7 +29,7 @@
     </ol>
 
 
-    <button> <a href="#">modifier / supprimer</a> </button>
+    <button> <a href="./addgenre.php">modifier / supprimer</a> </button>
 
 
 
