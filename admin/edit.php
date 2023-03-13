@@ -73,7 +73,7 @@ require_once '../connexion.php';
         </form>
 </section> -->
 
-<?= $article['title']?>
+
 
 
 <?php include './header-admin.php';?>
@@ -81,32 +81,35 @@ require_once '../connexion.php';
 
 <h1 class="multiTitre">formulaire modification de livre</h1>
 
-    <form id="formulaire" action="#" method="POST">
-        <div class="titre-auteur">
+<form id="formulaire" action="#" method="POST">
 
-            <label for="title"></label>
-            <input type="text" name="title" id="title" placeholder="TITRE">
+<div id="gauche">
+    <div class="titre-auteur">
 
-            <label for="author"></label>
-            <input type="text" name="author" id="author" placeholder="Auteur">
+        <label for="title"></label>
+        <input type="text" name="title" id="title" placeholder="<?= $article['title']?>">
 
-            <label for="ISBN"></label>
-            <input type="text" name="ISBN" id="ISBN" placeholder="ISBN" >
+        <label for="author"></label>
+        <input type="text" name="author" id="author" placeholder="Auteur">
 
-        </div>
+        <label for="ISBN"></label>
+        <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
 
-        <div class="edition-date">
+    </div>
 
-                <label for="editor"></label>
-                <input type="text" name="editor" id="editor" placeholder="Éditeur">
-            
-                <input class="date" type="date" name="publication_date" id="publication_date" placeholder="Éditeur">
-                <label class="publication"  for="publication_date">Publication </label>
-            
-        </div>
+    <div class="edition-date">
+
+        <label for="editor"></label>
+        <input type="text" name="editor" id="editor" placeholder="Éditeur">
+
+        <label class="publication" for="publication_date">Publication</label>
+        <input class="date" type="date" name="publication_date" id="publication_date">
+
+    </div>
+
+    <div class="multiSelect">
 
         <div class="select">
-
             <label for="id_category">Catégorie</label>
             <select name="id_category" id="id_category">
                 <option value="BD">b.d</option>
@@ -118,7 +121,9 @@ require_once '../connexion.php';
                 <option value="Romans">romans</option>
                 <option value="Théatre">théatre</option>
             </select>
+        </div>
 
+        <div class="select">
             <label for="genre">Genre</label>
             <select type="text" name="genre" id="genre">
                 <option value="action">action</option>
@@ -132,7 +137,10 @@ require_once '../connexion.php';
                 <option value="science-fiction">science-fiction</option>
                 <option value="thriller">thriller</option>
             </select>
+        </div>
 
+
+        <div class="select">
             <label for="collection">Collection</label>
             <select type="text" name="collection" id="collection" placeholder="">
                 <option value="collection1">collection 1</option>
@@ -141,20 +149,25 @@ require_once '../connexion.php';
                 <option value="collection4">collection 4</option>
                 <option value="collection5">collection 5</option>
             </select>
-
-            <label for="image">Couverture</label>
-            <input type="file" name="image" id="image">
-
         </div>
 
-        <div class="resume">
 
-            <label for="summary">Résumé</label>
-            <textarea type="text" name="summary" id="summary"> </textarea>
-            
-        </div>
+    </div>
+</div>
 
-        <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard"> </a>
-    </form>
+<div id="droite">
+    <div class="resume">
+
+        <label class="label1" for="summary">Résumé</label>
+        <textarea type="text" name="summary" id="summary" rows="20" cols="50"> </textarea>
+
+        <label class="label2" for="image">Couverture</label>
+        <input class="choixImg" type="file" name="image" id="image">
+
+    </div>
+
+    <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard" title="ajouter un nouveau livre"> </a>
+</div>
+</form>
 
     <?php include './includeClose.php'  ?>

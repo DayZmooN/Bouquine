@@ -43,7 +43,7 @@ a {
 
 /*.....fin.....*/
 /*.....header + icones.....*/
-.test {
+.corp {
   max-width: 1300px;
   width: 75%;
   height: 100 vh;
@@ -63,38 +63,43 @@ a {
   /*....................CSS.GENRES....................*/
   /*....................FIN.CSS.GENRES....................*/
   /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
+  /*....................fin.formulaire....................*/
+  /*....................CSS.USER....................*/
+  /*....................CSS.USER.FIN....................*/
+  /*....................CSS.NEWSLETTER....................*/
 }
-.test > #headerDashboard {
-  height: 130px;
+.corp > #headerDashboard {
+  height: 131px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   background-color: white;
+  border-bottom: 1px solid black;
 }
-.test > #headerDashboard > .notif {
+.corp > #headerDashboard > .notif {
   width: 32px;
   height: 32px;
   margin: 50px 10px;
 }
-.test > #headerDashboard > .notif:hover {
+.corp > #headerDashboard > .notif:hover {
   cursor: pointer;
 }
-.test > #headerDashboard > p {
+.corp > #headerDashboard > p {
   margin-top: 55px;
 }
-.test > .multitaches {
+.corp > .multitaches {
   width: 100%;
   height: 82vh;
   background-color: #c8c8c8;
 }
-.test > .multitaches > .multiTitre {
+.corp > .multitaches > .multiTitre {
   width: 100%;
   padding-top: 40px;
   text-transform: uppercase;
   text-align: center;
   background-color: #c8c8c8;
 }
-.test .multitache > form {
+.corp .connexion {
   width: 500px;
   height: 350px;
   border-radius: 15px;
@@ -102,20 +107,18 @@ a {
   margin-left: 350px;
   background-color: #FFDAA4;
 }
-.test .multitache > form > .Titre {
+.corp .connexion > .Titre {
   width: 100%;
   padding-top: 20px;
   text-transform: uppercase;
   text-align: center;
 }
-.test .multitache > form > #mail,
-.test .multitache > form #pass {
+.corp .connexion > #mail, .corp .connexion #pass {
   width: 300px;
   height: 50px;
   margin: 30px 100px;
 }
-.test .multitache > form > #mail > input,
-.test .multitache > form #pass > input {
+.corp .connexion > #mail > input, .corp .connexion #pass > input {
   width: 300px;
   height: 50px;
   border-radius: 50px;
@@ -124,10 +127,10 @@ a {
   padding-left: 10px;
   margin-top: 20px;
 }
-.test .multitache > form > #connect {
+.corp .connexion > #connect {
   width: 100px;
 }
-.test .multitache > form > #connect > button {
+.corp .connexion > #connect > button {
   width: 100px;
   height: 25px;
   margin: 50px 200px;
@@ -136,22 +139,21 @@ a {
   border: 0;
   border-radius: 20px;
 }
-.test .multitache > form > #connect > button:hover {
+.corp .connexion > #connect > button:hover {
   cursor: pointer;
 }
-.test .multitaches > #temporaire {
+.corp .multitaches > #temporaire {
   width: 1000px;
   height: 200px;
   margin-top: 25px;
   margin-left: 25px;
 }
-.test .multitaches > #dernier-ajout {
+.corp .multitaches > #dernier-ajout {
   width: 100%;
-  padding-top: 20px;
   text-transform: uppercase;
   text-align: center;
 }
-.test .multitaches > #menu-article {
+.corp .multitaches > #menu-article {
   width: 50%;
   display: flex;
   flex-direction: row;
@@ -159,19 +161,19 @@ a {
   margin-left: 50px;
   padding-top: 20px;
 }
-.test .multitaches > #menu-article > form {
+.corp .multitaches > #menu-article > form {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
 }
-.test .multitaches > #menu-article > form > .recherche {
+.corp .multitaches > #menu-article > form > .recherche {
   padding-left: 10px;
   border: 0;
   border-radius: 100px;
   width: 300px;
   height: 50px;
 }
-.test .multitaches > #menu-article > form > button {
+.corp .multitaches > #menu-article > form > button {
   width: 50px;
   height: 50px;
   border: 0;
@@ -179,7 +181,7 @@ a {
   margin-left: -50px;
   margin-right: 50px;
 }
-.test .multitaches > #menu-article > a {
+.corp .multitaches > #menu-article > a {
   width: 300px;
   margin-top: 50px;
   color: white;
@@ -189,7 +191,7 @@ a {
   border-radius: 25px;
   background-color: #FFDAA4;
 }
-.test .multitaches > #menu-recherche-article {
+.corp .multitaches > #menu-recherche-article {
   width: 500px;
   display: flex;
   flex-direction: row;
@@ -197,27 +199,28 @@ a {
   margin-left: 100px;
   padding-top: 50px;
 }
-.test .multitaches > #menu-recherche-article > h2, .test .multitaches > #menu-recherche-article img {
+.corp .multitaches > #menu-recherche-article > h2,
+.corp .multitaches > #menu-recherche-article img {
   margin-left: 50px;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > img {
+.corp .multitaches > #menu-recherche-article > #nav-search > img {
   width: 32px;
   height: 32px;
   cursor: pointer;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > img:hover + nav {
+.corp .multitaches > #menu-recherche-article > #nav-search > img:hover + nav {
   display: block;
   margin-right: 50px;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav {
   display: none;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree {
   width: 100px;
   height: 50px;
   background-color: #696969;
@@ -228,28 +231,28 @@ a {
   align-items: center;
   cursor: pointer;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuDate {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuDate {
   display: block;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuCategorie {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuCategorie {
   display: block;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuGenre {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuGenre {
   display: block;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > a {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > a {
   width: 100px;
   height: 50px;
   line-height: 50px;
   text-align: center;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate {
   position: absolute;
   width: 100px;
   margin-left: 200px;
   display: none;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate > li {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate > li {
   width: 100px;
   height: 50px;
   background-color: #696969;
@@ -262,14 +265,14 @@ a {
   margin-top: 0;
   margin-left: 0;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie {
   position: absolute;
   width: 100px;
   margin-left: 200px;
   text-align: center;
   display: none;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie > li {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie > li {
   width: 100px;
   height: 50px;
   background-color: #696969;
@@ -281,14 +284,14 @@ a {
   position: static;
   margin-top: -78px;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre {
   position: absolute;
   width: 100px;
   margin-left: 200px;
   text-align: center;
   display: none;
 }
-.test .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre > li {
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre > li {
   width: 100px;
   height: 50px;
   background-color: #696969;
@@ -300,7 +303,7 @@ a {
   position: static;
   margin-top: -130px;
 }
-.test .multitaches > .articleList {
+.corp .multitaches > .articleList {
   width: 800px;
   height: 49px;
   display: flex;
@@ -311,10 +314,10 @@ a {
   background-color: #AAAAAA;
   margin: 10px 200px;
 }
-.test .multitaches > #formulaire {
+.corp .multitaches > #formulaire {
   max-width: 1080px;
   width: 100%;
-  height: 520px;
+  height: 500px;
   background-color: #FFF5EE;
   display: flex;
   flex-direction: row;
@@ -322,10 +325,10 @@ a {
   margin-left: 60px;
   margin-top: 20px;
 }
-.test .multitaches > #formulaire > #gauche {
+.corp .multitaches > #formulaire > #gauche {
   width: 60%;
 }
-.test .multitaches > #formulaire > #gauche > .titre-auteur {
+.corp .multitaches > #formulaire > #gauche > .titre-auteur {
   width: 100% x;
   display: flex;
   flex-direction: column;
@@ -333,7 +336,7 @@ a {
   margin-left: 25px;
   margin-right: 50px;
 }
-.test .multitaches > #formulaire > #gauche > .titre-auteur > input {
+.corp .multitaches > #formulaire > #gauche > .titre-auteur > input {
   width: 100%;
   height: 50px;
   border-radius: 50px;
@@ -342,14 +345,14 @@ a {
   margin-top: 40px;
   background-color: #FFDAA4;
 }
-.test .multitaches > #formulaire > #gauche > .edition-date {
+.corp .multitaches > #formulaire > #gauche > .edition-date {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-left: 25px;
 }
-.test .multitaches > #formulaire > #gauche > .edition-date > input {
+.corp .multitaches > #formulaire > #gauche > .edition-date > input {
   width: 100%;
   height: 50px;
   border-radius: 50px;
@@ -359,33 +362,32 @@ a {
   margin-right: 60px;
   background-color: #FFDAA4;
 }
-.test .multitaches > #formulaire > #gauche > .edition-date > .date {
+.corp .multitaches > #formulaire > #gauche > .edition-date > .date {
   width: 100%;
   padding-right: 10px;
   margin-left: -20px;
   background-color: #FFDAA4;
 }
-.test .multitaches > #formulaire > #gauche > .edition-date > .publication {
+.corp .multitaches > #formulaire > #gauche > .edition-date > .publication {
   padding-right: 40px;
   margin-top: 55px;
 }
-.test .multitaches > #formulaire > #gauche > .multiSelect {
+.corp .multitaches > #formulaire > #gauche > .multiSelect {
   width: 100%;
   padding-top: 40px;
-  margin-left: 25px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 30px;
 }
-.test .multitaches > #formulaire > #gauche > .multiSelect > .select > select {
+.corp .multitaches > #formulaire > #gauche > .multiSelect > .select > select {
   border-radius: 10px;
   border-color: #FFDAA4;
 }
-.test .multitaches > #formulaire > #droite {
+.corp .multitaches > #formulaire > #droite {
   width: 40%;
 }
-.test .multitaches > #formulaire > #droite > .resume {
+.corp .multitaches > #formulaire > #droite > .resume {
   width: 100%;
   height: 350px;
   display: flex;
@@ -395,26 +397,26 @@ a {
   justify-content: center;
   margin-bottom: 30px;
 }
-.test .multitaches > #formulaire > #droite > .resume > .label1 {
+.corp .multitaches > #formulaire > #droite > .resume > .label1 {
   margin-top: 20px;
 }
-.test .multitaches > #formulaire > #droite > .resume > .label2 {
+.corp .multitaches > #formulaire > #droite > .resume > .label2 {
   margin-top: 20px;
 }
-.test .multitaches > #formulaire > #droite > .resume > textarea {
+.corp .multitaches > #formulaire > #droite > .resume > textarea {
   border-radius: 10px;
   border-color: #FFDAA4;
   margin-top: 20px;
 }
-.test .multitaches > #formulaire > #droite > .resume > .choixImg {
+.corp .multitaches > #formulaire > #droite > .resume > .choixImg {
   width: 250px;
   height: 70px;
   margin-top: 20px;
 }
-.test .multitaches > #formulaire > #droite > a {
+.corp .multitaches > #formulaire > #droite > a {
   margin-left: 300px;
 }
-.test .multitaches > .categorieList {
+.corp .multitaches > .categorieList {
   width: 500px;
   height: 500px;
   margin-top: 20px;
@@ -422,11 +424,11 @@ a {
   text-align: center;
   background-color: #FFDAA4;
 }
-.test .multitaches > .categorieList > h2 {
+.corp .multitaches > .categorieList > h2 {
   padding-top: 25px;
   text-transform: uppercase;
 }
-.test .multitaches > .categorieList > ol {
+.corp .multitaches > .categorieList > ol {
   width: 200px;
   height: 300px;
   display: flex;
@@ -436,22 +438,22 @@ a {
   margin-left: 150px;
   list-style-type: none;
 }
-.test .multitaches > .categorieList > ol > li {
+.corp .multitaches > .categorieList > ol > li {
   flex-basis: 25%;
   box-sizing: border-box;
   padding: 10px;
 }
-.test .multitaches > .categorieList > button {
+.corp .multitaches > .categorieList > button {
   width: 200px;
   height: 50px;
   text-transform: uppercase;
   background-color: #696969;
   border-radius: 25px;
 }
-.test .multitaches > .categorieList > button > a {
+.corp .multitaches > .categorieList > button > a {
   color: white;
 }
-.test .multitaches > .categorieGenre {
+.corp .multitaches > .categorieGenre {
   width: 500px;
   height: 500px;
   margin-top: 20px;
@@ -459,11 +461,11 @@ a {
   text-align: center;
   background-color: #FFDAA4;
 }
-.test .multitaches > .categorieGenre > h2 {
+.corp .multitaches > .categorieGenre > h2 {
   padding-top: 25px;
   text-transform: uppercase;
 }
-.test .multitaches > .categorieGenre > ol {
+.corp .multitaches > .categorieGenre > ol {
   width: 200px;
   height: 300px;
   display: flex;
@@ -473,29 +475,29 @@ a {
   margin-left: 150px;
   list-style-type: none;
 }
-.test .multitaches > .categorieGenre > ol > li {
+.corp .multitaches > .categorieGenre > ol > li {
   flex-basis: 20%;
   box-sizing: border-box;
   padding: 10px;
 }
-.test .multitaches > .categorieGenre > button {
+.corp .multitaches > .categorieGenre > button {
   width: 200px;
   height: 50px;
   text-transform: uppercase;
   background-color: #696969;
   border-radius: 25px;
 }
-.test .multitaches > .categorieGenre > button > a {
+.corp .multitaches > .categorieGenre > button > a {
   color: white;
 }
-.test .multitaches > #ajout-categorie {
+.corp .multitaches > #ajout-categorie {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin-top: 100px;
 }
-.test .multitaches > #ajout-categorie > .ajout {
+.corp .multitaches > #ajout-categorie > .ajout {
   width: 300px;
   height: 300px;
   background-color: #FFDAA4;
@@ -507,7 +509,7 @@ a {
   justify-content: space-evenly;
   justify-items: center;
 }
-.test .multitaches > #ajout-categorie > .ajout > .newCat {
+.corp .multitaches > #ajout-categorie > .ajout > .newCat {
   width: 200px;
   height: 50px;
   border: 0;
@@ -515,7 +517,7 @@ a {
   text-align: center;
   font-size: 1.1rem;
 }
-.test .multitaches > #ajout-categorie > .ajout > button {
+.corp .multitaches > #ajout-categorie > .ajout > button {
   width: 150px;
   height: 50px;
   text-transform: uppercase;
@@ -523,11 +525,11 @@ a {
   border-radius: 10px;
   background-color: #696969;
 }
-.test .multitaches > #ajout-categorie > .ajout > button > a {
+.corp .multitaches > #ajout-categorie > .ajout > button > a {
   font-size: 1.1rem;
   color: white;
 }
-.test .multitaches > #ajout-categorie > .modifierSupp {
+.corp .multitaches > #ajout-categorie > .modifierSupp {
   width: 500px;
   height: 300px;
   display: flex;
@@ -539,13 +541,13 @@ a {
   border-radius: 15px;
   box-shadow: 1px 1px 10px 1px grey;
 }
-.test .multitaches > #ajout-categorie > .modifierSupp > #selection {
+.corp .multitaches > #ajout-categorie > .modifierSupp > #selection {
   width: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.test .multitaches > #ajout-categorie > .modifierSupp > #selection > #id_category {
+.corp .multitaches > #ajout-categorie > .modifierSupp > #selection > #id_category {
   width: 150px;
   height: 30px;
   margin-right: 10px;
@@ -554,7 +556,7 @@ a {
   text-align: center;
   font-size: 1.1rem;
 }
-.test .multitaches > #ajout-categorie > .modifierSupp > #selection > .modifCat {
+.corp .multitaches > #ajout-categorie > .modifierSupp > #selection > .modifCat {
   margin-right: 10px;
   width: 150px;
   height: 30px;
@@ -563,7 +565,7 @@ a {
   border-radius: 50px;
   border: 0;
 }
-.test .multitaches > #ajout-categorie > .modifierSupp button {
+.corp .multitaches > #ajout-categorie > .modifierSupp button {
   margin-right: 10px;
   width: 150px;
   height: 50px;
@@ -572,18 +574,18 @@ a {
   border-radius: 10px;
   background-color: #696969;
 }
-.test .multitaches > #ajout-categorie > .modifierSupp button > a {
+.corp .multitaches > #ajout-categorie > .modifierSupp button > a {
   font-size: 1.1rem;
   color: white;
 }
-.test .multitaches > #ajout-genre {
+.corp .multitaches > #ajout-genre {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin-top: 100px;
 }
-.test .multitaches > #ajout-genre > .ajout {
+.corp .multitaches > #ajout-genre > .ajout {
   width: 300px;
   height: 300px;
   background-color: #FFDAA4;
@@ -595,7 +597,7 @@ a {
   justify-content: space-evenly;
   justify-items: center;
 }
-.test .multitaches > #ajout-genre > .ajout > .newGenre {
+.corp .multitaches > #ajout-genre > .ajout > .newGenre {
   width: 200px;
   height: 50px;
   border: 0;
@@ -603,7 +605,7 @@ a {
   text-align: center;
   font-size: 1.1rem;
 }
-.test .multitaches > #ajout-genre > .ajout > button {
+.corp .multitaches > #ajout-genre > .ajout > button {
   width: 150px;
   height: 50px;
   text-transform: uppercase;
@@ -611,11 +613,11 @@ a {
   border-radius: 10px;
   background-color: #696969;
 }
-.test .multitaches > #ajout-genre > .ajout > button > a {
+.corp .multitaches > #ajout-genre > .ajout > button > a {
   font-size: 1.1rem;
   color: white;
 }
-.test .multitaches > #ajout-genre > .modifierSupp {
+.corp .multitaches > #ajout-genre > .modifierSupp {
   width: 500px;
   height: 300px;
   display: flex;
@@ -627,13 +629,13 @@ a {
   border-radius: 15px;
   box-shadow: 1px 1px 10px 1px grey;
 }
-.test .multitaches > #ajout-genre > .modifierSupp > #selection {
+.corp .multitaches > #ajout-genre > .modifierSupp > #selection {
   width: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.test .multitaches > #ajout-genre > .modifierSupp > #selection > #genre {
+.corp .multitaches > #ajout-genre > .modifierSupp > #selection > #genre {
   width: 150px;
   height: 30px;
   margin-right: 10px;
@@ -642,7 +644,7 @@ a {
   text-align: center;
   font-size: 1.1rem;
 }
-.test .multitaches > #ajout-genre > .modifierSupp > #selection > .modifGenre {
+.corp .multitaches > #ajout-genre > .modifierSupp > #selection > .modifGenre {
   margin-right: 10px;
   width: 150px;
   height: 30px;
@@ -651,7 +653,7 @@ a {
   border-radius: 50px;
   border: 0;
 }
-.test .multitaches > #ajout-genre > .modifierSupp button {
+.corp .multitaches > #ajout-genre > .modifierSupp button {
   margin-right: 10px;
   width: 150px;
   height: 50px;
@@ -660,7 +662,94 @@ a {
   border-radius: 10px;
   background-color: #696969;
 }
-.test .multitaches > #ajout-genre > .modifierSupp button > a {
+.corp .multitaches > #ajout-genre > .modifierSupp button > a {
   font-size: 1.1rem;
   color: white;
+}
+.corp .multitaches > #userMenu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+  padding-top: 50px;
+}
+.corp .multitaches > #userMenu > .userSearch {
+  display: flex;
+  flex-direction: row;
+}
+.corp .multitaches > #userMenu > .userSearch > .recherche {
+  border: 0;
+  border-radius: 100px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
+.corp .multitaches > #userMenu > .userSearch > button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 100px;
+  margin-left: -50px;
+  margin-right: 50px;
+}
+.corp .multitaches > #userMenu > .boutonUser {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.corp .multitaches > #userMenu > .boutonUser > button {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+  margin-left: 10px;
+}
+.corp .multitaches > #userMenu > .boutonUser > button > a {
+  height: 50px;
+  font-size: 1.1rem;
+  color: white;
+}
+.corp .multitaches > #tableUser {
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.corp .multitaches > #tableUser > thead {
+  background-color: #696969;
+  height: 50px;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #tableUser > tbody {
+  background-color: #FFE7D6;
+  height: 50px;
+}
+.corp .multitaches > .newsLetter {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.corp .multitaches > .newsLetter > input {
+  width: 1000px;
+  height: 400px;
+}
+.corp .multitaches > .newsLetter > button {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+  margin-top: 10px;
+}
+.corp .multitaches > .newsLetter > button > a {
+  color: black;
 }/*# sourceMappingURL=style-admin.css.map */
