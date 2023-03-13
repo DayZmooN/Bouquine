@@ -12,7 +12,7 @@
 <body>
     <section class="filter">
         <div class="filter-container">
-            <h2>Recherche avancée</h2>
+            <h2 class="search-filter">Recherche avancée</h2>
 
             <form action="#" method="get">
                 <label for="titre">Titre:</label>

@@ -1,6 +1,6 @@
 <?php
 require_once './header-front.php';
-require_once './footer-front.php';
+// require_once './footer-front.php';
 
 ?>
 <!DOCTYPE html>
@@ -59,7 +59,7 @@ require_once './footer-front.php';
                         <p class="authors">Madeleine MILLER</p>
                     </div>
                     <div class="item4"><a href="#"><img src="../image/assasin royal.jpg" alt="L'assasin royal de Robin HOBB"></a>
-                        <p class="titles">L'assasin royal</p>
+                        <p class="titles">L'assassin royal</p>
                         <p class="authors">Robin HOBB</p>
                     </div>
                     <div class="item4"><a href="#"><img src="../image/la-croisade-eternelle.jpg" alt="La croisade éternelle de Victor Fleury"></a>
@@ -103,11 +103,11 @@ require_once './footer-front.php';
                         <p class="authors">Arnaud CATHERINE</p>
                     </div>
                     <div class="item4"><a href="#"><img src="../image/assasin royal.jpg" alt="L'assasin Royal de Robin HOBB "></a>
-                        <p class="titles">L'ASSASIN ROYAL </p>
+                        <p class="titles">L'ASSASSIN ROYAL </p>
                         <p class="authors">Robin HOBB</p>
                     </div>
                     <div class="item4"><a href="#"><img src="../image/assasin royal.jpg" alt="L'assasin Royal de Robin HOBB "></a>
-                        <p class="titles">L'ASSASIN ROYAL </p>
+                        <p class="titles">L'ASSASSIN ROYAL </p>
                         <p class="authors">Robin HOBB</p>
                     </div>
                     </div>

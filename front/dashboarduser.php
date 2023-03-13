@@ -14,7 +14,7 @@
         <div class="dashboard-container">
             <h2>Mon tableau de bord </h2>
             <div class="info-user">
-                <img src="../image/user1.png" alt="icône user">
+                <img class="user1" src="../image/user1.png" alt="icône user">
                 <div class="details">
                     <h3>Nom et prénom</h3>
                     <p>Email : cocotte@gmail.com</p>
