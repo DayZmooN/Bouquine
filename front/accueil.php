@@ -1,6 +1,10 @@
 <?php
+require_once '../connexion.php';
 require_once './header-front.php';
-// require_once './footer-front.php';
+require_once './footer-front.php';
+
+$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` LIMIT 8');
+$query->execute();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,64 +33,28 @@ require_once './header-front.php';
 
 
         <section class="populaire">
-            <div class="titre1">
-                <h2 class="popular">Les plus populaires </h2>
-            </div>
-            <div class="container">
-                <div class="item">
-                    <a href="#"><img src="../image/star wars.jpg" alt="Star wars de Mike CHEN"></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">STAR WARS</p><br>
-                    <p class="author">Mike CHEN</p>
+                <div class="titre1">
+                    <h2 class="popular">Les plus populaires </h2>
+                </div> 
+                <div class="container">
+                    <?php foreach($query as $article){ ?>
+                    <div class="item">
+                        <a href="#"><img src="../image/<?= $article['image'] ?>" alt=""></a>
+                        <button id="resume" type="button"><a href="#">Résumé</a></button>
+                        <p class="title"><?= $article['title'] ?></p><br>
+                        <p class="author"><?= $article['author'] ?></p> 
+                    </div>
+                    <?php } ?>
                 </div>
-                <div class="item"><a href="#"><img src="../image/romance.jpg" alt="Romance d'Arnaud CATHERINE "></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">ROMANCE</p><br>
-                    <p class="author">Arnaud CATHERINE</p>
-                </div>
-                <div class="item"><a href="#"><img src="../image/assasin royal.jpg" alt="L'assasin Royal de Robin HOBB "></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">L'ASSASIN ROYAL </p><br>
-                    <p class="author">Robin HOBB</p>
-                </div>
-
-                <div class="item"><a href="#"><img src="../image/dark romance.jpg" alt="Dark Romance de Péneloppe DOUGLAS "></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">DARK ROMANCE</p><br>
-                    <p class="author">Péneloppe DOUGLAS</p>
-                </div>
-
-                <div class="item"><img src="../image/circe.jpg" alt="Circé de Madeleine MILLER  "></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">CIRCE</p><br>
-                    <p class="author">Madeleine MILLER</p>
-                </div>
-
-                <div class="item"><a href="#"><img src="../image/dans ma tete.jpg" alt="J'ai tout dans ma tête de Rachel ARDITI"></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">J'AI TOUT DANS MA TETE</p><br>
-                    <p class="author">Rachel ARDITI</p>
-                </div>
-
-                <div class="item"><a href="#"><img src="../image/aime moi.jpg" alt="Aime moi de Morgane MONTCOMBLE "></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">AIME MOI </p><br>
-                    <p class="author">Morgane MONTCOMBLE</p>
-                </div>
-                <div class="item">
-                    <a href="#"><img src="../image/crepuscule.jpg" alt="Crépuscule de Philippe CLAUDEL "></a>
-                    <button id="resume" type="button"><a href="#">Résumé</a></button>
-                    <p class="title">CREPUSCULE</p><br>
-                    <p class="author">Philippe CLAUDEL</p>
-                </div>
-
-            </div>
         </section>
 
         <!-- END SECTION POPULAIRES -->
 
         <!-- SECTION NOUVEAUTES -->
-
+        <?php
+        $reqNew = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `publication_date` DESC');
+        $reqNew->execute();
+        ?>
         <section id="new">
             <h2 id="nouveautes">Nouveautés</h2>
             <ul class=slider>
@@ -111,19 +79,6 @@ require_once './header-front.php';
                         <a href="#"><img src="../image/malgre nous.jpg" alt="Malgré nous de Claire NORTON"></a>
                         <p class="title">Malgré nous </p><br>
                         <p class="author">Claire NORTON</p>
-                    </div>
-                    <div class="item1"><a href="#"><img src="../image/romance.jpg" alt="Romance d'Arnaud CATHERINE"></a>
-                        <p class="title">ROMANCE</p><br>
-                        <p class="author">Arnaud CATHERINE</p>
-                    </div>
-                    <div class="item1"><a href="#"><img src="../image/une toute derniere fois.jpg" alt="Une toute dernère fois d'Emma GREEN "></a>
-                        <p class="title">Une toute dernière fois </p><br>
-                        <p class="author">Emma GREEN</p>
-                    </div>
-
-                    <div class="item1"><a href="#"><img src="../image/dark romance.jpg" alt="Dark Romance de Péneloppe DOUGLAS "></a>
-                        <p class="title">DARK ROMANCE</p><br>
-                        <p class="author">Péneloppe DOUGLAS</p>
                     </div>
 
                     <button id="see" type="button"><a href="#">Voir plus</a></button>
@@ -335,7 +290,3 @@ require_once './header-front.php';
         </section>
         <!-- end section avis lecteur  -->
     </main>
-
-</body>
-
-</html>
