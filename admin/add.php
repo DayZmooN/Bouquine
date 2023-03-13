@@ -25,7 +25,7 @@
         $id_category = addslashes($_POST['id_category']);
         $summary = addslashes($_POST['summary']);
 
-        $addreq = $db->prepare("INSERT INTO `book`(`ISBN`,`image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES ('$ISBN','$image','$title','$author','$editor','$collection','$publication_date','$genre','$id_category','$summary')");
+        $addreq = $db->prepare("INSERT INTO `book`(`ISBN`,`image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES (':ISBN',':image',':title',':author',':editor',':collection',':publication_date',':genre',':id_category',':summary')");
         $addreq->bindParam('ISBN',$ISBN, PDO::PARAM_STR);
         $addreq->bindParam('image',$image, PDO::PARAM_STR);
         $addreq->bindParam('title',$title, PDO::PARAM_STR);
