@@ -16,10 +16,10 @@ require_once './header-front.php';
     <!-- FOOTER -->
     <footer>
         <section id="end">
-            <div class="contain-footer">
-            <div class="logob">
-            <img class="img1" src="../image/b.png" alt="logo Bouquine B"> </div>
-           
+
+            </div class="logob">
+            <img class="img1" src="../image/b.png" alt="logo Bouquine B">
+            </div>
             <div class="pol">
                 <a href="../doc/Model__CGU__.docx">CGU</a>
             </div>
@@ -32,14 +32,18 @@ require_once './header-front.php';
                 <a href="https://twitter.com/?lang=fr"><img class="social" src="../image/twitter.png"></a>
                 <a href="https://fr.linkedin.com/"><img class="social" src="../image/linkedin.png"></a>
             </div>
-           
-        </div>
-        </div>
-           
+            </div>
+
         </section>
         <section class="copyright">
             <p id="copy">Copyright&copy;2023 Bouquine</p>
         </section>
+
+        </section>
+
+        <div class="copyright">
+            <p id="copy">Copyright&copy;2023 Bouquine</p>
+        </div>
 
     </footer>
     <!-- END FOOTER -->

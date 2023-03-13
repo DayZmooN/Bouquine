@@ -1,1 +1,755 @@
-/*# sourceMappingURL=style-admin.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*....................HEADER-ADMIN INCLUDE....................*/
+/*.....section logo + nav.....*/
+#side-bar {
+  max-width: 500px;
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  background-color: #858585;
+}
+#side-bar > #logo > img {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+#side-bar > #menu-admin > nav > ul > li {
+  max-width: 400px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #AAAAAA;
+  border-bottom: 1px solid black;
+}
+#side-bar > #menu-admin > nav > ul > li > img {
+  width: 32px;
+  height: 32px;
+}
+#side-bar > #menu-admin > nav > ul > li > a {
+  width: 150px;
+  color: black;
+  font-size: 1.4rem;
+}
+
+/*.....fin.....*/
+/*.....header + icones.....*/
+.corp {
+  max-width: 1300px;
+  width: 75%;
+  height: 100 vh;
+  float: right;
+  background-color: #c8c8c8;
+  /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
+  /*....................CSS.CONNEXION....................*/
+  /*....................FIN.CSS.CONNEXION....................*/
+  /*....................CSS.DASHBOARD....................*/
+  /*....................FIN.DASHBOARD....................*/
+  /*....................CSS.ARTICLES....................*/
+  /*....................FIN.CSS.ARTICLES....................*/
+  /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
+  /*....................FIN.FORMULAIRE.AJOUT....................*/
+  /*....................CSS.CATEGORIES....................*/
+  /*....................FIN.CSS.CATEGORIES....................*/
+  /*....................CSS.GENRES....................*/
+  /*....................FIN.CSS.GENRES....................*/
+  /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
+  /*....................fin.formulaire....................*/
+  /*....................CSS.USER....................*/
+  /*....................CSS.USER.FIN....................*/
+  /*....................CSS.NEWSLETTER....................*/
+}
+.corp > #headerDashboard {
+  height: 131px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.corp > #headerDashboard > .notif {
+  width: 32px;
+  height: 32px;
+  margin: 50px 10px;
+}
+.corp > #headerDashboard > .notif:hover {
+  cursor: pointer;
+}
+.corp > #headerDashboard > p {
+  margin-top: 55px;
+}
+.corp > .multitaches {
+  width: 100%;
+  height: 82vh;
+  background-color: #c8c8c8;
+}
+.corp > .multitaches > .multiTitre {
+  width: 100%;
+  padding-top: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #c8c8c8;
+}
+.corp .connexion {
+  width: 500px;
+  height: 350px;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-left: 350px;
+  background-color: #FFDAA4;
+}
+.corp .connexion > .Titre {
+  width: 100%;
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.corp .connexion > #mail, .corp .connexion #pass {
+  width: 300px;
+  height: 50px;
+  margin: 30px 100px;
+}
+.corp .connexion > #mail > input, .corp .connexion #pass > input {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.corp .connexion > #connect {
+  width: 100px;
+}
+.corp .connexion > #connect > button {
+  width: 100px;
+  height: 25px;
+  margin: 50px 200px;
+  box-shadow: 1px 1px 10px 1px grey;
+  background-color: #81D9E5;
+  border: 0;
+  border-radius: 20px;
+}
+.corp .connexion > #connect > button:hover {
+  cursor: pointer;
+}
+.corp .multitaches > #temporaire {
+  width: 1000px;
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.corp .multitaches > #dernier-ajout {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.corp .multitaches > #menu-article {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+.corp .multitaches > #menu-article > form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.corp .multitaches > #menu-article > form > .recherche {
+  padding-left: 10px;
+  border: 0;
+  border-radius: 100px;
+  width: 300px;
+  height: 50px;
+}
+.corp .multitaches > #menu-article > form > button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 100px;
+  margin-left: -50px;
+  margin-right: 50px;
+}
+.corp .multitaches > #menu-article > a {
+  width: 300px;
+  margin-top: 50px;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > #menu-recherche-article {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.corp .multitaches > #menu-recherche-article > h2,
+.corp .multitaches > #menu-recherche-article img {
+  margin-left: 50px;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > img:hover + nav {
+  display: block;
+  margin-right: 50px;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav {
+  display: none;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree {
+  width: 100px;
+  height: 50px;
+  background-color: #696969;
+  list-style-type: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuDate {
+  display: block;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuCategorie {
+  display: block;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuGenre {
+  display: block;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > a {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate {
+  position: absolute;
+  width: 100px;
+  margin-left: 200px;
+  display: none;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate > li {
+  width: 100px;
+  height: 50px;
+  background-color: #696969;
+  list-style-type: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-top: 0;
+  margin-left: 0;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie {
+  position: absolute;
+  width: 100px;
+  margin-left: 200px;
+  text-align: center;
+  display: none;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie > li {
+  width: 100px;
+  height: 50px;
+  background-color: #696969;
+  list-style-type: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-top: -78px;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre {
+  position: absolute;
+  width: 100px;
+  margin-left: 200px;
+  text-align: center;
+  display: none;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre > li {
+  width: 100px;
+  height: 50px;
+  background-color: #696969;
+  list-style-type: none;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  margin-top: -130px;
+}
+.corp .multitaches > .articleList {
+  width: 800px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #AAAAAA;
+  margin: 10px 200px;
+}
+.corp .multitaches > #formulaire {
+  max-width: 1080px;
+  width: 100%;
+  height: 500px;
+  background-color: #FFF5EE;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.corp .multitaches > #formulaire > #gauche {
+  width: 60%;
+}
+.corp .multitaches > #formulaire > #gauche > .titre-auteur {
+  width: 100% x;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+.corp .multitaches > #formulaire > #gauche > .titre-auteur > input {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  padding-left: 10px;
+  margin-top: 40px;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > #formulaire > #gauche > .edition-date {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+.corp .multitaches > #formulaire > #gauche > .edition-date > input {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-right: 60px;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > #formulaire > #gauche > .edition-date > .date {
+  width: 100%;
+  padding-right: 10px;
+  margin-left: -20px;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > #formulaire > #gauche > .edition-date > .publication {
+  padding-right: 40px;
+  margin-top: 55px;
+}
+.corp .multitaches > #formulaire > #gauche > .multiSelect {
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.corp .multitaches > #formulaire > #gauche > .multiSelect > .select > select {
+  border-radius: 10px;
+  border-color: #FFDAA4;
+}
+.corp .multitaches > #formulaire > #droite {
+  width: 40%;
+}
+.corp .multitaches > #formulaire > #droite > .resume {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.corp .multitaches > #formulaire > #droite > .resume > .label1 {
+  margin-top: 20px;
+}
+.corp .multitaches > #formulaire > #droite > .resume > .label2 {
+  margin-top: 20px;
+}
+.corp .multitaches > #formulaire > #droite > .resume > textarea {
+  border-radius: 10px;
+  border-color: #FFDAA4;
+  margin-top: 20px;
+}
+.corp .multitaches > #formulaire > #droite > .resume > .choixImg {
+  width: 250px;
+  height: 70px;
+  margin-top: 20px;
+}
+.corp .multitaches > #formulaire > #droite > a {
+  margin-left: 300px;
+}
+.corp .multitaches > .categorieList {
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 350px;
+  text-align: center;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > .categorieList > h2 {
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+.corp .multitaches > .categorieList > ol {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 150px;
+  list-style-type: none;
+}
+.corp .multitaches > .categorieList > ol > li {
+  flex-basis: 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.corp .multitaches > .categorieList > button {
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #696969;
+  border-radius: 25px;
+}
+.corp .multitaches > .categorieList > button > a {
+  color: white;
+}
+.corp .multitaches > .categorieGenre {
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  margin-left: 350px;
+  text-align: center;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > .categorieGenre > h2 {
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+.corp .multitaches > .categorieGenre > ol {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 150px;
+  list-style-type: none;
+}
+.corp .multitaches > .categorieGenre > ol > li {
+  flex-basis: 20%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.corp .multitaches > .categorieGenre > button {
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #696969;
+  border-radius: 25px;
+}
+.corp .multitaches > .categorieGenre > button > a {
+  color: white;
+}
+.corp .multitaches > #ajout-categorie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.corp .multitaches > #ajout-categorie > .ajout {
+  width: 300px;
+  height: 300px;
+  background-color: #FFDAA4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.corp .multitaches > #ajout-categorie > .ajout > .newCat {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajout-categorie > .ajout > button {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+}
+.corp .multitaches > #ajout-categorie > .ajout > button > a {
+  font-size: 1.1rem;
+  color: white;
+}
+.corp .multitaches > #ajout-categorie > .modifierSupp {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  background-color: #FFDAA4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px grey;
+}
+.corp .multitaches > #ajout-categorie > .modifierSupp > #selection {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.corp .multitaches > #ajout-categorie > .modifierSupp > #selection > #id_category {
+  width: 150px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50px;
+  border-color: #FFDAA4;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajout-categorie > .modifierSupp > #selection > .modifCat {
+  margin-right: 10px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: 0;
+}
+.corp .multitaches > #ajout-categorie > .modifierSupp button {
+  margin-right: 10px;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+}
+.corp .multitaches > #ajout-categorie > .modifierSupp button > a {
+  font-size: 1.1rem;
+  color: white;
+}
+.corp .multitaches > #ajout-genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.corp .multitaches > #ajout-genre > .ajout {
+  width: 300px;
+  height: 300px;
+  background-color: #FFDAA4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.corp .multitaches > #ajout-genre > .ajout > .newGenre {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajout-genre > .ajout > button {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+}
+.corp .multitaches > #ajout-genre > .ajout > button > a {
+  font-size: 1.1rem;
+  color: white;
+}
+.corp .multitaches > #ajout-genre > .modifierSupp {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  background-color: #FFDAA4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px grey;
+}
+.corp .multitaches > #ajout-genre > .modifierSupp > #selection {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.corp .multitaches > #ajout-genre > .modifierSupp > #selection > #genre {
+  width: 150px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50px;
+  border-color: #FFDAA4;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajout-genre > .modifierSupp > #selection > .modifGenre {
+  margin-right: 10px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: 0;
+}
+.corp .multitaches > #ajout-genre > .modifierSupp button {
+  margin-right: 10px;
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+}
+.corp .multitaches > #ajout-genre > .modifierSupp button > a {
+  font-size: 1.1rem;
+  color: white;
+}
+.corp .multitaches > #userMenu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40px;
+  padding-top: 50px;
+}
+.corp .multitaches > #userMenu > .userSearch {
+  display: flex;
+  flex-direction: row;
+}
+.corp .multitaches > #userMenu > .userSearch > .recherche {
+  border: 0;
+  border-radius: 100px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
+.corp .multitaches > #userMenu > .userSearch > button {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 100px;
+  margin-left: -50px;
+  margin-right: 50px;
+}
+.corp .multitaches > #userMenu > .boutonUser {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.corp .multitaches > #userMenu > .boutonUser > button {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+  margin-left: 10px;
+}
+.corp .multitaches > #userMenu > .boutonUser > button > a {
+  height: 50px;
+  font-size: 1.1rem;
+  color: white;
+}
+.corp .multitaches > #tableUser {
+  margin-left: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.corp .multitaches > #tableUser > thead {
+  background-color: #696969;
+  height: 50px;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #tableUser > tbody {
+  background-color: #FFE7D6;
+  height: 50px;
+}
+.corp .multitaches > .newsLetter {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.corp .multitaches > .newsLetter > input {
+  width: 1000px;
+  height: 400px;
+}
+.corp .multitaches > .newsLetter > button {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  background-color: #696969;
+  margin-top: 10px;
+}
+.corp .multitaches > .newsLetter > button > a {
+  color: black;
+}/*# sourceMappingURL=style-admin.css.map */

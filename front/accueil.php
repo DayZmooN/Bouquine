@@ -1,5 +1,5 @@
 <?php
-require_once '../model/connexion.php';
+require_once '../connexion.php';
 require_once './header-front.php';
 require_once './footer-front.php';
 
@@ -17,7 +17,7 @@ $query->execute();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
-    
+
 </head>
 
 <body>
@@ -53,7 +53,10 @@ $query->execute();
         <!-- END SECTION POPULAIRES -->
 
         <!-- SECTION NOUVEAUTES -->
-
+        <?php
+        $reqNew = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `publication_date` DESC');
+        $reqNew->execute();
+        ?>
         <section id="new">
             <h2 id="nouveautes">Nouveautés</h2>
             <ul class=slider>
@@ -68,31 +71,30 @@ $query->execute();
         <!-- end section nouveautes  -->
 
         <!-- section genres preferes -->
+        <?php
+        $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
+        FROM `book`
+        INNER JOIN `genre_book`
+        on `book`.`id_book` = `genre_book`.`id_book`
+        INNER JOIN `genre`
+        ON `genre_book`.`id_genre` = `genre`.`id_genre`
+
+        WHERE genre.`id_genre` = 5");
+        $reqFav->execute();
+        ?>
         <section id="gender">
             <div class="genre">
                 <h2 id="prefers">Les genres préférés</h2>
                 <h3 id="romance">Romance</h3>
 
-                <div class="container1">
-                    <div class="item1">
-                        <a href="#"><img src="../image/malgre nous.jpg" alt="Malgré nous de Claire NORTON"></a>
-                        <p class="title">Malgré nous </p><br>
-                        <p class="author">Claire NORTON</p>
-                    </div>
-                    <div class="item1"><a href="#"><img src="../image/romance.jpg" alt="Romance d'Arnaud CATHERINE"></a>
-                        <p class="title">ROMANCE</p><br>
-                        <p class="author">Arnaud CATHERINE</p>
-                    </div>
-                    <div class="item1"><a href="#"><img src="../image/une toute derniere fois.jpg" alt="Une toute dernère fois d'Emma GREEN "></a>
-                        <p class="title">Une toute dernière fois </p><br>
-                        <p class="author">Emma GREEN</p>
-                    </div>
-
-                    <div class="item1"><a href="#"><img src="../image/dark romance.jpg" alt="Dark Romance de Péneloppe DOUGLAS "></a>
-                        <p class="title">DARK ROMANCE</p><br>
-                        <p class="author">Péneloppe DOUGLAS</p>
-                    </div>
-
+                <div class="container">
+                    <?php foreach ($reqFav as $article) { ?>
+                        <div class="item1">
+                            <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                            <p class="title"><?= $article['title'] ?></p><br>
+                            <p class="author"><?= $article['author'] ?></p>
+                        </div>
+                    <?php } ?>
                     <button id="see" type="button"><a href="#">Voir plus</a></button>
 
 
@@ -101,29 +103,27 @@ $query->execute();
                 <!-- debut genre fantaisie -->
 
                 <div class="genre">
+                    <?php
+                    $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
+        FROM `book`
+        INNER JOIN `genre_book`
+        on `book`.`id_book` = `genre_book`.`id_book`
+        INNER JOIN `genre`
+        ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
+        WHERE genre.`id_genre` = 1");
+                    $reqFav->execute();
+                    ?>
                     <h3 id="fantaisie">Fantaisie</h3>
 
-                    <div class="container2">
-                        <div class="item2">
-                            <a href="#"><img src="../image/circe.jpg" alt="Circé de Madeleine MILLER"></a>
-                            <p class="title">Circé </p><br>
-                            <p class="author">Madeleine MILLER</p>
-                        </div>
-                        <div class="item2"><a href="#"><img src="../image/assasin royal.jpg" alt="L'assasin royal de Robin HOBB"></a>
-                            <p class="title">L'assasin royal</p><br>
-                            <p class="author">Robin HOBB</p>
-                        </div>
-                        <div class="item2"><a href="#"><img src="../image/la-croisade-eternelle.jpg" alt="La croisade éternelle de Victor Fleury"></a>
-                            <p class="title">La croisade éternelle </p><br>
-                            <p class="author">Victor Fleury</p>
-                        </div>
-
-                        <div class="item2"><a href="#"><img src="../image/sistine.jpg" alt="Sixtine de Caroline VERMALLE"></a>
-                            <p class="title">Sixtine</p><br>
-                            <p class="author">Caroline VERMALLE</p>
-                        </div>
-
+                    <div class="container">
+                        <?php foreach ($reqFav as $article) { ?>
+                            <div class="item2">
+                                <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                                <p class="title"><?= $article['title'] ?></p><br>
+                                <p class="author"><?= $article['author'] ?></p>
+                            </div>
+                        <?php } ?>
                         <button id="see" type="button"><a href="#">Voir plus</a></button>
 
 
@@ -132,29 +132,27 @@ $query->execute();
                     <!-- début genre action -->
 
                     <div class="genre">
+                        <?php
+                        $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
+        FROM `book`
+        INNER JOIN `genre_book`
+        on `book`.`id_book` = `genre_book`.`id_book`
+        INNER JOIN `genre`
+        ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
+        WHERE genre.`id_genre` = 7");
+                        $reqFav->execute();
+                        ?>
                         <h3 id="action">Action</h3>
 
-                        <div class="container3">
-                            <div class="item3">
-                                <a href="#"><img src="../image/pris en otage.jpg" alt="Pris en otage de Pierre Martinet"></a>
-                                <p class="title">Pris en otage </p><br>
-                                <p class="author">Pierre MARTINET</p>
-                            </div>
-                            <div class="item3"><a href="#"><img src="../image/la vague.jpg" alt="La vague de Tod STRASSER"></a>
-                                <p class="title">La vague</p><br>
-                                <p class="author">Tod STRASSER</p>
-                            </div>
-                            <div class="item3"><a href="#"><img src="../image/outsphere.jpg" alt="Outsphère de Guy-Roger DUVERT"></a>
-                                <p class="title">Outsphère </p><br>
-                                <p class="author">Guy-Roger DUVERT</p>
-                            </div>
-
-                            <div class="item3"><a href="#"><img src="../image/l espion du pape.jpg" alt="L'espion du pape de Philippe Madral et François Migeat"></a>
-                                <p class="title">L'espion du pape</p><br>
-                                <p class="author">Philippe MADRAL</p>
-                            </div>
-
+                        <div class="container">
+                            <?php foreach ($reqFav as $article) { ?>
+                                <div class="item3">
+                                    <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                                    <p class="title"><?= $article['title'] ?></p><br>
+                                    <p class="author"><?= $article['author'] ?></p>
+                                </div>
+                            <?php } ?>
                             <button id="see" type="button"><a href="#">Voir plus</a></button>
 
 
@@ -302,7 +300,3 @@ $query->execute();
         </section>
         <!-- end section avis lecteur  -->
     </main>
-
-</body>
-
-</html>

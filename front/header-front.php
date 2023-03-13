@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
-    
+
 </head>
 
 <body>
@@ -25,7 +24,6 @@
                 <li>
                     <a href="#">Parcourir</a>
                     <ul>
-
                         <li><a href='#'>Action</a></li>
                         <li><a href='#'>Romance</a></li>
                         <li><a href='#'>Fantaisie</a></li>
@@ -37,15 +35,11 @@
                 <!-- barre de recherche  -->
                 <li class="search-box">
                     <input type="text" name="search" placeholder="Rechercher">
-
             </ul>
-
         </nav>
         <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
     </header>
 
-
 </body>
 
 </html>
-<!-- END HEADER -->

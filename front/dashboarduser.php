@@ -1,3 +1,12 @@
+<?php
+//on démarre une session PHP on ecrit a chaquer page ou veut rester connecter en debut 
+session_start();
+if (!isset($_SESSION["user"])) {
+    header("location: ./connexion.php");
+    exit;
+}
+// on inclut le header 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,9 +25,11 @@
             <div class="info-user">
                 <img class="user1" src="../image/user1.png" alt="icône user">
                 <div class="details">
-                    <h3>Nom et prénom</h3>
-                    <p>Email : cocotte@gmail.com</p>
-                    <p>Téléphone : 06.86.36.56.32</p>
+                    <h3><?= $_SESSION["user"]["username"] ?></h3>
+                    <p>Lastname :<?= $_SESSION["user"]["lastname"] ?></p>
+                    <p>Email :<?= $_SESSION["user"]["mail"] ?></p>
+                    <p>Téléphone : <?= $_SESSION["user"]["phone"] ?></p>
+                    <p>birthday : <?= $_SESSION["user"]["birthdate"] ?></p>
                 </div>
             </div>
             <div class="actions">
@@ -26,7 +37,7 @@
                 <a href="#">Voir la liste de mes emprunts</a>
                 <a href="#">Modifier mes informations personnelles</a>
                 <a href="#">Supprimer mon compte</a>
-                <a href="#">Déconnexion</a>
+                <a href="./deconnexion.php">Déconnexion</a>
             </div>
         </div>
     </section>

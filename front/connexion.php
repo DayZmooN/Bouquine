@@ -1,7 +1,12 @@
 <?php
-// require_once './header-front.php';
-// require_once './footer-front.php';
+//on démarre une session PHP
+require_once '../model/connexion.php'
+
+
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,44 +17,37 @@
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    
+
 </head>
+
 <body>
     <section id="connexion">
         <div class="lettreb">
             <img class="b" src="../image/b.png" alt="logo bouquine">
         </div>
         <h2 class="connect">Se connecter</h2>
-     
-     <div class="social-media">
-     <p><a href="https://www.google.com/intl/fr/gmail/about/"><i class='fab fa-google' style='font-size:24px'></i></p></a>
-       <p><a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f" style='font-size:24px'></i></p></a>
-       <p><a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"style='font-size:24px'></i></p></a>
-     </div>
-     <p class="email">ou utiliser mon adresse e-mail :</p>
 
-     <form action="#" method="POST">
-     <div class="inputs">
-       <input type="email" id="mail" name="mail" placeholder="Email" />
-       <input type="password" id="password" name="password" placeholder="Mot de passe">
-     </div>
-     
-     <p class="inscription"><a href="#">J'ai oublié mon mot de passe</a><br>
-        Je n'ai pas de compte.<a href="#"> S'inscrire</a></p>
-     <div align="center">
-       <button type="submit"><a href="#"> Se connecter</button></a>
-     </div>
-   </form>
-   </section>
+        <div class="social-media">
+            <p><a href="https://www.google.com/intl/fr/gmail/about/"><i class='fab fa-google' style='font-size:24px'></i></p></a>
+            <p><a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f" style='font-size:24px'></i></p></a>
+            <p><a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter" style='font-size:24px'></i></p></a>
+        </div>
+        <p class="email">ou utiliser mon adresse e-mail :</p>
 
+        <form action="#" method="POST">
+            <div class="inputs">
+                <input type="email" id="mail" name="mail" placeholder="Email" />
+                <input type="password" id="password" name="password" placeholder="Mot de passe">
+            </div>
 
-
-
-
-
-
-
-
+            <p class="inscription"><a href="#">J'ai oublié mon mot de passe</a><br>
+                Je n'ai pas de compte.<a href="#"> S'inscrire</a></p>
+            <div align="center">
+                <button type="submit"><a href="../front/dashboarduser.php"> Se connecter</button></a>
+            </div>
+        </form>
+    </section>
 
 </body>
+
 </html>
