@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #F4B97A;
-}
+
 
 @font-face {
     font-family: 'QuattrocentoSans-Regular';
@@ -53,115 +51,173 @@ header {
 
 .header-main {
     width: 100%;
-    background-color: #FFB34E;
     height: 120px;
-    align-items: center;
     display: flex;
-
-}
-
-.logo img {
-    width: 300px;
-    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39c12;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    width: 300px;
+    flex: 1;
 }
 
-.nav {
-    width: 100%;
-}
-
-#navbar ul {
-    display: flex;
-    margin: 70px;
-    font-family: 'QuattrocentoSans-Bold';
-    font-size: 1.2rem;
-}
-
-#navbar ul li {
-    display: inline-block;
-    position: relative;
-}
-
-#navbar ul li a {
-    color: black;
-    padding: 10px 20px;
-}
-
-#navbar ul li:hover>ul {
+.logo img {
+    height: 80px;
     display: block;
 }
 
-#navbar ul ul {
+input#menu-toggle {
+    display: none;
+}
+
+nav {
+    width: 90%;
+    display: flex;
+    color: #000;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    color: #000;
+}
+
+nav li {
+    position: relative;
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Quattrocento-Regular', sans-serif;
+
+}
+
+nav ul ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    margin: 20px 0 0 0;
-    background-color: #F4B97A;
-    border-radius: 10%;
-
+    min-width: 200px;
+    background-color: #FFC300;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#navbar ul ul li {
+nav ul li:hover>ul {
     display: block;
-}
 
-#navbar ul li:hover {
-    border: 2px solid orange;
-    border-radius: 50px;
-    margin-top: 10px;
-    padding: 10px;
 
 }
 
+nav ul ul li {
+    position: relative;
 
-#navbar ul ul li a {
-    padding: 10px 20px;
-    display: block;
-    color: black;
-    text-decoration: none;
 }
 
+nav ul ul a {
+    padding: 10px 15px;
+}
 
-.search input {
-    background-color: #F4B97A;
-    border: 2px solid black;
-    border-radius: 30px;
+nav input[type="text"] {
     width: 300px;
-    height: 35px;
-    margin-left: 40px;
-
+    height: 30px;
+    border: none;
+    padding: 5px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #888;
 }
 
-.header-search {
-    display: flex;
-    justify-content: center;
+nav .menu-icon {
+    display: none;
 }
 
-.search input[type="search"] {
-    text-align: justify;
-    font-style: italic;
-}
-
-.connexion {
-    width: 100px;
-    height: 70px;
-    float: right;
+img.img-user {
     margin-right: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    width: 50px;
+    height: 50px;
 }
 
-#user {
-    width: 70px;
-    height: 60px;
-    margin-right: 50px;
-
-}
-
-/* END HEADER
+/* @media screen and (max-width: 350px) {
+    header {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+      position: relative;
+    }
+  
+    nav li ul {
+      position: static;
+      display: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    nav li:hover > ul {
+      display: block;
+    }
+  
+    nav a {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    nav input[type="text"] {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    nav .menu-icon {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 26px;
+      line-height: 60px;
+      cursor: pointer;
+    }
+  
+    nav input[type="checkbox"] {
+      display: none;
+    }
+  
+    nav ul.menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+    }
+  
+    input[type="checkbox"]:checked ~ ul.menu {
+      display: block;
+      z-index: 1;
+    }
+  }
+   */
+/* fin media queries header */
 /* MEDIA QUERIES HEADER */
 
 @media screen and (max-width:400px) {

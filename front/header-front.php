@@ -1,4 +1,3 @@
-</html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,56 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
-   
+
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header-main">
-
+        <nav>
             <div class="logo">
-                <a><img src="../image/logo1.png"></a>
+                <a href="#"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav">
-                <nav id="navbar">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"></label>
+            <ul class="menu">
+                <li><a href="./catalogue.php">Catalogue</a></li>
+                <li>
+                    <a href="#">Parcourir</a>
                     <ul>
-                        <li><a href='#'>Catalogue</a></li>
-                        <li>Parcourir
-                            <ul>
-                                
-                            <li><a href='#'>Action</a></li>
-                                <li><a href='#'>Romance</a></li>
-                                <li><a href='#'>Fantaisie</a></li>
-                                <li><a href='#'>Thriller</a></li>
-                                <li><a href='#'>Aventure</a></li>
-                            </ul>
-                        </li>
-                        <li><a href='#'>Infos pratiques</a></li>
-
-                        <!-- barre de recherche  -->
-                        <div class="header-search">
-                            <div class="search">
-                                <input type="search" name="search" placeholder="Rechercher">
-
-                            </div>
+                        <li><a href='#'>Action</a></li>
+                        <li><a href='#'>Romance</a></li>
+                        <li><a href='#'>Fantaisie</a></li>
+                        <li><a href='#'>Thriller</a></li>
+                        <li><a href='#'>Aventure</a></li>
                     </ul>
-                </nav>
-
-            </div>
-            <div class="connexion">
-                <a href="#"><img id="user" src="../image/user.png" alt="icône de connexion utilisateur"></a>
-            </div>
-        </div>
-
+                </li>
+                <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
+                <!-- barre de recherche  -->
+                <li class="search-box">
+                    <input type="text" name="search" placeholder="Rechercher">
+            </ul>
+        </nav>
+        <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
     </header>
 
-    <!-- END HEADER -->
-    </body>
+</body>
 
 </html>
