@@ -1344,111 +1344,73 @@ p.author2 {
     width: 100%;
     height: auto;
 }
-
 .catal {
     width: 100%;
     height: 1400px;
-}
-
-.searching {
-    width: 100%;
-    height: 100px;
-}
-
+    }
 h2.catalog {
     font-size: 3rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 800;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
-
-.search1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formul-s{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
 }
-
-#recherche {
-    width: 520px;
-    height: 20px;
-    background: #f4b97a95;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3) inset;
-    border-radius: 2em;
+.formul-s form{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 600;
 }
-
-#recherche .loupe {
-    background: url(../image/loupe.svg) no-repeat 0 0;
-    width: 40px;
-    cursor: pointer;
+.formul-s label{
+display: none;
+font-family: 'QuattrocentoSans-Regular';
+font-weight: 600;
 }
-
-#recherche input {
-    border: none;
-    margin: 0;
-    height: 20px;
-    float: left;
-    display: block;
+input#search-book{
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-#recherche input[type=text] {
-    font: 300 12px 'QuattrocentoSans-Regular', sans-serif;
-    background: none;
-    width: 470px;
-    padding: 0 15px;
-
-}
-
-img.setting {
-    width: 45px;
-    height: 45px;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-left: 10px;
-}
-
 .item4 {
     width: 200px;
     height: 380px;
 }
-
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
-
 .books {
     width: 100%;
     height: 1600px;
 }
-
 .books-catalog {
     width: 200px;
     height: 250px;
 }
-
 .container-books {
     display: flex;
     justify-content: space-around;
 }
-
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: bold;
     margin-top: 20px;
     text-align: center;
-
 }
-
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
-
 }
 
 /* END CATALOGUE */
