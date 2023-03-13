@@ -258,23 +258,13 @@ h1 {
     }
 } */
 
-/* SECTION LES PLUS POPULAIRES */
+
+/* /* SECTION LES PLUS POPULAIRES / */
 .populaire {
     width: 100%;
-    height: 800px;
+    height: 900px;
     background-color: #F4B97A;
-
 }
-
-.container {
-    width: 80%;
-    height: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
 .popular {
     width: 100%;
     height: 80px;
@@ -284,34 +274,29 @@ h1 {
     color: black;
     font-weight: bold;
     text-align: center;
-    /* margin-top: 30px; */
-}
-
+   }
 .titre1 h2 {
     padding-top: 20px;
 }
-
-.contain-book {
+.container {
     width: 100%;
-    height: 400px;
     display: flex;
-
-    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-.contain-book img {
+.item img {
+    width: 200px;
     height: 300px;
     border-radius: 5px;
 }
-
-.contain-book img:hover {
+.item img:hover {
     opacity: 40%;
 }
-
-.item-title {
-    width: 120px;
-    height: 40px;
-
+.item {
+    flex: 0 0 calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #resume {
@@ -320,19 +305,12 @@ h1 {
     border: 1px solid #F47826;
     border-radius: 50px;
     background-color: #F47826;
-
+    margin: 10px;
 }
-
 #resume a {
     text-decoration: none;
 }
-
-p.title {
-    text-align: center;
-
-}
-
-p.author {
+.title .author p {
     text-align: center;
 }
 
@@ -343,7 +321,6 @@ p.author {
     line-height: 10px;
 
 }
-
 .author {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular';
@@ -351,7 +328,6 @@ p.author {
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
     line-height: 10px;
-
 }
 
 /* END SECTION POPULAIRES  */
@@ -1346,34 +1322,39 @@ p.author2 {
 /* SECTION CATALOGUE */
 #catalogue {
     width: 100%;
-    height: auto;
+    height: 1500px;
 }
-
 .catal {
     width: 100%;
     height: 1400px;
+    margin-top: 20px;
 }
-
 .searching {
     width: 100%;
-    height: 100px;
+    height: auto;
 }
-
 h2.catalog {
+    width: 100%;
+    height: 40px;
     font-size: 3rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 800;
     text-align: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
-
 .search1 {
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+form#recherche{
+    width: 500px;
+    height: 40px;
+}
 #recherche {
     width: 520px;
     height: 20px;
@@ -1381,13 +1362,11 @@ h2.catalog {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .3) inset;
     border-radius: 2em;
 }
-
 #recherche .loupe {
     background: url(../image/loupe.svg) no-repeat 0 0;
     width: 40px;
     cursor: pointer;
 }
-
 #recherche input {
     border: none;
     margin: 0;
