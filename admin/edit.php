@@ -59,10 +59,21 @@ $id = $_GET['id'];
         $id_category = addslashes($_POST['id_category']);
         $summary = addslashes($_POST['summary']);
 
-        $reqed = "UPDATE `book` SET `ISBN`='$ISBN',`image`='$image',`title`='$title',`author`='$author',`editor`='$editor',`collection`='$collection',`publication_date`='$publication_date',`genre`='$genre',`id_category`='$id_category',`summary`='$summary' WHERE `id_book`= $id";
-        $db->query($reqed);
+        $reqed = $db->prepare("UPDATE `book` SET `ISBN`=':ISBN',`image`=':image',`title`=':title',`author`=':author',`editor`=':editor',`collection`=':collection',`publication_date`=':publication_date',`genre`=':genre',`id_category`=':id_category',`summary`=':summary' WHERE `id_book`= :id");
+        $addreq->bindParam('id', $id, PDO::PARAM_INT);
+        $addreq->bindParam('ISBN',$ISBN, PDO::PARAM_STR);
+        $addreq->bindParam('image',$image, PDO::PARAM_STR);
+        $addreq->bindParam('title',$title, PDO::PARAM_STR);
+        $addreq->bindParam('author',$author, PDO::PARAM_STR);
+        $addreq->bindParam('editor',$editor, PDO::PARAM_STR);
+        $addreq->bindParam('collection',$collection, PDO::PARAM_STR);
+        $addreq->bindParam('publication_date',$publication_date, PDO::PARAM_STR);
+        $addreq->bindParam('genre',$genre, PDO::PARAM_STR);
+        $addreq->bindParam('id_category',$id_category, PDO::PARAM_INT);
+        $addreq->bindParam('summary',$summary, PDO::PARAM_STR);
+        $reqed->execute();
 
-        $_SESSION['sucess'] = "Produit éditer avec succès !";
+        $_SESSION['sucess'] = "Produit modifier avec succès !";
         header('Location: article.php');
         exit();
     }
