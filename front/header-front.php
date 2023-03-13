@@ -24,11 +24,6 @@
                 <li>
                     <a href="#">Parcourir</a>
                     <ul>
-                        <<<<<<< HEAD <li><a href='#'>Catalogue</a>
-                </li>
-                <li>Parcourir
-                    <ul>
-
                         <li><a href='#'>Action</a></li>
                         <li><a href='#'>Romance</a></li>
                         <li><a href='#'>Fantaisie</a></li>
@@ -36,35 +31,14 @@
                         <li><a href='#'>Aventure</a></li>
                     </ul>
                 </li>
-                <li><a href='#'>Infos pratiques</a></li>
-
+                <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
-                <div class="header-search">
-                    <div class="search">
-                        <input type="search" name="search" placeholder="Rechercher">
-
-                    </div>
-                    =======
-
-                    <li><a href='#'>Action</a></li>
-                    <li><a href='#'>Romance</a></li>
-                    <li><a href='#'>Fantaisie</a></li>
-                    <li><a href='#'>Thriller</a></li>
-                    <li><a href='#'>Aventure</a></li>
-                    >>>>>>> najia
+                <li class="search-box">
+                    <input type="text" name="search" placeholder="Rechercher">
             </ul>
-            </li>
-            <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
-            <!-- barre de recherche  -->
-            <li class="search-box">
-                <input type="text" name="search" placeholder="Rechercher">
-
-                </ul>
-
         </nav>
         <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
     </header>
-
 
 </body>
 

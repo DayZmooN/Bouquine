@@ -86,12 +86,12 @@ $query->execute();
                 <h3 id="romance">Romance</h3>
 
                 <div class="container">
-                <?php foreach($reqFav as $article){ ?>
-                    <div class="item1">
-                        <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                        <p class="title"><?= $article['title'] ?></p><br>
-                        <p class="author"><?= $article['author'] ?></p>
-                    </div>
+                    <?php foreach ($reqFav as $article) { ?>
+                        <div class="item1">
+                            <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                            <p class="title"><?= $article['title'] ?></p><br>
+                            <p class="author"><?= $article['author'] ?></p>
+                        </div>
                     <?php } ?>
                     <button id="see" type="button"><a href="#">Voir plus</a></button>
 
@@ -101,8 +101,8 @@ $query->execute();
                 <!-- debut genre fantaisie -->
 
                 <div class="genre">
-                <?php
-        $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
+                    <?php
+                    $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
         FROM `book`
         INNER JOIN `genre_book`
         on `book`.`id_book` = `genre_book`.`id_book`
@@ -110,17 +110,17 @@ $query->execute();
         ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
         WHERE genre.`id_genre` = 1");
-        $reqFav->execute();
-        ?>
+                    $reqFav->execute();
+                    ?>
                     <h3 id="fantaisie">Fantaisie</h3>
 
                     <div class="container">
-                    <?php foreach($reqFav as $article){ ?>
-                        <div class="item2">
-                            <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                            <p class="title"><?= $article['title'] ?></p><br>
-                            <p class="author"><?= $article['author'] ?></p>
-                        </div>
+                        <?php foreach ($reqFav as $article) { ?>
+                            <div class="item2">
+                                <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                                <p class="title"><?= $article['title'] ?></p><br>
+                                <p class="author"><?= $article['author'] ?></p>
+                            </div>
                         <?php } ?>
                         <button id="see" type="button"><a href="#">Voir plus</a></button>
 
@@ -130,8 +130,8 @@ $query->execute();
                     <!-- début genre action -->
 
                     <div class="genre">
-                    <?php
-        $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
+                        <?php
+                        $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
         FROM `book`
         INNER JOIN `genre_book`
         on `book`.`id_book` = `genre_book`.`id_book`
@@ -139,17 +139,17 @@ $query->execute();
         ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
         WHERE genre.`id_genre` = 7");
-        $reqFav->execute();
-        ?>
+                        $reqFav->execute();
+                        ?>
                         <h3 id="action">Action</h3>
 
                         <div class="container">
-                            <?php foreach($reqFav as $article){ ?>
-                            <div class="item3">
-                                <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                                <p class="title"><?= $article['title'] ?></p><br>
-                                <p class="author"><?= $article['author'] ?></p>
-                            </div>
+                            <?php foreach ($reqFav as $article) { ?>
+                                <div class="item3">
+                                    <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                                    <p class="title"><?= $article['title'] ?></p><br>
+                                    <p class="author"><?= $article['author'] ?></p>
+                                </div>
                             <?php } ?>
                             <button id="see" type="button"><a href="#">Voir plus</a></button>
 
