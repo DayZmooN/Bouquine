@@ -48,18 +48,6 @@ if (!empty($_POST)) {
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>dashboard</title>
-    <link rel="stylesheet" href="../css/style-admin.css">
-
-
-</head>
 
 
 <!DOCTYPE html>
@@ -69,7 +57,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>dashboard</title>
+    <title>connexion Admin</title>
     <link rel="stylesheet" href="../css/style-admin.css">
 
 
@@ -77,7 +65,7 @@ if (!empty($_POST)) {
 
 <body>
 
-
+    
     <aside id="side-bar">
         <div id="logo">
             <img src="../image/logoAdmin.png" alt="logo du site bouquine">
@@ -86,16 +74,13 @@ if (!empty($_POST)) {
 
     </aside>
 
+<div class="corp">
+    <header id="headerDashboard">
 
-    <div class="test">
-        <header id="headerDashboard">
+    </header>
 
 
-
-        </header>
-
-        <main class="multitache">
-            <form method="post">
+ <form class="connexion" action="" method="post">
                 <h1 class="Titre">connexion</h1>
                 <div id="mail" >
                     <label for="mail"></label>
@@ -112,6 +97,10 @@ if (!empty($_POST)) {
             </form>
 
 
+      
+
+        
+           
 
 
 
@@ -130,9 +119,10 @@ if (!empty($_POST)) {
 
 
 
-        </main>
-    </div>
 
+
+    
+</div>
 </body>
 
 </html>

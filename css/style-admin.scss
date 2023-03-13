@@ -1,4 +1,4 @@
-$fondRose : #F2D5D5;
+$fondRose : #c8c8c8;
 $remplissage : #FFDAA4;
 $grisBtn : #696969;
 $grisFiltre : #807373;
@@ -19,8 +19,6 @@ a {
 }
 
 
-
-
 /*....................HEADER-ADMIN INCLUDE....................*/
 
 /*.....section logo + nav.....*/
@@ -30,372 +28,938 @@ a {
     height: 100vh;
     position: fixed;
     background-color: #858585;
-    
-    &>#logo > img {
-    width: 100%;
-    border-bottom: 1px solid black;
+
+    &>#logo>img {
+        width: 100%;
+        border-bottom: 1px solid black;
     }
 
     &>#menu-admin {
 
         &>nav {
-           
+
             &>ul {
-                
+
                 &>li {
-                     max-width: 400px;
-                     width: 100%;
-                     height: 80px;
-                     display: flex;
-                     flex-direction: row;
-                     justify-content: space-evenly;
-                     align-items: center;
-                     background-color: #AAAAAA;
-                     border-bottom: 1px solid black;
+                    max-width: 400px;
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background-color: #AAAAAA;
+                    border-bottom: 1px solid black;
 
-                     &>img {
-                         width: 32px;
-                         height: 32px;
+                    &>img {
+                        width: 32px;
+                        height: 32px;
 
-                     }
+                    }
 
-                     &>a {
-                         width: 150px;
-                         color: black;
-                     }
+                    &>a {
+                        width: 150px;
+                        color: black;
+                        font-size: 1.4rem;
+                    }
 
 
-                 }
+                }
             }
         }
     }
 
 }
+
 /*.....fin.....*/
 
 /*.....header + icones.....*/
-.test {
-    max-width: 1200px;
+.corp {
+    max-width: 1300px;
     width: 75%;
     height: 100 vh;
     float: right;
-    background-color: white;
-    
-    & > #headerDashboard{
-        height: 130px;
+    background-color: $fondRose;
+
+    &>#headerDashboard {
+
+        height: 131px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        
+        background-color: white;
+        border-bottom: 1px solid black;
+
         &>.notif {
             width: 32px;
             height: 32px;
-            margin: 30px 10px;
-         }
+            margin: 50px 10px;
+        }
 
-         &>.notif:hover {
-             cursor: pointer;
-         }
+        &>.notif:hover {
+            cursor: pointer;
+        }
 
-         & > p{
-            margin-top: 35px;
-         }
-        
+        &>p {
+            margin-top: 55px;
+        }
+
     }
 
-    & > .multitaches{
+    &>.multitaches {
         width: 100%;
-        
+        height: 82vh;
         background-color: $fondRose;
-        
-        & > .multiTitre{
+
+        &>.multiTitre {
+            width: 100%;
+            padding-top: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            background-color: $fondRose;
+
+        }
+    }
+
+    /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
+
+    /*....................CSS.CONNEXION....................*/
+
+    .connexion{
+        width: 500px;
+        height: 350px;
+        border-radius: 15px;
+        margin-top: 100px;
+        margin-left: 350px;
+        background-color: $remplissage ;
+    
+        & > .Titre{
             width: 100%;
             padding-top: 20px;
             text-transform: uppercase;
             text-align: center;
+        }
+    
+        & > #mail, #pass{
+            width: 300px;
+            height: 50px;
+            margin: 30px 100px;
+            //border: 1px solid black;
             
-        }   
+            & > input{
+                width: 300px; 
+                height: 50px;
+                border-radius: 50px;
+                border: 0;
+                background-color: white ;
+                padding-left: 10px;
+                margin-top: 20px;
+            
+            }
+           
+    
+        }
+    
+        & > #connect{
+            width: 100px;
+    
+            & > button{
+                width: 100px;
+                height: 25px;
+                margin: 50px 200px;
+                box-shadow: 1px 1px 10px 1px grey;
+                background-color: #81D9E5;
+                border: 0;
+                border-radius: 20px;
+    
+            }
+    
+            & > button:hover{
+                cursor: pointer;
+            }
+        }
     }
-/*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
+    
 
-/*....................CSS.CONNEXION....................*/
+    /*....................FIN.CSS.CONNEXION....................*/
 
-.multitache > form{
-    width: 500px;
-    height: 350px;
-    border-radius: 15px;
-    margin-top: 100px;
-    margin-left: 350px;
-    background-color: $remplissage ;
+    /*....................CSS.DASHBOARD....................*/
 
-    & > .Titre{
+    .multitaches>#temporaire {
+        width: 1000px;
+        height: 200px;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .multitaches>#dernier-ajout {
         width: 100%;
-        padding-top: 20px;
         text-transform: uppercase;
         text-align: center;
     }
 
-    & > #mail, #pass{
-        width: 300px;
-        height: 50px;
-        margin: 30px 100px;
-        //border: 1px solid black;
-        
-        & > input{
-            width: 300px; 
-            height: 50px;
-            border-radius: 50px;
-            border: 0;
-            background-color: white ;
-            padding-left: 10px;
-            margin-top: 20px;
-        
-        }
-       
+    /*....................FIN.DASHBOARD....................*/
 
-    }
+    /*....................CSS.ARTICLES....................*/
 
-    & > #connect{
-        width: 100px;
-
-        & > button{
-            width: 100px;
-            height: 25px;
-            margin: 50px 200px;
-            box-shadow: 1px 1px 10px 1px grey;
-            background-color: #81D9E5;
-            border: 0;
-            border-radius: 20px;
-
-        }
-
-        & > button:hover{
-            cursor: pointer;
-        }
-    }
-}
-
-/*....................FIN.CSS.CONNEXION....................*/
-
-/*....................CSS.DASHBOARD....................*/
-
-.multitaches > #temporaire{
-    width: 1000px;
-    height: 200px;
-    
-}
-
-.multitaches > #dernier-ajout{
-    width: 100%;
-    padding-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-}
-/*....................FIN.DASHBOARD....................*/
-
-/*....................CSS.ARTICLES....................*/
-
-.multitaches > #menu-article{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 50px;
-    padding-top: 20px;
-       
-    & > form{
+    .multitaches>#menu-article {
+        width: 50%;
         display: flex;
         flex-direction: row;
-        margin-top: 50px;
+        align-items: center;
+        margin-left: 50px;
+        padding-top: 20px;
 
-        & > .recherche{
-            padding-left: 10px;
-            border: 0;
-            border-radius: 100px;
-            width: 300px; 
-            height: 50px;
+        &>form {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+
+            &>.recherche {
+                padding-left: 10px;
+                border: 0;
+                border-radius: 100px;
+                width: 300px;
+                height: 50px;
+            }
+
+            &>button {
+                width: 50px;
+                height: 50px;
+                border: 0;
+                border-radius: 100px;
+                margin-left: -50px;
+                margin-right: 50px;
+            }
         }
 
-        & > button{
-            width: 50px;
-            height: 50px;
-            border: 0;
-            border-radius: 100px;
-            margin-left: -50px;
-            margin-right: 50px;
+        &>a {
+            width: 300px;
+            margin-top: 50px;
+            color: white;
+            font-size: 1.3rem;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: $remplissage;
         }
     }
-}
 
-.multitaches > #menu-recherche-article{
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 100px;
-    padding-top: 50px;
+    .multitaches>#menu-recherche-article {
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 100px;
+        padding-top: 50px;
 
-    & > #nav-search{
+        &>h2,
+        img {
+            margin-left: 50px;
+        }
 
-        & > nav{
-            width: 100px;
-            //border: 1px solid black;
-            //display: none;
+        &>#nav-search {
 
-            & > ul {
-                width:100px;
-                margin-left: -40px;
-                margin-top: 10px;
+            &>img {
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+            }
 
-                & > li{
-                    width:100px;
-                    height: 50px;
-                    background-color: $grisBtn;
+            &>img:hover+nav {
+                display: block;
+                margin-right: 50px;
+            }
+
+            &>nav {
+                display: none;
+
+                &>ul {
                     list-style-type: none;
-                    border-top: 1px solid black;
-                    border-left: 1px solid black;
-                    border-right: 1px solid black;
-                    
-                       
+                    display: flex;
+                    flex-direction: column;
 
-                    & > a{
+                    &>.entree {
                         width: 100px;
                         height: 50px;
-                        line-height: 100%;
-                        display: block;
-                        padding-top: 16px;
-                        text-align: center;
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                    }
+                        background-color: $grisBtn;
+                        list-style-type: none;
+                        border: 1px solid black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
 
-                    & > ul{
-                        width:99px;
-                        margin-left: 102px;
-                        //display: none;
+                        &:active>.sousMenuDate {
+                            display: block;
+                        }
 
-                        & > li{
-                            width:100px;
-                    height: 50px;
-                    background-color: $grisBtn;
-                    list-style-type: none;
-                    
-                    border-top: 1px solid black;
-                    border-left: 1px solid black;
-                    border-right: 1px solid black;
+                        &:active>.sousMenuCategorie {
+                            display: block;
+                        }
 
-                            
+                        &:active>.sousMenuGenre {
+                            display: block;
+                        }
+
+                        &>a {
+                            width: 100px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                        }
+
+                        &>.sousMenuDate {
+                            position: absolute;
+                            width: 100px;
+                            margin-left: 200px;
+                            display: none;
+
+                            &>li {
+                                width: 100px;
+                                height: 50px;
+                                background-color: $grisBtn;
+                                list-style-type: none;
+                                border: 1px solid black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: static;
+                                margin-top: 0;
+                                margin-left: 0;
+                            }
+                        }
+
+                        &>.sousMenuCategorie {
+                            position: absolute;
+                            width: 100px;
+                            margin-left: 200px;
+                            text-align: center;
+                            display: none;
+
+                            &>li {
+                                width: 100px;
+                                height: 50px;
+                                background-color: $grisBtn;
+                                list-style-type: none;
+                                border: 1px solid black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: static;
+                                margin-top: -78px;
+                            }
+                        }
+
+                        &>.sousMenuGenre {
+                            position: absolute;
+                            width: 100px;
+                            margin-left: 200px;
+                            text-align: center;
+                            display: none;
+
+                            &>li {
+                                width: 100px;
+                                height: 50px;
+                                background-color: $grisBtn;
+                                list-style-type: none;
+                                border: 1px solid black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: static;
+                                margin-top: -130px;
+                            }
                         }
                     }
                 }
-                
-
-
             }
         }
     }
-}
 
-.multitaches > .articleList{
-    width: 800px;
-    height: 49px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid black;
-    background-color: #AAAAAA;
-    margin: 10px 200px;
-}
-
-/*....................FIN.CSS.ARTICLES....................*/
-/*....................CSS.FORMULAIRE.AJOUT....................*/
-.multitaches > #formulaire{
-    max-width: 1000px;
-    margin-left: 25px;
-    & > .titre-auteur{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 25px;
-
-        & > input{
-            width: 500px; 
-            height: 50px;
-            border-radius: 50px;
-            border: 0;
-            padding-left: 10px;
-            margin-top: 20px;
-            
-        }
-
-    }
-
-    & > .edition-date{
-        width: 500px;
+    .multitaches>.articleList {
+        width: 800px;
+        height: 49px;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        margin-left: 25px;
-        
-
-        & > input{
-            
-            width: 240px; //-80
-            height: 50px;
-            border-radius: 50px;
-            border: 0;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin-top: 20px;
-        }
-            
-        & > .date{
-                width: 170px;
-                margin-left: 10px;
-                
-                
-        }
-
-        & > .publication{
-            width: 70px;
-            height: 70px;
-            padding-left: 1px;
-            text-align: center;
-        }
-        
-
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid black;
+        background-color: #AAAAAA;
+        margin: 10px 200px;
     }
 
-    & > .select{
-        width: 500px;
+    /*....................FIN.CSS.ARTICLES....................*/
+
+    /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
+
+    .multitaches>#formulaire {
+        max-width: 1080px;
+        width: 100%;
+        height: 500px;
+        background-color: #FFF5EE;
+        display: flex;
+        flex-direction: row;
+        border-radius: 50px;
+        margin-left: 60px;
         margin-top: 20px;
-        margin-left: 25px;
+
+        &>#gauche {
+            width: 60%;
+
+            &>.titre-auteur {
+                width: 100%x;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 25px;
+                margin-right: 50px;
+
+                &>input {
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 50px;
+                    border: 0;
+                    padding-left: 10px;
+                    margin-top: 40px;
+                    background-color: $remplissage;
+                }
+            }
+
+            &>.edition-date {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-left: 25px;
+
+                &>input {
+
+                    width: 100%; //-80
+                    height: 50px;
+                    border-radius: 50px;
+                    border: 0;
+                    padding-left: 10px;
+                    margin-top: 40px;
+                    margin-right: 60px;
+                    background-color: $remplissage;
+                }
+
+                &>.date {
+                    width: 100%;
+                    padding-right: 10px;
+                    margin-left: -20px;
+                    background-color: $remplissage;
+                }
+
+                &>.publication {
+                    padding-right: 40px;
+                    margin-top: 55px;
+                }
+            }
+
+            &>.multiSelect {
+                width: 100%;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 30px;
+
+                &>.select {
+
+                    &>select {
+                        border-radius: 10px;
+                        border-color: $remplissage;
+                    }
+                }
+            }
+        }
+
+        &>#droite {
+            width: 40%;
+
+            &>.resume {
+                width: 100%;
+                height: 350px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                &>.label1 {
+                    margin-top: 20px;
+                }
+
+                &>.label2 {
+                    margin-top: 20px;
+                }
+
+                &>textarea {
+                    border-radius: 10px;
+                    border-color: $remplissage;
+                    margin-top: 20px;
+                }
+
+                &>.choixImg {
+                    width: 250px;
+                    height: 70px;
+                    margin-top: 20px;
+                }
+            }
+
+            &>a {
+                margin-left: 300px;
+            }
+        }
+    }
+
+    /*....................FIN.FORMULAIRE.AJOUT....................*/
+
+    /*....................CSS.CATEGORIES....................*/
+
+    .multitaches>.categorieList {
+        width: 500px;
+        height: 500px;
+        margin-top: 20px;
+        margin-left: 350px;
+        text-align: center;
+        background-color: $remplissage;
+
+        &>h2 {
+            padding-top: 25px;
+            text-transform: uppercase;
+        }
+
+        &>ol {
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: 150px;
+            list-style-type: none;
+
+            &>li {
+                flex-basis: 25%;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+        }
+
+        &>button {
+            width: 200px;
+            height: 50px;
+            text-transform: uppercase;
+            background-color: $grisBtn;
+            border-radius: 25px;
+
+            &>a {
+                color: white;
+            }
+        }
+    }
+
+    /*....................FIN.CSS.CATEGORIES....................*/
+
+    /*....................CSS.GENRES....................*/
+
+    .multitaches>.categorieGenre {
+        width: 500px;
+        height: 500px;
+        margin-top: 20px;
+        margin-left: 350px;
+        text-align: center;
+        background-color: $remplissage;
+
+        &>h2 {
+            padding-top: 25px;
+            text-transform: uppercase;
+        }
+
+        &>ol {
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: 150px;
+            list-style-type: none;
+
+            &>li {
+                flex-basis: 20%;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+        }
+
+        &>button {
+            width: 200px;
+            height: 50px;
+            text-transform: uppercase;
+            background-color: $grisBtn;
+            border-radius: 25px;
+
+            &>a {
+                color: white;
+            }
+        }
+    }
+
+    /*....................FIN.CSS.GENRES....................*/
+
+    /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
+
+    .multitaches>#ajout-categorie {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+
+
+
+
+        &>.ajout {
+
+            width: 300px;
+            height: 300px;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px 1px grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+
+            &>.newCat {
+                width: 200px;
+                height: 50px;
+                border: 0;
+                border-radius: 25px;
+                text-align: center;
+                font-size: 1.1rem;
+
+            }
+
+
+            &>button {
+                width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+
+                &>a {
+                    font-size: 1.1rem;
+                    color: white;
+                }
+
+            }
+        }
+
+        &>.modifierSupp {
+            width: 500px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px 1px grey;
+
+            &>#selection {
+                width: 350px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                &>#id_category {
+                    width: 150px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 50px;
+                    border-color: $remplissage;
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+
+                &>.modifCat {
+                    margin-right: 10px;
+                    width: 150px;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    border-radius: 50px;
+                    border: 0;
+                }
+            }
+
+
+
+            button {
+                margin-right: 10px;
+                width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+
+                &>a {
+                    font-size: 1.1rem;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .multitaches>#ajout-genre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+
+
+
+
+        &>.ajout {
+
+            width: 300px;
+            height: 300px;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px 1px grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+
+            &>.newGenre {
+                width: 200px;
+                height: 50px;
+                border: 0;
+                border-radius: 25px;
+                text-align: center;
+                font-size: 1.1rem;
+
+            }
+
+
+            &>button {
+                width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+
+                &>a {
+                    font-size: 1.1rem;
+                    color: white;
+                }
+
+            }
+        }
+
+        &>.modifierSupp {
+            width: 500px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            justify-items: center;
+            background-color: $remplissage;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px 1px grey;
+
+            &>#selection {
+                width: 350px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                &>#genre {
+                    width: 150px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 50px;
+                    border-color: $remplissage;
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+
+                &>.modifGenre {
+                    margin-right: 10px;
+                    width: 150px;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    border-radius: 50px;
+                    border: 0;
+                }
+            }
+
+
+
+            button {
+                margin-right: 10px;
+                width: 150px;
+                height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+
+                &>a {
+                    font-size: 1.1rem;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    /*....................fin.formulaire....................*/
+
+    /*....................CSS.USER....................*/
+
+    .multitaches>#userMenu {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 40px;
+        padding-top: 50px;
+
+        &>.userSearch {
+            display: flex;
+            flex-direction: row;
+
+            &>.recherche {
+                border: 0;
+                border-radius: 100px;
+                width: 300px;
+                height: 50px;
+                text-align: center;
+            }
+
+            &>button {
+                width: 50px;
+                height: 50px;
+                border: 0;
+                border-radius: 100px;
+                margin-left: -50px;
+                margin-right: 50px;
+            }
+        }
+
+        &>.boutonUser {
+            width: 400px;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+
+
+
+            &>button {
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                text-transform: uppercase;
+                border: 0;
+                border-radius: 10px;
+                background-color: $grisBtn;
+                margin-left: 10px;
+
+                &>a {
+                    height: 50px;
+                    font-size: 1.1rem;
+                    color: white;
+
+                }
+            }
+
+
+
+        }
+
+
+
+
 
     }
+
+    .multitaches>#tableUser {
+        margin-left: 50px;
+        margin-top: 50px;
+        text-align: center;
+
+        &>thead {
+            background-color: $grisBtn;
+            height: 50px;
+            font-size: 1.1rem;
+        }
+
+        &>tbody {
+            background-color: $fondUser;
+            height: 50px;
+        }
+    }
+
+    /*....................CSS.USER.FIN....................*/
+
+    /*....................CSS.NEWSLETTER....................*/
+
+    .multitaches>.newsLetter {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+        &>input {
+            width: 1000px;
+            height: 400px;
+        }
+
+        &>button {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-transform: uppercase;
+            border: 0;
+            border-radius: 10px;
+            background-color: $grisBtn;
+            margin-top: 10px;
+
+            &>a{
+             color: black;
+            }
+
+        }
+
+    }
+
+
+
+
+
+
 }
 
 
-/*....................FIN.FORMULAIRE.AJOUT....................*/
-
-/*....................CSS.CATEGORIES....................*/
-
-
-
-/*....................FIN.CSS.CATEGORIES....................*/
-
-/*....................CSS.GENRES....................*/
-
-
-
-/*....................FIN.CSS.GENRES....................*/
 
 
 
@@ -403,5 +967,5 @@ a {
 
 
 
-}//crochet de fermeture de .test (nom temporaire)
 
+//crochet de fermeture de .test (nom temporaire)

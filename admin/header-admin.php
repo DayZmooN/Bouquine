@@ -26,7 +26,7 @@
                     <li><img src="../image/catégorieDashboard.png" alt="icone catégorie du dashboard"><a href="./categorie.php">Catégories</a></li>
                     <li><img src="../image/genresDashboard.png" alt="icone genres du dashboard"><a href="./genre.php">Genre</a></li>
                     <li><img src="../image/userDashboard.png" alt="icone user du dashboard"><a href="./user.php">Users</a></li>
-                    <li><img src="../image/newsLetterDashboard.png" alt="icone newsletter du dashboard"><a href="#">Newsletter</a></li>
+                    <li><img src="../image/newsLetterDashboard.png" alt="icone newsletter du dashboard"><a href="../admin/newsletter.php">Newsletter</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +34,7 @@
     </aside>
 
 
-    <div class="test">
+    <div class="corp">
         <header id="headerDashboard">
 
             <img class="notif" src="../image/adminDashboard.png" alt="icone administrateur">
