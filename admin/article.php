@@ -123,32 +123,34 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    <<<<<<< HEAD <h1>Liste des articles</h1>
-        <h2><a href="add.php">Ajouter un nouvel article</a></h2>
-        =======
-        <h1>Liste des articles</h1>
-        <h2><a href="add.php" class="add">Ajouter un nouvel article</a></h2>
-        >>>>>>> 4a443cc6d4556389edb5dfe9094186c7d5cc8b69
-        <table>
-            <thead>
-                <th>ID</th>
-                <th>ISBN</th>
-                <th>Nom de cover</th>
-                <th>Titre</th>
-                <th>Auteur</th>
-                <th>Éditeur</th>
-                <th>Collection</th>
-                <th>Date de publication</th>
-                <th>Genre</th>
-                <th>id_category</th>
-                <th>Résumé</th>
-                <th>Status</th>
-            </thead>
+    <h1>Liste des articles</h1>
+    <h2><a href="add.php" class="add">Ajouter un nouvel article</a></h2>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>ISBN</th>
+            <th>Nom de cover</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Éditeur</th>
+            <th>Collection</th>
+            <th>Date de publication</th>
+            <th>Genre</th>
+            <th>id_category</th>
+            <th>Résumé</th>
+            <th>Status</th>
+        </thead>
 
         <tbody>
+<<<<<<< HEAD
         <?php
             foreach($result as $article){
         ?>
+=======
+            <?php
+            foreach ($result as $article) {
+            ?>
+>>>>>>> karim
                 <tr>
                     <td><?= $article['id_book'] ?></td>
                     <td><?= $article['ISBN'] ?></td>
@@ -162,6 +164,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $article['id_category'] ?></td>
                     <td><?= $article['summary'] ?></td>
                     <td><?= $article['status'] ?></td>
+<<<<<<< HEAD
                     <td><a href="edit.php?id=<?= $article['id_book'] ?>">Modifier</a>  <a href="delete.php?id=<?= $article['id_book'] ?>">Supprimer</a>
                     <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
                     <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a></td>
@@ -171,5 +174,22 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         ?>
         </tbody>
     </table>
+=======
+
+                    <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
+
+                        <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
+
+                        <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+
+                        <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+                    </td>
+                </tr>
+            <?php
+            }
+            ?>
+        </tbody>
+        <script src="./JS/admin.js"></script>
+>>>>>>> karim
 </body>
 </html>
