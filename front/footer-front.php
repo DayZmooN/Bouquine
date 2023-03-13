@@ -35,11 +35,11 @@ require_once './header-front.php';
            
         </div>
         </div>
-               
+           
         </section>
-        <div class="copyright">
+        <section class="copyright">
             <p id="copy">Copyright&copy;2023 Bouquine</p>
-       
+        </section>
 
     </footer>
     <!-- END FOOTER -->

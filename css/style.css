@@ -1002,14 +1002,12 @@ h2.lector {
     font-size: 1.8rem;
     color: rgb(0, 0, 0);
 }
-
 .avis {
     width: 100%;
     height: 300px;
     display: flex;
     justify-content: space-between;
 }
-
 .notice {
     width: 300px;
     height: 300px;
@@ -1027,7 +1025,6 @@ h3.name {
     margin-left: 20px;
     margin-top: 30px;
 }
-
 .notice img {
     width: 70px;
     height: 70px;
@@ -1035,7 +1032,6 @@ h3.name {
     margin-right: 30px;
     border-radius: 50%;
 }
-
 p.value {
     font-family: 'QuattrocentoSans-regular';
     font-size: 1.2rem;
@@ -1051,20 +1047,20 @@ p.value {
 /* SECTION FOOTER */
 
 footer {
+    width: 100%;
     position: fixed;
     z-index: 2;
     bottom: 0;
     left: 0;
-    right: 0;
-}
+ }
 #end {
     width: 100%;
-    height: 150px;
+    height: 120px;
     background-color: hsl(38, 89%, 48%);
 }
 .contain-footer {
     width: 100%;
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1072,6 +1068,7 @@ footer {
 img.img1 {
     width: 130px;
     height: 130px;
+    margin-top: 25px;
 }
 .reseaux {
     width: 400px;
@@ -1093,7 +1090,6 @@ img.social {
     font-weight: 700;
     text-align: center;
 }
-
 .politique {
     width: 400px;
     height: auto;
@@ -1102,24 +1098,17 @@ img.social {
     color: rgb(0, 0, 0);
     font-weight: 700;
 }
-
 p#copy {
-    /* width: 200px;
-    height: 50px; */
     font-family: 'QuattrocentoSans-Bold';
     font-size: 1rem;
     color: rgb(0, 0, 0);
     
-    margin-bottom: 10px;
 }
-
 .copyright {
-    width: 100%;
-    height: 10px;
-     text-align: center;
-  
-}
-
+    background-color: hsl(38, 89%, 48%);
+    text-align: center;
+    }
+   
 /* end footer */
 
 /* PAGE RESUME LIVRE */
@@ -1129,33 +1118,27 @@ p#copy {
     height: auto;
     background-color: #DAF7A6;
 }
-
 .contain {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 .resume {
     width: 450px;
     height: 400px;
     margin-left: 60px;
     margin-top: 60px;
 }
-
 #circe {
     width: 300px;
     height: 400px;
     border-radius: 10px;
 }
-
 #circe:hover {
     opacity: 60%;
 }
-
 .resum {
     width: 330px;
     height: 400px;
