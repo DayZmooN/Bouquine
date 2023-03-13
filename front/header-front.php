@@ -30,8 +30,8 @@
                         <li><a href='#'>Catalogue</a></li>
                         <li>Parcourir
                             <ul>
-
-                                <li><a href='#'>Action</a></li>
+                                
+                            <li><a href='#'>Action</a></li>
                                 <li><a href='#'>Romance</a></li>
                                 <li><a href='#'>Fantaisie</a></li>
                                 <li><a href='#'>Thriller</a></li>
@@ -58,6 +58,6 @@
     </header>
 
     <!-- END HEADER -->
-</body>
+    </body>
 
 </html>
