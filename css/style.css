@@ -104,7 +104,7 @@ nav ul ul {
 
 nav ul li:hover>ul {
     display: block;
-    
+
 
 }
 
@@ -908,7 +908,7 @@ a:link {
 }
 
 a:visited {
-    color:#FF5733 ;
+    color: #FF5733;
     border-bottom: 1px solid #b3b3b3;
 }
 
@@ -1051,37 +1051,42 @@ p.value {
 /* SECTION FOOTER */
 
 footer {
-
     position: fixed;
     z-index: 2;
     bottom: 0;
     left: 0;
     right: 0;
 }
-
 #end {
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color: hsl(38, 89%, 48%);
-    display: inline-flex;
-    justify-content: space-around;
+}
+.contain-footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-
 img.img1 {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 }
-
+.reseaux {
+    width: 400px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
 img.social {
     width: 50px;
     height: 50px;
     margin: 10px;
 }
-
 .pol {
-    width: 120px;
-    height: 50px;
+    width: 150px;
+    height: auto;
     font-family: 'QuattrocentoSans-regular';
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
@@ -1090,8 +1095,8 @@ img.social {
 }
 
 .politique {
-    width: 250px;
-    height: 50px;
+    width: 400px;
+    height: auto;
     font-family: 'QuattrocentoSans-regular';
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
@@ -1104,14 +1109,15 @@ p#copy {
     font-family: 'QuattrocentoSans-Bold';
     font-size: 1rem;
     color: rgb(0, 0, 0);
-    text-align: center;
+    
     margin-bottom: 10px;
 }
 
 .copyright {
     width: 100%;
-    height: 30px;
-    background-color: hsl(38, 89%, 48%);
+    height: 10px;
+     text-align: center;
+  
 }
 
 /* end footer */
@@ -1121,8 +1127,7 @@ p#copy {
 #books {
     width: 100%;
     height: auto;
-    background-color: #ffb24e8c;
-    /* display: flex; */
+    background-color: #DAF7A6;
 }
 
 .contain {
@@ -1130,15 +1135,15 @@ p#copy {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 
 }
 
 .resume {
-    width: 400px;
+    width: 450px;
     height: 400px;
-    margin-left: 80px;
-    margin-top: 80px;
+    margin-left: 60px;
+    margin-top: 60px;
 }
 
 #circe {
@@ -1154,7 +1159,7 @@ p#copy {
 .resum {
     width: 330px;
     height: 400px;
-    background-color: #FFB34E;
+    background-color: #FF5733;
     margin-top: 50px;
     border-radius: 10px;
     border: 3px solid #FFB34E;
@@ -1170,6 +1175,7 @@ p#copy {
     text-align: center;
     margin-top: 20px;
 
+
 }
 
 .resum p {
@@ -1181,6 +1187,24 @@ p#copy {
     margin-left: 10px;
     margin-right: 10px;
     text-align: justify;
+}
+
+hr.nb1 {
+    border: none;
+    border-top: 5px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin-top: 50px;
+}
+
+hr.nb1:after {
+    background: #fff;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
 
 .lus {
@@ -1195,10 +1219,10 @@ p#copy {
 h3.read {
     width: 100%;
     height: 40px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: 'QuattrocentoSans-Bold';
     font-weight: 700;
-    /* margin-top: 40px; */
+    margin-top: 40px;
     color: #000;
     text-align: left;
     font-style: italic;
@@ -1209,7 +1233,6 @@ h3.read {
     height: 350px;
     border-radius: 5px;
     margin-top: 30px;
-
 }
 
 p.titl1 {
@@ -1232,12 +1255,11 @@ p.author1 {
 .description {
     width: 100%;
     height: auto;
-    /* background-color: brown; */
     margin-top: 50px
 }
 
 h3.describe {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: 'QuattrocentoSans-Bold';
     font-weight: 700;
     color: #000;
@@ -1295,7 +1317,7 @@ ul.liste {
 h3.dispo {
     width: 100%;
     height: 30px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: 'QuattrocentoSans-Bold';
     font-weight: 700;
     margin-top: 40px;
@@ -1456,13 +1478,14 @@ p.authors {
 
 .info {
     width: 100%;
-    height: 700px;
-    background: #f4b97a95;
+    height: 900px;
+    background: white;
 }
 
 .news {
     width: 100%;
-    height: 700px;
+    height: 800px;
+
 }
 
 .infos {
@@ -1475,20 +1498,33 @@ h2.infos {
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 800;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 60px;
     text-transform: uppercase;
+    text-shadow: 0 0 2px orange;
 }
 
 .consignes {
-    width: 100%;
+    width: 70%;
     height: 600px;
+    border: 2px solid black;
+    margin-top: 50px;
+    padding-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    border-radius: 30px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
+        rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
 }
 
 ol.consignes {
-    list-style-type: decimal;
     text-align: center;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
+
 }
 
 ol.consignes li {

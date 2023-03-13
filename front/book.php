@@ -1,6 +1,6 @@
 <?php
 require_once './header-front.php';
-require_once './footer-front.php';
+// require_once './footer-front.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +32,7 @@ require_once './footer-front.php';
                     ont-ils pas plutôt rendu service ? Là, l'immortelle peut choisir qui elle est. Demi-déesse, certes, mais femme avant tout .......</p>
             </div>
         </div>
+        <hr class="nb1">
         <div class="lus">
             <h3 class="read">Les utilisateurs ont également lu</h3>
             <a href="#"><img src="../image/le chant d achille.jpg" alt="le chant d achille de MAdeleine Miller">
@@ -50,10 +51,10 @@ require_once './footer-front.php';
                             <p class="titl1">Sixtine </p>
                             <p class="author1">Caroline VERMALLE </p>
         </div>
-
+        <hr class="nb1">
         <div class="description">
 
-            <h3 class="describe">Descrption du produit</h3>
+            <h3 class="describe">Description du produit</h3>
             <h4 class="bio">Biographie de l'auteur</h4>
             <p class="miller">Madeline Miller est passionnée par la Grèce antique.
                 Après des études d'Histoire et de Littérature classique
@@ -68,7 +69,6 @@ require_once './footer-front.php';
             <ul class="liste">
                 <li> Éditeur Pocket (12 janvier 2023)</li>
                 <li>Langue Français</li>
-                <li>Poche : 480 pages</li>
                 <li>Poche: 480 pages</li>
                 <li>ISBN-13 : 978-2266334426</li>
                 <li>Poids de l'article : 236 g</li>
@@ -77,7 +77,7 @@ require_once './footer-front.php';
 
             </ul>
         </div>
-
+        <hr class="nb1">
         <h3 class="dispo">Disponibles dans la même édition</h3>
 
         <div class="livr">
@@ -97,10 +97,6 @@ require_once './footer-front.php';
                 <p class="title2">L'ASSASIN ROYAL </p><br>
                 <p class="author2">Robin HOBB</p>
             </div>
-
-
-
-
         </div>
         </div>
     </section>
