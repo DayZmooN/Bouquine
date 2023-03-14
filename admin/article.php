@@ -63,29 +63,27 @@ foreach ($result as $article) {
         <p><?= $article['author'] ?></p>
         <div id="bouton">
             <p>
-                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnGreen" href="#" style="color:green">modifier</a> /
                 <a class="btnRed" href="#" style="color:red">supprimer</a>
             </p>
         </div>
     </div>
-<?php
-}
-?>
+<?php } ?>
 
-                    <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
 
-                        <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
+<td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
 
-                        <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+    <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
 
-                        <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
-                    </td>
-                </tr>
-            <?php
-            }
-            ?>
-        </tbody>
-        <script src="./JS/admin.js"></script>
->>>>>>> karim
+    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+
+    <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+</td>
+</tr>
+
+
+</tbody>
+<script src="./JS/admin.js"></script>
 </body>
+
 </html>
