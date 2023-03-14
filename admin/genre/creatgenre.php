@@ -2,10 +2,8 @@
 session_start();
 
 try {
-    //on se connecte a la bdd
     require_once '../auth.php';
 
-    //on cree la requete pour inserer en bdd 
     $req = $db->prepare("INSERT INTO `genre` (`libel_genre`, `genre_slug`) VALUES (:libel_genre, :genre_slug)");
     $req->bindValue(":libel_genre", $_POST["libel_genre"], PDO::PARAM_STR);
     $req->bindValue(":genre_slug", $_POST["genre_slug"], PDO::PARAM_STR);
