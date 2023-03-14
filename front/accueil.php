@@ -6,6 +6,8 @@ require_once './footer-front.php';
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` LIMIT 8');
 $query->execute();
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +21,7 @@ $query->execute();
 </head>
 
 <body>
-    <!-- SECTION 1 EN TETE  -->
+    <!-- SECTION 1 populaire  -->
     <main>
         <section class="parallax-section">
             <div class="parallax parallax1">
