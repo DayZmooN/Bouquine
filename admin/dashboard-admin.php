@@ -14,7 +14,7 @@ include_once './header-admin.php';
 
 <h1 class="multiTitre">tableau de bord</h1>
 
-<div id="temporaire">
+<div id="compteurEtGraphique">
     <p>a venir en bonus graphique et affichage de compteurs</p>
 </div>
 
