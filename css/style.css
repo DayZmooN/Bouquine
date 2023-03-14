@@ -1353,12 +1353,10 @@ p.author2 {
     width: 100%;
     height: auto;
 }
-
 .catal {
     width: 100%;
     height: 1400px;
 }
-
 h2.catalog {
     font-size: 3rem;
     font-family: 'QuattrocentoSans-Regular';
@@ -1368,13 +1366,11 @@ h2.catalog {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
-
 .formul-s {
     width: 100%;
     height: 80px;
     margin-bottom: 30px;
 }
-
 .formul-s form {
     display: inline-block;
     width: 100%;
@@ -1382,44 +1378,42 @@ h2.catalog {
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
 }
-
 .formul-s label {
     display: none;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
 }
-
 input#search-book {
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
 .item4 {
     width: 200px;
     height: 380px;
+    margin: 0 auto;
 }
-
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
-
 .books {
     width: 100%;
-    height: 1600px;
+    height: 100%;
+    margin-top: 100px;
 }
-
 .books-catalog {
-    width: 200px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
 }
-
 .container-books {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
-
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1427,7 +1421,6 @@ p.titles {
     margin-top: 20px;
     text-align: center;
 }
-
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1616,6 +1609,7 @@ form button {
     background-color: #74EC8D;
     cursor: pointer;
 }
+
 /* FIN CONNEXION */
 
 /* PAGE INSCRIPTION */
@@ -1623,6 +1617,7 @@ form button {
     width: 100%;
     height: 600px;
 }
+
 .container-suscribe {
     width: 100%;
     height: 600px;
@@ -1630,9 +1625,10 @@ form button {
     justify-content: space-around;
     align-items: center;
 }
+
 .img-book {
     height: 600px;
-   }
+}
 
 .img-book img {
     width: 100%;
@@ -1646,12 +1642,12 @@ form button {
     margin-top: 20px;
 }
 
-img.form-logo{
+img.form-logo {
     width: 100px;
     height: 100px;
     display: block;
     margin: auto;
-   }
+}
 
 h2.sus-form {
     font-size: 1.8rem;
@@ -1679,7 +1675,7 @@ h2.sus-form {
     font-weight: 600;
     padding: 8px;
     border-radius: 5px;
-     border: none;
+    border: none;
     background-color: #f2f2f2;
 }
 
@@ -1813,31 +1809,105 @@ input[type="submit"]:hover {
 
 /* DASHBOARD USER */
 
-section.user-dash {
+/* /* section.user-dash {
     width: 100%;
     height: 600px;
-    ;
     display: flex;
-}
-.dash-user {
+} */
+/* .dash-user {
     background-color: #FFC300;
     width: 100%;
     height: 600px;
+} */
+/* .container-info{
+    width: 600px;
+    height: 600px;
+    background-color: #ed20d5;
+    display: flex;
+    
 }
-
 .dash-accueil {
     width: 100%;
     height: 120px;
-    padding: 30px;
-    text-align: center;
+    /* padding: 30px; */
+/* text-align: center;
     font-size: 1.8rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
+}
+.dash-accueil h3{
+    width: 100%;
+    height: 100px;
+} */
+
+/* .sidebar-dash {
+    background-color: #F3BB00;
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.contain-perso{
+    width: 600px;
+    height: 400px;
+    background-color: #45a049;
+    
+} */
+
+/* .sidebar-dash ul {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    margin: 30px 0;
+}
+
+.sidebar-dash li {
+    margin-bottom: 10px;
+}
+
+.sidebar-dash a {
+    color: black;
+    display: block;
+    padding: 10px;
+} */
+
+/* .sidebar-dash a.active,
+.sidebar-dash a:hover {
+    background-color: #A29C4A;
+    color: #fff;
+    border-radius: 10px;
+}
+.personal{
+
+} */
+*/ */ .user-dash {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #45a049;
+
+}
+.container-info {
+    width: 100%;
+    height: 600px;
+    background-color: #ed20d5;
+
+}
+.dash-accueil {
+    width: 50%;
+    height: 100px;
+    font-size: 1.3rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+   display: block;
+   margin: auto;
 }
 
 .sidebar-dash {
     background-color: #F3BB00;
-    height: 350px;
-    width: 250px;
+    width: 300px;
+    height: 600px;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -1866,68 +1936,20 @@ section.user-dash {
     border-radius: 10px;
 }
 
-/* .dash-user {
-    max-width: auto;
-    height: auto;
+.contain-perso {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
 }
 
-.dashboard-container {
-    margin: 20px auto;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-h2 {
-    font-size: 2rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    font-weight: 600;
+.personal {
     margin-top: 30px;
 }
 
-.info-user {
-    display: flex;
-    align-items: center;
+.modif {
     margin-bottom: 20px;
 }
-
-img.user1 {
-    border-radius: 50%;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
-}
-
-.details h3 {
-    font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin-top: 0;
-}
-
-.details p {
-    font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    font-weight: 700;
-}
-
-.actions a {
-    font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    font-weight: 600;
-    display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #74EC8D;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.actions a:hover {
-    background-color: #3e8e41;
-} */
 
 /* END DASHBOARD USER */
 
@@ -1977,9 +1999,11 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 input.mailing {
     background-color: white;
 }

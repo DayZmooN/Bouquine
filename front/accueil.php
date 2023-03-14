@@ -1,5 +1,5 @@
 <?php
-require_once '../connexion.php';
+require_once './connect.php';
 require_once './header-front.php';
 require_once './footer-front.php';
 
@@ -41,8 +41,8 @@ $query->execute();
             <div class="container">
                 <?php foreach ($query as $article) { ?>
                     <div class="item">
-                        <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                        <button id="resume" type="button"><a href="#">Résumé</a></button>
+                        <a href="./book.php?id=<?= $article['id_book'] ?>"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                        <button id="resume" type="button"><a href="./book.php?id=<?= $article['id_book'] ?>">Résumé</a></button>
                         <p class="title"><?= $article['title'] ?></p><br>
                         <p class="author"><?= $article['author'] ?></p>
                     </div>

@@ -15,7 +15,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><img src="../image/logo1.png" alt="logo bouquine "></a>
+                <a href="./accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon"></label>
@@ -35,6 +35,7 @@
                 <!-- barre de recherche  -->
                 <li class="search-box">
                     <input type="text" name="search" placeholder="Rechercher">
+                    <button type="submit"> <a href="../admin/barre/seachbar.php">Envoyer</a></button>
             </ul>
         </nav>
         <a href="./connexion.php"><img class="img-user" src="../image/profil.png" alt="connexion au compte "></a>
