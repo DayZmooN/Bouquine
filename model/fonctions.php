@@ -1,16 +1,7 @@
-<!--Afficher les images de couvertures à partir de la base de données (voir pour les resize)
-<h1>Covers</h1>-->
 <?php
 require_once '../connexion.php';
-
-/*$req = $db->query("SELECT `image` FROM `book`");
-while($data = $req->fetch()){
-    echo "<img src='../image/".$data['image']."'>";
-}*/
 ?>
-
 <!--CRUD Catégories -->
-
 <h1>Catégories</h1>
 <?php
 // C R U D : READ
