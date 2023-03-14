@@ -1,5 +1,6 @@
 <?php 
-include './header-admin.php';
+    include './header-admin.php';
+
 ?>
 
     <h1 class="multiTitre">listes user</h1>
@@ -10,14 +11,14 @@ include './header-admin.php';
             <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
         </form>
         <form class="boutonUser">
-            <button><a href="#">modifier</a></button>
+            <button><a href="./modifUser.php">modifier</a></button>
             <button><a href="#">supprimer</a></button>
         </form>
     </div>
 
 <table id="tableUser">
   <thead>
-    <tr>
+    <tr >
       <th>id</th>
       <th>Name</th>
       <th>Lastname</th>
@@ -31,7 +32,7 @@ include './header-admin.php';
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="contenuUser">
       <td>1</td>
       <td>Karim</td>
       <td>devlead</td>
@@ -44,6 +45,7 @@ include './header-admin.php';
       <td><input type="checkbox" id="check-all" name="check-all"></td>
 
     </tr>
+
     
   </tbody>
 </table>

@@ -1,5 +1,5 @@
 <?php
-//on démarre une session PHP on ecrit a chaquer page ou veut rester connecter en debut 
+//on dÃ©marre une session PHP on ecrit a chaquer page ou veut rester connecter en debut 
 session_start();
 
 // if (!isset($_SESSION["admin"])) {
@@ -14,7 +14,7 @@ include_once './header-admin.php';
 
 <h1 class="multiTitre">tableau de bord</h1>
 
-<div id="temporaire">
+<div id="compteurEtGraphique">
     <p>a venir en bonus graphique et affichage de compteurs</p>
 </div>
 
