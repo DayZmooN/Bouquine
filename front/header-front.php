@@ -13,7 +13,7 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
+        <nav class="header-nav">
             <div class="logo">
                 <a href="#"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>

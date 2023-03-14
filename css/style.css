@@ -66,7 +66,7 @@ input#menu-toggle {
     display: none;
 }
 
-nav {
+nav.header-nav {
     width: 90%;
     display: flex;
     color: #000;
@@ -1353,10 +1353,12 @@ p.author2 {
     width: 100%;
     height: auto;
 }
+
 .catal {
     width: 100%;
     height: 1400px;
 }
+
 h2.catalog {
     font-size: 3rem;
     font-family: 'QuattrocentoSans-Regular';
@@ -1366,11 +1368,13 @@ h2.catalog {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
+
 .formul-s {
     width: 100%;
     height: 80px;
     margin-bottom: 30px;
 }
+
 .formul-s form {
     display: inline-block;
     width: 100%;
@@ -1378,35 +1382,42 @@ h2.catalog {
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
 }
+
 .formul-s label {
     display: none;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
 }
+
 input#search-book {
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .item4 {
     width: 200px;
     height: 380px;
     margin: 0 auto;
 }
+
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
+
 .books {
     width: 100%;
     height: 100%;
     margin-top: 100px;
 }
+
 .books-catalog {
     width: 400px;
     height: 300px;
     margin: 100px auto;
 }
+
 .container-books {
     display: flex;
     justify-content: center;
@@ -1414,6 +1425,7 @@ input#search-book {
     width: 100%;
     height: 100%;
 }
+
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1421,6 +1433,7 @@ p.titles {
     margin-top: 20px;
     text-align: center;
 }
+
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1808,34 +1821,114 @@ input[type="submit"]:hover {
    */
 
 /* DASHBOARD USER */
-section.user-dash{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    background-color: #3e8e41;
-   
-}
-.container-info {
-    width: 100%;
-    height: 500px;
-    margin-left: 20px;
-    background-color: #b9671b;
-  }
 
-.sidebar-dash{
+
+nav#user-nav {
     width: 250px;
     height: 400px;
-    background-color: #eb7371;
+    background-color: #BFC9CA;
+    position: fixed;
+    top: 120px;
+    left: 0;
 }
-.contain-perso{
-    width: 500px;
+
+#user-nav ul {
+
+    flex-direction: column;
+}
+
+#user-nav ul li {
+    text-decoration: none;
+}
+
+#user-nav ul li a {
+    display: block;
+    padding: 10px;
+}
+
+#user-nav ul li a:hover {
+    background-color: #BFC9CA;
+    border-radius: 10px;
+}
+
+.info1 {
+    width: 50%;
     height: 500px;
-    background-color: #ed20d5;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
 }
-.dash-accueil{
+
+.info1 h3 {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    margin-top: 0;
+    text-align: center;
+}
+
+.personal {
     width: 100%;
+    height: 400px;
+    margin: auto;
+    /* display: none; */
 }
- 
+
+.personal form {
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.form-row {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-col {
+    width: 48%;
+    display: inline-block;
+}
+
+label {
+    display: block;
+
+}
+
+input[type="text"] {
+    width: 300px;
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input#email {
+    width: 400px;
+    background-color: white;
+}
+
+input#adresse{
+    width: 400px;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
 /* END DASHBOARD USER */
 
 /* info perso */
@@ -1849,18 +1942,15 @@ section.user-dash{
     height: 50px;
     margin-top: 30px;
 }
-
 h2 {
     font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-align: center;
 }
-
 form {
     margin: 0 auto;
     max-width: 500px;
 }
-
 label {
     display: block;
     margin-top: 10px;
@@ -1892,3 +1982,4 @@ input[type="submit"]:hover {
 input.mailing {
     background-color: white;
 }
+/* end info perso */
