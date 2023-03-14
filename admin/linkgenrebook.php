@@ -39,7 +39,6 @@ while ($book = $req->fetch(PDO::FETCH_ASSOC)) {
 </table>
 <button type="submit" value="submit" name="submit">submit</button>
 <?php
-session_start();
 if(isset ($_POST['submit'])){
     if(!empty($_POST['check_list'])){
         foreach($_POST['check_list'] as $id_genre){
