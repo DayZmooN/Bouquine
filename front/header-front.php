@@ -15,7 +15,7 @@
     <header>
         <nav class="header-nav">
             <div class="logo">
-                <a href="#"><img src="../image/logo1.png" alt="logo bouquine "></a>
+                <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon"></label>

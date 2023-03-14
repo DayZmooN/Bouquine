@@ -43,13 +43,6 @@ require_once './header-front.php';
 
     </section>
 
-
-
-
-
-
-
-
 </body>
 
 </html>
