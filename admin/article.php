@@ -16,6 +16,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     </form>
     <a href="./add.php">ajouter de nouveaux livres</a>
 </div>
+<div id="menu-article">
+    <form action="" method="post">
+        <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
+        <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
+    </form>
+    <a href="./add.php">ajouter de nouveaux livres</a>
+</div>
 
 <div id="menu-recherche-article">
     <h2>liste des articles</h2>
@@ -56,10 +63,8 @@ foreach ($result as $article) {
         <p><?= $article['author'] ?></p>
         <div id="bouton">
             <p>
-                <a class="btnGreen" href="edit.php?id=<?= $article['id_book'] ?>" style="color:green">modifier</a> /
-                <a class="btnRed" href="./delete.php?id=<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer</a>
-                <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
-                <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> / 
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
             </p>
         </div>
     </div>
@@ -67,4 +72,20 @@ foreach ($result as $article) {
 }
 ?>
 
-<?php include './includeClose.php'; ?>
+                    <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
+
+                        <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
+
+                        <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+
+                        <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+                    </td>
+                </tr>
+            <?php
+            }
+            ?>
+        </tbody>
+        <script src="./JS/admin.js"></script>
+>>>>>>> karim
+</body>
+</html>

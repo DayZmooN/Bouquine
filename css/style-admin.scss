@@ -4,7 +4,35 @@ $grisBtn : #696969;
 $grisFiltre : #807373;
 $fondUser : #FFE7D6;
 
+@font-face {
+    font-family: 'QuattrocentoSans-Regular';
+    src: url(../fonts/QuattrocentoSans-Regular.ttf);
+}
 
+@font-face {
+    font-family: 'QuattrocentoSans-Bold';
+    src: url(../fonts/QuattrocentoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Bold Italic';
+    src: url(../fonts/LRTOksanaBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Bold';
+    src: url(../fonts/LRTOksanaBold.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Italic';
+    src: url(../fonts/LRTOksanaItalic.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana';
+    src: url(../fonts/LRTOksana.ttf);
+}
 
 
 
@@ -41,7 +69,7 @@ a {
             &>ul {
 
                 &>li {
-                    max-width: 400px;
+                    max-width: 500px;
                     width: 100%;
                     height: 80px;
                     display: flex;
@@ -77,13 +105,14 @@ a {
 .corp {
     max-width: 1300px;
     width: 75%;
-    height: 100 vh;
+    //height: 100 vh;
     float: right;
     background-color: $fondRose;
+    
 
     &>#headerDashboard {
 
-        height: 131px;
+        height: 132px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -109,83 +138,26 @@ a {
     &>.multitaches {
         width: 100%;
         height: 82vh;
-        background-color: $fondRose;
+        
 
         &>.multiTitre {
             width: 100%;
             padding-top: 40px;
             text-transform: uppercase;
             text-align: center;
-            background-color: $fondRose;
+            
 
         }
     }
 
     /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
 
-    /*....................CSS.CONNEXION....................*/
 
-    .connexion{
-        width: 500px;
-        height: 350px;
-        border-radius: 15px;
-        margin-top: 100px;
-        margin-left: 350px;
-        background-color: $remplissage ;
     
-        & > .Titre{
-            width: 100%;
-            padding-top: 20px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    
-        & > #mail, #pass{
-            width: 300px;
-            height: 50px;
-            margin: 30px 100px;
-            //border: 1px solid black;
-            
-            & > input{
-                width: 300px; 
-                height: 50px;
-                border-radius: 50px;
-                border: 0;
-                background-color: white ;
-                padding-left: 10px;
-                margin-top: 20px;
-            
-            }
-           
-    
-        }
-    
-        & > #connect{
-            width: 100px;
-    
-            & > button{
-                width: 100px;
-                height: 25px;
-                margin: 50px 200px;
-                box-shadow: 1px 1px 10px 1px grey;
-                background-color: #81D9E5;
-                border: 0;
-                border-radius: 20px;
-    
-            }
-    
-            & > button:hover{
-                cursor: pointer;
-            }
-        }
-    }
-    
-
-    /*....................FIN.CSS.CONNEXION....................*/
 
     /*....................CSS.DASHBOARD....................*/
 
-    .multitaches>#temporaire {
+    .multitaches>#compteurEtGraphique {
         width: 1000px;
         height: 200px;
         margin-top: 25px;
@@ -259,6 +231,7 @@ a {
         }
 
         &>#nav-search {
+            width: 20px;
 
             &>img {
                 width: 32px;
@@ -901,7 +874,8 @@ a {
     }
 
     .multitaches>#tableUser {
-        margin-left: 50px;
+        width: 100%;
+        // margin-left: 50px;
         margin-top: 50px;
         text-align: center;
 
@@ -912,12 +886,46 @@ a {
         }
 
         &>tbody {
-            background-color: $fondUser;
+            
+            & > .contenuUser{
+                background-color: $fondUser;
             height: 50px;
+            }
+
+            & > .tdButton{
+                height: 50px;
+                
+                & > td{
+                    height: 50px;
+                            
+                    & > button{
+                        width: 100%;
+                        height: 50px;
+                        
+                        background-color: $grisBtn;
+                        border-radius: 10px;
+                        border: 0;
+                        margin-top: 10px;
+
+                        & > a{
+                            display: block;
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            color: black;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
     /*....................CSS.USER.FIN....................*/
+
+    /*....................CSS.USER.MODIFICATION....................*/
+
+
 
     /*....................CSS.NEWSLETTER....................*/
 
@@ -957,9 +965,146 @@ a {
 
 
 
+}// crochet de corp
+
+
+
+
+
+
+
+
+    /*....................CSS.CONNEXION....................*/
+
+    #sideVide{
+
+        max-width: 500px;
+        width: 25%;
+        height: 100vh;
+        position: fixed;
+        background-color: #858585;
+    
+        &>#logo>img {
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+    
+    }
+    
+    .bodyConnexion{
+        max-width: 1300px;
+        width: 75%;
+        height: 100 vh;
+        float: right;
+        
+        
+    
+        & >.connexion{
+            width: 500px;
+            height: 350px;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-left: 350px;
+            background-color: $remplissage ;
+        
+            & > .Titre{
+                width: 100%;
+                padding-top: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            & > #mail, #pass{
+                width: 300px;
+                height: 50px;
+                margin: 30px 100px;
+                //border: 1px solid black;
+                
+                & > input{
+                    width: 300px; 
+                    height: 50px;
+                    border-radius: 50px;
+                    border: 0;
+                    background-color: white ;
+                    padding-left: 10px;
+                    margin-top: 20px;
+                
+                }
+               
+        
+            }
+        
+            & > #connect{
+                width: 100px;
+        
+                & > button{
+                    width: 100px;
+                    height: 25px;
+                    margin: 50px 200px;
+                    box-shadow: 1px 1px 10px 1px grey;
+                    background-color: #81D9E5;
+                    border: 0;
+                    border-radius: 20px;
+        
+                }
+        
+                & > button:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+
+/*....................FIN.CSS.CONNEXION....................*/
+
+/*....................DELETE.CSS....................*/
+
+.popup{
+    width: 500px;
+    height: 250px;
+    position: fixed;
+    box-shadow: 1px 1px 10px 1px grey;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 99999;
+
+    & > h1{
+        width: 500px;
+        padding-top: 30px;
+        font-family:LRT Oksana Bold ;
+    }
+
+    & > .title{
+        width: 500px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    & > .btnYes{
+        width: 100px;
+        height: 70px;
+        background-color: #26F904;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    & > .btnNo{
+        width: 100px;
+        height: 70px;
+        background-color: #FF0404;
+        margin-left: 20px;
+        cursor: pointer;
+        
+    }
+
+
+
+    
 }
-
-
 
 
 

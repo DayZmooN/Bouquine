@@ -10,6 +10,7 @@ include './header-admin.php';
     <form class="ajout" action="" method="post">
 
         <input class="newCat" type="text" name="recherche" placeholder="nouvelle catégorie">
+        <input class="slug" type="text" name="slug" placeholder="champ du slug">
         <button><a href="./add.php">ajouter</a></button>
 
     </form>
