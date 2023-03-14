@@ -66,7 +66,7 @@ if (!empty($_POST)) {
 <body>
 
     
-    <aside id="side-bar">
+    <aside id="sideVide">
         <div id="logo">
             <img src="../image/logoAdmin.png" alt="logo du site bouquine">
         </div>
@@ -74,10 +74,8 @@ if (!empty($_POST)) {
 
     </aside>
 
-<div class="corp">
-    <header id="headerDashboard">
-
-    </header>
+<div class="bodyConnexion"> 
+    
 
 
  <form class="connexion" action="" method="post">
@@ -95,6 +93,37 @@ if (!empty($_POST)) {
                 </div>
 
             </form>
+
+
+      
+
+        
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ </div> 
+</body>
+
+</html>
 
 
       

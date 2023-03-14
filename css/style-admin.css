@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "QuattrocentoSans-Regular";
+  src: url(../fonts/QuattrocentoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "QuattrocentoSans-Bold";
+  src: url(../fonts/QuattrocentoSans-Bold.ttf);
+}
+@font-face {
+  font-family: "LRT Oksana Bold Italic";
+  src: url(../fonts/LRTOksanaBoldItalic.ttf);
+}
+@font-face {
+  font-family: "LRT Oksana Bold";
+  src: url(../fonts/LRTOksanaBold.ttf);
+}
+@font-face {
+  font-family: "LRT Oksana Italic";
+  src: url(../fonts/LRTOksanaItalic.ttf);
+}
+@font-face {
+  font-family: "LRT Oksana";
+  src: url(../fonts/LRTOksana.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +45,7 @@ a {
   border-bottom: 1px solid black;
 }
 #side-bar > #menu-admin > nav > ul > li {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   height: 80px;
   display: flex;
@@ -46,12 +70,9 @@ a {
 .corp {
   max-width: 1300px;
   width: 75%;
-  height: 100 vh;
   float: right;
   background-color: #c8c8c8;
   /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
-  /*....................CSS.CONNEXION....................*/
-  /*....................FIN.CSS.CONNEXION....................*/
   /*....................CSS.DASHBOARD....................*/
   /*....................FIN.DASHBOARD....................*/
   /*....................CSS.ARTICLES....................*/
@@ -66,10 +87,11 @@ a {
   /*....................fin.formulaire....................*/
   /*....................CSS.USER....................*/
   /*....................CSS.USER.FIN....................*/
+  /*....................CSS.USER.MODIFICATION....................*/
   /*....................CSS.NEWSLETTER....................*/
 }
 .corp > #headerDashboard {
-  height: 131px;
+  height: 132px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -90,59 +112,14 @@ a {
 .corp > .multitaches {
   width: 100%;
   height: 82vh;
-  background-color: #c8c8c8;
 }
 .corp > .multitaches > .multiTitre {
   width: 100%;
   padding-top: 40px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #c8c8c8;
 }
-.corp .connexion {
-  width: 500px;
-  height: 350px;
-  border-radius: 15px;
-  margin-top: 100px;
-  margin-left: 350px;
-  background-color: #FFDAA4;
-}
-.corp .connexion > .Titre {
-  width: 100%;
-  padding-top: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.corp .connexion > #mail, .corp .connexion #pass {
-  width: 300px;
-  height: 50px;
-  margin: 30px 100px;
-}
-.corp .connexion > #mail > input, .corp .connexion #pass > input {
-  width: 300px;
-  height: 50px;
-  border-radius: 50px;
-  border: 0;
-  background-color: white;
-  padding-left: 10px;
-  margin-top: 20px;
-}
-.corp .connexion > #connect {
-  width: 100px;
-}
-.corp .connexion > #connect > button {
-  width: 100px;
-  height: 25px;
-  margin: 50px 200px;
-  box-shadow: 1px 1px 10px 1px grey;
-  background-color: #81D9E5;
-  border: 0;
-  border-radius: 20px;
-}
-.corp .connexion > #connect > button:hover {
-  cursor: pointer;
-}
-.corp .multitaches > #temporaire {
+.corp .multitaches > #compteurEtGraphique {
   width: 1000px;
   height: 200px;
   margin-top: 25px;
@@ -202,6 +179,9 @@ a {
 .corp .multitaches > #menu-recherche-article > h2,
 .corp .multitaches > #menu-recherche-article img {
   margin-left: 50px;
+}
+.corp .multitaches > #menu-recherche-article > #nav-search {
+  width: 20px;
 }
 .corp .multitaches > #menu-recherche-article > #nav-search > img {
   width: 32px;
@@ -715,7 +695,7 @@ a {
   color: white;
 }
 .corp .multitaches > #tableUser {
-  margin-left: 50px;
+  width: 100%;
   margin-top: 50px;
   text-align: center;
 }
@@ -724,9 +704,31 @@ a {
   height: 50px;
   font-size: 1.1rem;
 }
-.corp .multitaches > #tableUser > tbody {
+.corp .multitaches > #tableUser > tbody > .contenuUser {
   background-color: #FFE7D6;
   height: 50px;
+}
+.corp .multitaches > #tableUser > tbody > .tdButton {
+  height: 50px;
+}
+.corp .multitaches > #tableUser > tbody > .tdButton > td {
+  height: 50px;
+}
+.corp .multitaches > #tableUser > tbody > .tdButton > td > button {
+  width: 100%;
+  height: 50px;
+  background-color: #696969;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 10px;
+}
+.corp .multitaches > #tableUser > tbody > .tdButton > td > button > a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+  font-size: 1.1rem;
 }
 .corp .multitaches > .newsLetter {
   width: 100%;
@@ -752,4 +754,106 @@ a {
 }
 .corp .multitaches > .newsLetter > button > a {
   color: black;
+}
+
+/*....................CSS.CONNEXION....................*/
+#sideVide {
+  max-width: 500px;
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  background-color: #858585;
+}
+#sideVide > #logo > img {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.bodyConnexion {
+  max-width: 1300px;
+  width: 75%;
+  height: 100 vh;
+  float: right;
+}
+.bodyConnexion > .connexion {
+  width: 500px;
+  height: 350px;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-left: 350px;
+  background-color: #FFDAA4;
+}
+.bodyConnexion > .connexion > .Titre {
+  width: 100%;
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.bodyConnexion > .connexion > #mail, .bodyConnexion > .connexion #pass {
+  width: 300px;
+  height: 50px;
+  margin: 30px 100px;
+}
+.bodyConnexion > .connexion > #mail > input, .bodyConnexion > .connexion #pass > input {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+.bodyConnexion > .connexion > #connect {
+  width: 100px;
+}
+.bodyConnexion > .connexion > #connect > button {
+  width: 100px;
+  height: 25px;
+  margin: 50px 200px;
+  box-shadow: 1px 1px 10px 1px grey;
+  background-color: #81D9E5;
+  border: 0;
+  border-radius: 20px;
+}
+.bodyConnexion > .connexion > #connect > button:hover {
+  cursor: pointer;
+}
+
+/*....................FIN.CSS.CONNEXION....................*/
+/*....................DELETE.CSS....................*/
+.popup {
+  width: 500px;
+  height: 250px;
+  position: fixed;
+  box-shadow: 1px 1px 10px 1px grey;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 99999;
+}
+.popup > h1 {
+  width: 500px;
+  padding-top: 30px;
+  font-family: LRT Oksana Bold;
+}
+.popup > .title {
+  width: 500px;
+  height: 50px;
+  margin-top: 10px;
+}
+.popup > .btnYes {
+  width: 100px;
+  height: 70px;
+  background-color: #26F904;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.popup > .btnNo {
+  width: 100px;
+  height: 70px;
+  background-color: #FF0404;
+  margin-left: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=style-admin.css.map */

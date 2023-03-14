@@ -1,8 +1,8 @@
 <?php
 require_once '../connexion.php';
-session_start();
-$id = $_GET['id'];
-?>
+
+// $id = $_GET['id'];
+// ?>
 
 <!-- // <section> 
 //     <?php
@@ -44,39 +44,29 @@ $id = $_GET['id'];
                         <td><input type="text" name="summary" value="<?= $article['summary'] ?>"></td>
                         <td><input type="text" name="status" value="<?= $article['status'] ?>" size="1"></td>
                 </tr>
-            </tbody>
-        <?php }
-    if (isset($_POST['submit'])) {
-        $id = $_GET['id'];
-        $ISBN = addslashes($_POST['ISBN']);
-        $image = addslashes($_POST['image']);
-        $title = addslashes($_POST['title']);
-        $author = addslashes($_POST['author']);
-        $editor = addslashes($_POST['editor']);
-        $collection = addslashes($_POST['collection']);
-        $publication_date = addslashes($_POST['publication_date']);
-        $genre = addslashes($_POST['genre']);
-        $id_category = addslashes($_POST['id_category']);
-        $summary = addslashes($_POST['summary']);
+            </tbody> -->
+        <!-- <?php //} 
+    // session_start();
+    // if (isset($_POST['submit'])) {
+    //     $id = $_GET['id'];
+    //     $ISBN = addslashes($_POST['ISBN']);
+    //     $image = addslashes($_POST['image']);
+    //     $title = addslashes($_POST['title']);
+    //     $author = addslashes($_POST['author']);
+    //     $editor = addslashes($_POST['editor']);
+    //     $collection = addslashes($_POST['collection']);
+    //     $publication_date = addslashes($_POST['publication_date']);
+    //     $genre = addslashes($_POST['genre']);
+    //     $id_category = addslashes($_POST['id_category']);
+    //     $summary = addslashes($_POST['summary']);
 
-        $reqed = $db->prepare("UPDATE `book` SET `ISBN`=':ISBN',`image`=':image',`title`=':title',`author`=':author',`editor`=':editor',`collection`=':collection',`publication_date`=':publication_date',`genre`=':genre',`id_category`=':id_category',`summary`=':summary' WHERE `id_book`= :id");
-        $addreq->bindParam('id', $id, PDO::PARAM_INT);
-        $addreq->bindParam('ISBN',$ISBN, PDO::PARAM_STR);
-        $addreq->bindParam('image',$image, PDO::PARAM_STR);
-        $addreq->bindParam('title',$title, PDO::PARAM_STR);
-        $addreq->bindParam('author',$author, PDO::PARAM_STR);
-        $addreq->bindParam('editor',$editor, PDO::PARAM_STR);
-        $addreq->bindParam('collection',$collection, PDO::PARAM_STR);
-        $addreq->bindParam('publication_date',$publication_date, PDO::PARAM_STR);
-        $addreq->bindParam('genre',$genre, PDO::PARAM_STR);
-        $addreq->bindParam('id_category',$id_category, PDO::PARAM_INT);
-        $addreq->bindParam('summary',$summary, PDO::PARAM_STR);
-        $reqed->execute();
+    //     $reqed = "UPDATE `book` SET `ISBN`='$ISBN',`image`='$image',`title`='$title',`author`='$author',`editor`='$editor',`collection`='$collection',`publication_date`='$publication_date',`genre`='$genre',`id_category`='$id_category',`summary`='$summary' WHERE `id_book`= $id";
+    //     $db->query($reqed);
 
-        $_SESSION['sucess'] = "Produit modifier avec succès !";
-        header('Location: article.php');
-        exit();
-    }
+    //     $_SESSION['sucess'] = "Produit éditer avec succès !";
+    //     header('Location: article.php');
+    //     exit();
+    // }
         ?>
         </table>
         <button type="submit" name="submit" value="Post">Submit</button>

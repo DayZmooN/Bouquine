@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once '../connexion.php';
 include './header-admin.php';
 // $id = $_GET['id'];
@@ -28,29 +27,6 @@ include './header-admin.php';
 //             <th>Nom</th>
 //         </thead>
 
-    <tbody>
-        <?php
-        foreach ($result as $genre) {
-        ?>
-            <tr>
-                <td><input type="checkbox" value="<?= $genre['id_genre'] ?>" name="check_list[]"><?= $genre['id_genre'] ?></td>
-                <td><?= $genre['libel_genre'] ?></td>
-            </tr>
-        <?php
-        }
-        ?>
-    </tbody>
-</table>
-<button type="submit" value="submit" name="submit">submit</button>
-<?php
-if(isset ($_POST['submit'])){
-    if(!empty($_POST['check_list'])){
-        foreach($_POST['check_list'] as $id_genre){
-        $id = $_GET['id'];
-        $req = $db->prepare("INSERT INTO `genre_book`(`id_book`, `id_genre`) VALUES (':id',':id_genre')");
-        $req->bindParam('id',$id, PDO::PARAM_INT);
-        $req->bindParam('id_genre',$id_genre, PDO::PARAM_INT);
-        $req->execute();
 //         <tbody>
 //             <?php
                //             foreach ($result as $genre) {
