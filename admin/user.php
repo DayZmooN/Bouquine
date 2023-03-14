@@ -1,6 +1,5 @@
 <?php 
-    include './header-admin.php';
-
+include './header-admin.php';
 ?>
 
     <h1 class="multiTitre">listes user</h1>
