@@ -57,7 +57,7 @@ foreach ($result as $article) {
         <div id="bouton">
             <p>
                 <a class="btnGreen" href="edit.php?id=<?= $article['id_book'] ?>" style="color:green">modifier</a> /
-                <a class="btnRed" href="./delete.php?id=<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer</a>
+                <a class="btnRed" href="#" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer</a>
                 <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
                 <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
             </p>
