@@ -37,7 +37,7 @@
                     <input type="text" name="search" placeholder="Rechercher">
             </ul>
         </nav>
-        <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
+        <a href="./connexion.php"><img class="img-user" src="../image/profil.png" alt="connexion au compte "></a>
     </header>
 
 </body>
