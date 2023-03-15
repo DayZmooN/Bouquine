@@ -12,10 +12,8 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
 ?>
     <h1 class="multiTitre">formulaire modification de livre</h1>
 
-require_once '../connexion.php';
 
-// $id = $_GET['id'];
-// ?>
+
 
     <form id="formulaire" action="#" method="POST" enctype="multipart/form-data">
 
@@ -83,43 +81,43 @@ require_once '../connexion.php';
                         <option value="thriller">thriller</option>
                     </select>
                 </div>
-=========
-//     while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
-    ?>
-        <h1>Modification de l'article : "<?= $article['title'] ?>, édition : <?= $article['editor'] ?>"</h1>
-        <table>
-            <thead>
-                <th>ID</th>
-                <th>ISBN</th>
-                <th>Nom de couverture</th>
-                <th>Titre</th>
-                <th>Auteur</th>
-                <th>Éditeur</th>
-                <th>Collection</th>
-                <th>Date de publication</th>
-                <th>Genre</th>
-                <th>id_category</th>
-                <th>Résumé</th>
-                <th>Status</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <form action="#" method="POST">
-                        <td><?= $article['id_book'] ?></td>
-                        <td><input type="text" name="ISBN" value="<?= $article['ISBN'] ?>" size="8"></td>
-                        <td><input type="text" name="image" value="<?= $article['image'] ?>" size="8"></td>
-                        <td><input type="text" name="title" value="<?= $article['title'] ?>"></td>
-                        <td><input type="text" name="author" value="<?= $article['author'] ?>"></td>
-                        <td><input type="text" name="editor" value="<?= $article['editor'] ?>"></td>
-                        <td><input type="text" name="collection" value="<?= $article['collection'] ?>" size="8"></td>
-                        <td><input type="date" name="publication_date" value="<?= $article['publication_date'] ?>"></td>
-                        <td><input type="text" name="genre" value="<?= $article['genre'] ?>"></td>
-                        <td><input type="text" name="id_category" value="<?= $article['id_category'] ?>" size="4"></td>
-                        <td><input type="text" name="summary" value="<?= $article['summary'] ?>"></td>
-                        <td><input type="text" name="status" value="<?= $article['status'] ?>" size="1"></td>
-                </tr>
-            </tbody>
-        <!-- <?php //} 
+
+                // while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                <h1>Modification de l'article : "<?= $article['title'] ?>, édition : <?= $article['editor'] ?>"</h1>
+                <table>
+                    <thead>
+                        <th>ID</th>
+                        <th>ISBN</th>
+                        <th>Nom de couverture</th>
+                        <th>Titre</th>
+                        <th>Auteur</th>
+                        <th>Éditeur</th>
+                        <th>Collection</th>
+                        <th>Date de publication</th>
+                        <th>Genre</th>
+                        <th>id_category</th>
+                        <th>Résumé</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <form action="#" method="POST">
+                                <td><?= $article['id_book'] ?></td>
+                                <td><input type="text" name="ISBN" value="<?= $article['ISBN'] ?>" size="8"></td>
+                                <td><input type="text" name="image" value="<?= $article['image'] ?>" size="8"></td>
+                                <td><input type="text" name="title" value="<?= $article['title'] ?>"></td>
+                                <td><input type="text" name="author" value="<?= $article['author'] ?>"></td>
+                                <td><input type="text" name="editor" value="<?= $article['editor'] ?>"></td>
+                                <td><input type="text" name="collection" value="<?= $article['collection'] ?>" size="8"></td>
+                                <td><input type="date" name="publication_date" value="<?= $article['publication_date'] ?>"></td>
+                                <td><input type="text" name="genre" value="<?= $article['genre'] ?>"></td>
+                                <td><input type="text" name="id_category" value="<?= $article['id_category'] ?>" size="4"></td>
+                                <td><input type="text" name="summary" value="<?= $article['summary'] ?>"></td>
+                                <td><input type="text" name="status" value="<?= $article['status'] ?>" size="1"></td>
+                        </tr>
+                    </tbody>
+                    <!-- <?php } ?>//} 
     // session_start();
     // if (isset($_POST['submit'])) {
     //     $id = $_GET['id'];
@@ -148,34 +146,34 @@ require_once '../connexion.php';
 </section> -->
 
 
-        <div class="select">
-            <label for="collection">Collection</label>
-            <select type="text" name="collection" id="collection" placeholder="">
-                <option value="collection1">collection 1</option>
-                <option value="collection2">collection 2</option>
-                <option value="collection3">collection 3</option>
-                <option value="collection4">collection 4</option>
-                <option value="collection5">collection 5</option>
-            </select>
+                    <div class="select">
+                        <label for="collection">Collection</label>
+                        <select type="text" name="collection" id="collection" placeholder="">
+                            <option value="collection1">collection 1</option>
+                            <option value="collection2">collection 2</option>
+                            <option value="collection3">collection 3</option>
+                            <option value="collection4">collection 4</option>
+                            <option value="collection5">collection 5</option>
+                        </select>
+                    </div>
+
+
+            </div>
         </div>
 
+        <div id="droite">
+            <div class="resume">
 
-    </div>
-</div>
+                <label class="label1" for="summary">Résumé</label>
+                <textarea type="text" name="summary" id="summary" rows="20" cols="50"> </textarea>
 
-<div id="droite">
-    <div class="resume">
+                <label class="label2" for="image">Couverture</label>
+                <input class="choixImg" type="file" name="image" id="image">
 
-        <label class="label1" for="summary">Résumé</label>
-        <textarea type="text" name="summary" id="summary" rows="20" cols="50"> </textarea>
+            </div>
 
-        <label class="label2" for="image">Couverture</label>
-        <input class="choixImg" type="file" name="image" id="image">
-
-    </div>
-
-    <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard" title="ajouter un nouveau livre"> </a>
-</div>
-</form>
+            <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard" title="ajouter un nouveau livre"> </a>
+        </div>
+    </form>
 
     <?php include './includeClose.php'  ?>
