@@ -1,12 +1,12 @@
 <?php
 include './header-admin.php';
 require_once './auth.php';
-$reqAdmin = $db->prepare('SELECT `id_admin`, `username`, `password`, `mail` FROM `admin`');
-$reqAdmin->execute();
-$resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
+$reqUser = $db->prepare('SELECT `id_user`, `password`, `username`, `lastname`, `mail`, `phone`, `birthdate` FROM `user`');
+$reqUser->execute();
+$resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-<h1 class="multiTitre">liste Admins</h1>
+<h1 class="multiTitre">liste users</h1>
 
 <div id="userMenu">
   <form class="userSearch" action="" method="post">
@@ -30,13 +30,16 @@ $resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
   </thead>
   <tbody>
     <?php
-    foreach ($resultAdmin as $admin) {
+    foreach ($resultUser as $user) {
     ?>
       <tr class="contenuUser">
-        <td><?= $admin['id_admin'] ?></td>
-        <td><?= $admin['username'] ?></td>
-        <td><?= $admin['mail'] ?></td>
-        <td><?= $admin['password'] ?></td>
+        <td><?= $user['id_user'] ?></td>
+        <td><?= $user['username'] ?></td>
+        <td><?= $user['lastname'] ?></td>
+        <td><?= $user['mail'] ?></td>
+        <td><?= $user['password'] ?></td>
+        <td><?= $user['phone'] ?></td>
+        <td><?= $user['birthdate'] ?></td>
 
         <td><input type="checkbox" id="check-all" name="check-all"></td>
       <?php
