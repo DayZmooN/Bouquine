@@ -87,7 +87,7 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
                         $reqCat->execute();
                         while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) { 
                         ?>
-                        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                        <option value="<?= $category['id_category'] ?>" <?= $article['id_category'] == $category['id_category'] ? 'selected' : '' ?>><?= $category['libel_category'] ?></option>
                         <?php } ?>
                     </select>
                 </div>
