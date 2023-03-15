@@ -1375,31 +1375,25 @@ h2.catalog {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
+
 .formul-s {
     width: 100%;
     height: 120px;
-    
-  
- }
-/* .formul-s form {
-    width: 100%;
-    height: 100px;
-    font-family: 'QuattrocentoSans-Regular';
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-} */
-.formulr form{
+
+}
+form.rechercher{
     width: 100%;
     height: 120px;
-}
-.formul-s label {
-    display: none;
-    font-family: 'QuattrocentoSans-Regular';
-    font-weight: 500;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
 }
 
+/* .formul-s form {
+    width: 100%;
+    height: 120px;
+} */
 
 .formul-s input[type="submit"] {
     height: 40px;
@@ -1408,37 +1402,32 @@ h2.catalog {
     margin-left: 20px;
     text-align: center;
     color: #000;
-   }
- /* {
-    width: 400px;
-    height: 40px;
-    /* border: 1px solid black; */
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-} */ */
-.catalog-bar{
-    width: 150px;
-    height: 40px;
 }
+
 .item4 {
     width: 200px;
     height: 380px;
     margin: 0 auto;
 }
+
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
+
 .books {
     width: 100%;
     height: 100%;
     margin-top: 100px;
 }
+
 .books-catalog {
     width: 400px;
     height: 300px;
     margin: 100px auto;
 }
+
 .container-books {
     display: flex;
     justify-content: center;
@@ -1446,6 +1435,7 @@ h2.catalog {
     width: 100%;
     height: 100%;
 }
+
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1453,6 +1443,7 @@ p.titles {
     margin-top: 20px;
     text-align: center;
 }
+
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;

@@ -12,26 +12,15 @@ require_once './footer-front.php';
 
             <div class="formul-s">
                 <form class="rechercher" action="#" method="get">
-
                     <input type="text" name="search" placeholder="Rechercher">
-
-                    <!-- <div class="recherch-bar"> -->
-                        <button id="searc-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
-                    <!-- </div> -->
-                    <!-- <label for="search-book">Recherche</label>
-                    <input type="text"  name="search-book" placeholder="Recherche">
-                    <a href="#"><img class="loupe" src="../image/loupe.svg" alt="loupe recherche"></a> -->
-
+                    <a href="../front/search.php"><img src="../image/filtre.png" alt="recherche avancée"></a>
                 </form>
-
             </div>
-            <div class="catalog-bar">
-                <a href="../front/search.php"><input type="submit" value="Recherche avancée"></a>
-            </div>
+           
+            <button id="searc-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
+           
             <div class="books">
-
                 <div class="container-books">
-
                     <div class="books-catalog">
                         <div class="item4">
                             <a href="#"><img src="../image/aime moi.jpg" alt="aime moi"></a>
