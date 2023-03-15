@@ -64,6 +64,7 @@ foreach ($result as $article) {
         <div id="bouton">
             <p>
                 <a class="btnGreen" href="edit.php?id=<?= $article['id_book'] ?>" style="color:green">modifier</a> /
+                <a class="btnRed" href="./delete.php?id=<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer</a>
                 <a class="btnRed" href="#" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer</a>
                 <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
                 <a href="./linkgenrebook.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
@@ -72,10 +73,24 @@ foreach ($result as $article) {
     </div>
 <?php } ?>
 
+
+<td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
+
+    <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
+
+    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+
+    <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+</td>
+</tr>
+
 <link rel="stylesheet" href="../css/style-admin.css">
 <div class="popup">
     <h1>Voulez-vous supprimer définitivement :</h1>
 
-<td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
+    </tbody>
+    <script src="./JS/admin.js"></script>
+    </body>
 
-<?php include './includeClose.php'; ?>
+
+    <?php include './includeClose.php'; ?>
