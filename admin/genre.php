@@ -20,6 +20,6 @@ $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
         <?php } ?>
     </ol>
 
-    <button><a href="./addgenre.php">modifier / supprimer</a></button>
+    <button><a href="./addeditgenre.php">modifier / supprimer</a></button>
 
 </aside>
