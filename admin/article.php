@@ -16,6 +16,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     </form>
     <a href="./add.php">ajouter de nouveaux livres</a>
 </div>
+<div id="menu-article">
+    <form action="" method="post">
+        <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
+        <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
+    </form>
+    <a href="./add.php">ajouter de nouveaux livres</a>
+</div>
 
 <div id="menu-recherche-article">
     <h2>liste des articles</h2>
@@ -63,17 +70,12 @@ foreach ($result as $article) {
             </p>
         </div>
     </div>
-<?php
-}
-?>
+<?php } ?>
 
 <link rel="stylesheet" href="../css/style-admin.css">
 <div class="popup">
     <h1>Voulez-vous supprimer définitivement :</h1>
 
-    <div class="title">ici le php qui fera apparaitre le titre </div>
-    <button class="btnYes">yes</button>
-    <button class="btnNo">no</button>
-</div>
+<td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
 
 <?php include './includeClose.php'; ?>
