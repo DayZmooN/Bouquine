@@ -2,7 +2,7 @@
 require_once './header-front.php';
 require_once './footer-front.php';
 require_once './connect.php';
-$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ');
+$query = $db->prepare('SELECT `id_book`,  `image`, `title`, `author`, `status` FROM `book` ');
 $query->execute();
 ?>
 
@@ -18,8 +18,9 @@ $query->execute();
                     <label for="search-book">Recherche</label>
                     <input type="text" id="search-book" name="search-book" placeholder="Recherche">
                     <button type="submit">
+                        <a href="./search.php">Recherche avancée</a>
                 </form>
-                <a href="./search.php">Recherche avancée</a>
+
 
             </div>
 
@@ -31,7 +32,7 @@ $query->execute();
 
                         <div class="books-catalog">
                             <div class="item4">
-                                <a href="#"><img src="../image/<?= $book['image'] ?>" alt="<?= $book['title'] ?>"></a>
+                                <a href="./book.php?id=<?= $book['id_book'] ?>"><img src="../image/<?= $book['image'] ?>" alt="<?= $book['title'] ?>"></a>
                                 <p class="titles"><?= $book['title'] ?></p>
                                 <p class="authors"><?= $book['author'] ?></p>
                             </div>

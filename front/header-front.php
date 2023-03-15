@@ -24,11 +24,14 @@
                 <li>
                     <a href="#">Parcourir</a>
                     <ul>
-                        <li><a href='#'>Action</a></li>
-                        <li><a href='#'>Romance</a></li>
-                        <li><a href='#'>Fantaisie</a></li>
-                        <li><a href='#'>Thriller</a></li>
-                        <li><a href='#'>Aventure</a></li>
+                        <?php
+                        include '../connexion.php';
+                        $sql = "SELECT `category`.`id_category`,`libel_category` FROM category;";
+                        $req = $db->query($sql);
+                        $req->execute();
+                        while ($category = $req->fetch(PDO::FETCH_ASSOC)) { ?>
+                            <li><a href='./parcourir.php?id=<?= $category['id_category'] ?>'><?= $category['libel_category'] ?></a></li>
+                        <?php } ?>
                     </ul>
                 </li>
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
