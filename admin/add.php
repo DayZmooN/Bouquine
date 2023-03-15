@@ -79,32 +79,9 @@ if (isset($_POST['submit'])) {
                 </select>
             </div>
 
-            <div class="select">
-                <label for="genre">Genre</label>
-                <select type="text" name="genre" id="genre">
-                    <option value="action">action</option>
-                    <option value="aventure">aventure</option>
-                    <option value="drame">drame</option>
-                    <option value="fantasie">fantasie</option>
-                    <option value="historique">historique</option>
-                    <option value="horreur">horreur</option>
-                    <option value="policier">policier</option>
-                    <option value="romance">romance</option>
-                    <option value="science-fiction">science-fiction</option>
-                    <option value="thriller">thriller</option>
-                </select>
-            </div>
+            
 
-            <div class="select">
-                <label for="collection">Collection</label>
-                <select type="text" name="collection" id="collection" placeholder="">
-                    <option value="collection1">collection 1</option>
-                    <option value="collection2">collection 2</option>
-                    <option value="collection3">collection 3</option>
-                    <option value="collection4">collection 4</option>
-                    <option value="collection5">collection 5</option>
-                </select>
-            </div>
+            
 
             <div>
                 <label for="image"></label>

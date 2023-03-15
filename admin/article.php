@@ -9,7 +9,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">menus articles</h1>
 
-<
+
 <div id="menu-article">
     <form action="" method="post">
         <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
@@ -18,36 +18,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     <a href="./add.php">ajouter de nouveaux livres</a>
 </div>
 
-<div id="menu-recherche-article">
-    <h2>liste des articles</h2>
 
-    <div id="nav-search">
-        <img src="../image/filtre.png" alt="icones de reglages des criteres d'affichage" title="filtre de recherche">
-        <nav>
-            <ul>
-                <li class="entree">
-                    <a href="#">dates</a>
-                    <ul class="sousMenuDate">
-                        <li><a href="#">+ recent </a></li>
-                    </ul>
-                </li>
+    <h2 class="sousTitre">liste des articles</h2>
 
-                <li class="entree"><a href="#">categories</a>
-                    <ul class="sousMenuCategorie">
-                        <li><a href="#">liste des catégories</a></li>
-                    </ul>
-                </li>
+ 
+    
 
-                <li class="entree"><a href="#">genres</a>
-                    <ul class="sousMenuGenre">
-                        <li><a href="#">liste des genres</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
 
-</div>
 <?php
 foreach ($result as $article) {
 ?>

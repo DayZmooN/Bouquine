@@ -117,7 +117,7 @@ a {
 }
 .corp > .multitaches {
   width: 100%;
-  height: 82vh;
+  height: 100%;
 }
 .corp > .multitaches > .multiTitre {
   width: 100%;
@@ -127,7 +127,7 @@ a {
 }
 .corp .multitaches > #compteurEtGraphique {
   width: 1000px;
-  height: 200px;
+  height: 100%;
   margin-top: 25px;
   margin-left: 25px;
 }
@@ -138,6 +138,7 @@ a {
 }
 .corp .multitaches > #menu-article {
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -174,114 +175,11 @@ a {
   border-radius: 25px;
   background-color: #FFDAA4;
 }
-.corp .multitaches > #menu-recherche-article {
-  width: 500px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-left: 100px;
-  padding-top: 50px;
-}
-.corp .multitaches > #menu-recherche-article > h2,
-.corp .multitaches > #menu-recherche-article img {
-  margin-left: 50px;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search {
-  width: 20px;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > img {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > img:hover + nav {
-  display: block;
-  margin-right: 50px;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree {
-  width: 100px;
-  height: 50px;
-  background-color: #696969;
-  list-style-type: none;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuDate {
-  display: block;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuCategorie {
-  display: block;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree:active > .sousMenuGenre {
-  display: block;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > a {
-  width: 100px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate {
-  position: absolute;
-  width: 100px;
-  margin-left: 200px;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate > li {
-  width: 100px;
-  height: 50px;
-  background-color: #696969;
-  list-style-type: none;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: static;
-  margin-top: 0;
-  margin-left: 0;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie {
-  position: absolute;
-  width: 100px;
-  margin-left: 200px;
-  text-align: center;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie > li {
-  width: 100px;
-  height: 50px;
-  background-color: #696969;
-  list-style-type: none;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: static;
-  margin-top: -78px;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre {
-  position: absolute;
-  width: 100px;
-  margin-left: 200px;
-  text-align: center;
-}
-.corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre > li {
-  width: 100px;
-  height: 50px;
-  background-color: #696969;
-  list-style-type: none;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: static;
-  margin-top: -130px;
+.corp .multitaches > .sousTitre {
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 500px;
+  margin-bottom: 20px;
 }
 .corp .multitaches > .articleList {
   width: 800px;
@@ -320,7 +218,7 @@ a {
   width: 60%;
 }
 .corp .multitaches > #formulaireAjout > #gauche > .titre-auteur {
-  width: 100% x;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -409,7 +307,7 @@ a {
 }
 .corp .multitaches > .categorieList {
   width: 500px;
-  height: 500px;
+  height: 100%;
   margin-top: 20px;
   margin-left: 350px;
   text-align: center;

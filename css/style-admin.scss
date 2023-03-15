@@ -105,7 +105,6 @@ a {
 .corp {
     max-width: 1300px;
     width: 75%;
-    //height: 100 vh;
     float: right;
     background-color: $fondRose;
     
@@ -137,7 +136,7 @@ a {
 
     &>.multitaches {
         width: 100%;
-        height: 82vh;
+        height: 100%;
         
 
         &>.multiTitre {
@@ -159,7 +158,7 @@ a {
 
     .multitaches>#compteurEtGraphique {
         width: 1000px;
-        height: 200px;
+        height: 100%;
         margin-top: 25px;
         margin-left: 25px;
     }
@@ -176,6 +175,7 @@ a {
 
     .multitaches>#menu-article {
         width: 50%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -215,139 +215,15 @@ a {
             border-radius: 25px;
             background-color: $remplissage;
         }
+
+        
     }
 
-    .multitaches>#menu-recherche-article {
-        width: 500px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 100px;
-        padding-top: 50px;
-
-        &>h2,
-        img {
-            margin-left: 50px;
-        }
-
-        &>#nav-search {
-            width: 20px;
-
-            &>img {
-                width: 32px;
-                height: 32px;
-                cursor: pointer;
-            }
-
-            &>img:hover+nav {
-                display: block;
-                margin-right: 50px;
-            }
-
-            &>nav {
-                //display: none;
-
-                &>ul {
-                    list-style-type: none;
-                    display: flex;
-                    flex-direction: column;
-
-                    &>.entree {
-                        width: 100px;
-                        height: 50px;
-                        background-color: $grisBtn;
-                        list-style-type: none;
-                        border: 1px solid black;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-
-                        &:active>.sousMenuDate {
-                            display: block;
-                        }
-
-                        &:active>.sousMenuCategorie {
-                            display: block;
-                        }
-
-                        &:active>.sousMenuGenre {
-                            display: block;
-                        }
-
-                        &>a {
-                            width: 100px;
-                            height: 50px;
-                            line-height: 50px;
-                            text-align: center;
-                        }
-
-                        &>.sousMenuDate {
-                            position: absolute;
-                            width: 100px;
-                            margin-left: 200px;
-                            //display: none;
-
-                            &>li {
-                                width: 100px;
-                                height: 50px;
-                                background-color: $grisBtn;
-                                list-style-type: none;
-                                border: 1px solid black;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                position: static;
-                                margin-top: 0;
-                                margin-left: 0;
-                            }
-                        }
-
-                        &>.sousMenuCategorie {
-                            position: absolute;
-                            width: 100px;
-                            margin-left: 200px;
-                            text-align: center;
-                            //display: none;
-
-                            &>li {
-                                width: 100px;
-                                height: 50px;
-                                background-color: $grisBtn;
-                                list-style-type: none;
-                                border: 1px solid black;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                position: static;
-                                margin-top: -78px;
-                            }
-                        }
-
-                        &>.sousMenuGenre {
-                            position: absolute;
-                            width: 100px;
-                            margin-left: 200px;
-                            text-align: center;
-                            //display: none;
-
-                            &>li {
-                                width: 100px;
-                                height: 50px;
-                                background-color: $grisBtn;
-                                list-style-type: none;
-                                border: 1px solid black;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                position: static;
-                                margin-top: -130px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .multitaches > .sousTitre{
+        width: 200px;
+        margin-top: 40px;
+        margin-left: 500px;
+        margin-bottom: 20px;
     }
 
     .multitaches>.articleList {
@@ -397,7 +273,7 @@ a {
             width: 60%;
 
             &>.titre-auteur {
-                width: 100%x;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -511,7 +387,7 @@ a {
 
     .multitaches>.categorieList {
         width: 500px;
-        height: 500px;
+        height: 100%;
         margin-top: 20px;
         margin-left: 350px;
         text-align: center;
