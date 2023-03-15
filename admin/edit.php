@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../connexion.php';
 
 // $id = $_GET['id'];
@@ -81,93 +82,131 @@ require_once '../connexion.php';
 
 <h1 class="multiTitre">formulaire modification de livre</h1>
 
-<form id="formulaire" action="#" method="POST">
+    <form id="formulaire" action="#" method="POST" enctype="multipart/form-data">
 
-<div id="gauche">
-    <div class="titre-auteur">
+        <div id="gauche">
+            <div class="titre-auteur">
 
-        <label for="title"></label>
-        <input type="text" name="title" id="title" placeholder="<?= $article['title']?>">
+                <label for="title"></label>
+                <input type="text" name="title" id="title" value="<?= $article['title'] ?>">
 
-        <label for="author"></label>
-        <input type="text" name="author" id="author" placeholder="Auteur">
+                <label for="author"></label>
+                <input type="text" name="author" id="author" value="<?= $article['author'] ?>">
 
-        <label for="ISBN"></label>
-        <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
+                <label for="ISBN"></label>
+                <input type="text" name="ISBN" id="ISBN" value="<?= $article['ISBN'] ?>">
 
-    </div>
+            </div>
 
-    <div class="edition-date">
+            <div class="edition-date">
 
-        <label for="editor"></label>
-        <input type="text" name="editor" id="editor" placeholder="Éditeur">
+                <label for="editor"></label>
+                <input type="text" name="editor" id="editor" value="<?= $article['editor'] ?>">
 
-        <label class="publication" for="publication_date">Publication</label>
-        <input class="date" type="date" name="publication_date" id="publication_date">
+                <label class="publication" for="publication_date">Publication</label>
+                <input class="date" type="date" name="publication_date" id="publication_date" value="<?= $article['publication_date'] ?>">
 
-    </div>
+                <label class="collection" for="collection"></label>
+                <input type="text" name="collection" id="collection" value="<?= $article['collection'] ?>" placeholder="Collection">
 
-    <div class="multiSelect">
+                <label class="id_category" for="id_category"></label>
+                <input type="text" name="id_category" id="id_category" value="<?= $article['id_category'] ?>" placeholder="id_category">
 
-        <div class="select">
-            <label for="id_category">Catégorie</label>
-            <select name="id_category" id="id_category">
-                <option value="BD">b.d</option>
-                <option value="Comics">comics</option>
-                <option value="Documentaire">documentaire</option>
-                <option value="Jeunesse">Jeunesse</option>
-                <option value="Mangas">mangas</option>
-                <option value="Poésie">poésie</option>
-                <option value="Romans">romans</option>
-                <option value="Théatre">théatre</option>
-            </select>
+                <label class="genre" for="genre"></label>
+                <input type="text" name="genre" id="genre" value="<?= $article['genre'] ?>" placeholder="genre">
+
+            </div>
+
+            <div class="multiSelect">
+
+                <div class="select">
+                    <label for="id_category">Catégorie</label>
+                    <select name="id_category" id="id_category">
+                        <option value="BD">b.d</option>
+                        <option value="Comics">comics</option>
+                        <option value="Documentaire">documentaire</option>
+                        <option value="Jeunesse">Jeunesse</option>
+                        <option value="Mangas">mangas</option>
+                        <option value="Poésie">poésie</option>
+                        <option value="Romans">romans</option>
+                        <option value="Théatre">théatre</option>
+                    </select>
+                </div>
+
+                <div class="select">
+                    <label for="genre">Genre</label>
+                    <select type="text" name="genre" id="genre">
+                        <option value="action">action</option>
+                        <option value="aventure">aventure</option>
+                        <option value="drame">drame</option>
+                        <option value="fantasie">fantasie</option>
+                        <option value="historique">historique</option>
+                        <option value="horreur">horreur</option>
+                        <option value="policier">policier</option>
+                        <option value="romance">romance</option>
+                        <option value="science-fiction">science-fiction</option>
+                        <option value="thriller">thriller</option>
+                    </select>
+                </div>
+
+
+                <!--<div class="select">
+                    <label for="collection">Collection</label>
+                    <select type="text" name="collection" id="collection" value="">
+                        <option value="collection1">collection 1</option>
+                        <option value="collection2">collection 2</option>
+                        <option value="collection3">collection 3</option>
+                        <option value="collection4">collection 4</option>
+                        <option value="collection5">collection 5</option>
+                    </select>
+                </div>-->
+            </div>
         </div>
 
-        <div class="select">
-            <label for="genre">Genre</label>
-            <select type="text" name="genre" id="genre">
-                <option value="action">action</option>
-                <option value="aventure">aventure</option>
-                <option value="drame">drame</option>
-                <option value="fantasie">fantasie</option>
-                <option value="historique">historique</option>
-                <option value="horreur">horreur</option>
-                <option value="policier">policier</option>
-                <option value="romance">romance</option>
-                <option value="science-fiction">science-fiction</option>
-                <option value="thriller">thriller</option>
-            </select>
-        </div>
+        <div id="droite">
+            <div class="resume">
 
+                <label class="label1" for="summary">Résumé</label>
+                <textarea type="text" name="summary" id="summary" rows="20" cols="50"> <?= $article['summary'] ?></textarea>
 
-        <div class="select">
-            <label for="collection">Collection</label>
-            <select type="text" name="collection" id="collection" placeholder="">
-                <option value="collection1">collection 1</option>
-                <option value="collection2">collection 2</option>
-                <option value="collection3">collection 3</option>
-                <option value="collection4">collection 4</option>
-                <option value="collection5">collection 5</option>
-            </select>
-        </div>
+                <label class="label2" for="image">Couverture</label>
+                <img src="../image/<?= $article['image'] ?>" alt="" width="100">
+                <input class="choixImg" type="file" name="image" id="image" accept="image/*">
+                <button type="submit" name="submit" value="submit">Enregistrer</button>
+            <!--</div>
+            <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard" title="ajouter un nouveau livre"></a>
+        </div>-->
+    </form>
+<?php }
+if (isset($_POST['submit'])) {
+    $id = $_GET['id'];
+    $ISBN = addslashes($_POST['ISBN']);
+    $title = addslashes($_POST['title']);
+    $author = addslashes($_POST['author']);
+    $editor = addslashes($_POST['editor']);
+    $collection = addslashes($_POST['collection']);
+    $publication_date = addslashes($_POST['publication_date']);
+    $genre = addslashes($_POST['genre']);
+    $id_category = addslashes($_POST['id_category']);
+    $summary = addslashes($_POST['summary']);
 
+    $reqed = $db->prepare("UPDATE `book` SET `ISBN`=':ISBN',`image`=':image',`title`=':title',`author`=':author',`editor`=':editor',`collection`=':collection',`publication_date`=':publication_date',`genre`=':genre',`id_category`=':id_category',`summary`=':summary' WHERE `id_book`= :id");
+    $reqed->bindParam('id', $id, PDO::PARAM_INT);
+    $reqed->bindParam('ISBN', $ISBN, PDO::PARAM_STR);
+    $reqed->bindParam('image', $image, PDO::PARAM_STR);
+    $reqed->bindParam('title', $title, PDO::PARAM_STR);
+    $reqed->bindParam('author', $author, PDO::PARAM_STR);
+    $reqed->bindParam('editor', $editor, PDO::PARAM_STR);
+    $reqed->bindParam('collection', $collection, PDO::PARAM_STR);
+    $reqed->bindParam('publication_date', $publication_date, PDO::PARAM_STR);
+    $reqed->bindParam('genre', $genre, PDO::PARAM_STR);
+    $reqed->bindParam('id_category', $id_category, PDO::PARAM_INT);
+    $reqed->bindParam('summary', $summary, PDO::PARAM_STR);
+    $reqed->execute();
 
-    </div>
-</div>
-
-<div id="droite">
-    <div class="resume">
-
-        <label class="label1" for="summary">Résumé</label>
-        <textarea type="text" name="summary" id="summary" rows="20" cols="50"> </textarea>
-
-        <label class="label2" for="image">Couverture</label>
-        <input class="choixImg" type="file" name="image" id="image">
-
-    </div>
-
-    <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard" title="ajouter un nouveau livre"> </a>
-</div>
-</form>
-
-    <?php include './includeClose.php'  ?>
+    $_SESSION['sucess'] = "Produit modifier avec succès !";
+    header('Location: article.php');
+    exit();
+}
+?>
+<?php include './includeClose.php'  ?>

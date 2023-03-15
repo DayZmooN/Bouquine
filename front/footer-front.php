@@ -1,25 +1,16 @@
 <?php
 require_once './header-front.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouquine</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
 
-<body>
-    <!-- FOOTER -->
-    <footer>
-        <section id="end">
-
-            </div class="logob">
-            <img class="img1" src="../image/b.png" alt="logo Bouquine B">
+<!-- FOOTER -->
+<footer>
+    <section id="end">
+        <div class="contain-footer">
+            <div class="logob">
+                <img class="img1" src="../image/b.png" alt="logo Bouquine B">
             </div>
+
             <div class="pol">
                 <a href="../doc/Model__CGU__.docx">CGU</a>
             </div>
@@ -33,14 +24,16 @@ require_once './header-front.php';
                 <a href="https://fr.linkedin.com/"><img class="social" src="../image/linkedin.png"></a>
             </div>
 
-        </section>
-
-        <div class="copyright">
-            <p id="copy">Copyright&copy;2023 Bouquine</p>
+        </div>
         </div>
 
-    </footer>
-    <!-- END FOOTER -->
+    </section>
+    <section class="copyright">
+        <p id="copy">Copyright&copy;2023 Bouquine</p>
+    </section>
+
+</footer>
+<!-- END FOOTER -->
 </body>
 
 </html>

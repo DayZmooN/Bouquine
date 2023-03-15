@@ -1,9 +1,12 @@
-<?php 
-    include './header-admin.php';
-
+<?php
+include './header-admin.php';
+require_once './auth.php';
+$reqAdmin = $db->prepare('SELECT `id_admin`, `username`, `password`, `mail` FROM `admin`');
+$reqAdmin->execute();
+$resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-    <h1 class="multiTitre">listes user</h1>
+<h1 class="multiTitre">liste Admins</h1>
 
     <div id="userMenu">
         <form class="userSearch" action="" method="post">
@@ -20,15 +23,9 @@
   <thead>
     <tr >
       <th>id</th>
-      <th>Name</th>
-      <th>Lastname</th>
-      <th>Mail</th>
-      <th>password</th>
-      <th>phone</th>
-      <th>birthday</th>
-      <th>created at</th>
-      <th>statut</th>
-      <th>select</th>
+      <th>Pseudo</th>
+      <th>E-mail</th>
+      <th>MDP</th>
     </tr>
   </thead>
   <tbody>
@@ -59,5 +56,5 @@
 
 
 
-    
-    <?php include './includeClose.php'; ?>  
+
+<?php include './includeClose.php'; ?>

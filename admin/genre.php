@@ -1,51 +1,25 @@
-<?php 
-    include './header-admin.php';
-
+<?php
+include './header-admin.php';
+require_once './auth.php';
+$req = $db->prepare('SELECT `id_genre`, `libel_genre`, `genre_slug` FROM `genre`');
+$req->execute();
+$resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
+<h1 class="multiTitre">menu genres</h1>
 
+<aside class="categorieGenre">
 
-
-
-    
-
-    <h1 class="multiTitre">menus genres</h1>
-
-
-
-    <aside class="categorieGenre">
     <h2>liste des genres</h2>
+
     <ol>
-        <li>Entrée 1</li>
-        <li>Entrée 2</li>
-        <li>Entrée 3</li>
-        <li>Entrée 4</li>
-        <li>Entrée 5</li>
-        <li>Entrée 6</li>
-        <li>Entrée 7</li>
-        <li>Entrée 8</li>
-        <li>Entrée 9</li>
-        <li>Entrée 10</li>
+        <?php
+        foreach ($resultat as $genre) {
+        ?>
+            <li><?= $genre['libel_genre'] ?></li>
+        <?php } ?>
     </ol>
 
-
-    <button> <a href="./addgenre.php">modifier / supprimer</a> </button>
-
-
+    <button><a href="./addgenre.php">modifier / supprimer</a></button>
 
 </aside>
-
-
-
-
-
-
-
-
-
-    
-</main>
-</div>
-<!-- </body>
-
-</html> -->

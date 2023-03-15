@@ -45,10 +45,3 @@
         </header>
 
         <main class="multitaches">
-
-
-
-
-
-
-
