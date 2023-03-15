@@ -37,68 +37,80 @@ if (isset($_POST['submit'])) {
 
 <form id="formulaireAjout" action="#" method="POST">
 
-    <div id="gauche">
+    <div id="formGauche">
         <div class="titre-auteur">
 
             <label for="title"></label>
-            <input type="text" name="title" id="title" placeholder="TITRE">
+            <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
 
 
             <label for="author"></label>
-            <input type="text" name="author" id="author" placeholder="Auteur">
+            <input class="tripleInput" type="text" name="author" id="author" placeholder="Auteur">
 
 
             <label for="ISBN"></label>
-            <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
+            <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
 
         </div>
 
         <div class="edition-date">
-
-            <label for="editor"></label>
-            <input type="text" name="editor" id="editor" placeholder="Éditeur">
-
-            <label class="publication" for="publication_date">Publication</label>
-            <input class="date" type="date" name="publication_date" id="publication_date">
-
-        </div>
-
-        <div class="multiSelect">
-
-            <div class="select">
-                <label for="id_category">Catégorie</label>
-                <select name="id_category" id="id_category">
-                    <option value="BD">b.d</option>
-                    <option value="Comics">comics</option>
-                    <option value="Documentaire">documentaire</option>
-                    <option value="Jeunesse">Jeunesse</option>
-                    <option value="Mangas">mangas</option>
-                    <option value="Poésie">poésie</option>
-                    <option value="Romans">romans</option>
-                    <option value="Théatre">théatre</option>
-                </select>
+            <div>
+                <label for="editor"></label>
+                <input type="text" name="editor" id="editor" placeholder="Éditeur">
             </div>
-
-            
-
-            
 
             <div>
-                <label for="image"></label>
-                <input type="file" name="image" id="image">
+                <label class="publication" for="publication_date">Publication</label>
+                <input class="date" type="date" name="publication_date" id="publication_date">
             </div>
         </div>
+
+
     </div>
 
-        <div id="droite">
-            <div class="resume">
+    <div class="milieu">
 
-                <label for="summary">Résumé</label>
-                <textarea type="text" name="summary" id="summary"> </textarea>
+        <div class="select">
+            <label for="id_category">Catégorie</label>
+            <select name="id_category" id="id_category">
+                <option value="BD">b.d</option>
+                <option value="Comics">comics</option>
+                <option value="Documentaire">documentaire</option>
+                <option value="Jeunesse">Jeunesse</option>
+                <option value="Mangas">mangas</option>
+                <option value="Poésie">poésie</option>
+                <option value="Romans">romans</option>
+                <option value="Théatre">théatre</option>
+            </select>
+        </div>
 
-            </div>
+
+        <div id="genreChoice">
+
+            <label for="genre"></label>
+            <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
+        </div>
+
+
+
+
+    </div>
+
+    <div id="droite">
+        <div class="resume">
+
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary"></textarea>
+
+        </div>
+
+        <div id="imageChoice">
+            <label for="image">image</label>
+            <input type="file" name="image" id="image">
         </div>
         <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard"> </a>
+    </div>
+    
 </form>
 
 <?php include './includeClose.php'  ?>

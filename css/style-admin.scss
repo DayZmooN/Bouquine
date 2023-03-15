@@ -65,7 +65,7 @@ a {
     &>#menu-admin {
 
         &>nav {
-            width: 400px;
+            max-width: 400px;
             &>ul {
                 width: 400px;
                 &>li {
@@ -105,6 +105,7 @@ a {
 .corp {
     max-width: 1300px;
     width: 75%;
+    height: 100%;
     float: right;
     background-color: $fondRose;
     
@@ -173,7 +174,7 @@ a {
 
     /*....................CSS.ARTICLES....................*/
 
-    .multitaches>#menu-article {
+    .multitaches>#articleSearchAjout {
         width: 50%;
         height: 100%;
         display: flex;
@@ -258,125 +259,90 @@ a {
 
     /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
 
-    .multitaches>#formulaireAjout {
-        max-width: 1080px;
-        width: 100%;
-        height: 500px;
+    .multitaches > #formulaireAjout {
+        
+        width: 90%;
+        margin: 0 auto;
         background-color: #FFF5EE;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         border-radius: 50px;
-        margin-left: 60px;
         margin-top: 20px;
 
-        &>#gauche {
-            width: 60%;
+        &>#formGauche {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            
+            
+            
 
             &>.titre-auteur {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                margin-left: 25px;
-                margin-right: 50px;
+                
 
-                &>input {
-                    width: 100%;
+
+                &>.tripleInput {
+                    width: 350px;
                     height: 50px;
-                    border-radius: 50px;
+                    margin-top: 50px;
                     border: 0;
-                    padding-left: 10px;
-                    margin-top: 40px;
+                    border-radius: 50px;
                     background-color: $remplissage;
+                    padding-left: 10px;
+                    
                 }
             }
 
             &>.edition-date {
                 width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                margin-left: 25px;
 
-                &>input {
-
-                    width: 100%; //-80
+                & > div > #editor {
+                    width: 350px;
                     height: 50px;
-                    border-radius: 50px;
+                    margin-top: 50px;
                     border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
                     padding-left: 10px;
-                    margin-top: 40px;
-                    margin-right: 60px;
-                    background-color: $remplissage;
+                    
                 }
 
-                &>.date {
-                    width: 100%;
-                    padding-right: 10px;
-                    margin-left: -20px;
-                    background-color: $remplissage;
-                }
-
-                &>.publication {
-                    padding-right: 40px;
-                    margin-top: 55px;
-                }
+                
             }
 
-            &>.multiSelect {
-                width: 100%;
-                padding-top: 40px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                margin-top: 30px;
+            
+        }
 
-                &>.select {
+        &>.milieu {
+           
+            
 
-                    &>select {
-                        border-radius: 10px;
-                        border-color: $remplissage;
-                    }
+            &>.select {
+
+                &>select {
+                   
                 }
             }
         }
 
         &>#droite {
-            width: 40%;
-
+            
             &>.resume {
-                width: 100%;
-                height: 350px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                margin-bottom: 30px;
+               
 
-                &>.label1 {
-                    margin-top: 20px;
-                }
-
-                &>.label2 {
-                    margin-top: 20px;
-                }
-
-                &>textarea {
-                    border-radius: 10px;
-                    border-color: $remplissage;
-                    margin-top: 20px;
-                }
+                
 
                 &>.choixImg {
-                    width: 250px;
-                    height: 70px;
-                    margin-top: 20px;
+                    
                 }
             }
 
             &>a {
-                margin-left: 300px;
+                
             }
         }
     }
@@ -386,92 +352,61 @@ a {
     /*....................CSS.CATEGORIES....................*/
 
     .multitaches>.categorieList {
-        width: 500px;
-        height: 100%;
-        margin-top: 20px;
-        margin-left: 350px;
-        text-align: center;
-        background-color: $remplissage;
+        width: 100%;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+        flex-wrap: wrap;
+        
 
-        &>h2 {
-            padding-top: 25px;
-            text-transform: uppercase;
-        }
-
-        &>ol {
-            width: 200px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            margin-left: 150px;
-            list-style-type: none;
-
-            &>li {
-                flex-basis: 25%;
-                box-sizing: border-box;
-                padding: 10px;
-            }
-        }
-
-        &>button {
-            width: 200px;
+        & > .unite{
+            width: 300px;
             height: 50px;
-            text-transform: uppercase;
-            background-color: $grisBtn;
-            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            justify-items: center;
+            align-items: center;
+            background-color: #AAAAAA;
+            border: 1px solid black;
+            margin: 10px 10px;
 
-            &>a {
-                color: white;
-            }
         }
+        
+
+      
+
+        
     }
 
     /*....................FIN.CSS.CATEGORIES....................*/
 
     /*....................CSS.GENRES....................*/
 
-    .multitaches>.categorieGenre {
-        width: 500px;
-        height: 500px;
-        margin-top: 20px;
-        margin-left: 350px;
-        text-align: center;
-        background-color: $remplissage;
+    .multitaches>.genreList {
+        width: 100%;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+        flex-wrap: wrap;
+        
 
-        &>h2 {
-            padding-top: 25px;
-            text-transform: uppercase;
-        }
-
-        &>ol {
-            width: 200px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            margin-left: 150px;
-            list-style-type: none;
-
-            &>li {
-                flex-basis: 20%;
-                box-sizing: border-box;
-                padding: 10px;
-            }
-        }
-
-        &>button {
-            width: 200px;
+        & > .unite{
+            width: 300px;
             height: 50px;
-            text-transform: uppercase;
-            background-color: $grisBtn;
-            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            justify-items: center;
+            align-items: center;
+            background-color: #AAAAAA;
+            border: 1px solid black;
+            margin: 10px 10px;
 
-            &>a {
-                color: white;
-            }
         }
     }
 
@@ -1005,4 +940,4 @@ a {
 
 
 
-//crochet de fermeture de .test (nom temporaire)
+
