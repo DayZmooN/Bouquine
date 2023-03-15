@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/">
 
 </head>
 
@@ -35,9 +36,13 @@
                 <!-- barre de recherche  -->
                 <li class="search-box">
                     <input type="text" name="search" placeholder="Rechercher">
+                </li>
             </ul>
         </nav>
-        <a href="./connexion.php"><img class="img-user" src="../image/profil.png" alt="connexion au compte "></a>
+        <div class="search-bar">
+            <button id="s-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
+        </div>
+        <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
     </header>
 
 </body>
