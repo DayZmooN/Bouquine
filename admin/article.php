@@ -16,43 +16,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     </form>
     <a href="./add.php">ajouter de nouveaux livres</a>
 </div>
-<div id="menu-article">
-    <form action="" method="post">
-        <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
-        <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
-    </form>
-    <a href="./add.php">ajouter de nouveaux livres</a>
-</div>
 
 <div id="menu-recherche-article">
     <h2>liste des articles</h2>
-
-    <div id="nav-search">
-        <img src="../image/filtre.png" alt="icones de reglages des criteres d'affichage" title="filtre de recherche">
-        <nav>
-            <ul>
-                <li class="entree">
-                    <a href="#">dates</a>
-                    <ul class="sousMenuDate">
-                        <li><a href="#">+ recent </a></li>
-                    </ul>
-                </li>
-
-                <li class="entree"><a href="#">categories</a>
-                    <ul class="sousMenuCategorie">
-                        <li><a href="#">liste des catégories</a></li>
-                    </ul>
-                </li>
-
-                <li class="entree"><a href="#">genres</a>
-                    <ul class="sousMenuGenre">
-                        <li><a href="#">liste des genres</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
 </div>
 <?php
 foreach ($result as $article) {
@@ -63,34 +29,14 @@ foreach ($result as $article) {
         <p><?= $article['author'] ?></p>
         <div id="bouton">
             <p>
-                <a class="btnGreen" href="edit.php?id=<?= $article['id_book'] ?>" style="color:green">modifier</a> /
-                <a class="btnRed" href="./delete.php?id=<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer</a>
-                <a class="btnRed" href="#" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer</a>
-                <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
+                <a class="btnGreen" href="edit.php?id=<?= $article['id_book'] ?>" style="color:green">modifier /</a>
+                
+                <a class="btnRed" href="#" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer /</a>
+
+                <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture /</a>
+
                 <a href="./linkgenrebook.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
             </p>
         </div>
     </div>
 <?php } ?>
-
-
-<td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
-
-    <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
-
-    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
-
-    <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
-</td>
-</tr>
-
-<link rel="stylesheet" href="../css/style-admin.css">
-<div class="popup">
-    <h1>Voulez-vous supprimer définitivement :</h1>
-
-    </tbody>
-    <script src="./JS/admin.js"></script>
-    </body>
-
-
-    <?php include './includeClose.php'; ?>
