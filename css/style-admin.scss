@@ -65,9 +65,9 @@ a {
     &>#menu-admin {
 
         &>nav {
-
+            width: 400px;
             &>ul {
-
+                width: 400px;
                 &>li {
                     max-width: 500px;
                     width: 100%;
@@ -245,7 +245,7 @@ a {
             }
 
             &>nav {
-                display: none;
+                //display: none;
 
                 &>ul {
                     list-style-type: none;
@@ -286,7 +286,7 @@ a {
                             position: absolute;
                             width: 100px;
                             margin-left: 200px;
-                            display: none;
+                            //display: none;
 
                             &>li {
                                 width: 100px;
@@ -308,7 +308,7 @@ a {
                             width: 100px;
                             margin-left: 200px;
                             text-align: center;
-                            display: none;
+                            //display: none;
 
                             &>li {
                                 width: 100px;
@@ -329,7 +329,7 @@ a {
                             width: 100px;
                             margin-left: 200px;
                             text-align: center;
-                            display: none;
+                            //display: none;
 
                             &>li {
                                 width: 100px;
@@ -360,13 +360,29 @@ a {
         border: 1px solid black;
         background-color: #AAAAAA;
         margin: 10px 200px;
+
+        & > h3{
+            width: 450px;
+            padding-left: 10px;
+
+        }
+
+        & > p{
+            width: 100px;
+        }
+        
+        & > bouton{
+            width: 150px;
+            margin-right: 10px;
+        }
+        
     }
 
     /*....................FIN.CSS.ARTICLES....................*/
 
     /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
 
-    .multitaches>#formulaire {
+    .multitaches>#formulaireAjout {
         max-width: 1080px;
         width: 100%;
         height: 500px;

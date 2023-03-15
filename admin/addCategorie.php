@@ -28,7 +28,7 @@ include './header-admin.php';
                 <option value="Romans">romans</option>
                 <option value="Théatre">théatre</option>
             </select>
-            <input class="modifCat" type="search" name="recherche" placeholder="nouveau nom">
+            <input class="modifCat" type="text" name="recherche" placeholder="nouveau nom">
         </div>
 
         <div id="choice">

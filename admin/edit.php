@@ -177,7 +177,7 @@ require_once '../connexion.php';
             <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard" title="ajouter un nouveau livre"></a>
         </div>-->
     </form>
-<?php }
+<!-- <?php //} -->
 if (isset($_POST['submit'])) {
     $id = $_GET['id'];
     $ISBN = addslashes($_POST['ISBN']);

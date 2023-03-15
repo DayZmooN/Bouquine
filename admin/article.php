@@ -9,13 +9,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">menus articles</h1>
 
-<div id="menu-article">
-    <form action="" method="post">
-        <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
-        <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
-    </form>
-    <a href="./add.php">ajouter de nouveaux livres</a>
-</div>
+<
 <div id="menu-article">
     <form action="" method="post">
         <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
@@ -62,16 +56,16 @@ foreach ($result as $article) {
         <p><?= $article['publication_date'] ?></p>
         <p><?= $article['author'] ?></p>
         <div id="bouton">
-            <p>
-                <a class="btnGreen" href="#" style="color:green">modifier</a> /
+           
+                <a class="btnGreen" href="#" style="color:green">modifier</a> 
                 <a class="btnRed" href="#" style="color:red">supprimer</a>
-            </p>
+           
         </div>
     </div>
 <?php } ?>
 
 
-<td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
+<!-- <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
 
     <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
 
@@ -82,7 +76,7 @@ foreach ($result as $article) {
 </tr>
 
 
-</tbody>
+</tbody> -->
 <script src="./JS/admin.js"></script>
 </body>
 

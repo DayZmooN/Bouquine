@@ -44,6 +44,12 @@ a {
   width: 100%;
   border-bottom: 1px solid black;
 }
+#side-bar > #menu-admin > nav {
+  width: 400px;
+}
+#side-bar > #menu-admin > nav > ul {
+  width: 400px;
+}
 #side-bar > #menu-admin > nav > ul > li {
   max-width: 500px;
   width: 100%;
@@ -192,9 +198,6 @@ a {
   display: block;
   margin-right: 50px;
 }
-.corp .multitaches > #menu-recherche-article > #nav-search > nav {
-  display: none;
-}
 .corp .multitaches > #menu-recherche-article > #nav-search > nav > ul {
   list-style-type: none;
   display: flex;
@@ -230,7 +233,6 @@ a {
   position: absolute;
   width: 100px;
   margin-left: 200px;
-  display: none;
 }
 .corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuDate > li {
   width: 100px;
@@ -250,7 +252,6 @@ a {
   width: 100px;
   margin-left: 200px;
   text-align: center;
-  display: none;
 }
 .corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuCategorie > li {
   width: 100px;
@@ -269,7 +270,6 @@ a {
   width: 100px;
   margin-left: 200px;
   text-align: center;
-  display: none;
 }
 .corp .multitaches > #menu-recherche-article > #nav-search > nav > ul > .entree > .sousMenuGenre > li {
   width: 100px;
@@ -294,7 +294,18 @@ a {
   background-color: #AAAAAA;
   margin: 10px 200px;
 }
-.corp .multitaches > #formulaire {
+.corp .multitaches > .articleList > h3 {
+  width: 450px;
+  padding-left: 10px;
+}
+.corp .multitaches > .articleList > p {
+  width: 100px;
+}
+.corp .multitaches > .articleList > bouton {
+  width: 150px;
+  margin-right: 10px;
+}
+.corp .multitaches > #formulaireAjout {
   max-width: 1080px;
   width: 100%;
   height: 500px;
@@ -305,10 +316,10 @@ a {
   margin-left: 60px;
   margin-top: 20px;
 }
-.corp .multitaches > #formulaire > #gauche {
+.corp .multitaches > #formulaireAjout > #gauche {
   width: 60%;
 }
-.corp .multitaches > #formulaire > #gauche > .titre-auteur {
+.corp .multitaches > #formulaireAjout > #gauche > .titre-auteur {
   width: 100% x;
   display: flex;
   flex-direction: column;
@@ -316,7 +327,7 @@ a {
   margin-left: 25px;
   margin-right: 50px;
 }
-.corp .multitaches > #formulaire > #gauche > .titre-auteur > input {
+.corp .multitaches > #formulaireAjout > #gauche > .titre-auteur > input {
   width: 100%;
   height: 50px;
   border-radius: 50px;
@@ -325,14 +336,14 @@ a {
   margin-top: 40px;
   background-color: #FFDAA4;
 }
-.corp .multitaches > #formulaire > #gauche > .edition-date {
+.corp .multitaches > #formulaireAjout > #gauche > .edition-date {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   margin-left: 25px;
 }
-.corp .multitaches > #formulaire > #gauche > .edition-date > input {
+.corp .multitaches > #formulaireAjout > #gauche > .edition-date > input {
   width: 100%;
   height: 50px;
   border-radius: 50px;
@@ -342,17 +353,17 @@ a {
   margin-right: 60px;
   background-color: #FFDAA4;
 }
-.corp .multitaches > #formulaire > #gauche > .edition-date > .date {
+.corp .multitaches > #formulaireAjout > #gauche > .edition-date > .date {
   width: 100%;
   padding-right: 10px;
   margin-left: -20px;
   background-color: #FFDAA4;
 }
-.corp .multitaches > #formulaire > #gauche > .edition-date > .publication {
+.corp .multitaches > #formulaireAjout > #gauche > .edition-date > .publication {
   padding-right: 40px;
   margin-top: 55px;
 }
-.corp .multitaches > #formulaire > #gauche > .multiSelect {
+.corp .multitaches > #formulaireAjout > #gauche > .multiSelect {
   width: 100%;
   padding-top: 40px;
   display: flex;
@@ -360,14 +371,14 @@ a {
   justify-content: space-evenly;
   margin-top: 30px;
 }
-.corp .multitaches > #formulaire > #gauche > .multiSelect > .select > select {
+.corp .multitaches > #formulaireAjout > #gauche > .multiSelect > .select > select {
   border-radius: 10px;
   border-color: #FFDAA4;
 }
-.corp .multitaches > #formulaire > #droite {
+.corp .multitaches > #formulaireAjout > #droite {
   width: 40%;
 }
-.corp .multitaches > #formulaire > #droite > .resume {
+.corp .multitaches > #formulaireAjout > #droite > .resume {
   width: 100%;
   height: 350px;
   display: flex;
@@ -377,23 +388,23 @@ a {
   justify-content: center;
   margin-bottom: 30px;
 }
-.corp .multitaches > #formulaire > #droite > .resume > .label1 {
+.corp .multitaches > #formulaireAjout > #droite > .resume > .label1 {
   margin-top: 20px;
 }
-.corp .multitaches > #formulaire > #droite > .resume > .label2 {
+.corp .multitaches > #formulaireAjout > #droite > .resume > .label2 {
   margin-top: 20px;
 }
-.corp .multitaches > #formulaire > #droite > .resume > textarea {
+.corp .multitaches > #formulaireAjout > #droite > .resume > textarea {
   border-radius: 10px;
   border-color: #FFDAA4;
   margin-top: 20px;
 }
-.corp .multitaches > #formulaire > #droite > .resume > .choixImg {
+.corp .multitaches > #formulaireAjout > #droite > .resume > .choixImg {
   width: 250px;
   height: 70px;
   margin-top: 20px;
 }
-.corp .multitaches > #formulaire > #droite > a {
+.corp .multitaches > #formulaireAjout > #droite > a {
   margin-left: 300px;
 }
 .corp .multitaches > .categorieList {

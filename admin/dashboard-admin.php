@@ -28,12 +28,12 @@ foreach ($result as $article) {
     <h3><?= $article['title'] ?></h3>
     <p><?= $article['author'] ?></p>
     <p><?= $article['publication_date'] ?></p>
-    <!-- <div id="bouton">
+     <div id="bouton">
         <p>
             <a class="btnGreen" href="#" style="color:green">modifier</a> / 
             <a class="btnRed" href="#" style="color:red">supprimer</a>
         </p>
-    </div> -->
+    </div> 
 </div>
 <?php
 }
