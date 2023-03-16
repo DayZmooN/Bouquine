@@ -54,32 +54,32 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC))
         <div class="titre-auteur">
 
             <label for="title"></label>
-            <input type="text" name="title" id="title" value="<?= $article['title'] ?>">
+            <input type="text" name="title" id="title" value="#">
 
             <label for="author"></label>
-            <input type="text" name="author" id="author" value="<?= $article['author'] ?>">
+            <input type="text" name="author" id="author" value="#">
 
             <label for="ISBN"></label>
-            <input type="text" name="ISBN" id="ISBN" value="<?= $article['ISBN'] ?>">
+            <input type="text" name="ISBN" id="ISBN" value="#">
 
         </div>
 
         <div class="edition-date">
 
             <label for="editor"></label>
-            <input type="text" name="editor" id="editor" value="<?= $article['editor'] ?>">
+            <input type="text" name="editor" id="editor" value="#">
 
             <label class="publication" for="publication_date">Publication</label>
-            <input class="date" type="date" name="publication_date" id="publication_date" value="<?= $article['publication_date'] ?>">
+            <input class="date" type="date" name="publication_date" id="publication_date" value="#">
 
             <label class="collection" for="collection"></label>
-            <input type="text" name="collection" id="collection" value="<?= $article['collection'] ?>" placeholder="Collection">
+            <input type="text" name="collection" id="collection" value="#" placeholder="Collection">
 
             <label class="id_category" for="id_category"></label>
-            <input type="text" name="id_category" id="id_category" value="<?= $article['id_category'] ?>" placeholder="id_category">
+            <input type="text" name="id_category" id="id_category" value="#" placeholder="id_category">
 
             <label class="genre" for="genre"></label>
-            <input type="text" name="genre" id="genre" value="<?= $article['genre'] ?>" placeholder="genre">
+            <input type="text" name="genre" id="genre" value="#" placeholder="genre">
 
         </div>
 
@@ -115,42 +115,6 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC))
                 </select>
             </div>
 
-            // while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
-            ?>
-            <h1>Modification de l'article : "<?= $article['title'] ?>, édition : <?= $article['editor'] ?>"</h1>
-            <table>
-                <thead>
-                    <th>ID</th>
-                    <th>ISBN</th>
-                    <th>Nom de couverture</th>
-                    <th>Titre</th>
-                    <th>Auteur</th>
-                    <th>Éditeur</th>
-                    <th>Collection</th>
-                    <th>Date de publication</th>
-                    <th>Genre</th>
-                    <th>id_category</th>
-                    <th>Résumé</th>
-                    <th>Status</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <form action="#" method="POST">
-                            <td><?= $article['id_book'] ?></td>
-                            <td><input type="text" name="ISBN" value="<?= $article['ISBN'] ?>" size="8"></td>
-                            <td><input type="text" name="image" value="<?= $article['image'] ?>" size="8"></td>
-                            <td><input type="text" name="title" value="<?= $article['title'] ?>"></td>
-                            <td><input type="text" name="author" value="<?= $article['author'] ?>"></td>
-                            <td><input type="text" name="editor" value="<?= $article['editor'] ?>"></td>
-                            <td><input type="text" name="collection" value="<?= $article['collection'] ?>" size="8"></td>
-                            <td><input type="date" name="publication_date" value="<?= $article['publication_date'] ?>"></td>
-                            <td><input type="text" name="genre" value="<?= $article['genre'] ?>"></td>
-                            <td><input type="text" name="id_category" value="<?= $article['id_category'] ?>" size="4"></td>
-                            <td><input type="text" name="summary" value="<?= $article['summary'] ?>"></td>
-                            <td><input type="text" name="status" value="<?= $article['status'] ?>" size="1"></td>
-                    </tr>
-                </tbody>
-
                 <div class="select">
                     <label for="collection">Collection</label>
                     <select type="text" name="collection" id="collection" placeholder="">
@@ -161,8 +125,6 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC))
                         <option value="collection5">collection 5</option>
                     </select>
                 </div>
-
-
         </div>
     </div>
 
