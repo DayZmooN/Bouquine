@@ -3,7 +3,7 @@
 
 <section class="infos">
     <div class="modif">
-    <h2>Modifier les informations personnelles</h2>
+    <h2>Modifier mes informations personnelles</h2>
     </div>
     <div class="personal">
 	<form action="#" method="post">
@@ -24,9 +24,6 @@
 
 		<label for="adresse">Adresse:</label>
 		<input type="text" id="adresse" name="adresse">
-
-		<label for="pays">Pays:</label>
-		<input type="text" id="pays" name="pays">
 
 		<input type="submit" value="Enregistrer">
 	</form>

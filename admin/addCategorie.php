@@ -10,6 +10,7 @@ include './header-admin.php';
     <form class="ajout" action="" method="post">
 
         <input class="newCat" type="text" name="recherche" placeholder="nouvelle catégorie">
+        <input class="slug" type="text" name="slug" placeholder="champ du slug">
         <button><a href="./add.php">ajouter</a></button>
 
     </form>
@@ -27,7 +28,7 @@ include './header-admin.php';
                 <option value="Romans">romans</option>
                 <option value="Théatre">théatre</option>
             </select>
-            <input class="modifCat" type="search" name="recherche" placeholder="nouveau nom">
+            <input class="modifCat" type="text" name="recherche" placeholder="nouveau nom">
         </div>
 
         <div id="choice">

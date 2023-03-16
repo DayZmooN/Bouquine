@@ -39,16 +39,9 @@
 
             <img class="notif" src="../image/adminDashboard.png" alt="icone administrateur">
             <p>Admin</p>
-            <img class="notif" src="../image/boutonNotificationDashboard.png" alt="bouton cloche de notifications" title="voir vos notifications">
-            <img class="notif" src="../image/deconnexionDashboard.png" alt="bouton de deconnexion" title="vous deconnectez">
+           <a class="notif" href="#"> <img  src="../image/boutonNotificationDashboard.png" alt="bouton cloche de notifications" title="voir vos notifications"></a>
+           <a class="notif" href="#"> <img src="../image/deconnexionDashboard.png" alt="bouton de deconnexion" title="vous deconnectez"></a>
 
         </header>
 
         <main class="multitaches">
-
-
-
-
-
-
-

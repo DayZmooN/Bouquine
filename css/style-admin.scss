@@ -4,7 +4,35 @@ $grisBtn : #696969;
 $grisFiltre : #807373;
 $fondUser : #FFE7D6;
 
+@font-face {
+    font-family: 'QuattrocentoSans-Regular';
+    src: url(../fonts/QuattrocentoSans-Regular.ttf);
+}
 
+@font-face {
+    font-family: 'QuattrocentoSans-Bold';
+    src: url(../fonts/QuattrocentoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Bold Italic';
+    src: url(../fonts/LRTOksanaBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Bold';
+    src: url(../fonts/LRTOksanaBold.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana Italic';
+    src: url(../fonts/LRTOksanaItalic.ttf);
+}
+
+@font-face {
+    font-family: 'LRT Oksana';
+    src: url(../fonts/LRTOksana.ttf);
+}
 
 
 
@@ -37,11 +65,11 @@ a {
     &>#menu-admin {
 
         &>nav {
-
+            max-width: 500px;
             &>ul {
-
+                width: 100%;
                 &>li {
-                    max-width: 400px;
+                   // max-width: 400px;
                     width: 100%;
                     height: 80px;
                     display: flex;
@@ -77,13 +105,14 @@ a {
 .corp {
     max-width: 1300px;
     width: 75%;
-    height: 100 vh;
+    height: 100%;
     float: right;
     background-color: $fondRose;
+    
 
     &>#headerDashboard {
 
-        height: 131px;
+        height: 130px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -108,92 +137,36 @@ a {
 
     &>.multitaches {
         width: 100%;
-        height: 82vh;
-        background-color: $fondRose;
+        height: 100vh;
+        
 
         &>.multiTitre {
             width: 100%;
             padding-top: 40px;
             text-transform: uppercase;
             text-align: center;
-            background-color: $fondRose;
+            
 
         }
     }
 
     /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
 
-    /*....................CSS.CONNEXION....................*/
 
-    .connexion{
-        width: 500px;
-        height: 350px;
-        border-radius: 15px;
-        margin-top: 100px;
-        margin-left: 350px;
-        background-color: $remplissage ;
     
-        & > .Titre{
-            width: 100%;
-            padding-top: 20px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    
-        & > #mail, #pass{
-            width: 300px;
-            height: 50px;
-            margin: 30px 100px;
-            //border: 1px solid black;
-            
-            & > input{
-                width: 300px; 
-                height: 50px;
-                border-radius: 50px;
-                border: 0;
-                background-color: white ;
-                padding-left: 10px;
-                margin-top: 20px;
-            
-            }
-           
-    
-        }
-    
-        & > #connect{
-            width: 100px;
-    
-            & > button{
-                width: 100px;
-                height: 25px;
-                margin: 50px 200px;
-                box-shadow: 1px 1px 10px 1px grey;
-                background-color: #81D9E5;
-                border: 0;
-                border-radius: 20px;
-    
-            }
-    
-            & > button:hover{
-                cursor: pointer;
-            }
-        }
-    }
-    
-
-    /*....................FIN.CSS.CONNEXION....................*/
 
     /*....................CSS.DASHBOARD....................*/
 
-    .multitaches>#temporaire {
+    .multitaches>#compteurEtGraphique {
         width: 1000px;
-        height: 200px;
+        height: 100%;
         margin-top: 25px;
         margin-left: 25px;
     }
 
     .multitaches>#dernier-ajout {
         width: 100%;
+        margin-top: -600px;
         text-transform: uppercase;
         text-align: center;
     }
@@ -202,8 +175,9 @@ a {
 
     /*....................CSS.ARTICLES....................*/
 
-    .multitaches>#menu-article {
+    .multitaches>#articleSearchAjout {
         width: 50%;
+        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -243,138 +217,15 @@ a {
             border-radius: 25px;
             background-color: $remplissage;
         }
+
+        
     }
 
-    .multitaches>#menu-recherche-article {
-        width: 500px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: 100px;
-        padding-top: 50px;
-
-        &>h2,
-        img {
-            margin-left: 50px;
-        }
-
-        &>#nav-search {
-
-            &>img {
-                width: 32px;
-                height: 32px;
-                cursor: pointer;
-            }
-
-            &>img:hover+nav {
-                display: block;
-                margin-right: 50px;
-            }
-
-            &>nav {
-                display: none;
-
-                &>ul {
-                    list-style-type: none;
-                    display: flex;
-                    flex-direction: column;
-
-                    &>.entree {
-                        width: 100px;
-                        height: 50px;
-                        background-color: $grisBtn;
-                        list-style-type: none;
-                        border: 1px solid black;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-
-                        &:active>.sousMenuDate {
-                            display: block;
-                        }
-
-                        &:active>.sousMenuCategorie {
-                            display: block;
-                        }
-
-                        &:active>.sousMenuGenre {
-                            display: block;
-                        }
-
-                        &>a {
-                            width: 100px;
-                            height: 50px;
-                            line-height: 50px;
-                            text-align: center;
-                        }
-
-                        &>.sousMenuDate {
-                            position: absolute;
-                            width: 100px;
-                            margin-left: 200px;
-                            display: none;
-
-                            &>li {
-                                width: 100px;
-                                height: 50px;
-                                background-color: $grisBtn;
-                                list-style-type: none;
-                                border: 1px solid black;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                position: static;
-                                margin-top: 0;
-                                margin-left: 0;
-                            }
-                        }
-
-                        &>.sousMenuCategorie {
-                            position: absolute;
-                            width: 100px;
-                            margin-left: 200px;
-                            text-align: center;
-                            display: none;
-
-                            &>li {
-                                width: 100px;
-                                height: 50px;
-                                background-color: $grisBtn;
-                                list-style-type: none;
-                                border: 1px solid black;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                position: static;
-                                margin-top: -78px;
-                            }
-                        }
-
-                        &>.sousMenuGenre {
-                            position: absolute;
-                            width: 100px;
-                            margin-left: 200px;
-                            text-align: center;
-                            display: none;
-
-                            &>li {
-                                width: 100px;
-                                height: 50px;
-                                background-color: $grisBtn;
-                                list-style-type: none;
-                                border: 1px solid black;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                position: static;
-                                margin-top: -130px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    .multitaches > .sousTitre{
+        width: 200px;
+        margin-top: 40px;
+        margin-left: 500px;
+        margin-bottom: 20px;
     }
 
     .multitaches>.articleList {
@@ -387,131 +238,112 @@ a {
         border: 1px solid black;
         background-color: #AAAAAA;
         margin: 10px 200px;
+
+        & > h3{
+            width: 450px;
+            padding-left: 10px;
+
+        }
+
+        & > p{
+            width: 100px;
+        }
+        
+        & > bouton{
+            width: 150px;
+            margin-right: 10px;
+        }
+        
     }
 
     /*....................FIN.CSS.ARTICLES....................*/
 
     /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
 
-    .multitaches>#formulaire {
-        max-width: 1080px;
-        width: 100%;
-        height: 500px;
+    .multitaches > #formulaireAjout {
+        
+        width: 90%;
+        margin: 0 auto;
         background-color: #FFF5EE;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         border-radius: 50px;
-        margin-left: 60px;
         margin-top: 20px;
 
-        &>#gauche {
-            width: 60%;
+        &>#formGauche {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            
+            
+            
 
             &>.titre-auteur {
-                width: 100%x;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
-                margin-left: 25px;
-                margin-right: 50px;
+                
 
-                &>input {
-                    width: 100%;
+
+                &>.tripleInput {
+                    width: 350px;
                     height: 50px;
-                    border-radius: 50px;
+                    margin-top: 50px;
                     border: 0;
-                    padding-left: 10px;
-                    margin-top: 40px;
+                    border-radius: 50px;
                     background-color: $remplissage;
+                    padding-left: 10px;
+                    
                 }
             }
 
             &>.edition-date {
                 width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                margin-left: 25px;
 
-                &>input {
-
-                    width: 100%; //-80
+                & > div > #editor {
+                    width: 350px;
                     height: 50px;
-                    border-radius: 50px;
+                    margin-top: 50px;
                     border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
                     padding-left: 10px;
-                    margin-top: 40px;
-                    margin-right: 60px;
-                    background-color: $remplissage;
+                    
                 }
 
-                &>.date {
-                    width: 100%;
-                    padding-right: 10px;
-                    margin-left: -20px;
-                    background-color: $remplissage;
-                }
-
-                &>.publication {
-                    padding-right: 40px;
-                    margin-top: 55px;
-                }
+                
             }
 
-            &>.multiSelect {
-                width: 100%;
-                padding-top: 40px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                margin-top: 30px;
+            
+        }
 
-                &>.select {
+        &>.milieu {
+           
+            
 
-                    &>select {
-                        border-radius: 10px;
-                        border-color: $remplissage;
-                    }
+            &>.select {
+
+                &>select {
+                   
                 }
             }
         }
 
         &>#droite {
-            width: 40%;
-
+            
             &>.resume {
-                width: 100%;
-                height: 350px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                margin-bottom: 30px;
+               
 
-                &>.label1 {
-                    margin-top: 20px;
-                }
-
-                &>.label2 {
-                    margin-top: 20px;
-                }
-
-                &>textarea {
-                    border-radius: 10px;
-                    border-color: $remplissage;
-                    margin-top: 20px;
-                }
+                
 
                 &>.choixImg {
-                    width: 250px;
-                    height: 70px;
-                    margin-top: 20px;
+                    
                 }
             }
 
             &>a {
-                margin-left: 300px;
+                
             }
         }
     }
@@ -521,92 +353,61 @@ a {
     /*....................CSS.CATEGORIES....................*/
 
     .multitaches>.categorieList {
-        width: 500px;
-        height: 500px;
-        margin-top: 20px;
-        margin-left: 350px;
-        text-align: center;
-        background-color: $remplissage;
+        width: 100%;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+        flex-wrap: wrap;
+        
 
-        &>h2 {
-            padding-top: 25px;
-            text-transform: uppercase;
-        }
-
-        &>ol {
-            width: 200px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            margin-left: 150px;
-            list-style-type: none;
-
-            &>li {
-                flex-basis: 25%;
-                box-sizing: border-box;
-                padding: 10px;
-            }
-        }
-
-        &>button {
-            width: 200px;
+        & > .unite{
+            width: 300px;
             height: 50px;
-            text-transform: uppercase;
-            background-color: $grisBtn;
-            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            justify-items: center;
+            align-items: center;
+            background-color: #AAAAAA;
+            border: 1px solid black;
+            margin: 10px 10px;
 
-            &>a {
-                color: white;
-            }
         }
+        
+
+      
+
+        
     }
 
     /*....................FIN.CSS.CATEGORIES....................*/
 
     /*....................CSS.GENRES....................*/
 
-    .multitaches>.categorieGenre {
-        width: 500px;
-        height: 500px;
-        margin-top: 20px;
-        margin-left: 350px;
-        text-align: center;
-        background-color: $remplissage;
+    .multitaches>.genreList {
+        width: 100%;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+        flex-wrap: wrap;
+        
 
-        &>h2 {
-            padding-top: 25px;
-            text-transform: uppercase;
-        }
-
-        &>ol {
-            width: 200px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            margin-left: 150px;
-            list-style-type: none;
-
-            &>li {
-                flex-basis: 20%;
-                box-sizing: border-box;
-                padding: 10px;
-            }
-        }
-
-        &>button {
-            width: 200px;
+        & > .unite{
+            width: 300px;
             height: 50px;
-            text-transform: uppercase;
-            background-color: $grisBtn;
-            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            justify-items: center;
+            align-items: center;
+            background-color: #AAAAAA;
+            border: 1px solid black;
+            margin: 10px 10px;
 
-            &>a {
-                color: white;
-            }
         }
     }
 
@@ -901,7 +702,8 @@ a {
     }
 
     .multitaches>#tableUser {
-        margin-left: 50px;
+        width: 100%;
+        // margin-left: 50px;
         margin-top: 50px;
         text-align: center;
 
@@ -912,12 +714,46 @@ a {
         }
 
         &>tbody {
-            background-color: $fondUser;
+            
+            & > .contenuUser{
+                background-color: $fondUser;
             height: 50px;
+            }
+
+            & > .tdButton{
+                height: 50px;
+                
+                & > td{
+                    height: 50px;
+                            
+                    & > button{
+                        width: 100%;
+                        height: 50px;
+                        
+                        background-color: $grisBtn;
+                        border-radius: 10px;
+                        border: 0;
+                        margin-top: 10px;
+
+                        & > a{
+                            display: block;
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            color: black;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 
     /*....................CSS.USER.FIN....................*/
+
+    /*....................CSS.USER.MODIFICATION....................*/
+
+
 
     /*....................CSS.NEWSLETTER....................*/
 
@@ -957,6 +793,145 @@ a {
 
 
 
+}// crochet de corp
+
+
+
+
+
+
+
+
+    /*....................CSS.CONNEXION....................*/
+
+    #sideVide{
+
+        max-width: 500px;
+        width: 25%;
+        height: 100vh;
+        position: fixed;
+        background-color: #858585;
+    
+        &>#logo>img {
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+    
+    }
+    
+    .bodyConnexion{
+        max-width: 1300px;
+        width: 75%;
+        height: 100 vh;
+        float: right;
+        
+        
+    
+        & >.connexion{
+            width: 500px;
+            height: 350px;
+            border-radius: 15px;
+            margin-top: 100px;
+            margin-left: 350px;
+            background-color: $remplissage ;
+        
+            & > .Titre{
+                width: 100%;
+                padding-top: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        
+            & > #mail, #pass{
+                width: 300px;
+                height: 50px;
+                margin: 30px 100px;
+                //border: 1px solid black;
+                
+                & > input{
+                    width: 300px; 
+                    height: 50px;
+                    border-radius: 50px;
+                    border: 0;
+                    background-color: white ;
+                    padding-left: 10px;
+                    margin-top: 20px;
+                
+                }
+               
+        
+            }
+        
+            & > #connect{
+                width: 100px;
+        
+                & > button{
+                    width: 100px;
+                    height: 25px;
+                    margin: 50px 200px;
+                    box-shadow: 1px 1px 10px 1px grey;
+                    background-color: #81D9E5;
+                    border: 0;
+                    border-radius: 20px;
+        
+                }
+        
+                & > button:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+
+/*....................FIN.CSS.CONNEXION....................*/
+
+/*....................DELETE.CSS....................*/
+
+.popup{
+    width: 500px;
+    height: 250px;
+    position: fixed;
+    box-shadow: 1px 1px 10px 1px grey;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 99999;
+
+    & > h1{
+        width: 500px;
+        padding-top: 30px;
+        font-family:LRT Oksana Bold ;
+    }
+
+    & > .title{
+        width: 500px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    & > .btnYes{
+        width: 100px;
+        height: 70px;
+        background-color: #26F904;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    & > .btnNo{
+        width: 100px;
+        height: 70px;
+        background-color: #FF0404;
+        margin-left: 20px;
+        cursor: pointer;
+        
+    }
+
+
+
+    
 }
 
 
@@ -967,5 +942,3 @@ a {
 
 
 
-
-//crochet de fermeture de .test (nom temporaire)

@@ -33,8 +33,6 @@ $query->execute();
                     à tous vos besoins de<br> recherche et de lecture.</p>
             </div>
         </section>
-
-
         <section class="populaire">
             <div class="titre1">
                 <h2 class="popular">Les plus populaires </h2>
@@ -62,12 +60,11 @@ $query->execute();
             <h2 id="nouveautes">Nouveautés</h2>
             <ul class=slider>
 
-                <li><img src="../image/cohen.jpg" alt></li>
-                <li><img src="../image/livres nature.jpg" alt></li>
-                <li><img src="../image/stephen king.jpg" alt></li>
+                <li><img src="../image/jeunesse.png" alt></li>
+                <li><img src="../image/nature.png" alt></li>
+                <li><img src="../image/fantastique.png" alt></li>
 
             </ul>
-
         </section>
         <!-- end section nouveautes  -->
 
@@ -100,7 +97,7 @@ $query->execute();
 
 
                 </div>
-
+                <hr class="gender1">
                 <!-- debut genre fantaisie -->
 
                 <div class="genre">
@@ -129,7 +126,7 @@ $query->execute();
 
 
                     </div>
-
+                    <hr class="gender1">
                     <!-- début genre action -->
 
                     <div class="genre">
@@ -158,13 +155,11 @@ $query->execute();
 
 
                         </div>
-
-
-
         </section>
-        <!-- END SECTION GENRE LES PLUS LUS  -->
-        <!-- SECTION TEXTE -->
 
+        <!-- END SECTION GENRE LES PLUS LUS  -->
+
+        <!-- SECTION TEXTE -->
         <section id="text">
             <div class="texte">
                 <p class="bouquine">BOUQUINE c’est :<br></p>
@@ -182,51 +177,44 @@ $query->execute();
                         leurs emprunts<br> en ligne pour prolonger la période de prêt.</li>
 
                     <li>La consultation et lecture sur place.</li>
-
                 </ul>
-
             </div>
             <div class="img">
                 <img class="image" src="../image/femme-livre.png" alt="Retrouvez le plaisir de la lecture avec Bouquine ">
             </div>
-
         </section>
 
         <!-- END SECTION TEXTE -->
 
         <!-- SECTION NEWSLETTER -->
 
-
         <section class="parallax-section newsletter">
             <div class="parallax parallax1 news">
-
                 <h2 id="titl">Newsletter gratuite</h2>
                 <div class="formulaire">
                     <form action="subscribing-newsletter" method="post">
                         <label for="email">E-mail:</label>
                         <input id="email" name="subscriber_email" type="email" />
                         <button id="send" type="submit">S'abonner </button>
-
                     </form>
                 </div>
+
                 <p class="abonner">N'hésitez pas à vous abonner pour recevoir en exclusivité chaque mois les
                     dernières nouveautés et évènements de la bibliothèque.Nous ne vous enverrons pas de spam
                     ni ne partagerons vos informations.</p>
-
             </div>
         </section>
         <!-- END SECTION NEWSLETTER -->
 
         <!-- SECTION CONTACT -->
-
         <section id="contact">
             <h2 id="us">Contact</h2>
             <div class="container-contact">
-
                 <div class="localisation">
                     <a href="https://goo.gl/maps/jTEf4EwKz4geiEws5"><img src="../image/localisation.png" alt="adresse de bouquine"></a>
                     <p class="adress">21 rue du Calidon<br> 01000 <br>Saint Denis les Bourg</p>
                 </div>
+
                 <div class="horaire">
                     <img src="../image/clock.svg" alt="horaire de bouquine">
                     <p class="hour">Du lundi au Samedi <br>de 9h à 18h non stop</p>
@@ -266,13 +254,11 @@ $query->execute();
                     <p class="livre">4.5/5</p>
                 </div>
             </div>
-
         </section>
 
         <!-- END SECTION COMPTEUR  -->
 
         <!-- SECTION AVIS DES LECTEURS  -->
-
         <section id="lecteur">
             <h2 class="lector">Avis des lecteurs</h2>
             <div class="avis">
@@ -295,9 +281,7 @@ $query->execute();
                     <p class="value">Réservation en ligne pour plus de rapidité, service et personnel agréable.<br>
                         Je recommande vivement. </p>
                 </div>
-
             </div>
-
         </section>
         <!-- end section avis lecteur  -->
     </main>
