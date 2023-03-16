@@ -73,6 +73,7 @@ nav.header-nav {
 nav ul {
     display: flex;
     color: #000;
+
 }
 
 nav li {
@@ -96,14 +97,17 @@ nav ul ul {
     min-width: 200px;
     background-color: #FFC300;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 nav ul li:hover>ul {
     display: block;
+    z-index: -1;
 }
 
 nav ul ul li {
     position: relative;
+
 }
 
 nav ul ul a {
@@ -128,6 +132,29 @@ img.img-user {
     margin-bottom: 30px;
     width: 40px;
     height: 40px;
+}
+
+.user-name {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nom {
+    width: 30px;
+    height: 10px;
+    margin-right: 10px;
+
+}
+
+.user-name a {
+    width: 50px;
+    height: 50px;
 }
 
 .search-bar {
@@ -349,7 +376,7 @@ h1 {
 #new {
     width: 100%;
     height: 400px;
-    background-color: #74EC8D;
+    background-color: #62c465e4;
     padding-top: 20px;
 }
 
@@ -362,7 +389,6 @@ h1 {
     color: black;
     font-weight: bold;
     text-align: center;
-
 }
 
 .slider {
@@ -426,7 +452,7 @@ h1 {
 #gender {
     width: 100%;
     height: auto;
-    background-color: #21DAFF;
+    background-color: #21b7ffb0;
 }
 
 #prefers {
@@ -700,7 +726,7 @@ hr.gender1:after {
     padding-left: 30px;
     margin-top: 70px;
     margin-left: 70px;
-    background-color: #E0FF20;
+    background-color: #e0ff2085;
     ;
 }
 
@@ -773,8 +799,8 @@ hr.gender1:after {
     flex-direction: column;
 }
 
-label {
-    font-size: 1.5rem;
+.formulaire label {
+    font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular';
     color: white;
 }
@@ -982,7 +1008,7 @@ p.livre {
 section#lecteur {
     width: 100%;
     height: 550px;
-    background-color: #21DAFF;
+    background-color: #21b7ffb0;
     padding-top: 20px;
 }
 
@@ -1009,7 +1035,7 @@ h2.lector {
     height: 300px;
     border: 3px solid black;
     border-radius: 40px;
-    background-color: #E0FF20;
+    background-color: #e0ff2085;
     ;
 }
 
@@ -1375,33 +1401,35 @@ h2.catalog {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
+
 #catal {
     display: flex;
     justify-content: center;
-  }
-    .rechercher {
+}
+
+.rechercher {
     display: flex;
     align-items: center;
     flex-direction: row;
     align-items: center;
-      }
-  
-  .rechercher input[type="text"] {
-    margin:0 auto;
-  }
-  
-  .rechercher img {
+}
+
+.rechercher input[type="text"] {
+    margin: 0 auto;
+}
+
+.rechercher img {
     margin-left: auto;
-  }
-  
-  #searc-bar {
+}
+
+#searc-bar {
     width: 120px;
     height: 40px;
     font-family: 'QuattrocentoSans-Regular';
     font-size: .8rem;
     margin-left: 10px;
-  }
-  
+}
+
 .formul-s {
     width: 100%;
     height: 120px;
@@ -1447,6 +1475,7 @@ p.titles {
     margin-top: 20px;
     text-align: center;
 }
+
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1461,7 +1490,7 @@ p.authors {
 .info {
     width: 100%;
     height: 900px;
-    background: white;
+    background: #F4B97A;
 }
 
 .news {
@@ -1830,58 +1859,60 @@ input[type="submit"]:hover {
    */
 
 /* DASHBOARD USER */
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
+
+.dashb {
+    width: 100%;
+    height: 30px;
+   margin-top: 10px;
+   font-size: 1.5rem;
+    
 }
 
-.navbar {
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 200px;
-	background-color: #333;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+#user-nav {
+    background-color: #f39c12;
+    max-width: 500px;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
 }
 
-.navbar a {
-	padding: 10px;
-	margin: 5px;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
+nav#user-nav ul {
+
+    display: block;
 }
 
-.content {
-	margin-left: 200px;
-	padding: 20px;
+
+
+nav#user-nav li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
-.userinfo {
-	background-color: #eee;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-	text-align: center;
-    /* display: none; */
+nav#user-nav li a:hover {
+    background-color: #4CAF50;
 }
 
-h2, h3 {
-	text-align: center;
-	margin-bottom: 20px;
+
+div.info1 {
+    margin-left: 25%;
+    padding: 20px;
+
 }
 
+div.personal {
+    margin-bottom: 20px;
+}
+
+div.personal h3 {
+    margin-top: 0;
+}
 
 /* END DASHBOARD USER */
 
 /* info perso */
-.infos {
+/* .infos {
     width: 100%;
     height: 900px;
 }
@@ -1933,6 +1964,6 @@ input[type="submit"]:hover {
 
 input.mailing {
     background-color: white;
-}
+} */
 
 /* end info perso */

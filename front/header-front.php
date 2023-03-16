@@ -42,7 +42,10 @@
         <div class="search-bar">
             <button id="s-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
         </div>
+        <div class="user-name">
         <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
+        <span class="nom">User</span>
+        </div>
     </header>
 
 </body>
