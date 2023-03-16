@@ -10,58 +10,44 @@ require_once './header-front.php';
 </head>
 
 <body>
-<h4 class="dashb">Tableau de bord</h4>
-    
-    <nav id="user-nav">
+
+  <div class="dashboard1">
+    <h2>Bienvenue sur votre espace personnel </h2>
+  </div>
+  <nav id="user-nav">
     <ul>
       <li><a href="#">Emprunter un livre</a></li>
-      
       <li><a href="#">Modifier mes informations personnelles</a></li>
       <li><a href="#">Supprimer mon compte</a></li>
       <li><a href="#">Déconnexion</a></li>
     </ul>
   </nav>
   <div class="info1">
-    
-    <div class="personal">
-    <h3>Informations personnelles</h3>
-  <form action="#" method="post">
-    <div class="form-row">
-      <div class="form-col">
+    <h3 class="info-perso">Information personnelle </h3>
+    <form id="dash-form" action="#" method="post">
+      <div class="names">
         <label for="nom">Nom:</label>
         <input type="text" id="nom" name="nom" required>
-      </div>
-
-      <div class="form-col">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <label for="prenom">Prénom:</label>
         <input type="text" id="prenom" name="prenom" required>
       </div>
-    </div>
 
-    <div class="form-row">
-      <div class="form-col">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-    </div>
+      <label for="email">Email:</label>
+      <input type="email" id="email1" name="email" required>
 
-    <div class="form-row">
-      <div class="form-col">
-        <label for="adresse">Adresse:</label>
-        <input type="text" id="adresse" name="adresse">
-      </div>
-    </div>
+      <label for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" required>
 
-    <div class="form-row">
+      <label  id="lab-adress" for="adresse">Adresse:</label>
+      <input class="adress" type="text" id="adresse" name="adresse">
+
       <input type="submit" value="Enregistrer">
-    </div>
-  </form>
-</div>
 
-        </form>
-      </div>
   </div>
- 
+
+  </form>
+
 </body>
 
 

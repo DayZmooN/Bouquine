@@ -1837,6 +1837,7 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
+
 */
 /* END PAGE RECHERCHE AVANCEE */
 
@@ -1860,110 +1861,141 @@ input[type="submit"]:hover {
 
 /* DASHBOARD USER */
 
-.dashb {
-    width: 100%;
+.dashboard1 {
+    width: 600px;
     height: 30px;
-   margin-top: 10px;
-   font-size: 1.5rem;
-    
-}
-
-#user-nav {
-    background-color: #f39c12;
-    max-width: 500px;
-    width: 25%;
-    height: 100vh;
-    position: fixed;
-}
-
-nav#user-nav ul {
-
-    display: block;
-}
-
-
-
-nav#user-nav li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-nav#user-nav li a:hover {
-    background-color: #4CAF50;
-}
-
-
-div.info1 {
-    margin-left: 25%;
-    padding: 20px;
 
 }
 
-div.personal {
-    margin-bottom: 20px;
-}
-
-div.personal h3 {
-    margin-top: 0;
-}
-
-/* END DASHBOARD USER */
-
-/* info perso */
-/* .infos {
-    width: 100%;
-    height: 900px;
-}
-
-.modif {
-    width: 100%;
-    height: 50px;
-    margin-top: 30px;
-}
-
-h2 {
+.dashboard1 h2 {
     font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-form {
-    margin: 0 auto;
-    max-width: 500px;
+#user-nav {
+    width: 350px;
+    height: 500px;
+    background-color: #f39c12;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+#user-nav ul {
+    display: block;
+}
+
+#user-nav li a {
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+#user-nav li a:hover {
+    background-color: #e88e17d6;
+
+}
+
+.info1 {
+    width: 700px;
+    height: 420px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 100px;
+    transform: translate(-50%, -50%);
+    margin-top: 70px;
+    /* display: none; */
+    background-color: #EBB016;
+}
+
+.info-perso {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
+    text-align: center;
+}
+.names{
+    width: 400px;
+    height: 35px;
+    display: flex;
+}
+form#dash-form {
+    width: 650px;
+    height: 450px;
+    padding: 0 10px 20px ;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
 }
 
 label {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     display: block;
-    margin-top: 10px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    box-sizing: border-box;
+input[type="password"] 
+input[type="tel"] {
+    width: 250px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+   
 }
 
 input[type="submit"] {
+    width: 150px;
+    height: 30px;
     background-color: #74EC8D;
     color: white;
-    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    margin-top:  10px ;
+  
+   
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
+
 }
 
-input.mailing {
-    background-color: white;
-} */
+input.adress {
+    width: 450px;
+    margin: 0 ;
 
-/* end info perso */
+}
+
+input[type="email"]#email1 {
+    width: 450px;
+    /* padding: 15px; */
+
+}
+input[type="tel"]#telephone{
+    width: 450px;
+    padding: 10px;
+    background-color: white;
+}
+label#lab-adress {
+ 
+    /* padding-top: 30px; */
+  
+}
+
+/* END DASHBOARD USER */
