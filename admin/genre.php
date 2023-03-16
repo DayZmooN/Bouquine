@@ -1,6 +1,7 @@
 <?php
-include './header-admin.php';
 require_once './auth.php';
+include './header-admin.php';
+
 $req = $db->prepare('SELECT `id_genre`, `libel_genre`, `genre_slug` FROM `genre`');
 $req->execute();
 $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -10,27 +11,27 @@ $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="genreList">
     <div class="unite">
-    <h3>genre </h3>
+        <h3>genre </h3>
 
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
-
-    </div>
-
-    <div class="unite">
-    <h3>genre </h3>
-
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
+        <a class="btnGreen" href="#" style="color:green">modifier</a>
+        <a class="btnRed" href="#" style="color:red">supprimer</a>
 
     </div>
 
     <div class="unite">
-    <h3>genre </h3>
+        <h3>genre </h3>
 
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
+        <a class="btnGreen" href="#" style="color:green">modifier</a>
+        <a class="btnRed" href="#" style="color:red">supprimer</a>
 
     </div>
 
-</div>
+    <div class="unite">
+        <h3>genre </h3>
+
+        <a class="btnGreen" href="#" style="color:green">modifier</a>
+        <a class="btnRed" href="#" style="color:red">supprimer</a>
+
+        <button><a href="./addgenre.php">modifier / supprimer</a></button>
+
+    </div>

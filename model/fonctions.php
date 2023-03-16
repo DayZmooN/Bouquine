@@ -2,7 +2,6 @@
 require_once '../connexion.php';
 ?>
 <!--CRUD Catégories -->
-<h1>Catégories</h1>
 <?php
 $reqCat = $db->prepare('SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`');
 $reqCat->execute();

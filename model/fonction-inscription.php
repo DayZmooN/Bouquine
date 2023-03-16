@@ -2,7 +2,7 @@
 //on démarre une session PHP
 session_start();
 if (isset($_SESSION["user"])) {
-    header("location: dashboard.php");
+    header("location: dashboarduser.php");
     exit;
 }
 //on verifie si le formulaire a été envoyé
@@ -30,7 +30,7 @@ if (!empty($_POST)) {
 
 
         // on va enregistre en bdd
-        require_once "./connect.php";
+        require_once "../connexion.php";
 
         $sql = "INSERT INTO `user` (`password`, `username`, `lastname`, `mail`, `phone`, `birthdate`) VALUES (:password, :username, :lastname, :mail, :phone, :birthdate)";
         $sqlAdmin = "INSERT INTO `admin` (`password`, `username`, `mail`) VALUES (:password, :username, :mail)";
