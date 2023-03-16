@@ -22,9 +22,6 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <h2 class="sousTitre">liste des articles</h2>
 
 
-
-
-
 <?php
 foreach ($result as $article) {
 ?>
@@ -40,25 +37,6 @@ foreach ($result as $article) {
         </div>
     </div>
 <?php } ?>
-
-
-<!-- <td><a href="edit.php?id=<?= $article['id_book'] ?>" class="update">Modifier</a>
-
-    <a href="./delete.php?id=<?= $article['id_book'] ?>" class="delete" data-toogle='pop' data-target='.pop' data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?>">Supprimer</a>
-
-    <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture</a>
-
-    <a href="./addgenre.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
-</td>
-</tr>
-
-<link rel="stylesheet" href="../css/style-admin.css">
-<div class="popup">
-    <h1>Voulez-vous supprimer définitivement :</h1>
-
-</tbody> -->
-<script src="./JS/admin.js"></script>
 </body>
-
 
 <?php include './includeClose.php'; ?>

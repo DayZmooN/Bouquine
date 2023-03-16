@@ -5,76 +5,18 @@ $reqCat = $db->prepare('SELECT `id_category`, `libel_category`, `libel_slug` FRO
 $reqCat->execute();
 $resultCat = $reqCat->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <h1 class="multiTitre">liste catégories</h1>
 
 <div class="categorieList">
+<?php foreach($resultCat as $category){ ?>
     <div class="unite">
-    <h3>categorie </h3>
-
+    <h3><?= $category['libel_category'] ?> </h3>
     <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
-
+    <a class="btnRed" href="./category/deletecategory.php?id=<?= $category['id_category'] ?>" style="color:red">supprimer</a>
     </div>
-
-    <div class="unite">
-    <h3>categorie </h3>
-
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
-
-    </div>
-
-    <div class="unite">
-    <h3>categorie </h3>
-
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
-
-    </div>
-
-    <div class="unite">
-    <h3>categorie </h3>
-
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
-
-    </div>
-
-    <div class="unite">
-    <h3>categorie </h3>
-
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
-
-    </div>
-
-    <div class="unite">
-    <h3>categorie </h3>
-
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="#" style="color:red">supprimer</a>
-
-    </div>
-
-    
-
-    
-
+<?php } ?>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php include './includeClose.php'  ?>
+<? include './includeClose.php'  ?>
