@@ -11,6 +11,6 @@ try {
     exit();
 } catch (PDOException $e) {
     $_SESSION["error"] = "Votre category n'a pas été supprimé";
-    header('Location: ./category.php');
+    header('Location: ../categorie.php');
     exit();
 }

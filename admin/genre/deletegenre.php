@@ -11,6 +11,6 @@ try {
     exit();
 } catch (PDOException $e) {
     $_SESSION["error"] = "Votre Genre n'a pas été supprimé";
-    header('Location: ./genre.php');
+    header('Location: ../genre.php');
     exit();
 }
