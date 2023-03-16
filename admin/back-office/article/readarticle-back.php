@@ -9,17 +9,17 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">menus articles</h1>
 
-<div id="articleSearchAjout">
+<div id="menu-article">
     <form action="" method="post">
         <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
         <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
     </form>
-    <a href="./articleadd.php">Ajouter de nouveaux livres</a>
+    <a href="./add.php">ajouter de nouveaux livres</a>
 </div>
 
-
-    <h2 class="sousTitre" >liste des articles</h2>
-
+<div id="menu-recherche-article">
+    <h2>liste des articles</h2>
+</div>
 <?php
 foreach ($result as $article) {
 ?>
@@ -28,22 +28,15 @@ foreach ($result as $article) {
         <p><?= $article['publication_date'] ?></p>
         <p><?= $article['author'] ?></p>
         <div id="bouton">
+            <p>
+                <a class="btnGreen" href="edit.php?id=<?= $article['id_book'] ?>" style="color:green">modifier /</a>
+                
+                <a class="btnRed" href="#" data-title="<?= $article['title'] ?>" data-id="<?= $article['id_book'] ?> style=" color:red">supprimer /</a>
 
-            <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
-            <a class="btnRed" href="./deletearticle.php?id=<?= $article['id_book'] ?>" style="color:red">Supprimer</a>
+                <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Ajouter l'image de couverture /</a>
 
+                <a href="./linkgenrebook.php?id=<?= $article['id_book'] ?>">Ajouter genres</a>
+            </p>
         </div>
     </div>
 <?php } ?>
-</body>
-
-<link rel="stylesheet" href="../css/style-admin.css">
-<div class="popup">
-    <h1>Voulez-vous supprimer définitivement :</h1>
-
-    <div class="title">ici le php qui fera apparaitre le titre </div>
-    <button class="btnYes">yes</button>
-    <button class="btnNo">no</button>
-</div>
-
-<?php include './includeClose.php'; ?>

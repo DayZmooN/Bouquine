@@ -6,7 +6,6 @@ if (isset($_SESSION["admin"])) {
     header("location: dashboard-admin.php");
     exit;
 }
-
 // on vérifie si le formulaire a été envoyé
 if (!empty($_POST)) {
     // le formulaire a été envoyé
@@ -43,12 +42,7 @@ if (!empty($_POST)) {
     // ajoutez ici tous les contrôles souhaités 
 }
 
-// on inclut le header 
-
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +51,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>connexion Admin</title>
+    <title>Connexion Admin</title>
     <link rel="stylesheet" href="../css/style-admin.css">
 
 
@@ -65,93 +59,28 @@ if (!empty($_POST)) {
 
 <body>
 
-    
     <aside id="sideVide">
         <div id="logo">
-            <img src="../image/logoAdmin.png" alt="logo du site bouquine">
+            <img src="../image/logoAdmin.png" alt="logo Bouquine">
         </div>
-
-
     </aside>
 
-<div class="bodyConnexion"> 
-    
-
-
- <form class="connexion" action="" method="post">
-                <h1 class="Titre">connexion</h1>
-                <div id="mail" >
-                    <label for="mail"></label>
-                    <input type="email" name="mail" id="mail" placeholder="entrez votre mail" >
-                </div>
-                <div id="pass" >
-                    <label for="password"></label>
-                    <input type="password" name="password" id="password" placeholder="entrez votre mot de passe"  >
-                </div>
-                <div id="connect" >
-                    <button type="submit">connect</button>
-                </div>
-
-            </form>
-
-
-      
-
-        
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
- </div> 
-</body>
-
-</html>
-
-
-      
-
-        
-           
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
- </div> 
+    <div class="bodyConnexion">
+        <form class="connexion" action="" method="post">
+            <h1 class="Titre">Connexion</h1>
+            <div id="mail">
+                <label for="mail"></label>
+                <input type="email" name="mail" id="mail" placeholder="entrez votre mail ou nom d'utilisateur">
+            </div>
+            <div id="pass">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="entrez votre mot de passe">
+            </div>
+            <div id="connect">
+                <button type="submit">Connect</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

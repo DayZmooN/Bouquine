@@ -27,8 +27,8 @@ include './header-admin.php';
 
 <h1 class="multiTitre">formulaire ajout de livre</h1>
 
-<form id="formulaireAjout" action="#" method="POST">
-    <div id="formGauche">
+<form id="formulaire" action="#" method="POST">
+    <div id="gauche">
         <div class="titre-auteur">
 
             <label for="title"></label>
@@ -39,12 +39,12 @@ include './header-admin.php';
 
             <label for="ISBN"></label>
             <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
-            
 
         </div>
 
         <div class="edition-date">
-            <div>
+            <div class="edition-date">
+
                 <label for="editor"></label>
                 <input type="text" name="editor" id="editor" placeholder="Éditeur">
 
@@ -54,9 +54,9 @@ include './header-admin.php';
                 <label for="genre"></label>
                 <input type="text" name="genre" id="genre" placeholder="Genres">
 
-            <div>
-                <label class="publication" for="publication_date">Publication : </label>
-                <input class="date" type="date" name="publication_date" id="publication_date">
+                <label class="publication" for="publication_date">Publication</label>
+                <input class="date" type="date" name="publication_date" id="publication_date" placeholder="Éditeur">
+
             </div>
 
             <div class="select">
@@ -64,12 +64,12 @@ include './header-admin.php';
                 <label for="id_category">Catégorie</label>
 
                 <select name="id_category" id="id_category">
-                    <?php
-                    $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                    $reqCat->execute();
-                    while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                    ?>
-                        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                <?php
+                        $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                        $reqCat->execute();
+                        while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) { 
+                        ?>
+                    <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
                     <?php } ?>
                 </select>
 
@@ -81,6 +81,3 @@ include './header-admin.php';
                 <textarea type="text" name="summary" id="summary"></textarea>
 
             </div>
-
-            <input type="submit" name="submit" value="../image/">
-</form>

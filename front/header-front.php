@@ -1,3 +1,10 @@
+<?
+require_once './connect.php';
+require_once './header-front.php';
+require_once './footer-front.php';
+require_once '../admin/barre/seachbar.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +23,6 @@
     <header>
         <nav class="header-nav">
             <div class="logo">
-
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
             <input type="checkbox" id="menu-toggle">
@@ -39,16 +45,17 @@
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">
-                    <input type="text" name="search" placeholder="Rechercher">
+                    <form method="GET" action="./recherche.php">
+                        <input type="search" name="search" placeholder="Rechercher">
+                        <button type="submit">Rechercher</button>
+                    </form>
                 </li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <button id="s-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
-        </div>
+
         <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
     </header>
 
 </body>
 
-</html>
+</html
