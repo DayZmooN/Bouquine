@@ -9,18 +9,29 @@ $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">menu genres</h1>
 
-<aside class="categorieGenre">
+<div class="genreList">
+    <div class="unite">
+        <h3>genre </h3>
 
-    <h2>liste des genres</h2>
+        <a class="btnGreen" href="#" style="color:green">modifier</a>
+        <a class="btnRed" href="#" style="color:red">supprimer</a>
 
-    <ol>
-        <?php
-        foreach ($resultat as $genre) {
-        ?>
-            <li><?= $genre['libel_genre'] ?></li>
-        <?php } ?>
-    </ol>
+    </div>
 
-    <button><a href="./addeditgenre.php">modifier / supprimer</a></button>
+    <div class="unite">
+        <h3>genre </h3>
 
-</aside>
+        <a class="btnGreen" href="#" style="color:green">modifier</a>
+        <a class="btnRed" href="#" style="color:red">supprimer</a>
+
+    </div>
+
+    <div class="unite">
+        <h3>genre </h3>
+
+        <a class="btnGreen" href="#" style="color:green">modifier</a>
+        <a class="btnRed" href="#" style="color:red">supprimer</a>
+
+        <button><a href="./addgenre.php">modifier / supprimer</a></button>
+
+    </div>
