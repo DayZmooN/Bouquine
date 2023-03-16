@@ -175,5 +175,31 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
             <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard" title="ajouter un nouveau livre"> </a>
         </div>
     </form>
+<!-- <?php //} -->
+if (isset($_POST['submit'])) {
+    $id = $_GET['id'];
+    $ISBN = addslashes($_POST['ISBN']);
+    $title = addslashes($_POST['title']);
+    $author = addslashes($_POST['author']);
+    $editor = addslashes($_POST['editor']);
+    $collection = addslashes($_POST['collection']);
+    $publication_date = addslashes($_POST['publication_date']);
+    $genre = addslashes($_POST['genre']);
+    $id_category = addslashes($_POST['id_category']);
+    $summary = addslashes($_POST['summary']);
+
+    $reqed = $db->prepare("UPDATE `book` SET `ISBN`=':ISBN',`image`=':image',`title`=':title',`author`=':author',`editor`=':editor',`collection`=':collection',`publication_date`=':publication_date',`genre`=':genre',`id_category`=':id_category',`summary`=':summary' WHERE `id_book`= :id");
+    $reqed->bindParam('id', $id, PDO::PARAM_INT);
+    $reqed->bindParam('ISBN', $ISBN, PDO::PARAM_STR);
+    $reqed->bindParam('image', $image, PDO::PARAM_STR);
+    $reqed->bindParam('title', $title, PDO::PARAM_STR);
+    $reqed->bindParam('author', $author, PDO::PARAM_STR);
+    $reqed->bindParam('editor', $editor, PDO::PARAM_STR);
+    $reqed->bindParam('collection', $collection, PDO::PARAM_STR);
+    $reqed->bindParam('publication_date', $publication_date, PDO::PARAM_STR);
+    $reqed->bindParam('genre', $genre, PDO::PARAM_STR);
+    $reqed->bindParam('id_category', $id_category, PDO::PARAM_INT);
+    $reqed->bindParam('summary', $summary, PDO::PARAM_STR);
+    $reqed->execute();
 
     <?php include './includeClose.php'  ?>
