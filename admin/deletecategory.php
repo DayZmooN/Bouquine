@@ -1,7 +1,7 @@
 <?php
 session_start();
 try {
-    require_once '../auth.php';
+    require_once './auth.php';
     $id = $_GET['id'];
     $reqdel = $db->prepare("DELETE FROM `category` WHERE `id_category` = :id");
     $reqdel->bindParam('id', $id, PDO::PARAM_INT);
@@ -11,6 +11,6 @@ try {
     exit();
 } catch (PDOException $e) {
     $_SESSION["error"] = "Votre category n'a pas été supprimé";
-    header('Location: ../categorie.php');
+    header('Location: ./category.php');
     exit();
 }

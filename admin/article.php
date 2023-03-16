@@ -15,12 +15,11 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
         <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
     </form>
-    <a href="./add.php">ajouter de nouveaux livres</a>
+    <a href="./articleadd.php">Ajouter de nouveaux livres</a>
 </div>
 
 
-<h2 class="sousTitre">liste des articles</h2>
-
+<h2 class="sousTitre">Liste des articles</h2>
 
 <?php
 foreach ($result as $article) {
@@ -31,8 +30,8 @@ foreach ($result as $article) {
         <p><?= $article['author'] ?></p>
         <div id="bouton">
 
-            <a class="btnGreen" href="#" style="color:green">modifier</a>
-            <a class="btnRed" href="#" style="color:red">supprimer</a>
+            <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
+            <a class="btnRed" href="./deletearticle.php?id=<?= $article['id_book'] ?>" style="color:red">Supprimer</a>
 
         </div>
     </div>

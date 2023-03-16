@@ -45,7 +45,7 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
         <td><?= $user['phone'] ?></td>
         <td><?= $user['birthdate'] ?></td>
         <td>en ligne</td>
-      <td><a class="btnRed" href="#" style="color:red">supprimer</a></td>
+      <td><a class="btnRed" href="./delete-user.php?id=<?= $user['id_user'] ?>" style="color:red">supprimer</a></td>
       </tr>
     <?php } ?>
   </tbody>

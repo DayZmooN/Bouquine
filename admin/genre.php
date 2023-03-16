@@ -16,8 +16,8 @@ $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
     <div class="unite">
         <h3><?= $genre['libel_genre'] ?></h3>
 
-        <a class="btnGreen" href="#" style="color:green">modifier</a>
-        <a class="btnRed" href="./genre/deletegenre.php?id=<?= $genre['id_genre'] ?>" style="color:red">supprimer</a>
+        <a class="btnGreen" href="./genreaddedit.php?id=<?= $genre['id_genre'] ?>" style="color:green">modifier</a>
+        <a class="btnRed" href="./deletegenre.php?id=<?= $genre['id_genre'] ?>" style="color:red">supprimer</a>
 
     </div>
 <?php } ?>

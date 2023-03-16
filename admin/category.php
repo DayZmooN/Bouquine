@@ -12,8 +12,10 @@ $resultCat = $reqCat->fetchAll(PDO::FETCH_ASSOC);
 <?php foreach($resultCat as $category){ ?>
     <div class="unite">
     <h3><?= $category['libel_category'] ?> </h3>
-    <a class="btnGreen" href="#" style="color:green">modifier</a> 
-    <a class="btnRed" href="./category/deletecategory.php?id=<?= $category['id_category'] ?>" style="color:red">supprimer</a>
+
+    <a class="btnGreen" href="./categoryaddedit.php?id=<?= $category['id_category'] ?>" style="color:green">modifier</a>
+
+    <a class="btnRed" href="./deletecategory.php?id=<?= $category['id_category'] ?>" style="color:red">supprimer</a>
     </div>
 <?php } ?>
 </div>
