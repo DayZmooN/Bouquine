@@ -70,7 +70,7 @@ include_once './header-admin.php';
         <input type="text" name="username" id="username">
     </div>
     <div>
-        <label for="mail">Email-Admin</label>
+        <label for="mail">E-mail Admin</label>
         <input type="email" name="mail" id="mail">
     </div>
     <div>

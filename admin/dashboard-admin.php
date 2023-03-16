@@ -2,7 +2,7 @@
 session_start();
 require_once './auth.php';
 include_once './header-admin.php';
-//on dÃ©marre une session PHP on ecrit a chaquer page ou veut rester connecter en debut 
+//on demarre une session PHP on ecrit a chaquer page ou veut rester connecter en debut 
 
 // if (!isset($_SESSION["admin"])) {
 //     header("location: ./dashboard-admin.php");

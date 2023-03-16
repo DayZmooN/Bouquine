@@ -1,7 +1,7 @@
 <?php
 session_start();
 try {
-    require_once '../auth.php';
+    require_once './auth.php';
     $id = $_GET['id'];
     $reqdel = $db->prepare("DELETE FROM `genre` WHERE `id_genre` = :id");
     $reqdel->bindParam('id', $id, PDO::PARAM_INT);

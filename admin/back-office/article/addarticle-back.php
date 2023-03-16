@@ -39,13 +39,12 @@ include './header-admin.php';
 
             <label for="ISBN"></label>
             <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
-            <label for="ISBN"></label>
-            <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
 
         </div>
 
         <div class="edition-date">
-            <div>
+            <div class="edition-date">
+
                 <label for="editor"></label>
                 <input type="text" name="editor" id="editor" placeholder="Éditeur">
 
@@ -65,12 +64,12 @@ include './header-admin.php';
                 <label for="id_category">Catégorie</label>
 
                 <select name="id_category" id="id_category">
-                    <?php
-                    $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                    $reqCat->execute();
-                    while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                    ?>
-                        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                <?php
+                        $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                        $reqCat->execute();
+                        while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) { 
+                        ?>
+                    <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
                     <?php } ?>
                 </select>
 
