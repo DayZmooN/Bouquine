@@ -12,13 +12,15 @@ require_once './footer-front.php';
 
             <div class="formul-s">
                 <form class="rechercher" action="#" method="get">
-                    <input type="text" name="search" placeholder="Rechercher">
                     <a href="../front/search.php"><img src="../image/filtre.png" alt="recherche avancée"></a>
+                    <input type="text" name="search" placeholder="Rechercher">
+                    <button id="searc-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
                 </form>
+
             </div>
-           
-            <button id="searc-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
-           
+
+
+
             <div class="books">
                 <div class="container-books">
                     <div class="books-catalog">

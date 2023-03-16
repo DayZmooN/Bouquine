@@ -1375,33 +1375,37 @@ h2.catalog {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
-
+#catal {
+    display: flex;
+    justify-content: center;
+  }
+    .rechercher {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+      }
+  
+  .rechercher input[type="text"] {
+    margin:0 auto;
+  }
+  
+  .rechercher img {
+    margin-left: auto;
+  }
+  
+  #searc-bar {
+    width: 120px;
+    height: 40px;
+    font-family: 'QuattrocentoSans-Regular';
+    font-size: .8rem;
+    margin-left: 10px;
+  }
+  
 .formul-s {
     width: 100%;
     height: 120px;
 
-}
-form.rechercher{
-    width: 100%;
-    height: 120px;
-    display: flex;
-
-    flex-direction: row;
-    align-items: center;
-}
-
-/* .formul-s form {
-    width: 100%;
-    height: 120px;
-} */
-
-.formul-s input[type="submit"] {
-    height: 40px;
-    font-family: 'QuattrocentoSans-Regular';
-    font-size: .8rem;
-    margin-left: 20px;
-    text-align: center;
-    color: #000;
 }
 
 .item4 {
@@ -1443,7 +1447,6 @@ p.titles {
     margin-top: 20px;
     text-align: center;
 }
-
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1774,6 +1777,7 @@ label {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #000;
 }
 
 input[type="text"],
@@ -1794,7 +1798,7 @@ input[type="submit"] {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     padding: 10px;
     background-color: #74EC8D;
-    color: white;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1826,110 +1830,53 @@ input[type="submit"]:hover {
    */
 
 /* DASHBOARD USER */
-nav#user-nav {
-    width: 250px;
-    height: 400px;
-    background-color: #BFC9CA;
-    position: fixed;
-    top: 120px;
-    left: 0;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
 }
 
-#user-nav ul {
-
-    flex-direction: column;
+.navbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 200px;
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-#user-nav ul li {
-    text-decoration: none;
+.navbar a {
+	padding: 10px;
+	margin: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
 }
 
-#user-nav ul li a {
-    display: block;
-    padding: 10px;
+.content {
+	margin-left: 200px;
+	padding: 20px;
 }
 
-#user-nav ul li a:hover {
-    background-color: #BFC9CA;
-    border-radius: 10px;
-}
-
-.info1 {
-    width: 50%;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 30px;
-    background-color: #fff;
-    padding: 20px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-}
-
-.info1 h3 {
-    font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin-top: 0;
-    text-align: center;
-}
-
-.personal {
-    width: 100%;
-    height: 400px;
-    margin: auto;
+.userinfo {
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	text-align: center;
     /* display: none; */
 }
 
-.personal form {
-    display: flex;
-    flex-wrap: nowrap;
+h2, h3 {
+	text-align: center;
+	margin-bottom: 20px;
 }
 
-.form-row {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.form-col {
-    width: 48%;
-    display: inline-block;
-}
-
-label {
-    display: block;
-
-}
-
-input[type="text"] {
-    width: 300px;
-    font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input#email {
-    width: 400px;
-    background-color: white;
-}
-
-input#adresse {
-    width: 400px;
-}
-
-input[type="submit"] {
-    width: 150px;
-    height: 40px;
-    font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
 
 /* END DASHBOARD USER */
 
