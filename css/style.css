@@ -1362,7 +1362,6 @@ p.author2 {
     width: 100%;
     height: 100%;
 }
-
 .catal {
     width: 100%;
     height: 1400px;
@@ -1381,63 +1380,51 @@ h2.catalog {
     margin-top: 30px;
     text-transform: uppercase;
 }
-#catal {
-    display: flex;
-    justify-content: center;
-  }
-    .rechercher {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-items: center;
-      }
-  
-  .rechercher input[type="text"] {
-    margin:0 auto;
-  }
-  
-  .rechercher img {
-    margin-left: auto;
-  }
-  
-  #searc-bar {
-    width: 120px;
-    height: 40px;
-    font-family: 'QuattrocentoSans-Regular';
-    font-size: .8rem;
-    margin-left: 10px;
-  }
-  
+
 .formul-s {
     width: 100%;
-    height: 120px;
-
+    height: 80px;
+    margin-bottom: 30px;
 }
 
+.formul-s form {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 600;
+}
+
+.formul-s label {
+    display: none;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 600;
+}
+
+input#search-book {
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .item4 {
     width: 200px;
     height: 380px;
     margin: 0 auto;
 }
-
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
-
 .books {
     width: 100%;
     height: 100%;
     margin-top: 100px;
 }
-
 .books-catalog {
     width: 400px;
     height: 300px;
     margin: 100px auto;
 }
-
 .container-books {
     display: flex;
     justify-content: center;
@@ -1445,15 +1432,14 @@ h2.catalog {
     width: 100%;
     height: 100%;
 }
-
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: bold;
     margin-top: 20px;
     text-align: center;
-
 }
+
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1641,6 +1627,7 @@ form button {
     cursor: pointer;
 }
 
+
 /* FIN CONNEXION */
 
 
@@ -1650,6 +1637,7 @@ form button {
     height: 1000px;
 }
 
+
 .container-suscribe {
     width: 100%;
     height: 900px;
@@ -1658,8 +1646,10 @@ form button {
     align-items: center;
 }
 
+
 .img-book {
     height: 600px;
+}
 }
 
 .img-book img {
@@ -1674,10 +1664,12 @@ form button {
 }
 
 img.form-logo {
+img.form-logo {
     width: 100px;
     height: 100px;
     display: block;
     margin: auto;
+}
 }
 
 h2.sus-form {
@@ -1707,6 +1699,7 @@ h2.sus-form {
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
+    border: none;
     border: none;
     background-color: #f2f2f2;
 }
@@ -1864,10 +1857,18 @@ body {
 	text-decoration: none;
 	color: #fff;
 }
+.dash-accueil h3{
+    width: 100%;
+    height: 100px;
+} */
 
-.content {
-	margin-left: 200px;
-	padding: 20px;
+/* .sidebar-dash {
+    background-color: #F3BB00;
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .userinfo {
@@ -1877,13 +1878,109 @@ body {
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 	text-align: center;
     /* display: none; */
+.contain-perso{
+    width: 600px;
+    height: 400px;
+    background-color: #45a049;
+    
+} */
+
+/* .sidebar-dash ul {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    margin: 30px 0;
 }
 
-h2, h3 {
-	text-align: center;
-	margin-bottom: 20px;
+.sidebar-dash li {
+    margin-bottom: 10px;
 }
 
+.sidebar-dash a {
+    color: black;
+    display: block;
+    padding: 10px;
+} */
+
+/* .sidebar-dash a.active,
+.sidebar-dash a:hover {
+    background-color: #A29C4A;
+    color: #fff;
+    border-radius: 10px;
+}
+.personal{
+
+} */
+*/ */ .user-dash {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #45a049;
+
+}
+.container-info {
+    width: 100%;
+    height: 600px;
+    background-color: #ed20d5;
+
+}
+.dash-accueil {
+    width: 50%;
+    height: 100px;
+    font-size: 1.3rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+   display: block;
+   margin: auto;
+}
+
+.sidebar-dash {
+    background-color: #F3BB00;
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.sidebar-dash ul {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    margin: 30px 0;
+}
+
+.sidebar-dash li {
+    margin-bottom: 10px;
+}
+
+.sidebar-dash a {
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar-dash a.active,
+.sidebar-dash a:hover {
+    background-color: #A29C4A;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contain-perso {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.personal {
+    margin-top: 30px;
+}
+
+.modif {
+    margin-bottom: 20px;
+}
 
 /* END DASHBOARD USER */
 
@@ -1930,9 +2027,11 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 
 input.mailing {
     background-color: white;

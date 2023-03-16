@@ -1,7 +1,8 @@
 <?php
-require_once '../connexion.php';
+require_once './connect.php';
 require_once './header-front.php';
 require_once './footer-front.php';
+
 
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` LIMIT 8');
 $query->execute();
@@ -39,9 +40,9 @@ $query->execute();
             <div class="container">
                 <?php foreach ($query as $article) { ?>
                     <div class="item">
-                        <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                        <button id="resume" type="button"><a href="../front/book.php">Résumé</a></button>
-                        <p class="title"><?= $article['title'] ?></p>
+                        <a href="./book.php?id=<?= $article['id_book'] ?>"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                        <button id="resume" type="button"><a href="./book.php?id=<?= $article['id_book'] ?>">Résumé</a></button>
+                        <p class="title"><?= $article['title'] ?></p><br>
                         <p class="author"><?= $article['author'] ?></p>
                     </div>
                 <?php } ?>
@@ -62,7 +63,7 @@ $query->execute();
                 <li><img src="../image/jeunesse.png" alt></li>
                 <li><img src="../image/nature.png" alt></li>
                 <li><img src="../image/fantastique.png" alt></li>
-               
+
             </ul>
         </section>
         <!-- end section nouveautes  -->
@@ -87,12 +88,14 @@ $query->execute();
                 <div class="container">
                     <?php foreach ($reqFav as $article) { ?>
                         <div class="item1">
-                            <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                            <p class="title"><?= $article['title'] ?></p>
+                            <a href="./book.php?id=<?= $article['id_book'] ?>"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                            <p class="title"><?= $article['title'] ?></p><br>
                             <p class="author"><?= $article['author'] ?></p>
                         </div>
                     <?php } ?>
-                    <button id="see" type="button"><a href="../front/catalogue.php">Voir plus</a></button>
+                    <button id="see" type="button"><a href="./book.php?id=<?= $article['id_book'] ?>">Voir plus</a></button>
+
+
                 </div>
                 <hr class="gender1">
                 <!-- debut genre fantaisie -->
@@ -114,12 +117,14 @@ $query->execute();
                     <div class="container">
                         <?php foreach ($reqFav as $article) { ?>
                             <div class="item2">
-                                <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                                <a href="./book.php?id=<?= $article['id_book'] ?>"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
                                 <p class="title"><?= $article['title'] ?></p><br>
                                 <p class="author"><?= $article['author'] ?></p>
                             </div>
                         <?php } ?>
-                        <button id="see" type="button"><a href="../front/catalogue.php">Voir plus</a></button>
+                        <button id="see" type="button"><a href="./book.php?id=<?= $article['id_book'] ?>">Voir plus</a></button>
+
+
                     </div>
                     <hr class="gender1">
                     <!-- début genre action -->
@@ -127,13 +132,13 @@ $query->execute();
                     <div class="genre">
                         <?php
                         $reqFav = $db->prepare("SELECT `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`id_genre`, `genre`.`libel_genre`, `genre`.`genre_slug`
-        FROM `book`
-        INNER JOIN `genre_book`
-        on `book`.`id_book` = `genre_book`.`id_book`
-        INNER JOIN `genre`
-        ON `genre_book`.`id_genre` = `genre`.`id_genre`
+                        FROM `book`
+                        INNER JOIN `genre_book`
+                        on `book`.`id_book` = `genre_book`.`id_book`
+                        INNER JOIN `genre`
+                        ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
-        WHERE genre.`id_genre` = 7");
+                        WHERE genre.`id_genre` = 7");
                         $reqFav->execute();
                         ?>
                         <h3 id="action">Action</h3>
@@ -141,12 +146,14 @@ $query->execute();
                         <div class="container">
                             <?php foreach ($reqFav as $article) { ?>
                                 <div class="item3">
-                                    <a href="#"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
+                                    <a href="./book.php?id=<?= $article['id_book'] ?>"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
                                     <p class="title"><?= $article['title'] ?></p><br>
                                     <p class="author"><?= $article['author'] ?></p>
                                 </div>
                             <?php } ?>
-                            <button id="see" type="button"><a href="../front/catalogue.php">Voir plus</a></button>
+                            <button id="see" type="button"><a href="./book.php?id=<?= $article['id_book'] ?>">Voir plus</a></button>
+
+
                         </div>
         </section>
 

@@ -16,7 +16,10 @@
     <header>
         <nav class="header-nav">
             <div class="logo">
+
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
+
+                <a href="./accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon"></label>
@@ -25,18 +28,23 @@
                 <li>
                     <a href="#">Parcourir</a>
                     <ul>
-                        <li><a href='#'>Action</a></li>
-                        <li><a href='#'>Romance</a></li>
-                        <li><a href='#'>Fantaisie</a></li>
-                        <li><a href='#'>Thriller</a></li>
-                        <li><a href='#'>Aventure</a></li>
+                        <?php
+                        include '../connexion.php';
+                        $sql = "SELECT `category`.`id_category`,`libel_category` FROM category;";
+                        $req = $db->query($sql);
+                        $req->execute();
+                        while ($category = $req->fetch(PDO::FETCH_ASSOC)) { ?>
+                            <li><a href='./parcourir.php?id=<?= $category['id_category'] ?>'><?= $category['libel_category'] ?></a></li>
+                        <?php } ?>
                     </ul>
                 </li>
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">
                     <input type="text" name="search" placeholder="Rechercher">
+
                 </li>
+                <button type="submit"> <a href="../admin/barre/seachbar.php">Envoyer</a></button>
             </ul>
         </nav>
         <div class="search-bar">
