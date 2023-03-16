@@ -27,8 +27,8 @@ include './header-admin.php';
 
 <h1 class="multiTitre">formulaire ajout de livre</h1>
 
-<form id="formulaire" action="#" method="POST">
-    <div id="gauche">
+<form id="formulaireAjout" action="#" method="POST">
+    <div id="formGauche">
         <div class="titre-auteur">
 
             <label for="title"></label>
@@ -39,8 +39,7 @@ include './header-admin.php';
 
             <label for="ISBN"></label>
             <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
-            <label for="ISBN"></label>
-            <input type="text" name="ISBN" id="ISBN" placeholder="ISBN">
+            
 
         </div>
 
@@ -83,5 +82,5 @@ include './header-admin.php';
 
             </div>
 
-            <input type="submit" name="submit" value="Ajouter">
+            <input type="submit" name="submit" value="../image/">
 </form>
