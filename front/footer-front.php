@@ -26,7 +26,6 @@ require_once './header-front.php';
 
         </div>
         </div>
-
     </section>
     <section class="copyright">
         <p id="copy">Copyright&copy;2023 Bouquine</p>
