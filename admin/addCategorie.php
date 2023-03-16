@@ -9,31 +9,20 @@ include './header-admin.php';
 <div id="ajout-categorie">
     <form class="ajout" action="" method="post">
 
-        <input class="newCat" type="text" name="recherche" placeholder="nouvelle catégorie">
-        <input class="slug" type="text" name="slug" placeholder="champ du slug">
-        <button><a href="./add.php">ajouter</a></button>
+        <input class="newCat" type="text" name="category" placeholder="nom catégorie">
+        <input class="newCat" type="text" name="category" placeholder="slug catégorie">
+        <input type="submit" value="Ajouter">
 
     </form>
 
-    <form class="modifierSupp" action="" method="post">
+    <form class="edit" action="" method="post">
         <div id="selection">
-            <select name="id_category" id="id_category">
-                <option value="">selectionner</option>
-                <option value="BD">b.d</option>
-                <option value="Comics">comics</option>
-                <option value="Documentaire">documentaire</option>
-                <option value="Jeunesse">Jeunesse</option>
-                <option value="Mangas">mangas</option>
-                <option value="Poésie">poésie</option>
-                <option value="Romans">romans</option>
-                <option value="Théatre">théatre</option>
-            </select>
-            <input class="modifCat" type="text" name="recherche" placeholder="nouveau nom">
+        <input class="editCat" type="text" name="category" value="nom catégorie">
+        <input class="editCat" type="text" name="category" value="slug catégorie">
         </div>
 
         <div id="choice">
-            <button><a href="./add.php">modifier</a></button>
-            <button><a href="./add.php">supprimer</a></button>
+            <input type="submit" value="Modifier">
         </div>
 
     </form>
