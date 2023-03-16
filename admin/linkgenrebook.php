@@ -1,5 +1,18 @@
 <?php
 require_once '../connexion.php';
+if(isset ($_POST['submit'])){
+    if(!empty($_POST['check_list'])){
+        foreach($_POST['check_list'] as $id_genre){
+        $id = $_GET['id'];
+        $req = "INSERT INTO `genre_book`(`id_book`, `id_genre`) VALUES ('$id','$id_genre')";
+        $db->query($req);
+
+        header('Location: ./article.php');
+        }
+    }else {
+        echo "<b> Please select at least one option !</b>";
+    }
+}
 $id = $_GET['id'];
 $req = $db->prepare('SELECT `id_genre`, `libel_genre` FROM `genre`');
 $req->execute();
@@ -38,19 +51,4 @@ while ($book = $req->fetch(PDO::FETCH_ASSOC)) {
     </tbody>
 </table>
 <button type="submit" value="submit" name="submit">submit</button>
-<?php
-if(isset ($_POST['submit'])){
-    if(!empty($_POST['check_list'])){
-        foreach($_POST['check_list'] as $id_genre){
-        $id = $_GET['id'];
-        $req = "INSERT INTO `genre_book`(`id_book`, `id_genre`) VALUES ('$id','$id_genre')";
-        $db->query($req);
-
-        header('Location: ./article.php');
-        }
-    }else {
-        echo "<b> Please select at least one option !</b>";
-    }
-}
-?>
 </form>
