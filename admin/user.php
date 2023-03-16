@@ -32,6 +32,7 @@ $resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
     </tr>
   </thead>
   <tbody>
+
     <tr class="contenuUser">
       <td>1</td>
       <td>Karim</td>
@@ -41,7 +42,7 @@ $resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
       <td>1990/01/01</td>
       <td>2022/12/14</td>
       <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
+      <td><a class="btnRed" href="#" style="color:red">supprimer</a></td>
     </tr>
 
     <tr class="contenuUser">
@@ -53,7 +54,7 @@ $resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
       <td>1990/01/01</td>
       <td>2022/12/14</td>
       <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
+      <td><a class="btnRed" href="#" style="color:red">supprimer</a></td>
     </tr>
 
     <tr class="contenuUser">
@@ -65,8 +66,9 @@ $resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
       <td>1990/01/01</td>
       <td>2022/12/14</td>
       <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
+      <td><a class="btnRed" href="#" style="color:red">supprimer</a></td>
     </tr>
+
 
     <tr class="contenuUser">
       <td>1</td>
@@ -77,56 +79,9 @@ $resultAdmin = $reqAdmin->fetchAll(PDO::FETCH_ASSOC);
       <td>1990/01/01</td>
       <td>2022/12/14</td>
       <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
+      <td><a class="btnRed" href="#" style="color:red">supprimer</a></td>
     </tr>
 
-    <tr class="contenuUser">
-      <td>1</td>
-      <td>Karim</td>
-      <td>devlead</td>
-      <td>Karimdu01@gmail.fr</td>
-      <td>0606060606</td>
-      <td>1990/01/01</td>
-      <td>2022/12/14</td>
-      <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
-    </tr>
-
-    <tr class="contenuUser">
-      <td>1</td>
-      <td>Karim</td>
-      <td>devlead</td>
-      <td>Karimdu01@gmail.fr</td>
-      <td>0606060606</td>
-      <td>1990/01/01</td>
-      <td>2022/12/14</td>
-      <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
-    </tr>
-
-    <tr class="contenuUser">
-      <td>1</td>
-      <td>Karim</td>
-      <td>devlead</td>
-      <td>Karimdu01@gmail.fr</td>
-      <td>0606060606</td>
-      <td>1990/01/01</td>
-      <td>2022/12/14</td>
-      <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
-    </tr>
-
-    <tr class="contenuUser">
-      <td>1</td>
-      <td>Karim</td>
-      <td>devlead</td>
-      <td>Karimdu01@gmail.fr</td>
-      <td>0606060606</td>
-      <td>1990/01/01</td>
-      <td>2022/12/14</td>
-      <td>en ligne</td>
-      <td><a class="btnGreen" href="#" style="color:green">modifier</a></td>
-    </tr>
 
     
 

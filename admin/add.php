@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
             </div>
 
             <div>
-                <label class="publication" for="publication_date">Publication</label>
+                <label class="publication" for="publication_date">Publication : </label>
                 <input class="date" type="date" name="publication_date" id="publication_date">
             </div>
         </div>
@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
             <label for="image">image</label>
             <input type="file" name="image" id="image">
         </div>
-        <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard"> </a>
+        <button type="submit" name="submit" id="submit"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard"> </button>
     </div>
     
 </form>
