@@ -5,12 +5,12 @@ require_once '../connexion.php';
 
 $id = $_GET['id'];
 
-$query = $db->prepare('SELECT * FROM `book` WHERE `id_category` = (SELECT `id_category` FROM `category` WHERE `id_book` = :id)');
+$query = $db->prepare('SELECT book.* FROM book INNER JOIN category ON book.id_category = category.id_category WHERE category.id_category = :id');
 $query->bindParam('id', $id, PDO::PARAM_INT);
 
 $query->execute();
-$result = $query->fetch(PDO::FETCH_ASSOC);
-var_dump($result);
+$result = $query->fetchAll(PDO::FETCH_ASSOC);
+// var_dump($result);
 ?>
 
 <body>
