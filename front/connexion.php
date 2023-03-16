@@ -1,6 +1,6 @@
 <?php
 //on démarre une session PHP
-require_once '../model/connexion.php'
+require_once '../model/connexion.php';
 
 
 

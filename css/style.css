@@ -102,12 +102,12 @@ nav ul ul {
 
 nav ul li:hover>ul {
     display: block;
-    z-index: -1;
+
+
 }
 
 nav ul ul li {
     position: relative;
-
 }
 
 nav ul ul a {
@@ -132,29 +132,6 @@ img.img-user {
     margin-bottom: 30px;
     width: 40px;
     height: 40px;
-}
-
-.user-name {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.nom {
-    width: 30px;
-    height: 10px;
-    margin-right: 10px;
-
-}
-
-.user-name a {
-    width: 50px;
-    height: 50px;
 }
 
 .search-bar {
@@ -376,7 +353,7 @@ h1 {
 #new {
     width: 100%;
     height: 400px;
-    background-color: #62c465e4;
+    background-color: #74EC8D;
     padding-top: 20px;
 }
 
@@ -389,6 +366,7 @@ h1 {
     color: black;
     font-weight: bold;
     text-align: center;
+    padding-top: 20px;
 }
 
 .slider {
@@ -452,7 +430,7 @@ h1 {
 #gender {
     width: 100%;
     height: auto;
-    background-color: #21b7ffb0;
+    background-color: #21DAFF;
 }
 
 #prefers {
@@ -726,7 +704,7 @@ hr.gender1:after {
     padding-left: 30px;
     margin-top: 70px;
     margin-left: 70px;
-    background-color: #e0ff2085;
+    background-color: #E0FF20;
     ;
 }
 
@@ -799,8 +777,8 @@ hr.gender1:after {
     flex-direction: column;
 }
 
-.formulaire label {
-    font-size: 1.3rem;
+label {
+    font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular';
     color: white;
 }
@@ -1008,7 +986,7 @@ p.livre {
 section#lecteur {
     width: 100%;
     height: 550px;
-    background-color: #21b7ffb0;
+    background-color: #21DAFF;
     padding-top: 20px;
 }
 
@@ -1035,7 +1013,7 @@ h2.lector {
     height: 300px;
     border: 3px solid black;
     border-radius: 40px;
-    background-color: #e0ff2085;
+    background-color: #E0FF20;
     ;
 }
 
@@ -1386,7 +1364,6 @@ p.author2 {
     width: 100%;
     height: 100%;
 }
-
 .catal {
     width: 100%;
     height: 1400px;
@@ -1402,38 +1379,48 @@ h2.catalog {
     text-transform: uppercase;
 }
 
-#catal {
+.search1 {
     display: flex;
     justify-content: center;
-}
-
-.rechercher {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     align-items: center;
 }
 
-.rechercher input[type="text"] {
-    margin: 0 auto;
+#recherche {
+    width: 520px;
+    height: 20px;
+    background: #f4b97a95;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3) inset;
+    border-radius: 2em;
 }
 
-.rechercher img {
-    margin-left: auto;
+#recherche .loupe {
+    background: url(../image/loupe.svg) no-repeat 0 0;
+    width: 40px;
+    cursor: pointer;
 }
 
-#searc-bar {
-    width: 120px;
-    height: 40px;
-    font-family: 'QuattrocentoSans-Regular';
-    font-size: .8rem;
+#recherche input {
+    border: none;
+    margin: 0;
+    height: 20px;
+    float: left;
+    display: block;
+}
+
+#recherche input[type=text] {
+    font: 300 12px 'QuattrocentoSans-Regular', sans-serif;
+    background: none;
+    width: 470px;
+    padding: 0 15px;
+
+}
+
+img.setting {
+    width: 45px;
+    height: 45px;
+    border: 3px solid black;
+    border-radius: 10px;
     margin-left: 10px;
-}
-
-.formul-s {
-    width: 100%;
-    height: 120px;
-
 }
 
 .item4 {
@@ -1441,25 +1428,21 @@ h2.catalog {
     height: 380px;
     margin: 0 auto;
 }
-
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
-
 .books {
     width: 100%;
     height: 100%;
     margin-top: 100px;
 }
-
 .books-catalog {
     width: 400px;
     height: 300px;
     margin: 100px auto;
 }
-
 .container-books {
     display: flex;
     justify-content: center;
@@ -1467,7 +1450,6 @@ h2.catalog {
     width: 100%;
     height: 100%;
 }
-
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1662,6 +1644,7 @@ form button {
     cursor: pointer;
 }
 
+
 /* FIN CONNEXION */
 
 /* PAGE INSCRIPTION */
@@ -1669,6 +1652,7 @@ form button {
     width: 100%;
     height: 600px;
 }
+
 
 .container-suscribe {
     width: 100%;
@@ -1678,8 +1662,10 @@ form button {
     align-items: center;
 }
 
+
 .img-book {
     height: 600px;
+    margin-top: 120px;
 }
 
 .img-book img {
@@ -1694,11 +1680,8 @@ form button {
     margin-top: 20px;
 }
 
-img.form-logo {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: auto;
+.form-logo {
+    width: 30%;
 }
 
 h2.sus-form {
@@ -1727,6 +1710,7 @@ h2.sus-form {
     font-weight: 600;
     padding: 8px;
     border-radius: 5px;
+    border: none;
     border: none;
     background-color: #f2f2f2;
 }
@@ -1859,61 +1843,158 @@ input[type="submit"]:hover {
    */
 
 /* DASHBOARD USER */
-.contain-nav {
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.navbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 200px;
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar a {
+	padding: 10px;
+	margin: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.dash-accueil h3{
     width: 100%;
-    height: 500px;
-}
+    height: 100px;
+} */
 
-#navbar {
-    width: 200px;
-    height: 400px;
-    position: fixed;
-    left: 0;
-    top: 20%;
-    position: fixed;
-    background-color: #EBB016;
-    padding-top: 20px;
-}
-
-#navbar a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-#navbar a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.content {
-    width: 100%;
-    height: 700px;
-    justify-content: center;
+/* .sidebar-dash {
+    background-color: #F3BB00;
+    width: 300px;
+    height: 600px;
     padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 
-h3#modif {
-    width: 100%;
-    height: 30px;
+.userinfo {
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	text-align: center;
+    /* display: none; */
+.contain-perso{
+    width: 600px;
+    height: 400px;
+    background-color: #45a049;
+    
+} */
+
+/* .sidebar-dash ul {
+    font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-    text-align: center;
-   
+    margin: 30px 0;
 }
 
-h2#board {
+.info-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-dash a {
+    color: black;
+    display: block;
+    padding: 10px;
+} */
+
+/* .sidebar-dash a.active,
+.sidebar-dash a:hover {
+    background-color: #A29C4A;
+    color: #fff;
+    border-radius: 10px;
+}
+.personal{
+
+} */
+*/ */ .user-dash {
     width: 100%;
-    height: 20px;
-    font-size: 2rem;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #45a049;
+
+}
+.container-info {
+    width: 100%;
+    height: 600px;
+    background-color: #ed20d5;
+
+}
+.dash-accueil {
+    width: 50%;
+    height: 100px;
+    font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin-top: 20px;
-    text-align: center;
+   display: block;
+   margin: auto;
+}
+
+.sidebar-dash {
+    background-color: #F3BB00;
+    width: 300px;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.sidebar-dash ul {
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    margin: 30px 0;
+}
+
+.sidebar-dash li {
+    margin-bottom: 10px;
+}
+
+.sidebar-dash a {
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar-dash a.active,
+.sidebar-dash a:hover {
+    background-color: #A29C4A;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contain-perso {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .personal {
-    margin: 0 auto;
-    max-width: 400px;
+    margin-top: 30px;
+}
+
+.modif {
+    margin-bottom: 20px;
 }
 .names{
     display: flex;
@@ -1970,12 +2051,15 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 
 input.mailing {
     background-color: white;
 }
 
-/* end info perso */
+
+/*# sourceMappingURL=style.css.map */

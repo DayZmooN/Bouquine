@@ -115,16 +115,16 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC))
                 </select>
             </div>
 
-                <div class="select">
-                    <label for="collection">Collection</label>
-                    <select type="text" name="collection" id="collection" placeholder="">
-                        <option value="collection1">collection 1</option>
-                        <option value="collection2">collection 2</option>
-                        <option value="collection3">collection 3</option>
-                        <option value="collection4">collection 4</option>
-                        <option value="collection5">collection 5</option>
-                    </select>
-                </div>
+            <div class="select">
+                <label for="collection">Collection</label>
+                <select type="text" name="collection" id="collection" placeholder="">
+                    <option value="collection1">collection 1</option>
+                    <option value="collection2">collection 2</option>
+                    <option value="collection3">collection 3</option>
+                    <option value="collection4">collection 4</option>
+                    <option value="collection5">collection 5</option>
+                </select>
+            </div>
         </div>
     </div>
 

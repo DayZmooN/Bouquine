@@ -38,13 +38,13 @@ foreach ($result as $article) {
 <?php } ?>
 </body>
 
-<link rel="stylesheet" href="../css/style-admin.css"> 
+<link rel="stylesheet" href="../css/style-admin.css">
 <div class="popup">
-<h1>Voulez-vous supprimer définitivement :</h1>
+    <h1>Voulez-vous supprimer définitivement :</h1>
 
     <div class="title">ici le php qui fera apparaitre le titre </div>
-    <button class="btnYes" >yes</button>
-    <button class="btnNo" >no</button>
+    <button class="btnYes">yes</button>
+    <button class="btnNo">no</button>
 </div>
 
 <?php include './includeClose.php'; ?>
