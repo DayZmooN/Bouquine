@@ -3,10 +3,7 @@ require_once './header-front.php';
 require_once './connect.php';
 // require_once './footer-front.php';
 session_start();
-if (!isset($_SESSION["user"])) {
-    header("location: ./book.php");
-    exit;
-}
+
 $id = $_GET['id'];
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` WHERE `id_book` = :id');
 $query->bindParam('id', $id, PDO::PARAM_INT);
