@@ -103,7 +103,6 @@ a {
 
 /*.....header + icones.....*/
 .corp {
-    max-width: 1300px;
     width: 75%;
     height: 100%;
     float: right;
@@ -360,8 +359,7 @@ a {
 
     /*....................CSS.CATEGORIES....................*/
 
-    .multitaches>.categorieList {
-        width: 100%;    
+    .multitaches > #ajoutCategorie {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -423,7 +421,7 @@ a {
 
     /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
 
-    .multitaches>#ajout-categorie {
+    .multitaches > #ajoutGenre {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -812,7 +810,7 @@ a {
 
     /*....................CSS.CONNEXION....................*/
 
-    #sideVide{
+#sideVide {
 
         max-width: 500px;
         width: 25%;
