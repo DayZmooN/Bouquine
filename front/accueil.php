@@ -194,7 +194,7 @@ $query->execute();
                 <div class="formulaire">
                     <form action="subscribing-newsletter" method="post">
                         <label for="email">E-mail:</label>
-                        <input id="email" name="subscriber_email" type="email" />
+                        <input id="mail" name="subscriber_email" type="email" />
                         <button id="send" type="submit">S'abonner </button>
                     </form>
                 </div>

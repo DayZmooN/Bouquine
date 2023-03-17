@@ -77,17 +77,20 @@ nav ul {
     color: #000;
 
 }
-li.search-box{
+
+li.search-box {
     width: 550px;
     height: 80px;
 }
-ul.menu{
+
+ul.menu {
     width: 1000px;
     height: 80px;
 }
+
 nav li {
     position: relative;
-   margin: auto;
+    margin: auto;
 }
 
 nav a {
@@ -134,19 +137,22 @@ nav input[type="search"] {
 nav.menu-icon {
     display: none;
 }
-form#form-header{
+
+form#form-header {
     width: 300px;
     height: 70px;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
+
 img.img-user {
     margin-right: 50px;
-   
+
     height: 50px;
 }
-button#search-button{
+
+button#search-button {
     width: 120px;
     height: 35px;
     margin-left: 20px;
@@ -154,6 +160,7 @@ button#search-button{
     font-family: 'Quattrocento-Regular', sans-serif;
     background-color: #da7b27;
 }
+
 .user-name {
     width: 50px;
     height: 50px;
@@ -164,11 +171,13 @@ button#search-button{
     text-align: center;
     padding-top: 10px;
 }
+
 .nom {
     width: 30px;
     height: 10px;
-   padding-left: 10px;
+    padding-left: 10px;
 }
+
 .user-name a {
     width: 100px;
     height: 50px;
@@ -554,7 +563,6 @@ hr.gender1 {
     height: 5px;
     margin: 0 auto;
     margin-top: 20px;
-
 }
 
 hr.gender1:after {
@@ -735,7 +743,7 @@ hr.gender1:after {
     margin-top: 70px;
     margin-left: 70px;
     background-color: #e0ff2085;
-    ;
+
 }
 
 .bouquine {
@@ -813,11 +821,11 @@ hr.gender1:after {
     color: white;
 }
 
-input {
+input#mail {
     width: 400px;
-    height: 40px;
+    height: 35px;
     border-radius: 10px;
-    background-color: #d98f21e3;
+    background-color: white;
 }
 
 #send {
@@ -1390,6 +1398,7 @@ p.author2 {
 /* END SECTION PAGE RESUME */
 
 /* SECTION CATALOGUE */
+
 #catalogue {
     width: 100%;
     height: 100%;
@@ -1400,10 +1409,6 @@ p.author2 {
     height: 1400px;
 }
 
-.searching {
-    width: 100%;
-    height: 100px;
-}
 
 h2.catalog {
     font-size: 3rem;
@@ -1414,38 +1419,41 @@ h2.catalog {
     text-transform: uppercase;
 }
 
-#catal {
-    display: flex;
-    justify-content: center;
-}
-
-.rechercher {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-items: center;
-}
-
-.rechercher input[type="text"] {
-    margin: 0 auto;
-}
-
-.rechercher img {
-    margin-left: auto;
-}
-
-#searc-bar {
-    width: 120px;
-    height: 40px;
-    font-family: 'QuattrocentoSans-Regular';
-    font-size: .8rem;
-    margin-left: 10px;
-}
-
 .formul-s {
     width: 100%;
-    height: 120px;
+    height: 80px;
+    margin-bottom: 30px;
+}
 
+form#catalog-form {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 600;
+}
+
+.formul-s label {
+    display: none;
+    font-family: 'QuattrocentoSans-Regular';
+    font-weight: 600;
+}
+
+input#search-book {
+    width: 450px;
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+button#search-button {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #da7b27;
 }
 
 .item4 {
@@ -1477,6 +1485,7 @@ h2.catalog {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin: 100px auto;
     height: 100%;
 }
 
@@ -1488,7 +1497,6 @@ p.titles {
     text-align: center;
 }
 
-
 p.authors {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1496,6 +1504,7 @@ p.authors {
     color: rgba(0, 0, 0, 0.5);
 
 }
+
 
 /* END CATALOGUE */
 
@@ -1676,60 +1685,66 @@ form button {
     cursor: pointer;
 }
 
-
 /* FIN CONNEXION */
 
-
 /* PAGE INSCRIPTION */
+body {
+    width: 100%;
+    height: 100%;
+   }
+#bouquine{
+    width: 400px;
+    height: 600px;
+     background-image: url(../image/logo2.png);
+  background-repeat: no-repeat;
+  background-position-y: left center;
+}
 #suscribe {
     width: 100%;
-    height: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
-
 .container-suscribe {
-    width: 100%;
-    height: 900px;
+    width: 50%;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
 .img-book {
-    height: 600px;
-}
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 40px;
 }
 
 .img-book img {
-    /* width: 500px; */
-    height: 600px;
+    /* width: 500px;  */
+    height: 500px;
 }
 
 .suscribe-form {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    margin-top: 20px;
 }
 
-img.form-logo {
-    img.form-logo {
-        width: 100px;
-        height: 100px;
-        display: block;
-        margin: auto;
-    }
+ form#connect {
+    height: 600px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 h2.sus-form {
     font-size: 1.8rem;
     font-family: 'QuattrocentoSans-Bold';
     font-weight: 400;
-}
-
-.input {
-    height: 550px;
-    margin-bottom: 50px;
+    text-align: center;
 }
 
 .input label {
@@ -1742,25 +1757,60 @@ h2.sus-form {
 
 .input input {
     width: 400px;
+    height: 35px;
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: none;
-    border: none;
-    background-color: #f2f2f2;
+    border: 2px solid black;
+    background-color: white;
 }
 
+input#password {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+input#mail {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+input#birth {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+input#phone {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
 button[type="submit"] {
-    font-size: 1.2rem;
+    width: 200px;
+    height: 35px;
+    font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
     background-color: #74EC8D;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 50px;
 }
 
 /* END INSCRIPTION */
@@ -1889,6 +1939,7 @@ body {
     width: 100%;
     height: 30px;
 }
+
 .dashboard1 h2 {
     font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1905,11 +1956,13 @@ body {
     top: 120px;
     left: 0;
 }
+
 #user-nav ul {
     width: 350px;
     height: 400px;
     display: block;
 }
+
 #user-nav li a {
     width: 330px;
     height: 105px;
@@ -1928,7 +1981,7 @@ body {
 .info1 {
     width: 700px;
     height: 400px;
-    background-color:#f6b339 ;
+    background-color: #f6b339;
     border: 1px solid black;
     border-radius: 20px;
     position: absolute;
@@ -1969,7 +2022,8 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"], input[type="tel"] {
+input[type="password"],
+input[type="tel"] {
     width: 250px;
     height: 35px;
     border: 2px solid #ccc;
@@ -1998,7 +2052,7 @@ input.adress {
 
 input[type="email"]#email1 {
     width: 450px;
-   }
+}
 
 input[type="tel"]#telephone {
     width: 450px;
