@@ -66,10 +66,12 @@ a {
 
         &>nav {
             max-width: 500px;
+
             &>ul {
                 width: 100%;
+
                 &>li {
-                   // max-width: 400px;
+                    // max-width: 400px;
                     width: 100%;
                     height: 80px;
                     display: flex;
@@ -108,7 +110,7 @@ a {
     height: 100%;
     float: right;
     background-color: $fondRose;
-    
+
 
     &>#headerDashboard {
 
@@ -138,14 +140,14 @@ a {
     &>.multitaches {
         width: 100%;
         height: 100vh;
-        
+
 
         &>.multiTitre {
             width: 100%;
             padding-top: 40px;
             text-transform: uppercase;
             text-align: center;
-            
+
 
         }
     }
@@ -153,20 +155,20 @@ a {
     /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
 
 
-    
+
 
     /*....................CSS.DASHBOARD....................*/
 
     .multitaches>#compteurEtGraphique {
         width: 1000px;
-        height: 100%;
+
         margin-top: 25px;
         margin-left: 25px;
     }
 
     .multitaches>#dernier-ajout {
         width: 100%;
-        margin-top: -600px;
+        margin-top: 50px;
         text-transform: uppercase;
         text-align: center;
     }
@@ -177,7 +179,6 @@ a {
 
     .multitaches>#articleSearchAjout {
         width: 50%;
-        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -218,10 +219,10 @@ a {
             background-color: $remplissage;
         }
 
-        
+
     }
 
-    .multitaches > .sousTitre{
+    .multitaches>.sousTitre {
         width: 200px;
         margin-top: 40px;
         margin-left: 500px;
@@ -239,29 +240,29 @@ a {
         background-color: #AAAAAA;
         margin: 10px 200px;
 
-        & > h3{
+        &>h3 {
             width: 450px;
             padding-left: 10px;
 
         }
 
-        & > p{
+        &>p {
             width: 100px;
         }
-        
-        & > bouton{
+
+        &>bouton {
             width: 150px;
             margin-right: 10px;
         }
-        
+
     }
 
     /*....................FIN.CSS.ARTICLES....................*/
 
     /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
 
-    .multitaches > #formulaireAjout {
-        
+    .multitaches>#formulaireAjout {
+
         width: 90%;
         margin: 0 auto;
         background-color: #FFF5EE;
@@ -275,15 +276,15 @@ a {
             width: 30%;
             display: flex;
             flex-direction: column;
-            
-            
-            
+
+
+
 
             &>.titre-auteur {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                
+
 
 
                 &>.tripleInput {
@@ -294,14 +295,14 @@ a {
                     border-radius: 50px;
                     background-color: $remplissage;
                     padding-left: 10px;
-                    
+
                 }
             }
 
             &>.edition-date {
                 width: 100%;
 
-                & > div > #editor {
+                &>div>#editor {
                     width: 350px;
                     height: 50px;
                     margin-top: 50px;
@@ -309,42 +310,45 @@ a {
                     border-radius: 50px;
                     background-color: $remplissage;
                     padding-left: 10px;
-                    
+
                 }
 
-                
+                &>div>.date {
+                    width: 150px;
+                    height: 50px;
+                    margin-top: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                }
+
+
             }
 
-            
+
         }
 
         &>.milieu {
-           
-            
+
+
 
             &>.select {
 
-                &>select {
-                   
-                }
+                &>select {}
             }
         }
 
         &>#droite {
-            
+
             &>.resume {
-               
 
-                
 
-                &>.choixImg {
-                    
-                }
+
+
+                &>.choixImg {}
             }
 
-            &>a {
-                
-            }
+            &>.buttonFormulaire {}
         }
     }
 
@@ -353,16 +357,16 @@ a {
     /*....................CSS.CATEGORIES....................*/
 
     .multitaches>.categorieList {
-        width: 100%;    
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         margin-top: 50px;
-        
-        flex-wrap: wrap;
-        
 
-        & > .unite{
+        flex-wrap: wrap;
+
+
+        &>.unite {
             width: 300px;
             height: 50px;
             display: flex;
@@ -375,11 +379,11 @@ a {
             margin: 10px 10px;
 
         }
-        
 
-      
 
-        
+
+
+
     }
 
     /*....................FIN.CSS.CATEGORIES....................*/
@@ -387,16 +391,16 @@ a {
     /*....................CSS.GENRES....................*/
 
     .multitaches>.genreList {
-        width: 100%;    
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         margin-top: 50px;
-        
-        flex-wrap: wrap;
-        
 
-        & > .unite{
+        flex-wrap: wrap;
+
+
+        &>.unite {
             width: 300px;
             height: 50px;
             display: flex;
@@ -714,28 +718,28 @@ a {
         }
 
         &>tbody {
-            
-            & > .contenuUser{
+
+            &>.contenuUser {
                 background-color: $fondUser;
-            height: 50px;
+                height: 50px;
             }
 
-            & > .tdButton{
+            &>.tdButton {
                 height: 50px;
-                
-                & > td{
+
+                &>td {
                     height: 50px;
-                            
-                    & > button{
+
+                    &>button {
                         width: 100%;
                         height: 50px;
-                        
+
                         background-color: $grisBtn;
                         border-radius: 10px;
                         border: 0;
                         margin-top: 10px;
 
-                        & > a{
+                        &>a {
                             display: block;
                             width: 100%;
                             height: 50px;
@@ -780,8 +784,8 @@ a {
             background-color: $grisBtn;
             margin-top: 10px;
 
-            &>a{
-             color: black;
+            &>a {
+                color: black;
             }
 
         }
@@ -793,7 +797,9 @@ a {
 
 
 
-}// crochet de corp
+}
+
+// crochet de corp
 
 
 
@@ -802,93 +808,94 @@ a {
 
 
 
-    /*....................CSS.CONNEXION....................*/
+/*....................CSS.CONNEXION....................*/
 
-    #sideVide{
+#sideVide {
 
-        max-width: 500px;
-        width: 25%;
-        height: 100vh;
-        position: fixed;
-        background-color: #858585;
-    
-        &>#logo>img {
+    max-width: 500px;
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    background-color: #858585;
+
+    &>#logo>img {
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+}
+
+.bodyConnexion {
+    max-width: 1300px;
+    width: 75%;
+    height: 100 vh;
+    float: right;
+
+
+
+    &>.connexion {
+        width: 500px;
+        height: 350px;
+        border-radius: 15px;
+        margin-top: 100px;
+        margin-left: 350px;
+        background-color: $remplissage ;
+
+        &>.Titre {
             width: 100%;
-            border-bottom: 1px solid black;
+            padding-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
         }
-    
-    }
-    
-    .bodyConnexion{
-        max-width: 1300px;
-        width: 75%;
-        height: 100 vh;
-        float: right;
-        
-        
-    
-        & >.connexion{
-            width: 500px;
-            height: 350px;
-            border-radius: 15px;
-            margin-top: 100px;
-            margin-left: 350px;
-            background-color: $remplissage ;
-        
-            & > .Titre{
-                width: 100%;
-                padding-top: 20px;
-                text-transform: uppercase;
-                text-align: center;
-            }
-        
-            & > #mail, #pass{
+
+        &>#mail,
+        #pass {
+            width: 300px;
+            height: 50px;
+            margin: 30px 100px;
+            //border: 1px solid black;
+
+            &>input {
                 width: 300px;
                 height: 50px;
-                margin: 30px 100px;
-                //border: 1px solid black;
-                
-                & > input{
-                    width: 300px; 
-                    height: 50px;
-                    border-radius: 50px;
-                    border: 0;
-                    background-color: white ;
-                    padding-left: 10px;
-                    margin-top: 20px;
-                
-                }
-               
-        
+                border-radius: 50px;
+                border: 0;
+                background-color: white;
+                padding-left: 10px;
+                margin-top: 20px;
+
             }
-        
-            & > #connect{
+
+
+        }
+
+        &>#connect {
+            width: 100px;
+
+            &>button {
                 width: 100px;
-        
-                & > button{
-                    width: 100px;
-                    height: 25px;
-                    margin: 50px 200px;
-                    box-shadow: 1px 1px 10px 1px grey;
-                    background-color: #81D9E5;
-                    border: 0;
-                    border-radius: 20px;
-        
-                }
-        
-                & > button:hover{
-                    cursor: pointer;
-                }
+                height: 25px;
+                margin: 50px 200px;
+                box-shadow: 1px 1px 10px 1px grey;
+                background-color: #81D9E5;
+                border: 0;
+                border-radius: 20px;
+
+            }
+
+            &>button:hover {
+                cursor: pointer;
             }
         }
-        
     }
+
+}
 
 /*....................FIN.CSS.CONNEXION....................*/
 
 /*....................DELETE.CSS....................*/
 
-.popup{
+.popup {
     width: 500px;
     height: 250px;
     position: fixed;
@@ -900,19 +907,19 @@ a {
     transform: translate(-50%, 50%);
     z-index: 99999;
 
-    & > h1{
+    &>h1 {
         width: 500px;
         padding-top: 30px;
-        font-family:LRT Oksana Bold ;
+        font-family: LRT Oksana Bold;
     }
 
-    & > .title{
+    &>.title {
         width: 500px;
         height: 50px;
         margin-top: 10px;
     }
 
-    & > .btnYes{
+    &>.btnYes {
         width: 100px;
         height: 70px;
         background-color: #26F904;
@@ -920,25 +927,16 @@ a {
         cursor: pointer;
     }
 
-    & > .btnNo{
+    &>.btnNo {
         width: 100px;
         height: 70px;
         background-color: #FF0404;
         margin-left: 20px;
         cursor: pointer;
-        
+
     }
 
 
 
-    
+
 }
-
-
-
-
-
-
-
-
-

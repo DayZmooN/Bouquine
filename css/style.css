@@ -1650,7 +1650,7 @@ form button {
 .img-book {
     height: 600px;
 }
-}
+
 
 .img-book img {
     /* width: 500px; */
@@ -1663,14 +1663,14 @@ form button {
     margin-top: 20px;
 }
 
-img.form-logo {
+
 img.form-logo {
     width: 100px;
     height: 100px;
     display: block;
     margin: auto;
 }
-}
+
 
 h2.sus-form {
     font-size: 1.8rem;
