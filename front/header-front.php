@@ -1,3 +1,10 @@
+<?
+require_once './connect.php';
+require_once './header-front.php';
+require_once './footer-front.php';
+require_once '../admin/barre/seachbar.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,24 +32,27 @@
                 <li>
                     <a href="#">Parcourir</a>
                     <ul>
-                        <li><a href='#'>Action</a></li>
-                        <li><a href='#'>Romance</a></li>
-                        <li><a href='#'>Fantaisie</a></li>
-                        <li><a href='#'>Thriller</a></li>
-                        <li><a href='#'>Aventure</a></li>
+                        <?php
+                        include '../connexion.php';
+                        $sql = "SELECT `category`.`id_category`,`libel_category` FROM category;";
+                        $req = $db->query($sql);
+                        $req->execute();
+                        while ($category = $req->fetch(PDO::FETCH_ASSOC)) { ?>
+                            <li><a href='./parcourir.php?id=<?= $category['id_category'] ?>'><?= $category['libel_category'] ?></a></li>
+                        <?php } ?>
                     </ul>
                 </li>
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">
-                    <input type="text" name="search" placeholder="Rechercher">
+                    <form method="GET" action="./recherche.php">
+                        <input type="search" name="search" placeholder="Rechercher">
+                        <button type="submit">Rechercher</button>
+                    </form>
                 </li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <button id="s-bar" type="submit" name="submit"><a href="#">Rechercher</button></a>
-        </div>
-        <div class="user-name">
+
         <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
         <span class="nom">User</span>
         </div>
@@ -50,4 +60,4 @@
 
 </body>
 
-</html>
+</html

@@ -1,5 +1,9 @@
 <?php
 require_once '../model/fonction-inscription.php';
+session_start();
+if (!$_SESSION["user"]) {
+    header("location: connexion.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,10 +32,12 @@ require_once '../model/fonction-inscription.php';
                 <form action="../model/fonction-inscription.php" method="POST">
                     <div class="input">
                         <label>Nom</label>
-                        <input type="lastname" id="name" name="name" placeholder="Votre nom" />
+                        <input type="lastname" id="name" name="lastname" placeholder="Votre nom" />
                         <label>Prénom</label>
                         <input type="username" id="username" name="username" placeholder="Votre prénom" />
                         <label>Date de naissance</label>
+                        <label>numero</label>
+                        <input type="number" name="phone" id="phone">
                         <input type="birth" id="birth" name="birthdate" placeholder="Votre date de naissance" />
                         <label>E-mail</label>
                         <!-- <input type="email" id="mail" name="mail" placeholder="Adresse mail" />
@@ -46,7 +52,7 @@ require_once '../model/fonction-inscription.php';
                         </div> -->
                     </div>
                     <div align="center">
-                        <button type="submit"><a href="../model/fonction-inscription.php"> Créer mon compte</button></a>
+                        <button type="submit"><a href=""> Créer mon compte</button></a>
                     </div>
                 </form>
 

@@ -1,23 +1,10 @@
-<!--Afficher les images de couvertures à partir de la base de données (voir pour les resize)
-<h1>Covers</h1>-->
 <?php
 require_once '../connexion.php';
-
-/*$req = $db->query("SELECT `image` FROM `book`");
-while($data = $req->fetch()){
-    echo "<img src='../image/".$data['image']."'>";
-}*/
 ?>
-
 <!--CRUD Catégories -->
-
-<h1>Catégories</h1>
 <?php
-// C R U D : READ
-// Récupère la table souhaité afficher :
 $reqCat = $db->prepare('SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`');
 $reqCat->execute();
-//stocke dans tableau associatif
 $resultCat = $reqCat->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <table>
@@ -27,7 +14,6 @@ $resultCat = $reqCat->fetchAll(PDO::FETCH_ASSOC);
     </thead>
     <tbody>
         <?php
-        //On créer la boucle pour auto générer les catégories
         foreach ($resultCat as $category) {
         ?>
             <tr>
@@ -123,7 +109,7 @@ try{
 <!--READ -->
 <h1>Users</h1>
 <?php
-$reqUser = $db->prepare('SELECT `id_user`, `password`, `username`, `lastname`, `mail`, `phone`, `birthdate` FROM `user`');
+$reqUser = $db->prepare('SELECT `id_admin`, `username`, `password`, `mail` FROM `admin`');
 $reqUser->execute();
 $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
 ?>

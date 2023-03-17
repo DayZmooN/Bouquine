@@ -13,26 +13,21 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
     <input class="recherche" type="search" name="recherche" placeholder="rechercher user">
     <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
   </form>
-
+  <form class="boutonUser">
+    <button><a href="#">supprimer</a></button>
+  </form>
 </div>
 
 <table id="tableUser">
   <thead>
     <tr>
       <th>id</th>
-      <th>username</th>
-      <th>lastname</th>
-      <th>mail</th>
-      <th>phone</th>
-      <th>birthday</th>
-      <th>created at</th>
-      <th>statut</th>
-      <th>action</th>
-
+      <th>Pseudo</th>
+      <th>E-mail</th>
+      <th>MDP</th>
     </tr>
   </thead>
   <tbody>
-
     <?php
     foreach ($resultUser as $user) {
     ?>
@@ -44,11 +39,13 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
         <td><?= $user['password'] ?></td>
         <td><?= $user['phone'] ?></td>
         <td><?= $user['birthdate'] ?></td>
-        <td>en ligne</td>
-      <td><a class="btnRed" href="./delete-user.php?id=<?= $user['id_user'] ?>" style="color:red">supprimer</a></td>
+
+        <td><input type="checkbox" id="check-all" name="check-all"></td>
+      <?php
+    }
+      ?>
       </tr>
-    <?php } ?>
+
+
   </tbody>
 </table>
-
-<?php include './includeClose.php'; ?>
