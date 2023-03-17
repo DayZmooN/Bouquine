@@ -14,7 +14,7 @@ require_once '../admin/barre/seachbar.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://fontawesome.com/">
+    
 
 </head>
 
@@ -45,16 +45,16 @@ require_once '../admin/barre/seachbar.php';
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">
-                    <form method="GET" action="./recherche.php">
+                    <form id="form-header" method="GET" action="./recherche.php">
                         <input type="search" name="search" placeholder="Rechercher">
-                        <button type="submit">Rechercher</button>
+                        <button id="search-button" type="submit">Rechercher</button>
                     </form>
                 </li>
             </ul>
         </nav>
 
-        <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte "></a>
-        <span class="nom">User</span>
+        <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte ">
+        <span class="nom">User</span></a>
         </div>
     </header>
 

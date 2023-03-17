@@ -48,7 +48,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f39c12;
+    background-color: #f6b339;
     /* position: fixed; */
 }
 
@@ -66,7 +66,7 @@ input#menu-toggle {
 }
 
 nav.header-nav {
-    width: 90%;
+    width: 100%;
     display: flex;
     color: #000;
     align-items: center;
@@ -77,10 +77,17 @@ nav ul {
     color: #000;
 
 }
-
+li.search-box{
+    width: 550px;
+    height: 80px;
+}
+ul.menu{
+    width: 1000px;
+    height: 80px;
+}
 nav li {
     position: relative;
-    margin: 0 10px;
+   margin: auto;
 }
 
 nav a {
@@ -99,7 +106,6 @@ nav ul ul {
     min-width: 200px;
     background-color: #FFC300;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-
 }
 
 nav ul li:hover>ul {
@@ -109,33 +115,45 @@ nav ul li:hover>ul {
 
 nav ul ul li {
     position: relative;
-
 }
 
 nav ul ul a {
     padding: 10px 15px;
 }
 
-nav input[type="text"] {
-    width: 250px;
-    height: 30px;
+nav input[type="search"] {
+    width: 300px;
+    height: 35px;
+    border: 1px solid black;
     /* padding: 5px; */
-    margin-left: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #888;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #f6b339;
+    background-color: #FFB34E;
 }
 
-nav .menu-icon {
+nav.menu-icon {
     display: none;
 }
-
-img.img-user {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 40px;
-    height: 40px;
+form#form-header{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
-
+img.img-user {
+    margin-right: 50px;
+   
+    height: 50px;
+}
+button#search-button{
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #da7b27;
+}
 .user-name {
     width: 50px;
     height: 50px;
@@ -146,36 +164,17 @@ img.img-user {
     text-align: center;
     padding-top: 10px;
 }
-
 .nom {
     width: 30px;
     height: 10px;
-    margin-right: 10px;
-
+   padding-left: 10px;
 }
-
 .user-name a {
-    width: 50px;
+    width: 100px;
     height: 50px;
 }
 
-.search-bar {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 15px;
-}
 
-button#s-bar {
-    width: 80px;
-    height: 30px;
-    background-color: #E0FF20;
-    padding: 0;
-}
-
-.search-bar a {
-    font-size: .7rem;
-    font-family: 'Quattrocento-Regular', sans-serif;
-}
 
 /* @media screen and (max-width: 350px) {
     header {
