@@ -4,10 +4,9 @@ require_once './auth.php';
 
     if (isset($_FILES['cover'])) {
     $id = $_GET['id'];
-    $image = $_FILES['cover'];
     $tmpname = $_FILES['cover']['tmp_name'];
     $name = $_FILES['cover']['name'];
-    move_uploaded_file($tmpname, __DIR__ . "/image/" . $name);
+    move_uploaded_file($tmpname, "../image/" . $name);
     $reqCover = $db->prepare("UPDATE `book` SET `image`= :image WHERE `id_book`= :id");
     $reqCover->bindParam(':id', $id, PDO::PARAM_INT);
     $reqCover->bindParam(':image', $name, PDO::PARAM_STR);
