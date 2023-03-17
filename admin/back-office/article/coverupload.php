@@ -6,17 +6,17 @@
             session_start();
 
             if(isset($_FILES['file'])){
-                require_once '../connexion.php';
+                require_once '../auth.php';
                 $id = $_GET['id'];
                 $tmpName = $_FILES['file']['tmp_name'];
                 $name = $_FILES['file']['name'];
-                move_uploaded_file($tmpName, '../image/' . $name);
+                move_uploaded_file($tmpName, 'C:\wamp64\www\projets\Projet-bouquine\image' . $name);
 
                 $req = $db->prepare("UPDATE `book` SET `image`= (?) WHERE `id_book`= :id");
                 $req->bindParam('id',$id, PDO::PARAM_INT);
                 $req->execute([$name]);
 
-                header('Location: ./article.php');
+                header('Location: ./readarticle-back.php');
             }
             ?>
 </form>

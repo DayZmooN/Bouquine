@@ -32,6 +32,8 @@ foreach ($result as $article) {
 
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
             <a class="btnRed" href="./deletearticle.php?id=<?= $article['id_book'] ?>" style="color:red">Supprimer</a>
+            <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Cover</a>
+            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>">Genres</a>
 
         </div>
     </div>
