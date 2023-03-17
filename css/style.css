@@ -174,8 +174,6 @@ button#search-button{
     height: 50px;
 }
 
-
-
 /* @media screen and (max-width: 350px) {
     header {
       height: auto;
@@ -333,6 +331,8 @@ h1 {
 }
 
 .item {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -368,6 +368,7 @@ h1 {
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
 }
 
 /* END SECTION POPULAIRES  */
@@ -452,7 +453,7 @@ h1 {
 /* section genre préférés */
 #gender {
     width: 100%;
-    height: auto;
+    height: 2000px;
     background-color: #21b7ffb0;
 }
 
@@ -502,6 +503,8 @@ h2#prefers {
 }
 
 .item1 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -595,6 +598,8 @@ hr.gender1:after {
 }
 
 .item2 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -667,6 +672,8 @@ hr.gender1:after {
 }
 
 .item3 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
