@@ -4,15 +4,14 @@ require_once './auth.php';
 
     if (isset($_FILES['cover'])) {
     $id = $_GET['id'];
-    $tmp_name = $_FILES['cover']['tmp_name'];
+    $tmpname = $_FILES['cover']['tmp_name'];
     $name = $_FILES['cover']['name'];
-    $image = $name;
-
-    $manga = $db->prepare("UPDATE `book` SET `image`= :image WHERE `id_book`= :id");
-    $manga->bindParam(':id', $id, PDO::PARAM_INT);
-    $manga->bindParam(':image', $image, PDO::PARAM_STR);
-    $manga->execute();
     move_uploaded_file($tmpName, '../image' . $name);
+    $reqCover = $db->prepare("UPDATE `book` SET `image`= :image WHERE `id_book`= :id");
+    $reqCover->bindParam(':id', $id, PDO::PARAM_INT);
+    $reqCover->bindParam(':image', $name, PDO::PARAM_STR);
+    $reqCover->execute();
+    
 
     header('Location: ./article.php');
 }
