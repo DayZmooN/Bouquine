@@ -1668,6 +1668,7 @@ form button {
     margin-top: 120px;
 }
 
+
 .img-book img {
     width: 100%;
     /* width: 500px; */
@@ -1680,9 +1681,14 @@ form button {
     margin-top: 20px;
 }
 
-.form-logo {
-    width: 30%;
+
+img.form-logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
 }
+
 
 h2.sus-form {
     font-size: 1.8rem;

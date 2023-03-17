@@ -38,5 +38,5 @@
             <a class="notif" href="#"> <img src="../image/boutonNotificationDashboard.png" alt="bouton cloche de notifications" title="voir vos notifications"></a>
             <a class="notif" href="#"> <img src="../image/deconnexionDashboard.png" alt="bouton de deconnexion" title="vous deconnectez"></a>
         </header>
-        
+
         <main class="multitaches">

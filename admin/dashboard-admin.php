@@ -24,17 +24,17 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <?php
 foreach ($result as $article) {
 ?>
-<div class="articleList">
-    <h3><?= $article['title'] ?></h3>
-    <p><?= $article['author'] ?></p>
-    <p><?= $article['publication_date'] ?></p>
-     <div id="bouton">
-        <p>
-            <a class="btnGreen" href="#" style="color:green">modifier</a> / 
-            <a class="btnRed" href="#" style="color:red">supprimer</a>
-        </p>
-    </div> 
-</div>
+    <div class="articleList">
+        <h3><?= $article['title'] ?></h3>
+        <p><?= $article['author'] ?></p>
+        <p><?= $article['publication_date'] ?></p>
+        <div id="bouton">
+            <p>
+                <a class="btnGreen" href="#" style="color:green">modifier</a> /
+                <a class="btnRed" href="#" style="color:red">supprimer</a>
+            </p>
+        </div>
+    </div>
 <?php
 }
 ?>

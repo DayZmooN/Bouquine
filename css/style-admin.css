@@ -610,12 +610,14 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-.bodyConnexion > .connexion > #mail, .bodyConnexion > .connexion #pass {
+.bodyConnexion > .connexion > #mail,
+.bodyConnexion > .connexion #pass {
   width: 300px;
   height: 50px;
   margin: 30px 100px;
 }
-.bodyConnexion > .connexion > #mail > input, .bodyConnexion > .connexion #pass > input {
+.bodyConnexion > .connexion > #mail > input,
+.bodyConnexion > .connexion #pass > input {
   width: 300px;
   height: 50px;
   border-radius: 50px;
