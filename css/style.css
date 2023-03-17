@@ -1916,6 +1916,7 @@ input[type="submit"]:hover {
     margin-top: 70px;
     /* display: none; */
     background-color: #EBB016;
+    padding: 10px;
 }
 
 .info-perso {
@@ -1923,15 +1924,33 @@ input[type="submit"]:hover {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-align: center;
 }
-.names{
-    width: 400px;
-    height: 35px;
-    display: flex;
+
+.names label {
+    /* width: 400px;
+    height: 35px; */
+
+    display: inline-block;
+    /* mettre les étiquettes en ligne */
+    width: 50px;
+    /* largeur de 100 pixels */
+    text-align: right;
+    /* alignement du texte à droite */
+    margin-right: 15px;
+    /* marge de 10 pixels à droite */
+
 }
+.names input[type="text"] {
+    width: 200px; /* largeur de 200 pixels */
+  }
+  .names {
+    display: flex; /* afficher les éléments en ligne */
+    justify-content: space-between; /* espace entre les éléments */
+    align-items: center; /* alignement vertical centré */
+  }
 form#dash-form {
     width: 650px;
     height: 450px;
-    padding: 0 10px 20px ;
+    padding: 0 10px 20px;
     margin-left: 10px;
     display: flex;
     align-items: flex-start;
@@ -1943,12 +1962,12 @@ label {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     display: block;
+    margin-top: 10px; 
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] 
-input[type="tel"] {
+input[type="password"] input[type="tel"] {
     width: 250px;
     height: 35px;
     border: 2px solid #ccc;
@@ -1956,7 +1975,7 @@ input[type="tel"] {
     background-color: white;
     padding: 15px;
     margin-top: 10px;
-   
+
 }
 
 input[type="submit"] {
@@ -1966,9 +1985,10 @@ input[type="submit"] {
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    margin-top:  10px ;
-  
-   
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+
 }
 
 input[type="submit"]:hover {
@@ -1978,7 +1998,7 @@ input[type="submit"]:hover {
 
 input.adress {
     width: 450px;
-    margin: 0 ;
+    margin: 0;
 
 }
 
@@ -1987,15 +2007,15 @@ input[type="email"]#email1 {
     /* padding: 15px; */
 
 }
-input[type="tel"]#telephone{
+
+input[type="tel"]#telephone {
     width: 450px;
     padding: 10px;
     background-color: white;
 }
-label#lab-adress {
- 
-    /* padding-top: 30px; */
-  
+input value{
+    text-align: center;
 }
+
 
 /* END DASHBOARD USER */

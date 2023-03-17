@@ -28,7 +28,7 @@ require_once './header-front.php';
       <div class="names">
         <label for="nom">Nom:</label>
         <input type="text" id="nom" name="nom" required>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; 
         <label for="prenom">Prénom:</label>
         <input type="text" id="prenom" name="prenom" required>
       </div>
