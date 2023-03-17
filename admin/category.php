@@ -8,6 +8,21 @@ $resultCat = $reqCat->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">liste catégories</h1>
 
+<div id="ajoutCategorie">
+    <form class="ajout" action="" method="post">
+
+        <input class="newCat" type="text" name="libel_category" placeholder="nouvelle catégorie">
+        <input class="slugCat" type="text" name="libel_slug" placeholder="champ du slug">
+        <input class="subCat" type="submit" name="submitAdd" value="Ajouter">
+
+    </form>
+</div>
+
+
+
+
+
+
 <div class="categorieList">
 <?php foreach($resultCat as $category){ ?>
     <div class="unite">

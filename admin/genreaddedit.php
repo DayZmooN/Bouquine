@@ -41,23 +41,15 @@ include './header-admin.php';
 ?>
 <h1 class="multiTitre">modifications genres</h1>
 
-<div id="ajout-genre">
-    <form class="ajout" action="" method="post">
+<h2 class="titleEditGenre">Modification de <?= $genre['libel_genre'] ?></h2>
 
-        <input class="newGenre" type="text" name="libel_genre" placeholder="libel genre">
-        <input class="newGenre" type="text" name="genre_slug" placeholder="genre slug">
-        <input type="submit" name="submitAdd" value="Ajouter">
-
-    </form>
-
+<div id="sectionEditGenre">
+    
     <form class="edit" action="" method="post">
-        <div id="selection">
+        
             <input class="editGenre" type="text" name="libel_genre" value="<?= $genre['libel_genre'] ?>">
-            <input class="editGenre" type="text" name="genre_slug" value="<?= $genre['genre_slug'] ?>">
-        </div>
-
-        <div id="choice">
-            <input type="submit" name="submitEdit" value="Modifier">
+            <input class="editSlugGenre" type="text" name="genre_slug" value="<?= $genre['genre_slug'] ?>">      
+            <input class="subEditGenre"type="submit" name="submitEdit" value="Modifier">
         </div>
 
     </form>
@@ -65,3 +57,30 @@ include './header-admin.php';
 </div>
 
 <?php include './includeClose.php'  ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
