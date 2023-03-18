@@ -6,6 +6,7 @@ $query = $db->prepare('SELECT `id_book`,  `image`, `title`, `author`, `status` F
 $query->execute();
 ?>
 
+
 <body>
     <section id="catalogue">
         <div class="catal">
@@ -21,49 +22,19 @@ $query->execute();
 
 
             </div>
-            <div class="books">
 
-                <div class="container-books">
+            <div class="container-books">
+                <?php foreach ($query as $book) { ?>
                     <div class="books-catalog">
                         <div class="item4">
-                            <a href="#"><img src="../image/malgre nous.jpg" alt="Malgré nous de Claire NORTON"></a>
-                            <p class="titles">Malgré nous </p>
-                            <p class="authors">Claire NORTON</p>
-                        </div>
-                        <div class="item4"><a href="#"><img src="../image/romance.jpg" alt="Romance d'Arnaud CATHERINE"></a>
-                            <p class="titles">ROMANCE</p>
-                            <p class="authors">Arnaud CATHERINE</p>
-                        </div>
-                        <div class="item4"><a href="#"><img src="../image/une toute derniere fois.jpg" alt="Une toute dernère fois d'Emma GREEN "></a>
-                            <p class="titles">Une toute dernière fois </p>
-                            <p class="authors">Emma GREEN</p>
+                            <a href="./book.php?id=<?= $book['id_book'] ?>"><img src="../image/<?= $book['image'] ?>" alt="<?= $book['title'] ?>"></a>
+                            <p class="titles"><?= $book['title'] ?></p>
+                            <p class="authors"><?= $book['author'] ?></p>
                         </div>
 
-                        <div class="item4"><a href="#"><img src="../image/dark romance.jpg" alt="Dark Romance de Péneloppe DOUGLAS "></a>
-                            <p class="titles">DARK ROMANCE</p>
-                            <p class="authors">Péneloppe DOUGLAS</p>
-                        </div>
                     </div>
-
-                </div>
-
+                <?php } ?>
             </div>
-
-        </div>
-        </div>
-        <?php foreach ($query as $book) { ?>
-
-
-            <div class="books-catalog">
-                <div class="item4">
-                    <a href="./book.php?id=<?= $book['id_book'] ?>"><img src="../image/<?= $book['image'] ?>" alt="<?= $book['title'] ?>"></a>
-                    <p class="titles"><?= $book['title'] ?></p>
-                    <p class="authors"><?= $book['author'] ?></p>
-                </div>
-
-            </div>
-        <?php } ?>
-        </div>
         </div>
     </section>
 </body>

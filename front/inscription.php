@@ -1,9 +1,6 @@
 <?php
 require_once '../model/fonction-inscription.php';
-session_start();
-if (!$_SESSION["user"]) {
-    header("location: connexion.php");
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

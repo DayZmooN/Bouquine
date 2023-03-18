@@ -1,13 +1,13 @@
 <?php
 //on démarre une session PHP on ecrit a chaquer page ou veut rester connecter en debut 
-session_start();
-if (!isset($_SESSION["user"])) {
-    header("location: ./connexion.php");
-    exit;
-}
+// session_start();
+// if (!isset($_SESSION["user"])) {
+//     header("location: ./connexion.php");
+//     exit;
+// }
 // on inclut le header 
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,4 +43,4 @@ if (!isset($_SESSION["user"])) {
     </section>
 </body>
 
-</html>
+</html> -->

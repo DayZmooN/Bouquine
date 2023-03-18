@@ -48,7 +48,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f39c12;
+    background-color: #f6b339;
     /* position: fixed; */
 }
 
@@ -66,7 +66,7 @@ input#menu-toggle {
 }
 
 nav.header-nav {
-    width: 90%;
+    width: 100%;
     display: flex;
     color: #000;
     align-items: center;
@@ -75,11 +75,22 @@ nav.header-nav {
 nav ul {
     display: flex;
     color: #000;
+
+}
+
+li.search-box {
+    width: 550px;
+    height: 80px;
+}
+
+ul.menu {
+    width: 1000px;
+    height: 80px;
 }
 
 nav li {
     position: relative;
-    margin: 0 10px;
+    margin: auto;
 }
 
 nav a {
@@ -102,6 +113,7 @@ nav ul ul {
 
 nav ul li:hover>ul {
     display: block;
+    z-index: -1;
 }
 
 nav ul ul li {
@@ -112,42 +124,63 @@ nav ul ul a {
     padding: 10px 15px;
 }
 
-nav input[type="text"] {
-    width: 250px;
-    height: 30px;
+nav input[type="search"] {
+    width: 300px;
+    height: 35px;
+    border: 1px solid black;
     /* padding: 5px; */
-    margin-left: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #888;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #f6b339;
+    background-color: #FFB34E;
 }
 
-nav .menu-icon {
+nav.menu-icon {
     display: none;
 }
 
+form#form-header {
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 img.img-user {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 40px;
-    height: 40px;
+    margin-right: 50px;
+
+    height: 50px;
 }
 
-.search-bar {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 15px;
-}
-
-button#s-bar {
-    width: 80px;
-    height: 30px;
-    background-color: #E0FF20;
-    padding: 0;
-}
-
-.search-bar a {
-    font-size: .7rem;
+button#search-button {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1rem;
     font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #da7b27;
+}
+
+.user-name {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nom {
+    width: 30px;
+    height: 10px;
+    padding-left: 10px;
+}
+
+.user-name a {
+    width: 100px;
+    height: 50px;
 }
 
 /* @media screen and (max-width: 350px) {
@@ -307,6 +340,8 @@ h1 {
 }
 
 .item {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -342,6 +377,7 @@ h1 {
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
 }
 
 /* END SECTION POPULAIRES  */
@@ -351,7 +387,7 @@ h1 {
 #new {
     width: 100%;
     height: 400px;
-    background-color: #74EC8D;
+    background-color: #62c465e4;
     padding-top: 20px;
 }
 
@@ -364,7 +400,6 @@ h1 {
     color: black;
     font-weight: bold;
     text-align: center;
-
 }
 
 .slider {
@@ -427,8 +462,8 @@ h1 {
 /* section genre préférés */
 #gender {
     width: 100%;
-    height: auto;
-    background-color: #21DAFF;
+    height: 2000px;
+    background-color: #21b7ffb0;
 }
 
 #prefers {
@@ -477,6 +512,8 @@ h2#prefers {
 }
 
 .item1 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -526,7 +563,6 @@ hr.gender1 {
     height: 5px;
     margin: 0 auto;
     margin-top: 20px;
-
 }
 
 hr.gender1:after {
@@ -570,6 +606,8 @@ hr.gender1:after {
 }
 
 .item2 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -642,6 +680,8 @@ hr.gender1:after {
 }
 
 .item3 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -702,8 +742,8 @@ hr.gender1:after {
     padding-left: 30px;
     margin-top: 70px;
     margin-left: 70px;
-    background-color: #E0FF20;
-    ;
+    background-color: #e0ff2085;
+
 }
 
 .bouquine {
@@ -775,17 +815,17 @@ hr.gender1:after {
     flex-direction: column;
 }
 
-label {
-    font-size: 1.5rem;
+.formulaire label {
+    font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular';
     color: white;
 }
 
-input {
+input#mail {
     width: 400px;
-    height: 40px;
+    height: 35px;
     border-radius: 10px;
-    background-color: #d98f21e3;
+    background-color: white;
 }
 
 #send {
@@ -984,7 +1024,7 @@ p.livre {
 section#lecteur {
     width: 100%;
     height: 550px;
-    background-color: #21DAFF;
+    background-color: #21b7ffb0;
     padding-top: 20px;
 }
 
@@ -1011,7 +1051,7 @@ h2.lector {
     height: 300px;
     border: 3px solid black;
     border-radius: 40px;
-    background-color: #E0FF20;
+    background-color: #e0ff2085;
     ;
 }
 
@@ -1358,19 +1398,17 @@ p.author2 {
 /* END SECTION PAGE RESUME */
 
 /* SECTION CATALOGUE */
+
 #catalogue {
     width: 100%;
     height: 100%;
 }
+
 .catal {
     width: 100%;
     height: 1400px;
 }
 
-.searching {
-    width: 100%;
-    height: 100px;
-}
 
 h2.catalog {
     font-size: 3rem;
@@ -1387,10 +1425,10 @@ h2.catalog {
     margin-bottom: 30px;
 }
 
-.formul-s form {
+form#catalog-form {
     display: inline-block;
     width: 100%;
-    height: 50px;
+    height: 100px;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
 }
@@ -1402,36 +1440,55 @@ h2.catalog {
 }
 
 input#search-book {
+    width: 450px;
+    height: 40px;
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
 }
+
+button#search-button {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #da7b27;
+}
+
 .item4 {
     width: 200px;
     height: 380px;
     margin: 0 auto;
 }
+
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
+
 .books {
     width: 100%;
     height: 100%;
     margin-top: 100px;
 }
+
 .books-catalog {
     width: 400px;
     height: 300px;
     margin: 100px auto;
 }
+
 .container-books {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin: 100px auto;
     height: 100%;
 }
+
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1448,6 +1505,7 @@ p.authors {
 
 }
 
+
 /* END CATALOGUE */
 
 /* PAGE INFOS PRATIQUES */
@@ -1455,7 +1513,7 @@ p.authors {
 .info {
     width: 100%;
     height: 900px;
-    background: white;
+    background: #F4B97A;
 }
 
 .news {
@@ -1627,60 +1685,66 @@ form button {
     cursor: pointer;
 }
 
-
 /* FIN CONNEXION */
 
-
 /* PAGE INSCRIPTION */
+body {
+    width: 100%;
+    height: 100%;
+   }
+#bouquine{
+    width: 400px;
+    height: 600px;
+     background-image: url(../image/logo2.png);
+  background-repeat: no-repeat;
+  background-position-y: left center;
+}
 #suscribe {
     width: 100%;
-    height: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 
-
 .container-suscribe {
-    width: 100%;
-    height: 900px;
+    width: 50%;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
 .img-book {
-    height: 600px;
-}
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 40px;
 }
 
 .img-book img {
-    /* width: 500px; */
-    height: 600px;
+    /* width: 500px;  */
+    height: 500px;
 }
 
 .suscribe-form {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    margin-top: 20px;
 }
 
-img.form-logo {
-img.form-logo {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: auto;
-}
+ form#connect {
+    height: 600px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 h2.sus-form {
     font-size: 1.8rem;
     font-family: 'QuattrocentoSans-Bold';
     font-weight: 400;
-}
-
-.input {
-    height: 550px;
-    margin-bottom: 50px;
+    text-align: center;
 }
 
 .input label {
@@ -1693,25 +1757,60 @@ h2.sus-form {
 
 .input input {
     width: 400px;
+    height: 35px;
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: none;
-    border: none;
-    background-color: #f2f2f2;
+    border: 2px solid black;
+    background-color: white;
 }
 
+input#password {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+input#mail {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+input#birth {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+input#phone {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
 button[type="submit"] {
-    font-size: 1.2rem;
+    width: 200px;
+    height: 35px;
+    font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
     background-color: #74EC8D;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 50px;
 }
 
 /* END INSCRIPTION */
@@ -1808,6 +1907,7 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
+
 */
 /* END PAGE RECHERCHE AVANCEE */
 
@@ -1831,211 +1931,136 @@ input[type="submit"]:hover {
 
 /* DASHBOARD USER */
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-
-.navbar {
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 200px;
-	background-color: #333;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.navbar a {
-	padding: 10px;
-	margin: 5px;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.dash-accueil h3{
     width: 100%;
-    height: 100px;
-} */
-
-/* .sidebar-dash {
-    background-color: #F3BB00;
-    width: 300px;
-    height: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+    height: 450px;
 }
 
-.userinfo {
-	background-color: #eee;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-	text-align: center;
-    /* display: none; */
-.contain-perso{
-    width: 600px;
-    height: 400px;
-    background-color: #45a049;
-    
-} */
-
-/* .sidebar-dash ul {
-    font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin: 30px 0;
-}
-
-.sidebar-dash li {
-    margin-bottom: 10px;
-}
-
-.sidebar-dash a {
-    color: black;
-    display: block;
-    padding: 10px;
-} */
-
-/* .sidebar-dash a.active,
-.sidebar-dash a:hover {
-    background-color: #A29C4A;
-    color: #fff;
-    border-radius: 10px;
-}
-.personal{
-
-} */
-*/ */ .user-dash {
+.dashboard1 {
     width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background-color: #45a049;
-
+    height: 30px;
 }
-.container-info {
-    width: 100%;
-    height: 600px;
-    background-color: #ed20d5;
 
-}
-.dash-accueil {
-    width: 50%;
-    height: 100px;
+.dashboard1 h2 {
     font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-   display: block;
-   margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-.sidebar-dash {
-    background-color: #F3BB00;
-    width: 300px;
-    height: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+#user-nav {
+    width: 350px;
+    height: 450px;
+    background-color: #f39c12;
+    position: absolute;
+    top: 120px;
+    left: 0;
 }
 
-.sidebar-dash ul {
-    font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin: 30px 0;
-}
-
-.sidebar-dash li {
-    margin-bottom: 10px;
-}
-
-.sidebar-dash a {
-    color: black;
+#user-nav ul {
+    width: 350px;
+    height: 400px;
     display: block;
-    padding: 10px;
 }
 
-.sidebar-dash a.active,
-.sidebar-dash a:hover {
-    background-color: #A29C4A;
-    color: #fff;
-    border-radius: 10px;
+#user-nav li a {
+    width: 330px;
+    height: 105px;
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
 }
 
-.contain-perso {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-
+#user-nav li a:hover {
+    background-color: #e88e17d6;
 }
 
-.personal {
-    margin-top: 30px;
+.info1 {
+    width: 700px;
+    height: 400px;
+    background-color: #f6b339;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 90px;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    /* display: none; */
 }
 
-.modif {
-    margin-bottom: 20px;
-}
-
-/* END DASHBOARD USER */
-
-/* RESPONSIVE  DASHBOARD USER*/
-
-.modif {
-    width: 100%;
-    height: 50px;
-    margin-top: 30px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
+.info-perso {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-align: center;
 }
 
-form {
-    margin: 0 auto;
-    max-width: 500px;
+.names {
+    width: 400px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form#dash-form {
+    width: 650px;
+    height: 450px;
+    display: flex;
+    align-items: center;
 }
 
 label {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     display: block;
-    margin-top: 10px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    box-sizing: border-box;
+input[type="password"],
+input[type="tel"] {
+    width: 250px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
 }
 
 input[type="submit"] {
+    width: 130px;
     background-color: #74EC8D;
     color: white;
-    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
-
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-
-input.mailing {
-    background-color: white;
+input.adress {
+    width: 450px;
+    margin: 0;
 }
 
+input[type="email"]#email1 {
+    width: 450px;
+}
 
-/*# sourceMappingURL=style.css.map */
+input[type="tel"]#telephone {
+    width: 450px;
+    padding: 10px;
+    background-color: white;
+}
+form{
+    margin: auto;
+}
+
+/* END DASHBOARD USER */
