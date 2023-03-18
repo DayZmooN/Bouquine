@@ -1,10 +1,10 @@
 <?php
 //on démarre une session PHP on ecrit a chaquer page ou veut rester connecter en debut 
-session_start();
-if (!isset($_SESSION["user"])) {
-    header("location: connexion.php");
-    exit;
-}
+// session_start();
+// if (!isset($_SESSION["user"])) {
+//     header("location: connexion.php");
+//     exit;
+// }
 // on inclut le header 
 include_once './header.php';
 ?>
