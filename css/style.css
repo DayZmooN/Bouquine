@@ -75,12 +75,6 @@ nav.header-nav {
 nav ul {
     display: flex;
     color: #000;
-
-}
-
-li.search-box {
-    width: 550px;
-    height: 80px;
 }
 
 ul.menu {
@@ -91,6 +85,7 @@ ul.menu {
 nav li {
     position: relative;
     margin: auto;
+    
 }
 
 nav a {
@@ -107,13 +102,26 @@ nav ul ul {
     top: 100%;
     left: 0;
     min-width: 200px;
-    background-color: #FFC300;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
+    /* background-color: #da7b27; */
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
 }
-
+nav ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 1rem;
+    transition: all 0.8s ease;
+}
+nav ul li:hover a{
+    color: #FFF;
+    background-color: #da7b27;
+    
+}
 nav ul li:hover>ul {
     display: block;
-    z-index: -1;
+    z-index: 5;
 }
 
 nav ul ul li {
@@ -136,6 +144,10 @@ nav input[type="search"] {
 
 nav.menu-icon {
     display: none;
+}
+li.search-box {
+    width: 550px;
+    height: 80px;
 }
 
 form#form-header {
