@@ -85,7 +85,6 @@ ul.menu {
 nav li {
     position: relative;
     margin: auto;
-    
 }
 
 nav a {
@@ -102,10 +101,8 @@ nav ul ul {
     top: 100%;
     left: 0;
     min-width: 200px;
-    
-    /* background-color: #da7b27; */
-    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
 }
+
 nav ul li a {
     display: block;
     height: 50px;
@@ -114,11 +111,12 @@ nav ul li a {
     font-size: 1rem;
     transition: all 0.8s ease;
 }
-nav ul li:hover a{
+
+nav ul li:hover a {
     color: #FFF;
     background-color: #da7b27;
-    
 }
+
 nav ul li:hover>ul {
     display: block;
     z-index: 5;
@@ -145,6 +143,7 @@ nav input[type="search"] {
 nav.menu-icon {
     display: none;
 }
+
 li.search-box {
     width: 550px;
     height: 80px;
@@ -290,7 +289,7 @@ button#search-button {
 }
 
 h1 {
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 3rem;
     text-align: right;
     text-transform: uppercase;
@@ -303,7 +302,7 @@ h1 {
 #explain {
     width: 1000px;
     height: 250px;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 1.8rem;
     text-align: right;
     padding-top: 50px;
@@ -321,7 +320,7 @@ h1 {
 .popular {
     width: 100%;
     height: 80px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: black;
@@ -379,14 +378,14 @@ h1 {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     /* line-height: 10px; */
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 10px;
@@ -406,7 +405,7 @@ h1 {
 #nouveautes {
     width: 100%;
     height: 40px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: black;
@@ -475,13 +474,13 @@ h1 {
 #gender {
     width: 100%;
     height: 2000px;
-    background-color: #21b7ffb0;
+    background-color: #cdeff6;
 }
 
 #prefers {
     width: 100%;
     height: 80px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.8rem;
     color: black;
@@ -495,7 +494,7 @@ h2#prefers {
 
 #romance {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
     margin: 20px;
@@ -552,14 +551,14 @@ button#see {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     /* margin-bottom: 20px; */
@@ -589,7 +588,7 @@ hr.gender1:after {
 
 #fantaisie {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
     margin: 40px;
@@ -646,14 +645,14 @@ hr.gender1:after {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
@@ -663,7 +662,7 @@ hr.gender1:after {
 /* debut action  */
 #action {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
     margin: 40px;
@@ -720,14 +719,14 @@ hr.gender1:after {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
@@ -760,7 +759,7 @@ hr.gender1:after {
 
 .bouquine {
     font-size: 1.8rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: bold;
     text-align: center;
     margin: 50px;
@@ -768,7 +767,7 @@ hr.gender1:after {
 
 .list li {
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     list-style-type: square;
     margin-left: 20px;
 }
@@ -810,7 +809,7 @@ hr.gender1:after {
 }
 
 #titl {
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
     color: white;
@@ -829,7 +828,7 @@ hr.gender1:after {
 
 .formulaire label {
     font-size: 1.3rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
 }
 
@@ -843,7 +842,7 @@ input#mail {
 #send {
     width: 150px;
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
     background-color: #d98f21e3;
     border-radius: 50px;
@@ -856,10 +855,11 @@ input#mail {
 .abonner {
     width: 100%;
     height: 100px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    font-family: 'QuattrocentoSans-Regular';
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -1016,7 +1016,7 @@ section.parallax-section.compteur {
 
 p.livre {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     color: black;
     font-weight: 600;
     text-align: center;
@@ -1036,7 +1036,7 @@ p.livre {
 section#lecteur {
     width: 100%;
     height: 550px;
-    background-color: #21b7ffb0;
+    background-color: #cdeff6;
     padding-top: 20px;
 }
 
@@ -1045,7 +1045,7 @@ h2.lector {
     height: 50px;
     margin: 0 auto;
     text-align: center;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-transform: uppercase;
     font-size: 1.8rem;
     color: rgb(0, 0, 0);
@@ -1070,7 +1070,7 @@ h2.lector {
 h3.name {
     width: 140px;
     height: 10px;
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.3rem;
     color: rgb(0, 0, 0);
     margin-left: 20px;
@@ -1086,7 +1086,7 @@ h3.name {
 }
 
 p.value {
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-weight: 700;
@@ -1143,7 +1143,7 @@ img.social {
 .pol {
     width: 150px;
     height: auto;
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-weight: 700;
@@ -1153,14 +1153,14 @@ img.social {
 .politique {
     width: 400px;
     height: auto;
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-weight: 700;
 }
 
 p#copy {
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 1rem;
     color: rgb(0, 0, 0);
     height: 20px;
@@ -1220,7 +1220,7 @@ p#copy {
 
 .resum h3 {
     font-size: 1.3rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     line-height: 20px;
     color: #000;
@@ -1230,7 +1230,7 @@ p#copy {
 
 .resum p {
     font-size: 1.1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 500;
     color: #000;
     margin-top: 30px;
@@ -1270,7 +1270,7 @@ h3.read {
     width: 100%;
     height: 40px;
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     margin-top: 40px;
     color: #000;
@@ -1287,7 +1287,7 @@ h3.read {
 
 p.titl1 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     padding-top: 10px;
@@ -1295,7 +1295,7 @@ p.titl1 {
 
 p.author1 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     padding-top: 10px;
@@ -1310,7 +1310,7 @@ p.author1 {
 
 h3.describe {
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     color: #000;
     margin-left: 30px;
@@ -1318,7 +1318,7 @@ h3.describe {
 
 h4.bio {
     font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     color: #000;
     margin-left: 30px;
@@ -1329,7 +1329,7 @@ p.miller {
     width: 100%;
     height: 70px;
     font-size: 1.1rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     color: #000;
     margin-top: 40px;
@@ -1344,7 +1344,7 @@ p.miller {
 
 h4.detail {
     font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
     color: #000;
     margin-left: 30px;
@@ -1358,7 +1358,7 @@ ul.liste {
 .liste li {
     list-style-type: circle;
     font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 500;
     color: #000;
     margin-left: 30px;
@@ -1368,7 +1368,7 @@ h3.dispo {
     width: 100%;
     height: 30px;
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     margin-top: 40px;
     color: #000;
@@ -1386,7 +1386,7 @@ h3.dispo {
 
 p.title2 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     padding-top: 10px;
@@ -1394,7 +1394,7 @@ p.title2 {
 
 p.author2 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     /* padding-top: 5px; */
@@ -1421,10 +1421,9 @@ p.author2 {
     height: 1400px;
 }
 
-
 h2.catalog {
     font-size: 3rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
     text-align: center;
     margin-top: 30px;
@@ -1441,13 +1440,13 @@ form#catalog-form {
     display: inline-block;
     width: 100%;
     height: 100px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 600;
 }
 
 .formul-s label {
     display: none;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 600;
 }
 
@@ -1517,7 +1516,6 @@ p.authors {
 
 }
 
-
 /* END CATALOGUE */
 
 /* PAGE INFOS PRATIQUES */
@@ -1525,7 +1523,7 @@ p.authors {
 .info {
     width: 100%;
     height: 900px;
-    background: #F4B97A;
+    background: #ffe566;
 }
 
 .news {
@@ -1581,24 +1579,22 @@ ol.consignes li {
 
 #connexion {
     width: 100%;
-    height: 800px;
+    height: 600px;
     font-family: 'Quattrocento-Regular', sans-serif;
     position: absolute;
 }
 
 .lettreb {
     width: 100%;
-    height: 140px;
-}
-
-.b {
-    width: 150px;
-    height: 150px;
+    height: 100px;
 }
 
 img.b {
-    margin: 0 auto;
+    width: 300px;
+    height: 100px;
     display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .social-media {
@@ -1617,8 +1613,7 @@ form {
 .connect {
     width: 100%;
     height: 50px;
-    margin-top: 0;
-}
+   }
 
 h2.connect {
     font-size: 2rem;
@@ -1627,36 +1622,39 @@ h2.connect {
     text-align: center;
     color: #eb7371;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 .social-media {
-
+    width: 100%;
+    height: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.social-media p {
-    margin-top: 80px;
-    margin-right: 10px;
+.social-media p  {
+    margin-top: 20px;
+    margin-right: 20px;
     width: 30px;
     text-align: center;
     cursor: pointer;
-    color: #1b5bd2bc;
+    color: black;
 }
-
+.social-media a{
+    color: #000;
+}
 .social-media a:visited {
-    color: blue;
+    color: orange;
 }
 
-.social-media p:hover {
+/* .social-media p:hover {
     color: #b9671b;
-}
+} */
 
 p.email {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 50px;
     font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 600;
@@ -1685,14 +1683,14 @@ form p.inscription {
 }
 
 .inscription a:visited {
-    color: #ed20d5;
+    color: orange;
 }
 
 form button {
     padding: 15px 25px;
     border-radius: 5px;
     border: none;
-    font-size: 15px;
+    font-size: 1rem;
     background-color: #74EC8D;
     cursor: pointer;
 }
@@ -1979,17 +1977,20 @@ body {
     width: 350px;
     height: 400px;
     display: block;
+
 }
 
 #user-nav li a {
-    width: 330px;
-    height: 105px;
+    width: 350px;
+    height: 100px;
     display: block;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     color: black;
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    padding: 0 10px ;
+    transition: all 0.8s ease;
 }
 
 #user-nav li a:hover {
