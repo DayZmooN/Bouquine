@@ -194,80 +194,111 @@ button#search-button {
     height: 50px;
 }
 
-/* @media screen and (max-width: 350px) {
+/* media queries header */
+@media screen and (max-width: 400px) {
+
     header {
-      height: auto;
-      padding: 20px;
+    height: 80px;
+    flex-direction: column;
     }
     
     .logo {
-      margin-bottom: 20px;
+    flex: none;
+    order: 1;
     }
-  
-    nav {
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: center;
+    
+    .logo img {
+    height: 50px;
+    margin: 10px;
     }
-  
+    
+    input#menu-toggle:checked~nav.header-nav {
+    display: block;
+    }
+    
+    nav.header-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+    }
+    
+    nav.menu-icon {
+    display: block;
+    margin: 10px;
+    order: 2;
+    }
+    
     nav ul {
-      flex-direction: column;
+    display: none;
+    flex-direction: column;
+    order: 4;
     }
-  
+    
+    ul.menu {
+    height: auto;
+    width: 100%;
+    display: block;
+    }
+    
     nav li {
-      margin: 10px 0;
-      position: relative;
+    margin: 0;
+    width: 100%;
     }
-  
-    nav li ul {
-      position: static;
-      display: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    nav li:hover > ul {
-      display: block;
-    }
-  
+    
     nav a {
-      padding: 10px 0;
-      border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 0.9rem;
+    text-align: center;
     }
-  
-    nav input[type="text"] {
-      margin: 10px 0;
-      width: 100%;
+    
+    nav ul li a {
+    height: auto;
+    line-height: normal;
+    padding: 10px;
     }
-  
-    nav .menu-icon {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 26px;
-      line-height: 60px;
-      cursor: pointer;
+    
+    li.search-box {
+    width: 100%;
+    height: auto;
     }
-  
-    nav input[type="checkbox"] {
-      display: none;
+    
+    form#form-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     }
-  
-    nav ul.menu {
-      display: none;
-      position: absolute;
-      top: 60px;
-      width: 100%;
+    
+    img.img-user {
+    margin: 10px 0;
+    height: 30px;
     }
-  
-    input[type="checkbox"]:checked ~ ul.menu {
-      display: block;
-      z-index: 1;
+    
+    .user-name {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     }
-  }
-   */
-/* fin media queries header */
+    
+    .nom {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    }
+    
+    .user-name a {
+    width: 100%;
+    height: auto;
+    }
+    
+    }
+/* fin media queries header
 
 /* EN TETE  */
 
@@ -1924,26 +1955,38 @@ input[type="submit"]:hover {
 }
 
 
-*/
+
 /* END PAGE RECHERCHE AVANCEE */
 
 /* RESPONSIVE RECHERCHE AVANCEE  */
-
-/* @media only screen and (max-width: 350px) {
+@media (max-width: 350px) {
     .filter-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 0;
     }
-    label, input, select {
-      width: 100%;
-      margin-top: 10px;
+    
+    h2.search-filter {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
     }
+    
+    input[type="text"],
+    select,
+    input[type="number"] {
+    font-size: 0.8rem;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    }
+    
     input[type="submit"] {
-      margin-top: 20px;
+    font-size: 0.9rem;
+    padding: 8px;
     }
-  }
-   */
+    }
+
 
 /* DASHBOARD USER */
 body {
@@ -2080,3 +2123,48 @@ input[type="tel"]#telephone {
 }
 
 /* END DASHBOARD USER */
+
+/* ****** RESPONSIVE MOBILE DASHBOARD USER */
+@media only screen and (max-width: 350px) {
+   
+    .dashboard1 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    #user-nav ul {
+      display: none;
+    }
+  
+    #user-nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    #user-nav ul li:last-child {
+      margin-bottom: 0;
+    }
+  
+    #user-nav label {
+      display: none;
+    }
+  
+    #dash-form input[type="text"],
+    #dash-form input[type="email"],
+    #dash-form input[type="tel"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #dash-form label[for="adresse"] {
+      display: none;
+    }
+  
+    #dash-form input[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  /* *******END RESPONSIVE MOBILE DASHBOARD USER */
