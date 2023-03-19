@@ -1691,14 +1691,16 @@ form button {
 body {
     width: 100%;
     height: 100%;
-   }
-#bouquine{
-    width: 400px;
-    height: 600px;
-     background-image: url(../image/logo2.png);
-  background-repeat: no-repeat;
-  background-position-y: left center;
 }
+
+#bouquine {
+    width: 400px;
+    height: 500px;
+    background-image: url(../image/logo2.png);
+    background-repeat: no-repeat;
+    background-position-y: left center;
+}
+
 #suscribe {
     width: 100%;
     height: auto;
@@ -1732,8 +1734,8 @@ body {
     height: 100%;
 }
 
- form#connect {
-    height: 600px;
+form#connect {
+    height: 500px;
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -1776,6 +1778,7 @@ input#password {
     padding: 8px;
     margin-bottom: 10px;
 }
+
 input#mail {
     width: 400px;
     border: 2px solid black;
@@ -1784,6 +1787,7 @@ input#mail {
     padding: 8px;
     margin-bottom: 10px;
 }
+
 input#birth {
     width: 400px;
     border: 2px solid black;
@@ -1792,6 +1796,7 @@ input#birth {
     padding: 8px;
     margin-bottom: 10px;
 }
+
 input#phone {
     width: 400px;
     border: 2px solid black;
@@ -1800,10 +1805,11 @@ input#phone {
     padding: 8px;
     margin-bottom: 10px;
 }
+
 button[type="submit"] {
-    width: 200px;
+    width: 150px;
     height: 35px;
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
     background-color: #74EC8D;
