@@ -13,12 +13,12 @@ require_once './connect.php'
     <!-- HEADER -->
     <header>
         <nav class="header-nav">
+        <div id="close-menu">X</div>
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
-            <input id="menu-toggle" 2type="checkbox">
-            <label class="menu-icon" for="menu-toggle"></label>
-            <div class="menu-button"></div>
+            
+           
 
             <ul class="menu">
                 <li><a href="./catalogue.php">Catalogue</a></li>
@@ -65,4 +65,5 @@ require_once './connect.php'
         </ul>
         </div>
         </nav>
+        <div id="burger"><img src="../image/burger.png" alt="picto menu burger"></div>
     </header>
