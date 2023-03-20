@@ -1,5 +1,6 @@
 <?php
 require_once '../model/fonction-inscription.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,16 +16,16 @@ require_once '../model/fonction-inscription.php';
 
 <body>
     <section id="suscribe">
-    <div id="bouquine"></div>
+        <div id="bouquine"></div>
         <div class="container-suscribe">
-          
+
             <div class="img-book">
                 <img src="../image/etudiant.jpg" alt="Un étudiant porte un livre dnas les mains">
 
             </div>
 
             <div class="suscribe-form">
-               
+
                 <h2 class="sus-form">Créer un compte</h2>
                 <form id="connect" action="../model/fonction-inscription.php" method="POST">
                     <div class="input">

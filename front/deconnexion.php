@@ -1,11 +1,11 @@
 <?php
-session_start();
-if (!isset($_SESSION["user"])) {
-    header("location: accueil.php");
-    exit;
+function deconnecterUtilisateur()
+{
+    session_start();
+    if (isset($_SESSION['username'])) {
+        unset($_SESSION['username']);
+        session_destroy();
+        header('Location: ./acueil.php');
+        exit();
+    }
 }
-
-//supprime une variable sa supprime que la partie user 
-unset($_SESSION["user"]);
-
-header("location: ./accueil.php");

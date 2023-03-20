@@ -1,5 +1,5 @@
 <?php
-require_once '../connexion.php';
+require_once './auth.php';
 include './header-admin.php';
 
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `id_book` DESC');
@@ -18,7 +18,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 
-    <h2 class="sousTitre" >liste des articles</h2>
+<h2 class="sousTitre">liste des articles</h2>
 
 <?php
 foreach ($result as $article) {
@@ -30,6 +30,7 @@ foreach ($result as $article) {
         <div id="bouton">
 
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
+            <a class="btnRed" data-idbook="<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" style="color:red">Supprimer</a>
             <a class="btnRed" href="./deletearticle.php?id=<?= $article['id_book'] ?>" style="color:red">Supprimer</a>
             <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Cover</a>
             <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>">Genres</a>
@@ -38,14 +39,3 @@ foreach ($result as $article) {
     </div>
 <?php } ?>
 </body>
-
-<link rel="stylesheet" href="../css/style-admin.css">
-<div class="popup">
-    <h1>Voulez-vous supprimer définitivement :</h1>
-
-    <div class="title">ici le php qui fera apparaitre le titre </div>
-    <button class="btnYes">yes</button>
-    <button class="btnNo">no</button>
-</div>
-
-<?php include './includeClose.php'; ?>

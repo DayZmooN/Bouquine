@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require_once './connect.php';
 require_once './header-front.php';
 require_once './footer-front.php';
