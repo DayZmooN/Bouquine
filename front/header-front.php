@@ -6,10 +6,8 @@ require_once './connect.php'
 <head>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fontawesome.com/">
-     
 
 </head>
-
 
 <body>
     <!-- HEADER -->
@@ -19,7 +17,7 @@ require_once './connect.php'
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
             <input id="menu-toggle" 2type="checkbox">
-            <label class="menu-icon" for="menu-toggle" ></label>
+            <label class="menu-icon" for="menu-toggle"></label>
             <div class="menu-button"></div>
 
             <ul class="menu">
@@ -45,8 +43,8 @@ require_once './connect.php'
                         <button id="search-button" type="submit">Rechercher</button>
                     </form>
                 </li>
-            </ul>
-        </nav>
+           
+        
 
         <?php if (isset($_SESSION['user'])) { ?>
             <a href="./user-dashboard.php" class="img-user">
@@ -61,8 +59,10 @@ require_once './connect.php'
 
             </a>
             <a href="./connexion.php" class="img-user">
-                <span class="nom">Se connecter</span>
+                <input id="user-connect" type="button" value="Connexion">
             </a>
         <?php } ?>
+        </ul>
         </div>
+        </nav>
     </header>

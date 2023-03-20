@@ -3,8 +3,6 @@
 require_once '../model/connexion.php';
 
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +21,7 @@ require_once '../model/connexion.php';
 <body>
     <section id="connexion">
         <div class="lettreb">
-            <a href="./accueil.php"><img class="b" src="../image/b.png" alt="logo bouquine"></a>
+            <a href="./accueil.php"><img class="b" src="../image/logo1.png" alt="logo bouquine"></a>
         </div>
         <h2 class="connect">Se connecter</h2>
 
@@ -43,7 +41,7 @@ require_once '../model/connexion.php';
             <p class="inscription"><a href="#">J'ai oublié mon mot de passe</a><br>
                 Je n'ai pas de compte.<a href="./inscription.php"> S'inscrire</a></p>
             <div align="center">
-                <button type="submit"><a href="../model/connexion.php"> Se connecter</button></a>
+                <button id="suscribe-button" type="submit"><a href="../model/connexion.php"> Se connecter</button></a>
             </div>
         </form>
     </section>
