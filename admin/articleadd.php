@@ -1,28 +1,24 @@
 <?php
-require_once './auth.php';
+require_once '../connexion.php';
 
 if (isset($_POST['submit'])) {
-    try {
-        $addreq = $db->prepare("INSERT INTO `book`(`ISBN`,`image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES (:ISBN, :image, :title, :author, :editor, :collection, :publication_date, :genre, :id_category, :summary)");
-        $addreq->bindParam('ISBN', $_POST["ISBN"], PDO::PARAM_STR);
-        $addreq->bindParam('image', $_POST["image"], PDO::PARAM_STR);
-        $addreq->bindParam('title', $_POST["title"], PDO::PARAM_STR);
-        $addreq->bindParam('author', $_POST["author"], PDO::PARAM_STR);
-        $addreq->bindParam('editor', $_POST["editor"], PDO::PARAM_STR);
-        $addreq->bindParam('collection', $_POST["collection"], PDO::PARAM_STR);
-        $addreq->bindParam('publication_date', $_POST["publication_date"], PDO::PARAM_STR);
-        $addreq->bindParam('genre', $_POST["genre"], PDO::PARAM_STR);
-        $addreq->bindParam('id_category', $_POST["id_category"], PDO::PARAM_INT);
-        $addreq->bindParam('summary', $_POST["summary"], PDO::PARAM_STR);
-        $addreq->execute();
+    $ISBN = ($_POST['ISBN']);
+    $image = ($_POST['image']);
+    $title = ($_POST['title']);
+    $author = ($_POST['author']);
+    $editor = ($_POST['editor']);
+    $collection = ($_POST['collection']);
+    $publication_date = ($_POST['publication_date']);
+    $genre = ($_POST['genre']);
+    $id_category = ($_POST['id_category']);
+    $summary = ($_POST['summary']);
 
-        $_SESSION["success"] = "Votre livre a bien été crée";
-        header('location: ./article.php');
-    } catch (PDOException $e) {
-        $_SESSION["error"] = "Votre livre n'a pas été crée";
-        header('Location: ./article.php');
-        exit();
-    }
+    $addreq = $db->prepare("INSERT INTO `book`(`ISBN`,`image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES ('$ISBN','$image','$title','$author','$editor','$collection','$publication_date','$genre','$id_category','$summary')");
+    $addreq->execute();
+
+    $_SESSION['sucess'] = "Produit ajouté avec succès !";
+    header('Location: article.php');
+    exit();
 }
 
 include './header-admin.php';
@@ -66,7 +62,7 @@ include './header-admin.php';
 
         <div class="select">
 
-            <label for="id_category">Catégorie</label>
+            <label for="id_category">Catégorie :</label>
 
             <select name="id_category" id="id_category">
                 <?php
@@ -85,26 +81,30 @@ include './header-admin.php';
 
             <label for="genre"></label>
             <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
-
-            <label for="collection"></label>
-            <input type="text" name="collection" id="collection" placeholder="Collection">
         </div>
 
-        <div class="resume">
+        <div class="collectChoice">
 
-            <label for="summary">Résumé</label>
-            <textarea type="text" name="summary" id="summary"></textarea>
+            <label for="collection"></label>
+            <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
+        </div>
 
+        <div class="imageChoice">
+            <label for="image">Image :</label>
+            <input type="text" name="image" id="image" placeholder="indiquer votre image">
         </div>
 
     </div>
 
     <div class="formDroite">
+        <div class="resume">
 
-        <div class="imageChoice">
-            <label for="image">image</label>
-            <input type="text" name="image" id="image">
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary">ecrivez votre resumé</textarea>
+
         </div>
+
+
 
 
         <input type="submit" name="submit" value="Envoyer le formulaire">
