@@ -6,6 +6,7 @@ $query = $db->prepare('SELECT id_book,  image, title, author, status FROM book '
 $query->execute();
 ?>
 
+
 <body>
     <section id="catalogue">
         <div class="catal">

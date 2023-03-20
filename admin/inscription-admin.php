@@ -1,10 +1,6 @@
 <?php
 //on démarre une session PHP
-session_start();
-if (!isset($_SESSION["admin"])) {
-    header("location: profil.php");
-    exit;
-}
+
 //on verifie si le formulaire a été envoyé
 if (!empty($_POST)) {
     // var_dump($_POST);

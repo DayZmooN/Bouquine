@@ -36,13 +36,16 @@ a {
 #side-bar {
   max-width: 500px;
   width: 25%;
-  height: 100vh;
+  height: 100vw;
   position: fixed;
   background-color: #858585;
 }
 #side-bar > #logo > img {
   width: 100%;
   border-bottom: 1px solid black;
+}
+#side-bar > #menu-admin {
+  width: 100%;
 }
 #side-bar > #menu-admin > nav {
   max-width: 500px;
@@ -73,24 +76,27 @@ a {
 /*.....fin.....*/
 /*.....header + icones.....*/
 .corp {
-  max-width: 1300px;
   width: 75%;
-  height: 100%;
+  height: 100vw;
   float: right;
   background-color: #c8c8c8;
   /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
-  /*....................CSS.DASHBOARD....................*/
-  /*....................FIN.DASHBOARD....................*/
+  /*....................CSS.TABLEAU.DE.BORD....................*/
+  /*....................FIN.TABLEAU.DE.BORD....................*/
   /*....................CSS.ARTICLES....................*/
   /*....................FIN.CSS.ARTICLES....................*/
-  /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
-  /*....................FIN.FORMULAIRE.AJOUT....................*/
+  /*....................CSS.FORMULAIRE.AJOUT.LIVRE....................*/
+  /*....................FIN.FORMULAIRE.AJOUT.LIVRE....................*/
+  /*....................CSS.FORMULAIRE.MODIF.LIVRE....................*/
+  /*....................FIN.FORMULAIRE.MODIF.LIVRE....................*/
   /*....................CSS.CATEGORIES....................*/
   /*....................FIN.CSS.CATEGORIES....................*/
+  /*....................CSS.EDIT.CATEGORIES....................*/
+  /*....................FIN.EDIT.CATEGORIES....................*/
   /*....................CSS.GENRES....................*/
   /*....................FIN.CSS.GENRES....................*/
-  /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
-  /*....................fin.formulaire....................*/
+  /*....................CSS.EDIT.GENRE....................*/
+  /*....................FIN.EDIT.GENRE....................*/
   /*....................CSS.USER....................*/
   /*....................CSS.USER.FIN....................*/
   /*....................CSS.USER.MODIFICATION....................*/
@@ -117,7 +123,8 @@ a {
 }
 .corp > .multitaches {
   width: 100%;
-  height: 100vh;
+  height: 100vw;
+  background-color: #c8c8c8;
 }
 .corp > .multitaches > .multiTitre {
   width: 100%;
@@ -127,19 +134,18 @@ a {
 }
 .corp .multitaches > #compteurEtGraphique {
   width: 1000px;
-  height: 100%;
+  height: 120px;
   margin-top: 25px;
   margin-left: 25px;
 }
 .corp .multitaches > #dernier-ajout {
   width: 100%;
-  margin-top: -600px;
+  margin-top: 50px;
   text-transform: uppercase;
   text-align: center;
 }
 .corp .multitaches > #articleSearchAjout {
   width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -165,6 +171,7 @@ a {
   border-radius: 100px;
   margin-left: -50px;
   margin-right: 50px;
+  cursor: pointer;
 }
 .corp .multitaches > #articleSearchAjout > a {
   width: 300px;
@@ -225,7 +232,7 @@ a {
   flex-direction: column;
 }
 .corp .multitaches > #formulaireAjout > #formGauche > .titre-auteur > .tripleInput {
-  width: 350px;
+  width: 320px;
   height: 50px;
   margin-top: 50px;
   border: 0;
@@ -235,15 +242,290 @@ a {
 }
 .corp .multitaches > #formulaireAjout > #formGauche > .edition-date {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > div > #editor {
-  width: 350px;
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .editeur {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .editeur > #editor {
+  width: 320px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .ajoutDate {
+  width: 320px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .ajoutDate > .publication {
+  width: 90px;
+  height: 50px;
+  margin-top: 15px;
+}
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .ajoutDate > .date {
+  width: 235px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .select {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .select > #id_category {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .genreChoice {
+  width: 260px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .genreChoice > #genre {
+  width: 260px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .resume {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .resume > #summary {
+  width: 320px;
+  height: 300px;
+  resize: none;
+  margin-top: 10px;
+}
+.corp .multitaches > #formulaireAjout > .formDroite {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.corp .multitaches > #formulaireAjout > .formDroite > .imageChoice {
+  width: 100%;
+}
+.corp .multitaches > #formulaireAjout > .formDroite > .imageChoice > #image {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > #formulaireAjout > .formDroite > input {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #696969;
+  cursor: pointer;
+  color: #26F904;
+}
+.corp .multitaches > #formulaireModif {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #FFF5EE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.corp .multitaches > #formulaireModif > #formGauche {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .titre-auteur {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .titre-auteur > .tripleInput {
+  width: 320px;
   height: 50px;
   margin-top: 50px;
   border: 0;
   border-radius: 50px;
   background-color: #FFDAA4;
   padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur > #editor {
+  width: 320px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .ajoutDate {
+  width: 320px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .ajoutDate > .publication {
+  width: 90px;
+  height: 50px;
+  margin-top: 15px;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .ajoutDate > .date {
+  width: 235px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .select {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .genreChoice {
+  width: 260px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .genreChoice > #genre {
+  width: 260px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .resume {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .resume > #summary {
+  width: 320px;
+  height: 300px;
+  resize: none;
+  margin-top: 10px;
+}
+.corp .multitaches > #formulaireModif > .formDroite {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.corp .multitaches > #formulaireModif > .formDroite > .imageChoice {
+  width: 100%;
+}
+.corp .multitaches > #formulaireModif > .formDroite > .imageChoice > #image {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+}
+.corp .multitaches > #formulaireModif > .formDroite > input {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #696969;
+  cursor: pointer;
+  color: #26F904;
+}
+.corp .multitaches > #ajoutCategorie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.corp .multitaches > #ajoutCategorie > .ajout {
+  width: 700px;
+  height: 100px;
+  background-color: #FFDAA4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.corp .multitaches > #ajoutCategorie > .ajout > .newCat {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajoutCategorie > .ajout > .slugCat {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajoutCategorie > .ajout > .subCat {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #696969;
+  cursor: pointer;
 }
 .corp .multitaches > .categorieList {
   width: 100%;
@@ -265,6 +547,103 @@ a {
   border: 1px solid black;
   margin: 10px 10px;
 }
+.corp .multitaches > .titleEditCategory {
+  width: 500px;
+  padding-top: 100px;
+  margin: auto;
+}
+.corp .multitaches > #editCategorie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.corp .multitaches > #editCategorie > .edit {
+  width: 700px;
+  height: 100px;
+  background-color: #FFDAA4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.corp .multitaches > #editCategorie > .edit > .editCat {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #editCategorie > .edit > .editSlugCat {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #editCategorie > .edit > .subEditCat {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #696969;
+  cursor: pointer;
+}
+.corp .multitaches > #ajoutGenre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.corp .multitaches > #ajoutGenre > .ajout {
+  width: 700px;
+  height: 100px;
+  background-color: #FFDAA4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 1px grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.corp .multitaches > #ajoutGenre > .ajout > .newGenre {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajoutGenre > .ajout > .slugGenre {
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.corp .multitaches > #ajoutGenre > .ajout > .subGenre {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #696969;
+  cursor: pointer;
+}
 .corp .multitaches > .genreList {
   width: 100%;
   display: flex;
@@ -285,26 +664,31 @@ a {
   border: 1px solid black;
   margin: 10px 10px;
 }
-.corp .multitaches > #ajout-categorie {
+.corp .multitaches > .titleEditGenre {
+  width: 500px;
+  padding-top: 100px;
+  margin: auto;
+}
+.corp .multitaches > #sectionEditGenre {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
-.corp .multitaches > #ajout-categorie > .ajout {
-  width: 300px;
-  height: 300px;
+.corp .multitaches > #sectionEditGenre > .edit {
+  width: 700px;
+  height: 100px;
   background-color: #FFDAA4;
   border-radius: 15px;
   box-shadow: 1px 1px 10px 1px grey;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   justify-items: center;
 }
-.corp .multitaches > #ajout-categorie > .ajout > .newCat {
+.corp .multitaches > #sectionEditGenre > .edit > .editGenre {
   width: 200px;
   height: 50px;
   border: 0;
@@ -312,87 +696,7 @@ a {
   text-align: center;
   font-size: 1.1rem;
 }
-.corp .multitaches > #ajout-categorie > .ajout > button {
-  width: 150px;
-  height: 50px;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 10px;
-  background-color: #696969;
-}
-.corp .multitaches > #ajout-categorie > .ajout > button > a {
-  font-size: 1.1rem;
-  color: white;
-}
-.corp .multitaches > #ajout-categorie > .modifierSupp {
-  width: 500px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-  background-color: #FFDAA4;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px 1px grey;
-}
-.corp .multitaches > #ajout-categorie > .modifierSupp > #selection {
-  width: 350px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.corp .multitaches > #ajout-categorie > .modifierSupp > #selection > #id_category {
-  width: 150px;
-  height: 30px;
-  margin-right: 10px;
-  border-radius: 50px;
-  border-color: #FFDAA4;
-  text-align: center;
-  font-size: 1.1rem;
-}
-.corp .multitaches > #ajout-categorie > .modifierSupp > #selection > .modifCat {
-  margin-right: 10px;
-  width: 150px;
-  height: 30px;
-  text-align: center;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  border: 0;
-}
-.corp .multitaches > #ajout-categorie > .modifierSupp button {
-  margin-right: 10px;
-  width: 150px;
-  height: 50px;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 10px;
-  background-color: #696969;
-}
-.corp .multitaches > #ajout-categorie > .modifierSupp button > a {
-  font-size: 1.1rem;
-  color: white;
-}
-.corp .multitaches > #ajout-genre {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 100px;
-}
-.corp .multitaches > #ajout-genre > .ajout {
-  width: 300px;
-  height: 300px;
-  background-color: #FFDAA4;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px 1px grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-.corp .multitaches > #ajout-genre > .ajout > .newGenre {
+.corp .multitaches > #sectionEditGenre > .edit > .editSlugGenre {
   width: 200px;
   height: 50px;
   border: 0;
@@ -400,66 +704,16 @@ a {
   text-align: center;
   font-size: 1.1rem;
 }
-.corp .multitaches > #ajout-genre > .ajout > button {
+.corp .multitaches > #sectionEditGenre > .edit > .subEditGenre {
   width: 150px;
   height: 50px;
   text-transform: uppercase;
   border: 0;
   border-radius: 10px;
-  background-color: #696969;
-}
-.corp .multitaches > #ajout-genre > .ajout > button > a {
   font-size: 1.1rem;
   color: white;
-}
-.corp .multitaches > #ajout-genre > .modifierSupp {
-  width: 500px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-items: center;
-  background-color: #FFDAA4;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px 1px grey;
-}
-.corp .multitaches > #ajout-genre > .modifierSupp > #selection {
-  width: 350px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.corp .multitaches > #ajout-genre > .modifierSupp > #selection > #genre {
-  width: 150px;
-  height: 30px;
-  margin-right: 10px;
-  border-radius: 50px;
-  border-color: #FFDAA4;
-  text-align: center;
-  font-size: 1.1rem;
-}
-.corp .multitaches > #ajout-genre > .modifierSupp > #selection > .modifGenre {
-  margin-right: 10px;
-  width: 150px;
-  height: 30px;
-  text-align: center;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  border: 0;
-}
-.corp .multitaches > #ajout-genre > .modifierSupp button {
-  margin-right: 10px;
-  width: 150px;
-  height: 50px;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 10px;
   background-color: #696969;
-}
-.corp .multitaches > #ajout-genre > .modifierSupp button > a {
-  font-size: 1.1rem;
-  color: white;
+  cursor: pointer;
 }
 .corp .multitaches > #userMenu {
   width: 50%;
@@ -487,6 +741,7 @@ a {
   border-radius: 100px;
   margin-left: -50px;
   margin-right: 50px;
+  cursor: pointer;
 }
 .corp .multitaches > #userMenu > .boutonUser {
   width: 400px;
@@ -575,7 +830,7 @@ a {
 #sideVide {
   max-width: 500px;
   width: 25%;
-  height: 100vh;
+  height: 100vw;
   position: fixed;
   background-color: #858585;
 }
@@ -587,14 +842,14 @@ a {
 .bodyConnexion {
   max-width: 1300px;
   width: 75%;
-  height: 100 vh;
+  height: 100 vw;
   float: right;
 }
 .bodyConnexion > .connexion {
   width: 500px;
   height: 350px;
   border-radius: 15px;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: 350px;
   background-color: #FFDAA4;
 }
@@ -604,12 +859,14 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-.bodyConnexion > .connexion > #mail, .bodyConnexion > .connexion #pass {
+.bodyConnexion > .connexion > #mail,
+.bodyConnexion > .connexion #pass {
   width: 300px;
   height: 50px;
   margin: 30px 100px;
 }
-.bodyConnexion > .connexion > #mail > input, .bodyConnexion > .connexion #pass > input {
+.bodyConnexion > .connexion > #mail > input,
+.bodyConnexion > .connexion #pass > input {
   width: 300px;
   height: 50px;
   border-radius: 50px;
@@ -671,4 +928,49 @@ a {
   background-color: #FF0404;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.block-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active-box-delete-book {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.active-box-delete-book p#txt-box-delete-category {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.active-box-delete-book a#btn-cancel-delete-category,
+.active-box-delete-book a#btn-confirmed-delete-book {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.active-box-delete-book a#btn-cancel-delete-category {
+  background-color: #999;
+  margin-right: 10px;
+}
+.active-box-delete-book a#btn-confirmed-delete-book {
+  background-color: #d9534f;
 }/*# sourceMappingURL=style-admin.css.map */

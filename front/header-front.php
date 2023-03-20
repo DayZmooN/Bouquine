@@ -1,23 +1,15 @@
-<?
-require_once './connect.php';
-require_once './header-front.php';
-require_once './footer-front.php';
-require_once '../admin/barre/seachbar.php';
+<?php
+session_start();
+require_once './connect.php'
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fontawesome.com/">
      
 
 </head>
+
 
 <body>
     <!-- HEADER -->
@@ -56,11 +48,21 @@ require_once '../admin/barre/seachbar.php';
             </ul>
         </nav>
 
-        <a href="./connexion.php"><img class="img-user" src="../image/user.png" alt="connexion au compte ">
-        <span class="nom">User</span></a>
+        <?php if (isset($_SESSION['user'])) { ?>
+            <a href="./user-dashboard.php" class="img-user">
+                <img class="img-user" src="../image/user.png" alt="image">
+                <span class="nom"><?php echo $_SESSION['user']['username']; ?></span>
+            </a>
+            <form action="../model/deconnexion.php" method="post">
+                <button type="submit" name="logout">Déconnexion</button>
+            </form>
+        <?php }
+        if (!isset($_SESSION['user'])) { ?>
+
+            </a>
+            <a href="./connexion.php" class="img-user">
+                <span class="nom">Se connecter</span>
+            </a>
+        <?php } ?>
         </div>
     </header>
-
-</body>
-
-</html
