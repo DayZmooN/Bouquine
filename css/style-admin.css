@@ -131,6 +131,7 @@ a {
   padding-top: 40px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 4rem;
 }
 .corp .multitaches > #compteurEtGraphique {
   width: 1000px;
@@ -176,8 +177,8 @@ a {
 .corp .multitaches > #articleSearchAjout > a {
   width: 300px;
   margin-top: 50px;
-  color: white;
-  font-size: 1.3rem;
+  color: rgb(22, 20, 20);
+  font-size: 1.2rem;
   text-align: center;
   border: 1px solid white;
   border-radius: 25px;
@@ -288,7 +289,7 @@ a {
   margin-top: 50px;
 }
 .corp .multitaches > #formulaireAjout > .formMilieu > .select > #id_category {
-  width: 200px;
+  width: 190px;
   height: 50px;
   border: 0;
   border-radius: 50px;
@@ -307,19 +308,29 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulaireAjout > .formMilieu > .resume {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.corp .multitaches > #formulaireAjout > .formMilieu > .collectChoice {
+  width: 260px;
   margin-top: 50px;
 }
-.corp .multitaches > #formulaireAjout > .formMilieu > .resume > #summary {
+.corp .multitaches > #formulaireAjout > .formMilieu > .collectChoice > #collection {
+  width: 260px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .imageChoice {
   width: 320px;
-  height: 300px;
-  resize: none;
-  margin-top: 10px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .imageChoice > #image {
+  width: 210px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
 }
 .corp .multitaches > #formulaireAjout > .formDroite {
   width: 30%;
@@ -328,15 +339,22 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-.corp .multitaches > #formulaireAjout > .formDroite > .imageChoice {
+.corp .multitaches > #formulaireAjout > .formDroite > .resume {
   width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
 }
-.corp .multitaches > #formulaireAjout > .formDroite > .imageChoice > #image {
-  width: 200px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
+.corp .multitaches > #formulaireAjout > .formDroite > .resume > #summary {
+  width: 320px;
+  height: 400px;
+  resize: none;
+  margin-top: 10px;
+  border: 1px solid #FFDAA4;
+  border-radius: 10px;
+  padding: 5px 5px;
 }
 .corp .multitaches > #formulaireAjout > .formDroite > input {
   width: 200px;
@@ -423,7 +441,7 @@ a {
   margin-top: 50px;
 }
 .corp .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
-  width: 200px;
+  width: 190px;
   height: 50px;
   border: 0;
   border-radius: 50px;
@@ -442,19 +460,29 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulaireModif > .formMilieu > .resume {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.corp .multitaches > #formulaireModif > .formMilieu > .collectChoice {
+  width: 260px;
   margin-top: 50px;
 }
-.corp .multitaches > #formulaireModif > .formMilieu > .resume > #summary {
+.corp .multitaches > #formulaireModif > .formMilieu > .collectChoice > #collection {
+  width: 260px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .imageChoice {
   width: 320px;
-  height: 300px;
-  resize: none;
-  margin-top: 10px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .imageChoice > #image {
+  width: 210px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
 }
 .corp .multitaches > #formulaireModif > .formDroite {
   width: 30%;
@@ -463,15 +491,22 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-.corp .multitaches > #formulaireModif > .formDroite > .imageChoice {
+.corp .multitaches > #formulaireModif > .formDroite > .resume {
   width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
 }
-.corp .multitaches > #formulaireModif > .formDroite > .imageChoice > #image {
-  width: 200px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
+.corp .multitaches > #formulaireModif > .formDroite > .resume > #summary {
+  width: 320px;
+  height: 400px;
+  resize: none;
+  margin-top: 10px;
+  border: 1px solid #FFDAA4;
+  border-radius: 10px;
+  padding: 5px 5px;
 }
 .corp .multitaches > #formulaireModif > .formDroite > input {
   width: 200px;
@@ -893,43 +928,6 @@ a {
 
 /*....................FIN.CSS.CONNEXION....................*/
 /*....................DELETE.CSS....................*/
-.popup {
-  width: 500px;
-  height: 250px;
-  position: fixed;
-  box-shadow: 1px 1px 10px 1px grey;
-  border-radius: 25px;
-  text-align: center;
-  margin-top: 0;
-  margin-left: 50%;
-  transform: translate(-50%, 50%);
-  z-index: 99999;
-}
-.popup > h1 {
-  width: 500px;
-  padding-top: 30px;
-  font-family: LRT Oksana Bold;
-}
-.popup > .title {
-  width: 500px;
-  height: 50px;
-  margin-top: 10px;
-}
-.popup > .btnYes {
-  width: 100px;
-  height: 70px;
-  background-color: #26F904;
-  margin-right: 20px;
-  cursor: pointer;
-}
-.popup > .btnNo {
-  width: 100px;
-  height: 70px;
-  background-color: #FF0404;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
 .block-modal {
   position: fixed;
   top: 0;
