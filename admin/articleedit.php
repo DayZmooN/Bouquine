@@ -51,80 +51,87 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC))
 <form id="formulaireModif" action="#" method="POST">
 
 <div id="formGauche">
-    <div class="titre-auteur">
+                    <div class="titre-auteur">
 
-        <label for="title"></label>
-        <input class="tripleInput" type="text" name="title" id="title" placeholder="le seigneur des anneau la communauté de l'anneau">
-
-
-        <label for="author"></label>
-        <input class="tripleInput" type="text" name="author" id="author" placeholder="J.R.R Tolkien">
+                        <label for="title"></label>
+                        <input class="tripleInput" type="text" name="title" id="title" placeholder="la seigneur d'onlinepro : la communauté de najia ">
 
 
-        <label for="ISBN"></label>
-        <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="9-788175-257665">
-
-    </div>
-
-    <div class="edition-date">
-        <div class="editeur">
-            <label for="editor"></label>
-            <input type="text" name="editor" id="editor" placeholder="Christian Bourgois">
-        </div>
-
-        <div class="ajoutDate">
-            <label class="publication" for="publication_date">Publication : </label>
-            <input class="date" type="date" name="publication_date" id="publication_date" placeholder="Christian 1954-01-01">
-        </div>
-
-    </div>
-</div>
-    
-<div class="formMilieu">
-
-    <div class="select">
-
-        <label for="id_category">Catégorie</label>
-
-        <select name="id_category" id="id_category">
-            <?php
-            $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-            $reqCat->execute();
-            while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-            ?>
-        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
-    <?php } ?>
-        </select>
-
-    </div>
+                        <label for="author"></label>
+                        <input class="tripleInput" type="text" name="author" id="author" placeholder="Nain connu">
 
 
-    <div class="genreChoice">
+                        <label for="ISBN"></label>
+                        <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="0-00000-000">
 
-        <label for="genre"></label>
-        <input type="text" name="genre" id="genre" placeholder="Fantastique">
-    </div>
+                    </div>
 
-    <div class="resume">
+                    <div class="edition-date">
+                        <div class="editeur">
+                            <label for="editor"></label>
+                            <input type="text" name="editor" id="editor" placeholder="Online Edition">
+                        </div>
 
-        <label for="summary">Résumé</label>
-        <textarea type="text" name="summary" id="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat libero delectus fugiat numquam est iusto impedit provident error ad minima similique corporis, dignissimos quis obcaecati? Neque repellat illum nemo eius?</textarea>
+                        <div class="ajoutDate">
+                            <label class="publication" for="publication_date">Publication :  </label>
+                            <input class="date" type="date" name="publication_date" id="publication_date">
+                        </div>
 
-    </div>
+                    </div>
+                </div>
+                    
+                <div class="formMilieu">
 
-</div>
+                    <div class="select">
 
-<div class="formDroite">
-    
-    <div class="imageChoice">
-        <label for="image">image</label>
-        <input type="text" name="image" id="image" placeholder="image.png">
-    </div>
+                        <label for="id_category">Catégorie :</label>
 
-    
-    <input type="submit" name="submit" value="Envoyer le formulaire">
-</div>
+                        <select name="id_category" id="id_category">
+                            <?php
+                            $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                            $reqCat->execute();
+                            while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
+                            ?>
+                        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                    <?php } ?>
+                        </select>
 
-</form>
+                    </div>
+
+
+                    <div class="genreChoice">
+
+                        <label for="genre"></label>
+                        <input type="text" name="genre" id="genre" placeholder="jeunesse">
+                    </div>
+
+                    <div class="collectChoice">
+
+                        <label for="collection"></label>
+                        <input type="text" name="genre" id="collection" placeholder="collection mille fleur">
+                    </div>
+
+                    <div class="imageChoice">
+                        <label for="image">Image :</label>
+                        <input type="text" name="image" id="image" placeholder="milka.png">
+                    </div>
+
+                </div>
+
+                <div class="formDroite">
+                    <div class="resume">
+
+                        <label for="summary">Résumé</label>
+                        <textarea type="text" name="summary" id="summary">il etait une fois dans une contré lointaine une petite najia qui un jour devins la seignerresse d'online forma pro .Elle etait a la recherche du saint graal . Un PC pour les coder tous un PC qui n'aura nul Administrateur que Najia un PC que l'on appellera l'unique. </textarea>
+
+                    </div>
+                    
+                    
+
+                    
+                    <input type="submit" name="submit" value="Envoyer le formulaire">
+                </div>
+
+            </form>
 
 <?php include './includeClose.php'  ?>

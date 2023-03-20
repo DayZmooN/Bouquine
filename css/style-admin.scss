@@ -348,7 +348,7 @@ a {
                 margin-top: 50px;
 
                 & > #id_category{
-                    width: 200px;
+                    width: 190px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
@@ -373,21 +373,35 @@ a {
 
             }
 
-            & > .resume{
-                width: 100%;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
+            & > .collectChoice{
+                width: 260px;
                 margin-top: 50px;
 
-                & > #summary{
-                    width: 320px;
-                    height: 300px;
-                    resize: none;
-                    margin-top: 10px;
+                & > #collection{
+                    width: 260px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
                 }
             }
+
+            & > .imageChoice{
+                width: 320px;
+                margin-top: 50px;
+
+                & > #image{
+                    width: 210px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+                }
+            }
+
+            
         }
 
         & > .formDroite{
@@ -397,17 +411,27 @@ a {
             justify-content: space-around;
             align-items: center;
 
-            & > .imageChoice{
+            & > .resume{
                 width: 100%;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 20px;
+                
 
-                & > #image{
-                    width: 200px;
-                    height: 50px;
-                    border: 0;
-                    border-radius: 50px;
-                    background-color: $remplissage;
+                & > #summary{
+                    width: 320px;
+                    height: 400px;
+                    resize: none;
+                    margin-top: 10px;
+                    border: 1px solid $remplissage;
+                    border-radius: 10px;
+                    padding: 5px 5px;
                 }
             }
+
+            
 
             
 
@@ -515,7 +539,7 @@ a {
                 margin-top: 50px;
 
                 & > #id_category{
-                    width: 200px;
+                    width: 190px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
@@ -540,21 +564,35 @@ a {
 
             }
 
-            & > .resume{
-                width: 100%;
-                height: 200px;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
+            & > .collectChoice{
+                width: 260px;
                 margin-top: 50px;
 
-                & > #summary{
-                    width: 320px;
-                    height: 300px;
-                    resize: none;
-                    margin-top: 10px;
+                & > #collection{
+                    width: 260px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
                 }
             }
+
+            & > .imageChoice{
+                width: 320px;
+                margin-top: 50px;
+
+                & > #image{
+                    width: 210px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+                }
+            }
+
+            
         }
 
         & > .formDroite{
@@ -564,17 +602,27 @@ a {
             justify-content: space-around;
             align-items: center;
 
-            & > .imageChoice{
+            & > .resume{
                 width: 100%;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 20px;
+                
 
-                & > #image{
-                    width: 200px;
-                    height: 50px;
-                    border: 0;
-                    border-radius: 50px;
-                    background-color: $remplissage;
+                & > #summary{
+                    width: 320px;
+                    height: 400px;
+                    resize: none;
+                    margin-top: 10px;
+                    border: 1px solid $remplissage;
+                    border-radius: 10px;
+                    padding: 5px 5px;
                 }
             }
+
+            
 
             
 
