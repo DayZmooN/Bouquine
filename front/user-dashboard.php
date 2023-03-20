@@ -20,8 +20,9 @@ require_once './header-front.php';
   </div>
   <nav id="user-nav">
     <ul>
-      <li><a href="#">Emprunter un livre</a></li>
+      
       <li><a href="#">Modifier mes informations personnelles</a></li>
+      <li><a href="#">Emprunter un livre</a></li>
       <li><a href="#">Supprimer mon compte</a></li>
       <li><a href="#">Déconnexion</a></li>
     </ul>
