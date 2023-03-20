@@ -38,7 +38,7 @@ if (!isset($_SESSION["admin"])) {
                     <li><img src="../image/genresDashboard.png" alt="icone genres du dashboard"><a href="./genre.php">Genre</a></li>
                     <li><img src="../image/userDashboard.png" alt="icone user du dashboard"><a href="./user.php">Users</a></li>
                     <li><img src="../image/newsLetterDashboard.png" alt="icone newsletter du dashboard"><a href="../admin/newsletter.php">Newsletter</a></li>
-                    <li><img src="../image/newsLetterDashboard.png" alt="icone newsletter du dashboard"><a href="./deconnexion-admin.php">deconnexion</a></li>
+
                 </ul>
             </nav>
         </div>
