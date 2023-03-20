@@ -638,6 +638,43 @@ a {
 
 /*....................FIN.CSS.CONNEXION....................*/
 /*....................DELETE.CSS....................*/
+.popup {
+  width: 500px;
+  height: 250px;
+  position: fixed;
+  box-shadow: 1px 1px 10px 1px grey;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 99999;
+  display: none;
+}
+.popup > h1 {
+  width: 500px;
+  padding-top: 30px;
+  font-family: LRT Oksana Bold;
+}
+.popup > .title {
+  width: 500px;
+  height: 50px;
+  margin-top: 10px;
+}
+.popup > .btnYes {
+  width: 100px;
+  height: 70px;
+  background-color: #26F904;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.popup > .btnNo {
+  width: 100px;
+  height: 70px;
+  background-color: #FF0404;
+  margin-left: 20px;
+  cursor: pointer;
+}
 
 .block-modal {
   position: fixed;
@@ -682,93 +719,4 @@ a {
 }
 .active-box-delete-book a#btn-confirmed-delete-book {
   background-color: #d9534f;
-}
-
-/* modal error
-/* CSS de la modal */
-.modal {
-  display: none; /* Cache la modal par défaut */
-  position: fixed; /* Permet de la positionner par rapport à la fenêtre du navigateur */
-  z-index: 1; /* Place la modal au dessus du reste de la page */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto; /* Active le défilement de la page si le contenu dépasse la taille de la modal */
-  background-color: rgba(0,0,0,0.4); /* Ajoute un fond noir semi-transparent */
-}
-
-/* Style de la boite de contenu de la modal */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% de marge au-dessus et en dessous de la modal */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Largeur de la modal */
-  max-width: 500px; /* Largeur maximale de la modal */
-}
-
-/* Style du bouton de fermeture de la modal */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-/* Change la couleur du bouton de fermeture lorsque la souris passe dessus */
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-/* modal success  */
-
-.modal-success {
-  display: none; /* masquer par défaut */
-  position: fixed; /* position fixe pour être au-dessus de tout le contenu */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* couleur de fond semi-transparente */
-  z-index: 9999; /* pour être sûr que la modal soit au-dessus de tout le contenu */
-}
-
-.modal-success .modal-content {
-  background-color: #ffffff; /* couleur de fond de la modal */
-  max-width: 600px; /* largeur maximale de la modal */
-  margin: 10% auto; /* centrer la modal verticalement et horizontalement */
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.modal-success .modal-content h2 {
-  font-size: 24px; /* taille de la police du titre */
-  margin-bottom: 10px; /* marge en bas du titre */
-}
-
-.modal-success .modal-content p {
-  font-size: 18px; /* taille de la police du texte */
-  margin-bottom: 20px; /* marge en bas du texte */
-}
-
-.modal-success .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #999999;
-  cursor: pointer;
-}
-
-.modal-success.show {
-  display: block; /* afficher la modal */
-}
-
-/*# sourceMappingURL=style-admin.css.map */
+}/*# sourceMappingURL=style-admin.css.map */
