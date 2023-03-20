@@ -1,5 +1,4 @@
 <?php
-session_start();
 try {
     require_once './auth.php';
     $id = $_GET['id'];
