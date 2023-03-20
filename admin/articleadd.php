@@ -92,7 +92,8 @@ include './header-admin.php';
                         <label for="genre"></label>
                         <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
                     </div>
-
+                    <label for="collection"></label>
+                        <input type="text" name="collection" id="collection" placeholder="indiquez la collection">
                 </div>
 
                 <div class="formDroite">
