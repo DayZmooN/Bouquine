@@ -1,5 +1,5 @@
 <?php
-require_once '../connexion.php';
+require_once './auth.php';
 
 if (isset($_POST['submit'])) {
     $id = $_GET['id'];
@@ -39,96 +39,69 @@ $id = $_GET['id'];
 $req = $db->prepare("SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` WHERE `id_book` = :id");
 $req->bindParam('id', $id, PDO::PARAM_INT);
 $req->execute();
-
-while ($article = $req->fetch(PDO::FETCH_ASSOC))
+while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
 ?>
-<h1 class="multiTitre">formulaire modification de livre</h1>
+    <h1 class="multiTitre">formulaire modification de livre</h1>
 
+    <form id="formulaire" action="#" method="POST" enctype="multipart/form-data">
 
+        <div id="gauche">
+            <div class="titre-auteur">
 
+                <label for="title"></label>
+                <input type="text" name="title" id="title" value="<?= $article['title'] ?>">
 
-<form id="formulaireModif" action="#" method="POST">
+                <label for="author"></label>
+                <input type="text" name="author" id="author" value="<?= $article['author'] ?>">
 
-    <div id="formGauche">
-        <div class="titre-auteur">
+                <label for="ISBN"></label>
+                <input type="text" name="ISBN" id="ISBN" value="<?= $article['ISBN'] ?>">
 
-            <label for="title"></label>
-            <input class="tripleInput" type="text" name="title" id="title" value="la seigneur d'onlinepro : la communauté de najia ">
+            </div>
 
+            <div class="edition-date">
 
-            <label for="author"></label>
-            <input class="tripleInput" type="text" name="author" id="author" value="Nain connu">
-
-
-            <label for="ISBN"></label>
-            <input class="tripleInput" type="text" name="ISBN" id="ISBN" value="0-00000-000">
-
-        </div>
-
-        <div class="edition-date">
-            <div class="editeur">
                 <label for="editor"></label>
-                <input type="text" name="editor" id="editor" value="Online Edition">
+                <input type="text" name="editor" id="editor" value="<?= $article['editor'] ?>">
+
+                <label class="publication" for="publication_date">Publication</label>
+                <input class="date" type="date" name="publication_date" id="publication_date" value="<?= $article['publication_date'] ?>">
+
+                <label class="collection" for="collection"></label>
+                <input type="text" name="collection" id="collection" value="<?= $article['collection'] ?>" placeholder="Collection">
+
+                <label class="genre" for="genre"></label>
+                <input type="text" name="genre" id="genre" value="<?= $article['genre'] ?>" placeholder="genre">
+
             </div>
 
-            <div class="ajoutDate">
-                <label class="publication" for="publication_date">Publication : </label>
-                <input class="date" type="date" name="publication_date" id="publication_date">
+            <div class="multiSelect">
+
+                <div class="select">
+                    <label for="id_category">Catégorie</label>
+                    <select name="id_category" id="id_category">
+                        <?php
+                        $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                        $reqCat->execute();
+                        while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
+                            <option value="<?= $category['id_category'] ?>" <?= $article['id_category'] == $category['id_category'] ? 'selected' : '' ?>><?= $category['libel_category'] ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+
             </div>
-
-        </div>
-    </div>
-
-    <div class="formMilieu">
-
-        <div class="select">
-
-            <label for="id_category">Catégorie :</label>
-
-            <select name="id_category" id="id_category">
-                <?php
-            $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-            $reqCat->execute();
-            while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                ?>
-                    <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
-                <?php } ?>
-            </select>
-
         </div>
 
+        <div id="droite">
+            <div class="resume">
 
-        <div class="genreChoice">
+                <label class="label1" for="summary">Résumé</label>
+                <textarea type="text" name="summary" id="summary" rows="20" cols="50"><?= $article['summary'] ?></textarea>
 
-            <label for="genre"></label>
-            <input type="text" name="genre" id="genre" value="jeunesse">
+            </div>
+            <input type="text" name="image" id="image" value="<?= $article['image'] ?>" placeholder="genre">
+        <?php } ?>
+        <input type="submit" name="submit">
         </div>
-
-        <div class="collectChoice">
-
-            <label for="collection"></label>
-            <input type="text" name="genre" id="collection" value="collection mille fleur">
-        </div>
-
-        <div class="imageChoice">
-            <label for="image">Image :</label>
-            <input type="text" name="image" id="image" value="milka.png">
-        </div>
-
-    </div>
-
-    <div class="formDroite">
-        <div class="resume">
-
-            <label for="summary">Résumé</label>
-            <textarea type="text" name="summary" id="summary">il etait une fois dans une contré lointaine une petite najia qui un jour devins la seignerresse d'online forma pro .Elle etait a la recherche du saint graal . Un PC pour les coder tous un PC qui n'aura nul Administrateur que Najia un PC que l'on appellera l'unique. </textarea>
-
-        </div>
-
-
-
-
-        <input type="submit" name="submit" value="Envoyer le formulaire">
-    </div>
-
-</form>
+    </form>
