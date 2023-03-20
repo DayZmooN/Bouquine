@@ -5,6 +5,21 @@ include './header-admin.php';
 $req = $db->prepare('SELECT `id_genre`, `libel_genre`, `genre_slug` FROM `genre`');
 $req->execute();
 $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
+
+if (isset($_POST['submitAdd'])) {
+    try {
+        $addreq = $db->prepare("INSERT INTO `genre` (`libel_genre`, `genre_slug`) VALUES (:libel_genre, :genre_slug)");
+        $addreq->bindValue(":libel_genre", $_POST["libel_genre"], PDO::PARAM_STR);
+        $addreq->bindValue(":genre_slug", $_POST["genre_slug"], PDO::PARAM_STR);
+        $addreq->execute();
+        $_SESSION["success"] = "votre genre a bien été crée";
+        header('location: ./genre.php');
+    } catch (PDOException $e) {
+        $_SESSION["error"] = "Votre Genre n'a pas été crée";
+        header('Location: ./genre.php');
+        exit();
+    }
+}
 ?>
 
 <h1 class="multiTitre">menu genres</h1>

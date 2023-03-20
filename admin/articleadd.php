@@ -62,7 +62,7 @@ include './header-admin.php';
 
         <div class="select">
 
-            <label for="id_category">Catégorie</label>
+            <label for="id_category">Catégorie :</label>
 
             <select name="id_category" id="id_category">
                 <?php
@@ -83,21 +83,28 @@ include './header-admin.php';
             <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
         </div>
 
-        <div class="resume">
+        <div class="collectChoice">
 
-            <label for="summary">Résumé</label>
-            <textarea type="text" name="summary" id="summary"></textarea>
+            <label for="collection"></label>
+            <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
+        </div>
 
+        <div class="imageChoice">
+            <label for="image">Image :</label>
+            <input type="text" name="image" id="image" placeholder="indiquer votre image">
         </div>
 
     </div>
 
     <div class="formDroite">
+        <div class="resume">
 
-        <div class="imageChoice">
-            <label for="image">image</label>
-            <input type="text" name="image" id="image">
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary">ecrivez votre resumé</textarea>
+
         </div>
+
+
 
 
         <input type="submit" name="submit" value="Envoyer le formulaire">
