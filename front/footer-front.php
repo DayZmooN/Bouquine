@@ -1,8 +1,3 @@
-<?php
-require_once './header-front.php';
-?>
-
-
 <!-- FOOTER -->
 <footer>
     <section id="end">
