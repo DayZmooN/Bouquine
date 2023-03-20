@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (const btnR of btnRss) {
         btnR.addEventListener('click', function (event) {
             event.preventDefault(); // Ajouté pour empêcher le comportement par défaut du lien
+
             let dataIdBook = this.dataset.idbook;
             let dataTitle = this.dataset.title;
             document.body.style.overflow = "hidden";
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const confirmation = document.createElement("p");
             confirmation.setAttribute("id", "txt-box-delete-category");
             boxDelete.appendChild(confirmation);
-            confirmation.innerHTML = `Voulez-vous supprimer un exemplaire du livre suivant ? ${dataTitle}`;
+            confirmation.innerHTML = `Êtes-vous sûr de vouloir supprimer ${dataTitle} ? `;
 
             //popup 
             const btnCancel = document.createElement("a");
@@ -54,10 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             else if (window.location.href.includes("dashboard-admin.php")) {
                 deleteUrl = "./deletearticle.php?id=" + dataIdBook;
+            } else if (window.location.href.includes("user.php")) {
+                deleteUrl = "./delete-user.php?id=" + dataIdBook;
             }
             btnConfirmed.setAttribute("href", deleteUrl);
 
-            // Cela vous permet de définir dynamiquement l'URL de suppression en fonction de la page actuelle. Ainsi, lorsque vous cliquez sur le bouton de confirmation, il envoie la demande de suppression à la bonne URL.
+            // sa permet de définir dynamiquement l'URL de suppression en fonction de la page actuelle. Ainsi, lorsque vous cliquez sur le bouton de confirmation, il envoie la demande de suppression à la bonne URL.
 
             boxDelete.appendChild(btnConfirmed);
             btnConfirmed.innerHTML = "Confirmer";
