@@ -2,7 +2,7 @@
 require_once '../connexion.php';
 include './header-admin.php';
 
-$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book`');
+$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `id_book` DESC');
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -31,6 +31,8 @@ foreach ($result as $article) {
 
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
             <a class="btnRed" href="./deletearticle.php?id=<?= $article['id_book'] ?>" style="color:red">Supprimer</a>
+            <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Cover</a>
+            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>">Genres</a>
 
         </div>
     </div>
