@@ -5,18 +5,21 @@ require_once './connect.php'
 
 <head>
     <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="stylesheet" href="https://fontawesome.com/">
 
+</head>
 
 <body>
     <!-- HEADER -->
     <header>
         <nav class="header-nav">
+            <div id="close-menu">X</div>
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"></label>
+
+
+
             <ul class="menu">
                 <li><a href="./catalogue.php">Catalogue</a></li>
                 <li>
@@ -40,24 +43,27 @@ require_once './connect.php'
                         <button id="search-button" type="submit">Rechercher</button>
                     </form>
                 </li>
+
+
+
+                <?php if (isset($_SESSION['user'])) { ?>
+                    <a href="./user-dashboard.php" class="img-user">
+                        <img class="img-user" src="../image/user.png" alt="image">
+                        <span class="nom"><?php echo $_SESSION['user']['username']; ?></span>
+                    </a>
+                    <form action="../model/deconnexion.php" method="post">
+                        <input id="user-connect" type="submit" name="logout" value="Déconnexion">
+                    </form>
+                <?php }
+                if (!isset($_SESSION['user'])) { ?>
+
+                    </a>
+                    <a href="./connexion.php" class="img-user">
+                        <input id="user-connect" type="submit" value="Connexion">
+                    </a>
+                <?php } ?>
             </ul>
+            </div>
         </nav>
-
-        <?php if (isset($_SESSION['user'])) { ?>
-            <a href="./user-dashboard.php" class="img-user">
-                <img class="img-user" src="../image/user.png" alt="image">
-                <span class="nom"><?php echo $_SESSION['user']['username']; ?></span>
-            </a>
-            <form action="../model/deconnexion.php" method="post">
-                <button type="submit" name="logout">Déconnexion</button>
-            </form>
-        <?php }
-        if (!isset($_SESSION['user'])) { ?>
-
-            </a>
-            <a href="./connexion.php" class="img-user">
-                <span class="nom">Se connecter</span>
-            </a>
-        <?php } ?>
-        </div>
+        <div id="burger"><img src="../image/burger.png" alt="picto menu burger"></div>
     </header>
