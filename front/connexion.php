@@ -43,7 +43,7 @@ require_once '../model/connexion.php';
             <p class="inscription"><a href="#">J'ai oublié mon mot de passe</a><br>
                 Je n'ai pas de compte.<a href="./inscription.php"> S'inscrire</a></p>
             <div align="center">
-                <button type="submit"><a href="../model/connexion.php"> Se connecter</button></a>
+                <button type="submit">Se connecter</button>
             </div>
         </form>
     </section>
