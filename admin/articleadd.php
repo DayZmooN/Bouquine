@@ -82,19 +82,13 @@ include './header-admin.php';
             <label for="genre"></label>
             <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
         </div>
-        <label for="genre"></label>
-        <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
 
-        <label for="collection"></label>
-        <input type="text" name="collection" id="collection" placeholder="Collection">
-    </div>
+        <div class="resume">
 
-    <div class="resume">
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary"></textarea>
 
-        <label for="summary">Résumé</label>
-        <textarea type="text" name="summary" id="summary"></textarea>
-
-    </div>
+        </div>
 
     </div>
 
