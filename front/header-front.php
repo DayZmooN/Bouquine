@@ -14,7 +14,8 @@ require_once '../admin/barre/seachbar.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouquine</title>
     <link rel="stylesheet" href="../css/style.css">
-    
+    <link rel="stylesheet" href="https://fontawesome.com/">
+     
 
 </head>
 
@@ -25,8 +26,10 @@ require_once '../admin/barre/seachbar.php';
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon"></label>
+            <input id="menu-toggle" 2type="checkbox">
+            <label class="menu-icon" for="menu-toggle" ></label>
+            <div class="menu-button"></div>
+
             <ul class="menu">
                 <li><a href="./catalogue.php">Catalogue</a></li>
                 <li>
