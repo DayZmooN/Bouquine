@@ -9,7 +9,6 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">menus articles</h1>
 
-
 <div id="articleSearchAjout">
     <form action="" method="post">
         <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
@@ -19,7 +18,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 
-<h2 class="sousTitre">Liste des articles</h2>
+    <h2 class="sousTitre" >liste des articles</h2>
 
 <?php
 foreach ($result as $article) {

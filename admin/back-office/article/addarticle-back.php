@@ -81,6 +81,3 @@ include './header-admin.php';
                 <textarea type="text" name="summary" id="summary"></textarea>
 
             </div>
-
-            <input type="submit" name="submit" value="Ajouter">
-</form>

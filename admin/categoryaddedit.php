@@ -42,44 +42,20 @@ include './header-admin.php';
             <label for="title"></label>
             <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
 
-            <label for="author"></label>
-            <input class="tripleInput" type="text" name="author" id="author" placeholder="Auteur">
+<h1 class="multiTitre">edit catégories</h1>
 
-            <label for="ISBN"></label>
-            <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
-        </div>
+<h2 class="titleEditCategory">Modification de <?= $category['libel_category'] ?></h2>
 
-        <div class="edition-date">
-            <div>
-                <label for="editor"></label>
-                <input type="text" name="editor" id="editor" placeholder="Éditeur">
-            </div>
+<div id="editCategorie">
 
-            <div>
-                <label for="collection"></label>
-                <input type="text" name="collection" id="collection" placeholder="collection">
-            </div>
-
-            <div>
-                <label class="publication" for="publication_date">Publication : </label>
-                <input class="date" type="date" name="publication_date" id="publication_date">
-            </div>
-        </div>
-
-    </div>
-    <div class="milieu">
-        <div class="select">
-            <label for="id_category">Catégorie</label>
-            <select name="id_category" id="id_category">
-                <?php
-                $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                $reqCat->execute();
-                while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                ?>
-                    <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
-                <?php } ?>
-            </select>
-        </div>
+    <form class="edit" action="" method="post">
+        
+        
+            <input class="editCat" type="text" name="libel_category" value="<?= $category['libel_category'] ?>">
+            <input class="editSlugCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
+        
+            <input class="subEditCat" type="submit" name="submitEdit" value="Modifier">
+        
 
         <div id="genreChoice">
             <label for="genre"></label>
@@ -93,13 +69,8 @@ include './header-admin.php';
             <textarea type="text" name="summary" id="summary"></textarea>
         </div>
 
-        <div id="imageChoice">
-            <label for="image">image</label>
-            <input type="text" name="image" id="image">
-        </div>
-        <div id="defiBouton">
-            <img src="../image/envoiFormulaireLivre.png" class="aiecone" alt="icone de bouton d'envois vert">
-            <input type="submit" name="submit" value="Ajouter">
-        </div>
-    </div>
-</form>
+    </form>
+
+</div>
+
+<?php include './includeClose.php'  ?>

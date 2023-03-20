@@ -200,7 +200,7 @@ if (isset($_POST['submit'])){
                 </div>
 
                 <p class="abonner">N'hésitez pas à vous abonner pour recevoir en exclusivité chaque mois les
-                    dernières nouveautés et évènements de la bibliothèque.Nous ne vous enverrons pas de spam
+                    dernières nouveautés et évènements de la bibliothèque.<br>Nous ne vous enverrons pas de spam
                     ni ne partagerons vos informations.</p>
             </div>
         </section>
