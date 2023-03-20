@@ -8,7 +8,7 @@ include_once './header-admin.php';
 //     header("location: ./dashboard-admin.php");
 //     exit;
 // }
-$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `id_book` DESC LIMIT 6');
+$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `id_book` DESC LIMIT 20');
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>

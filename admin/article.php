@@ -2,7 +2,7 @@
 require_once '../connexion.php';
 include './header-admin.php';
 
-$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book`');
+$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` LIMIT 20');
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>

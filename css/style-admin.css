@@ -131,6 +131,7 @@ a {
   padding-top: 40px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 4rem;
 }
 .corp .multitaches > #compteurEtGraphique {
   width: 1000px;
@@ -176,8 +177,8 @@ a {
 .corp .multitaches > #articleSearchAjout > a {
   width: 300px;
   margin-top: 50px;
-  color: white;
-  font-size: 1.3rem;
+  color: rgb(22, 20, 20);
+  font-size: 1.2rem;
   text-align: center;
   border: 1px solid white;
   border-radius: 25px;
