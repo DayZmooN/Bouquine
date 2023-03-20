@@ -40,68 +40,90 @@ $req = $db->prepare("SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `edit
 $req->bindParam('id', $id, PDO::PARAM_INT);
 $req->execute();
 while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
-    ?>
-        <h1 class="multiTitre">formulaire modification de livre</h1>
-    
-        <form id="formulaire" action="#" method="POST" enctype="multipart/form-data">
-    
-            <div id="gauche">
-                <div class="titre-auteur">
-    
-                    <label for="title"></label>
-                    <input type="text" name="title" id="title" value="<?= $article['title'] ?>">
-    
-                    <label for="author"></label>
-                    <input type="text" name="author" id="author" value="<?= $article['author'] ?>">
-    
-                    <label for="ISBN"></label>
-                    <input type="text" name="ISBN" id="ISBN" value="<?= $article['ISBN'] ?>">
-    
-                </div>
-    
-                <div class="edition-date">
-    
+?>
+
+
+    <h1 class="multiTitre">formulaire modification de livre</h1>
+
+    <form id="formulaireModif" action="#" method="POST">
+
+        <div id="formGauche">
+            <div class="titre-auteur">
+
+                <label for="title"></label>
+                <input class="tripleInput" type="text" name="title" id="title" value="<?= $article['title'] ?>">
+
+
+                <label for="author"></label>
+                <input class="tripleInput" type="text" name="author" id="author" value="<?= $article['author'] ?>">
+
+
+                <label for="ISBN"></label>
+                <input class="tripleInput" type="text" name="ISBN" id="ISBN" value="<?= $article['ISBN'] ?>">
+
+            </div>
+
+            <div class="edition-date">
+                <div class="editeur">
                     <label for="editor"></label>
                     <input type="text" name="editor" id="editor" value="<?= $article['editor'] ?>">
-    
-                    <label class="publication" for="publication_date">Publication</label>
+                </div>
+
+                <div class="ajoutDate">
+                    <label class="publication" for="publication_date">Publication : </label>
                     <input class="date" type="date" name="publication_date" id="publication_date" value="<?= $article['publication_date'] ?>">
-    
-                    <label class="collection" for="collection"></label>
-                    <input type="text" name="collection" id="collection" value="<?= $article['collection'] ?>" placeholder="Collection">
-    
-                    <label class="genre" for="genre"></label>
-                    <input type="text" name="genre" id="genre" value="<?= $article['genre'] ?>" placeholder="genre">
-    
                 </div>
-    
-                <div class="multiSelect">
-    
-                    <div class="select">
-                        <label for="id_category">Catégorie</label>
-                        <select name="id_category" id="id_category">
-                            <?php
-                            $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                            $reqCat->execute();
-                            while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) { 
-                            ?>
-                            <option value="<?= $category['id_category'] ?>" <?= $article['id_category'] == $category['id_category'] ? 'selected' : '' ?>><?= $category['libel_category'] ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-    
-                </div>
+
             </div>
-    
-            <div id="droite">
-                <div class="resume">
-    
-                    <label class="label1" for="summary">Résumé</label>
-                    <textarea type="text" name="summary" id="summary" rows="20" cols="50"><?= $article['summary'] ?></textarea>
-    
-                </div>
-                <input type="text" name="image" id="image" value="<?= $article['image'] ?>" placeholder="genre">
-            <?php } ?>
-            <input type="submit" name="submit">
+        </div>
+
+        <div class="formMilieu">
+
+            <div class="select">
+
+                <label for="id_category">Catégorie :</label>
+
+                <select name="id_category" id="id_category">
+                    <?php
+                    $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                    $reqCat->execute();
+                    while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
+                    ?>
+                        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                    <?php } ?>
+                </select>
+
             </div>
-</form>
+
+
+            <div class="genreChoice">
+
+                <label for="genre"></label>
+                <input type="text" name="genre" id="genre" value="<?= $article['genre'] ?>">
+            </div>
+
+            <div class="collectChoice">
+
+                <label for="collection"></label>
+                <input type="text" name="genre" id="collection" value="<?= $article['collection'] ?>">
+            </div>
+
+            <div class="imageChoice">
+                <label for="image">Image :</label>
+                <input type="text" name="image" id="image" value="<?= $article['image'] ?>">
+            </div>
+
+        </div>
+
+        <div class="formDroite">
+            <div class="resume">
+
+                <label for="summary">Résumé</label>
+                <textarea type="text" name="summary" id="summary"><?= $article['summary'] ?></textarea>
+
+            </div>
+    <?php } ?>
+            <input type="submit" name="submit" value="Envoyer le formulaire">
+        </div>
+
+    </form>

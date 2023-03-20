@@ -29,120 +29,85 @@ include './header-admin.php';
 ?>
 
 <h1 class="multiTitre">formulaire ajout de livre</h1>
-    
-            <form id="formulaireAjout" action="#" method="POST">
 
-                <div id="formGauche">
-                    <div class="titre-auteur">
+<form id="formulaireAjout" action="#" method="POST">
 
-                        <label for="title"></label>
-                        <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
+    <div id="formGauche">
+        <div class="titre-auteur">
 
-
-                        <label for="author"></label>
-                        <input class="tripleInput" type="text" name="author" id="author" placeholder="Auteur">
+            <label for="title"></label>
+            <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
 
 
-                        <label for="ISBN"></label>
-                        <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
-                        >>>>>>>>> Temporary merge branch 2
-
-                    </div>
-
-                    <div class="edition-date">
-                        <div class="editeur">
-                            <label for="editor"></label>
-                            <input type="text" name="editor" id="editor" placeholder="Éditeur">
-                        </div>
-
-                        <label for="genre"></label>
-                        <input type="text" name="genre" id="genre" placeholder="Genres">
-
-                        <label class="publication" for="publication_date">Publication</label>
-                        <input class="date" type="date" name="publication_date" id="publication_date" placeholder="Éditeur">
-
-                    </div>
-                </div>
-
-                <div class="formMilieu">
-
-                    <div class="select">
-
-                        <label for="id_category">Catégorie</label>
-
-                        <select name="id_category" id="id_category">
-                            <?php
-                            $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                            $reqCat->execute();
-                            while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                            ?>
-                                <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
-                            <?php } ?>
-                        </select>
-
-                    </div>
-                    <div class="milieu">
-                        <div class="select">
-                            <label for="id_category">Catégorie</label>
-                            <select name="id_category" id="id_category">
-                                <?php
-                                $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                                $reqCat->execute();
-                                while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                                ?>
-                                    <option value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
-                                <?php } ?>
-
-                            </select>
-                        </div>
+            <label for="author"></label>
+            <input class="tripleInput" type="text" name="author" id="author" placeholder="Auteur">
 
 
-                        <div class="genreChoice">
+            <label for="ISBN"></label>
+            <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
 
-                        <label for="genre"></label>
-                        <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
-                    </div>
-                    <label for="collection"></label>
-                        <input type="text" name="collection" id="collection" placeholder="indiquez la collection">
-                </div>
-
-                <div class="formDroite">
-                    
-                    <div class="imageChoice">
-                        <label for="image">image</label>
-                        <input type="text" name="image" id="image">
-                    </div>
-
-                    <div class="resume">
-
-                            <label for="summary">Résumé</label>
-                            <textarea type="text" name="summary" id="summary"></textarea>
-
-                        </div>
-
-                        <div id="imageChoice">
-                            <label for="image">image</label>
-                            <input type="file" name="image" id="image">
-                        </div>
-                        <a href="#"><img src="../image/envoiFormulaireLivre.png" alt="icone du dashboard"> </a>
-                    </div>
-
-            </form>
->>>>>>>>> Temporary merge branch 2
-
-    <div id="droite">
-        <div class="resume">
-            <label for="summary">Résumé</label>
-            <textarea type="text" name="summary" id="summary"></textarea>
         </div>
 
-        <div id="imageChoice">
+        <div class="edition-date">
+            <div class="editeur">
+                <label for="editor"></label>
+                <input type="text" name="editor" id="editor" placeholder="Éditeur">
+            </div>
+
+            <div class="ajoutDate">
+                <label class="publication" for="publication_date">Publication : </label>
+                <input class="date" type="date" name="publication_date" id="publication_date">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="formMilieu">
+
+        <div class="select">
+
+            <label for="id_category">Catégorie</label>
+
+            <select name="id_category" id="id_category">
+                <?php
+                $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                $reqCat->execute();
+                while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                    <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                <?php } ?>
+            </select>
+
+        </div>
+
+
+        <div class="genreChoice">
+
+            <label for="genre"></label>
+            <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
+
+            <label for="collection"></label>
+            <input type="text" name="collection" id="collection" placeholder="Collection">
+        </div>
+
+        <div class="resume">
+
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary"></textarea>
+
+        </div>
+
+    </div>
+
+    <div class="formDroite">
+
+        <div class="imageChoice">
             <label for="image">image</label>
             <input type="text" name="image" id="image">
         </div>
-        <div id="defiBouton">
-            <img src="../image/envoiFormulaireLivre.png" class="aiecone" alt="icone de bouton d'envois vert">
-            <input type="submit" name="submit" value="Ajouter">
-        </div>
+
+
+        <input type="submit" name="submit" value="Envoyer le formulaire">
     </div>
+
 </form>
