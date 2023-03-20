@@ -1,3 +1,14 @@
+<?php
+session_start();
+require_once './auth.php';
+if (!isset($_SESSION["admin"])) {
+    header("location: ./connexion-admin.php");
+    exit;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/style-admin.css">
+    <!-- <link rel="stylesheet" href="./JS/error.css"> -->
 
 
 </head>
@@ -26,6 +38,7 @@
                     <li><img src="../image/genresDashboard.png" alt="icone genres du dashboard"><a href="./genre.php">Genre</a></li>
                     <li><img src="../image/userDashboard.png" alt="icone user du dashboard"><a href="./user.php">Users</a></li>
                     <li><img src="../image/newsLetterDashboard.png" alt="icone newsletter du dashboard"><a href="../admin/newsletter.php">Newsletter</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -34,9 +47,30 @@
     <div class="corp">
         <header id="headerDashboard">
             <img class="notif" src="../image/adminDashboard.png" alt="icone administrateur">
-            <p>Admin</p>
+            <p><?php echo $_SESSION['admin']['username']; ?></p>
             <a class="notif" href="#"> <img src="../image/boutonNotificationDashboard.png" alt="bouton cloche de notifications" title="voir vos notifications"></a>
-            <a class="notif" href="#"> <img src="../image/deconnexionDashboard.png" alt="bouton de deconnexion" title="vous deconnectez"></a>
+            <a class="notif" href="./deconnexion-admin.php"> <img src="../image/deconnexionDashboard.png" alt="bouton de deconnexion" title="vous deconnectez"></a>
         </header>
 
         <main class="multitaches">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal-message"></p>
+                </div>
+            </div>
+            <!-- avant la fin du body de votre fichier PHP -->
+
+            <body>
+                <!-- ... -->
+                <!-- la modal -->
+                <div id="success-modal" class="modal">
+                    <div class="modal-content">
+                        <p>Suppression réussie!</p>
+                    </div>
+                </div>
+            </body>
+
+
+
+            <script src="./js/admin.js"></script>

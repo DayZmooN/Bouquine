@@ -1,8 +1,11 @@
 <?php
-require_once './front/header-front.php';
+require_once './connexion.php';
 session_start();
 if (!isset($_SESSION["user"])) {
-    header("location: ./front/connexion.php");
+    header("location: ./front/accueil.php");
+    exit;
+} elseif (isset($_SESSION['user'])) {
+    header("location: ./front/accueil.php");
     exit;
 }
 ?>

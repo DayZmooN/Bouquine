@@ -2,7 +2,7 @@
 //on démarre une session PHP
 session_start();
 if (isset($_SESSION["user"])) {
-    header("location: dashboarduser.php");
+    header("location: ../front/user-dashboard.php");
     exit;
 }
 //on verifie si le formulaire a été envoyé
@@ -58,7 +58,7 @@ if (!empty($_POST)) {
             "birthdate" => $_POST["birthdate"]
         ];
         // on peut rediriger vers la page de profil (par exemple )
-        header("location: ../front/dashboarduser.php");
+        header("location: ../front/user-dashboard.php");
     } else {
         header("location: ../front/inscription.php");
         die("le formulaire est incomplet ");

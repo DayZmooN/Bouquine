@@ -44,4 +44,25 @@ include './header-admin.php';
 
         </div>
 
-        <?php include './includeClose.php'  ?>
+        <div id="genreChoice">
+            <label for="genre"></label>
+            <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
+        </div>
+    </div>
+
+    <div id="droite">
+        <div class="resume">
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary"></textarea>
+        </div>
+
+        <div id="imageChoice">
+            <label for="image">image</label>
+            <input type="text" name="image" id="image">
+        </div>
+        <div id="defiBouton">
+            <img src="../image/envoiFormulaireLivre.png" class="aiecone" alt="icone de bouton d'envois vert">
+            <input type="submit" name="submit" value="Ajouter">
+        </div>
+    </div>
+</form>

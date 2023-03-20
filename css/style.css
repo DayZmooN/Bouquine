@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +48,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f39c12;
+    background-color: #f6b339;
     /* position: fixed; */
 }
 
@@ -64,7 +66,7 @@ input#menu-toggle {
 }
 
 nav.header-nav {
-    width: 90%;
+    width: 100%;
     display: flex;
     color: #000;
     align-items: center;
@@ -73,12 +75,16 @@ nav.header-nav {
 nav ul {
     display: flex;
     color: #000;
+}
 
+ul.menu {
+    width: 1000px;
+    height: 80px;
 }
 
 nav li {
     position: relative;
-    margin: 0 10px;
+    margin: auto;
 }
 
 nav a {
@@ -95,15 +101,25 @@ nav ul ul {
     top: 100%;
     left: 0;
     min-width: 200px;
-    background-color: #FFC300;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+nav ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 1rem;
+    transition: all 0.8s ease;
+}
+
+nav ul li:hover a {
+    color: #FFF;
+    background-color: #da7b27;
 }
 
 nav ul li:hover>ul {
     display: block;
-
-
+    z-index: 5;
 }
 
 nav ul ul li {
@@ -114,118 +130,175 @@ nav ul ul a {
     padding: 10px 15px;
 }
 
-nav input[type="text"] {
-    width: 250px;
-    height: 30px;
+nav input[type="search"] {
+    width: 300px;
+    height: 35px;
+    border: 1px solid black;
     /* padding: 5px; */
-    margin-left: 30px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #888;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #f6b339;
+    background-color: #FFB34E;
 }
 
-nav .menu-icon {
+nav.menu-icon {
     display: none;
 }
 
+li.search-box {
+    width: 550px;
+    height: 80px;
+}
+
+form#form-header {
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 img.img-user {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    width: 40px;
-    height: 40px;
+    margin-right: 50px;
+
+    height: 50px;
 }
 
-.search-bar {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 15px;
-}
-
-button#s-bar {
-    width: 80px;
-    height: 30px;
-    background-color: #E0FF20;
-    padding: 0;
-}
-
-.search-bar a {
-    font-size: .7rem;
+button#search-button {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1rem;
     font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #da7b27;
 }
 
-/* @media screen and (max-width: 350px) {
+.user-name {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.nom {
+    width: 30px;
+    height: 10px;
+    padding-left: 10px;
+}
+
+.user-name a {
+    width: 100px;
+    height: 50px;
+}
+
+/* media queries header */
+@media screen and (max-width: 400px) {
+
     header {
-      height: auto;
-      padding: 20px;
+    height: 80px;
+    flex-direction: column;
     }
     
     .logo {
-      margin-bottom: 20px;
+    flex: none;
+    order: 1;
     }
-  
-    nav {
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: center;
+    
+    .logo img {
+    height: 50px;
+    margin: 10px;
     }
-  
+    
+    input#menu-toggle:checked~nav.header-nav {
+    display: block;
+    }
+    
+    nav.header-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+    }
+    
+    nav.menu-icon {
+    display: block;
+    margin: 10px;
+    order: 2;
+    }
+    
     nav ul {
-      flex-direction: column;
+    display: none;
+    flex-direction: column;
+    order: 4;
     }
-  
+    
+    ul.menu {
+    height: auto;
+    width: 100%;
+    display: block;
+    }
+    
     nav li {
-      margin: 10px 0;
-      position: relative;
+    margin: 0;
+    width: 100%;
     }
-  
-    nav li ul {
-      position: static;
-      display: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    nav li:hover > ul {
-      display: block;
-    }
-  
+    
     nav a {
-      padding: 10px 0;
-      border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 0.9rem;
+    text-align: center;
     }
-  
-    nav input[type="text"] {
-      margin: 10px 0;
-      width: 100%;
+    
+    nav ul li a {
+    height: auto;
+    line-height: normal;
+    padding: 10px;
     }
-  
-    nav .menu-icon {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 26px;
-      line-height: 60px;
-      cursor: pointer;
+    
+    li.search-box {
+    width: 100%;
+    height: auto;
     }
-  
-    nav input[type="checkbox"] {
-      display: none;
+    
+    form#form-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     }
-  
-    nav ul.menu {
-      display: none;
-      position: absolute;
-      top: 60px;
-      width: 100%;
+    
+    img.img-user {
+    margin: 10px 0;
+    height: 30px;
     }
-  
-    input[type="checkbox"]:checked ~ ul.menu {
-      display: block;
-      z-index: 1;
+    
+    .user-name {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     }
-  }
-   */
-/* fin media queries header */
+    
+    .nom {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    }
+    
+    .user-name a {
+    width: 100%;
+    height: auto;
+    }
+    
+    }
+/* fin media queries header
 
 /* EN TETE  */
 
@@ -247,7 +320,7 @@ button#s-bar {
 }
 
 h1 {
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 3rem;
     text-align: right;
     text-transform: uppercase;
@@ -260,7 +333,7 @@ h1 {
 #explain {
     width: 1000px;
     height: 250px;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 1.8rem;
     text-align: right;
     padding-top: 50px;
@@ -278,7 +351,7 @@ h1 {
 .popular {
     width: 100%;
     height: 80px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: black;
@@ -309,6 +382,8 @@ h1 {
 }
 
 .item {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -334,16 +409,17 @@ h1 {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     /* line-height: 10px; */
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
 }
 
 /* END SECTION POPULAIRES  */
@@ -353,20 +429,19 @@ h1 {
 #new {
     width: 100%;
     height: 400px;
-    background-color: #74EC8D;
+    background-color: #62c465e4;
     padding-top: 20px;
 }
 
 #nouveautes {
     width: 100%;
     height: 40px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: black;
     font-weight: bold;
     text-align: center;
-    padding-top: 20px;
 }
 
 .slider {
@@ -429,14 +504,14 @@ h1 {
 /* section genre préférés */
 #gender {
     width: 100%;
-    height: auto;
-    background-color: #21DAFF;
+    height: 2000px;
+    background-color: #cdeff6;
 }
 
 #prefers {
     width: 100%;
     height: 80px;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.8rem;
     color: black;
@@ -450,7 +525,7 @@ h2#prefers {
 
 #romance {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
     margin: 20px;
@@ -479,6 +554,8 @@ h2#prefers {
 }
 
 .item1 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -505,14 +582,14 @@ button#see {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     /* margin-bottom: 20px; */
@@ -528,7 +605,6 @@ hr.gender1 {
     height: 5px;
     margin: 0 auto;
     margin-top: 20px;
-
 }
 
 hr.gender1:after {
@@ -543,7 +619,7 @@ hr.gender1:after {
 
 #fantaisie {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
     margin: 40px;
@@ -572,6 +648,8 @@ hr.gender1:after {
 }
 
 .item2 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -598,14 +676,14 @@ hr.gender1:after {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
@@ -615,7 +693,7 @@ hr.gender1:after {
 /* debut action  */
 #action {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
     margin: 40px;
@@ -644,6 +722,8 @@ hr.gender1:after {
 }
 
 .item3 {
+    width: 300px;
+    height: 400px;
     flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
@@ -670,14 +750,14 @@ hr.gender1:after {
 
 .title {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
 .author {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 10px;
@@ -704,13 +784,13 @@ hr.gender1:after {
     padding-left: 30px;
     margin-top: 70px;
     margin-left: 70px;
-    background-color: #E0FF20;
-    ;
+    background-color: #e0ff2085;
+
 }
 
 .bouquine {
     font-size: 1.8rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: bold;
     text-align: center;
     margin: 50px;
@@ -718,7 +798,7 @@ hr.gender1:after {
 
 .list li {
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     list-style-type: square;
     margin-left: 20px;
 }
@@ -760,7 +840,7 @@ hr.gender1:after {
 }
 
 #titl {
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
     color: white;
@@ -777,23 +857,23 @@ hr.gender1:after {
     flex-direction: column;
 }
 
-label {
-    font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular';
+.formulaire label {
+    font-size: 1.3rem;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
 }
 
-input {
+input#mail {
     width: 400px;
-    height: 40px;
+    height: 35px;
     border-radius: 10px;
-    background-color: #d98f21e3;
+    background-color: white;
 }
 
 #send {
     width: 150px;
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
     background-color: #d98f21e3;
     border-radius: 50px;
@@ -806,10 +886,11 @@ input {
 .abonner {
     width: 100%;
     height: 100px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    font-family: 'QuattrocentoSans-Regular';
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -966,7 +1047,7 @@ section.parallax-section.compteur {
 
 p.livre {
     font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     color: black;
     font-weight: 600;
     text-align: center;
@@ -986,7 +1067,7 @@ p.livre {
 section#lecteur {
     width: 100%;
     height: 550px;
-    background-color: #21DAFF;
+    background-color: #cdeff6;
     padding-top: 20px;
 }
 
@@ -995,7 +1076,7 @@ h2.lector {
     height: 50px;
     margin: 0 auto;
     text-align: center;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-transform: uppercase;
     font-size: 1.8rem;
     color: rgb(0, 0, 0);
@@ -1013,14 +1094,14 @@ h2.lector {
     height: 300px;
     border: 3px solid black;
     border-radius: 40px;
-    background-color: #E0FF20;
+    background-color: #e0ff2085;
     ;
 }
 
 h3.name {
     width: 140px;
     height: 10px;
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.3rem;
     color: rgb(0, 0, 0);
     margin-left: 20px;
@@ -1036,7 +1117,7 @@ h3.name {
 }
 
 p.value {
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-weight: 700;
@@ -1093,7 +1174,7 @@ img.social {
 .pol {
     width: 150px;
     height: auto;
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-weight: 700;
@@ -1103,14 +1184,14 @@ img.social {
 .politique {
     width: 400px;
     height: auto;
-    font-family: 'QuattrocentoSans-regular';
+    font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
     font-weight: 700;
 }
 
 p#copy {
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 1rem;
     color: rgb(0, 0, 0);
     height: 20px;
@@ -1170,7 +1251,7 @@ p#copy {
 
 .resum h3 {
     font-size: 1.3rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     line-height: 20px;
     color: #000;
@@ -1180,7 +1261,7 @@ p#copy {
 
 .resum p {
     font-size: 1.1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 500;
     color: #000;
     margin-top: 30px;
@@ -1220,7 +1301,7 @@ h3.read {
     width: 100%;
     height: 40px;
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     margin-top: 40px;
     color: #000;
@@ -1237,7 +1318,7 @@ h3.read {
 
 p.titl1 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     padding-top: 10px;
@@ -1245,7 +1326,7 @@ p.titl1 {
 
 p.author1 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     padding-top: 10px;
@@ -1260,7 +1341,7 @@ p.author1 {
 
 h3.describe {
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     color: #000;
     margin-left: 30px;
@@ -1268,7 +1349,7 @@ h3.describe {
 
 h4.bio {
     font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     color: #000;
     margin-left: 30px;
@@ -1279,7 +1360,7 @@ p.miller {
     width: 100%;
     height: 70px;
     font-size: 1.1rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     color: #000;
     margin-top: 40px;
@@ -1294,7 +1375,7 @@ p.miller {
 
 h4.detail {
     font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
     color: #000;
     margin-left: 30px;
@@ -1308,7 +1389,7 @@ ul.liste {
 .liste li {
     list-style-type: circle;
     font-size: 1.2rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 500;
     color: #000;
     margin-left: 30px;
@@ -1318,7 +1399,7 @@ h3.dispo {
     width: 100%;
     height: 30px;
     font-size: 1.4rem;
-    font-family: 'QuattrocentoSans-Bold';
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-weight: 700;
     margin-top: 40px;
     color: #000;
@@ -1336,7 +1417,7 @@ h3.dispo {
 
 p.title2 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     padding-top: 10px;
@@ -1344,7 +1425,7 @@ p.title2 {
 
 p.author2 {
     font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
     /* padding-top: 5px; */
@@ -1360,10 +1441,12 @@ p.author2 {
 /* END SECTION PAGE RESUME */
 
 /* SECTION CATALOGUE */
+
 #catalogue {
     width: 100%;
     height: 100%;
 }
+
 .catal {
     width: 100%;
     height: 1400px;
@@ -1371,56 +1454,48 @@ p.author2 {
 
 h2.catalog {
     font-size: 3rem;
-    font-family: 'QuattrocentoSans-Regular';
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.search1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formul-s {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
 }
 
-#recherche {
-    width: 520px;
-    height: 20px;
-    background: #f4b97a95;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .3) inset;
-    border-radius: 2em;
+form#catalog-form {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    font-weight: 600;
 }
 
-#recherche .loupe {
-    background: url(../image/loupe.svg) no-repeat 0 0;
-    width: 40px;
-    cursor: pointer;
+.formul-s label {
+    display: none;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    font-weight: 600;
 }
 
-#recherche input {
-    border: none;
-    margin: 0;
-    height: 20px;
-    float: left;
-    display: block;
-}
-
-#recherche input[type=text] {
-    font: 300 12px 'QuattrocentoSans-Regular', sans-serif;
-    background: none;
-    width: 470px;
-    padding: 0 15px;
-
-}
-
-img.setting {
-    width: 45px;
-    height: 45px;
-    border: 3px solid black;
+input#search-book {
+    width: 450px;
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
-    margin-left: 10px;
+}
+
+button#search-button {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #da7b27;
 }
 
 .item4 {
@@ -1428,28 +1503,34 @@ img.setting {
     height: 380px;
     margin: 0 auto;
 }
+
 .item4 img {
     width: 200px;
     height: 270px;
     border-radius: 5px;
 }
+
 .books {
     width: 100%;
     height: 100%;
     margin-top: 100px;
 }
+
 .books-catalog {
     width: 400px;
     height: 300px;
     margin: 100px auto;
 }
+
 .container-books {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin: 100px auto;
     height: 100%;
 }
+
 p.titles {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -1463,6 +1544,7 @@ p.authors {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
+
 }
 
 /* END CATALOGUE */
@@ -1472,7 +1554,7 @@ p.authors {
 .info {
     width: 100%;
     height: 900px;
-    background: #F4B97A;
+    background: #ffe566;
 }
 
 .news {
@@ -1528,24 +1610,22 @@ ol.consignes li {
 
 #connexion {
     width: 100%;
-    height: 800px;
+    height: 600px;
     font-family: 'Quattrocento-Regular', sans-serif;
     position: absolute;
 }
 
 .lettreb {
     width: 100%;
-    height: 140px;
-}
-
-.b {
-    width: 150px;
-    height: 150px;
+    height: 100px;
 }
 
 img.b {
-    margin: 0 auto;
+    width: 300px;
+    height: 100px;
     display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .social-media {
@@ -1564,8 +1644,7 @@ form {
 .connect {
     width: 100%;
     height: 50px;
-    margin-top: 0;
-}
+   }
 
 h2.connect {
     font-size: 2rem;
@@ -1574,36 +1653,39 @@ h2.connect {
     text-align: center;
     color: #eb7371;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 .social-media {
-
+    width: 100%;
+    height: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.social-media p {
-    margin-top: 80px;
-    margin-right: 10px;
+.social-media p  {
+    margin-top: 20px;
+    margin-right: 20px;
     width: 30px;
     text-align: center;
     cursor: pointer;
-    color: #1b5bd2bc;
+    color: black;
 }
-
+.social-media a{
+    color: #000;
+}
 .social-media a:visited {
-    color: blue;
+    color: orange;
 }
 
-.social-media p:hover {
+/* .social-media p:hover {
     color: #b9671b;
-}
+} */
 
 p.email {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 50px;
     font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 600;
@@ -1632,73 +1714,80 @@ form p.inscription {
 }
 
 .inscription a:visited {
-    color: #ed20d5;
+    color: orange;
 }
 
 form button {
     padding: 15px 25px;
     border-radius: 5px;
     border: none;
-    font-size: 15px;
+    font-size: 1rem;
     background-color: #74EC8D;
     cursor: pointer;
 }
 
-
 /* FIN CONNEXION */
 
 /* PAGE INSCRIPTION */
-#suscribe {
+body {
     width: 100%;
-    height: 600px;
+    height: 100%;
 }
 
+#bouquine {
+    width: 400px;
+    height: 500px;
+    background-image: url(../image/logo2.png);
+    background-repeat: no-repeat;
+    background-position-y: left center;
+}
+
+#suscribe {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 
 .container-suscribe {
-    width: 100%;
-    height: 600px;
+    width: 50%;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
 .img-book {
-    height: 600px;
-    margin-top: 120px;
-}
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 40px;
 }
 
 .img-book img {
-    width: 100%;
-    /* width: 500px; */
-    height: 600px;
+    /* width: 500px;  */
+    height: 500px;
 }
 
 .suscribe-form {
-    width: 50%;
-    height: 600px;
-    margin-top: 20px;
+    width: 100%;
+    height: 100%;
 }
 
-img.form-logo {
-img.form-logo {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: auto;
-}
+form#connect {
+    height: 500px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 h2.sus-form {
     font-size: 1.8rem;
     font-family: 'QuattrocentoSans-Bold';
     font-weight: 400;
-}
-
-.input {
-    height: 350px;
-    margin-bottom: 30px;
+    text-align: center;
 }
 
 .input label {
@@ -1711,26 +1800,64 @@ h2.sus-form {
 
 .input input {
     width: 400px;
+    height: 35px;
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
     padding: 8px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    border: none;
-    border: none;
-    background-color: #f2f2f2;
+    border: 2px solid black;
+    background-color: white;
+}
+
+input#password {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input#mail {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input#birth {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input#phone {
+    width: 400px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
 }
 
 button[type="submit"] {
-    width: 170px;
-    height: 50px;
-    font-size: 1rem;
+    width: 150px;
+    height: 35px;
+    font-size: .8rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
     background-color: #74EC8D;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 50px;
 }
 
 /* END INSCRIPTION */
@@ -1827,245 +1954,217 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
-*/
+
+
 /* END PAGE RECHERCHE AVANCEE */
 
 /* RESPONSIVE RECHERCHE AVANCEE  */
-
-/* @media only screen and (max-width: 350px) {
+@media (max-width: 350px) {
     .filter-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 0;
     }
-    label, input, select {
-      width: 100%;
-      margin-top: 10px;
+    
+    h2.search-filter {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
     }
+    
+    input[type="text"],
+    select,
+    input[type="number"] {
+    font-size: 0.8rem;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    }
+    
     input[type="submit"] {
-      margin-top: 20px;
+    font-size: 0.9rem;
+    padding: 8px;
     }
-  }
-   */
+    }
+
 
 /* DASHBOARD USER */
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-
-.navbar {
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 200px;
-	background-color: #333;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.navbar a {
-	padding: 10px;
-	margin: 5px;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.dash-accueil h3{
     width: 100%;
-    height: 100px;
-} */
-
-/* .sidebar-dash {
-    background-color: #F3BB00;
-    width: 300px;
-    height: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+    height: 450px;
 }
 
-.userinfo {
-	background-color: #eee;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-	text-align: center;
-    /* display: none; */
-.contain-perso{
-    width: 600px;
-    height: 400px;
-    background-color: #45a049;
-    
-} */
-
-/* .sidebar-dash ul {
-    font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin: 30px 0;
-}
-
-.info-user {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.sidebar-dash a {
-    color: black;
-    display: block;
-    padding: 10px;
-} */
-
-/* .sidebar-dash a.active,
-.sidebar-dash a:hover {
-    background-color: #A29C4A;
-    color: #fff;
-    border-radius: 10px;
-}
-.personal{
-
-} */
-*/ */ .user-dash {
+.dashboard1 {
     width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    background-color: #45a049;
-
+    height: 30px;
 }
-.container-info {
-    width: 100%;
-    height: 600px;
-    background-color: #ed20d5;
 
-}
-.dash-accueil {
-    width: 50%;
-    height: 100px;
+.dashboard1 h2 {
     font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-   display: block;
-   margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
-.sidebar-dash {
-    background-color: #F3BB00;
-    width: 300px;
-    height: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
+#user-nav {
+    width: 350px;
+    height: 450px;
+    background-color: #f39c12;
+    position: absolute;
+    top: 120px;
+    left: 0;
 }
 
-.sidebar-dash ul {
-    font-size: 1rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin: 30px 0;
-}
-
-.sidebar-dash li {
-    margin-bottom: 10px;
-}
-
-.sidebar-dash a {
-    color: black;
+#user-nav ul {
+    width: 350px;
+    height: 400px;
     display: block;
-    padding: 10px;
-}
-
-.sidebar-dash a.active,
-.sidebar-dash a:hover {
-    background-color: #A29C4A;
-    color: #fff;
-    border-radius: 10px;
-}
-
-.contain-perso {
-    width: 70%;
-    display: flex;
-    justify-content: center;
 
 }
 
-.personal {
-    margin-top: 30px;
+#user-nav li a {
+    width: 350px;
+    height: 100px;
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
+    color: black;
+    text-align: center;
+    /* padding-top: 50px; */
+    padding: 0 10px ;
+    transition: all 0.8s ease;
 }
 
-.modif {
-    margin-bottom: 20px;
-}
-.names{
-    display: flex;
-    width: 600px;
-    height: 30px;
-    padding-bottom: 20px;
-}
-/* END DASHBOARD USER */
-
-/* info perso */
-.infos {
-    width: 100%;
-    height: 900px;
+#user-nav li a:hover {
+    background-color: #e88e17d6;
 }
 
-.modif {
-    width: 100%;
-    height: 50px;
-    margin-top: 30px;
+.info1 {
+    width: 700px;
+    height: 400px;
+    background-color: #f6b339;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 90px;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+    /* display: none; */
 }
 
-h2 {
-    font-size: 1.5rem;
-    font-family: 'QuattrocentoSans-Regular', sans-serif;
+.info-perso {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-align: center;
 }
 
-form {
-    margin: 0 auto;
-    max-width: 500px;
+.names {
+    width: 400px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form#dash-form {
+    width: 650px;
+    height: 450px;
+    display: flex;
+    align-items: center;
 }
 
 label {
+    font-size: 1.2rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     display: block;
-    margin-top: 10px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    box-sizing: border-box;
+input[type="password"],
+input[type="tel"] {
+    width: 250px;
+    height: 35px;
     border: 2px solid #ccc;
     border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
 }
 
 input[type="submit"] {
+    width: 130px;
     background-color: #74EC8D;
     color: white;
-    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
-
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+input.adress {
+    width: 450px;
+    margin: 0;
+}
 
-input.mailing {
+input[type="email"]#email1 {
+    width: 450px;
+}
+
+input[type="tel"]#telephone {
+    width: 450px;
+    padding: 10px;
     background-color: white;
 }
 
+/* END DASHBOARD USER */
 
-/*# sourceMappingURL=style.css.map */
+/* ****** RESPONSIVE MOBILE DASHBOARD USER */
+@media only screen and (max-width: 350px) {
+   
+    .dashboard1 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    #user-nav ul {
+      display: none;
+    }
+  
+    #user-nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    #user-nav ul li:last-child {
+      margin-bottom: 0;
+    }
+  
+    #user-nav label {
+      display: none;
+    }
+  
+    #dash-form input[type="text"],
+    #dash-form input[type="email"],
+    #dash-form input[type="tel"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #dash-form label[for="adresse"] {
+      display: none;
+    }
+  
+    #dash-form input[type="submit"] {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  /* *******END RESPONSIVE MOBILE DASHBOARD USER */

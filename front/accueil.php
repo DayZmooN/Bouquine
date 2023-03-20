@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require_once './connect.php';
 require_once './header-front.php';
 require_once './footer-front.php';
@@ -8,7 +8,7 @@ require_once './footer-front.php';
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY RAND() LIMIT 8');
 $query->execute();
 
-if (isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
     $email = ($_POST['email']);
     $newsreq = $db->prepare("INSERT INTO `newsletter`(`email`) VALUES ('$email')");
     //$newsreq->bindParam('email', $email, PDO::PARAM_STR);
@@ -17,6 +17,7 @@ if (isset($_POST['submit'])){
     header('location: ./accueil.php');
 }
 ?>
+
 <body>
     <!-- SECTION 1 populaire  -->
     <main>

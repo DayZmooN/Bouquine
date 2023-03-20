@@ -35,14 +35,14 @@ if (isset($_POST['submitAdd'])) {
 </div>
 
 <div class="genreList">
-<?php
+    <?php
     foreach ($resultat as $genre) {
-?>
-    <div class="unite">
-        <h3><?= $genre['libel_genre'] ?></h3>
+    ?>
+        <div class="unite">
+            <h3><?= $genre['libel_genre'] ?></h3>
 
-        <a class="btnGreen" href="./genreaddedit.php?id=<?= $genre['id_genre'] ?>" style="color:green">modifier</a>
-        <a class="btnRed" href="./deletegenre.php?id=<?= $genre['id_genre'] ?>" style="color:red">supprimer</a>
+            <a class="btnGreen" href="./genreaddedit.php?id=<?= $genre['id_genre'] ?>" style="color:green">modifier</a>
+            <a class="btnRed" data-idbook="<?= $genre['id_genre'] ?>" data-title="<?= $genre['libel_genre'] ?>" style="color:red">supprimer</a>
 
-    </div>
-<?php } ?>
+        </div>
+    <?php } ?>

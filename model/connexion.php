@@ -3,7 +3,7 @@
 session_start();
 //protection pour empeche d'acceder a url
 if (isset($_SESSION["user"])) {
-    header("location: ../front/dashboarduser.php");
+    header("location: ../front/user-dashboard.php");
     exit;
 }
 
@@ -39,20 +39,20 @@ if (!empty($_POST)) {
         //on va pouvoir "connecter" l'utilisateur
         if ($user) {
             // ici on a un user existant, on peut vérifier le mot de passe 
-            if (!password_verify($_POST["password"], $user["password"])) {
+            if (password_verify($_POST["password"], $user["password"])) {
+                //on stocke dans $_SESSION LES information de l'utilisateur
+                $_SESSION["user"] = [
+                    "id" => $user["id_user"],
+                    "username" => $user["username"],
+                    "mail" => $user["mail"],
+                    "lastname" => $user["lastname"],
+                    "phone" => $user["phone"],
+                    "birthdate" => $user["birthdate"],
+                ];
+                header("location: ../front/accueil.php");
+            } else {
+                die("adresse email ou mot de passe incorecte");
             }
-
-            //on stocke dans $_SESSION LES information de l'utilisateur
-            $_SESSION["user"] = [
-                "id" => $user["id_user"],
-                "username" => $user["username"],
-                "mail" => $user["mail"],
-                "lastname" => $user["lastname"],
-                "phone" => $user["phone"],
-                "birthdate" => $user["birthdate"],
-                "roles" => $user["roles"]
-            ];
-            header("location: ./dashboarduser.php");
         }
     }
 
