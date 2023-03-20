@@ -64,6 +64,7 @@ a {
 
     &>#menu-admin {
         width: 100%;
+
         &>nav {
             max-width: 500px;
 
@@ -157,14 +158,14 @@ a {
 
     /*....................CSS.TABLEAU.DE.BORD....................*/
 
-    .multitaches > #compteurEtGraphique {
+    .multitaches>#compteurEtGraphique {
         width: 1000px;
         height: 120px;
         margin-top: 25px;
         margin-left: 25px;
     }
 
-    .multitaches > #dernier-ajout {
+    .multitaches>#dernier-ajout {
         width: 100%;
         margin-top: 50px;
         text-transform: uppercase;
@@ -175,7 +176,7 @@ a {
 
     /*....................CSS.ARTICLES....................*/
 
-    .multitaches > #articleSearchAjout {
+    .multitaches>#articleSearchAjout {
         width: 50%;
         display: flex;
         flex-direction: row;
@@ -221,14 +222,14 @@ a {
 
     }
 
-    .multitaches > .sousTitre{
+    .multitaches>.sousTitre {
         width: 200px;
         margin-top: 40px;
         margin-left: 500px;
         margin-bottom: 20px;
     }
 
-    .multitaches > .articleList {
+    .multitaches>.articleList {
         width: 800px;
         height: 49px;
         display: flex;
@@ -260,8 +261,8 @@ a {
 
     /*....................CSS.FORMULAIRE.AJOUT.LIVRE....................*/
 
-    .multitaches > #formulaireAjout {
-        
+    .multitaches>#formulaireAjout {
+
         width: 90%;
         margin: 0 auto;
         background-color: #FFF5EE;
@@ -298,11 +299,11 @@ a {
                 display: flex;
                 flex-direction: column;
 
-                & > .editeur{
+                &>.editeur {
                     width: 320px;
                     margin-top: 50px;
 
-                    & > #editor{
+                    &>#editor {
                         width: 320px;
                         height: 50px;
                         border: 0;
@@ -313,19 +314,19 @@ a {
                     }
                 }
 
-                & > .ajoutDate{
+                &>.ajoutDate {
                     width: 320px;
                     margin-top: 50px;
                     display: flex;
                     flex-direction: row;
 
-                    & > .publication{
+                    &>.publication {
                         width: 90px;
                         height: 50px;
                         margin-top: 15px;
                     }
 
-                    & > .date{
+                    &>.date {
                         width: 235px;
                         height: 50px;
                         border: 0;
@@ -338,32 +339,32 @@ a {
             }
         }
 
-        & > .formMilieu{
+        &>.formMilieu {
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
 
-            & > .select{
+            &>.select {
                 width: 320px;
                 margin-top: 50px;
 
                 & > #id_category{
-                    width: 190px;
+                    width: 200px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
                     background-color: $remplissage;
                     padding-left: 10px;
-                    
+
                 }
             }
 
-            & > .genreChoice{
+            &>.genreChoice {
                 width: 260px;
                 margin-top: 50px;
 
-                & > #genre{
+                &>#genre {
                     width: 260px;
                     height: 50px;
                     border: 0;
@@ -373,26 +374,13 @@ a {
                 }
 
             }
+        }
 
-            & > .collectChoice{
-                width: 260px;
-                margin-top: 50px;
-
-                & > #collection{
-                    width: 260px;
-                    height: 50px;
-                    border: 0;
-                    border-radius: 50px;
-                    background-color: $remplissage;
-                    padding-left: 10px;
-                }
-            }
-
-            & > .imageChoice{
+            &>.imageChoice {
                 width: 320px;
                 margin-top: 50px;
 
-                & > #image{
+                &>#image {
                     width: 210px;
                     height: 50px;
                     border: 0;
@@ -402,80 +390,22 @@ a {
                 }
             }
 
-            
+
         }
 
-        & > .formDroite{
+        &>.formDroite {
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
 
-            & > .resume{
+            & > .imageChoice{
                 width: 100%;
-                height: 400px;
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                margin-top: 20px;
-                
 
-                & > #summary{
-                    width: 320px;
-                    height: 400px;
-                    resize: none;
-                    margin-top: 10px;
-                    border: 1px solid $remplissage;
-                    border-radius: 10px;
-                    padding: 5px 5px;
-                }
-            }
-
-            
-
-            
-
-            & > input{
-                width: 200px;
-                height: 50px;
-                border-radius: 50px;
-                background-color: $grisBtn;
-                cursor: pointer;
-                color: #26F904;
-            }
-        }
-    }
-
-    /*....................FIN.FORMULAIRE.AJOUT.LIVRE....................*/
-
-    /*....................CSS.FORMULAIRE.MODIF.LIVRE....................*/
-
-    .multitaches > #formulaireModif {
-        
-        width: 90%;
-        margin: 0 auto;
-        background-color: #FFF5EE;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        border-radius: 50px;
-        margin-top: 20px;
-
-        &>#formGauche {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-
-            &>.titre-auteur {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-
-                &>.tripleInput {
-                    width: 320px;
+                & > #image{
+                    width: 200px;
                     height: 50px;
-                    margin-top: 50px;
                     border: 0;
                     border-radius: 50px;
                     background-color: $remplissage;
@@ -504,19 +434,19 @@ a {
                     }
                 }
 
-                & > .ajoutDate{
+                &>.ajoutDate {
                     width: 320px;
                     margin-top: 50px;
                     display: flex;
                     flex-direction: row;
 
-                    & > .publication{
+                    &>.publication {
                         width: 90px;
                         height: 50px;
                         margin-top: 15px;
                     }
 
-                    & > .date{
+                    &>.date {
                         width: 235px;
                         height: 50px;
                         border: 0;
@@ -529,32 +459,34 @@ a {
             }
         }
 
-        & > .formMilieu{
+        &>.formMilieu {
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
 
-            & > .select{
+            &>.select {
                 width: 320px;
                 margin-top: 50px;
 
                 & > #id_category{
+                    width: 190px;
+                &>#id_category {
                     width: 190px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
                     background-color: $remplissage;
                     padding-left: 10px;
-                    
+
                 }
             }
 
-            & > .genreChoice{
+            &>.genreChoice {
                 width: 260px;
                 margin-top: 50px;
 
-                & > #genre{
+                &>#genre {
                     width: 260px;
                     height: 50px;
                     border: 0;
@@ -565,19 +497,12 @@ a {
 
             }
 
-            & > .collectChoice{
-                width: 260px;
-                margin-top: 50px;
-
-                & > #collection{
-                    width: 260px;
-                    height: 50px;
-                    border: 0;
-                    border-radius: 50px;
-                    background-color: $remplissage;
-                    padding-left: 10px;
-                }
-            }
+        & > .formDroite{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
 
             & > .imageChoice{
                 width: 320px;
@@ -603,16 +528,135 @@ a {
             justify-content: space-around;
             align-items: center;
 
-            & > .resume{
+            &>.edition-date {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                &>.editeur {
+                    width: 320px;
+                    margin-top: 50px;
+
+                    &>#editor {
+                        width: 320px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 50px;
+                        background-color: $remplissage;
+                        padding-left: 10px;
+
+                    }
+                }
+
+                &>.ajoutDate {
+                    width: 320px;
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: row;
+
+                    &>.publication {
+                        width: 90px;
+                        height: 50px;
+                        margin-top: 15px;
+                    }
+
+                    &>.date {
+                        width: 235px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 50px;
+                        background-color: $remplissage;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+        &>.formMilieu {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &>.select {
+                width: 320px;
+                margin-top: 50px;
+
+                &>#id_category {
+                    width: 190px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+
+                }
+            }
+
+            &>.genreChoice {
+                width: 260px;
+                margin-top: 50px;
+
+                &>#genre {
+                    width: 260px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+                }
+
+            }
+
+            &>.collectChoice {
+                width: 260px;
+                margin-top: 50px;
+
+                &>#collection {
+                    width: 260px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+                }
+            }
+
+            &>.imageChoice {
+                width: 320px;
+                margin-top: 50px;
+
+                &>#image {
+                    width: 210px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+                }
+            }
+
+
+        }
+
+        &>.formDroite {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            &>.resume {
                 width: 100%;
                 height: 400px;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 margin-top: 20px;
-                
 
-                & > #summary{
+
+                &>#summary {
                     width: 320px;
                     height: 400px;
                     resize: none;
@@ -627,7 +671,11 @@ a {
 
             
 
-            & > input{
+
+
+
+
+            &>input {
                 width: 200px;
                 height: 50px;
                 border-radius: 50px;
@@ -639,9 +687,11 @@ a {
     }
     /*....................FIN.FORMULAIRE.MODIF.LIVRE....................*/
 
+    /*....................FIN.FORMULAIRE.MODIF.LIVRE....................*/
+
     /*....................CSS.CATEGORIES....................*/
 
-    .multitaches > #ajoutCategorie {
+    .multitaches>#ajoutCategorie {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -664,7 +714,7 @@ a {
             justify-content: space-evenly;
             justify-items: center;
 
-            & > .newCat {
+            &>.newCat {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -674,7 +724,7 @@ a {
 
             }
 
-            & > .slugCat {
+            &>.slugCat {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -699,7 +749,7 @@ a {
         }
     }
 
-    .multitaches > .categorieList {
+    .multitaches>.categorieList {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -732,21 +782,21 @@ a {
     /*....................FIN.CSS.CATEGORIES....................*/
 
     /*....................CSS.EDIT.CATEGORIES....................*/
-    .multitaches > .titleEditCategory{
+    .multitaches>.titleEditCategory {
         width: 500px;
         padding-top: 100px;
         margin: auto;
-        
+
     }
 
-    .multitaches > #editCategorie{
+    .multitaches>#editCategorie {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         margin-top: 50px;
-        
-        & > .edit{
+
+        &>.edit {
             width: 700px;
             height: 100px;
             background-color: $remplissage;
@@ -758,7 +808,7 @@ a {
             justify-content: space-evenly;
             justify-items: center;
 
-            & > .editCat{
+            &>.editCat {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -768,7 +818,7 @@ a {
 
             }
 
-            & > .editSlugCat{
+            &>.editSlugCat {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -777,7 +827,7 @@ a {
                 font-size: 1.1rem;
             }
 
-            & > .subEditCat{
+            &>.subEditCat {
                 width: 150px;
                 height: 50px;
                 text-transform: uppercase;
@@ -790,11 +840,12 @@ a {
             }
         }
     }
-/*....................FIN.EDIT.CATEGORIES....................*/
+
+    /*....................FIN.EDIT.CATEGORIES....................*/
 
     /*....................CSS.GENRES....................*/
 
-    .multitaches > #ajoutGenre {
+    .multitaches>#ajoutGenre {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -817,7 +868,7 @@ a {
             justify-content: space-evenly;
             justify-items: center;
 
-            & > .newGenre {
+            &>.newGenre {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -827,7 +878,7 @@ a {
 
             }
 
-            & > .slugGenre {
+            &>.slugGenre {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -852,7 +903,7 @@ a {
         }
     }
 
-    .multitaches > .genreList {
+    .multitaches>.genreList {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -881,21 +932,21 @@ a {
 
     /*....................CSS.EDIT.GENRE....................*/
 
-    .multitaches > .titleEditGenre{
+    .multitaches>.titleEditGenre {
         width: 500px;
         padding-top: 100px;
         margin: auto;
-        
+
     }
 
-    .multitaches > #sectionEditGenre{
+    .multitaches>#sectionEditGenre {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         margin-top: 50px;
-        
-        & > .edit{
+
+        &>.edit {
             width: 700px;
             height: 100px;
             background-color: $remplissage;
@@ -907,7 +958,7 @@ a {
             justify-content: space-evenly;
             justify-items: center;
 
-            & > .editGenre{
+            &>.editGenre {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -917,7 +968,7 @@ a {
 
             }
 
-            & > .editSlugGenre{
+            &>.editSlugGenre {
                 width: 200px;
                 height: 50px;
                 border: 0;
@@ -926,7 +977,7 @@ a {
                 font-size: 1.1rem;
             }
 
-            & > .subEditGenre{
+            &>.subEditGenre {
                 width: 150px;
                 height: 50px;
                 text-transform: uppercase;
@@ -1245,4 +1296,55 @@ a {
 
 
 
+}
+
+//modal for delete
+
+.block-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active-box-delete-book {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    p#txt-box-delete-category {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    a#btn-cancel-delete-category,
+    a#btn-confirmed-delete-book {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    a#btn-cancel-delete-category {
+        background-color: #999;
+        margin-right: 10px;
+    }
+
+    a#btn-confirmed-delete-book {
+        background-color: #d9534f;
+    }
 }

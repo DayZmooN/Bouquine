@@ -1,5 +1,4 @@
 <?php
- session_start();
  try{
      require_once '../connexion.php';
      $id = $_GET['id'];

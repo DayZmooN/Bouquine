@@ -48,13 +48,13 @@ include './header-admin.php';
 <div id="editCategorie">
 
     <form class="edit" action="" method="post">
-        
-        
-            <input class="editCat" type="text" name="libel_category" value="<?= $category['libel_category'] ?>">
-            <input class="editSlugCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
-        
-            <input class="subEditCat" type="submit" name="submitEdit" value="Modifier">
-        
+
+
+        <input class="editCat" type="text" name="libel_category" value="<?= $category['libel_category'] ?>">
+        <input class="editSlugCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
+
+        <input class="subEditCat" type="submit" name="submitEdit" value="Modifier">
+
 
     </form>
 

@@ -1,25 +1,22 @@
 <?php
+// session_start();
 require_once './connect.php';
 require_once './header-front.php';
 require_once './footer-front.php';
 
 
-$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` LIMIT 8');
+$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY RAND() LIMIT 8');
 $query->execute();
+
+if (isset($_POST['submit'])) {
+    $email = ($_POST['email']);
+    $newsreq = $db->prepare("INSERT INTO `newsletter`(`email`) VALUES ('$email')");
+    //$newsreq->bindParam('email', $email, PDO::PARAM_STR);
+    $newsreq->execute();
+
+    header('location: ./accueil.php');
+}
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouquine</title>
-    <link rel="stylesheet" href="../css/style.css">
-
-</head>
 
 <body>
     <!-- SECTION 1 populaire  -->
@@ -77,7 +74,8 @@ $query->execute();
         INNER JOIN `genre`
         ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
-        WHERE genre.`id_genre` = 5");
+        WHERE genre.`id_genre` = 5
+        LIMIT 4");
         $reqFav->execute();
         ?>
         <section id="gender">
@@ -109,7 +107,8 @@ $query->execute();
         INNER JOIN `genre`
         ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
-        WHERE genre.`id_genre` = 1");
+        WHERE genre.`id_genre` = 1
+        LIMIT 4");
                     $reqFav->execute();
                     ?>
                     <h3 id="fantaisie">Fantaisie</h3>
@@ -138,7 +137,8 @@ $query->execute();
                         INNER JOIN `genre`
                         ON `genre_book`.`id_genre` = `genre`.`id_genre`
 
-                        WHERE genre.`id_genre` = 7");
+                        WHERE genre.`id_genre` = 7
+                        LIMIT 4");
                         $reqFav->execute();
                         ?>
                         <h3 id="action">Action</h3>
@@ -192,15 +192,16 @@ $query->execute();
             <div class="parallax parallax1 news">
                 <h2 id="titl">Newsletter gratuite</h2>
                 <div class="formulaire">
-                    <form action="subscribing-newsletter" method="post">
+
+                    <form action="" method="POST">
                         <label for="email">E-mail:</label>
-                        <input id="email" name="subscriber_email" type="email" />
-                        <button id="send" type="submit">S'abonner </button>
+                        <input id="email" name="email" type="email">
+                        <input id="send" type="submit" name="submit">
                     </form>
                 </div>
 
                 <p class="abonner">N'hésitez pas à vous abonner pour recevoir en exclusivité chaque mois les
-                    dernières nouveautés et évènements de la bibliothèque.Nous ne vous enverrons pas de spam
+                    dernières nouveautés et évènements de la bibliothèque.<br>Nous ne vous enverrons pas de spam
                     ni ne partagerons vos informations.</p>
             </div>
         </section>

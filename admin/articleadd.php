@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once '../connexion.php';
 
 if (isset($_POST['submit'])) {
@@ -26,91 +25,89 @@ include './header-admin.php';
 ?>
 
 <h1 class="multiTitre">formulaire ajout de livre</h1>
-    
-            <form id="formulaireAjout" action="#" method="POST">
 
-                <div id="formGauche">
-                    <div class="titre-auteur">
+<form id="formulaireAjout" action="#" method="POST">
 
-                        <label for="title"></label>
-                        <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
+    <div id="formGauche">
+        <div class="titre-auteur">
 
-
-                        <label for="author"></label>
-                        <input class="tripleInput" type="text" name="author" id="author" placeholder="Auteur">
+            <label for="title"></label>
+            <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
 
 
-                        <label for="ISBN"></label>
-                        <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
-
-                    </div>
-
-                    <div class="edition-date">
-                        <div class="editeur">
-                            <label for="editor"></label>
-                            <input type="text" name="editor" id="editor" placeholder="Éditeur">
-                        </div>
-
-                        <div class="ajoutDate">
-                            <label class="publication" for="publication_date">Publication :  </label>
-                            <input class="date" type="date" name="publication_date" id="publication_date">
-                        </div>
-
-                    </div>
-                </div>
-                    
-                <div class="formMilieu">
-
-                    <div class="select">
-
-                        <label for="id_category">Catégorie :</label>
-
-                        <select name="id_category" id="id_category">
-                            <?php
-                            $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                            $reqCat->execute();
-                            while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                            ?>
-                        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
-                    <?php } ?>
-                        </select>
-
-                    </div>
+            <label for="author"></label>
+            <input class="tripleInput" type="text" name="author" id="author" placeholder="Auteur">
 
 
-                    <div class="genreChoice">
+            <label for="ISBN"></label>
+            <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
 
-                        <label for="genre"></label>
-                        <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
-                    </div>
+        </div>
 
-                    <div class="collectChoice">
+        <div class="edition-date">
+            <div class="editeur">
+                <label for="editor"></label>
+                <input type="text" name="editor" id="editor" placeholder="Éditeur">
+            </div>
 
-                        <label for="collection"></label>
-                        <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
-                    </div>
+            <div class="ajoutDate">
+                <label class="publication" for="publication_date">Publication : </label>
+                <input class="date" type="date" name="publication_date" id="publication_date">
+            </div>
 
-                    <div class="imageChoice">
-                        <label for="image">Image :</label>
-                        <input type="text" name="image" id="image" placeholder="indiquer votre image">
-                    </div>
+        </div>
+    </div>
 
-                </div>
+    <div class="formMilieu">
 
-                <div class="formDroite">
-                    <div class="resume">
+        <div class="select">
 
-                        <label for="summary">Résumé</label>
-                        <textarea type="text" name="summary" id="summary">ecrivez votre resumé</textarea>
+            <label for="id_category">Catégorie :</label>
 
-                    </div>
-                    
-                    
+            <select name="id_category" id="id_category">
+                <?php
+                $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                $reqCat->execute();
+                while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                    <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                <?php } ?>
+            </select>
 
-                    
-                    <input type="submit" name="submit" value="Envoyer le formulaire">
-                </div>
+        </div>
 
-            </form>
 
-        <?php include './includeClose.php'  ?>
+        <div class="genreChoice">
+
+            <label for="genre"></label>
+            <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
+        </div>
+
+        <div class="collectChoice">
+
+            <label for="collection"></label>
+            <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
+        </div>
+
+        <div class="imageChoice">
+            <label for="image">Image :</label>
+            <input type="text" name="image" id="image" placeholder="indiquer votre image">
+        </div>
+
+    </div>
+
+    <div class="formDroite">
+        <div class="resume">
+
+            <label for="summary">Résumé</label>
+            <textarea type="text" name="summary" id="summary">ecrivez votre resumé</textarea>
+
+        </div>
+
+
+
+
+        <input type="submit" name="submit" value="Envoyer le formulaire">
+    </div>
+
+</form>
