@@ -84,6 +84,13 @@ include './header-admin.php';
                         <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
                     </div>
 
+                    <div class="resume">
+
+                        <label for="summary">Résumé</label>
+                        <textarea type="text" name="summary" id="summary"></textarea>
+
+                    </div>
+
                 </div>
 
                 <div class="formDroite">
@@ -93,12 +100,7 @@ include './header-admin.php';
                         <input type="text" name="image" id="image">
                     </div>
 
-                    <div class="resume">
-
-                        <label for="summary">Résumé</label>
-                        <textarea type="text" name="summary" id="summary"></textarea>
-
-                    </div>
+                    
                     <input type="submit" name="submit" value="Envoyer le formulaire">
                 </div>
 

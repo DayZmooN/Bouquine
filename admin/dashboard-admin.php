@@ -38,3 +38,5 @@ foreach ($result as $article) {
 <?php
 }
 ?>
+
+<?php include './includeClose.php'  ?>
