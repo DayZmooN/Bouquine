@@ -105,7 +105,6 @@ a {
 
 /*.....header + icones.....*/
 .corp {
-    max-width: 1300px;
     width: 75%;
     height: 100%;
     float: right;
@@ -139,7 +138,7 @@ a {
 
     &>.multitaches {
         width: 100%;
-        height: 100vh;
+        //height: 100vw;
 
 
         &>.multiTitre {
@@ -154,14 +153,11 @@ a {
 
     /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
 
-
-
-
-    /*....................CSS.DASHBOARD....................*/
+    /*....................CSS.TABLEAU.DE.BORD....................*/
 
     .multitaches>#compteurEtGraphique {
         width: 1000px;
-
+        height: 120px;
         margin-top: 25px;
         margin-left: 25px;
     }
@@ -173,7 +169,7 @@ a {
         text-align: center;
     }
 
-    /*....................FIN.DASHBOARD....................*/
+    /*....................FIN.TABLEAU.DE.BORD....................*/
 
     /*....................CSS.ARTICLES....................*/
 
@@ -259,7 +255,7 @@ a {
 
     /*....................FIN.CSS.ARTICLES....................*/
 
-    /*....................CSS.FORMULAIRE.AJOUT/MODIFICATION.ARTICLES....................*/
+    /*....................CSS.FORMULAIRE.AJOUT.LIVRE....................*/
 
     .multitaches>#formulaireAjout {
 
@@ -277,18 +273,13 @@ a {
             display: flex;
             flex-direction: column;
 
-
-
-
             &>.titre-auteur {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
 
-
-
                 &>.tripleInput {
-                    width: 350px;
+                    width: 320px;
                     height: 50px;
                     margin-top: 50px;
                     border: 0;
@@ -301,11 +292,65 @@ a {
 
             &>.edition-date {
                 width: 100%;
+                display: flex;
+                flex-direction: column;
 
                 &>div>#editor {
                     width: 350px;
                     height: 50px;
+                & > .editeur{
+                    width: 320px;
                     margin-top: 50px;
+
+                    &>#editor {
+                        width: 320px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 50px;
+                        background-color: $remplissage;
+                        padding-left: 10px;
+
+                    }
+                }
+
+                &>.ajoutDate {
+                    width: 320px;
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: row;
+
+                    &>.publication {
+                        width: 90px;
+                        height: 50px;
+                        margin-top: 15px;
+                    }
+
+                    &>.date {
+                        width: 235px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 50px;
+                        background-color: $remplissage;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+        &>.formMilieu {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            &>.select {
+                width: 320px;
+                margin-top: 50px;
+
+                &>#id_category {
+                    width: 200px;
+                    height: 50px;
                     border: 0;
                     border-radius: 50px;
                     background-color: $remplissage;
@@ -313,7 +358,7 @@ a {
 
                 }
 
-                &>div>.date {
+                HEAD &>div>.date {
                     width: 150px;
                     height: 50px;
                     margin-top: 50px;
@@ -331,400 +376,723 @@ a {
         &>.milieu {
 
 
+            & > .genreChoice{
+                width: 260px;
+                margin-top: 50px;
+
+                & > #genre{
+                    width: 260px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+                }
+
+            }
+        }
 
             &>.select {
 
                 &>select {}
             }
         }
+            & > .imageChoice{
+                width: 100%;
+
+                & > #image{
+                    width: 200px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                }
+            }
+
+            & > .resume{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                & > #summary{
+                    width: 320px;
+                    height: 300px;
+                    resize: none;
+                    margin-top: 10px;
+                }
+            }
 
         &>#droite {
 
             &>.resume {
 
-
-
-
-                &>.choixImg {}
+            & > input{
+                width: 200px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: $grisBtn;
+                cursor: pointer;
+                color: #26F904;
             }
-
-            &>.buttonFormulaire {}
         }
     }
 
-    /*....................FIN.FORMULAIRE.AJOUT....................*/
+    /*....................FIN.FORMULAIRE.AJOUT.LIVRE....................*/
 
     /*....................CSS.CATEGORIES....................*/
 
-    .multitaches>.categorieList {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 50px;
 
-        flex-wrap: wrap;
-
-
-        &>.unite {
-            width: 300px;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            justify-items: center;
-            align-items: center;
-            background-color: #AAAAAA;
-            border: 1px solid black;
-            margin: 10px 10px;
-
-        }
+                .multitaches>#ajoutCategorie {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 100px;
 
 
-
-
-
-    }
-
-    /*....................FIN.CSS.CATEGORIES....................*/
-
-    /*....................CSS.GENRES....................*/
-
-    .multitaches>.genreList {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 50px;
-
-        flex-wrap: wrap;
-
-
-        &>.unite {
-            width: 300px;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            justify-items: center;
-            align-items: center;
-            background-color: #AAAAAA;
-            border: 1px solid black;
-            margin: 10px 10px;
-
-        }
-    }
-
-    /*....................FIN.CSS.GENRES....................*/
-
-    /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
-
-    .multitaches>#ajout-categorie {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 100px;
-
-
-
-
-        &>.ajout {
-
-            width: 300px;
-            height: 300px;
-            background-color: $remplissage;
-            border-radius: 15px;
-            box-shadow: 1px 1px 10px 1px grey;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            justify-items: center;
-
-            &>.newCat {
-                width: 200px;
-                height: 50px;
-                border: 0;
-                border-radius: 25px;
-                text-align: center;
-                font-size: 1.1rem;
-
-            }
-
-
-            &>button {
-                width: 150px;
-                height: 50px;
-                text-transform: uppercase;
-                border: 0;
-                border-radius: 10px;
-                background-color: $grisBtn;
-
-                &>a {
-                    font-size: 1.1rem;
-                    color: white;
+                    &>.choixImg {}
                 }
 
-            }
-        }
+                &>.buttonFormulaire {}
 
-        &>.modifierSupp {
-            width: 500px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            justify-items: center;
-            background-color: $remplissage;
-            border-radius: 15px;
-            box-shadow: 1px 1px 10px 1px grey;
-
-            &>#selection {
-                width: 350px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-
-                &>#id_category {
-                    width: 150px;
-                    height: 30px;
-                    margin-right: 10px;
-                    border-radius: 50px;
-                    border-color: $remplissage;
-                    text-align: center;
-                    font-size: 1.1rem;
-                }
-
-                &>.modifCat {
-                    margin-right: 10px;
-                    width: 150px;
-                    height: 30px;
-                    text-align: center;
-                    font-size: 1.1rem;
-                    border-radius: 50px;
-                    border: 0;
-                }
+                =======
             }
 
-
-
-            button {
-                margin-right: 10px;
-                width: 150px;
-                height: 50px;
-                text-transform: uppercase;
-                border: 0;
-                border-radius: 10px;
-                background-color: $grisBtn;
-
-                &>a {
-                    font-size: 1.1rem;
-                    color: white;
-                }
-            }
-        }
-    }
-
-    .multitaches>#ajout-genre {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 100px;
-
-
-
-
-        &>.ajout {
-
-            width: 300px;
-            height: 300px;
-            background-color: $remplissage;
-            border-radius: 15px;
-            box-shadow: 1px 1px 10px 1px grey;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            justify-items: center;
-
-            &>.newGenre {
-                width: 200px;
-                height: 50px;
-                border: 0;
-                border-radius: 25px;
-                text-align: center;
-                font-size: 1.1rem;
-
-            }
-
-
-            &>button {
-                width: 150px;
-                height: 50px;
-                text-transform: uppercase;
-                border: 0;
-                border-radius: 10px;
-                background-color: $grisBtn;
-
-                &>a {
-                    font-size: 1.1rem;
-                    color: white;
-                }
-
-            }
-        }
-
-        &>.modifierSupp {
-            width: 500px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            justify-items: center;
-            background-color: $remplissage;
-            border-radius: 15px;
-            box-shadow: 1px 1px 10px 1px grey;
-
-            &>#selection {
-                width: 350px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
+            &>.genreChoice {
+                width: 260px;
+                margin-top: 50px;
 
                 &>#genre {
-                    width: 150px;
-                    height: 30px;
-                    margin-right: 10px;
-                    border-radius: 50px;
-                    border-color: $remplissage;
-                    text-align: center;
-                    font-size: 1.1rem;
-                }
-
-                &>.modifGenre {
-                    margin-right: 10px;
-                    width: 150px;
-                    height: 30px;
-                    text-align: center;
-                    font-size: 1.1rem;
-                    border-radius: 50px;
+                    width: 260px;
+                    height: 50px;
                     border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
+                    padding-left: 10px;
+                }
+
+            }
+        }
+
+        &>.formDroite {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &>.imageChoice {
+                width: 100%;
+
+                &>#image {
+                    width: 200px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 50px;
+                    background-color: $remplissage;
                 }
             }
 
+            &>.resume {
+                width: 100%;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
 
+                &>#summary {
+                    width: 320px;
+                    height: 300px;
+                    resize: none;
+                    margin-top: 10px;
+                }
+            }
 
-            button {
-                margin-right: 10px;
-                width: 150px;
+            &>input {
+                width: 200px;
                 height: 50px;
-                text-transform: uppercase;
-                border: 0;
-                border-radius: 10px;
+                border-radius: 50px;
                 background-color: $grisBtn;
-
-                &>a {
-                    font-size: 1.1rem;
-                    color: white;
-                }
+                cursor: pointer;
+                color: #26F904;
             }
+
+            >>>>>>>dimi2
         }
     }
 
-    /*....................fin.formulaire....................*/
+    /*....................FIN.FORMULAIRE.AJOUT.LIVRE....................*/
 
-    /*....................CSS.USER....................*/
+    /*....................CSS.CATEGORIES....................*/
 
-    .multitaches>#userMenu {
-        width: 50%;
+    <<<<<<< HEAD .multitaches>.categorieList {
+        =======.multitaches>#ajoutCategorie {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+
+
+
+
+            &>.ajout {
+
+                width: 700px;
+                height: 100px;
+                background-color: $remplissage;
+                border-radius: 15px;
+                box-shadow: 1px 1px 10px 1px grey;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                justify-items: center;
+
+                &>.newCat {
+                    width: 200px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 1.1rem;
+
+                }
+
+                &>.slugCat {
+                    width: 200px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 1.1rem;
+
+                }
+
+
+                &>.subCat {
+                    width: 150px;
+                    height: 50px;
+                    text-transform: uppercase;
+                    border: 0;
+                    border-radius: 10px;
+                    font-size: 1.1rem;
+                    color: white;
+                    background-color: $grisBtn;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    .multitaches>.categorieList {
+        width: 100%;    
         display: flex;
         flex-direction: row;
-        align-items: center;
-        margin-left: 40px;
-        padding-top: 50px;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+        flex-wrap: wrap;
 
-        &>.userSearch {
-            display: flex;
-            flex-direction: row;
 
-            &>.recherche {
-                border: 0;
-                border-radius: 100px;
+            &>.unite {
                 width: 300px;
                 height: 50px;
-                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                justify-items: center;
+                align-items: center;
+                background-color: #AAAAAA;
+                border: 1px solid black;
+                margin: 10px 10px;
+
             }
 
-            &>button {
-                width: 50px;
-                height: 50px;
-                border: 0;
-                border-radius: 100px;
-                margin-left: -50px;
-                margin-right: 50px;
+
+
+
+
+        }
+
+        /*....................FIN.CSS.CATEGORIES....................*/
+
+        /*....................CSS.EDIT.CATEGORIES....................*/
+        .multitaches>.titleEditCategory {
+            width: 500px;
+            padding-top: 100px;
+            margin: auto;
+
+        }
+
+        .multitaches>#editCategorie {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+
+            &>.edit {
+                width: 700px;
+                height: 100px;
+                background-color: $remplissage;
+                border-radius: 15px;
+                box-shadow: 1px 1px 10px 1px grey;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                justify-items: center;
+
+                &>.editCat {
+                    width: 200px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 1.1rem;
+
+                }
+
+                &>.editSlugCat {
+                    width: 200px;
+                    height: 50px;
+                    border: 0;
+                    border-radius: 25px;
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+
+                &>.subEditCat {
+                    width: 150px;
+                    height: 50px;
+                    text-transform: uppercase;
+                    border: 0;
+                    border-radius: 10px;
+                    font-size: 1.1rem;
+                    color: white;
+                    background-color: $grisBtn;
+                    cursor: pointer;
+                }
             }
         }
 
-        &>.boutonUser {
-            width: 400px;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
+        /*....................FIN.EDIT.CATEGORIES....................*/
+
+        /*....................CSS.GENRES....................*/
+
+        <<<<<<< HEAD .multitaches>.genreList {
+            =======.multitaches>#ajoutGenre {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 100px;
 
 
 
-            &>button {
-                width: 150px;
-                height: 50px;
-                line-height: 50px;
-                text-transform: uppercase;
-                border: 0;
-                border-radius: 10px;
-                background-color: $grisBtn;
-                margin-left: 10px;
 
-                &>a {
+                &>.ajout {
+
+                    width: 700px;
+                    height: 100px;
+                    background-color: $remplissage;
+                    border-radius: 15px;
+                    box-shadow: 1px 1px 10px 1px grey;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    justify-items: center;
+
+                    &>.newGenre {
+                        width: 200px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 25px;
+                        text-align: center;
+                        font-size: 1.1rem;
+
+                    }
+
+                    &>.slugGenre {
+                        width: 200px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 25px;
+                        text-align: center;
+                        font-size: 1.1rem;
+
+                    }
+
+
+                    &>.subGenre {
+                        width: 150px;
+                        height: 50px;
+                        text-transform: uppercase;
+                        border: 0;
+                        border-radius: 10px;
+                        font-size: 1.1rem;
+                        color: white;
+                        background-color: $grisBtn;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+    .multitaches>.genreList {
+        width: 100%;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+
+        flex-wrap: wrap;
+
+
+                &>.unite {
+                    width: 300px;
                     height: 50px;
-                    font-size: 1.1rem;
-                    color: white;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    justify-items: center;
+                    align-items: center;
+                    background-color: #AAAAAA;
+                    border: 1px solid black;
+                    margin: 10px 10px;
 
                 }
             }
 
+            /*....................FIN.CSS.GENRES....................*/
+
+            /*....................CSS.EDIT.GENRE....................*/
+
+            .multitaches>.titleEditGenre {
+                width: 500px;
+                padding-top: 100px;
+                margin: auto;
+
+            }
+
+            .multitaches>#sectionEditGenre {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 50px;
 
 
-        }
+
+
+                &>.ajout {
+
+                    width: 300px;
+                    height: 300px;
+                    background-color: $remplissage;
+                    border-radius: 15px;
+                    box-shadow: 1px 1px 10px 1px grey;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    justify-items: center;
+
+                    &>.editGenre {
+                        width: 200px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 25px;
+                        text-align: center;
+                        font-size: 1.1rem;
+
+                    }
+
+                    &>.editSlugGenre {
+                        width: 200px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 25px;
+                        text-align: center;
+                        font-size: 1.1rem;
+                    }
+
+                    &>.subEditGenre {
+                        width: 150px;
+                        height: 50px;
+                        text-transform: uppercase;
+                        border: 0;
+                        border-radius: 10px;
+                        font-size: 1.1rem;
+                        color: white;
+                        background-color: $grisBtn;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            /*....................FIN.EDIT.GENRE....................*/
+
+            /*....................FORMULAIRE.MODIF+.CATEGORIE.GENRE.CSS....................*/
+
+
+            &>.modifierSupp {
+                width: 500px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                justify-items: center;
+                background-color: $remplissage;
+                border-radius: 15px;
+                box-shadow: 1px 1px 10px 1px grey;
+
+                &>#selection {
+                    width: 350px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                    &>#id_category {
+                        width: 150px;
+                        height: 30px;
+                        margin-right: 10px;
+                        border-radius: 50px;
+                        border-color: $remplissage;
+                        text-align: center;
+                        font-size: 1.1rem;
+                    }
+
+                    &>.modifCat {
+                        margin-right: 10px;
+                        width: 150px;
+                        height: 30px;
+                        text-align: center;
+                        font-size: 1.1rem;
+                        border-radius: 50px;
+                        border: 0;
+                    }
+                }
+
+
+
+                button {
+                    margin-right: 10px;
+                    width: 150px;
+                    height: 50px;
+                    text-transform: uppercase;
+                    border: 0;
+                    border-radius: 10px;
+                    background-color: $grisBtn;
+
+                    &>a {
+                        font-size: 1.1rem;
+                        color: white;
+                    }
+                }
+            }
+
+
+            .multitaches>#ajout-genre {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 100px;
+
+
+
+
+                &>.ajout {
+
+                    width: 300px;
+                    height: 300px;
+                    background-color: $remplissage;
+                    border-radius: 15px;
+                    box-shadow: 1px 1px 10px 1px grey;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    justify-items: center;
+
+                    &>.newGenre {
+                        width: 200px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 25px;
+                        text-align: center;
+                        font-size: 1.1rem;
+
+                    }
+
+
+                    &>button {
+                        width: 150px;
+                        height: 50px;
+                        text-transform: uppercase;
+                        border: 0;
+                        border-radius: 10px;
+                        background-color: $grisBtn;
+
+                        &>a {
+                            font-size: 1.1rem;
+                            color: white;
+                        }
+
+                    }
+                }
+
+                &>.modifierSupp {
+                    width: 500px;
+                    height: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    justify-items: center;
+                    background-color: $remplissage;
+                    border-radius: 15px;
+                    box-shadow: 1px 1px 10px 1px grey;
+
+                    &>#selection {
+                        width: 350px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+
+                        &>#genre {
+                            width: 150px;
+                            height: 30px;
+                            margin-right: 10px;
+                            border-radius: 50px;
+                            border-color: $remplissage;
+                            text-align: center;
+                            font-size: 1.1rem;
+                        }
+
+                        &>.modifGenre {
+                            margin-right: 10px;
+                            width: 150px;
+                            height: 30px;
+                            text-align: center;
+                            font-size: 1.1rem;
+                            border-radius: 50px;
+                            border: 0;
+                        }
+                    }
+
+
+
+                    button {
+                        margin-right: 10px;
+                        width: 150px;
+                        height: 50px;
+                        text-transform: uppercase;
+                        border: 0;
+                        border-radius: 10px;
+                        background-color: $grisBtn;
+
+                        &>a {
+                            font-size: 1.1rem;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            /*....................fin.formulaire....................*/
+
+            /*....................CSS.USER....................*/
+
+            .multitaches>#userMenu {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 40px;
+                padding-top: 50px;
+
+                &>.userSearch {
+                    display: flex;
+                    flex-direction: row;
+
+                    &>.recherche {
+                        border: 0;
+                        border-radius: 100px;
+                        width: 300px;
+                        height: 50px;
+                        text-align: center;
+                    }
+
+                    &>button {
+                        width: 50px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 100px;
+                        margin-left: -50px;
+                        margin-right: 50px;
+                    }
+                }
+
+                &>.boutonUser {
+                    width: 400px;
+                    height: 50px;
+                    display: flex;
+                    flex-direction: row;
+
+
+
+                    &>button {
+                        width: 150px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-transform: uppercase;
+                        border: 0;
+                        border-radius: 10px;
+                        background-color: $grisBtn;
+                        margin-left: 10px;
+
+                        &>a {
+                            height: 50px;
+                            font-size: 1.1rem;
+                            color: white;
+
+                        }
+                    }
+
+
+
+                }
 
 
 
 
 
-    }
+            }
 
-    .multitaches>#tableUser {
-        width: 100%;
-        // margin-left: 50px;
-        margin-top: 50px;
-        text-align: center;
+            .multitaches>#tableUser {
+                width: 100%;
+                // margin-left: 50px;
+                margin-top: 50px;
+                text-align: center;
 
-        &>thead {
-            background-color: $grisBtn;
-            height: 50px;
-            font-size: 1.1rem;
-        }
+                &>thead {
+                    background-color: $grisBtn;
+                    height: 50px;
+                    font-size: 1.1rem;
+                }
 
         &>tbody {
-
-            &>.contenuUser {
+            
+            & > .contenuUser{
                 background-color: $fondUser;
                 height: 50px;
             }
 
-            &>.tdButton {
+            & > .tdButton{
                 height: 50px;
 
                 &>td {
@@ -739,195 +1107,198 @@ a {
                         border: 0;
                         margin-top: 10px;
 
-                        &>a {
-                            display: block;
-                            width: 100%;
-                            height: 50px;
-                            line-height: 50px;
-                            color: black;
-                            font-size: 1.1rem;
+                                &>a {
+                                    display: block;
+                                    width: 100%;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    color: black;
+                                    font-size: 1.1rem;
+                                }
+                            }
                         }
                     }
                 }
             }
+
+            /*....................CSS.USER.FIN....................*/
+
+            /*....................CSS.USER.MODIFICATION....................*/
+
+
+
+            /*....................CSS.NEWSLETTER....................*/
+
+            .multitaches>.newsLetter {
+                width: 100%;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+
+                &>input {
+                    width: 1000px;
+                    height: 400px;
+                }
+
+                &>button {
+                    width: 200px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                    border: 0;
+                    border-radius: 10px;
+                    background-color: $grisBtn;
+                    margin-top: 10px;
+
+                    &>a {
+                        color: black;
+                    }
+
+                }
+
+            }
+
+
+
+
+
+
         }
-    }
 
-    /*....................CSS.USER.FIN....................*/
-
-    /*....................CSS.USER.MODIFICATION....................*/
+        // crochet de corp
 
 
 
-    /*....................CSS.NEWSLETTER....................*/
 
-    .multitaches>.newsLetter {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
 
-        &>input {
-            width: 1000px;
-            height: 400px;
-        }
 
-        &>button {
-            width: 200px;
-            height: 50px;
-            line-height: 50px;
-            text-transform: uppercase;
-            border: 0;
-            border-radius: 10px;
-            background-color: $grisBtn;
-            margin-top: 10px;
 
-            &>a {
-                color: black;
+
+        /*....................CSS.CONNEXION....................*/
+
+        #sideVide {
+
+            max-width: 500px;
+            width: 25%;
+            <<<<<<< HEAD height: 100vh;
+            =======height: 100vw;
+            >>>>>>>dimi2 position: fixed;
+            background-color: #858585;
+
+            &>#logo>img {
+                width: 100%;
+                border-bottom: 1px solid black;
             }
 
         }
 
-    }
+        .bodyConnexion {
+            max-width: 1300px;
+            width: 75%;
+            <<<<<<< HEAD height: 100 vh;
+            =======height: 100 vw;
+            >>>>>>>dimi2 float: right;
 
 
 
+            &>.connexion {
+                width: 500px;
+                height: 350px;
+                border-radius: 15px;
+                <<<<<<< HEAD margin-top: 100px;
+                =======margin-top: 200px;
+                >>>>>>>dimi2 margin-left: 350px;
+                background-color: $remplissage ;
+
+                &>.Titre {
+                    width: 100%;
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                &>#mail,
+                #pass {
+                    width: 300px;
+                    height: 50px;
+                    margin: 30px 100px;
+                    //border: 1px solid black;
+
+                    &>input {
+                        width: 300px;
+                        height: 50px;
+                        border-radius: 50px;
+                        border: 0;
+                        background-color: white;
+                        padding-left: 10px;
+                        margin-top: 20px;
+
+                    }
 
 
+                }
 
-}
+                &>#connect {
+                    width: 100px;
 
-// crochet de corp
+                    &>button {
+                        width: 100px;
+                        height: 25px;
+                        margin: 50px 200px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        background-color: #81D9E5;
+                        border: 0;
+                        border-radius: 20px;
 
+                    }
 
+                    &>button:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
 
+        }
 
+        /*....................FIN.CSS.CONNEXION....................*/
 
+        /*....................DELETE.CSS....................*/
 
-
-
-/*....................CSS.CONNEXION....................*/
-
-#sideVide {
-
-    max-width: 500px;
-    width: 25%;
-    height: 100vh;
-    position: fixed;
-    background-color: #858585;
-
-    &>#logo>img {
-        width: 100%;
-        border-bottom: 1px solid black;
-    }
-
-}
-
-.bodyConnexion {
-    max-width: 1300px;
-    width: 75%;
-    height: 100 vh;
-    float: right;
-
-
-
-    &>.connexion {
-        width: 500px;
-        height: 350px;
-        border-radius: 15px;
-        margin-top: 100px;
-        margin-left: 350px;
-        background-color: $remplissage ;
-
-        &>.Titre {
-            width: 100%;
-            padding-top: 20px;
-            text-transform: uppercase;
+        .popup {
+            width: 500px;
+            height: 250px;
+            position: fixed;
+            box-shadow: 1px 1px 10px 1px grey;
+            border-radius: 25px;
             text-align: center;
-        }
+            margin-top: 0;
+            margin-left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: 99999;
 
-        &>#mail,
-        #pass {
-            width: 300px;
-            height: 50px;
-            margin: 30px 100px;
-            //border: 1px solid black;
-
-            &>input {
-                width: 300px;
-                height: 50px;
-                border-radius: 50px;
-                border: 0;
-                background-color: white;
-                padding-left: 10px;
-                margin-top: 20px;
-
-            }
-
-
-        }
-
-        &>#connect {
-            width: 100px;
-
-            &>button {
-                width: 100px;
-                height: 25px;
-                margin: 50px 200px;
-                box-shadow: 1px 1px 10px 1px grey;
-                background-color: #81D9E5;
-                border: 0;
-                border-radius: 20px;
-
-            }
-
-            &>button:hover {
-                cursor: pointer;
-            }
-        }
-    }
-
-}
-
-/*....................FIN.CSS.CONNEXION....................*/
-
-/*....................DELETE.CSS....................*/
-
-.popup {
-    width: 500px;
-    height: 250px;
-    position: fixed;
-    box-shadow: 1px 1px 10px 1px grey;
-    border-radius: 25px;
-    text-align: center;
-    margin-top: 0;
-    margin-left: 50%;
-    transform: translate(-50%, 50%);
-    z-index: 99999;
-
-    &>h1 {
+    & > h1{
         width: 500px;
         padding-top: 30px;
         font-family: LRT Oksana Bold;
     }
 
-    &>.title {
-        width: 500px;
-        height: 50px;
-        margin-top: 10px;
-    }
+            &>.title {
+                width: 500px;
+                height: 50px;
+                margin-top: 10px;
+            }
 
-    &>.btnYes {
-        width: 100px;
-        height: 70px;
-        background-color: #26F904;
-        margin-right: 20px;
-        cursor: pointer;
-    }
+            &>.btnYes {
+                width: 100px;
+                height: 70px;
+                background-color: #26F904;
+                margin-right: 20px;
+                cursor: pointer;
+            }
 
-    &>.btnNo {
+    & > .btnNo{
         width: 100px;
         height: 70px;
         background-color: #FF0404;
@@ -938,5 +1309,5 @@ a {
 
 
 
-
+    
 }

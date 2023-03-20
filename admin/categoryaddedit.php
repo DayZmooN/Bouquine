@@ -41,27 +41,20 @@ include './header-admin.php';
 ?>
 
 
-<h1 class="multiTitre">modifications catégories</h1>
+<h1 class="multiTitre">edit catégories</h1>
 
-<div id="ajout-categorie">
-    <form class="ajout" action="" method="post">
+<h2 class="titleEditCategory">Modification de <?= $category['libel_category'] ?></h2>
 
-        <input class="newCat" type="text" name="libel_category" placeholder="nom catégorie">
-        <input class="newCat" type="text" name="libel_slug" placeholder="slug catégorie">
-        <input type="submit" name="submitAdd" value="Ajouter">
-
-    </form>
+<div id="editCategorie">
 
     <form class="edit" action="" method="post">
-        <div id="selection">
-        <h1>Modification de <?= $category['libel_category'] ?></h1>
+        
+        
             <input class="editCat" type="text" name="libel_category" value="<?= $category['libel_category'] ?>">
-            <input class="editCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
-        </div>
-
-        <div id="choice">
-            <input type="submit" name="submitEdit" value="Modifier">
-        </div>
+            <input class="editSlugCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
+        
+            <input class="subEditCat" type="submit" name="submitEdit" value="Modifier">
+        
 
     </form>
 
