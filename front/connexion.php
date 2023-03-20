@@ -23,7 +23,7 @@ require_once '../model/connexion.php';
 <body>
     <section id="connexion">
         <div class="lettreb">
-            <img class="b" src="../image/b.png" alt="logo bouquine">
+            <img class="b" src="../image/logo1.png" alt="logo bouquine">
         </div>
         <h2 class="connect">Se connecter</h2>
 

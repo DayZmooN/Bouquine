@@ -194,13 +194,13 @@ $query->execute();
                 <div class="formulaire">
                     <form action="subscribing-newsletter" method="post">
                         <label for="email">E-mail:</label>
-                        <input id="email" name="subscriber_email" type="email" />
+                        <input id="mail" name="subscriber_email" type="email" />
                         <button id="send" type="submit">S'abonner </button>
                     </form>
                 </div>
 
                 <p class="abonner">N'hésitez pas à vous abonner pour recevoir en exclusivité chaque mois les
-                    dernières nouveautés et évènements de la bibliothèque.Nous ne vous enverrons pas de spam
+                    dernières nouveautés et évènements de la bibliothèque.<br>Nous ne vous enverrons pas de spam
                     ni ne partagerons vos informations.</p>
             </div>
         </section>
