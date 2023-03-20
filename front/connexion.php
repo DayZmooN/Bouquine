@@ -21,7 +21,7 @@ require_once '../model/connexion.php';
 <body>
     <section id="connexion">
         <div class="lettreb">
-            <a href="./accueil.php"><img class="b" src="../image/logo1.png" alt="logo bouquine"></a>
+            
             <a href="./accueil.php"><img class="b" src="../image/logo1.png" alt="logo bouquine"></a>
 
         </div>

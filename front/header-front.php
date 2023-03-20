@@ -13,13 +13,14 @@ require_once './connect.php'
     <!-- HEADER -->
     <header>
         <nav class="header-nav">
-        <div id="close-menu">X</div>
+        <label for="toggle" class="label-hamburger">☰</label>
+        <input type="checkbox" id="toggle">
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
             
            
-
+           
             <ul class="menu">
                 <li><a href="./catalogue.php">Catalogue</a></li>
                 <li>
@@ -52,18 +53,19 @@ require_once './connect.php'
                 <span class="nom"><?php echo $_SESSION['user']['username']; ?></span>
             </a>
             <form action="../model/deconnexion.php" method="post">
-                <button type="submit" name="logout">Déconnexion</button>
+              
+                <input id="user-connect" type="submit" name="logout" value="Déconnexion">
             </form>
         <?php }
         if (!isset($_SESSION['user'])) { ?>
 
             </a>
             <a href="./connexion.php" class="img-user">
-                <input id="user-connect" type="button" value="Connexion">
+                <input id="user-connect" type="submit" value="Connexion">
             </a>
         <?php } ?>
         </ul>
         </div>
         </nav>
-        <div id="burger"><img src="../image/burger.png" alt="picto menu burger"></div>
+       
     </header>

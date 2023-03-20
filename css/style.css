@@ -58,6 +58,9 @@ header {
     height: 80px;
     display: block;
 }
+.label-hamburger#toogle{
+    display: none;
+}
 #burger {
     display: none;
     cursor: pointer;
@@ -214,10 +217,71 @@ input#user-connect {
 
 /* media queries header */
 
+@media only screen and (max-width: 400px) {
+
+    .header-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   
-
-
-
+    .label-hamburger {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    .logo {
+      margin-top: 50px;
+    }
+  
+    .menu {
+      margin-top: 20px;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .menu li.search-box {
+      margin-top: 30px;
+    }
+  
+    #form-header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #form-header input[type=search] {
+      width: 60%;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  
+    #form-header button {
+      width: 30%;
+      margin-bottom: 5px;
+    }
+  
+    .img-user {
+      margin-top: 30px;
+    }
+  
+    #user-connect {
+      margin-top: 10px;
+    }
+  
+  }
+     
+    
 /* fin media queries header
 
 /* EN TETE  */
@@ -343,7 +407,53 @@ h1 {
 }
 
 /* END SECTION POPULAIRES  */
-
+/* -----responsive paralalx popular */
+@media only screen and (max-width: 400px) {
+    .parallax-section h1 {
+      font-size: 24px;
+    }
+  
+    #explain {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 10px;
+    }
+  
+    .popular {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  
+    .item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .container {
+      display: block;
+    }
+  
+    .container .item {
+      margin-bottom: 20px;
+    }
+  
+    .container .item .title,
+    .container .item .author {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .container .item img {
+      width: 100%;
+    }
+  
+    #resume {
+      font-size: 12px;
+      padding: 5px 10px;
+      margin-top: 5px;
+    }
+  }
+  /-----end of populaire*  */
 /* SECTION NOUVEAUTES  */
 
 #new {
@@ -1124,7 +1234,24 @@ p#copy {
 }
 
 /* end footer */
-
+/* --------RESPONSIVE FOOTER */
+@media only screen and (max-width: 400px) {
+    #end {
+    text-align: center;
+    }
+    .img1 {
+    width: 80%;
+    }
+    .pol,
+    .politique {
+    margin-top: 20px;
+    }
+    .social {
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    }
+    }
 
 /* PAGE RESUME LIVRE */
 
@@ -1359,6 +1486,57 @@ p.author2 {
 }
 
 /* END SECTION PAGE RESUME */
+/* -----------RESPONSIVE RESUME LIVRE */
+@media screen and (max-width: 400px) {
+    /* styles pour écrans de 400px ou moins */
+  
+    /* Réduire la taille de la police pour améliorer la lisibilité */
+    body {
+      font-size: 14px;
+    }
+  
+    /* Cacher l'image dans la section #books */
+    #books img {
+      display: none;
+    }
+  
+    /* Ajuster la mise en page pour une meilleure expérience mobile */
+    #books .contain {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #books .resum {
+      margin-top: 1rem;
+    }
+  
+    #books .description {
+      margin-top: 1rem;
+    }
+  
+    #books .liste {
+      margin-left: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+  
+    #books .liste li {
+      margin-bottom: 0.5rem;
+    }
+  
+    #books .livr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+  
+    #books .item3 {
+      flex-basis: 48%;
+      margin-bottom: 1rem;
+    }
+  }
+  /* ------END RESPONSIVE RESUME LIVRE  */
 
 /* SECTION CATALOGUE */
 
@@ -1468,6 +1646,48 @@ p.authors {
 }
 
 /* END CATALOGUE */
+/* -----RESPONSIVE CATALOGUE  */
+@media only screen and (max-width: 400px) {
+    /* Styles à appliquer pour les écrans de 400px ou moins */
+    #catalogue {
+        padding: 10px;
+    }
+    
+    .catalog {
+        font-size: 1.5em;
+    }
+    
+    .formul-s {
+        margin-top: 10px;
+    }
+    
+    #search-book {
+        width: 80%;
+        margin-right: 10px;
+    }
+    
+    #search-button {
+        width: 18%;
+    }
+    
+    .books-catalog {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .item4 {
+        width: 100%;
+    }
+    
+    .titles {
+        font-size: 1.2em;
+    }
+    
+    .authors {
+        font-size: 1em;
+    }
+}
+/* -------END RESPONSIVE CATALOGUE  */
 
 /* PAGE INFOS PRATIQUES */
 
@@ -1526,6 +1746,19 @@ ol.consignes li {
 
 /* END INFO PRATIQUES */
 
+/* ------RESPONSIVE INFOS PRATIQUES  */
+@media screen and (max-width: 400px) {
+    /* styles à appliquer pour une résolution de 400px ou moins */
+    .consignes {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+    .infos {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  
 /* POP UP CONNEXION */
 
 #connexion {
@@ -1639,13 +1872,14 @@ form p.inscription {
     color: orange;
 }
 
-p.inscription{
+p.inscription {
     font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 600;
     margin-top: 10px;
 }
- button#suscribe-button {
+
+button#suscribe-button {
     /* padding: 15px 25px; */
     border-radius: 5px;
     border: none;
@@ -1653,11 +1887,47 @@ p.inscription{
     background-color: #74EC8D;
     cursor: pointer;
     margin-right: 0;
-  
+
 }
 
 /* FIN CONNEXION */
+/* ------RESPONSIVE CONNEXION  */
+/* Media query pour une résolution de 400px */
+@media only screen and (max-width: 400px) {
 
+    /* Modifier la taille de la police pour la classe .connect */
+    .connect {
+        font-size: 1.2rem;
+    }
+
+    /* Cacher le texte "ou utiliser mon adresse e-mail" */
+    .email {
+        display: none;
+    }
+
+    /* Redimensionner les logos des réseaux sociaux */
+    .social-media i {
+        font-size: 16px;
+    }
+
+    /* Réduire la largeur des champs de saisie d'email et de mot de passe */
+    input[type=email],
+    input[type=password] {
+        width: 90%;
+    }
+
+    /* Réduire la taille de la police pour le lien "J'ai oublié mon mot de passe" */
+    .inscription a:first-of-type {
+        font-size: 0.9rem;
+    }
+
+    /* Modifier la marge supérieure pour le bouton Se connecter */
+    button[type=submit] {
+        margin-top: 10px;
+    }
+}
+
+  
 /* PAGE INSCRIPTION */
 body {
     width: 100%;
@@ -1792,33 +2062,39 @@ button[type="submit"] {
 
 /* END INSCRIPTION */
 /* RESPONSIVE INSCRIPTION */
-/* pour les écrans de 350px maximum */
 
-/* @media screen and (max-width: 350px) { 
-    /* Réduire la taille de l'image */
-/* .img-book img {
-        width: 100%;
-        height: auto;
+@media only screen and (max-width: 400px) {
+    .suscribe-form {
+      width: 100%;
+      margin: 0;
+      padding: 20px;
     }
-
-    /* Ajuster la largeur des champs de formulaire */
-/* .input label, .input input {
-        width: 100%;
-        display: block;
-    } */
-
-/* Centrer le bouton d'envoi */
-/* button[type="submit"] {
-        display: block;
-        margin: 0 auto;
-    } */
-
-/* Ajuster la taille de police */
-/* h2.sus-form {
-        font-size: 1.2rem;
+    .img-book{
+        display: none;
     }
-} */
-*/ */
+    .input {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    select {
+      margin: 10px 0;
+      width: 100%;
+    }
+    
+    button[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  
+    
+
 /* PAGE RECHERCHE AVANCEE */
 
 .filter {
@@ -1884,38 +2160,29 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
-
-
 /* END PAGE RECHERCHE AVANCEE */
 
-/* RESPONSIVE RECHERCHE AVANCEE  */
-@media (max-width: 350px) {
+/* -------RESPONSIVE RECHERCHE AVANCEE */
+
+@media screen and (max-width: 400px) {
+    /* styles pour les écrans de 400px ou moins */
     .filter-container {
-        max-width: 100%;
-        height: auto;
-        padding: 10px;
-        border-radius: 0;
+    width: 90%;
+    margin: 0 auto;
     }
-
-    h2.search-filter {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
+    .filter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     }
-
-    input[type="text"],
-    select,
-    input[type="number"] {
-        font-size: 0.8rem;
-        padding: 8px;
-        margin-bottom: 15px;
-        border-radius: 3px;
-    }
-
-    input[type="submit"] {
-        font-size: 0.9rem;
-        padding: 8px;
+    .filter form label,
+    .filter form input,
+    .filter form select {
+    width: 45%;
+    margin-bottom: 10px;
     }
 }
+    /* -----END RESPONSIVE RECHERCHE AVANCEE */
 
 
 /* DASHBOARD USER */
@@ -2055,46 +2322,37 @@ input[type="tel"]#telephone {
 /* END DASHBOARD USER */
 
 /* ****** RESPONSIVE MOBILE DASHBOARD USER */
-@media only screen and (max-width: 350px) {
-
-    .dashboard1 {
-        font-size: 1rem;
-        text-align: center;
+@media screen and (max-width: 400px) {
+    /* styles pour les écrans de 400px ou moins */
+    
+    /* on cache la navigation */
+    #user-nav {
+      display: none;
     }
-
-    #user-nav ul {
-        display: none;
+    
+    /* on réduit la taille de la police de tous les éléments h2 et h3 */
+    h2,
+    h3 {
+      font-size: 1.2rem;
     }
-
-    #user-nav ul li {
-        display: block;
-        margin-bottom: 10px;
+    
+    /* on modifie la disposition du formulaire */
+    .info1 {
+      flex-direction: column;
     }
-
-    #user-nav ul li:last-child {
-        margin-bottom: 0;
+    
+    /* on modifie la disposition des labels et des inputs */
+    .names,
+    label {
+      display: block;
+      margin: 10px 0;
     }
-
-    #user-nav label {
-        display: none;
+    
+    /* on ajoute un margin-bottom au dernier input pour une meilleure lisibilité */
+    input[type="submit"] {
+      margin-bottom: 20px;
     }
-
-    #dash-form input[type="text"],
-    #dash-form input[type="email"],
-    #dash-form input[type="tel"] {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #dash-form label[for="adresse"] {
-        display: none;
-    }
-
-    #dash-form input[type="submit"] {
-        width: 100%;
-    }
-}
-
-
+  }
+  
 
 /* *******END RESPONSIVE MOBILE DASHBOARD USER */

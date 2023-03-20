@@ -48,6 +48,9 @@ if (isset($_POST['submit'])) {
 
         <!-- END SECTION POPULAIRES -->
 
+
+
+
         <!-- SECTION NOUVEAUTES -->
         <?php
         $reqNew = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `publication_date` DESC');
