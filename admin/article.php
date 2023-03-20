@@ -2,13 +2,12 @@
 require_once './auth.php';
 include './header-admin.php';
 
-$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book`');
+$query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY `id_book` DESC');
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <h1 class="multiTitre">menus articles</h1>
-
 
 <div id="articleSearchAjout">
     <form action="" method="post">
@@ -19,7 +18,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 </div>
 
 
-<h2 class="sousTitre">Liste des articles</h2>
+<h2 class="sousTitre">liste des articles</h2>
 
 <?php
 foreach ($result as $article) {
@@ -32,6 +31,9 @@ foreach ($result as $article) {
 
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
             <a class="btnRed" data-idbook="<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" style="color:red">Supprimer</a>
+
+            <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Cover</a>
+            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>">Genres</a>
 
         </div>
     </div>

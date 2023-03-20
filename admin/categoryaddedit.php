@@ -1,70 +1,88 @@
 <?php
-require_once '../connexion.php';
+session_start();
+require_once './auth.php';
 
-if (isset($_POST['submitAdd'])) {
-    try {
-        $addreq = $db->prepare("INSERT INTO `category` (`libel_category`, `libel_slug`) VALUES (:libel_category, :libel_slug)");
-        $addreq->bindValue(":libel_category", $_POST["libel_category"], PDO::PARAM_STR);
-        $addreq->bindValue(":libel_slug", $_POST["libel_slug"], PDO::PARAM_STR);
-        $addreq->execute();
-        $_SESSION["success"] = "votre genre a bien été crée";
-        header('location: ./category.php');
-    } catch (PDOException $e) {
-        $_SESSION["error"] = "Votre Genre n'a pas été crée";
-        header('Location: ./category.php');
-        exit();
-    }
-}
+if (isset($_POST['submit'])) {
+    $ISBN = ($_POST['ISBN']);
+    $image = ($_POST['image']);
+    $title = ($_POST['title']);
+    $author = ($_POST['author']);
+    $editor = ($_POST['editor']);
+    $collection = ($_POST['collection']);
+    $publication_date = ($_POST['publication_date']);
+    $genre = ($_POST['genre']);
+    $id_category = ($_POST['id_category']);
+    $summary = ($_POST['summary']);
+    $addreq = $db->prepare("INSERT INTO `book`(`ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES (:ISBN, :image, :title, :author, :editor, :collection, :publication_date, :genre, :id_category, :summary)");
+    $addreq->bindParam('ISBN', $ISBN, PDO::PARAM_STR);
+    $addreq->bindParam('image', $image, PDO::PARAM_STR);
+    $addreq->bindParam('title', $title, PDO::PARAM_STR);
+    $addreq->bindParam('author', $author, PDO::PARAM_STR);
+    $addreq->bindParam('editor', $editor, PDO::PARAM_STR);
+    $addreq->bindParam('collection', $collection, PDO::PARAM_STR);
+    $addreq->bindParam('publication_date', $publication_date, PDO::PARAM_STR);
+    $addreq->bindParam('genre', $genre, PDO::PARAM_STR);
+    $addreq->bindParam('id_category', $id_category, PDO::PARAM_INT);
+    $addreq->bindParam('summary', $summary, PDO::PARAM_STR);
+    $addreq->execute();
 
-$id = $_GET['id'];
-
-$req = $db->prepare('SELECT `id_category`, `libel_category`, `libel_slug` FROM `category` WHERE `id_category` = :id');
-$req->bindParam(':id', $id, PDO::PARAM_INT);
-$req->execute();
-$category = $req->fetch(PDO::FETCH_ASSOC);
-
-if (isset($_POST['submitEdit'])) {
-    $libelCategory = $_POST['libel_category'];
-    $categorySlug = $_POST['libel_slug'];
-    $reqEdit = $db->prepare("UPDATE `category` SET `libel_category`=:libel_category, `libel_slug`=:libel_slug WHERE `id_category`=:id");
-    $reqEdit->bindParam(':libel_category', $libelCategory, PDO::PARAM_STR);
-    $reqEdit->bindParam(':libel_slug', $categorySlug, PDO::PARAM_STR);
-    $reqEdit->bindParam(':id', $id, PDO::PARAM_INT);
-    $reqEdit->execute();
-
-    $_SESSION['success'] = "Category édité avec succès !";
-    header('Location: ./category.php');
+    $_SESSION['sucess'] = "Produit ajouté avec succès !";
+    header('Location: ./article.php');
     exit();
 }
 
 include './header-admin.php';
 ?>
 
+<h1 class="multiTitre">formulaire ajout de livre</h1>
 
-<h1 class="multiTitre">modifications catégories</h1>
+<form id="formulaireAjout" action="" method="POST">
+    <div id="formGauche">
+        <div class="titre-auteur">
+            <label for="title"></label>
+            <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
 
-<div id="ajout-categorie">
-    <form class="ajout" action="" method="post">
+            <h1 class="multiTitre">modifications catégories</h1>
 
-        <input class="newCat" type="text" name="libel_category" placeholder="nom catégorie">
-        <input class="newCat" type="text" name="libel_slug" placeholder="slug catégorie">
-        <input type="submit" name="submitAdd" value="Ajouter">
+            <div id="ajout-categorie">
+                <form class="ajout" action="" method="post">
 
-    </form>
+                    <input class="newCat" type="text" name="libel_category" placeholder="nom catégorie">
+                    <input class="newCat" type="text" name="libel_slug" placeholder="slug catégorie">
+                    <input type="submit" name="submitAdd" value="Ajouter">
 
-    <form class="edit" action="" method="post">
-        <div id="selection">
-        <h1>Modification de <?= $category['libel_category'] ?></h1>
-            <input class="editCat" type="text" name="libel_category" value="<?= $category['libel_category'] ?>">
-            <input class="editCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
-        </div>
+                </form>
 
-        <div id="choice">
-            <input type="submit" name="submitEdit" value="Modifier">
-        </div>
+                <form class="edit" action="" method="post">
+                    <div id="selection">
+                        <h1>Modification de <?= $category['libel_category'] ?></h1>
+                        <input class="editCat" type="text" name="libel_category" value="<?= $category['libel_category'] ?>">
+                        <input class="editCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
+                    </div>
 
-    </form>
+                    <div id="choice">
+                        <input type="submit" name="submitEdit" value="Modifier">
+                    </div>
 
-</div>
+                    <div id="genreChoice">
+                        <label for="genre"></label>
+                        <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
+                    </div>
+            </div>
 
-<?php include './includeClose.php'  ?>
+            <div id="droite">
+                <div class="resume">
+                    <label for="summary">Résumé</label>
+                    <textarea type="text" name="summary" id="summary"></textarea>
+                </div>
+
+                <div id="imageChoice">
+                    <label for="image">image</label>
+                    <input type="text" name="image" id="image">
+                </div>
+                <div id="defiBouton">
+                    <img src="../image/envoiFormulaireLivre.png" class="aiecone" alt="icone de bouton d'envois vert">
+                    <input type="submit" name="submit" value="Ajouter">
+                </div>
+            </div>
+</form>

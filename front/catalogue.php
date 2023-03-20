@@ -2,7 +2,7 @@
 require_once './header-front.php';
 require_once './footer-front.php';
 require_once './connect.php';
-$query = $db->prepare('SELECT `id_book`,  `image`, `title`, `author`, `status` FROM `book` ');
+$query = $db->prepare('SELECT id_book,  image, title, author, status FROM book ');
 $query->execute();
 ?>
 
@@ -14,10 +14,10 @@ $query->execute();
             <h2 class="catalog">Catalogue</h2>
 
             <div class="formul-s">
-                <form action="#" method="get">
-                    <label for="search-book">Recherche</label>
+                <form id="catalog-form" action="#" method="get">
+                   
                     <input type="text" id="search-book" name="search-book" placeholder="Recherche">
-                    <button type="submit">
+                    <button id="search-button" type="submit" value="rechercher">Rechercher</button>
                 </form>
 
 

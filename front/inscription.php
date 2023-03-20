@@ -16,30 +16,31 @@ require_once '../model/fonction-inscription.php';
 
 <body>
     <section id="suscribe">
+        <div id="bouquine"></div>
         <div class="container-suscribe">
-            <!-- <h2 class="sus-form">Créer un compte</h2> -->
+
             <div class="img-book">
                 <img src="../image/etudiant.jpg" alt="Un étudiant porte un livre dnas les mains">
 
             </div>
 
             <div class="suscribe-form">
-                <img class="form-logo" src="../image/b.png" alt="logo bouquine">
+
                 <h2 class="sus-form">Créer un compte</h2>
-                <form action="../model/fonction-inscription.php" method="POST">
+                <form id="connect" action="../model/fonction-inscription.php" method="POST">
                     <div class="input">
                         <label>Nom</label>
                         <input type="lastname" id="name" name="lastname" placeholder="Votre nom" />
                         <label>Prénom</label>
                         <input type="username" id="username" name="username" placeholder="Votre prénom" />
+                        <label>Téléphone</label>
+                        <input type="number" name="phone" id="phone" placeholder="0123456789">
                         <label>Date de naissance</label>
-                        <label>numero</label>
-                        <input type="number" name="phone" id="phone">
                         <input type="birth" id="birth" name="birthdate" placeholder="Votre date de naissance" />
                         <label>E-mail</label>
                         <!-- <input type="email" id="mail" name="mail" placeholder="Adresse mail" />
                         <label>Confirmez votre e-mail</label> -->
-                        <input type="email" id="mail" name="mail" placeholder="Confirmation mail" />
+                        <input type="email" id="mail" name="mail" placeholder="Adresse mail" />
                         <label>Mot de passe (8 caractères minimum requis )</label>
                         <input type="password" id="password" name="password" placeholder="Mot de passe" minlength="8" required>
                         <!-- <div class="checkbox">

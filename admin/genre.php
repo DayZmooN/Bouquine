@@ -9,6 +9,16 @@ $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">menu genres</h1>
 
+<div id="ajoutGenre">
+    <form class="ajout" action="" method="post">
+
+        <input class="newGenre" type="text" name="libel_genre" placeholder="nouveau genre">
+        <input class="slugGenre" type="text" name="genre_slug" placeholder="champ du slug">
+        <input class="subGenre" type="submit" name="submitAdd" value="Ajouter">
+
+    </form>
+</div>
+
 <div class="genreList">
     <?php
     foreach ($resultat as $genre) {
