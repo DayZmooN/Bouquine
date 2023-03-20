@@ -26,7 +26,7 @@ if (isset($_POST['submitAdd'])) {
 <div id="ajoutCategorie">
     <form class="ajout" action="" method="post">
 
-        <input class="newCat" type="text" name="libel_category" placeholder="nouvelle catégorie">
+        <input class="newCat" type="text" name="libel_category" placeholder="nouvelle catégorie" required>
         <input class="slugCat" type="text" name="libel_slug" placeholder="champ du slug">
         <input class="subCat" type="submit" name="submitAdd" value="Ajouter">
     </form>

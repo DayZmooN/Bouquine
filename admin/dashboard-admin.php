@@ -27,17 +27,6 @@ foreach ($result as $article) {
         <div id="bouton">
             <p>
                 <a class="btnGreen" href="#" style="color:green">modifier</a> /
-                <a class="btnRed" href="#" style="color:red">supprimer</a>
-            </p>
-        </div>
-    </div>
-    <div class="articleList">
-        <h3><?= $article['title'] ?></h3>
-        <p><?= $article['author'] ?></p>
-        <p><?= $article['publication_date'] ?></p>
-        <div id="bouton">
-            <p>
-                <a class="btnGreen" href="#" style="color:green">modifier</a> /
                 <?php
                 if (isset($_SESSION['admin'])) { ?>
                     <a class="btnRed" data-idBook=<?= $article['id_book'] ?> data-title=<?= $article['title'] ?> style="color:red">supprimer</a>
