@@ -40,32 +40,30 @@ ul li a {
 
 /* HEADER */
 
-header {
+header#head {
     width: 100%;
     height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f6b339;
+    background-color: #00ABB3;
     /* position: fixed; */
 }
 
 .logo {
-    flex: 1;
+    /* width: 250px; */
+    height: 90px;
+    /* flex: 1; */
 }
 
 .logo img {
-    height: 80px;
+    height: 70px;
     display: block;
 }
-.label-hamburger#toogle{
-    display: none;
-}
-#burger {
-    display: none;
-    cursor: pointer;
-}
 
+#close-menu{
+    display: none;
+}
 
 nav.header-nav {
     width: 100%;
@@ -73,6 +71,7 @@ nav.header-nav {
     display: flex;
     color: #000;
     align-items: center;
+    justify-content: center;
 }
 
 nav ul {
@@ -81,8 +80,8 @@ nav ul {
 }
 
 ul.menu {
-    width: 100%;
-    height: 80px;
+    width: 800px;
+
 }
 
 nav li {
@@ -108,9 +107,6 @@ nav ul ul {
 
 nav ul li a {
     display: block;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 10px;
     font-size: 1rem;
     transition: all 0.8s ease;
 }
@@ -140,7 +136,7 @@ nav input[type="search"] {
     /* padding: 5px; */
     border-radius: 10px;
     box-shadow: 0px 0px 5px #f6b339;
-    background-color: #FFB34E;
+    background-color: white;
 }
 
 nav.menu-icon {
@@ -148,35 +144,47 @@ nav.menu-icon {
 }
 
 li.search-box {
-    width: 550px;
-    height: 80px;
+    width: 450px;
 }
 
 #form-header {
-    width: 500px;
-    height: 70px;
+    width: 550px;
+    height: 100px;
     display: flex;
     align-items: center;
     flex-direction: row;
+    padding: 0;
+}
+
+#deconnect {
+    width: 150px;
+    height: 50px;
+    padding: 0;
+    margin: 0 auto;
+
 }
 
 img.img-user {
-    margin-right: 50px;
     height: 50px;
 }
 
-button#search-button {
+button#search-button1 {
     width: 120px;
     height: 35px;
     margin-left: 20px;
     font-size: 1rem;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #da7b27;
+    background-color: #B2B2B2;
+    padding: 0 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 a.img-user {
-    width: 150px;
-    height: 40px;
+    width: 60px;
+    /* height: 60px; */
+    padding: 0;
+    /* margin-right: 20px; */
 }
 
 input#user-connect {
@@ -185,14 +193,28 @@ input#user-connect {
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #da7b27;
-    padding-right: 20px;
-    padding-left: 15px;
-    margin-top: 15px;
-    border-radius: 50px;
-    border: none;
+    background-color: #B2B2B2;
+    padding: 0 10px;
+    color: black;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
+input#user-deconnect#user-connect {
+    width: 120px;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #B2B2B2;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+input#user-deconnect:hover {
+    opacity: 1;
+  }
 .user-name {
     width: 50px;
     height: 50px;
@@ -206,8 +228,8 @@ input#user-connect {
 
 .nom {
     width: 30px;
-    height: 10px;
-    padding-left: 10px;
+    margin-left: 5px;
+
 }
 
 .user-name a {
@@ -220,68 +242,67 @@ input#user-connect {
 @media only screen and (max-width: 400px) {
 
     .header-nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-  
+
     .label-hamburger {
-      display: block;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-size: 24px;
-      cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 24px;
+        cursor: pointer;
     }
-  
+
     .logo {
-      margin-top: 50px;
+        margin-top: 50px;
     }
-  
+
     .menu {
-      margin-top: 20px;
+        margin-top: 20px;
     }
-  
+
     .menu li {
-      margin: 10px 0;
-      text-align: center;
+        margin: 10px 0;
+        text-align: center;
     }
-  
+
     .menu li.search-box {
-      margin-top: 30px;
+        margin-top: 30px;
     }
-  
+
     #form-header {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
-  
+
     #form-header input[type=search] {
-      width: 60%;
-      margin-right: 5px;
-      margin-bottom: 5px;
+        width: 60%;
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
-  
+
     #form-header button {
-      width: 30%;
-      margin-bottom: 5px;
+        width: 30%;
+        margin-bottom: 5px;
     }
-  
+
     .img-user {
-      margin-top: 30px;
+        margin-top: 30px;
     }
-  
+
     #user-connect {
-      margin-top: 10px;
+        margin-top: 10px;
     }
-  
-  }
-     
-    
+
+}
+
 /* fin media queries header
 
 /* EN TETE  */
@@ -329,7 +350,7 @@ h1 {
 .populaire {
     width: 100%;
     height: 900px;
-    background-color: #EBB016;
+    background-color:#3C4048;
 }
 
 .popular {
@@ -338,7 +359,7 @@ h1 {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
     /* margin-top: 30px; */
@@ -379,7 +400,7 @@ h1 {
     height: 30px;
     border: 1px solid black;
     border-radius: 50px;
-    background-color: #E0FF20;
+    background-color: #B2B2B2;
     margin: 10px;
 }
 
@@ -389,20 +410,22 @@ h1 {
 
 .title .author p {
     text-align: center;
+   
 }
 
 .title {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-    font-weight: 800;
-    /* line-height: 10px; */
+    font-weight: 600;
+    line-height: 10px;
+    color: white;
 }
 
 .author {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
     margin-top: 10px;
 }
 
@@ -410,56 +433,57 @@ h1 {
 /* -----responsive paralalx popular */
 @media only screen and (max-width: 400px) {
     .parallax-section h1 {
-      font-size: 24px;
+        font-size: 24px;
     }
-  
+
     #explain {
-      font-size: 12px;
-      line-height: 18px;
-      margin-top: 10px;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 10px;
     }
-  
+
     .popular {
-      font-size: 24px;
-      margin-top: 10px;
+        font-size: 24px;
+        margin-top: 10px;
     }
-  
+
     .item {
-      width: 100%;
-      margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 20px;
     }
-  
+
     .container {
-      display: block;
+        display: block;
     }
-  
+
     .container .item {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-  
+
     .container .item .title,
     .container .item .author {
-      font-size: 16px;
-      line-height: 24px;
+        font-size: 16px;
+        line-height: 24px;
     }
-  
+
     .container .item img {
-      width: 100%;
+        width: 100%;
     }
-  
+
     #resume {
-      font-size: 12px;
-      padding: 5px 10px;
-      margin-top: 5px;
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-top: 5px;
     }
-  }
-  /-----end of populaire*  */
+}
+
+/* end populaire */
 /* SECTION NOUVEAUTES  */
 
 #new {
     width: 100%;
     height: 400px;
-    background-color: #62c465e4;
+    /* background-color: #62c465e4; */
     padding-top: 20px;
 }
 
@@ -534,8 +558,8 @@ h1 {
 /* section genre préférés */
 #gender {
     width: 100%;
-    height: 2000px;
-    background-color: #cdeff6;
+    height: 1700px;
+    background-color: #EAEAEA;
 }
 
 #prefers {
@@ -597,7 +621,7 @@ button#see {
     height: 30px;
     border: 1px solid black;
     border-radius: 50px;
-    background-color: #E0FF20;
+    background-color: #B2B2B2;
     position: relative;
     float: right;
 }
@@ -606,18 +630,18 @@ button#see {
     text-decoration: none;
 }
 
-.title .author p {
+.title-gender .author-gender p {
     text-align: center;
 }
 
-.title {
+.title-gender {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
-.author {
+.author-gender {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
@@ -689,9 +713,9 @@ hr.gender1:after {
 #see {
     width: 100px;
     height: 40px;
-    border: 1px solid #F47826;
+    border: 1px solid black;
     border-radius: 50px;
-    background-color: #F47826;
+    background-color: #B2B2B2;
     position: relative;
     float: right;
 }
@@ -700,18 +724,19 @@ hr.gender1:after {
     text-decoration: none;
 }
 
-.title .author p {
+.title-fant .author-fant p {
     text-align: center;
 }
 
-.title {
+.title-fant {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
+    color: #000;
 }
 
-.author {
+.author-fant {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
@@ -765,7 +790,7 @@ hr.gender1:after {
     height: 40px;
     border: 1px solid #F47826;
     border-radius: 50px;
-    background-color: #F47826;
+    background-color: #B2B2B2;
     position: relative;
     float: right;
 }
@@ -803,7 +828,7 @@ hr.gender1:after {
     height: 700px;
     display: flex;
     justify-content: space-between;
-    background-color: #74EC8D;
+    background-color: #B2B2B2;
 }
 
 .texte {
@@ -814,7 +839,7 @@ hr.gender1:after {
     padding-left: 30px;
     margin-top: 70px;
     margin-left: 70px;
-    background-color: #e0ff2085;
+    background-color: #EAEAEA;
 
 }
 
@@ -893,7 +918,7 @@ hr.gender1:after {
     color: white;
 }
 
-input#mail {
+input#email {
     width: 400px;
     height: 35px;
     border-radius: 10px;
@@ -901,26 +926,29 @@ input#mail {
 }
 
 #send {
-    width: 150px;
-    font-size: 1rem;
+    width: 120px;
+    height: 35px;
+    font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
+    font-weight: 500;
     color: white;
-    background-color: #d98f21e3;
+    background-color: #B2B2B2;
     border-radius: 50px;
     position: relative;
     float: right;
-    margin: 30px;
+    margin-bottom: 30px;
     cursor: pointer;
+    padding: 0 10px;
 }
 
 .abonner {
     width: 100%;
     height: 100px;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -931,7 +959,7 @@ input#mail {
 #contact {
     width: 100%;
     height: 400px;
-    background-color: #EBB016;
+    background-color: white;
     padding-top: 30px;
 }
 
@@ -1097,7 +1125,7 @@ p.livre {
 section#lecteur {
     width: 100%;
     height: 550px;
-    background-color: #cdeff6;
+    background-color: #3C4048;
     padding-top: 20px;
 }
 
@@ -1109,7 +1137,7 @@ h2.lector {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-transform: uppercase;
     font-size: 1.8rem;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .avis {
@@ -1124,7 +1152,7 @@ h2.lector {
     height: 300px;
     border: 3px solid black;
     border-radius: 40px;
-    background-color: #e0ff2085;
+    background-color: #00ABB3;
     ;
 }
 
@@ -1171,7 +1199,7 @@ footer {
 #end {
     width: 100%;
     height: 110px;
-    background-color: hsl(38, 89%, 48%);
+    background-color: #00ABB3;
 }
 
 .contain-footer {
@@ -1229,7 +1257,7 @@ p#copy {
 }
 
 .copyright {
-    background-color: hsl(38, 89%, 48%);
+    background-color:#00ABB3;
     text-align: center;
 }
 
@@ -1237,21 +1265,24 @@ p#copy {
 /* --------RESPONSIVE FOOTER */
 @media only screen and (max-width: 400px) {
     #end {
-    text-align: center;
+        text-align: center;
     }
+
     .img1 {
-    width: 80%;
+        width: 80%;
     }
+
     .pol,
     .politique {
-    margin-top: 20px;
+        margin-top: 20px;
     }
+
     .social {
-    margin: 0 10px;
-    width: 25px;
-    height: 25px;
+        margin: 0 10px;
+        width: 25px;
+        height: 25px;
     }
-    }
+}
 
 /* PAGE RESUME LIVRE */
 
@@ -1489,54 +1520,55 @@ p.author2 {
 /* -----------RESPONSIVE RESUME LIVRE */
 @media screen and (max-width: 400px) {
     /* styles pour écrans de 400px ou moins */
-  
+
     /* Réduire la taille de la police pour améliorer la lisibilité */
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     /* Cacher l'image dans la section #books */
     #books img {
-      display: none;
+        display: none;
     }
-  
+
     /* Ajuster la mise en page pour une meilleure expérience mobile */
     #books .contain {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
-  
+
     #books .resum {
-      margin-top: 1rem;
+        margin-top: 1rem;
     }
-  
+
     #books .description {
-      margin-top: 1rem;
+        margin-top: 1rem;
     }
-  
+
     #books .liste {
-      margin-left: 0;
-      padding-left: 0;
-      list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        list-style: none;
     }
-  
+
     #books .liste li {
-      margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
     }
-  
+
     #books .livr {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1rem;
     }
-  
+
     #books .item3 {
-      flex-basis: 48%;
-      margin-bottom: 1rem;
+        flex-basis: 48%;
+        margin-bottom: 1rem;
     }
-  }
-  /* ------END RESPONSIVE RESUME LIVRE  */
+}
+
+/* ------END RESPONSIVE RESUME LIVRE  */
 
 /* SECTION CATALOGUE */
 
@@ -1648,45 +1680,47 @@ p.authors {
 /* END CATALOGUE */
 /* -----RESPONSIVE CATALOGUE  */
 @media only screen and (max-width: 400px) {
+
     /* Styles à appliquer pour les écrans de 400px ou moins */
     #catalogue {
         padding: 10px;
     }
-    
+
     .catalog {
         font-size: 1.5em;
     }
-    
+
     .formul-s {
         margin-top: 10px;
     }
-    
+
     #search-book {
         width: 80%;
         margin-right: 10px;
     }
-    
+
     #search-button {
         width: 18%;
     }
-    
+
     .books-catalog {
         width: 100%;
         margin-bottom: 10px;
     }
-    
+
     .item4 {
         width: 100%;
     }
-    
+
     .titles {
         font-size: 1.2em;
     }
-    
+
     .authors {
         font-size: 1em;
     }
 }
+
 /* -------END RESPONSIVE CATALOGUE  */
 
 /* PAGE INFOS PRATIQUES */
@@ -1748,17 +1782,19 @@ ol.consignes li {
 
 /* ------RESPONSIVE INFOS PRATIQUES  */
 @media screen and (max-width: 400px) {
+
     /* styles à appliquer pour une résolution de 400px ou moins */
     .consignes {
-      font-size: 12px;
-      line-height: 1.2;
+        font-size: 12px;
+        line-height: 1.2;
     }
+
     .infos {
-      font-size: 20px;
-      line-height: 1.2;
+        font-size: 20px;
+        line-height: 1.2;
     }
-  }
-  
+}
+
 /* POP UP CONNEXION */
 
 #connexion {
@@ -1791,7 +1827,7 @@ form {
     height: 250px;
     padding: 40px 60px;
     border-radius: 10px;
-    min-width: 600px;
+
 }
 
 .connect {
@@ -1927,7 +1963,7 @@ button#suscribe-button {
     }
 }
 
-  
+
 /* PAGE INSCRIPTION */
 body {
     width: 100%;
@@ -2065,35 +2101,37 @@ button[type="submit"] {
 
 @media only screen and (max-width: 400px) {
     .suscribe-form {
-      width: 100%;
-      margin: 0;
-      padding: 20px;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
     }
-    .img-book{
+
+    .img-book {
         display: none;
     }
+
     .input {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
-    
+
     input[type="text"],
     input[type="email"],
     input[type="password"],
     input[type="number"],
     input[type="date"],
     select {
-      margin: 10px 0;
-      width: 100%;
+        margin: 10px 0;
+        width: 100%;
     }
-    
+
     button[type="submit"] {
-      margin-top: 20px;
-      width: 100%;
+        margin-top: 20px;
+        width: 100%;
     }
-  }
-  
-    
+}
+
+
 
 /* PAGE RECHERCHE AVANCEE */
 
@@ -2165,24 +2203,28 @@ input[type="submit"]:hover {
 /* -------RESPONSIVE RECHERCHE AVANCEE */
 
 @media screen and (max-width: 400px) {
+
     /* styles pour les écrans de 400px ou moins */
     .filter-container {
-    width: 90%;
-    margin: 0 auto;
+        width: 90%;
+        margin: 0 auto;
     }
+
     .filter form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+
     .filter form label,
     .filter form input,
     .filter form select {
-    width: 45%;
-    margin-bottom: 10px;
+        width: 45%;
+        margin-bottom: 10px;
     }
 }
-    /* -----END RESPONSIVE RECHERCHE AVANCEE */
+
+/* -----END RESPONSIVE RECHERCHE AVANCEE */
 
 
 /* DASHBOARD USER */
@@ -2324,35 +2366,35 @@ input[type="tel"]#telephone {
 /* ****** RESPONSIVE MOBILE DASHBOARD USER */
 @media screen and (max-width: 400px) {
     /* styles pour les écrans de 400px ou moins */
-    
+
     /* on cache la navigation */
     #user-nav {
-      display: none;
+        display: none;
     }
-    
+
     /* on réduit la taille de la police de tous les éléments h2 et h3 */
     h2,
     h3 {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-    
+
     /* on modifie la disposition du formulaire */
     .info1 {
-      flex-direction: column;
+        flex-direction: column;
     }
-    
+
     /* on modifie la disposition des labels et des inputs */
     .names,
     label {
-      display: block;
-      margin: 10px 0;
+        display: block;
+        margin: 10px 0;
     }
-    
+
     /* on ajoute un margin-bottom au dernier input pour une meilleure lisibilité */
     input[type="submit"] {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-  }
-  
+}
+
 
 /* *******END RESPONSIVE MOBILE DASHBOARD USER */

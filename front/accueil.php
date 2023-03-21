@@ -90,8 +90,8 @@ if (isset($_POST['submit'])) {
                     <?php foreach ($reqFav as $article) { ?>
                         <div class="item1">
                             <a href="./book.php?id=<?= $article['id_book'] ?>"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                            <p class="title"><?= $article['title'] ?></p><br>
-                            <p class="author"><?= $article['author'] ?></p>
+                            <p class="title-gender"><?= $article['title'] ?></p><br>
+                            <p class="author-gender"><?= $article['author'] ?></p>
                         </div>
                     <?php } ?>
                     <button id="see" type="button"><a href="./book.php?id=<?= $article['id_book'] ?>">Voir plus</a></button>
@@ -150,8 +150,8 @@ if (isset($_POST['submit'])) {
                             <?php foreach ($reqFav as $article) { ?>
                                 <div class="item3">
                                     <a href="./book.php?id=<?= $article['id_book'] ?>"><img src="../image/<?= $article['image'] ?>" alt="<?= $article['title'] ?>"></a>
-                                    <p class="title"><?= $article['title'] ?></p><br>
-                                    <p class="author"><?= $article['author'] ?></p>
+                                    <p class="title-fant"><?= $article['title'] ?></p><br>
+                                    <p class="author-fant"><?= $article['author'] ?></p>
                                 </div>
                             <?php } ?>
                             <button id="see" type="button"><a href="./book.php?id=<?= $article['id_book'] ?>">Voir plus</a></button>
