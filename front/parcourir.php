@@ -20,7 +20,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                 <form action="#" method="get">
                     <label for="search-book">Recherche</label>
                     <input type="text" id="search-book" name="search-book" placeholder="Recherche">
-                    <button type="submit">
+                    <button id="avanced" type="submit">
                         <a href="./search.php">Recherche avancée</a>
                     </button>
                 </form>

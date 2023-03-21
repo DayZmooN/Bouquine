@@ -61,7 +61,7 @@ header#head {
     display: block;
 }
 
-#close-menu{
+#close-menu {
     display: none;
 }
 
@@ -111,9 +111,11 @@ nav ul li a {
     transition: all 0.8s ease;
 }
 
-nav ul li:hover a {
-    color: #FFF;
-    background-color: #da7b27;
+nav ul li:hover {
+    color: black;
+    background-color: #62CDFF;
+
+    border-radius: 5px;
 }
 
 nav ul li:hover>ul {
@@ -212,9 +214,11 @@ input#user-deconnect#user-connect {
     cursor: pointer;
     border-radius: 10px;
 }
+
 input#user-deconnect:hover {
     opacity: 1;
-  }
+}
+
 .user-name {
     width: 50px;
     height: 50px;
@@ -350,7 +354,7 @@ h1 {
 .populaire {
     width: 100%;
     height: 900px;
-    background-color:#3C4048;
+    background-color: #3C4048;
 }
 
 .popular {
@@ -410,7 +414,7 @@ h1 {
 
 .title .author p {
     text-align: center;
-   
+
 }
 
 .title {
@@ -1257,7 +1261,7 @@ p#copy {
 }
 
 .copyright {
-    background-color:#00ABB3;
+    background-color: #00ABB3;
     text-align: center;
 }
 
@@ -1289,7 +1293,7 @@ p#copy {
 #books {
     width: 100%;
     height: auto;
-    background-color: #DAF7A6;
+    background-color: #EAEAEA;
 }
 
 .contain {
@@ -1320,10 +1324,10 @@ p#copy {
 .resum {
     width: 330px;
     height: 400px;
-    background-color: #FF5733;
+    background-color: #EAEAEA;
     margin-top: 50px;
     border-radius: 10px;
-    border: 3px solid #FFB34E;
+    border: 3px solid black;
     box-shadow: rgba(227, 95, 12, 0.798) 0px 3px 8px;
 }
 
@@ -1392,6 +1396,10 @@ h3.read {
     height: 350px;
     border-radius: 5px;
     margin-top: 30px;
+}
+
+.lus img:hover {
+    opacity: 60%;
 }
 
 p.titl1 {
@@ -1487,7 +1495,7 @@ h3.dispo {
 
 .livr {
     width: 100%;
-    height: auto;
+    height: 500px;
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -1514,6 +1522,11 @@ p.author2 {
     width: 250px;
     height: 350px;
     border-radius: 5px;
+
+}
+
+.item3 img:hover {
+    opacity: 60%;
 }
 
 /* END SECTION PAGE RESUME */
@@ -1625,7 +1638,10 @@ button#search-button {
     margin-left: 20px;
     font-size: 1rem;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #da7b27;
+    background-color: #B2B2B2;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: none;
 }
 
 .item4 {
@@ -1723,12 +1739,27 @@ p.authors {
 
 /* -------END RESPONSIVE CATALOGUE  */
 
+/* PAGE PARCOURIR  */
+#avanced{
+    width: 150px;
+    height: 35px;
+    /* margin-left: 20px; */
+    font-size: .8rem;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #B2B2B2;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: none;
+}
+
+/* END PARCOURIR */
+
 /* PAGE INFOS PRATIQUES */
 
 .info {
     width: 100%;
     height: 900px;
-    background: #ffe566;
+    background: #EAEAEA;
 }
 
 .news {
@@ -1748,7 +1779,7 @@ h2.infos {
     text-align: center;
     margin-top: 60px;
     text-transform: uppercase;
-    text-shadow: 0 0 2px orange;
+    text-shadow: 0 0 2px #B2B2B2;
 }
 
 .consignes {
