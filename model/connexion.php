@@ -51,7 +51,7 @@ if (!empty($_POST)) {
                 ];
                 header("location: ../front/accueil.php");
             } else {
-                die("adresse email ou mot de passe incorecte");
+                die(header('Location: ../front/connexion.php?err=1'));
             }
         }
     }

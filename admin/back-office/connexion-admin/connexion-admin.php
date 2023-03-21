@@ -4,6 +4,7 @@ session_start();
 // protection pour empêcher d'accéder à l'url
 if (isset($_SESSION["admin"])) {
     header("location: ./dashboard-admin.php");
+
     exit;
 }
 // on vérifie si le formulaire a été envoyé
@@ -37,10 +38,9 @@ if (!empty($_POST)) {
                 header("location: ./dashboard-admin.php");
                 exit;
             } else {
-                die("Mot de passe incorrect");
+                die(header('Location: ./connexion-admin.php?erro=1'));
+                //a finir
             }
-        } else {
-            die("Administrateur non trouvé");
         }
     }
 }

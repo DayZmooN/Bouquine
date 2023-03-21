@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             btnConfirmed.innerHTML = "Confirmer";
 
 
+
         })
     }
 })
