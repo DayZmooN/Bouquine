@@ -13,7 +13,17 @@ if (isset($_POST['submit'])) {
     $id_category = ($_POST['id_category']);
     $summary = ($_POST['summary']);
 
-    $addreq = $db->prepare("INSERT INTO `book`(`ISBN`,`image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES ('$ISBN','$image','$title','$author','$editor','$collection','$publication_date','$genre','$id_category','$summary')");
+    $addreq = $db->prepare("INSERT INTO `book`(`ISBN`,`image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`) VALUES (:ISBN,:image,:title,:author,:editor,:collection,:publication_date,:genre,:id_category,:summary)");
+    $addreq->bindParam('ISBN', $ISBN, PDO::PARAM_STR);
+    $addreq->bindParam('image', $image, PDO::PARAM_STR);
+    $addreq->bindParam('title', $title, PDO::PARAM_STR);
+    $addreq->bindParam('author', $author, PDO::PARAM_STR);
+    $addreq->bindParam('editor', $editor, PDO::PARAM_STR);
+    $addreq->bindParam('collection', $collection, PDO::PARAM_STR);
+    $addreq->bindParam('publication_date', $publication_date, PDO::PARAM_STR);
+    $addreq->bindParam('genre', $genre, PDO::PARAM_STR);
+    $addreq->bindParam('id_category', $id_category, PDO::PARAM_INT);
+    $addreq->bindParam('summary', $summary, PDO::PARAM_STR);
     $addreq->execute();
 
     $_SESSION['sucess'] = "Produit ajouté avec succès !";
