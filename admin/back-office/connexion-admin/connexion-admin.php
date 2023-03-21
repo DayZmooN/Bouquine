@@ -25,6 +25,10 @@ if (!empty($_POST)) {
         $queryAdmin->execute();
         $admin = $queryAdmin->fetch(PDO::FETCH_ASSOC);
 
+
+        if (!$admin) {
+            header('Location: ./connexion-admin.php?erro=1');
+        }
         // si l'administrateur existe
         if ($admin) {
             // on vérifie le mot de passe
