@@ -46,14 +46,14 @@ header#head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00ABB3;
+    background-color: white;
     /* position: fixed; */
 }
 
 .logo {
     /* width: 250px; */
     height: 90px;
-    /* flex: 1; */
+   
 }
 
 .logo img {
@@ -111,10 +111,9 @@ nav ul li a {
     transition: all 0.8s ease;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     color: black;
-    background-color: #62CDFF;
-
+    background-color: #6b74eb;
     border-radius: 5px;
 }
 
@@ -137,7 +136,7 @@ nav input[type="search"] {
     border: 1px solid black;
     /* padding: 5px; */
     border-radius: 10px;
-    box-shadow: 0px 0px 5px #f6b339;
+    box-shadow: 0px 0px 5px #5a62be;
     background-color: white;
 }
 
@@ -175,11 +174,13 @@ button#search-button1 {
     height: 35px;
     margin-left: 20px;
     font-size: 1rem;
+    font-weight: 600;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     padding: 0 10px;
     border: none;
     border-radius: 10px;
+    color: white;
 }
 
 a.img-user {
@@ -195,30 +196,29 @@ input#user-connect {
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     padding: 0 10px;
-    color: black;
+    color: white;
     margin: 0 auto;
     cursor: pointer;
     border-radius: 10px;
 }
 
-input#user-deconnect#user-connect {
+#user-deconnect#user-connect {
     width: 120px;
     height: 35px;
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #B2B2B2;
-    color: black;
+    background-color: #5a62be;
+    color: white;
     cursor: pointer;
     border-radius: 10px;
 }
 
 input#user-deconnect:hover {
-    opacity: 1;
+    opacity: 40%;
 }
-
 .user-name {
     width: 50px;
     height: 50px;
@@ -229,13 +229,10 @@ input#user-deconnect:hover {
     text-align: center;
     padding-top: 10px;
 }
-
 .nom {
     width: 30px;
     margin-left: 5px;
-
 }
-
 .user-name a {
     width: 100px;
     height: 50px;
@@ -313,7 +310,7 @@ input#user-deconnect:hover {
 
 .parallax-section {
     width: 100%;
-    height: 400px;
+    height: 550px;
 }
 
 .parallax {
@@ -325,41 +322,49 @@ input#user-deconnect:hover {
 }
 
 .parallax.parallax1 {
+    width: 100%;
+    height: 550px;
     background-image: url("../image/lecture.jpg");
 }
 
 h1 {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: right;
     text-transform: uppercase;
-    width: 1000px;
-    height: 90px;
-    padding-top: 60px;
+    height: 80px;
+    padding-top: 50px;
     color: white;
+    margin-right: 50px;
 }
 
 #explain {
-    width: 1000px;
-    height: 250px;
+    /* width: 500px; */
+    height: 300px;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
-    font-size: 1.8rem;
-    text-align: right;
-    padding-top: 50px;
+    font-size: 2rem;
+    float: right;
+    padding-top: 80px;
     color: white;
+    margin-right: 50px;
 }
 
 /* SECTION LES PLUS POPULAIRES */
 
 .populaire {
     width: 100%;
-    height: 900px;
+    height: auto;
     background-color: #3C4048;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
 }
 
 .popular {
     width: 100%;
-    height: 80px;
+    height: 120px;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -367,17 +372,15 @@ h1 {
     font-weight: bold;
     text-align: center;
     /* margin-top: 30px; */
+    margin-top: 50px;
 }
-
-.titre1 h2 {
-    padding-top: 20px;
-}
-
 .container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .item img {
@@ -389,38 +392,36 @@ h1 {
 .item img:hover {
     opacity: 40%;
 }
-
 .item {
     width: 300px;
-    height: 400px;
-    flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
-
 #resume {
     width: 80px;
     height: 30px;
-    border: 1px solid black;
+    border: none;
+    /* border: 1px solid black; */
     border-radius: 50px;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     margin: 10px;
-}
+    }
 
 #resume a {
     text-decoration: none;
+    color: white;
 }
 
 .title .author p {
     text-align: center;
-
 }
 
 .title {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 10px;
     color: white;
 }
@@ -430,7 +431,7 @@ h1 {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: white;
-    margin-top: 10px;
+      
 }
 
 /* END SECTION POPULAIRES  */
@@ -503,13 +504,12 @@ h1 {
 }
 
 .slider {
-    height: 300px;
+    height: 420px;
     position: relative;
     overflow: hidden;
     max-width: 800px;
     aspect-ratio: 16/9;
     margin: auto;
-    border: 1px solid #fff;
 }
 
 .slider [src] {
@@ -562,8 +562,8 @@ h1 {
 /* section genre préférés */
 #gender {
     width: 100%;
-    height: 1700px;
-    background-color: #EAEAEA;
+    height: 1600px;
+    background-color: #ff9a26;
 }
 
 #prefers {
@@ -586,17 +586,17 @@ h2#prefers {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
-    margin: 20px;
-    /* text-transform: uppercase; */
     margin-left: 60px;
 }
 
 .container1 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .item1 img {
@@ -614,7 +614,6 @@ h2#prefers {
 .item1 {
     width: 300px;
     height: 400px;
-    flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -623,15 +622,18 @@ h2#prefers {
 button#see {
     width: 80px;
     height: 30px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 50px;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     position: relative;
     float: right;
+    color: white;
+    border: none;
 }
 
 #see a {
     text-decoration: none;
+    color: white;
 }
 
 .title-gender .author-gender p {
@@ -650,7 +652,6 @@ button#see {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
-    /* margin-bottom: 20px; */
     line-height: 10px;
 }
 
@@ -681,16 +682,16 @@ hr.gender1:after {
     font-weight: 800;
     line-height: 10px;
     margin: 40px;
-    /* text-transform: uppercase; */
     margin-left: 60px;
 }
 
 .container2 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .item2 img {
@@ -708,7 +709,6 @@ hr.gender1:after {
 .item2 {
     width: 300px;
     height: 400px;
-    flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -717,11 +717,13 @@ hr.gender1:after {
 #see {
     width: 100px;
     height: 40px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 50px;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     position: relative;
     float: right;
+    color: white;
+    border: none;
 }
 
 #see a {
@@ -756,16 +758,16 @@ hr.gender1:after {
     font-weight: 800;
     line-height: 10px;
     margin: 40px;
-    /* text-transform: uppercase; */
     margin-left: 60px;
 }
 
 .container3 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .item3 img {
@@ -783,7 +785,6 @@ hr.gender1:after {
 .item3 {
     width: 300px;
     height: 400px;
-    flex: 0 0 calc(25% - 40px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -792,29 +793,31 @@ hr.gender1:after {
 #see {
     width: 100px;
     height: 40px;
-    border: 1px solid #F47826;
+    /* border: 1px solid black; */
     border-radius: 50px;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     position: relative;
     float: right;
+    color: white;
+    border: none;
 }
 
 #see a {
     text-decoration: none;
 }
 
-.title .author p {
+.title-act.author-act p {
     text-align: center;
 }
 
-.title {
+.title-act {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     line-height: 10px;
 }
 
-.author {
+.author-act {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
@@ -829,51 +832,51 @@ hr.gender1:after {
 /* SECTION TEXTE  */
 #text {
     width: 100%;
-    height: 700px;
+    height: 500px;
     display: flex;
-    justify-content: space-between;
-    background-color: #B2B2B2;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3C4048;
 }
 
 .texte {
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
     border-radius: 30px;
-    padding-left: 30px;
-    margin-top: 70px;
-    margin-left: 70px;
-    background-color: #EAEAEA;
-
+    margin-top: 20px;
 }
 
 .bouquine {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: bold;
     text-align: center;
-    margin: 50px;
+    margin-top: 20px;
+    color: white;
 }
 
-.list li {
-    font-size: 1.4rem;
+.list {
+    /* width: 400px; */
+    height: 400px;
+    font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-    list-style-type: square;
-    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    
 }
 
 .image {
-    width: 500px;
-    height: 500px;
-    margin-top: 70px;
-    margin-right: 100px;
+    height: 400px;
     border-radius: 40px;
 }
 
 /* END SECTION TEXTE */
 
 /* SECTION NEWSLETTER */
-.parallax-section .newsletter {
+.parallax-section.newsletter {
     width: 100%;
     height: 400px;
 }
@@ -903,7 +906,6 @@ hr.gender1:after {
     text-transform: uppercase;
     font-size: 2rem;
     color: white;
-    /* font-weight: bold; */
     text-align: center;
     margin-top: 30px;
 }
@@ -936,7 +938,7 @@ input#email {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 500;
     color: white;
-    background-color: #B2B2B2;
+    background-color:#5a62be;
     border-radius: 50px;
     position: relative;
     float: right;
@@ -964,32 +966,31 @@ input#email {
     width: 100%;
     height: 400px;
     background-color: white;
-    padding-top: 30px;
 }
 
 .container-contact {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 #us {
-    width: 1300px;
-    height: 70px;
+    width: 100%;
+    height: 50px;
     font-family: 'QuattrocentoSans-Bold';
     text-transform: uppercase;
     font-size: 2rem;
     color: rgb(0, 0, 0);
     text-align: center;
-
+    margin-top: 40px;
 }
 
 .localisation {
     width: 400px;
-    height: 400px;
+    height: 300px;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
@@ -999,12 +1000,12 @@ input#email {
 .localisation img {
     width: 100px;
     height: 100px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .horaire {
     width: 400px;
-    height: 400px;
+    height: 300px;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
@@ -1014,13 +1015,13 @@ input#email {
 .horaire img {
     width: 100px;
     height: 100px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .mail {
     width: 400px;
-    height: 400px;
-    margin: 50px;
+    height: 300px;
+    /* margin: 50px; */
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
@@ -1030,7 +1031,7 @@ input#email {
 .mail img {
     width: 100px;
     height: 100px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 a {
@@ -1055,8 +1056,8 @@ a:hover {
 }
 
 .hour {
-    margin-top: 30px;
-    margin-left: 30px;
+     margin-top: 30px;
+  
 }
 
 .contactus {
@@ -1094,9 +1095,9 @@ section.parallax-section.compteur {
 .stat {
     width: 200px;
     height: 200px;
-    border: 5px solid #F47826;
+    border: 5px solid black;
     border-radius: 30px;
-    box-shadow: 2px 2px 2px 1px #F4B97A;
+    box-shadow: 2px 2px 2px 1px #3C4048;
 }
 
 .parallax.parallax1.count {
@@ -1129,7 +1130,7 @@ p.livre {
 section#lecteur {
     width: 100%;
     height: 550px;
-    background-color: #3C4048;
+    /* background-color: #5a62be; */
     padding-top: 20px;
 }
 
@@ -1156,8 +1157,8 @@ h2.lector {
     height: 300px;
     border: 3px solid black;
     border-radius: 40px;
-    background-color: #00ABB3;
-    ;
+    background-color: #5a62be;
+  
 }
 
 h3.name {
@@ -1165,7 +1166,7 @@ h3.name {
     height: 10px;
     font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.3rem;
-    color: rgb(0, 0, 0);
+    color: white;
     margin-left: 20px;
     margin-top: 30px;
 }
@@ -1181,8 +1182,8 @@ h3.name {
 p.value {
     font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
+    color: white;
+    font-weight: 500;
     margin-top: 100px;
     margin-left: 10px;
     text-align: left;
@@ -1194,10 +1195,10 @@ p.value {
 footer {
     width: 100%;
     height: 130px;
-    position: fixed;
     z-index: 2;
     bottom: 0;
     left: 0;
+    display: none;
 }
 
 #end {
@@ -1322,13 +1323,13 @@ p#copy {
 }
 
 .resum {
-    width: 330px;
+    width: 300px;
     height: 400px;
     background-color: #EAEAEA;
     margin-top: 50px;
     border-radius: 10px;
-    border: 3px solid black;
-    box-shadow: rgba(227, 95, 12, 0.798) 0px 3px 8px;
+    border: 3px solid white;
+    box-shadow:#4950a1 0px 3px 8px;
 }
 
 .resum h3 {
@@ -1460,16 +1461,19 @@ p.miller {
 }
 
 h4.detail {
+    width: 300px;
+    text-align: justify;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
     color: #000;
-    margin-left: 30px;
+   margin-bottom: 20px;
 }
 
 ul.liste {
-    width: 600px;
+    width: 300px;
     height: auto;
+    text-align: justify;
 }
 
 .liste li {
@@ -1587,12 +1591,13 @@ p.author2 {
 
 #catalogue {
     width: 100%;
-    height: 100%;
+    height: auto;
+    
 }
 
 .catal {
     width: 100%;
-    height: 1400px;
+    height:auto ;
 }
 
 h2.catalog {
@@ -1638,10 +1643,11 @@ button#search-button {
     margin-left: 20px;
     font-size: 1rem;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     border-radius: 10px;
     padding: 0 10px;
     border: none;
+    color: white;
 }
 
 .item4 {
@@ -1740,13 +1746,13 @@ p.authors {
 /* -------END RESPONSIVE CATALOGUE  */
 
 /* PAGE PARCOURIR  */
-#avanced{
+#avanced {
     width: 150px;
     height: 35px;
     /* margin-left: 20px; */
     font-size: .8rem;
     font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #B2B2B2;
+    background-color: #5a62be;
     border-radius: 10px;
     padding: 0 10px;
     border: none;
@@ -1759,7 +1765,7 @@ p.authors {
 .info {
     width: 100%;
     height: 900px;
-    background: #EAEAEA;
+    background: #4950a1;
 }
 
 .news {
@@ -1775,17 +1781,18 @@ p.authors {
 h2.infos {
     font-size: 2.5rem;
     font-family: 'QuattrocentoSans-Regular';
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
     margin-top: 60px;
     text-transform: uppercase;
-    text-shadow: 0 0 2px #B2B2B2;
+    text-shadow: 0 0 2px violet;
+    color: white;
 }
 
 .consignes {
     width: 70%;
     height: 600px;
-    border: 2px solid black;
+    border: 2px solid white;
     margin-top: 50px;
     padding-top: 30px;
     position: absolute;
@@ -1801,7 +1808,8 @@ h2.infos {
 ol.consignes {
     text-align: center;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    color: white;
 }
 
 ol.consignes li {
@@ -1898,16 +1906,12 @@ h2.connect {
 }
 
 .social-media a:visited {
-    color: orange;
+    color: #5a62be;
 }
 
-/* .social-media p:hover {
-    color: #b9671b;
-} */
 
 p.email {
     text-align: center;
-    /* margin-top: 30px; */
     font-size: 1.3rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 600;
@@ -1931,12 +1935,11 @@ input[type='password'] {
 form p.inscription {
     font-size: 14px;
     margin-bottom: 20px;
-    color: #878787;
     text-align: center;
 }
 
 .inscription a:visited {
-    color: orange;
+    color: #4950a1;
 }
 
 p.inscription {
@@ -1946,14 +1949,21 @@ p.inscription {
     margin-top: 10px;
 }
 
-button#suscribe-button {
-    /* padding: 15px 25px; */
+#btn-connect {
+    width: 150px;
+    height: 35px;
+    padding: 10px 20px;
     border-radius: 5px;
     border: none;
+    display: block;
+    margin: auto;
     font-size: 1rem;
-    background-color: #74EC8D;
+    font-family: 'QuattrocentoSans-Regular', sans-serif;
+    font-weight: 500;
+    background-color: #5a62be;
     cursor: pointer;
-    margin-right: 0;
+    color:white
+    
 
 }
 
@@ -2011,14 +2021,14 @@ body {
 
 #suscribe {
     width: 100%;
-    height: auto;
+    height: 550px;
     display: flex;
     justify-content: center;
 }
 
 .container-suscribe {
     width: 50%;
-    height: 500px;
+    height: 550px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -2063,6 +2073,9 @@ h2.sus-form {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
+}
+input#username{
+    background-color: white;
 }
 
 .input input {
@@ -2113,18 +2126,20 @@ input#phone {
     padding: 8px;
     margin-bottom: 10px;
 }
-
-button[type="submit"] {
+#btn-create{
     width: 150px;
     height: 35px;
+    padding: 10px 20px;
+    background-color: #5a62be;
+    border-radius: 5px;
+    border: none;
+}
+#btn-create a{
     font-size: .8rem;
     font-family: 'QuattrocentoSans-Regular';
-    font-weight: 600;
-    background-color: #74EC8D;
-    padding: 10px 20px;
-    border-radius: 5px;
+    font-weight: 500;
     cursor: pointer;
-    margin-right: 50px;
+    color: white;
 }
 
 /* END INSCRIPTION */
@@ -2136,7 +2151,6 @@ button[type="submit"] {
         margin: 0;
         padding: 20px;
     }
-
     .img-book {
         display: none;
     }
@@ -2161,7 +2175,6 @@ button[type="submit"] {
         width: 100%;
     }
 }
-
 
 
 /* PAGE RECHERCHE AVANCEE */
