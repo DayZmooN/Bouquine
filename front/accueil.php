@@ -2,7 +2,7 @@
 // session_start();
 require_once './connect.php';
 require_once './header-front.php';
-require_once './footer-front.php';
+
 
 
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` ORDER BY RAND() LIMIT 8');
@@ -285,3 +285,6 @@ if (isset($_POST['submit'])) {
         </section>
         <!-- end section avis lecteur  -->
     </main>
+    <?php
+    require_once './footer-front.php';
+    ?>

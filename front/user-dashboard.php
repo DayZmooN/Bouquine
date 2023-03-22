@@ -38,13 +38,13 @@ if (!isset($_SESSION["user"])) {
     </ul>
   </nav>
   <div class="info1">
-    <h3 class="info-perso">Information personnelle </h3>
+    <h3 class="info-perso">Informations personnelles </h3>
     <form id="dash-form" action="#" method="post">
       <div class="names">
         <label for="nom">Nom</label>
         <input type="text" id="nom" name="nom" required value="<?= $_SESSION["user"]["lastname"] ?>">
         &nbsp; &nbsp; &nbsp;
-        <label for="prenom"></label>
+        <label for="prenom">Prénom</label>
         <input type="text" id="prenom" name="prenom" value="<?= $_SESSION["user"]["lastname"] ?>" required>
       </div>
 

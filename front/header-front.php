@@ -13,6 +13,10 @@ require_once './connect.php'
     <!-- HEADER -->
     <header id="head">
         <nav class="header-nav">
+            <div id="menu-icon">
+                <a href="#"><img src="../image/burger.png" alt="menu burger"></a>
+
+            </div>
             <div id="close-menu">X</div>
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
@@ -21,7 +25,7 @@ require_once './connect.php'
             <ul class="menu">
                 <li><a href="./catalogue.php">Catalogue</a></li>
                 <li>
-                    <a href="#">Parcourir</a>
+                    <a href="#">Catégorie</a>
                     <ul>
                         <?php
                         include '../connexion.php';
@@ -32,6 +36,49 @@ require_once './connect.php'
                             <li><a href='./parcourir.php?id=<?= $category['id_category'] ?>'><?= $category['libel_category'] ?></a></li>
                         <?php } ?>
                     </ul>
+                </li>
+                <li>
+                    <a href="#">Genre</a>
+                    <div class="genre">
+                        <ul>
+                        <li><a href="#">Poésie</a></li>
+                        <li><a href="#">Littérature</a></li>
+                        <li><a href="#">Naration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                        <li><a href="#">Naration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                        </ul>
+                    </div>
+                    <div class="genre">
+                    <ul>
+                        <li><a href="#">Poésie</a></li>
+                        <li><a href="#">Littérature</a></li>
+                        <li><a href="#">Naration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                        <li><a href="#">Naration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                    </ul>
+                    </div>
+                    <div class="genre">
+                    <ul>
+                        <li><a href="#">Poésie</a></li>
+                        <li><a href="#">Littérature</a></li>
+                        <li><a href="#">Naration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                        <li><a href="#">Naration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                    </ul>
+                    </div>
+                    <div class="genre">
+                    <ul>
+                        <li><a href="#">Poésie</a></li>
+                        <li><a href="#">Littérature</a></li>
+                        <li><a href="#">Narration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                        <li><a href="#">Naration</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                    </ul>
+                    </div>
                 </li>
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->

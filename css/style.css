@@ -58,10 +58,6 @@ header#head {
     display: block;
 }
 
-#close-menu {
-    display: none;
-}
-
 nav.header-nav {
     width: 100%;
     height: 120px;
@@ -78,7 +74,6 @@ nav ul {
 
 ul.menu {
     width: 800px;
-
 }
 
 nav li {
@@ -99,14 +94,17 @@ nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 200px;
+    
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 nav ul li a {
     display: block;
     font-size: 1rem;
     transition: all 0.8s ease;
-   }
+   
+}
 
 nav ul li a:hover {
     color: black;
@@ -116,7 +114,7 @@ nav ul li a:hover {
 
 nav ul li:hover>ul {
     display: block;
-    z-index: 5;
+    
 }
 
 nav ul ul li {
@@ -125,6 +123,7 @@ nav ul ul li {
 
 nav ul ul a {
     padding: 10px 15px;
+    background-color: white;
 }
 
 nav input[type="search"] {
@@ -134,14 +133,29 @@ nav input[type="search"] {
     border-radius: 10px;
     box-shadow: 0px 0px 5px #5a62be;
     background-color: white;
+    margin-left: 20px;
 }
 
-nav.menu-icon {
+ 
+#menu-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+#menu-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+#close-menu {
+    width: 10px;
+    height: 10px;
     display: none;
 }
 
 li.search-box {
-    width: 450px;
+    width: 400px;
 }
 
 #form-header {
@@ -160,8 +174,15 @@ li.search-box {
     margin: 0 auto;
 }
 
+a.img-user {
+    width: 70px;
+    height: 80px;
+    margin: auto;
+}
+
 img.img-user {
-    height: 50px;
+    height: 60px;
+    margin-left: 20px;
 }
 
 button#search-button1 {
@@ -176,11 +197,7 @@ button#search-button1 {
     border: none;
     border-radius: 10px;
     color: white;
-}
-
-a.img-user {
-    width: 60px;
-    padding: 0;
+    cursor: pointer;
 }
 
 input#user-connect {
@@ -195,6 +212,7 @@ input#user-connect {
     margin: 0 auto;
     cursor: pointer;
     border-radius: 10px;
+    margin-left: 60px;
 }
 
 #user-deconnect#user-connect {
@@ -226,7 +244,7 @@ input#user-deconnect:hover {
 
 .nom {
     width: 30px;
-    margin-left: 5px;
+    margin-left: 30px;
 }
 
 .user-name a {
@@ -236,69 +254,86 @@ input#user-deconnect:hover {
 
 /* **************media queries header ********************/
 
-@media only screen and (max-width: 400px) {
-
-    .header-nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .label-hamburger {
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 24px;
-        cursor: pointer;
-    }
+@media screen and (max-width: 400px) {
 
     .logo {
-        margin-top: 50px;
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
     }
 
     .menu {
-        margin-top: 20px;
+        display: none;
     }
 
-    .menu li {
-        margin: 10px 0;
-        text-align: center;
+    #close-menu {
+        display: block;
     }
 
-    .menu li.search-box {
-        margin-top: 30px;
+    #close-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
-    #form-header {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    #menu-icon div {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px;
     }
 
-    #form-header input[type=search] {
-        width: 60%;
-        margin-right: 5px;
-        margin-bottom: 5px;
+    .menu ul {
+        display: none;
     }
 
-    #form-header button {
-        width: 30%;
-        margin-bottom: 5px;
-    }
 
-    .img-user {
-        margin-top: 30px;
+    #menu-icon:hover+.menu,
+    .menu:hover ul {
+        display: block;
     }
-
-    #user-connect {
-        margin-top: 10px;
-    }
-
 }
+
+/* Media query pour les écrans avec une largeur de 900px ou moins */
+@media screen and (max-width: 900px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #close-menu {
+        display: block;
+    }
+
+    #close-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #menu-icon div {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 5px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    #menu-icon:hover+.menu,
+    .menu:hover ul {
+        display: block;
+    }
+}
+
 
 /* ******************fin media queries header*****************
 
@@ -345,6 +380,15 @@ h1 {
     margin-right: 50px;
 }
 
+/* *************RESPONSIVE PARTIE PARALAX**************** */
+
+@media only screen and (max-width: 400px),
+(min-width: 900px) {
+    .parallax-section .parallax1>img {
+        display: none;
+    }
+}
+
 /* ***************SECTION LES PLUS POPULAIRES************** */
 
 .populaire {
@@ -360,7 +404,8 @@ h1 {
 
 .popular {
     width: 100%;
-    height: 120px;
+    height: 80px;
+    margin-top: 60px;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -368,7 +413,6 @@ h1 {
     font-weight: bold;
     text-align: center;
     /* margin-top: 30px; */
-    margin-top: 50px;
 }
 
 .container {
@@ -420,7 +464,7 @@ h1 {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 500;
-    line-height: 10px;
+    line-height: 16px;
     color: white;
 }
 
@@ -435,53 +479,35 @@ h1 {
 /******************* END SECTION POPULAIRES **************** */
 
 /* -----*********responsive parallax popular**************** */
-@media only screen and (max-width: 400px) {
-    .parallax-section h1 {
-        font-size: 24px;
-    }
-
-    #explain {
-        font-size: 12px;
-        line-height: 18px;
-        margin-top: 10px;
-    }
-
-    .popular {
-        font-size: 24px;
-        margin-top: 10px;
+@media screen and (max-width: 400px) {
+    .populaire {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px auto;
     }
 
     .item {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 90%;
+        margin: 10px;
     }
 
-    .container {
-        display: block;
-    }
+    @media screen and (max-width: 900px) {
+        .populaire {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+        }
 
-    .container .item {
-        margin-bottom: 20px;
-    }
-
-    .container .item .title,
-    .container .item .author {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .container .item img {
-        width: 100%;
-    }
-
-    #resume {
-        font-size: 12px;
-        padding: 5px 10px;
-        margin-top: 5px;
+        .item {
+            width: 45%;
+            margin: 10px;
+        }
     }
 }
 
-/********************* end populaire ************************/
+/********************* end responsive  populaire ************************/
 
 
 /* ***********************SECTION NOUVEAUTES***************  */
@@ -560,12 +586,45 @@ h1 {
 
 /******************* end of section nouveautés ***************/
 
+/* *******************RESPONSIVE NOUVEAUTES************* *** */
+@media screen and (max-width: 400px) {
+    #nouveautes {
+        font-size: 16px;
+    }
+
+    .slider li {
+        margin-right: 2px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #nouveautes {
+        font-size: 20px;
+    }
+
+    .slider {
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nouveautes {
+        font-size: 18px;
+    }
+
+    .slider li {
+        margin-right: 5px;
+    }
+}
+
+/* ***************END RESPONSIVE NOUVEAUTES *****************/
+
 /******************* SECTION GENRE PREFERES ******************/
 
 #gender {
     width: 100%;
     height: 1600px;
-    background-color: #ff9a26;
+    background-color: #6b74eb;
 }
 
 #prefers {
@@ -589,10 +648,13 @@ h2#prefers {
     font-weight: 800;
     line-height: 10px;
     margin-left: 60px;
+    text-align: center;
 }
 
 .container1 {
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -675,6 +737,48 @@ hr.gender1:after {
     top: -13px;
 }
 
+/* ***************RESPONSIVE GENRE PREFERES******************* */
+@media screen and (max-width: 600px) {
+    #prefers {
+        font-size: 18px;
+    }
+
+    #romance {
+        font-size: 16px;
+    }
+
+    .item1 {
+        width: 90%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #prefers {
+        font-size: 16px;
+    }
+
+    #romance {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #prefers {
+        font-size: 20px;
+    }
+
+    #romance {
+        font-size: 18px;
+    }
+
+    .item1 {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
 /***************SECTION FANTAISIE****************************/
 
 #fantaisie {
@@ -684,6 +788,7 @@ hr.gender1:after {
     line-height: 10px;
     margin: 40px;
     margin-left: 60px;
+    text-align: center;
 }
 
 .container2 {
@@ -738,7 +843,7 @@ hr.gender1:after {
     font-size: 1rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
-    line-height: 10px;
+    line-height: 16px;
     color: #000;
 }
 
@@ -751,6 +856,31 @@ hr.gender1:after {
     line-height: 10px;
 }
 
+/* *****************RESPONSIVE FANTAISIE ********************/
+
+@media screen and (max-width: 400px) {
+    .container2 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .container2 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .item2 {
+        width: 22%;
+    }
+}
+
+/* **************END RESPONSIVE FANTAISIE *******************/
+
 /*****************SECTION ACTION*****************************  */
 #action {
     font-size: 1.5rem;
@@ -759,6 +889,7 @@ hr.gender1:after {
     line-height: 10px;
     margin: 40px;
     margin-left: 60px;
+    text-align: center;
 }
 
 .container3 {
@@ -827,6 +958,31 @@ hr.gender1:after {
 }
 
 /**************** END GENRE PLUS LUS  *************************/
+
+/* ******************RESPONSIVE ACTION************************ */
+
+@media screen and (max-width: 400px) {
+    .container3 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .container3 {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .item3 {
+        width: 22%;
+    }
+}
+
+/* ****************END RESPONSIVE ACTION ******************* */
 
 /******************** SECTION TEXTE ************************* */
 
@@ -997,8 +1153,8 @@ input#email {
 }
 
 .localisation img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    /* height: 100px; */
 }
 
 .horaire {
@@ -1011,8 +1167,8 @@ input#email {
 }
 
 .horaire img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    /* height: 100px; */
 }
 
 .mail {
@@ -1025,8 +1181,8 @@ input#email {
 }
 
 .mail img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    /* height: 100px; */
 }
 
 a {
@@ -1074,8 +1230,9 @@ a:hover {
 }
 
 section.parallax-section.compteur {
-    width: 100%;
+    max-width: 1200px;
     height: 350px;
+    margin: 0 auto;
 }
 
 .parallax.parallax1.count {
@@ -1161,7 +1318,7 @@ h3.name {
     font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.3rem;
     color: white;
-    margin-left: 20px;
+    margin-left: 32px;
     margin-top: 30px;
 }
 
@@ -1178,27 +1335,27 @@ p.value {
     font-size: 1.2rem;
     color: white;
     font-weight: 500;
-    margin-top: 100px;
-    margin-left: 10px;
+    margin-top: 50px;
     text-align: left;
+    padding: 32px;
 }
 
 /************** end section avis lecteur******************  */
 
 /********************** SECTION FOOTER********************* */
 footer {
-    width: 100%;
+     width: 100%;
     height: 130px;
-    z-index: 2;
+    position: relative;
     bottom: 0;
-    left: 0;
-    display: none;
+        
 }
 
-#end {
+section#end {
     width: 100%;
-    height: 110px;
-    background-color: white;
+    height: 130px;
+    background-color: #3C4048;
+    padding: 10px;
 }
 
 .contain-footer {
@@ -1210,8 +1367,7 @@ footer {
 }
 
 img.img1 {
-    width: 130px;
-    height: 130px;
+    width: 60%;
     margin-top: 25px;
 }
 
@@ -1222,7 +1378,7 @@ img.img1 {
     align-items: center;
 }
 
-img.social {
+.reseaux a img {
     width: 50px;
     height: 50px;
     margin: 10px;
@@ -1233,37 +1389,40 @@ img.social {
     height: auto;
     font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
 }
-
+.pol a {
+    color: white;
+}
 .politique {
     width: 400px;
     height: auto;
     font-family: 'QuattrocentoSans-regular', sans-serif;
     font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
+    font-weight: 500;
 }
-
+.politique a{
+    color: white;
+}
 p#copy {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color: white;
     height: 20px;
 }
 
 .copyright {
-    background-color: #00ABB3;
+    background-color: #3C4048;
     text-align: center;
+    padding: 30px;
 }
 
 /******************** END FOOTER********************/
 
 /* ------------------RESPONSIVE FOOTER----------------------- */
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
     #end {
         text-align: center;
     }
@@ -1282,7 +1441,7 @@ p#copy {
         width: 25px;
         height: 25px;
     }
-}
+} */
 
 /* *******************PAGE RESUME LIVRE *********************/
 
@@ -1451,6 +1610,7 @@ p.miller {
 
 .list {
     width: 100%;
+    padding: 16px;
     height: auto;
 }
 
@@ -2219,17 +2379,17 @@ h2.search-filter {
     text-align: center;
 }
 
-form {
+form#filter-form {
     display: flex;
     flex-direction: column;
 }
 
-label {
+#filter-form label {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #000;
+    color: black;
 }
 
 input[type="text"],
@@ -2301,17 +2461,18 @@ body {
 }
 
 .dashboard1 h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-align: center;
     text-transform: uppercase;
     margin-top: 10px;
+    margin-left: 80px;
 }
 
 #user-nav {
     width: 350px;
     height: 450px;
-    background-color: #f39c12;
+    background-color: #3C4048;
     position: absolute;
     top: 120px;
     left: 0;
@@ -2327,23 +2488,25 @@ body {
     width: 350px;
     height: 100px;
     display: block;
+    margin: auto;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     transition: all 0.8s ease;
+
 }
 
 #user-nav li a:hover {
-    background-color: #e88e17d6;
+    background-color: #4950a1;
 }
 
 .info1 {
     width: 700px;
     height: 400px;
-    background-color: #f6b339;
-    border: 1px solid black;
+    background-color: #3C4048;
+    border: 1px solid white;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -2358,6 +2521,7 @@ body {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-align: center;
+    color: white;
 }
 
 .names {
@@ -2369,16 +2533,18 @@ body {
 }
 
 form#dash-form {
-    width: 650px;
-    height: 450px;
+    width: 700px;
+    height: 400px;
     display: flex;
     align-items: center;
+    flex-direction: column
 }
 
 label {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     display: block;
+    color: white;
 }
 
 input[type="text"],
@@ -2394,16 +2560,18 @@ input[type="tel"] {
 }
 
 input[type="submit"] {
-    width: 130px;
-    background-color: #74EC8D;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    padding: 10px 20px;
+    background-color: #5a62be;
+    border-radius: 5px;
+    border: none;
     margin-top: 10px;
+    color: white;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #5a62be;
 }
 
 input.adress {
@@ -2433,21 +2601,21 @@ input[type="tel"]#telephone {
 
     h2,
     h3 {
-     font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 
     .info1 {
-    flex-direction: column;
+        flex-direction: column;
     }
 
     .names,
     label {
-     display: block;
-     margin: 10px 0;
+        display: block;
+        margin: 10px 0;
     }
 
     input[type="submit"] {
-     margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 }
 
