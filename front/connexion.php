@@ -41,7 +41,7 @@ require_once './connect.php';
 
         <form id="inscription" method="POST">
             <?php if (isset($_GET['err'])) { ?>
-                <p style="color:red; text-align:center;">Adresse e-mail ou mot de passe incorrect</p>
+                <p style="color:red; text-align:center; ">Adresse e-mail ou mot de passe incorrect</p>
             <?php } ?>
             <div class="inputs">
                 <input type="email" id="mail" name="mail" placeholder="Email" required />
