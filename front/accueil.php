@@ -233,8 +233,8 @@ if (isset($_POST['submit'])) {
 
         <!-- SECTION COMPTEUR -->
 
-        <section class="parallax-section compteur">
-            <div class="parallax parallax1 count">
+        <section class="section compteur">
+            <div class=" count">
                 <div class="stat">
                     <p class="livre">Livres disponibles</p>
                     <p class="livre">+4000 livres</p>
@@ -260,7 +260,48 @@ if (isset($_POST['submit'])) {
 
         <!-- SECTION AVIS DES LECTEURS  -->
         <section id="lecteur">
-            <h2 class="lector">Avis des lecteurs</h2>
+
+            <div class="blog_post">
+                <div class="img_pod">
+                    <img src="../image/avis1.jpg" alt="photo lectrice">
+                </div>
+                <div class="container_copy">
+                    <h3>12 Septembre 2022</h3>
+                    <h1 id="lector">Cécile Randu</h1>
+                    <p>La bibliothèque Bouquine est un lieu d'apprentissage formidable pour les
+                        enfants. Ma famille et moi-même aimons passer du temps à y lire ensemble. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Perspiciatis quas debitis magni minus totam.
+                     </p>
+                   .
+                </div>
+                </div>
+                <div class="blog_post">
+                <div class="img_pod">
+                    <img src="../image/avis2.jpg" alt="photo lectrice">
+                </div>
+                <div class="container_copy">
+                    <h3>5 Février 2023</h3>
+                    <h1 id="lector">Cédric Durand</h1>
+                    <p>Très bonne bibliothèque, endroit calme, large choix de livres. Idéal pour tous les étudiants.
+                        Personnel très compétent et réactif! <br>Je recommande fortement!
+                    </p>
+                   
+                </div>
+                </div>
+                <div class="blog_post">
+                <div class="img_pod">
+                    <img src="../image/avis3.jpg" alt="photo lectrice">
+                </div>
+                <div class="container_copy">
+                    <h3>10 Mars 2023</h3>
+                    <h1 id="lector">Anaïs Dunand</h1>
+                    <p>Réservation en ligne pour plus de rapidité, service et personnel agréable.<br>
+                        Je recommande vivement.
+                      veniam beatae quaerat facere ad repudiandae cum assumenda.</p>
+                </div> 
+                </div>
+           
+            <!-- <h2 class="lector">Avis des lecteurs</h2>
             <div class="avis">
                 <div class="notice">
                     <h3 class="name">Cécile Randu</h3>
@@ -281,7 +322,7 @@ if (isset($_POST['submit'])) {
                     <p class="value">Réservation en ligne pour plus de rapidité, service et personnel agréable.<br>
                         Je recommande vivement. </p>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- end section avis lecteur  -->
     </main>

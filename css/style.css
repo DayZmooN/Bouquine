@@ -94,7 +94,7 @@ nav ul ul {
     position: absolute;
     top: 100%;
     left: 0;
-    
+
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
         rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
@@ -103,7 +103,7 @@ nav ul li a {
     display: block;
     font-size: 1rem;
     transition: all 0.8s ease;
-   
+
 }
 
 nav ul li a:hover {
@@ -114,7 +114,7 @@ nav ul li a:hover {
 
 nav ul li:hover>ul {
     display: block;
-    
+
 }
 
 nav ul ul li {
@@ -136,7 +136,7 @@ nav input[type="search"] {
     margin-left: 20px;
 }
 
- 
+
 #menu-icon {
     display: none;
     width: 30px;
@@ -1119,17 +1119,21 @@ input#email {
 
 #contact {
     width: 100%;
-    height: 400px;
-    background-color: white;
+    /* height: 400px; */
+    background-color: #ff8b26;
 }
 
 .container-contact {
-    width: 100%;
-    height: 300px;
+
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    justify-content: space-around;
+    margin: auto;
+
+
 }
 
 #us {
@@ -1138,18 +1142,19 @@ input#email {
     font-family: 'QuattrocentoSans-Bold';
     text-transform: uppercase;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
-    margin-top: 40px;
+    padding-top: 30px;
+
 }
 
 .localisation {
-    width: 400px;
-    height: 300px;
+    min-width: 200px;
+
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
-    color: black;
+    color: white;
 }
 
 .localisation img {
@@ -1158,12 +1163,11 @@ input#email {
 }
 
 .horaire {
-    width: 400px;
-    height: 300px;
+    min-width: 200px;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
-    color: black;
+    color: white;
 }
 
 .horaire img {
@@ -1171,17 +1175,18 @@ input#email {
     /* height: 100px; */
 }
 
-.mail {
-    width: 400px;
-    height: 300px;
+.mail p a {
+    min-width: 200px;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
-    color: black;
+    color: white;
 }
 
 .mail img {
     width: 80px;
+    margin: 50px;
+    
     /* height: 100px; */
 }
 
@@ -1211,38 +1216,41 @@ a:hover {
 }
 
 .contactus {
-    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-.contactus p a {
+/* .contactus p a {
     width: 200px;
     height: 70px;
     text-align: center;
-}
+} */
 
 /********************* END SECTION CONTACT *****************/
 
 /********************** SECTION COMPTEUR ****************** */
 
-.parallax-section.compteur {
-    width: 100%;
-    height: 350px;
-}
-
-section.parallax-section.compteur {
+.section.compteur {
     max-width: 1200px;
     height: 350px;
     margin: 0 auto;
+    
+   
 }
 
-.parallax.parallax1.count {
+/* .compteur {
+    max-width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+} */
+
+/* .parallax.parallax1.count {
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../image/livres.jpg);
-}
+} */
 
 .stat {
     width: 200px;
@@ -1250,20 +1258,22 @@ section.parallax-section.compteur {
     border: 5px solid black;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 1px #3C4048;
+    background-color: #5a62be;
 }
 
-.parallax.parallax1.count {
+.count {
     width: 100%;
-    height: 350px;
+    /* height: 350px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 80px;
 }
 
 p.livre {
     font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
-    color: black;
+    color: white;
     font-weight: 600;
     text-align: center;
     margin-top: 40px;
@@ -1280,12 +1290,81 @@ p.livre {
 /****************** SECTION AVIS DES LECTEURS****************  */
 
 section#lecteur {
-    width: 100%;
-    height: 550px;
-    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 20px; */
+    background-color: #6b74eb;
 }
 
-h2.lector {
+.blog_post {
+    background: #fff;
+    max-width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container_copy {
+    padding: 6rem 4rem 5rem 4rem;
+}
+
+.img_pod {
+    height: 110px;
+    width: 110px;
+    margin-top: 50px;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    z-index: 10;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    position: absolute;
+    left: -10%;
+    top: -13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_pod img {
+    height: 8.3rem;
+    width: 8.3rem;
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.container_copy h3 {
+    /* margin: 0 0 0.5rem 0; */
+    color: #999;
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+h1#lector {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    margin-top: 32px;
+    color: #333;
+    padding: 0;
+}
+
+.container_copy p {
+    width: 250px;
+    font-size: 1.2rem;
+    line-height: 1.3;
+
+    color: #333;
+}
+
+
+
+/* h2.lector {
     width: 300 px;
     height: 50px;
     margin: 0 auto;
@@ -1338,17 +1417,17 @@ p.value {
     margin-top: 50px;
     text-align: left;
     padding: 32px;
-}
+} */
 
 /************** end section avis lecteur******************  */
 
 /********************** SECTION FOOTER********************* */
 footer {
-     width: 100%;
+    width: 100%;
     height: 130px;
     position: relative;
     bottom: 0;
-        
+
 }
 
 section#end {
@@ -1392,9 +1471,11 @@ img.img1 {
     font-weight: 500;
     text-align: center;
 }
+
 .pol a {
     color: white;
 }
+
 .politique {
     width: 400px;
     height: auto;
@@ -1402,9 +1483,11 @@ img.img1 {
     font-size: 1.2rem;
     font-weight: 500;
 }
-.politique a{
+
+.politique a {
     color: white;
 }
+
 p#copy {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 1rem;
