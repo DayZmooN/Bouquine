@@ -52,7 +52,7 @@ if (!empty($_POST)) {
                 ];
                 header("location: ../front/accueil.php");
             } else {
-                header('Location: ../front/connexion.php?err=1');
+                die(header('Location: ../front/connexion.php?err=1'));
             }
         } else {
             header('Location: ../front/connexion.php?err=1');

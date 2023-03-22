@@ -27,7 +27,11 @@
     </section>
 
 </footer>
-<!-- END FOOTER -->
+
 </body>
 
 </html>
+<!-- END FOOTER -->
+
+
+

@@ -24,7 +24,10 @@ require_once './back-office/connexion-admin/connexion-admin.php'
     </aside>
 
     <div class="bodyConnexion">
-        <form class="connexion" action="" method="post">
+        <form class="connexion" method="POST">
+            <?php if (isset($_GET['erro'])) { ?>
+                <p style="color:red; text-align:center; ">Adresse e-mail ou mot de passe incorrect</p>
+            <?php } ?>
             <h1 class="Titre">Connexion</h1>
             <div id="mail">
                 <label for="mail"></label>

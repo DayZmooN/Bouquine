@@ -49,8 +49,8 @@ require_once '../model/fonction-inscription.php';
                                 et d'utilisation </label>
                         </div> -->
                     </div>
-                    <div align="center">
-                        <button type="submit"><a href=""> Créer mon compte</button></a>
+                    
+                        <button id="btn-create" type="submit"><a href=""> Créer mon compte</button></a>
                     </div>
                 </form>
 

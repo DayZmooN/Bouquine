@@ -20,6 +20,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <?php
 foreach ($result as $article) {
 ?>
+
     <div class="articleList">
         <h3><?= $article['title'] ?></h3>
         <p><?= $article['author'] ?></p>
