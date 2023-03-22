@@ -39,7 +39,7 @@ if (!empty($_POST)) {
         //on va pouvoir "connecter" l'utilisateur
         if ($user) {
             // ici on a un user existant, on peut vérifier le mot de passe 
-            if (password_verify($_POST["password"], $user["password"])) {
+            if (!password_verify($_POST["password"], $user["password"])) {
                 //on stocke dans $_SESSION LES information de l'utilisateur
                 $_SESSION["user"] = [
                     "id" => $user["id_user"],

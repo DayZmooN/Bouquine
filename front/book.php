@@ -55,12 +55,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
                 <h3 class="describe">Description du produit</h3>
                 <h4 class="bio">Biographie de l'auteur</h4>
-                <p class="miller">Madeline Miller est passionnée par la Grèce antique.
-                    Après des études d'Histoire et de Littérature classique
-                    à Yale, elle devient professeur de grec ancien, de latin,<br>
-                    sans oublier les cours qu'elle anime sur l'œuvre
-                    de Shakespeare. Le Chant d'Achille est son premier
-                    roman, suivi de Circé.</p>
+                <p class="miller">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                 Asperiores suscipit non atque ipsa ullam quos aperiam debitis libero, accusamus vitae a alias quidem exercitationem neque perferendis quibusdam provident qui impedit!</p>
 
         </div>
         <div class="list">
