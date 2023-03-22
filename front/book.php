@@ -1,14 +1,38 @@
 <?php
 require_once './header-front.php';
 require_once './connect.php';
-// require_once './footer-front.php';
+require_once './footer-front.php';
 
+$id_user = $_SESSION["user"]["id"];
 $id = $_GET['id'];
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` WHERE `id_book` = :id');
 $query->bindParam('id', $id, PDO::PARAM_INT);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
+
+if (isset($_POST['rent'])) {
+    $req = $db->prepare("SELECT `id_book`,`status` FROM `book` WHERE `id_book` = :id");
+    $req->bindParam(':id', $id, PDO::PARAM_INT);
+    $req->execute();
+    $checkStatus = $req->fetchAll(PDO::FETCH_ASSOC);
+    //fetch données, if (book.status = 0) → pas dispo, si 1 → dispo
+
+    if ($checkStatus[0]['status'] == 0) {
+        die("Ce livre n'est pas disponible pour le moment.");
+    } else {
+        $loan_date = date('Y-m-d H:i:s');
+        $return_date = date('Y-m-d H:i:s', strtotime('+3 hours'));
+        $rent = $db->prepare("INSERT INTO loan (id_book, id_user, loan_date, return_date) VALUES (:id_book, :id_user, NOW(), '$return_date')");
+        $rent->bindParam(':id_book', $id, PDO::PARAM_INT);
+        $rent->bindParam(':id_user', $id_user, PDO::PARAM_INT);
+        $rent->execute();
+        $statusUpdate = $db->prepare("UPDATE `book` SET `status`='0' WHERE `id_book` = :id");
+        $statusUpdate->bindParam(':id', $id, PDO::PARAM_INT);
+        $statusUpdate->execute();
+        echo "Votre réservation a été enregistrée.";
+    }
+}
 ?>
 
 <body>
@@ -30,7 +54,11 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
                 </div>
 
+
             </div>
+            <form action="" method="post">
+                <input type="submit" name="rent" value="Réserver">
+            </form>
         <?php } ?>
 
         <hr class="nb1">

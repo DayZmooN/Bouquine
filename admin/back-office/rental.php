@@ -41,50 +41,6 @@ if (isset($_POST['rent'])) {
     }
 }
 
-// Script to update loan records that have not been picked up within 3 hours
-while (true) {
-  $stmt = $db->query("SELECT * FROM loan WHERE return_date IS NULL AND TIMESTAMPDIFF(SECOND, loan_date, NOW()) > 10800");
-  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-  foreach ($rows as $row) {
-      $stmt = $db->prepare("SELECT * FROM book WHERE id_book= :id_book");
-      $stmt->bindParam('id_book',$id_book,PDO::PARAM_INT);
-      $stmt->execute([$row['id_book']]);
-      $book = $stmt->fetch(PDO::FETCH_ASSOC);
-      if ($book['status'] == 1) {
-          // Book has not been picked up, return it to reserved status
-          $stmt = $db->prepare("UPDATE book SET status=0 WHERE id_book=?");
-          $stmt->execute([$row['id_book']]);
-          if ($stmt->rowCount() > 0) {
-              echo "Book has not been picked up, returned to reserved status.";
-          } else {
-              echo "Error: Unable to update book status.";
-          }
-      }
-      
-      $return_date = date('Y-m-d H:i:s');
-      $stmt = $db->prepare("UPDATE loan SET return_date=? WHERE id_loan=?");
-      $stmt->execute([$return_date, $row['id_loan']]);
-      if ($stmt->rowCount() > 0) {
-          // Check if the book was picked up within 3 hours
-          $pickup_date = date('Y-m-d H:i:s', strtotime($row['loan_date'] . ' + 3 hours'));
-          if (strtotime($return_date) <= strtotime($pickup_date)) {
-              // Book was picked up within 3 hours, update status to reserved
-              $stmt = $db->prepare("UPDATE book SET status=1 WHERE id_book=?");
-              $stmt->execute([$row['id_book']]);
-              if ($stmt->rowCount() > 0) {
-                  echo "Book picked up within 3 hours, updated to reserved status.";
-              } else {
-                  echo "Error: Unable to update book status.";
-              }
-          } else {
-              echo "Reservation expired and book returned to library.";
-          }
-      } else {
-          echo "Error: Unable to update loan record.";
-      }
-  }
-  
-  sleep(10800); // wait for 3 hours before checking again
-}
+
 
 
