@@ -19,7 +19,7 @@ if (isset($_GET['search'])) {
                 <form action="./search.php" method="get">
                     <label for="search-book">Recherche</label>
                     <input type="text" id="search-book" name="search" placeholder="Recherche">
-                    <button type="submit">Rechercher</button>
+                    <button id="btn-search" type="submit">Rechercher</button>
                 </form>
             </div>
             <div class="books">

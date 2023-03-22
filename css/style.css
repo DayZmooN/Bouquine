@@ -31,14 +31,13 @@
 
 li {
     list-style-type: none;
-
 }
 
 ul li a {
     text-decoration: none;
 }
 
-/* HEADER */
+/* *************************HEADER *************************/
 
 header#head {
     width: 100%;
@@ -51,9 +50,7 @@ header#head {
 }
 
 .logo {
-    /* width: 250px; */
     height: 90px;
-   
 }
 
 .logo img {
@@ -109,7 +106,7 @@ nav ul li a {
     display: block;
     font-size: 1rem;
     transition: all 0.8s ease;
-}
+   }
 
 nav ul li a:hover {
     color: black;
@@ -134,7 +131,6 @@ nav input[type="search"] {
     width: 300px;
     height: 35px;
     border: 1px solid black;
-    /* padding: 5px; */
     border-radius: 10px;
     box-shadow: 0px 0px 5px #5a62be;
     background-color: white;
@@ -162,7 +158,6 @@ li.search-box {
     height: 50px;
     padding: 0;
     margin: 0 auto;
-
 }
 
 img.img-user {
@@ -185,9 +180,7 @@ button#search-button1 {
 
 a.img-user {
     width: 60px;
-    /* height: 60px; */
     padding: 0;
-    /* margin-right: 20px; */
 }
 
 input#user-connect {
@@ -219,6 +212,7 @@ input#user-connect {
 input#user-deconnect:hover {
     opacity: 40%;
 }
+
 .user-name {
     width: 50px;
     height: 50px;
@@ -229,16 +223,18 @@ input#user-deconnect:hover {
     text-align: center;
     padding-top: 10px;
 }
+
 .nom {
     width: 30px;
     margin-left: 5px;
 }
+
 .user-name a {
     width: 100px;
     height: 50px;
 }
 
-/* media queries header */
+/* **************media queries header ********************/
 
 @media only screen and (max-width: 400px) {
 
@@ -304,9 +300,9 @@ input#user-deconnect:hover {
 
 }
 
-/* fin media queries header
+/* ******************fin media queries header*****************
 
-/* EN TETE  */
+/******************** EN TETE ****************************** */
 
 .parallax-section {
     width: 100%;
@@ -349,7 +345,7 @@ h1 {
     margin-right: 50px;
 }
 
-/* SECTION LES PLUS POPULAIRES */
+/* ***************SECTION LES PLUS POPULAIRES************** */
 
 .populaire {
     width: 100%;
@@ -374,6 +370,7 @@ h1 {
     /* margin-top: 30px; */
     margin-top: 50px;
 }
+
 .container {
     width: 100%;
     display: flex;
@@ -392,6 +389,7 @@ h1 {
 .item img:hover {
     opacity: 40%;
 }
+
 .item {
     width: 300px;
     display: flex;
@@ -399,15 +397,15 @@ h1 {
     align-items: center;
     margin-bottom: 30px;
 }
+
 #resume {
     width: 80px;
     height: 30px;
     border: none;
-    /* border: 1px solid black; */
     border-radius: 50px;
     background-color: #5a62be;
     margin: 10px;
-    }
+}
 
 #resume a {
     text-decoration: none;
@@ -431,11 +429,12 @@ h1 {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 400;
     color: white;
-      
+
 }
 
-/* END SECTION POPULAIRES  */
-/* -----responsive paralalx popular */
+/******************* END SECTION POPULAIRES **************** */
+
+/* -----*********responsive parallax popular**************** */
 @media only screen and (max-width: 400px) {
     .parallax-section h1 {
         font-size: 24px;
@@ -482,8 +481,10 @@ h1 {
     }
 }
 
-/* end populaire */
-/* SECTION NOUVEAUTES  */
+/********************* end populaire ************************/
+
+
+/* ***********************SECTION NOUVEAUTES***************  */
 
 #new {
     width: 100%;
@@ -557,9 +558,10 @@ h1 {
     }
 }
 
-/* end of section nouveautés */
+/******************* end of section nouveautés ***************/
 
-/* section genre préférés */
+/******************* SECTION GENRE PREFERES ******************/
+
 #gender {
     width: 100%;
     height: 1600px;
@@ -622,7 +624,6 @@ h2#prefers {
 button#see {
     width: 80px;
     height: 30px;
-    /* border: 1px solid black; */
     border-radius: 50px;
     background-color: #5a62be;
     position: relative;
@@ -674,7 +675,7 @@ hr.gender1:after {
     top: -13px;
 }
 
-/* debut fantaisie */
+/***************SECTION FANTAISIE****************************/
 
 #fantaisie {
     font-size: 1.5rem;
@@ -717,7 +718,6 @@ hr.gender1:after {
 #see {
     width: 100px;
     height: 40px;
-    /* border: 1px solid black; */
     border-radius: 50px;
     background-color: #5a62be;
     position: relative;
@@ -751,7 +751,7 @@ hr.gender1:after {
     line-height: 10px;
 }
 
-/* debut action  */
+/*****************SECTION ACTION*****************************  */
 #action {
     font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
@@ -793,7 +793,6 @@ hr.gender1:after {
 #see {
     width: 100px;
     height: 40px;
-    /* border: 1px solid black; */
     border-radius: 50px;
     background-color: #5a62be;
     position: relative;
@@ -827,9 +826,10 @@ hr.gender1:after {
     margin: 10px 0;
 }
 
-/* END GENRE PLUS LUS  */
+/**************** END GENRE PLUS LUS  *************************/
 
-/* SECTION TEXTE  */
+/******************** SECTION TEXTE ************************* */
+
 #text {
     width: 100%;
     height: 500px;
@@ -858,14 +858,12 @@ hr.gender1:after {
 }
 
 .list {
-    /* width: 400px; */
     height: 400px;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     margin-top: 20px;
     text-align: center;
     color: white;
-    
 }
 
 .image {
@@ -873,9 +871,10 @@ hr.gender1:after {
     border-radius: 40px;
 }
 
-/* END SECTION TEXTE */
+/********************* END SECTION TEXTE *******************/
 
-/* SECTION NEWSLETTER */
+/************************ SECTION NEWSLETTER ****************/
+
 .parallax-section.newsletter {
     width: 100%;
     height: 400px;
@@ -938,7 +937,7 @@ input#email {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 500;
     color: white;
-    background-color:#5a62be;
+    background-color: #5a62be;
     border-radius: 50px;
     position: relative;
     float: right;
@@ -958,9 +957,9 @@ input#email {
     text-align: center;
 }
 
-/* end section newsletter */
+/***************** end section newsletter***************** */
 
-/* section contact */
+/******************* SECTION CONTACT********************** */
 
 #contact {
     width: 100%;
@@ -1000,7 +999,6 @@ input#email {
 .localisation img {
     width: 100px;
     height: 100px;
-    /* margin-left: 10px; */
 }
 
 .horaire {
@@ -1015,13 +1013,11 @@ input#email {
 .horaire img {
     width: 100px;
     height: 100px;
-    /* margin-left: 20px; */
 }
 
 .mail {
     width: 400px;
     height: 300px;
-    /* margin: 50px; */
     text-align: center;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
@@ -1031,7 +1027,6 @@ input#email {
 .mail img {
     width: 100px;
     height: 100px;
-    /* margin-left: 10px; */
 }
 
 a {
@@ -1056,8 +1051,7 @@ a:hover {
 }
 
 .hour {
-     margin-top: 30px;
-  
+    margin-top: 30px;
 }
 
 .contactus {
@@ -1070,9 +1064,10 @@ a:hover {
     text-align: center;
 }
 
-/* END SECTION CONTACT */
+/********************* END SECTION CONTACT *****************/
 
-/* SECTION COMPTEUR  */
+/********************** SECTION COMPTEUR ****************** */
+
 .parallax-section.compteur {
     width: 100%;
     height: 350px;
@@ -1123,14 +1118,13 @@ p.livre {
     margin: 0 auto;
 }
 
-/* END SECTION COMPTEUR  */
+/* *********************END SECTION COMPTEUR  ***************/
 
-/* SECTION AVIS DES LECTEURS  */
+/****************** SECTION AVIS DES LECTEURS****************  */
 
 section#lecteur {
     width: 100%;
     height: 550px;
-    /* background-color: #5a62be; */
     padding-top: 20px;
 }
 
@@ -1158,7 +1152,7 @@ h2.lector {
     border: 3px solid black;
     border-radius: 40px;
     background-color: #5a62be;
-  
+
 }
 
 h3.name {
@@ -1189,9 +1183,9 @@ p.value {
     text-align: left;
 }
 
-/* end section avis lecteur  */
+/************** end section avis lecteur******************  */
 
-/* SECTION FOOTER */
+/********************** SECTION FOOTER********************* */
 footer {
     width: 100%;
     height: 130px;
@@ -1204,7 +1198,7 @@ footer {
 #end {
     width: 100%;
     height: 110px;
-    background-color: #00ABB3;
+    background-color: white;
 }
 
 .contain-footer {
@@ -1258,7 +1252,6 @@ p#copy {
     font-size: 1rem;
     color: rgb(0, 0, 0);
     height: 20px;
-
 }
 
 .copyright {
@@ -1266,8 +1259,10 @@ p#copy {
     text-align: center;
 }
 
-/* end footer */
-/* --------RESPONSIVE FOOTER */
+/******************** END FOOTER********************/
+
+/* ------------------RESPONSIVE FOOTER----------------------- */
+
 @media only screen and (max-width: 400px) {
     #end {
         text-align: center;
@@ -1289,7 +1284,7 @@ p#copy {
     }
 }
 
-/* PAGE RESUME LIVRE */
+/* *******************PAGE RESUME LIVRE *********************/
 
 #books {
     width: 100%;
@@ -1307,7 +1302,7 @@ p#copy {
 
 .resume {
     width: 450px;
-    height: 400px;
+    height: auto;
     margin-left: 60px;
     margin-top: 60px;
 }
@@ -1324,12 +1319,12 @@ p#copy {
 
 .resum {
     width: 300px;
-    height: 400px;
+    height: auto;
     background-color: #EAEAEA;
     margin-top: 50px;
     border-radius: 10px;
     border: 3px solid white;
-    box-shadow:#4950a1 0px 3px 8px;
+    box-shadow: #4950a1 0px 3px 8px;
 }
 
 .resum h3 {
@@ -1421,7 +1416,6 @@ p.author1 {
 }
 
 .description {
-    width: 100%;
     height: auto;
     margin-top: 50px
 }
@@ -1444,7 +1438,7 @@ h4.bio {
 }
 
 p.miller {
-    width: 100%;
+    /* width: 100%; */
     height: 70px;
     font-size: 1.1rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
@@ -1467,7 +1461,7 @@ h4.detail {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 700;
     color: #000;
-   margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 ul.liste {
@@ -1518,7 +1512,6 @@ p.author2 {
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: 800;
     text-align: center;
-    /* padding-top: 5px; */
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1526,15 +1519,16 @@ p.author2 {
     width: 250px;
     height: 350px;
     border-radius: 5px;
-
 }
 
 .item3 img:hover {
-    opacity: 60%;
+    opacity: 50%;
 }
 
-/* END SECTION PAGE RESUME */
-/* -----------RESPONSIVE RESUME LIVRE */
+/* *****************END SECTION PAGE RESUME *****************/
+
+/* -----------RESPONSIVE RESUME LIVRE---------------------- */
+
 @media screen and (max-width: 400px) {
     /* styles pour écrans de 400px ou moins */
 
@@ -1585,19 +1579,18 @@ p.author2 {
     }
 }
 
-/* ------END RESPONSIVE RESUME LIVRE  */
+/* ---------------END RESPONSIVE RESUME LIVRE ---------------- */
 
-/* SECTION CATALOGUE */
+/*************************** SECTION CATALOGUE**************** */
 
 #catalogue {
     width: 100%;
     height: auto;
-    
 }
 
 .catal {
     width: 100%;
-    height:auto ;
+    height: auto;
 }
 
 h2.catalog {
@@ -1699,8 +1692,10 @@ p.authors {
 
 }
 
-/* END CATALOGUE */
-/* -----RESPONSIVE CATALOGUE  */
+/******************** END CATALOGUE ************************/
+
+/* --------------------RESPONSIVE CATALOGUE------------------  */
+
 @media only screen and (max-width: 400px) {
 
     /* Styles à appliquer pour les écrans de 400px ou moins */
@@ -1743,9 +1738,10 @@ p.authors {
     }
 }
 
-/* -------END RESPONSIVE CATALOGUE  */
+/* --------------END RESPONSIVE CATALOGUE ------------------- */
 
-/* PAGE PARCOURIR  */
+/*********************** PAGE PARCOURIR ******************* */
+
 #avanced {
     width: 150px;
     height: 35px;
@@ -1758,9 +1754,27 @@ p.authors {
     border: none;
 }
 
-/* END PARCOURIR */
+/********************* END PARCOURIR ************************/
 
-/* PAGE INFOS PRATIQUES */
+
+/* ***************RECHERCHE ******************************/
+
+button#btn-search {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    background-color: #5a62be;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: none;
+    color: white;
+}
+
+/* ***************END RECHERCHE *****************************/
+
+/********************** PAGE INFOS PRATIQUES*************** */
 
 .info {
     width: 100%;
@@ -1817,9 +1831,9 @@ ol.consignes li {
     line-height: 1.5;
 }
 
-/* END INFO PRATIQUES */
+/***************** END INFO PRATIQUES*********************** */
 
-/* ------RESPONSIVE INFOS PRATIQUES  */
+/* ------RESPONSIVE INFOS PRATIQUES------------------------  */
 @media screen and (max-width: 400px) {
 
     /* styles à appliquer pour une résolution de 400px ou moins */
@@ -1834,7 +1848,7 @@ ol.consignes li {
     }
 }
 
-/* POP UP CONNEXION */
+/*********************** POP UP CONNEXION********************** */
 
 #connexion {
     width: 100%;
@@ -1866,7 +1880,6 @@ form {
     height: 250px;
     padding: 40px 60px;
     border-radius: 10px;
-
 }
 
 .connect {
@@ -1908,7 +1921,6 @@ h2.connect {
 .social-media a:visited {
     color: #5a62be;
 }
-
 
 p.email {
     text-align: center;
@@ -1962,14 +1974,13 @@ p.inscription {
     font-weight: 500;
     background-color: #5a62be;
     cursor: pointer;
-    color:white
-    
-
+    color: white
 }
 
-/* FIN CONNEXION */
-/* ------RESPONSIVE CONNEXION  */
-/* Media query pour une résolution de 400px */
+/************************* FIN CONNEXION **********************/
+
+/* --------------------RESPONSIVE CONNEXION------------------  */
+
 @media only screen and (max-width: 400px) {
 
     /* Modifier la taille de la police pour la classe .connect */
@@ -2004,8 +2015,10 @@ p.inscription {
     }
 }
 
+/* ----------------END RESPONSIVE CONNEXION---------------- */
 
-/* PAGE INSCRIPTION */
+/************************ PAGE INSCRIPTION *********************/
+
 body {
     width: 100%;
     height: 100%;
@@ -2043,7 +2056,6 @@ body {
 }
 
 .img-book img {
-    /* width: 500px;  */
     height: 500px;
 }
 
@@ -2074,7 +2086,8 @@ h2.sus-form {
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 600;
 }
-input#username{
+
+input#username {
     background-color: white;
 }
 
@@ -2126,7 +2139,8 @@ input#phone {
     padding: 8px;
     margin-bottom: 10px;
 }
-#btn-create{
+
+#btn-create {
     width: 150px;
     height: 35px;
     padding: 10px 20px;
@@ -2134,7 +2148,8 @@ input#phone {
     border-radius: 5px;
     border: none;
 }
-#btn-create a{
+
+#btn-create a {
     font-size: .8rem;
     font-family: 'QuattrocentoSans-Regular';
     font-weight: 500;
@@ -2142,8 +2157,9 @@ input#phone {
     color: white;
 }
 
-/* END INSCRIPTION */
-/* RESPONSIVE INSCRIPTION */
+/* ***********************END INSCRIPTION **********************/
+
+/* ***************RESPONSIVE INSCRIPTION********************* */
 
 @media only screen and (max-width: 400px) {
     .suscribe-form {
@@ -2151,6 +2167,7 @@ input#phone {
         margin: 0;
         padding: 20px;
     }
+
     .img-book {
         display: none;
     }
@@ -2176,8 +2193,9 @@ input#phone {
     }
 }
 
+/****************** END RESPONSIVE INSCRIPTION*************** */
 
-/* PAGE RECHERCHE AVANCEE */
+/******************** PAGE RECHERCHE AVANCEE ********************/
 
 .filter {
     max-width: auto;
@@ -2242,13 +2260,12 @@ input[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
-/* END PAGE RECHERCHE AVANCEE */
+/******************** END PAGE RECHERCHE AVANCEE************** */
 
-/* -------RESPONSIVE RECHERCHE AVANCEE */
+/* -------RESPONSIVE RECHERCHE AVANCEE-----------************ */
 
 @media screen and (max-width: 400px) {
 
-    /* styles pour les écrans de 400px ou moins */
     .filter-container {
         width: 90%;
         margin: 0 auto;
@@ -2268,10 +2285,11 @@ input[type="submit"]:hover {
     }
 }
 
-/* -----END RESPONSIVE RECHERCHE AVANCEE */
+/* ------------END RESPONSIVE RECHERCHE AVANCEE ***************/
 
 
-/* DASHBOARD USER */
+/* *********************DASHBOARD USER ************************/
+
 body {
     width: 100%;
     height: 450px;
@@ -2303,7 +2321,6 @@ body {
     width: 350px;
     height: 400px;
     display: block;
-
 }
 
 #user-nav li a {
@@ -2314,7 +2331,6 @@ body {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     color: black;
     text-align: center;
-    /* padding-top: 50px; */
     padding: 0 10px;
     transition: all 0.8s ease;
 }
@@ -2405,40 +2421,34 @@ input[type="tel"]#telephone {
     background-color: white;
 }
 
-/* END DASHBOARD USER */
+/* ********************END DASHBOARD USER **********************/
 
-/* ****** RESPONSIVE MOBILE DASHBOARD USER */
+/* ************** RESPONSIVE MOBILE DASHBOARD USER*********** */
+
 @media screen and (max-width: 400px) {
-    /* styles pour les écrans de 400px ou moins */
 
-    /* on cache la navigation */
     #user-nav {
         display: none;
     }
 
-    /* on réduit la taille de la police de tous les éléments h2 et h3 */
     h2,
     h3 {
-        font-size: 1.2rem;
+     font-size: 1.2rem;
     }
 
-    /* on modifie la disposition du formulaire */
     .info1 {
-        flex-direction: column;
+    flex-direction: column;
     }
 
-    /* on modifie la disposition des labels et des inputs */
     .names,
     label {
-        display: block;
-        margin: 10px 0;
+     display: block;
+     margin: 10px 0;
     }
 
-    /* on ajoute un margin-bottom au dernier input pour une meilleure lisibilité */
     input[type="submit"] {
-        margin-bottom: 20px;
+     margin-bottom: 20px;
     }
 }
 
-
-/* *******END RESPONSIVE MOBILE DASHBOARD USER */
+/* *******END RESPONSIVE MOBILE DASHBOARD USER************* */
