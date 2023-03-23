@@ -37,45 +37,7 @@ require_once './connect.php'
                         <?php } ?>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">Genre</a>
-                    <div class="genre">
-                        <ul>
-                            <li><a href="#">Poésie</a></li>
-                            <li><a href="#">Littérature</a></li>
-                            <li><a href="#">Naration</a></li>
-                            <li><a href="#">Théâtre</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="genre">
-                        <ul>
-                            <li><a href="#">Poésie</a></li>
-                            <li><a href="#">Littérature</a></li>
-                            <li><a href="#">Naration</a></li>
-                            <li><a href="#">Théâtre</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="genre">
-                        <ul>
-                            <li><a href="#">Poésie</a></li>
-                            <li><a href="#">Littérature</a></li>
-                            <li><a href="#">Naration</a></li>
-                            <li><a href="#">Théâtre</a></li>
-                           
-                        </ul>
-                    </div>
-                    <div class="genre">
-                        <ul>
-                            <li><a href="#">Poésie</a></li>
-                            <li><a href="#">Littérature</a></li>
-                            <li><a href="#">Narration</a></li>
-                            <li><a href="#">Théâtre</a></li>
-                            
-                        </ul>
-                    </div>
-                </li>
+                
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">

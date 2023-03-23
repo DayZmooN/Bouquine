@@ -162,20 +162,20 @@ if (isset($_POST['submit'])) {
         <section id="text">
             <div class="contain-text">
                 <div class="texte">
-                    <p class="bouquine">BOUQUINE c’est :<br></p>
+                    <p class="bouquine">BOUQUINE c’est :</p>
                     <p class="list">
-                        <b>La recherche de livres </b>:les utilisateurs<br> peuvent effectuer des recherches
-                        en<br> ligne pour trouver des livres disponibles.<br>
-
-                        <b>La réservation de livres</b> : possibilité de<br> réserver des livres en ligne
-                        pour les emprunter à une date ultérieure.<br>
-
-                        <b>Le prêt de livres</b> : possibilité<br> d' emprunter
-                        les livres réservés et les<br> retirer à la bibliothèque.<br>
-
-                        <b> Le renouvellement de prêts</b> :<br> possibilité renouveler
-                        leurs emprunts<br> en ligne pour prolonger la période de prêt.<br>
-
+                        <b>La recherche de livres </b>:les utilisateurs peuvent effectuer des recherches
+                        en ligne pour trouver des livres disponibles.
+                        <br><br>
+                        <b>La réservation de livres</b> : possibilité de réserver des livres en ligne
+                        pour les emprunter à une date ultérieure.
+                        <br><br>
+                        <b>Le prêt de livres</b> : possibilité d' emprunter
+                        les livres réservés et les retirer à la bibliothèque.
+                        <br><br>
+                        <b> Le renouvellement de prêts</b> : possibilité renouveler
+                        leurs emprunts en ligne pour prolonger la période de prêt.
+                        <br><br>
                         <b> La consultation et lecture sur place.</b>
                     </p>
                 </div>
