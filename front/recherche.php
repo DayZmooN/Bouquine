@@ -1,7 +1,7 @@
 <?php
 require_once './connect.php';
 require_once './header-front.php';
-require_once './footer-front.php';
+
 
 if (isset($_GET['search'])) {
     $search_term = $_GET['search'];

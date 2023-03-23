@@ -1,7 +1,7 @@
 <?php
 require_once './header-front.php';
 require_once './connect.php';
-require_once './footer-front.php';
+
 
 $id = $_GET['id'];
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` WHERE `id_book` = :id');

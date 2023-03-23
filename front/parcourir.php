@@ -1,6 +1,5 @@
 <?php
 require_once './header-front.php';
-require_once './footer-front.php';
 require_once '../connexion.php';
 
 $id = $_GET['id'];
