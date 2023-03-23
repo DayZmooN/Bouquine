@@ -13,7 +13,6 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
     <input class="recherche" type="search" name="recherche" placeholder="rechercher user">
     <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
   </form>
-
 </div>
 
 <table id="tableUser">
@@ -28,11 +27,9 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
       <th>created at</th>
       <th>statut</th>
       <th>action</th>
-
     </tr>
   </thead>
   <tbody>
-
     <?php
     foreach ($resultUser as $user) {
     ?>

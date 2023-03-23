@@ -17,7 +17,6 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     <a href="./articleadd.php">Ajouter de nouveaux livres</a>
 </div>
 
-
 <h2 class="sousTitre">liste des articles</h2>
 
 <?php
@@ -28,13 +27,10 @@ foreach ($result as $article) {
         <p><?= $article['publication_date'] ?></p>
         <p><?= $article['author'] ?></p>
         <div id="bouton">
-
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
             <a class="btnRed" data-idbook="<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" style="color:red">Supprimer</a>
-
             <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Cover</a>
             <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>">Genres</a>
-
         </div>
     </div>
 <?php } ?>

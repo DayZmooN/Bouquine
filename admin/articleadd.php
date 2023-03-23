@@ -40,18 +40,14 @@ include './header-admin.php';
 
     <div id="formGauche">
         <div class="titre-auteur">
-
             <label for="title"></label>
             <input class="tripleInput" type="text" name="title" id="title" placeholder="TITRE">
-
 
             <label for="author"></label>
             <input class="tripleInput" type="text" name="author" id="author" placeholder="Auteur">
 
-
             <label for="ISBN"></label>
             <input class="tripleInput" type="text" name="ISBN" id="ISBN" placeholder="ISBN">
-
         </div>
 
         <div class="edition-date">
@@ -64,16 +60,13 @@ include './header-admin.php';
                 <label class="publication" for="publication_date">Publication : </label>
                 <input class="date" type="date" name="publication_date" id="publication_date">
             </div>
-
         </div>
     </div>
 
     <div class="formMilieu">
 
         <div class="select">
-
             <label for="id_category">Catégorie :</label>
-
             <select name="id_category" id="id_category">
                 <?php
                 $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
@@ -83,18 +76,14 @@ include './header-admin.php';
                     <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
                 <?php } ?>
             </select>
-
         </div>
 
-
         <div class="genreChoice">
-
             <label for="genre"></label>
             <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
         </div>
 
         <div class="collectChoice">
-
             <label for="collection"></label>
             <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
         </div>
@@ -103,21 +92,13 @@ include './header-admin.php';
             <label for="image">Image :</label>
             <input type="text" name="image" id="image" placeholder="indiquer votre image">
         </div>
-
     </div>
 
     <div class="formDroite">
         <div class="resume">
-
             <label for="summary">Résumé</label>
             <textarea type="text" name="summary" id="summary">ecrivez votre resumé</textarea>
-
         </div>
-
-
-
-
         <input type="submit" name="submit" value="Envoyer le formulaire">
     </div>
-
 </form>

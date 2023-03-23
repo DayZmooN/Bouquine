@@ -4,19 +4,15 @@ require_once './back-office/connexion-admin/connexion-admin.php'
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Connexion Admin</title>
     <link rel="stylesheet" href="../css/style-admin.css">
-
-
 </head>
 
 <body>
-
     <aside id="sideVide">
         <div id="logo">
             <img src="../image/logoAdmin.png" alt="logo Bouquine">
@@ -43,5 +39,4 @@ require_once './back-office/connexion-admin/connexion-admin.php'
         </form>
     </div>
 </body>
-
 </html>

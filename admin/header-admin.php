@@ -5,8 +5,6 @@ if (!isset($_SESSION["admin"])) {
     header("location: ./connexion-admin.php");
     exit;
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -19,12 +17,9 @@ if (!isset($_SESSION["admin"])) {
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/style-admin.css">
     <!-- <link rel="stylesheet" href="./JS/error.css"> -->
-
-
 </head>
 
 <body>
-
     <aside id="side-bar">
         <div id="logo">
             <img src="../image/logoAdmin.png" alt="logo du site bouquine">
@@ -61,16 +56,14 @@ if (!isset($_SESSION["admin"])) {
             </div>
             <!-- avant la fin du body de votre fichier PHP -->
 
-            <body>
-                <!-- ... -->
-                <!-- la modal -->
-                <div id="success-modal" class="modal">
-                    <div class="modal-content">
-                        <p>Suppression réussie!</p>
-                    </div>
+
+            <!-- ... -->
+            <!-- la modal -->
+            <div id="success-modal" class="modal">
+                <div class="modal-content">
+                    <p>Suppression réussie!</p>
                 </div>
-            </body>
+            </div>
+</body>
 
-
-
-            <script src="./js/admin.js"></script>
+<script src="./js/admin.js"></script>
