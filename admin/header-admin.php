@@ -33,7 +33,7 @@ if (!isset($_SESSION["admin"])) {
             <nav>
                 <ul>
                     <li><img src="../image/tableauDeBord.png" alt="icone du dashboard"> <a href="./dashboard-admin.php">Tableau de bord</a>
-                        </li>
+                    </li>
                     <li><img src="../image/articleDashboard.png" alt="icone articles du dashboard"><a href="./article.php">Articles</a></li>
                     <li><img src="../image/catégorieDashboard.png" alt="icone catégorie du dashboard"><a href="./category.php">Catégories</a></li>
                     <li><img src="../image/genresDashboard.png" alt="icone genres du dashboard"><a href="./genre.php">Genre</a></li>
