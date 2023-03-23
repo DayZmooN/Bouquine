@@ -8,47 +8,30 @@ $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `ed
 $query->bindParam('id', $id, PDO::PARAM_INT);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
-foreach ($result as $book)
+foreach ($result as $book) {
 
     if (isset($_POST['rent'])) {
         $id_user = $_SESSION["user"]["id"];
-        $req = $db->prepare("SELECT `id_book`,`status` FROM `book` WHERE `id_book` = :id");
-        $req->bindParam(':id', $id, PDO::PARAM_INT);
-        $req->execute();
-        $checkStatus = $req->fetchAll(PDO::FETCH_ASSOC);
-        //fetch données, if (book.status = 0) → pas dispo, si 1 → dispo
-
-        if ($checkStatus[0]['status'] == 0) {
-            $_SESSION['message'] = "Ce livre n'est pas disponible pour le moment.";
-            header("Location: ./book.php?id=" . $book['id_book']);
-            exit();
-            unset($_SESSION['message']);
-        } else {
-            $loan_date = date('Y-m-d H:i:s');
-            $return_date = date('Y-m-d H:i:s', strtotime('+3 hours'));
-            $rent = $db->prepare("INSERT INTO loan (id_book, id_user, loan_date, return_date) VALUES (:id_book, :id_user, NOW(), '$return_date')");
-            $rent->bindParam(':id_book', $id, PDO::PARAM_INT);
-            $rent->bindParam(':id_user', $id_user, PDO::PARAM_INT);
-            $rent->execute();
-            $statusUpdate = $db->prepare("UPDATE `book` SET `status`='0' WHERE `id_book` = :id");
-            $statusUpdate->bindParam(':id', $id, PDO::PARAM_INT);
-            $statusUpdate->execute();
-            $_SESSION['message'] = "Votre réservation a été enregistrée.";
-            header("Location: ./book.php?id=" . $book['id_book']);
-            exit();
-            
-        }
+        $loan_date = date('Y-m-d H:i:s');
+        $return_date = date('Y-m-d H:i:s', strtotime('+3 hours'));
+        $rent = $db->prepare("INSERT INTO loan (id_book, id_user, loan_date, return_date) VALUES (:id_book, :id_user, NOW(), '$return_date')");
+        $rent->bindParam(':id_book', $id, PDO::PARAM_INT);
+        $rent->bindParam(':id_user', $id_user, PDO::PARAM_INT);
+        $rent->execute();
+        $statusUpdate = $db->prepare("UPDATE `book` SET `status`='0' WHERE `id_book` = :id");
+        $statusUpdate->bindParam(':id', $id, PDO::PARAM_INT);
+        $statusUpdate->execute();
+        echo '<input type="submit" name="rent" value="Réserver">';
+        header('Location: ./book.php?id=' . $id);
+        exit();
     }
 ?>
 
-<body>
-    <section id="books">
-        <?php foreach ($result as $book) { ?>
+    <body>
+        <section id="books">
             <div class="contain">
 
                 <div class="resume">
-
-
                     <img id="circe" src="../image/<?= $book['image'] ?>" alt="">
                 </div>
                 <div class="resum">
@@ -57,13 +40,17 @@ foreach ($result as $book)
                         <?= $book['editor'] ?>
                     </h3>
                     <p><?= $book['summary'] ?></p>
-
                 </div>
-
-
             </div>
-            <form action="" method="post">
-                <input type="submit" name="rent" value="Réserver">
+
+
+            <form class="rentForm" action="" method="post">
+                <?php if ($book['status'] == 0) {
+                    echo '<input class="rentBtn" type="submit" name="rent" value="Indisponible" style="background-color:red;" disabled>';
+                } else {
+                    echo '<input class="rentBtn" type="submit" name="rent" value="Réserver">';
+                }
+                ?>
             </form>
         <?php } ?>
 
@@ -127,15 +114,7 @@ foreach ($result as $book)
                 </div>
             <?php } ?>
         </div>
-        <div id="myModal" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p id="message"><?php echo $_SESSION['message']; ?></p>
-                    </div>
-                </div>
-    </section>
-</body>
-<script src="../js/main.js"></script>
 
-</html>
+        </html>
+        </section>
+    </body>
