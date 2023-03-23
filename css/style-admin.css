@@ -34,15 +34,14 @@ a {
 /*....................HEADER-ADMIN INCLUDE....................*/
 /*.....section logo + nav.....*/
 #side-bar {
-  max-width: 500px;
-  width: 25%;
+  max-width: 1600px;
+  width: 20%;
   height: 100vw;
   position: fixed;
   background-color: #858585;
 }
 #side-bar > #logo > img {
   width: 100%;
-  border-bottom: 1px solid black;
 }
 #side-bar > #menu-admin {
   width: 100%;
@@ -70,13 +69,15 @@ a {
 #side-bar > #menu-admin > nav > ul > li > a {
   width: 150px;
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  font-family: "QuattrocentoSans-Regular", sans-serif;
+  text-align: center;
 }
 
 /*.....fin.....*/
 /*.....header + icones.....*/
 .corp {
-  width: 75%;
+  width: 80%;
   height: 100vw;
   float: right;
   background-color: #c8c8c8;
@@ -103,12 +104,12 @@ a {
   /*....................CSS.NEWSLETTER....................*/
 }
 .corp > #headerDashboard {
+  width: 100%;
   height: 130px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   background-color: white;
-  border-bottom: 1px solid black;
 }
 .corp > #headerDashboard > .notif {
   width: 32px;
@@ -132,6 +133,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   font-size: 4rem;
+  font-family: "LRT Oksana Bold", sans-serif;
 }
 .corp .multitaches > #compteurEtGraphique {
   width: 1000px;
@@ -139,11 +141,35 @@ a {
   margin-top: 25px;
   margin-left: 25px;
 }
-.corp .multitaches > #dernier-ajout {
+.corp .multitaches > #titreAjout {
   width: 100%;
-  margin-top: 50px;
+  margin: 25px auto;
   text-transform: uppercase;
   text-align: center;
+}
+.corp .multitaches > .dernierAjout {
+  width: 950px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #AAAAAA;
+  margin: 10px auto;
+}
+.corp .multitaches > .dernierAjout > h3 {
+  width: 450px;
+}
+.corp .multitaches > .dernierAjout > .dernierAjoutMQ {
+  width: 150px;
+}
+.corp .multitaches > .dernierAjout > .dernierAjoutMQ > p {
+  width: 100%;
+}
+.corp .multitaches > .dernierAjout > #bouton {
+  width: 150px;
+  margin-right: 10px;
 }
 .corp .multitaches > #articleSearchAjout {
   width: 50%;
@@ -151,6 +177,7 @@ a {
   flex-direction: row;
   align-items: center;
   margin-left: 50px;
+  margin: 0 auto;
   padding-top: 20px;
 }
 .corp .multitaches > #articleSearchAjout > form {
@@ -186,12 +213,10 @@ a {
 }
 .corp .multitaches > .sousTitre {
   width: 200px;
-  margin-top: 40px;
-  margin-left: 500px;
-  margin-bottom: 20px;
+  margin: 30px auto;
 }
 .corp .multitaches > .articleList {
-  width: 800px;
+  width: 950px;
   height: 49px;
   display: flex;
   flex-direction: row;
@@ -199,18 +224,23 @@ a {
   align-items: center;
   border: 1px solid black;
   background-color: #AAAAAA;
-  margin: 10px 200px;
+  margin: 10px auto;
 }
 .corp .multitaches > .articleList > h3 {
   width: 450px;
-  padding-left: 10px;
 }
-.corp .multitaches > .articleList > p {
-  width: 100px;
-}
-.corp .multitaches > .articleList > bouton {
+.corp .multitaches > .articleList > .dernierAjoutMQ {
   width: 150px;
+}
+.corp .multitaches > .articleList > .dernierAjoutMQ > p {
+  width: 100%;
+}
+.corp .multitaches > .articleList > #bouton {
+  width: 250px;
   margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .corp .multitaches > #formulaireAjout {
   width: 90%;
@@ -258,19 +288,67 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .ajoutDate {
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .genreChoice {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .genreChoice > #genre {
+  width: 320px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .collectChoice {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .collectChoice > #collection {
+  width: 320px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .select {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .select > .selectCategory {
+  width: 90px;
+  height: 50px;
+  margin-top: 15px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .select > #id_category {
+  width: 160px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .ajoutDate {
   width: 320px;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
 }
-.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .ajoutDate > .publication {
+.corp .multitaches > #formulaireAjout > .formMilieu > .ajoutDate > .publication {
   width: 90px;
   height: 50px;
   margin-top: 15px;
 }
-.corp .multitaches > #formulaireAjout > #formGauche > .edition-date > .ajoutDate > .date {
-  width: 235px;
+.corp .multitaches > #formulaireAjout > .formMilieu > .ajoutDate > .date {
+  width: 120px;
   height: 50px;
   border: 0;
   border-radius: 50px;
@@ -278,54 +356,18 @@ a {
   padding-left: 10px;
   padding-right: 10px;
 }
-.corp .multitaches > #formulaireAjout > .formMilieu {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.corp .multitaches > #formulaireAjout > .formMilieu > .select {
-  width: 320px;
-  margin-top: 50px;
-}
-.corp .multitaches > #formulaireAjout > .formMilieu > .select > #id_category {
-  width: 190px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
-  padding-left: 10px;
-}
-.corp .multitaches > #formulaireAjout > .formMilieu > .genreChoice {
-  width: 260px;
-  margin-top: 50px;
-}
-.corp .multitaches > #formulaireAjout > .formMilieu > .genreChoice > #genre {
-  width: 260px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
-  padding-left: 10px;
-}
-.corp .multitaches > #formulaireAjout > .formMilieu > .collectChoice {
-  width: 260px;
-  margin-top: 50px;
-}
-.corp .multitaches > #formulaireAjout > .formMilieu > .collectChoice > #collection {
-  width: 260px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
-  padding-left: 10px;
-}
 .corp .multitaches > #formulaireAjout > .formMilieu > .imageChoice {
   width: 320px;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.corp .multitaches > #formulaireAjout > .formMilieu > .imageChoice > .image {
+  width: 90px;
+  height: 50px;
+  margin-top: 15px;
 }
 .corp .multitaches > #formulaireAjout > .formMilieu > .imageChoice > #image {
-  width: 210px;
+  width: 160px;
   height: 50px;
   border: 0;
   border-radius: 50px;
@@ -410,19 +452,67 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .ajoutDate {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice > #genre {
+  width: 320px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice > #collection {
+  width: 320px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .select {
+  width: 320px;
+  margin-top: 50px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .select > .selectCategory {
+  width: 90px;
+  height: 50px;
+  margin-top: 15px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
+  width: 160px;
+  height: 50px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #FFDAA4;
+  padding-left: 10px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .ajoutDate {
   width: 320px;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
 }
-.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .ajoutDate > .publication {
+.corp .multitaches > #formulaireModif > .formMilieu > .ajoutDate > .publication {
   width: 90px;
   height: 50px;
   margin-top: 15px;
 }
-.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .ajoutDate > .date {
-  width: 235px;
+.corp .multitaches > #formulaireModif > .formMilieu > .ajoutDate > .date {
+  width: 120px;
   height: 50px;
   border: 0;
   border-radius: 50px;
@@ -430,54 +520,18 @@ a {
   padding-left: 10px;
   padding-right: 10px;
 }
-.corp .multitaches > #formulaireModif > .formMilieu {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.corp .multitaches > #formulaireModif > .formMilieu > .select {
-  width: 320px;
-  margin-top: 50px;
-}
-.corp .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
-  width: 190px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
-  padding-left: 10px;
-}
-.corp .multitaches > #formulaireModif > .formMilieu > .genreChoice {
-  width: 260px;
-  margin-top: 50px;
-}
-.corp .multitaches > #formulaireModif > .formMilieu > .genreChoice > #genre {
-  width: 260px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
-  padding-left: 10px;
-}
-.corp .multitaches > #formulaireModif > .formMilieu > .collectChoice {
-  width: 260px;
-  margin-top: 50px;
-}
-.corp .multitaches > #formulaireModif > .formMilieu > .collectChoice > #collection {
-  width: 260px;
-  height: 50px;
-  border: 0;
-  border-radius: 50px;
-  background-color: #FFDAA4;
-  padding-left: 10px;
-}
 .corp .multitaches > #formulaireModif > .formMilieu > .imageChoice {
   width: 320px;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.corp .multitaches > #formulaireModif > .formMilieu > .imageChoice > .image {
+  width: 90px;
+  height: 50px;
+  margin-top: 15px;
 }
 .corp .multitaches > #formulaireModif > .formMilieu > .imageChoice > #image {
-  width: 210px;
+  width: 160px;
   height: 50px;
   border: 0;
   border-radius: 50px;
@@ -534,6 +588,7 @@ a {
   align-items: center;
   justify-content: space-evenly;
   justify-items: center;
+  flex-wrap: wrap;
 }
 .corp .multitaches > #ajoutCategorie > .ajout > .newCat {
   width: 200px;
@@ -778,27 +833,6 @@ a {
   margin-right: 50px;
   cursor: pointer;
 }
-.corp .multitaches > #userMenu > .boutonUser {
-  width: 400px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-}
-.corp .multitaches > #userMenu > .boutonUser > button {
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 10px;
-  background-color: #696969;
-  margin-left: 10px;
-}
-.corp .multitaches > #userMenu > .boutonUser > button > a {
-  height: 50px;
-  font-size: 1.1rem;
-  color: white;
-}
 .corp .multitaches > #tableUser {
   width: 100%;
   margin-top: 50px;
@@ -812,12 +846,14 @@ a {
 .corp .multitaches > #tableUser > tbody > .contenuUser {
   background-color: #FFE7D6;
   height: 50px;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton {
   height: 50px;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton > td {
   height: 50px;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton > td > button {
   width: 100%;
@@ -843,9 +879,14 @@ a {
   align-items: center;
   margin-top: 50px;
 }
-.corp .multitaches > .newsLetter > input {
+.corp .multitaches > .newsLetter > textarea {
   width: 1000px;
   height: 400px;
+  resize: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0 0 10px 1px;
 }
 .corp .multitaches > .newsLetter > button {
   width: 200px;
@@ -855,7 +896,7 @@ a {
   border: 0;
   border-radius: 10px;
   background-color: #696969;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .corp .multitaches > .newsLetter > button > a {
   color: black;
@@ -927,48 +968,345 @@ a {
 }
 
 /*....................FIN.CSS.CONNEXION....................*/
-/*....................DELETE.CSS....................*/
-.block-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9998;
-  background-color: rgba(0, 0, 0, 0.5);
+/*....................MEDIA.QUERIES....................*/
+@media screen and (min-width: 1260px) {
+  body {
+    background-color: #c8c8c8;
+  }
+  body #side-bar {
+    max-width: 1200px;
+    width: 20%;
+  }
+  body #side-bar > #menu-admin > nav > ul > li > a {
+    color: black;
+    font-size: 1.3rem;
+    font-family: "QuattrocentoSans-Regular", sans-serif;
+  }
+  body > .corp {
+    width: 80%;
+  }
+  body > .corp > .multitaches {
+    width: 100%;
+  }
+  body > .corp > .multitaches > .multiTitre {
+    font-size: 2rem;
+  }
 }
-
-.active-box-delete-book {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  width: 400px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-.active-box-delete-book p#txt-box-delete-category {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.active-box-delete-book a#btn-cancel-delete-category,
-.active-box-delete-book a#btn-confirmed-delete-book {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-}
-.active-box-delete-book a#btn-cancel-delete-category {
-  background-color: #999;
-  margin-right: 10px;
-}
-.active-box-delete-book a#btn-confirmed-delete-book {
-  background-color: #d9534f;
+@media screen and (max-width: 1260px) and (min-width: 900px) {
+  body {
+    background-color: #c8c8c8;
+  }
+  body #side-bar {
+    max-width: 1200px;
+    width: 20%;
+  }
+  body #side-bar > #menu-admin {
+    width: 100%;
+  }
+  body #side-bar > #menu-admin > nav {
+    width: 100%;
+  }
+  body #side-bar > #menu-admin > nav > ul {
+    width: 100%;
+  }
+  body #side-bar > #menu-admin > nav > ul > li {
+    width: 100%;
+  }
+  body #side-bar > #menu-admin > nav > ul > li > img {
+    margin-left: 10%;
+  }
+  body #side-bar > #menu-admin > nav > ul > li > a {
+    width: 100%;
+    font-size: 1rem;
+    font-family: "QuattrocentoSans-Regular", sans-serif;
+  }
+  body > .corp {
+    width: 80%;
+  }
+  body > .corp > .multitaches {
+    width: 100%;
+    /*tableau de bord*/
+    /*page article*/
+    /*formulaire ajout de livre*/
+    /*formulaire modification livre*/
+    /*liste user*/
+    /*newsletter*/
+  }
+  body > .corp > .multitaches > .multiTitre {
+    font-size: 2rem;
+  }
+  body > .corp > .multitaches > #compteurEtGraphique {
+    display: none;
+  }
+  body > .corp > .multitaches > .dernierAjout {
+    width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px auto;
+  }
+  body > .corp > .multitaches > .dernierAjout > h3 {
+    width: 420px;
+    text-align: center;
+    padding-left: 0;
+    font-size: 1rem;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > .dernierAjout > .dernierAjoutMQ {
+    width: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+  }
+  body > .corp > .multitaches > .dernierAjout > #bouton {
+    width: 420px;
+    text-align: center;
+  }
+  body > .corp > .multitaches > #articleSearchAjout {
+    width: 85%;
+  }
+  body > .corp > .multitaches > .articleList {
+    width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px auto;
+    text-align: center;
+  }
+  body > .corp > .multitaches > .articleList > h3 {
+    width: 420px;
+    padding-left: 0;
+    text-align: center;
+  }
+  body > .corp > .multitaches > .articleList > .dernierAjoutMQ {
+    width: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+  body > .corp > .multitaches > .articleList > #bouton {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  body > .corp > .multitaches > #formulaireAjout {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .titre-auteur {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .titre-auteur > .tripleInput {
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .editeur {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .genreChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .collectChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu {
+    width: 100%;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .select > #id_category {
+    width: 260px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .ajoutDate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .ajoutDate > .date {
+    width: 240px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .imageChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .imageChoice > #image {
+    width: 240px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite {
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite > .resume {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite > .resume > #summary {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 12px auto;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite > input {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #696969;
+    cursor: pointer;
+    color: #26F904;
+  }
+  body > .corp > .multitaches > #formulaireModif {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .titre-auteur {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .titre-auteur > .tripleInput {
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu {
+    width: 100%;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
+    width: 260px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .ajoutDate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .ajoutDate > .date {
+    width: 240px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .imageChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .imageChoice > #image {
+    width: 240px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite {
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite > .resume {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite > .resume > #summary {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 12px auto;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite > input {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #696969;
+    cursor: pointer;
+    color: #26F904;
+  }
+  body > .corp > .multitaches > #tableUser {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #tableUser > thead {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .contenuUser {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button > a {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  body > .corp > .multitaches > .newsLetter {
+    width: 100%;
+  }
+  body > .corp > .multitaches > .newsLetter > textarea {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style-admin.css.map */

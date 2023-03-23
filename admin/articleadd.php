@@ -60,10 +60,19 @@ include './header-admin.php';
                 <input type="text" name="editor" id="editor" placeholder="Éditeur">
             </div>
 
-            <div class="ajoutDate">
-                <label class="publication" for="publication_date">Publication : </label>
-                <input class="date" type="date" name="publication_date" id="publication_date">
+            <div class="genreChoice">
+
+                <label for="genre"></label>
+                <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
             </div>
+
+            <div class="collectChoice">
+
+                <label for="collection"></label>
+                <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
+            </div>
+
+            
 
         </div>
     </div>
@@ -72,7 +81,7 @@ include './header-admin.php';
 
         <div class="select">
 
-            <label for="id_category">Catégorie :</label>
+            <label class="selectCategory" for="id_category">Catégorie :</label>
 
             <select name="id_category" id="id_category">
                 <?php
@@ -86,21 +95,14 @@ include './header-admin.php';
 
         </div>
 
-
-        <div class="genreChoice">
-
-            <label for="genre"></label>
-            <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
+        <div class="ajoutDate">
+            <label class="publication" for="publication_date">Publication : </label>
+            <input class="date" type="date" name="publication_date" id="publication_date">
         </div>
-
-        <div class="collectChoice">
-
-            <label for="collection"></label>
-            <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
-        </div>
+       
 
         <div class="imageChoice">
-            <label for="image">Image :</label>
+            <label class="image" for="image">Image :</label>
             <input type="text" name="image" id="image" placeholder="indiquer votre image">
         </div>
 

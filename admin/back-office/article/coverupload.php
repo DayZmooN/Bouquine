@@ -21,5 +21,6 @@
 
         header('Location: ./readarticle-back.php');
     }
+}
     ?>
 </form>
