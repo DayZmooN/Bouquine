@@ -833,27 +833,6 @@ a {
   margin-right: 50px;
   cursor: pointer;
 }
-.corp .multitaches > #userMenu > .boutonUser {
-  width: 400px;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-}
-.corp .multitaches > #userMenu > .boutonUser > button {
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 10px;
-  background-color: #696969;
-  margin-left: 10px;
-}
-.corp .multitaches > #userMenu > .boutonUser > button > a {
-  height: 50px;
-  font-size: 1.1rem;
-  color: white;
-}
 .corp .multitaches > #tableUser {
   width: 100%;
   margin-top: 50px;
@@ -867,12 +846,14 @@ a {
 .corp .multitaches > #tableUser > tbody > .contenuUser {
   background-color: #FFE7D6;
   height: 50px;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton {
   height: 50px;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton > td {
   height: 50px;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton > td > button {
   width: 100%;
@@ -1048,6 +1029,8 @@ a {
     /*page article*/
     /*formulaire ajout de livre*/
     /*formulaire modification livre*/
+    /*liste user*/
+    /*newsletter*/
   }
   body > .corp > .multitaches > .multiTitre {
     font-size: 2rem;
@@ -1291,6 +1274,34 @@ a {
     background-color: #696969;
     cursor: pointer;
     color: #26F904;
+  }
+  body > .corp > .multitaches > #tableUser {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #tableUser > thead {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .contenuUser {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button > a {
+    width: 50%;
+    font-size: 0.8rem;
   }
   body > .corp > .multitaches > .newsLetter {
     width: 100%;

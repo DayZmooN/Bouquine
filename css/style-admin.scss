@@ -1071,46 +1071,11 @@ a {
                 cursor: pointer;
             }
         }
-
-        &>.boutonUser {
-            width: 400px;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-
-
-
-            &>button {
-                width: 150px;
-                height: 50px;
-                line-height: 50px;
-                text-transform: uppercase;
-                border: 0;
-                border-radius: 10px;
-                background-color: $grisBtn;
-                margin-left: 10px;
-
-                &>a {
-                    height: 50px;
-                    font-size: 1.1rem;
-                    color: white;
-
-                }
-            }
-
-
-
-        }
-
-
-
-
-
     }
 
     .multitaches>#tableUser {
         width: 100%;
-        // margin-left: 50px;
+        
         margin-top: 50px;
         text-align: center;
 
@@ -1125,6 +1090,7 @@ a {
             &>.contenuUser {
                 background-color: $fondUser;
                 height: 50px;
+                font-size: 1.1rem;
             }
 
             &>.tdButton {
@@ -1132,6 +1098,7 @@ a {
 
                 &>td {
                     height: 50px;
+                    font-size: 1.1rem;
 
                     &>button {
                         width: 100%;
@@ -1744,19 +1711,47 @@ a {
                     }
 
                 }
+                /*liste user*/
 
+                &>#tableUser {
+                    width: 100%;
+            
+                    &>thead {
+                        width: 50%;
+                        font-size: 0.8rem;
+                    }
+            
+                    &>tbody {
+                        width: 50%;
 
-
-
-
-
-
-
-
-
-
-
-
+                        &>.contenuUser {
+                            width: 50%;
+                            font-size: 0.8rem;
+                        }
+            
+                        &>.tdButton {
+                            width: 50%;
+            
+                            &>td {
+                                width: 50%;
+                                font-size: 0.8rem;
+            
+                                &>button {
+                                    width: 50%;
+                                    
+            
+                                    &>a {
+                                        
+                                        width: 50%;
+                                        
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /*newsletter*/
 
                 &>.newsLetter{
                     width: 100%;
