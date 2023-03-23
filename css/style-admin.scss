@@ -47,19 +47,24 @@ a {
 }
 
 
+
+
+
+
+
 /*....................HEADER-ADMIN INCLUDE....................*/
 
 /*.....section logo + nav.....*/
 #side-bar {
-    max-width: 500px;
-    width: 25%;
+    max-width: 1600px;
+    width: 20%;
     height: 100vw;
     position: fixed;
     background-color: #858585;
 
     &>#logo>img {
         width: 100%;
-        border-bottom: 1px solid black;
+
     }
 
     &>#menu-admin {
@@ -72,7 +77,7 @@ a {
                 width: 100%;
 
                 &>li {
-                    // max-width: 400px;
+
                     width: 100%;
                     height: 80px;
                     display: flex;
@@ -91,8 +96,14 @@ a {
                     &>a {
                         width: 150px;
                         color: black;
-                        font-size: 1.4rem;
+                        font-size: 1.3rem;
+                        font-family: 'QuattrocentoSans-Regular', sans-serif;
+                        //background-color: #26F904;
+                        text-align: center;
+
                     }
+
+
 
 
                 }
@@ -102,24 +113,27 @@ a {
 
 }
 
+
+
+
 /*.....fin.....*/
 
 /*.....header + icones.....*/
 .corp {
-    width: 75%;
+    width: 80%;
     height: 100vw;
     float: right;
     background-color: $fondRose;
 
 
     &>#headerDashboard {
-
+        width: 100%;
         height: 130px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         background-color: white;
-        border-bottom: 1px solid black;
+
 
         &>.notif {
             width: 32px;
@@ -149,10 +163,12 @@ a {
             text-transform: uppercase;
             text-align: center;
             font-size: 4rem;
+            font-family: 'LRT Oksana Bold', sans-serif;
 
 
         }
     }
+
 
     /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
 
@@ -163,13 +179,46 @@ a {
         height: 120px;
         margin-top: 25px;
         margin-left: 25px;
+
     }
 
-    .multitaches>#dernier-ajout {
+    .multitaches>#titreAjout {
         width: 100%;
-        margin-top: 50px;
+        margin: 25px auto;
         text-transform: uppercase;
         text-align: center;
+    }
+
+    .multitaches>.dernierAjout {
+        width: 950px;
+        height: 49px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid black;
+        background-color: #AAAAAA;
+        margin: 10px auto;
+
+        &>h3 {
+            width: 450px;
+
+
+        }
+
+        &>.dernierAjoutMQ {
+            width: 150px;
+
+            &>p {
+                width: 100%;
+            }
+        }
+
+        &>#bouton {
+            width: 150px;
+            margin-right: 10px;
+        }
+
     }
 
     /*....................FIN.TABLEAU.DE.BORD....................*/
@@ -182,6 +231,7 @@ a {
         flex-direction: row;
         align-items: center;
         margin-left: 50px;
+        margin: 0 auto;
         padding-top: 20px;
 
         &>form {
@@ -224,13 +274,11 @@ a {
 
     .multitaches>.sousTitre {
         width: 200px;
-        margin-top: 40px;
-        margin-left: 500px;
-        margin-bottom: 20px;
+        margin: 30px auto;
     }
 
     .multitaches>.articleList {
-        width: 800px;
+        width: 950px;
         height: 49px;
         display: flex;
         flex-direction: row;
@@ -238,21 +286,28 @@ a {
         align-items: center;
         border: 1px solid black;
         background-color: #AAAAAA;
-        margin: 10px 200px;
+        margin: 10px auto;
 
         &>h3 {
             width: 450px;
-            padding-left: 10px;
+
 
         }
 
-        &>p {
-            width: 100px;
-        }
-
-        &>bouton {
+        &>.dernierAjoutMQ {
             width: 150px;
+
+            &>p {
+                width: 100%;
+            }
+        }
+
+        &>#bouton {
+            width: 250px;
             margin-right: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
 
     }
@@ -312,45 +367,63 @@ a {
                         padding-left: 10px;
 
                     }
+
+
                 }
 
-                &>.ajoutDate {
+                &>.genreChoice {
                     width: 320px;
                     margin-top: 50px;
-                    display: flex;
-                    flex-direction: row;
 
-                    &>.publication {
-                        width: 90px;
-                        height: 50px;
-                        margin-top: 15px;
-                    }
-
-                    &>.date {
-                        width: 235px;
+                    &>#genre {
+                        width: 320px;
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
                         background-color: $remplissage;
                         padding-left: 10px;
-                        padding-right: 10px;
+                    }
+
+                }
+
+                &>.collectChoice {
+                    width: 320px;
+                    margin-top: 50px;
+
+                    &>#collection {
+                        width: 320px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 50px;
+                        background-color: $remplissage;
+                        padding-left: 10px;
                     }
                 }
+
+
             }
         }
+
 
         &>.formMilieu {
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            margin-top: 100px;
 
             &>.select {
                 width: 320px;
                 margin-top: 50px;
 
+                &>.selectCategory {
+                    width: 90px;
+                    height: 50px;
+                    margin-top: 15px;
+                }
+
                 &>#id_category {
-                    width: 190px;
+                    width: 160px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
@@ -360,41 +433,42 @@ a {
                 }
             }
 
-            &>.genreChoice {
-                width: 260px;
+            &>.ajoutDate {
+                width: 320px;
                 margin-top: 50px;
+                display: flex;
+                flex-direction: row;
 
-                &>#genre {
-                    width: 260px;
+                &>.publication {
+                    width: 90px;
                     height: 50px;
-                    border: 0;
-                    border-radius: 50px;
-                    background-color: $remplissage;
-                    padding-left: 10px;
+                    margin-top: 15px;
                 }
 
-            }
-
-            &>.collectChoice {
-                width: 260px;
-                margin-top: 50px;
-
-                &>#collection {
-                    width: 260px;
+                &>.date {
+                    width: 120px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
                     background-color: $remplissage;
                     padding-left: 10px;
+                    padding-right: 10px;
                 }
             }
 
             &>.imageChoice {
                 width: 320px;
-                margin-top: 50px;
+                margin-top: 25px;
+                margin-left: 5px;
+
+                &>.image {
+                    width: 90px;
+                    height: 50px;
+                    margin-top: 15px;
+                }
 
                 &>#image {
-                    width: 210px;
+                    width: 160px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
@@ -432,6 +506,10 @@ a {
                     padding: 5px 5px;
                 }
             }
+
+
+
+
 
 
 
@@ -503,45 +581,63 @@ a {
                         padding-left: 10px;
 
                     }
+
+
                 }
 
-                &>.ajoutDate {
+                &>.genreChoice {
                     width: 320px;
                     margin-top: 50px;
-                    display: flex;
-                    flex-direction: row;
 
-                    &>.publication {
-                        width: 90px;
-                        height: 50px;
-                        margin-top: 15px;
-                    }
-
-                    &>.date {
-                        width: 235px;
+                    &>#genre {
+                        width: 320px;
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
                         background-color: $remplissage;
                         padding-left: 10px;
-                        padding-right: 10px;
+                    }
+
+                }
+
+                &>.collectChoice {
+                    width: 320px;
+                    margin-top: 50px;
+
+                    &>#collection {
+                        width: 320px;
+                        height: 50px;
+                        border: 0;
+                        border-radius: 50px;
+                        background-color: $remplissage;
+                        padding-left: 10px;
                     }
                 }
+
+
             }
         }
+
 
         &>.formMilieu {
             width: 30%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            margin-top: 100px;
 
             &>.select {
                 width: 320px;
                 margin-top: 50px;
 
+                &>.selectCategory {
+                    width: 90px;
+                    height: 50px;
+                    margin-top: 15px;
+                }
+
                 &>#id_category {
-                    width: 190px;
+                    width: 160px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
@@ -551,41 +647,42 @@ a {
                 }
             }
 
-            &>.genreChoice {
-                width: 260px;
+            &>.ajoutDate {
+                width: 320px;
                 margin-top: 50px;
+                display: flex;
+                flex-direction: row;
 
-                &>#genre {
-                    width: 260px;
+                &>.publication {
+                    width: 90px;
                     height: 50px;
-                    border: 0;
-                    border-radius: 50px;
-                    background-color: $remplissage;
-                    padding-left: 10px;
+                    margin-top: 15px;
                 }
 
-            }
-
-            &>.collectChoice {
-                width: 260px;
-                margin-top: 50px;
-
-                &>#collection {
-                    width: 260px;
+                &>.date {
+                    width: 120px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
                     background-color: $remplissage;
                     padding-left: 10px;
+                    padding-right: 10px;
                 }
             }
 
             &>.imageChoice {
                 width: 320px;
-                margin-top: 50px;
+                margin-top: 25px;
+                margin-left: 5px;
+
+                &>.image {
+                    width: 90px;
+                    height: 50px;
+                    margin-top: 15px;
+                }
 
                 &>#image {
-                    width: 210px;
+                    width: 160px;
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
@@ -624,10 +721,6 @@ a {
                 }
             }
 
-
-
-
-
             &>input {
                 width: 200px;
                 height: 50px;
@@ -665,6 +758,7 @@ a {
             align-items: center;
             justify-content: space-evenly;
             justify-items: center;
+            flex-wrap: wrap;
 
             &>.newCat {
                 width: 200px;
@@ -977,46 +1071,11 @@ a {
                 cursor: pointer;
             }
         }
-
-        &>.boutonUser {
-            width: 400px;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-
-
-
-            &>button {
-                width: 150px;
-                height: 50px;
-                line-height: 50px;
-                text-transform: uppercase;
-                border: 0;
-                border-radius: 10px;
-                background-color: $grisBtn;
-                margin-left: 10px;
-
-                &>a {
-                    height: 50px;
-                    font-size: 1.1rem;
-                    color: white;
-
-                }
-            }
-
-
-
-        }
-
-
-
-
-
     }
 
     .multitaches>#tableUser {
         width: 100%;
-        // margin-left: 50px;
+
         margin-top: 50px;
         text-align: center;
 
@@ -1031,6 +1090,7 @@ a {
             &>.contenuUser {
                 background-color: $fondUser;
                 height: 50px;
+                font-size: 1.1rem;
             }
 
             &>.tdButton {
@@ -1038,6 +1098,7 @@ a {
 
                 &>td {
                     height: 50px;
+                    font-size: 1.1rem;
 
                     &>button {
                         width: 100%;
@@ -1078,9 +1139,14 @@ a {
         align-items: center;
         margin-top: 50px;
 
-        &>input {
+        &>textarea {
             width: 1000px;
             height: 400px;
+            resize: none;
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: 1px solid $fondRose;
+            box-shadow: 0 0 10px 1px;
         }
 
         &>button {
@@ -1091,7 +1157,7 @@ a {
             border: 0;
             border-radius: 10px;
             background-color: $grisBtn;
-            margin-top: 10px;
+            margin-top: 20px;
 
             &>a {
                 color: black;
@@ -1162,7 +1228,7 @@ a {
             width: 300px;
             height: 50px;
             margin: 30px 100px;
-            //border: 1px solid black;
+
 
             &>input {
                 width: 300px;
@@ -1202,10 +1268,517 @@ a {
 
 /*....................FIN.CSS.CONNEXION....................*/
 
-/*....................DELETE.CSS....................*/
+
+/*....................MEDIA.QUERIES....................*/
+
+@media screen and (min-width:1260px) {
+
+    //ecran superieur a 1260px
+    body {
+
+        background-color: $fondRose;
+
+        #side-bar {
+            max-width: 1200px;
+            width: 20%;
+
+            &>#menu-admin {
+                //min-width: 100%;
+
+                &>nav {
+                    //min-width: 50%;
+
+                    &>ul {
+                        //min-width: 50%;
+
+                        &>li {
 
 
-//modal for delete
+
+
+                            &>a {
+
+                                color: black;
+                                font-size: 1.3rem;
+                                font-family: 'QuattrocentoSans-Regular', sans-serif;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &>.corp {
+            width: 80%;
+
+            &>.multitaches {
+                width: 100%;
+
+                &>.multiTitre {
+
+                    font-size: 2rem;
+                }
+
+
+
+
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:1260px) and (min-width:900px) {
+
+    //ecran allant de 900 a 1260 px
+    body {
+
+        background-color: $fondRose;
+
+
+        #side-bar {
+            max-width: 1200px;
+            width: 20%;
+
+            &>#menu-admin {
+                width: 100%;
+
+                &>nav {
+                    width: 100%;
+
+                    &>ul {
+                        width: 100%;
+
+                        &>li {
+                            width: 100%;
+
+                            &>img {
+                                margin-left: 10%;
+                            }
+
+                            &>a {
+                                width: 100%;
+                                font-size: 1rem;
+                                font-family: 'QuattrocentoSans-Regular', sans-serif;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &>.corp {
+            width: 80%;
+
+            &>.multitaches {
+                width: 100%;
+
+                &>.multiTitre {
+
+                    font-size: 2rem;
+                }
+
+                /*tableau de bord*/
+
+                &>#compteurEtGraphique {
+                    display: none;
+                }
+
+                &>.dernierAjout {
+                    width: 420px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+
+                    &>h3 {
+                        width: 420px;
+                        text-align: center;
+                        padding-left: 0;
+                        font-size: 1rem;
+                        justify-content: center;
+
+
+                    }
+
+                    &>.dernierAjoutMQ {
+                        width: 420px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        text-align: center;
+                        font-size: 1rem;
+
+                    }
+
+                    &>#bouton {
+                        width: 420px;
+                        text-align: center;
+                    }
+
+                }
+
+                /*page article*/
+
+                &>#articleSearchAjout {
+                    width: 85%;
+
+
+
+                }
+
+                &>.articleList {
+                    width: 420px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+                    text-align: center;
+
+                    &>h3 {
+                        width: 420px;
+                        padding-left: 0;
+                        text-align: center;
+
+                    }
+
+                    &>.dernierAjoutMQ {
+                        width: 420px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        font-size: 1rem;
+                    }
+
+                    &>#bouton {
+                        width: 400px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+
+
+                    }
+
+                }
+
+                /*formulaire ajout de livre*/
+
+                &>#formulaireAjout {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
+
+                    &>#formGauche {
+                        width: 100%;
+
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*formulaire modification livre*/
+
+                &>#formulaireModif {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
+
+                    &>#formGauche {
+                        width: 100%;
+
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*liste user*/
+
+                &>#tableUser {
+                    width: 100%;
+
+                    &>thead {
+                        width: 50%;
+                        font-size: 0.8rem;
+                    }
+
+                    &>tbody {
+                        width: 50%;
+
+                        &>.contenuUser {
+                            width: 50%;
+                            font-size: 0.8rem;
+                        }
+
+                        &>.tdButton {
+                            width: 50%;
+
+                            &>td {
+                                width: 50%;
+                                font-size: 0.8rem;
+
+                                &>button {
+                                    width: 50%;
+
+
+                                    &>a {
+
+                                        width: 50%;
+
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                /*newsletter*/
+
+                &>.newsLetter {
+                    width: 100%;
+
+                    &>textarea {
+                        width: 50%;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+//dimitri modal a ne pas delete 
 
 .block-modal {
     position: fixed;

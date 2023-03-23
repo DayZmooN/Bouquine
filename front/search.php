@@ -20,8 +20,7 @@ require_once './connect.php';
         <div class="filter-container">
             <h2 class="search-filter">Recherche avancée</h2>
 
-            <form action="resultats.php" method="get">
-
+            <form id="filter-form" action="#" method="get">
                 <label for="titre">Titre:</label>
                 <input type="text" id="titre" name="titre">
 

@@ -24,13 +24,17 @@ foreach ($result as $article) {
 ?>
     <div class="articleList">
         <h3><?= $article['title'] ?></h3>
-        <p><?= $article['publication_date'] ?></p>
-        <p><?= $article['author'] ?></p>
+        <div class="dernierAjoutMQ">
+            <p><?= $article['author'] ?></p>
+            <p><?= $article['publication_date'] ?></p>
+        </div>
         <div id="bouton">
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
             <a class="btnRed" data-idbook="<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" style="color:red">Supprimer</a>
-            <a href="./coverupload.php?id=<?= $article['id_book'] ?>">Cover</a>
-            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>">Genres</a>
+
+            <a href="./coverupload.php?id=<?= $article['id_book'] ?>" style="color:blueviolet">Cover</a>
+            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>" style="color:aqua" >Genres</a>
+
         </div>
     </div>
 <?php } ?>

@@ -58,21 +58,36 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC))
             <input class="tripleInput" type="text" name="ISBN" id="ISBN" value="0-00000-000">
         </div>
 
+                    </div>
+
         <div class="edition-date">
             <div class="editeur">
                 <label for="editor"></label>
                 <input type="text" name="editor" id="editor" value="Online Edition">
             </div>
-            <div class="ajoutDate">
-                <label class="publication" for="publication_date">Publication : </label>
-                <input class="date" type="date" name="publication_date" id="publication_date">
+
+            <div class="genreChoice">
+
+                <label for="genre"></label>
+                <input type="text" name="genre" id="genre" value="jeunesse">
             </div>
+
+            <div class="collectChoice">
+
+                <label for="collection"></label>
+                <input type="text" name="genre" id="collection" value="collection mille fleur">
+            </div>
+
+
+            
         </div>
     </div>
 
     <div class="formMilieu">
         <div class="select">
-            <label for="id_category">Catégorie :</label>
+
+            <label class="selectCategory" for="id_category">Catégorie :</label>
+
             <select name="id_category" id="id_category">
                 <?php
             $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
@@ -84,17 +99,16 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC))
             </select>
         </div>
 
-
-        <div class="genreChoice">
-            <label for="genre"></label>
-            <input type="text" name="genre" id="genre" value="jeunesse">
+        <div class="ajoutDate">
+                <label class="publication" for="publication_date">Publication : </label>
+                <input class="date" type="date" name="publication_date" id="publication_date">
         </div>
         <div class="collectChoice">
             <label for="collection"></label>
             <input type="text" name="genre" id="collection" value="collection mille fleur">
         </div>
         <div class="imageChoice">
-            <label for="image">Image :</label>
+            <label class="image" for="image">Image :</label>
             <input type="text" name="image" id="image" value="milka.png">
         </div>
     </div>

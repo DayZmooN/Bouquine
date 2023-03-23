@@ -7,7 +7,7 @@
 
 <form action="" class="newsLetter" method="POST">
     <label for="newsLetter"></label>
-    <input type="text" name="newsLetter" id="newsLetter" required/>
+    <textarea type="text" name="newsLetter" id="newsLetter" required></textarea>
 
     <button> <a href="#">envoyer la newsletter</a> </button>
 </form>
