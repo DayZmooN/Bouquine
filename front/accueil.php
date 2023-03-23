@@ -160,26 +160,28 @@ if (isset($_POST['submit'])) {
 
         <!-- SECTION TEXTE -->
         <section id="text">
-            <div class="texte">
-                <p class="bouquine">BOUQUINE c’est :<br></p>
-                <p class="list">
-                    <b>La recherche de livres </b>:les utilisateurs<br> peuvent effectuer des recherches
-                    en<br> ligne pour trouver des livres disponibles.<br>
+            <div class="contain-text">
+                <div class="texte">
+                    <p class="bouquine">BOUQUINE c’est :<br></p>
+                    <p class="list">
+                        <b>La recherche de livres </b>:les utilisateurs<br> peuvent effectuer des recherches
+                        en<br> ligne pour trouver des livres disponibles.<br>
 
-                    <b>La réservation de livres</b> : possibilité de<br> réserver des livres en ligne
-                    pour les emprunter à une date ultérieure.<br>
+                        <b>La réservation de livres</b> : possibilité de<br> réserver des livres en ligne
+                        pour les emprunter à une date ultérieure.<br>
 
-                    <b>Le prêt de livres</b> : possibilité<br> d' emprunter
-                    les livres réservés et les<br> retirer à la bibliothèque.<br>
+                        <b>Le prêt de livres</b> : possibilité<br> d' emprunter
+                        les livres réservés et les<br> retirer à la bibliothèque.<br>
 
-                    <b> Le renouvellement de prêts</b> :<br> possibilité renouveler
-                    leurs emprunts<br> en ligne pour prolonger la période de prêt.<br>
+                        <b> Le renouvellement de prêts</b> :<br> possibilité renouveler
+                        leurs emprunts<br> en ligne pour prolonger la période de prêt.<br>
 
-                    <b> La consultation et lecture sur place.</b>
-                </p>
-            </div>
-            <div class="img">
-                <img class="image" src="../image/femme-livre.png" alt="Retrouvez le plaisir de la lecture avec Bouquine ">
+                        <b> La consultation et lecture sur place.</b>
+                    </p>
+                </div>
+                <div class="img">
+                    <img class="image" src="../image/femme-livre.png" alt="Retrouvez le plaisir de la lecture avec Bouquine ">
+                </div>
             </div>
         </section>
 
@@ -234,26 +236,49 @@ if (isset($_POST['submit'])) {
         <!-- SECTION COMPTEUR -->
 
         <section class="section compteur">
-            <div class=" count">
-                <div class="stat">
-                    <p class="livre">Livres disponibles</p>
-                    <p class="livre">+4000 livres</p>
-                </div>
-                <div class="stat">
-                    <p class="livre">Livres empruntés</p>
-                    <p class="livre">1500 livres</p>
-                </div>
-                <div class="stat">
-                    <p class="livre">Visiteurs</p>
-                    <p class="livre">3500</p>
+
+            <div class="cards-list">
+
+                <div class="card 1">
+                    <div class="card_image"> <img src="https://media.giphy.com/media/2gSV1FB89mF2iAvh2v/giphy.gif" /> </div>
+                    <div class="card_title title-white">
+                        <p>Livres disponibles<br>
+                            +4000</p>
+                    </div>
                 </div>
 
-                <div class="stat">
-                    <p class="livre">Satisfaction client</p>
-                    <img id="stars" src="../image/stars.png" alt="nombre d'étoiles pour les avis ">
-                    <p class="livre">4.5/5</p>
+                <div class="card 2">
+                    <div class="card_image">
+                        <img src="https://media.giphy.com/media/kC3ME5mgPKS2DuZ7jr/giphy.gif" />
+                    </div>
+                    <div class="card_title title-white">
+                        <p>Livres empruntés<br>
+                            1500 livres</p>
+                    </div>
                 </div>
+
+                <div class="card 3">
+                    <div class="card_image">
+                        <img src="https://media.giphy.com/media/2gSV1FB89mF2iAvh2v/giphy.gif" />
+                    </div>
+                    <div class="card_title title-white">
+                        <p>Visiteurs<br>
+                            3500</p>
+                    </div>
+                </div>
+
+                <div class="card 4">
+                    <div class="card_image">
+                        <img src="https://media.giphy.com/media/kC3ME5mgPKS2DuZ7jr/giphy.gif" />
+                    </div>
+                    <div class="card_title title-white">
+                        <p>Satisfaction client <br>
+                            4.5/5</p>
+                    </div>
+                </div>
+
             </div>
+
         </section>
 
         <!-- END SECTION COMPTEUR  -->
@@ -269,13 +294,13 @@ if (isset($_POST['submit'])) {
                     <h3>12 Septembre 2022</h3>
                     <h1 id="lector">Cécile Randu</h1>
                     <p>La bibliothèque Bouquine est un lieu d'apprentissage formidable pour les
-                        enfants. Ma famille et moi-même aimons passer du temps à y lire ensemble. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        enfants. Ma famille et moi-même aimons passer du temps à y lire ensemble. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                         Perspiciatis quas debitis magni minus totam.
-                     </p>
-                   .
+                    </p>
+                    .
                 </div>
-                </div>
-                <div class="blog_post">
+            </div>
+            <div class="blog_post">
                 <div class="img_pod">
                     <img src="../image/avis2.jpg" alt="photo lectrice">
                 </div>
@@ -285,10 +310,10 @@ if (isset($_POST['submit'])) {
                     <p>Très bonne bibliothèque, endroit calme, large choix de livres. Idéal pour tous les étudiants.
                         Personnel très compétent et réactif! <br>Je recommande fortement!
                     </p>
-                   
+
                 </div>
-                </div>
-                <div class="blog_post">
+            </div>
+            <div class="blog_post">
                 <div class="img_pod">
                     <img src="../image/avis3.jpg" alt="photo lectrice">
                 </div>
@@ -297,32 +322,11 @@ if (isset($_POST['submit'])) {
                     <h1 id="lector">Anaïs Dunand</h1>
                     <p>Réservation en ligne pour plus de rapidité, service et personnel agréable.<br>
                         Je recommande vivement.
-                      veniam beatae quaerat facere ad repudiandae cum assumenda.</p>
-                </div> 
+                        veniam beatae quaerat facere ad repudiandae cum assumenda.</p>
                 </div>
-           
-            <!-- <h2 class="lector">Avis des lecteurs</h2>
-            <div class="avis">
-                <div class="notice">
-                    <h3 class="name">Cécile Randu</h3>
-                    <img src="../image/avis1.jpg" alt="avis favorable ">
-                    <p class="value">La bibliothèque Bouquine est un lieu d'apprentissage formidable pour les
-                        enfants. Ma famille et moi-même
-                        aimons passer du temps à y lire ensemble.</p>
-                </div>
-                <div class="notice">
-                    <h3 class="name">Cédric Durand</h3>
-                    <img src="../image/avis2.jpg" alt="avis favorable ">
-                    <p class="value">Très bonne bibliothèque, endroit calme, large choix de livres. Idéal pour tous les étudiants.
-                        Personnel très compétent et réactif! <br>Je recommande fortement! </p>
-                </div>
-                <div class="notice">
-                    <h3 class="name">Anaïs Dunand</h3>
-                    <img src="../image/avis3.jpg" alt="avis favorable ">
-                    <p class="value">Réservation en ligne pour plus de rapidité, service et personnel agréable.<br>
-                        Je recommande vivement. </p>
-                </div>
-            </div> -->
+            </div>
+
+
         </section>
         <!-- end section avis lecteur  -->
     </main>
