@@ -49,6 +49,7 @@ if (!empty($_POST)) {
                     "lastname" => $user["lastname"],
                     "phone" => $user["phone"],
                     "birthdate" => $user["birthdate"],
+
                 ];
                 header("location: ../front/accueil.php");
             } else {
