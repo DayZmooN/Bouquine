@@ -16,15 +16,17 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     <p>a venir en bonus graphique et affichage de compteurs</p>
 </div>
 
-<h2 id="dernier-ajout">liste des derniers ajouts</h2>
+<h2 id="titreAjout">liste des derniers ajouts</h2>
 <?php
 foreach ($result as $article) {
 ?>
 
-    <div class="articleList">
+    <div class="articleList, dernierAjout">
         <h3><?= $article['title'] ?></h3>
-        <p><?= $article['author'] ?></p>
-        <p><?= $article['publication_date'] ?></p>
+        <div class="dernierAjoutMQ">
+            <p><?= $article['author'] ?></p>
+            <p><?= $article['publication_date'] ?></p>
+        </div>
         <div id="bouton">
             <p>
                 <a class="btnGreen" href="#" style="color:green">modifier</a> /
