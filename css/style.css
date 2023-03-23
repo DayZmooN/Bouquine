@@ -139,7 +139,6 @@ nav input[type="search"] {
     margin-left: 20px;
 }
 
-
 #menu-icon {
     display: none;
     width: 30px;
@@ -158,7 +157,7 @@ nav input[type="search"] {
 }
 
 #form-header {
-    width: 550px;
+    width: 400px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -167,21 +166,22 @@ nav input[type="search"] {
 }
 
 #deconnect {
-    width: 150px;
-    height: 50px;
+    width: 140px;
+    height: 40px;
     padding: 0;
-    margin: 0 auto;
+    margin-top: 10px;
 }
 
 a.img-user {
     width: 70px;
-    height: 80px;
     margin: auto;
+    cursor: pointer;
 }
 
-img.img-user {
+img.img-user1 {
     height: 60px;
-    margin-left: 20px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 button#search-button1 {
@@ -199,9 +199,7 @@ button#search-button1 {
     cursor: pointer;
 }
 
-
-
-input#user-connect {
+button#user-connect {
     width: 120px;
     height: 35px;
     font-size: 1rem;
@@ -215,11 +213,13 @@ input#user-connect {
     border-radius: 10px;
     margin-left: 60px;
 }
+
 input::placeholder {
-padding-left: 10px;
-font-style: italic ;
+    padding-left: 10px;
+    font-style: italic;
 }
-#user-deconnect#user-connect {
+
+button#user-deconnect {
     width: 120px;
     height: 35px;
     font-size: 1rem;
@@ -229,31 +229,22 @@ font-style: italic ;
     color: white;
     cursor: pointer;
     border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+
 }
 
-input#user-deconnect:hover {
-    opacity: 40%;
+button#user-deconnect:hover {
+    opacity: 60%;
 }
 
-.user-name {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.nom {
+span.nom {
     width: 30px;
-    margin-left: 30px;
-}
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    margin-left: 10px;
 
-.user-name a {
-    width: 100px;
-    height: 50px;
 }
 
 /* **************media queries header ********************/
@@ -386,7 +377,7 @@ h1 {
     text-align: center;
 }
 
-/* *************RESPONSIVE PARTIE PARALAX**************** */
+/* *************RESPONSIVE PARTIE PARALLAX**************** */
 
 @media only screen and (max-width: 400px),
 (min-width: 900px) {
@@ -454,7 +445,7 @@ h1 {
     border: none;
     border-radius: 50px;
     background-color: #5a62be;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 #resume a {
@@ -472,6 +463,7 @@ h1 {
     font-weight: 500;
     line-height: 16px;
     color: white;
+    margin-top: 10px;
 }
 
 .author {
@@ -769,7 +761,6 @@ hr.gender1:after {
     }
 }
 
-
 @media screen and (max-width: 900px) {
     #prefers {
         font-size: 20px;
@@ -1015,7 +1006,7 @@ hr.gender1:after {
 }
 
 .bouquine {
-    margin-top:20px;
+    margin-top: 20px;
     font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: bold;
@@ -1062,7 +1053,7 @@ hr.gender1:after {
     width: 100%;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     text-align: center;
     padding-top: 32px;
@@ -1078,10 +1069,11 @@ hr.gender1:after {
 }
 
 .formulaire label {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
     text-shadow: 3px 3px black;
+    padding-bottom: 32px;
 }
 
 input#email {
@@ -1089,6 +1081,7 @@ input#email {
     height: 35px;
     border-radius: 10px;
     background-color: white;
+
 }
 
 #send {
@@ -1108,13 +1101,14 @@ input#email {
 }
 
 .abonner {
-    width: 100%;
-    height: 100px;
-    font-size: 1.2rem;
+    max-width: 1200px;
+    /* height: 100px; */
+    font-size: 1.5rem;
     font-weight: 500;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin: 0;
     text-align: center;
     text-shadow: 2px 2px black;
 }
@@ -1267,7 +1261,7 @@ a:hover {
     line-height: 2rem;
     font-size: 2rem;
     margin-top: -150px;
-    
+
 }
 
 .card:hover {
@@ -1531,7 +1525,7 @@ hr.nb1 {
     overflow: visible;
     text-align: center;
     height: 5px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 hr.nb1:after {
@@ -1722,11 +1716,9 @@ p.author2 {
     body {
         font-size: 14px;
     }
-
-    #books img {
-        display: none;
+    header{
+        width: 70%;
     }
-
     #books .contain {
         display: flex;
         flex-direction: column;
@@ -2163,25 +2155,25 @@ p.inscription {
     }
 
     .email {
-     display: none;
+        display: none;
     }
 
     .social-media i {
-     font-size: 16px;
+        font-size: 16px;
     }
 
     input[type=email],
     input[type=password] {
-     width: 90%;
+        width: 90%;
     }
 
     .inscription a:first-of-type {
-     font-size: 0.9rem;
+        font-size: 0.9rem;
     }
 
-    
+
     button[type=submit] {
-     margin-top: 10px;
+        margin-top: 10px;
     }
 }
 
@@ -2477,11 +2469,12 @@ body {
     text-transform: uppercase;
     margin-top: 10px;
     margin-left: 80px;
+    padding-left: 70px;
 }
 
 #user-nav {
     width: 350px;
-    height: 450px;
+    /* height: 450px; */
     background-color: #3C4048;
     position: absolute;
     top: 120px;
@@ -2490,20 +2483,18 @@ body {
 
 #user-nav ul {
     width: 350px;
-    height: 400px;
+    /* height: 400px; */
     display: block;
 }
 
 #user-nav li a {
     width: 350px;
     height: 100px;
-    display: block;
-    margin: auto;
+    padding-top: 30px;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     color: white;
     text-align: center;
-    /* padding: 0 10px; */
     transition: all 0.8s ease;
 
 }
@@ -2514,7 +2505,7 @@ body {
 
 .info1 {
     width: 700px;
-    height: 400px;
+
     background-color: #3C4048;
     border: 1px solid white;
     border-radius: 20px;
@@ -2532,14 +2523,16 @@ body {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-align: center;
     color: white;
+    margin-top: 20px;
 }
 
 .names {
     width: 400px;
-    height: 35px;
+    height: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-right: 30px;
 }
 
 form#dash-form {
@@ -2553,7 +2546,7 @@ form#dash-form {
 label {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
-    display: block;
+    padding-top: 16px;
     color: white;
 }
 
@@ -2561,22 +2554,29 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="tel"] {
-    width: 250px;
+    width: 470px;
     height: 35px;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: white;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+}
+
+input[type="email"]#email1 {
+    width: 470px;
+    height: 35px;
 }
 
 input[type="submit"] {
-    width: 150px;
+    width: 120px;
     height: 35px;
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     padding: 10px 20px;
     background-color: #5a62be;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    margin-top: 10px;
+    margin-top: 30px;
     color: white;
 }
 
@@ -2585,16 +2585,12 @@ input[type="submit"]:hover {
 }
 
 input.adress {
-    width: 450px;
+    width: 470px;
     margin: 0;
 }
 
-input[type="email"]#email1 {
-    width: 450px;
-}
-
 input[type="tel"]#telephone {
-    width: 450px;
+    width: 470px;
     padding: 10px;
     background-color: white;
 }

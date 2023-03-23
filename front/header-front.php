@@ -38,7 +38,7 @@ require_once './connect.php'
                     </ul>
                 </li>
                 
-                <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
+                <li><a href='../front/infopratique.php'>Infos</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">
                     <form id="form-header" method="GET" action="./recherche.php">
@@ -51,18 +51,18 @@ require_once './connect.php'
 
             <?php if (isset($_SESSION['user'])) { ?>
                 <a href="./user-dashboard.php" class="img-user">
-                    <img class="img-user" src="../image/user.png" alt="image">
-                    <span class="nom"><?php echo $_SESSION['user']['username']; ?></span>
-                </a>
+                    <img class="img-user1" src="../image/user.png" alt="image user">
+                    <span class="nom"><?php echo $_SESSION['user']['username']; ?></span></a>
+               
                 <form id="deconnect" action="../model/deconnexion.php" method="post">
-                    <input id="user-deconnect" type="submit" name="logout" value="Déconnexion">
+                    <button id="user-deconnect" type="submit" name="logout">Déconnexion</button>
                 </form>
             <?php }
             if (!isset($_SESSION['user'])) { ?>
 
 
                 <a href="./connexion.php">
-                    <input id="user-connect" type="submit" value="Connexion">
+                    <button id="user-connect" type="submit">Connexion</button>
                 </a>
             <?php } ?>
 
