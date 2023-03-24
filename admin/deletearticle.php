@@ -40,6 +40,6 @@ try {
     echo $e->getMessage();
 
     $_SESSION["error"] = "Votre article n'a pas été supprimé";
-    // header('Location: ./dashboard-admin.php');
+    header('Location: ./article.php');
     exit();
 }
