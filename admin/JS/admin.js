@@ -71,35 +71,35 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-// btnConfirmed.addEventListener('click', function () {
-//     // Effectuer la suppression en envoyant la demande à l'URL de suppression
+btnConfirmed.addEventListener('click', function () {
+    // Effectuer la suppression en envoyant la demande à l'URL de suppression
 
-//     // Créer une nouvelle modal pour afficher le message de confirmation de suppression réussie
-//     let modalSuccess = document.createElement('div');
-//     modalSuccess.classList.add('block-modal');
-//     body.append(modalSuccess);
+    // Créer une nouvelle modal pour afficher le message de confirmation de suppression réussie
+    let modalSuccess = document.createElement('div');
+    modalSuccess.classList.add('block-modal');
+    body.append(modalSuccess);
 
-//     const boxSuccess = document.createElement("div");
-//     boxSuccess.setAttribute("id", "box-success-delete-book");
-//     boxSuccess.classList.add("active-box-delete-book");
-//     modalSuccess.append(boxSuccess);
+    const boxSuccess = document.createElement("div");
+    boxSuccess.setAttribute("id", "box-success-delete-book");
+    boxSuccess.classList.add("active-box-delete-book");
+    modalSuccess.append(boxSuccess);
 
-//     //p static
-//     const successMsg = document.createElement("p");
-//     successMsg.setAttribute("id", "txt-box-success-delete-category");
-//     boxSuccess.appendChild(successMsg);
-//     successMsg.innerHTML = `La suppression de ${dataTitle} a été effectuée avec succès.`;
+    //p static
+    const successMsg = document.createElement("p");
+    successMsg.setAttribute("id", "txt-box-success-delete-category");
+    boxSuccess.appendChild(successMsg);
+    successMsg.innerHTML = `La suppression de ${dataTitle} a été effectuée avec succès.`;
 
-//     //bouton fermer modal
-//     const btnClose = document.createElement("a");
-//     btnClose.setAttribute("id", "btn-close-success-modal");
-//     boxSuccess.appendChild(btnClose);
-//     btnClose.innerHTML = "Fermer";
+    //bouton fermer modal
+    const btnClose = document.createElement("a");
+    btnClose.setAttribute("id", "btn-close-success-modal");
+    boxSuccess.appendChild(btnClose);
+    btnClose.innerHTML = "Fermer";
 
-//     btnClose.addEventListener('click', function () {
-//         modalSuccess.remove();
-//         history.back();
-//     });
-// });
+    btnClose.addEventListener('click', function () {
+        modalSuccess.remove();
+        history.back();
+    });
+});
 
 
