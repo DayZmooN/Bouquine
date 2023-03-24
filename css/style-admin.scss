@@ -1184,6 +1184,7 @@ a {
     overflow: scroll;
 
     ul#oddcolors{
+        list-style: none;
         li.oddcolors{
             list-style: none;
             &:nth-child(odd) {

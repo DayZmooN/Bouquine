@@ -31,10 +31,12 @@ if (isset($_POST['cancelled'])) {
 <section class="userLoan">
 
     <div id="UserInfo">
-        <?php foreach ($rent as $loan) { ?>
-            <h2>Liste des emprunts de l'utilisateur : <?= $loan['username'] ?></h2>
+        <h2>Liste des emprunts de l'utilisateur :</h2>
+        
     </div>
+    
 <ul id="oddcolors">
+    <?php foreach ($rent as $loan) { ?>  
     <li class="oddcolors">
       <div id="rentedBook">
         

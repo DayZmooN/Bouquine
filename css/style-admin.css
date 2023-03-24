@@ -917,6 +917,9 @@ a {
   border-radius: 1rem;
   overflow: scroll;
 }
+.corp .userLoan ul#oddcolors {
+  list-style: none;
+}
 .corp .userLoan ul#oddcolors li.oddcolors {
   list-style: none;
 }
