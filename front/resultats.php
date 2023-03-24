@@ -1,6 +1,9 @@
 <?php
 require_once './connect.php';
 require_once './header-front.php';
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 
 // On récupère les données encodées en JSON depuis la requête POST
 $datas = json_decode(file_get_contents('php://input'), true);
@@ -11,6 +14,7 @@ $query = $db->prepare('SELECT DISTINCT  `book`.`id_book`, `book`.`ISBN`, `book`.
 $query->bindValue(':genre', "%$genre_filter%", PDO::PARAM_STR);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
+echo json_encode($result);
 ?>
 
 <section id="catalogue">
@@ -44,8 +48,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </section>
 
-
-</body>
 <script src="../js/ajax.js"></script>
+</body>
+
 
 </html>
