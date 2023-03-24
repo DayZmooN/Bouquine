@@ -5,8 +5,6 @@ if (!isset($_SESSION["admin"])) {
     header("location: ./connexion-admin.php");
     exit;
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +21,6 @@ if (!isset($_SESSION["admin"])) {
 </head>
 
 <body>
-
     <aside id="side-bar">
         <div id="logo">
             <img src="../image/logoAdmin.png" alt="logo du site bouquine">
@@ -53,11 +50,5 @@ if (!isset($_SESSION["admin"])) {
         </header>
 
         <main class="multitaches">
-
-
-
-
-
-
 
             <script src="./js/admin.js"></script>

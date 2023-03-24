@@ -58,7 +58,7 @@ a {
 #side-bar {
     max-width: 1600px;
     width: 20%;
-    height: 100vw;
+    height: 100%;
     position: fixed;
     background-color: #858585;
 
@@ -121,14 +121,14 @@ a {
 /*.....header + icones.....*/
 .corp {
     width: 80%;
-    height: 100vw;
+    height: 100%;
     float: right;
     background-color: $fondRose;
 
 
     &>#headerDashboard {
         width: 100%;
-        height: 130px;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -153,7 +153,6 @@ a {
 
     &>.multitaches {
         width: 100%;
-        height: 100vw;
         background-color: $fondRose;
 
 
@@ -226,12 +225,11 @@ a {
     /*....................CSS.ARTICLES....................*/
 
     .multitaches>#articleSearchAjout {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 50px;
-        margin: 0 auto;
+        justify-content: center;
         padding-top: 20px;
 
         &>form {
@@ -258,7 +256,7 @@ a {
             }
         }
 
-        &>a {
+        &>.btnAjout {
             width: 300px;
             margin-top: 50px;
             color: rgb(22, 20, 20);
@@ -1167,6 +1165,113 @@ a {
 
     }
 
+    /* --------------------- NE PAS TOUCHER ------------------------ */
+    /* ---------------------  Page USER  ------------------------ */
+    .btnRent {
+        color: #494fa1;
+    }
+
+    /* ---------------------  Page remPRUNT  ------------------------ */
+    .userLoan {
+        width: 80%;
+        height: 35rem;
+        margin: 5rem 10rem;
+        background-color: rgba(81, 87, 172, 0.432);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+        overflow: scroll;
+
+        ul#oddcolors {
+            list-style: none;
+
+            li.oddcolors {
+                list-style: none;
+
+                &:nth-child(odd) {
+                    background-color: rgba(255, 255, 255, 0.274);
+                    border-radius: 0.5rem;
+                }
+
+                &:nth-child(even) {
+                    background-color: rgba(81, 87, 172, 0.432);
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+
+    #rentedBook {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 55rem;
+        display: flex;
+        border: 2px solid rgba(0, 0, 0, 0.507);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 0.5rem;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+        padding: 0.5rem 0.5rem;
+    }
+
+    #UserInfo {
+        height: 2rem;
+        width: fit-content;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #bookDits {
+        flex-grow: 4;
+    }
+
+
+    .inputRent {
+        background: none;
+        border: 2px solid rgba(0, 0, 0, 0.507);
+        color: black;
+        font: inherit;
+        line-height: 1;
+        padding: 0.5rem 1rem;
+        border-radius: 7.5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
+    }
+
+    .inputRent:hover {
+        background-color: rgba(81, 87, 172, 0.432);
+        border: 2px solid rgba(255, 255, 255, 0.507);
+        color: white;
+    }
+
+
+    ::-webkit-scrollbar {
+        opacity: 0;
+    }
+
+    ::-webkit-scrollbar-track {
+        opacity: 0;
+
+    }
+
+    ::-webkit-scrollbar-thumb {
+        opacity: 0;
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        opacity: 0;
+    }
+
+    ::-webkit-scrollbar-corner {
+        opacity: 0;
+    }
+
 
 
 
@@ -1174,7 +1279,7 @@ a {
 
 }
 
-// crochet de corp
+// crochet de .corp
 
 
 
@@ -1427,7 +1532,7 @@ a {
                 /*page article*/
 
                 &>#articleSearchAjout {
-                    width: 85%;
+                    width: 100%;
 
 
 
@@ -1776,6 +1881,648 @@ a {
 
     }
 
+}
+
+@media screen and (max-width:900px) and (min-width:500px) {
+    body {
+
+        #side-bar {
+            max-width: 900px;
+            width: 20%;
+            height: 100%;
+            background-color: #858585;
+
+            &>#menu-admin {
+                width: 100%;
+
+
+                &>nav {
+                    width: 100%;
+
+
+                    &>ul {
+                        width: 100%;
+
+                        &>li {
+                            width: 100%;
+                            height: 40px;
+
+                            &>img {
+                                display: none;
+                            }
+
+                            &>a {
+                                width: 100%;
+                                font-size: 0.8rem;
+                                font-family: 'QuattrocentoSans-Regular', sans-serif;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &>.corp {
+            width: 80%;
+            height: 100vw;
+
+            &>#headerDashboard {
+                width: 100%;
+                height: 130px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: white;
+
+
+                &>.notif {
+                    width: 32px;
+                    height: 32px;
+                    margin: 50px 10px;
+                }
+
+                &>.notif:hover {
+                    cursor: pointer;
+                }
+
+                &>p {
+                    margin-top: 55px;
+                }
+
+            }
+
+            &>.multitaches {
+                width: 100%;
+
+                &>.multiTitre {
+
+                    font-size: 1.4rem;
+                }
+
+                /*tableau de bord*/
+
+                &>#compteurEtGraphique {
+                    display: none;
+                }
+
+                &>.dernierAjout {
+                    width: 300px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+
+                    &>h3 {
+                        width: 300px;
+                        text-align: center;
+                        padding-left: 0;
+                        font-size: 0.9rem;
+                        justify-content: center;
+
+
+                    }
+
+                    &>.dernierAjoutMQ {
+                        width: 300px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        text-align: center;
+                        font-size: 0.9rem;
+
+                    }
+
+                    &>#bouton {
+                        width: 300px;
+                        text-align: center;
+                    }
+
+                }
+
+                /*page article*/
+
+                &>#articleSearchAjout {
+                    width: 100%;
+
+                    &>form {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 50px;
+                        margin-left: 10px;
+
+                        &>.recherche {
+                            padding-left: 10px;
+                            border: 0;
+                            border-radius: 100px;
+                            width: 200px;
+                            height: 50px;
+                            font-size: 0.9;
+
+                            &>placeholder {
+                                font-size: 0.9;
+                            }
+                        }
+                    }
+
+                    &>.btnAjout {
+                        width: 100px;
+                        height: 100px;
+                        margin-top: 50px;
+                        margin-right: 40px;
+                        color: rgb(22, 20, 20);
+                        font-size: 1rem;
+                        border: 1px solid white;
+                        border-radius: 100px;
+                        background-color: $remplissage;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+
+                    }
+                }
+
+                &>.articleList {
+                    width: 300px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+                    text-align: center;
+
+                    &>h3 {
+                        width: 300px;
+                        padding-left: 0;
+                        text-align: center;
+                        font-size: 0.9rem;
+
+                    }
+
+                    &>.dernierAjoutMQ {
+                        width: 300px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        font-size: 0.9rem;
+                    }
+
+                    &>#bouton {
+                        width: 300px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        font-size: 0.9rem;
+
+
+                    }
+
+                }
+
+                /*formulaire ajout de livre*/
+
+                &>#formulaireAjout {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
+
+                    &>#formGauche {
+                        width: 100%;
+
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*formulaire modification livre*/
+
+                &>#formulaireModif {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
+
+                    &>#formGauche {
+                        width: 100%;
+
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*page des categorie*/
+
+                &>#ajoutCategorie {
+                    width: 300px;
+
+                    margin: 25px auto;
+
+
+
+
+                    &>.ajout {
+                        width: 300px;
+                        height: 250px;
+
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+                        flex-wrap: wrap;
+
+                        &>.newCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+                        &>.slugCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+
+                        &>.subCat {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                /*edit categorie*/
+                &>.titleEditCategory {
+                    width: 100%;
+                    text-align: center;
+
+                }
+
+                &>#editCategorie {
+                    width: 300px;
+
+                    margin: 25px auto;
+
+                    &>.edit {
+                        width: 300px;
+                        height: 250px;
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+
+                        &>.editCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+                        &>.editSlugCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+                        }
+
+                        &>.subEditCat {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                /*page des genres*/
+
+                >#ajoutGenre {
+                    width: 300px;
+
+                    margin: 25px auto;
+
+
+
+
+                    &>.ajout {
+                        width: 300px;
+                        height: 250px;
+
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+                        flex-wrap: wrap;
+
+                        &>.newGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+                        &>.slugGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+
+                        &>.subGenre {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                /*edit genre*/
+
+                &>.titleEditCategory {
+                    width: 100%;
+                    text-align: center;
+
+                }
+
+
+
+            }
+        }
+
+    }
 }
 
 //dimitri modal a ne pas delete, Style pour la modal de confirmation de suppression réussie 

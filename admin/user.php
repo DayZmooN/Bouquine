@@ -13,7 +13,6 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
     <input class="recherche" type="search" name="recherche" placeholder="rechercher user">
     <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
   </form>
-
 </div>
 
 <table id="tableUser">
@@ -25,14 +24,10 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
       <th>mail</th>
       <th>phone</th>
       <th>birthday</th>
-      <th>created at</th>
-      <th>statut</th>
       <th>action</th>
-
     </tr>
   </thead>
   <tbody>
-
     <?php
     foreach ($resultUser as $user) {
     ?>
@@ -41,11 +36,12 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
         <td><?= $user['username'] ?></td>
         <td><?= $user['lastname'] ?></td>
         <td><?= $user['mail'] ?></td>
-        <td><?= $user['password'] ?></td>
         <td><?= $user['phone'] ?></td>
         <td><?= $user['birthdate'] ?></td>
         <td>en ligne</td>
-        <td><a class="btnRed" data-idbook="<?= $user['id_user'] ?>" data-title="<?= $user['username'] ?>" style="color:red">supprimer</a></td>
+        <td><a class="btnRed" data-idbook="<?= $user['id_user'] ?>" data-title="<?= $user['username'] ?>" style="color:red">supprimer</a>
+          <a href="./rent.php?id=<?= $user['id_user'] ?>" class="btnRent">Emprunt</a>
+        </td>
       </tr>
     <?php } ?>
   </tbody>
