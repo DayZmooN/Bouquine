@@ -13,11 +13,11 @@ require_once './connect.php'
     <!-- HEADER -->
     <header id="head">
         <nav class="header-nav">
-            <div id="menu-icon">
+            <!-- <div id="menu-icon">
                 <a href="#"><img src="../image/burger.png" alt="menu burger"></a>
 
             </div>
-            <div id="close-menu">X</div>
+            <div id="close-menu">X</div> -->
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
@@ -48,24 +48,24 @@ require_once './connect.php'
                 </li>
             </ul>
 
-
+             <div class="header-btn">              
             <?php if (isset($_SESSION['user'])) { ?>
                 <a href="./user-dashboard.php" class="img-user">
                     <img class="img-user1" src="../image/user.png" alt="image user">
                     <span class="nom"><?php echo $_SESSION['user']['username']; ?></span></a>
                
                 <form id="deconnect" action="../model/deconnexion.php" method="post">
-                    <button id="user-deconnect" type="submit" name="logout">Déconnexion</button>
+                    <button id="user-deconnect" type="submit" name="logout"><img id="deconnect1" src="../image/deconnexion-.png" alt="déconnexion"></button>
                 </form>
             <?php }
             if (!isset($_SESSION['user'])) { ?>
 
 
-                <a href="./connexion.php">
+                <a href="./connexion.php" class="btn-user">
                     <button id="user-connect" type="submit">Connexion</button>
                 </a>
             <?php } ?>
-
+            </div> 
         </nav>
 
     </header>

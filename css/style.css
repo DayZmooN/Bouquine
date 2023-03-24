@@ -44,13 +44,8 @@ header#head {
     margin: 0 auto;
     height: 120px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
-}
-
-.logo {
-    height: 90px;
 }
 
 .logo img {
@@ -67,69 +62,74 @@ nav.header-nav {
     justify-content: center;
 }
 
-nav ul {
+.header-nav ul {
     display: flex;
     color: #000;
 }
 
 ul.menu {
-
     width: 670px;
     max-width: 1200px;
-}
+   }
 
-nav li {
+.header-nav li {
     position: relative;
     margin: auto;
+
+    /* padding: 10px; */
 }
 
-nav a {
+.header-nav  {
     display: block;
-    padding: 10px;
+    /* padding: 10px; */
     color: black;
     font-size: 1rem;
     font-family: 'Quattrocento-Regular', sans-serif;
 }
 
-nav ul ul {
+.header-nav ul ul {
     height: 300px;
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
         rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-nav ul li a {
-    display: block;
+.menu ul li a {
+   
+    display:block;
     font-size: 1rem;
     transition: all 0.8s ease;
-
+   
 }
 
-nav ul li a:hover {
+/* .header-nav ul li a:hover {
+    
     color: black;
     background-color: #6b74eb;
     border-radius: 5px;
-}
+} */
 
-nav ul li:hover>ul {
+.header-nav ul li:hover>ul {
     display: block;
 
 }
 
-nav ul ul li {
+.header-nav ul ul li {
     position: relative;
 }
 
-nav ul ul a {
+.header-nav ul ul a {
     padding: 10px 15px;
     background-color: white;
 }
+li.search-box{
+    width:350px ;
 
-nav input[type="search"] {
+}
+.header-nav input[type="search"] {
     width: 300px;
     height: 35px;
     border: 1px solid white;
@@ -139,7 +139,7 @@ nav input[type="search"] {
     margin-left: 20px;
 }
 
-#menu-icon {
+/* #menu-icon {
     display: none;
     width: 30px;
     height: 30px;
@@ -154,8 +154,16 @@ nav input[type="search"] {
     width: 10px;
     height: 10px;
     display: none;
+} */
+.header-btn{
+   
+    height: 70px;
+    width: 150px; 
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
-
 #form-header {
     width: 400px;
     height: 100px;
@@ -165,23 +173,26 @@ nav input[type="search"] {
     padding: 0;
 }
 
-#deconnect {
-    width: 140px;
-    height: 40px;
+form#deconnect {
+    width: 50px;
+    height: 50px;
     padding: 0;
-    margin-top: 10px;
+    margin-left: 30px;
+   
 }
 
 a.img-user {
-    width: 70px;
-    margin: auto;
+    width: 50px;
+    margin-left: 50px;
     cursor: pointer;
+    /* display: none; */
 }
 
 img.img-user1 {
     height: 60px;
     margin: 0 auto;
     padding: 0;
+    /* display: none; */
 }
 
 button#search-button1 {
@@ -198,7 +209,11 @@ button#search-button1 {
     color: white;
     cursor: pointer;
 }
-
+.btn-user a {
+    width: 150px;
+    height: 35px;
+    padding: 0;
+}
 button#user-connect {
     width: 120px;
     height: 35px;
@@ -208,35 +223,38 @@ button#user-connect {
     background-color: #5a62be;
     padding: 0 10px;
     color: white;
-    margin: 0 auto;
     cursor: pointer;
     border-radius: 10px;
+    margin-top: 17px;
     margin-left: 60px;
+    border:none;
 }
+button#user-connect:hover {
+    opacity: 60%;
+} 
 
 input::placeholder {
     padding-left: 10px;
     font-style: italic;
 }
-
+img#deconnect1{
+    width: 60px;
+    height: 60px;
+    border: none;
+    /* margin: 0 auto; */
+    /* padding: 0; */
+}
 button#user-deconnect {
-    width: 120px;
-    height: 35px;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #5a62be;
-    color: white;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     border-radius: 10px;
     border: none;
-    padding: 0 10px;
+   } 
 
-}
-
-button#user-deconnect:hover {
+ button#user-deconnect:hover {
     opacity: 60%;
-}
+} 
 
 span.nom {
     width: 30px;
@@ -1107,8 +1125,7 @@ input#email {
     font-weight: 500;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
-    /* margin-top: 30px; */
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     text-shadow: 2px 2px black;
 }
@@ -1166,10 +1183,14 @@ input#email {
 .horaire img {
     width: 80px;
 }
-
-.mail p a {
+.mail{
+    min-width: 200px;
     min-width: 200px;
     text-align: center;
+   
+}
+.mail p a {
+   
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
     color: white;
@@ -1177,7 +1198,7 @@ input#email {
 
 .mail img {
     width: 80px;
-    margin: 50px;
+    margin: 40px;
 }
 
 a {
@@ -1433,7 +1454,7 @@ p#copy {
 
 /* ------------------RESPONSIVE FOOTER----------------------- */
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     #end {
         text-align: center;
     }
@@ -1452,7 +1473,7 @@ p#copy {
         width: 25px;
         height: 25px;
     }
-} */
+}
 
 /* *******************PAGE RESUME LIVRE *********************/
 
@@ -2474,38 +2495,39 @@ body {
 
 #user-nav {
     width: 350px;
-    /* height: 450px; */
+    height: 400px;
     background-color: #3C4048;
     position: absolute;
     top: 120px;
     left: 0;
 }
-
 #user-nav ul {
     width: 350px;
-    /* height: 400px; */
+    height: 400px;
     display: block;
 }
-
+#user-nav li{
+    width: 350px;
+    height: 100px;
+    text-align: center;
+     padding-top: 30px;
+ 
+}
 #user-nav li a {
     width: 350px;
     height: 100px;
-    padding-top: 30px;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     color: white;
-    text-align: center;
     transition: all 0.8s ease;
-
 }
 
-#user-nav li a:hover {
+#user-nav li:hover {
     background-color: #4950a1;
 }
 
 .info1 {
     width: 700px;
-
     background-color: #3C4048;
     border: 1px solid white;
     border-radius: 20px;
@@ -2559,8 +2581,7 @@ input[type="tel"] {
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: white;
-    /* margin-top: 10px; */
-}
+    }
 
 input[type="email"]#email1 {
     width: 470px;
