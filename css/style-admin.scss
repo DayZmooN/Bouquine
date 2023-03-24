@@ -1870,7 +1870,7 @@ a {
 
 @media screen and (max-width:900px) and (min-width:500px){
     body{
-
+        
         #side-bar {
             max-width: 900px;
             width: 20%;
@@ -1911,7 +1911,7 @@ a {
 
         &>.corp {
             width: 80%;
-            height: 100vw;
+            height: 100vh;
 
             &>#headerDashboard {
                 width: 100%;
@@ -2428,6 +2428,124 @@ a {
                         }
                     }
                 }
+                /*page des genres*/
+
+                >#ajoutGenre {
+                    width: 300px;
+                    
+                    margin: 25px auto;
+            
+            
+            
+            
+                    &>.ajout {
+                        width: 300px;
+                        height: 250px;
+                        
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+                        flex-wrap: wrap;
+            
+                        &>.newGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+            
+                        }
+            
+                        &>.slugGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+            
+                        }
+            
+            
+                        &>.subGenre {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                /*edit genre*/
+
+                &>.titleEditGenre{
+                    width: 100%;
+                    text-align: center;
+                    
+                }
+
+                >#editCategorie {
+                    width: 300px;
+                   
+                    margin: 25px auto;
+            
+                    &>.edit {
+                        width: 300px;
+                        height: 250px;
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction:column ;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+            
+                        &>.editGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+            
+                        }
+            
+                        &>.editSlugGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+                        }
+            
+                        &>.subEditGenre {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+
+
             }
         }
 

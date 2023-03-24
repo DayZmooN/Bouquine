@@ -1420,7 +1420,7 @@ a {
   }
   body > .corp {
     width: 80%;
-    height: 100vw;
+    height: 100vh;
   }
   body > .corp > #headerDashboard {
     width: 100%;
@@ -1449,6 +1449,8 @@ a {
     /*formulaire modification livre*/
     /*page des categorie*/
     /*edit categorie*/
+    /*page des genres*/
+    /*edit genre*/
   }
   body > .corp > .multitaches > .multiTitre {
     font-size: 1.4rem;
@@ -1807,6 +1809,97 @@ a {
     font-size: 0.9rem;
   }
   body > .corp > .multitaches > #editCategorie > .edit > .subEditCat {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #696969;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches > #ajoutGenre {
+    width: 300px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout {
+    width: 300px;
+    height: 250px;
+    background-color: #FFDAA4;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-wrap: wrap;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout > .newGenre {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout > .slugGenre {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout > .subGenre {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #696969;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches > .titleEditGenre {
+    width: 100%;
+    text-align: center;
+  }
+  body > .corp > .multitaches > #editCategorie {
+    width: 300px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit {
+    width: 300px;
+    height: 250px;
+    background-color: #FFDAA4;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit > .editGenre {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit > .editSlugGenre {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit > .subEditGenre {
     width: 150px;
     height: 50px;
     text-transform: uppercase;
