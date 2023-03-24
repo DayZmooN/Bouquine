@@ -16,7 +16,6 @@ try {
         $reqdel = $db->prepare("DELETE FROM `category` WHERE `id_category` = :id");
         $reqdel->bindParam('id', $id, PDO::PARAM_INT);
         $reqdel->execute();
-        $_SESSION["success"] = "votre category à bien été supprimé";
 
         // Rediriger l'utilisateur vers la page des articles
         header('location: ./category.php');
