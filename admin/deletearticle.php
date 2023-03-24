@@ -1,7 +1,16 @@
 <?php
-try {
-    require_once './auth.php';
+require_once './auth.php';
+include './header-admin.php';
+session_start();
 
+
+try {
+    $successMessage = "";
+    if (isset($_SESSION['success'])) {
+        $successMessage = $_SESSION['success'];
+        // Remove the success message from the session to prevent it from being displayed multiple times
+        unset($_SESSION['success']);
+    }
     if (isset($_GET['id'])) {
         // Récupérer l'ID de l'article à supprimer
         $id = $_GET['id'];
@@ -22,11 +31,11 @@ try {
         $query->execute();
 
         // Rediriger l'utilisateur vers la page des articles
-        header('Location: ./article.php');
+        header('Location: article.php');
         // Afficher la modal si la suppression a réussi
-        echo "<script>showSuccessModal();</script>";
+        $_SESSION["success"] = "Votre article a bien été suprimé";
+        exit();
     }
-    exit();
 } catch (PDOException $e) {
     echo $e->getMessage();
 

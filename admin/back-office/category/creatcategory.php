@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 try {
     //on se connecte a la bdd

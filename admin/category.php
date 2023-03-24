@@ -48,7 +48,18 @@ if (isset($_POST['submitAdd'])) {
         </div>
     <?php } ?>
 </div>
-
+<?php if (isset($_SESSION['success'])) : ?>
+    <div class="success">
+        <p style="font-size: 2rem; color:green;"><?= $_SESSION["success"] ?></p>
+    </div>
+    <?php unset($_SESSION["success"]); ?>
+<?php endif; ?>
+<?php if (isset($_SESSION['error'])) : ?>
+    <div class="error">
+        <p style="font-size: 2rem; color:red;"><?= $_SESSION["error"] ?></p>
+    </div>
+    <?php unset($_SESSION["error"]); ?>
+<?php endif; ?>
 
 
 

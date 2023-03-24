@@ -34,10 +34,24 @@ foreach ($result as $article) {
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
             <a class="btnRed" data-idbook="<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" style="color:red">Supprimer</a>
 
-            <a href="./coverupload.php?id=<?= $article['id_book'] ?>" style="color:blueviolet">Cover</a>
-            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>" style="color:aqua" >Genres</a>
+            <a href=" ./coverupload.php?id=<?= $article['id_book'] ?>" style="color:blueviolet">Cover</a>
+            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>" style="color:aqua">Genres</a>
 
         </div>
     </div>
 <?php } ?>
+<?php if (isset($_SESSION['success'])) : ?>
+    <div class="success">
+        <p style="font-size: 2rem; color:green;"><?= $_SESSION["success"] ?></p>
+    </div>
+    <?php unset($_SESSION["success"]); ?>
+<?php endif; ?>
+<?php if (isset($_SESSION['error'])) : ?>
+    <div class="error">
+        <p style="font-size: 2rem; color:red;"><?= $_SESSION["error"] ?></p>
+    </div>
+    <?php unset($_SESSION["error"]); ?>
+<?php endif; ?>
+
+
 </body>

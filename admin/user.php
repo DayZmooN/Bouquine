@@ -50,3 +50,15 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
     <?php } ?>
   </tbody>
 </table>
+<?php if (isset($_SESSION['success'])) : ?>
+  <div class="success">
+    <p style="color:green;"><?= $_SESSION["success"] ?></p>
+  </div>
+  <?php unset($_SESSION["success"]); ?>
+<?php endif; ?>
+<?php if (isset($_SESSION['error'])) : ?>
+  <div class="error">
+    <p style="color:red;"><?= $_SESSION["error"] ?></p>
+  </div>
+  <?php unset($_SESSION["error"]); ?>
+<?php endif; ?>

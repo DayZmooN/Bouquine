@@ -54,23 +54,10 @@ if (!isset($_SESSION["admin"])) {
         </header>
 
         <main class="multitaches">
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="modal-message"></p>
-                </div>
-            </div>
-            <!-- avant la fin du body de votre fichier PHP -->
 
-            <body>
-                <!-- ... -->
-                <!-- la modal -->
-                <div id="success-modal" class="modal">
-                    <div class="modal-content">
-                        <p>Suppression réussie!</p>
-                    </div>
-                </div>
-            </body>
+
+
+
 
 
 
