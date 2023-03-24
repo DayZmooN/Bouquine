@@ -12,13 +12,13 @@ try {
     }
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
-        $reqdel = $db->prepare("DELETE FROM `useer` WHERE `id_user` = :id");
+        $reqdel = $db->prepare("DELETE FROM `user` WHERE `id_user` = :id");
         $reqdel->bindParam('id', $id, PDO::PARAM_INT);
         $reqdel->execute();
-        $_SESSION["success"] = "Votre user à bien été supprimé";
+
         header('Location: ./user.php');
         exit();
-        $_SESSION["success"] = "Votre CATÉGORIES a bien été suprimé";
+        $_SESSION["success"] = " user a bien été suprimé";
         exit();
     }
 } catch (PDOException $e) {
