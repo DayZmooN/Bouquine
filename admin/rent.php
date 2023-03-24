@@ -28,24 +28,21 @@ if (isset($_POST['cancelled'])) {
     $statusUpdate->execute();
 }
 ?>
-
-    <thead>
+<section class="userLoan">
+    <div>
         <?php foreach ($rent as $loan) { ?>
-            <tr>
-                <h2>Liste des emprunts de l'utilisateur : <?= $loan['username'] ?></h2>
-            </tr>
-    </thead>
-    <br><br>
-    <tbody>
-        <tr><?= $loan['id_loan'] ?></tr><br>
-        <tr><?= $loan['title'] ?></tr><br>
+            <h2>Liste des emprunts de l'utilisateur : <?= $loan['username'] ?></h2>
+    </div>
+    <div>
+        <p><?= $loan['id_loan'] ?></p>
+        <p><?= $loan['title'] ?></p>
+    </div>
+    <div>
         <form class="rentForm" action="" method="post">
-            <form class="rentForm" action="" method="post">
-                <input type="hidden" name="id_loan" value="<?= $loan['id_loan'] ?>">
-                <input class="inputRent" type="submit" name="rented" value="Rented">
-                <input class="inputRent" type="submit" name="cancelled" value="Cancelled">
-            </form>
-            <br><br>
+            <input type="hidden" name="id_loan" value="<?= $loan['id_loan'] ?>">
+            <input class="inputRent" type="submit" name="rented" value="Rented">
+            <input class="inputRent" type="submit" name="cancelled" value="Cancelled">
         </form>
-    <?php } ?>
-    </tbody>
+    </div>
+<?php } ?>
+</section>
