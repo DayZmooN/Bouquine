@@ -36,7 +36,7 @@ a {
 #side-bar {
   max-width: 1600px;
   width: 20%;
-  height: 100vw;
+  height: 100%;
   position: fixed;
   background-color: #858585;
 }
@@ -78,7 +78,6 @@ a {
 /*.....header + icones.....*/
 .corp {
   width: 80%;
-  height: 100vw;
   float: right;
   background-color: #c8c8c8;
   /*....................FIN.CSS.HEADER-ADMIN.DASHBOARD....................*/
@@ -123,8 +122,7 @@ a {
   margin-top: 55px;
 }
 .corp > .multitaches {
-  width: 100%;
-  height: 100vw;
+  width: 100vw;
   background-color: #c8c8c8;
 }
 .corp > .multitaches > .multiTitre {
@@ -873,7 +871,6 @@ a {
 }
 .corp .multitaches > .newsLetter {
   width: 100%;
-  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -906,7 +903,6 @@ a {
 #sideVide {
   max-width: 500px;
   width: 25%;
-  height: 100vw;
   position: fixed;
   background-color: #858585;
 }
@@ -918,7 +914,6 @@ a {
 .bodyConnexion {
   max-width: 1300px;
   width: 75%;
-  height: 100 vw;
   float: right;
 }
 .bodyConnexion > .connexion {
@@ -1315,7 +1310,6 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: 9998;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -1353,4 +1347,98 @@ a {
 }
 .active-box-delete-book a#btn-confirmed-delete-book {
   background-color: #d9534f;
+}
+
+/* --------------------- NE PAS TOUCHER ------------------------ */
+/* ---------------------  Page USER  ------------------------ */
+.btnRent {
+  color: #494fa1;
+}
+
+/* ---------------------  Page EMPRUNT  ------------------------ */
+.userLoan {
+  width: 80%;
+  height: 35em;
+  margin: 5em 10em;
+  background-color: rgba(81, 87, 172, 0.432);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+  overflow: scroll;
+}
+
+#rentedBook {
+  background-color: rgba(255, 255, 255, 0.274);
+  width: 55em;
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.507);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 0.5em;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  margin: 0.5em 0.5em;
+  padding: 0.5em 0.5em;
+}
+
+#UserInfo {
+  height: 2em;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+}
+
+#bookDits {
+  flex-grow: 4;
+}
+
+.inputRent {
+  background: none;
+  border: 2px solid rgba(0, 0, 0, 0.507);
+  color: black;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 7.5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.inputRent:hover {
+  background-color: rgba(81, 87, 172, 0.432);
+  border: 2px solid rgba(255, 255, 255, 0.507);
+  color: white;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 7.5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-corner {
+  opacity: 0;
 }/*# sourceMappingURL=style-admin.css.map */

@@ -34,8 +34,6 @@ $fondUser : #FFE7D6;
     src: url(../fonts/LRTOksana.ttf);
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -46,25 +44,18 @@ a {
     text-decoration: none;
 }
 
-
-
-
-
-
-
 /*....................HEADER-ADMIN INCLUDE....................*/
 
 /*.....section logo + nav.....*/
 #side-bar {
     max-width: 1600px;
     width: 20%;
-    height: 100vw;
+    height: 100%;
     position: fixed;
     background-color: #858585;
 
     &>#logo>img {
         width: 100%;
-
     }
 
     &>#menu-admin {
@@ -90,7 +81,6 @@ a {
                     &>img {
                         width: 32px;
                         height: 32px;
-
                     }
 
                     &>a {
@@ -100,12 +90,7 @@ a {
                         font-family: 'QuattrocentoSans-Regular', sans-serif;
                         //background-color: #26F904;
                         text-align: center;
-
                     }
-
-
-
-
                 }
             }
         }
@@ -113,15 +98,11 @@ a {
 
 }
 
-
-
-
 /*.....fin.....*/
 
 /*.....header + icones.....*/
 .corp {
     width: 80%;
-    height: 100vw;
     float: right;
     background-color: $fondRose;
 
@@ -152,8 +133,8 @@ a {
     }
 
     &>.multitaches {
-        width: 100%;
-        height: 100vw;
+        width: 100vw;
+
         background-color: $fondRose;
 
 
@@ -1133,7 +1114,6 @@ a {
 
     .multitaches>.newsLetter {
         width: 100%;
-        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1176,20 +1156,11 @@ a {
 
 // crochet de corp
 
-
-
-
-
-
-
-
 /*....................CSS.CONNEXION....................*/
 
 #sideVide {
-
     max-width: 500px;
     width: 25%;
-    height: 100vw;
     position: fixed;
     background-color: #858585;
 
@@ -1197,16 +1168,12 @@ a {
         width: 100%;
         border-bottom: 1px solid black;
     }
-
 }
 
 .bodyConnexion {
     max-width: 1300px;
     width: 75%;
-    height: 100 vw;
     float: right;
-
-
 
     &>.connexion {
         width: 500px;
@@ -1229,7 +1196,6 @@ a {
             height: 50px;
             margin: 30px 100px;
 
-
             &>input {
                 width: 300px;
                 height: 50px;
@@ -1238,10 +1204,7 @@ a {
                 background-color: white;
                 padding-left: 10px;
                 margin-top: 20px;
-
             }
-
-
         }
 
         &>#connect {
@@ -1275,7 +1238,6 @@ a {
 
     //ecran superieur a 1260px
     body {
-
         background-color: $fondRose;
 
         #side-bar {
@@ -1293,17 +1255,11 @@ a {
 
                         &>li {
 
-
-
-
                             &>a {
-
                                 color: black;
                                 font-size: 1.3rem;
                                 font-family: 'QuattrocentoSans-Regular', sans-serif;
                             }
-
-
                         }
                     }
                 }
@@ -1320,10 +1276,6 @@ a {
 
                     font-size: 2rem;
                 }
-
-
-
-
             }
         }
 
@@ -1335,9 +1287,7 @@ a {
 
     //ecran allant de 900 a 1260 px
     body {
-
         background-color: $fondRose;
-
 
         #side-bar {
             max-width: 1200px;
@@ -1403,8 +1353,6 @@ a {
                         padding-left: 0;
                         font-size: 1rem;
                         justify-content: center;
-
-
                     }
 
                     &>.dernierAjoutMQ {
@@ -1414,23 +1362,18 @@ a {
                         justify-content: space-around;
                         text-align: center;
                         font-size: 1rem;
-
                     }
 
                     &>#bouton {
                         width: 420px;
                         text-align: center;
                     }
-
                 }
 
                 /*page article*/
 
                 &>#articleSearchAjout {
                     width: 85%;
-
-
-
                 }
 
                 &>.articleList {
@@ -1446,7 +1389,6 @@ a {
                         width: 420px;
                         padding-left: 0;
                         text-align: center;
-
                     }
 
                     &>.dernierAjoutMQ {
@@ -1462,10 +1404,7 @@ a {
                         display: flex;
                         flex-direction: row;
                         justify-content: space-evenly;
-
-
                     }
-
                 }
 
                 /*formulaire ajout de livre*/
@@ -1496,25 +1435,19 @@ a {
                                 display: flex;
                                 justify-content: center;
                                 margin-top: 25px;
-
                             }
 
                             &>.genreChoice {
                                 width: 100%;
                                 display: flex;
                                 justify-content: center;
-
                             }
 
                             &>.collectChoice {
                                 width: 100%;
                                 display: flex;
-                                justify-content: center;
-
-
+                                justify-content: center
                             }
-
-
                         }
                     }
 
@@ -1527,8 +1460,6 @@ a {
                             display: flex;
                             justify-content: center;
                             margin-top: 25px;
-
-
 
                             &>#id_category {
                                 width: 260px;
@@ -1543,7 +1474,6 @@ a {
 
                             &>.date {
                                 width: 240px;
-
                             }
                         }
 
@@ -1554,11 +1484,8 @@ a {
 
                             &>#image {
                                 width: 240px;
-
                             }
                         }
-
-
                     }
 
                     &>.formDroite {
@@ -1609,7 +1536,6 @@ a {
                             width: 100%;
 
                             &>.tripleInput {
-
                                 margin: 25px auto;
                             }
                         }
@@ -1636,11 +1562,7 @@ a {
                                 width: 100%;
                                 display: flex;
                                 justify-content: center;
-
-
                             }
-
-
                         }
                     }
 
@@ -1653,8 +1575,6 @@ a {
                             display: flex;
                             justify-content: center;
                             margin-top: 25px;
-
-
 
                             &>#id_category {
                                 width: 260px;
@@ -1683,8 +1603,6 @@ a {
 
                             }
                         }
-
-
                     }
 
                     &>.formDroite {
@@ -1750,9 +1668,7 @@ a {
 
 
                                     &>a {
-
                                         width: 50%;
-
                                         font-size: 0.8rem;
                                     }
                                 }
@@ -1768,7 +1684,6 @@ a {
 
                     &>textarea {
                         width: 50%;
-
                     }
                 }
             }
@@ -1785,7 +1700,6 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     z-index: 9998;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -1827,4 +1741,101 @@ a {
     a#btn-confirmed-delete-book {
         background-color: #d9534f;
     }
+}
+
+
+/* --------------------- NE PAS TOUCHER ------------------------ */
+/* ---------------------  Page USER  ------------------------ */
+.btnRent {
+    color: #494fa1;
+}
+/* ---------------------  Page EMPRUNT  ------------------------ */
+.userLoan {
+    width: 80%;
+    height: 35em;
+    margin: 5em 10em;
+    background-color: rgba(81, 87, 172, 0.432);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    overflow: scroll;
+}
+
+#rentedBook {
+    background-color: rgba(255, 255, 255, 0.274);
+    width: 55em;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 0.5em;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    margin: 0.5em 0.5em;
+    padding: 0.5em 0.5em;
+}
+
+#UserInfo {
+    height: 2em;
+    width: fit-content;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+}
+
+#bookDits {
+    flex-grow: 4;
+}
+
+
+.inputRent {
+    background: none;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    color: black;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 7.5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+.inputRent:hover {
+    background-color: rgba(81, 87, 172, 0.432);
+    border: 2px solid rgba(255, 255, 255, 0.507);
+    color: white;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 7.5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+  
+
+::-webkit-scrollbar {
+    opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0;
+
+}
+
+::-webkit-scrollbar-thumb {
+    opacity: 0;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+}
+
+::-webkit-scrollbar-corner{
+    opacity: 0;
 }
