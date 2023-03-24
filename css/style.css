@@ -269,81 +269,23 @@ span.nom {
 
 @media screen and (max-width: 400px) {
 
-    .logo {
-        display: none;
-    }
-
-    #menu-icon {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    #close-menu {
-        display: block;
-    }
-
-    #close-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    #menu-icon div {
-        width: 25px;
-        height: 3px;
-        background-color: #000;
-        margin: 5px;
-    }
-
+   
+    
     .menu ul {
         display: none;
     }
 
-    #menu-icon:hover+.menu,
-    .menu:hover ul {
-        display: block;
-    }
+    
 }
 
 /* Media query pour les écrans avec une largeur de 900px ou moins */
 @media screen and (max-width: 900px) {
-
-    #menu-icon {
-        display: block;
-    }
-
-    .menu {
+    
+        .menu ul {
         display: none;
     }
 
-    #close-menu {
-        display: block;
-    }
-
-    #close-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    #menu-icon div {
-        width: 25px;
-        height: 3px;
-        background-color: #000;
-        margin: 5px;
-    }
-
-    .menu ul {
-        display: none;
-    }
-
-    #menu-icon:hover+.menu,
-    .menu:hover ul {
-        display: block;
-    }
+    
 }
 
 
@@ -395,14 +337,6 @@ h1 {
     text-align: center;
 }
 
-/* *************RESPONSIVE PARTIE PARALLAX**************** */
-
-@media only screen and (max-width: 400px),
-(min-width: 900px) {
-    .parallax-section .parallax1>img {
-        display: none;
-    }
-}
 
 /* ***************SECTION LES PLUS POPULAIRES************** */
 
@@ -530,28 +464,27 @@ h1 {
 
 #new {
     width: 100%;
-    height: 400px;
     /* background-color: #62c465e4; */
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #nouveautes {
     width: 100%;
     height: 40px;
+    margin-bottom: 20px;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: black;
     font-weight: bold;
     text-align: center;
 }
 
 .slider {
-    height: 420px;
     position: relative;
     overflow: hidden;
     max-width: 800px;
-    aspect-ratio: 16/9;
+    aspect-ratio: 21/9;
     margin: auto;
 }
 
@@ -1328,7 +1261,7 @@ section#lecteur {
     margin-top: 50px;
     background: linear-gradient(90deg, #ff9966, #ff5e62);
     z-index: 10;
-    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 20px 2rem rgba(0, 0, 0, 0.15);
     border-radius: 100%;
     position: absolute;
     left: -10%;
@@ -2026,12 +1959,12 @@ ol.consignes li {
 @media screen and (max-width: 400px) {
 
     .consignes {
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 10px;
+        line-height: 1;
     }
 
     .infos {
-        font-size: 20px;
+        font-size: 12px;
         line-height: 1.2;
     }
 }
