@@ -34,15 +34,23 @@ $fondUser : #FFE7D6;
     src: url(../fonts/LRTOksana.ttf);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
+
 }
 
 a {
     text-decoration: none;
 }
+
+
+
+
+
+
 
 /*....................HEADER-ADMIN INCLUDE....................*/
 
@@ -56,6 +64,7 @@ a {
 
     &>#logo>img {
         width: 100%;
+
     }
 
     &>#menu-admin {
@@ -81,6 +90,7 @@ a {
                     &>img {
                         width: 32px;
                         height: 32px;
+
                     }
 
                     &>a {
@@ -90,13 +100,21 @@ a {
                         font-family: 'QuattrocentoSans-Regular', sans-serif;
                         //background-color: #26F904;
                         text-align: center;
+
                     }
+
+
+
+
                 }
             }
         }
     }
 
 }
+
+
+
 
 /*.....fin.....*/
 
@@ -510,7 +528,7 @@ a {
 
     /*....................CSS.FORMULAIRE.MODIF.LIVRE....................*/
 
-    .multitaches>#formulairremodif {
+    .multitaches>#formulaireModif {
 
         width: 90%;
         margin: 0 auto;
@@ -746,7 +764,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
 
             }
 
@@ -756,7 +774,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
 
             }
 
@@ -767,7 +785,7 @@ a {
                 text-transform: uppercase;
                 border: 0;
                 border-radius: 10px;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
                 color: white;
                 background-color: $grisBtn;
                 cursor: pointer;
@@ -840,7 +858,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
 
             }
 
@@ -850,7 +868,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
             }
 
             &>.subEditCat {
@@ -859,7 +877,7 @@ a {
                 text-transform: uppercase;
                 border: 0;
                 border-radius: 10px;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
                 color: white;
                 background-color: $grisBtn;
                 cursor: pointer;
@@ -900,7 +918,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
 
             }
 
@@ -910,7 +928,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
 
             }
 
@@ -921,7 +939,7 @@ a {
                 text-transform: uppercase;
                 border: 0;
                 border-radius: 10px;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
                 color: white;
                 background-color: $grisBtn;
                 cursor: pointer;
@@ -990,7 +1008,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
 
             }
 
@@ -1000,7 +1018,7 @@ a {
                 border: 0;
                 border-radius: 25px;
                 text-align: center;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
             }
 
             &>.subEditGenre {
@@ -1009,7 +1027,7 @@ a {
                 text-transform: uppercase;
                 border: 0;
                 border-radius: 10px;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
                 color: white;
                 background-color: $grisBtn;
                 cursor: pointer;
@@ -1062,7 +1080,7 @@ a {
         &>thead {
             background-color: $grisBtn;
             height: 50px;
-            font-size: 1.1rrem;
+            font-size: 1.1rem;
         }
 
         &>tbody {
@@ -1070,7 +1088,7 @@ a {
             &>.contenuUser {
                 background-color: $fondUser;
                 height: 50px;
-                font-size: 1.1rrem;
+                font-size: 1.1rem;
             }
 
             &>.tdButton {
@@ -1078,7 +1096,7 @@ a {
 
                 &>td {
                     height: 50px;
-                    font-size: 1.1rrem;
+                    font-size: 1.1rem;
 
                     &>button {
                         width: 100%;
@@ -1095,7 +1113,7 @@ a {
                             height: 50px;
                             line-height: 50px;
                             color: black;
-                            font-size: 1.1rrem;
+                            font-size: 1.1rem;
                         }
                     }
                 }
@@ -1113,6 +1131,7 @@ a {
 
     .multitaches>.newsLetter {
         width: 100%;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1166,7 +1185,11 @@ a {
         overflow: scroll;
 
         ul#oddcolors {
+            list-style: none;
+
             li.oddcolors {
+                list-style: none;
+
                 &:nth-child(odd) {
                     background-color: rgba(255, 255, 255, 0.274);
                     border-radius: 0.5rem;
@@ -1207,1696 +1230,1297 @@ a {
         flex-grow: 4;
     }
 
-    // crochet de corp
 
-
-
-
-
-
-
-
-    /*....................CSS.CONNEXION....................*/
-
-    #sideVide {
-        max-width: 500px;
-        width: 25%;
-        position: fixed;
-        background-color: #858585;
-
-        &>#logo>img {
-            width: 100%;
-            border-bottom: 1px solid black;
-        }
+    .inputRent {
+        background: none;
+        border: 2px solid rgba(0, 0, 0, 0.507);
+        color: black;
+        font: inherit;
+        line-height: 1;
+        padding: 0.5rem 1rem;
+        border-radius: 7.5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
     }
 
-    .bodyConnexion {
-        max-width: 1300px;
-        width: 75%;
-        float: right;
+    .inputRent:hover {
+        background-color: rgba(81, 87, 172, 0.432);
+        border: 2px solid rgba(255, 255, 255, 0.507);
+        color: white;
+    }
 
-        &>.connexion {
-            width: 500px;
-            height: 350px;
-            border-radius: 15px;
-            margin-top: 200px;
-            margin-left: 350px;
-            background-color: $remplissage ;
 
-            &>.Titre {
-                width: 100%;
-                padding-top: 20px;
-                text-transform: uppercase;
-                text-align: center;
-            }
+    ::-webkit-scrollbar {
+        opacity: 0;
+    }
 
-            &>#mail,
-            #pass {
-                width: 300px;
-                height: 50px;
-                margin: 30px 100px;
-
-                &>input {
-                    width: 300px;
-                    height: 50px;
-                    border-radius: 50px;
-                    border: 0;
-                    background-color: white;
-                    padding-left: 10px;
-                    margin-top: 20px;
-                }
-            }
-
-            &>#connect {
-                width: 100px;
-
-                &>button {
-                    width: 100px;
-                    height: 25px;
-                    margin: 50px 200px;
-                    box-shadow: 1px 1px 10px 1px grey;
-                    background-color: #81D9E5;
-                    border: 0;
-                    border-radius: 20px;
-
-                }
-
-                &>button:hover {
-                    cursor: pointer;
-                }
-            }
-        }
+    ::-webkit-scrollbar-track {
+        opacity: 0;
 
     }
 
-    /*....................FIN.CSS.CONNEXION....................*/
+    ::-webkit-scrollbar-thumb {
+        opacity: 0;
 
-
-    /*....................MEDIA.QUERIES....................*/
-
-    @media screen and (min-width:1260px) {
-
-        //ecran superieur a 1260px
-        body {
-            background-color: $fondRose;
-
-            #side-bar {
-                max-width: 1200px;
-                width: 20%;
-
-                &>#menu-admin {
-                    //min-width: 100%;
-
-                    &>nav {
-                        //min-width: 50%;
-
-                        &>ul {
-                            //min-width: 50%;
-
-                            &>li {
-
-                                &>a {
-                                    color: black;
-                                    font-size: 1.3rrem;
-                                    font-family: 'QuattrocentoSans-Regular', sans-serif;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            &>.corp {
-                width: 80%;
-
-                &>.multitaches {
-                    width: 100%;
-
-                    &>a {
-
-                        color: black;
-                        font-size: 1.3rem;
-                        font-family: 'QuattrocentoSans-Regular', sans-serif;
-                    }
-
-
-                }
-            }
-        }
     }
+
+    ::-webkit-scrollbar-thumb:hover {
+        opacity: 0;
+    }
+
+    ::-webkit-scrollbar-corner {
+        opacity: 0;
+    }
+
+
+
+
+
+
 }
 
-&>.corp {
-    width: 80%;
+// crochet de .corp
 
-    &>.multitaches {
+
+
+
+
+
+
+
+/*....................CSS.CONNEXION....................*/
+
+#sideVide {
+
+    max-width: 500px;
+    width: 25%;
+    height: 100vw;
+    position: fixed;
+    background-color: #858585;
+
+    &>#logo>img {
         width: 100%;
+        border-bottom: 1px solid black;
+    }
 
-        &>.multiTitre {
+}
 
-            font-size: 2rrem;
-        }
-
-        /*tableau de bord*/
-
-        &>#compteurEtGraphique {
-            display: none;
-        }
-
-        &>.dernierAjout {
-            width: 420px;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 10px auto;
-
-            &>h3 {
-                width: 420px;
-                text-align: center;
-                padding-left: 0;
-                font-size: 1rrem;
-                justify-content: center;
-            }
-
-            &>.dernierAjoutMQ {
-                width: 420px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                text-align: center;
-                font-size: 1rrem;
-            }
-
-            &>#bouton {
-                width: 420px;
-                text-align: center;
-            }
-        }
-
-        /*page article*/
-
-        &>#articleSearchAjout {
-            width: 85%;
+.bodyConnexion {
+    max-width: 1300px;
+    width: 75%;
+    height: 100 vw;
+    float: right;
 
 
 
-        }
+    &>.connexion {
+        width: 500px;
+        height: 350px;
+        border-radius: 15px;
+        margin-top: 200px;
+        margin-left: 350px;
+        background-color: $remplissage ;
 
-        &>.articleList {
-            width: 420px;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 10px auto;
+        &>.Titre {
+            width: 100%;
+            padding-top: 20px;
+            text-transform: uppercase;
             text-align: center;
+        }
 
-            background-color: $fondRose;
+        &>#mail,
+        #pass {
+            width: 300px;
+            height: 50px;
+            margin: 30px 100px;
 
 
-            #side-bar {
-                max-width: 900px;
-                width: 20%;
-                height: 100%;
-                background-color: #858585;
+            &>input {
+                width: 300px;
+                height: 50px;
+                border-radius: 50px;
+                border: 0;
+                background-color: white;
+                padding-left: 10px;
+                margin-top: 20px;
 
-                &>#menu-admin {
+            }
+
+
+        }
+
+        &>#connect {
+            width: 100px;
+
+            &>button {
+                width: 100px;
+                height: 25px;
+                margin: 50px 200px;
+                box-shadow: 1px 1px 10px 1px grey;
+                background-color: #81D9E5;
+                border: 0;
+                border-radius: 20px;
+
+            }
+
+            &>button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+/*....................FIN.CSS.CONNEXION....................*/
+
+
+/*....................MEDIA.QUERIES....................*/
+
+@media screen and (min-width:1260px) {
+
+    //ecran superieur a 1260px
+    body {
+
+        background-color: $fondRose;
+
+        #side-bar {
+            max-width: 1200px;
+            width: 20%;
+
+            &>#menu-admin {
+                //min-width: 100%;
+
+                &>nav {
+                    //min-width: 50%;
+
+                    &>ul {
+                        //min-width: 50%;
+
+                        &>li {
+
+
+
+
+                            &>a {
+
+                                color: black;
+                                font-size: 1.3rem;
+                                font-family: 'QuattrocentoSans-Regular', sans-serif;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &>.corp {
+            width: 80%;
+
+            &>.multitaches {
+                width: 100%;
+
+                &>.multiTitre {
+
+                    font-size: 2rem;
+                }
+
+
+
+
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:1260px) and (min-width:900px) {
+
+    //ecran allant de 900 a 1260 px
+    body {
+
+        background-color: $fondRose;
+
+
+        #side-bar {
+            max-width: 1200px;
+            width: 20%;
+
+            &>#menu-admin {
+                width: 100%;
+
+                &>nav {
                     width: 100%;
 
-
-                    &>nav {
+                    &>ul {
                         width: 100%;
 
-
-                        &>ul {
+                        &>li {
                             width: 100%;
 
-                            &>li {
-                                width: 100%;
-                                height: 40px;
-
-                                &>img {
-                                    display: none;
-                                }
-
-                                &>a {
-                                    width: 100%;
-                                    font-size: 0.8rem;
-                                    font-family: 'QuattrocentoSans-Regular', sans-serif;
-                                }
-
-
+                            &>img {
+                                margin-left: 10%;
                             }
+
+                            &>a {
+                                width: 100%;
+                                font-size: 1rem;
+                                font-family: 'QuattrocentoSans-Regular', sans-serif;
+                            }
+
+
                         }
                     }
                 }
             }
+        }
 
-            &>.corp {
-                width: 80%;
-                height: 100vh;
+        &>.corp {
+            width: 80%;
 
-                &>#headerDashboard {
-                    width: 100%;
-                    height: 130px;
+            &>.multitaches {
+                width: 100%;
+
+                &>.multiTitre {
+
+                    font-size: 2rem;
+                }
+
+                /*tableau de bord*/
+
+                &>#compteurEtGraphique {
+                    display: none;
+                }
+
+                &>.dernierAjout {
+                    width: 420px;
+                    height: 150px;
                     display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    background-color: white;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+
+                    &>h3 {
+                        width: 420px;
+                        text-align: center;
+                        padding-left: 0;
+                        font-size: 1rem;
+                        justify-content: center;
 
 
-                    &>.notif {
-                        width: 32px;
-                        height: 32px;
-                        margin: 50px 10px;
                     }
 
-                    &>.notif:hover {
-                        cursor: pointer;
+                    &>.dernierAjoutMQ {
+                        width: 420px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        text-align: center;
+                        font-size: 1rem;
+
                     }
 
-                    &>p {
-                        margin-top: 55px;
+                    &>#bouton {
+                        width: 420px;
+                        text-align: center;
                     }
 
                 }
 
-                &>.multitaches {
+                /*page article*/
+
+                &>#articleSearchAjout {
                     width: 100%;
 
-                    &>.multiTitre {
-
-                        font-size: 1.4rem;
-                    }
-
-                    /*tableau de bord*/
-
-                    &>#compteurEtGraphique {
-                        display: none;
-                    }
-
-                    &>.dernierAjout {
-                        width: 300px;
-                        height: 150px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        margin: 10px auto;
-
-                        &>h3 {
-                            width: 300px;
-                            text-align: center;
-                            padding-left: 0;
-                            font-size: 0.9rem;
-                            justify-content: center;
 
 
-                        }
+                }
 
-                        &>.dernierAjoutMQ {
-                            width: 300px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-around;
-                            text-align: center;
-                            font-size: 0.9rem;
+                &>.articleList {
+                    width: 420px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+                    text-align: center;
 
-                        }
-
-                        &>#bouton {
-                            width: 300px;
-                            text-align: center;
-                        }
-
-                    }
-
-                    /*page article*/
-
-                    &>#articleSearchAjout {
-                        width: 100%;
-
-                        &>form {
-                            display: flex;
-                            flex-direction: row;
-                            margin-top: 50px;
-                            margin-left: 10px;
-
-                            &>.recherche {
-                                padding-left: 10px;
-                                border: 0;
-                                border-radius: 100px;
-                                width: 200px;
-                                height: 50px;
-                                font-size: 0.9;
-
-                                &>placeholder {
-                                    font-size: 0.9;
-                                }
-                            }
-                        }
-
-                        &>.btnAjout {
-                            width: 100px;
-                            height: 100px;
-                            margin-top: 50px;
-                            margin-right: 40px;
-                            color: rgb(22, 20, 20);
-                            font-size: 1rem;
-                            border: 1px solid white;
-                            border-radius: 100px;
-                            background-color: $remplissage;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-
-                        }
-                    }
-
-                    &>.articleList {
-                        width: 300px;
-                        height: 150px;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        margin: 10px auto;
+                    &>h3 {
+                        width: 420px;
+                        padding-left: 0;
                         text-align: center;
 
-                        &>h3 {
-                            width: 300px;
-                            padding-left: 0;
-                            text-align: center;
-                            font-size: 0.9rem;
-
-                        }
-
-                        &>.dernierAjoutMQ {
-                            width: 300px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-around;
-                            font-size: 0.9rem;
-                        }
-
-                        &>#bouton {
-                            width: 300px;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-evenly;
-                            font-size: 0.9rem;
-
-
-                        }
-
                     }
 
-                    /*formulaire ajout de livre*/
-
-                    &>#formulaireAjout {
-                        width: 90%;
+                    &>.dernierAjoutMQ {
+                        width: 420px;
                         display: flex;
-                        flex-direction: column;
-                        margin: 25px auto;
-
-                        &>#formGauche {
-                            width: 100%;
-
-                            &>.titre-auteur {
-                                width: 100%;
-
-                                &>.tripleInput {
-
-                                    margin: 25px auto;
-                                }
-                            }
-
-                            &>.edition-date {
-                                width: 100%;
-
-                                &>.editeur {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-                                }
-
-                                &>.genreChoice {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-
-                                }
-
-                                &>.collectChoice {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-
-
-                                }
-
-
-                            }
-                        }
-
-                        &>.formMilieu {
-                            width: 100%;
-                            margin-top: 25px;
-
-                            &>.select {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                margin-top: 25px;
-
-
-
-                                &>#id_category {
-                                    width: 260px;
-                                }
-                            }
-
-                            &>.ajoutDate {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                margin-top: 25px;
-
-                                &>.date {
-                                    width: 240px;
-
-                                }
-                            }
-
-                            &>.imageChoice {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-
-                                &>#image {
-                                    width: 240px;
-
-                                }
-                            }
-
-
-                        }
-
-                        &>.formDroite {
-                            width: 100%;
-                            margin-top: 25px;
-                            justify-content: center;
-
-
-                            &>.resume {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                margin-top: 25px;
-
-                                &>#summary {
-                                    width: 50%;
-                                    display: flex;
-                                    justify-content: center;
-                                    text-align: center;
-                                    margin: 12px auto;
-                                }
-                            }
-
-                            &>input {
-                                width: 200px;
-                                height: 50px;
-                                border-radius: 50px;
-                                background-color: $grisBtn;
-                                cursor: pointer;
-                                color: #26F904;
-                            }
-                        }
-
+                        flex-direction: row;
+                        justify-content: space-around;
+                        font-size: 1rem;
                     }
 
-                    /*formulaire modification livre*/
-
-                    &>#formulaireModif {
-                        width: 90%;
+                    &>#bouton {
+                        width: 400px;
                         display: flex;
-                        flex-direction: column;
-                        margin: 25px auto;
+                        flex-direction: row;
+                        justify-content: space-evenly;
 
-                        &>#formGauche {
-                            width: 100%;
-
-                            &>.titre-auteur {
-                                width: 100%;
-
-                                &>.tripleInput {
-
-                                    margin: 25px auto;
-                                }
-                            }
-
-                            &>.edition-date {
-                                width: 100%;
-
-                                &>.editeur {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-                                }
-
-                                &>.genreChoice {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-
-                                }
-
-                                &>.collectChoice {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-
-
-                                }
-
-
-                            }
-                        }
-
-                        &>.formMilieu {
-                            width: 100%;
-                            margin-top: 25px;
-
-                            &>.select {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                margin-top: 25px;
-
-
-
-                                &>#id_category {
-                                    width: 260px;
-                                }
-                            }
-
-                            &>.ajoutDate {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                margin-top: 25px;
-
-                                &>.date {
-                                    width: 240px;
-
-                                }
-                            }
-
-                            &>.imageChoice {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-
-                                &>#image {
-                                    width: 240px;
-
-                                }
-                            }
-
-
-                        }
-
-                        &>.formDroite {
-                            width: 100%;
-                            margin-top: 25px;
-                            justify-content: center;
-
-
-                            &>.resume {
-                                width: 100%;
-                                display: flex;
-                                justify-content: center;
-                                margin-top: 25px;
-
-                                &>#summary {
-                                    width: 50%;
-                                    display: flex;
-                                    justify-content: center;
-                                    text-align: center;
-                                    margin: 12px auto;
-                                }
-                            }
-
-                            &>input {
-                                width: 200px;
-                                height: 50px;
-                                border-radius: 50px;
-                                background-color: $grisBtn;
-                                cursor: pointer;
-                                color: #26F904;
-                            }
-                        }
 
                     }
 
-                    /*page des categorie*/
+                }
 
-                    &>#ajoutCategorie {
-                        width: 300px;
+                /*formulaire ajout de livre*/
 
-                        margin: 25px auto;
+                &>#formulaireAjout {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
 
-
-
-
-                        &>.ajout {
-                            width: 300px;
-                            height: 250px;
-
-                            background-color: $remplissage;
-                            border-radius: 15px;
-                            box-shadow: 1px 1px 10px 1px grey;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: space-evenly;
-                            justify-items: center;
-                            flex-wrap: wrap;
-
-                            &>.newCat {
-                                width: 200px;
-                                height: 50px;
-                                border: 0;
-                                border-radius: 25px;
-                                text-align: center;
-                                font-size: 0.9rem;
-
-                            }
-
-                            &>.slugCat {
-                                width: 200px;
-                                height: 50px;
-                                border: 0;
-                                border-radius: 25px;
-                                text-align: center;
-                                font-size: 0.9rem;
-
-                            }
-
-
-                            &>.subCat {
-                                width: 150px;
-                                height: 50px;
-                                text-transform: uppercase;
-                                border: 0;
-                                border-radius: 10px;
-                                font-size: 0.9rem;
-                                color: white;
-                                background-color: $grisBtn;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-
-                    /*edit categorie*/
-                    &>.titleEditCategory {
+                    &>#formGauche {
                         width: 100%;
 
-                        &>thead {
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*formulaire modification livre*/
+
+                &>#formulaireModif {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
+
+                    &>#formGauche {
+                        width: 100%;
+
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*liste user*/
+
+                &>#tableUser {
+                    width: 100%;
+
+                    &>thead {
+                        width: 50%;
+                        font-size: 0.8rem;
+                    }
+
+                    &>tbody {
+                        width: 50%;
+
+                        &>.contenuUser {
                             width: 50%;
                             font-size: 0.8rem;
                         }
 
-                        &>tbody {
+                        &>.tdButton {
                             width: 50%;
 
-                            margin: 25px auto;
+                            &>td {
+                                width: 50%;
+                                font-size: 0.8rem;
 
-                            &>.edit {
-                                width: 300px;
-                                height: 250px;
-                                background-color: $remplissage;
-                                border-radius: 15px;
-                                box-shadow: 1px 1px 10px 1px grey;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                justify-items: center;
-
-                                &>.editCat {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-                                &>.tdButton {
+                                &>button {
                                     width: 50%;
 
-                                    &>td {
-                                        width: 50%;
-                                        font-size: 0.8rem;
-
-                                        &>button {
-                                            width: 50%;
-
-
-                                            &>a {
-
-                                                width: 50%;
-
-                                                font-size: 0.8rem;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        >#editCategorie {
-                            width: 300px;
-
-                            margin: 25px auto;
-
-                            &>.edit {
-                                width: 300px;
-                                height: 250px;
-                                background-color: $remplissage;
-                                border-radius: 15px;
-                                box-shadow: 1px 1px 10px 1px grey;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                justify-items: center;
-
-                                &>.editGenre {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-                                &>.editSlugGenre {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-                                }
-
-                                &>.subEditGenre {
-                                    width: 150px;
-                                    height: 50px;
-                                    text-transform: uppercase;
-                                    border: 0;
-                                    border-radius: 10px;
-                                    font-size: 0.9rem;
-                                    color: white;
-                                    background-color: $grisBtn;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-
-
-
-                    }
-                }
-
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Style pour la modal  */
-        .block-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 9998;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &>textarea {
-            width: 50%;
-
-            .active-box-delete-book p#txt-box-delete-category {
-                font-size: 16px;
-                margin-bottom: 20px;
-            }
-
-            .active-box-delete-book a#btn-cancel-delete-category,
-            .active-box-delete-book a#btn-confirmed-delete-book {
-                display: inline-block;
-                padding: 10px 20px;
-                border-radius: 5px;
-                color: #fff;
-                font-size: 16px;
-                text-align: center;
-                cursor: pointer;
-            }
-
-            .active-box-delete-book a#btn-cancel-delete-category {
-                background-color: #999;
-                margin-right: 10px;
-            }
-
-            a#btn-confirmed-delete-book {
-                background-color: #d9534f;
-            }
-
-
-            /* --------------------- NE PAS TOUCHER ------------------------ */
-            /* ---------------------  Page USER  ------------------------ */
-            .btnRent {
-                color: #494fa1;
-            }
-
-        }
-
-        @media screen and (max-width:900px) and (min-width:500px) {
-            body {
-
-                #side-bar {
-                    max-width: 900px;
-                    width: 20%;
-                    height: 100%;
-                    background-color: #858585;
-
-                    &>#menu-admin {
-                        width: 100%;
-
-
-                        &>nav {
-                            width: 100%;
-
-
-                            &>ul {
-                                width: 100%;
-
-                                &>li {
-                                    width: 100%;
-                                    height: 40px;
-
-                                    &>img {
-                                        display: none;
-                                    }
 
                                     &>a {
-                                        width: 100%;
+
+                                        width: 50%;
+
                                         font-size: 0.8rem;
-                                        font-family: 'QuattrocentoSans-Regular', sans-serif;
                                     }
-
-
                                 }
                             }
                         }
                     }
                 }
 
-                &>.corp {
-                    width: 80%;
-                    height: 100vh;
+                /*newsletter*/
 
-                    &>#headerDashboard {
+                &>.newsLetter {
+                    width: 100%;
+
+                    &>textarea {
+                        width: 50%;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:900px) and (min-width:500px) {
+    body {
+
+        #side-bar {
+            max-width: 900px;
+            width: 20%;
+            height: 100%;
+            background-color: #858585;
+
+            &>#menu-admin {
+                width: 100%;
+
+
+                &>nav {
+                    width: 100%;
+
+
+                    &>ul {
                         width: 100%;
-                        height: 130px;
+
+                        &>li {
+                            width: 100%;
+                            height: 40px;
+
+                            &>img {
+                                display: none;
+                            }
+
+                            &>a {
+                                width: 100%;
+                                font-size: 0.8rem;
+                                font-family: 'QuattrocentoSans-Regular', sans-serif;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &>.corp {
+            width: 80%;
+            height: 100vw;
+
+            &>#headerDashboard {
+                width: 100%;
+                height: 130px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: white;
+
+
+                &>.notif {
+                    width: 32px;
+                    height: 32px;
+                    margin: 50px 10px;
+                }
+
+                &>.notif:hover {
+                    cursor: pointer;
+                }
+
+                &>p {
+                    margin-top: 55px;
+                }
+
+            }
+
+            &>.multitaches {
+                width: 100%;
+
+                &>.multiTitre {
+
+                    font-size: 1.4rem;
+                }
+
+                /*tableau de bord*/
+
+                &>#compteurEtGraphique {
+                    display: none;
+                }
+
+                &>.dernierAjout {
+                    width: 300px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+
+                    &>h3 {
+                        width: 300px;
+                        text-align: center;
+                        padding-left: 0;
+                        font-size: 0.9rem;
+                        justify-content: center;
+
+
+                    }
+
+                    &>.dernierAjoutMQ {
+                        width: 300px;
                         display: flex;
                         flex-direction: row;
-                        justify-content: center;
-                        background-color: white;
-
-
-                        &>.notif {
-                            width: 32px;
-                            height: 32px;
-                            margin: 50px 10px;
-                        }
-
-                        &>.notif:hover {
-                            cursor: pointer;
-                        }
-
-                        &>p {
-                            margin-top: 55px;
-                        }
+                        justify-content: space-around;
+                        text-align: center;
+                        font-size: 0.9rem;
 
                     }
 
-                    &>.multitaches {
-                        width: 100%;
+                    &>#bouton {
+                        width: 300px;
+                        text-align: center;
+                    }
 
-                        &>.multiTitre {
+                }
 
-                            font-size: 1.4rem;
-                        }
+                /*page article*/
 
-                        /*tableau de bord*/
+                &>#articleSearchAjout {
+                    width: 100%;
 
-                        &>#compteurEtGraphique {
-                            display: none;
-                        }
+                    &>form {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 50px;
+                        margin-left: 10px;
 
-                        &>.dernierAjout {
-                            width: 300px;
-                            height: 150px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            margin: 10px auto;
+                        &>.recherche {
+                            padding-left: 10px;
+                            border: 0;
+                            border-radius: 100px;
+                            width: 200px;
+                            height: 50px;
+                            font-size: 0.9;
 
-                            &>h3 {
-                                width: 300px;
-                                text-align: center;
-                                padding-left: 0;
-                                font-size: 0.9rem;
-                                justify-content: center;
-
-
-                            }
-
-                            &>.dernierAjoutMQ {
-                                width: 300px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-around;
-                                text-align: center;
-                                font-size: 0.9rem;
-
-                            }
-
-                            &>#bouton {
-                                width: 300px;
-                                text-align: center;
-                            }
-
-                        }
-
-                        /*page article*/
-
-                        &>#articleSearchAjout {
-                            width: 100%;
-
-                            &>form {
-                                display: flex;
-                                flex-direction: row;
-                                margin-top: 50px;
-                                margin-left: 10px;
-
-                                &>.recherche {
-                                    padding-left: 10px;
-                                    border: 0;
-                                    border-radius: 100px;
-                                    width: 200px;
-                                    height: 50px;
-                                    font-size: 0.9;
-
-                                    &>placeholder {
-                                        font-size: 0.9;
-                                    }
-                                }
-                            }
-
-                            &>.btnAjout {
-                                width: 100px;
-                                height: 100px;
-                                margin-top: 50px;
-                                margin-right: 40px;
-                                color: rgb(22, 20, 20);
-                                font-size: 1rem;
-                                border: 1px solid white;
-                                border-radius: 100px;
-                                background-color: $remplissage;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-
-
+                            &>placeholder {
+                                font-size: 0.9;
                             }
                         }
-
-                        &>.articleList {
-                            width: 300px;
-                            height: 150px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            margin: 10px auto;
-                            text-align: center;
-
-                            &>h3 {
-                                width: 300px;
-                                padding-left: 0;
-                                text-align: center;
-                                font-size: 0.9rem;
-
-                            }
-
-                            &>.dernierAjoutMQ {
-                                width: 300px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-around;
-                                font-size: 0.9rem;
-                            }
-
-                            &>#bouton {
-                                width: 300px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
-                                font-size: 0.9rem;
-
-
-                            }
-
-                        }
-
-                        /*formulaire ajout de livre*/
-
-                        &>#formulaireAjout {
-                            width: 90%;
-                            display: flex;
-                            flex-direction: column;
-                            margin: 25px auto;
-
-                            &>#formGauche {
-                                width: 100%;
-
-                                &>.titre-auteur {
-                                    width: 100%;
-
-                                    &>.tripleInput {
-
-                                        margin: 25px auto;
-                                    }
-                                }
-
-                                &>.edition-date {
-                                    width: 100%;
-
-                                    &>.editeur {
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: center;
-                                        margin-top: 25px;
-
-                                    }
-
-                                    &>.genreChoice {
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: center;
-
-                                    }
-
-                                    &>.collectChoice {
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: center;
-
-
-                                    }
-
-
-                                }
-                            }
-
-                            &>.formMilieu {
-                                width: 100%;
-                                margin-top: 25px;
-
-                                &>.select {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-
-
-                                    &>#id_category {
-                                        width: 260px;
-                                    }
-                                }
-
-                                &>.ajoutDate {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-                                    &>.date {
-                                        width: 240px;
-
-                                    }
-                                }
-
-                                &>.imageChoice {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-
-                                    &>#image {
-                                        width: 240px;
-
-                                    }
-                                }
-
-
-                            }
-
-                            &>.formDroite {
-                                width: 100%;
-                                margin-top: 25px;
-                                justify-content: center;
-
-
-                                &>.resume {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-                                    &>#summary {
-                                        width: 50%;
-                                        display: flex;
-                                        justify-content: center;
-                                        text-align: center;
-                                        margin: 12px auto;
-                                    }
-                                }
-
-                                &>input {
-                                    width: 200px;
-                                    height: 50px;
-                                    border-radius: 50px;
-                                    background-color: $grisBtn;
-                                    cursor: pointer;
-                                    color: #26F904;
-                                }
-                            }
-
-                        }
-
-                        /*formulaire modification livre*/
-
-                        &>#formulaireModif {
-                            width: 90%;
-                            display: flex;
-                            flex-direction: column;
-                            margin: 25px auto;
-
-                            &>#formGauche {
-                                width: 100%;
-
-                                &>.titre-auteur {
-                                    width: 100%;
-
-                                    &>.tripleInput {
-
-                                        margin: 25px auto;
-                                    }
-                                }
-
-                                &>.edition-date {
-                                    width: 100%;
-
-                                    &>.editeur {
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: center;
-                                        margin-top: 25px;
-
-                                    }
-
-                                    &>.genreChoice {
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: center;
-
-                                    }
-
-                                    &>.collectChoice {
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: center;
-
-
-                                    }
-
-
-                                }
-                            }
-
-                            &>.formMilieu {
-                                width: 100%;
-                                margin-top: 25px;
-
-                                &>.select {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-
-
-                                    &>#id_category {
-                                        width: 260px;
-                                    }
-                                }
-
-                                &>.ajoutDate {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-                                    &>.date {
-                                        width: 240px;
-
-                                    }
-                                }
-
-                                &>.imageChoice {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-
-                                    &>#image {
-                                        width: 240px;
-
-                                    }
-                                }
-
-
-                            }
-
-                            &>.formDroite {
-                                width: 100%;
-                                margin-top: 25px;
-                                justify-content: center;
-
-
-                                &>.resume {
-                                    width: 100%;
-                                    display: flex;
-                                    justify-content: center;
-                                    margin-top: 25px;
-
-                                    &>#summary {
-                                        width: 50%;
-                                        display: flex;
-                                        justify-content: center;
-                                        text-align: center;
-                                        margin: 12px auto;
-                                    }
-                                }
-
-                                &>input {
-                                    width: 200px;
-                                    height: 50px;
-                                    border-radius: 50px;
-                                    background-color: $grisBtn;
-                                    cursor: pointer;
-                                    color: #26F904;
-                                }
-                            }
-
-                        }
-
-                        /*page des categorie*/
-
-                        &>#ajoutCategorie {
-                            width: 300px;
-
-                            margin: 25px auto;
-
-
-
-
-                            &>.ajout {
-                                width: 300px;
-                                height: 250px;
-
-                                background-color: $remplissage;
-                                border-radius: 15px;
-                                box-shadow: 1px 1px 10px 1px grey;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                justify-items: center;
-                                flex-wrap: wrap;
-
-                                &>.newCat {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-                                &>.slugCat {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-
-                                &>.subCat {
-                                    width: 150px;
-                                    height: 50px;
-                                    text-transform: uppercase;
-                                    border: 0;
-                                    border-radius: 10px;
-                                    font-size: 0.9rem;
-                                    color: white;
-                                    background-color: $grisBtn;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-
-                        /*edit categorie*/
-                        &>.titleEditCategory {
-                            width: 100%;
-                            text-align: center;
-
-                        }
-
-                        &>#editCategorie {
-                            width: 300px;
-
-                            margin: 25px auto;
-
-                            &>.edit {
-                                width: 300px;
-                                height: 250px;
-                                background-color: $remplissage;
-                                border-radius: 15px;
-                                box-shadow: 1px 1px 10px 1px grey;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                justify-items: center;
-
-                                &>.editCat {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-                                &>.editSlugCat {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-                                }
-
-                                &>.subEditCat {
-                                    width: 150px;
-                                    height: 50px;
-                                    text-transform: uppercase;
-                                    border: 0;
-                                    border-radius: 10px;
-                                    font-size: 0.9rem;
-                                    color: white;
-                                    background-color: $grisBtn;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-
-                        /*page des genres*/
-
-                        >#ajoutGenre {
-                            width: 300px;
-
-                            margin: 25px auto;
-
-
-
-
-                            &>.ajout {
-                                width: 300px;
-                                height: 250px;
-
-                                background-color: $remplissage;
-                                border-radius: 15px;
-                                box-shadow: 1px 1px 10px 1px grey;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                justify-items: center;
-                                flex-wrap: wrap;
-
-                                &>.newGenre {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-                                &>.slugGenre {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-
-                                &>.subGenre {
-                                    width: 150px;
-                                    height: 50px;
-                                    text-transform: uppercase;
-                                    border: 0;
-                                    border-radius: 10px;
-                                    font-size: 0.9rem;
-                                    color: white;
-                                    background-color: $grisBtn;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-
-                        /*edit genre*/
-
-                        &>.titleEditGenre {
-                            width: 100%;
-                            text-align: center;
-
-                        }
-
-                        >#editCategorie {
-                            width: 300px;
-
-                            margin: 25px auto;
-
-                            &>.edit {
-                                width: 300px;
-                                height: 250px;
-                                background-color: $remplissage;
-                                border-radius: 15px;
-                                box-shadow: 1px 1px 10px 1px grey;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                justify-items: center;
-
-                                &>.editGenre {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-
-                                }
-
-                                &>.editSlugGenre {
-                                    width: 200px;
-                                    height: 50px;
-                                    border: 0;
-                                    border-radius: 25px;
-                                    text-align: center;
-                                    font-size: 0.9rem;
-                                }
-
-                                &>.subEditGenre {
-                                    width: 150px;
-                                    height: 50px;
-                                    text-transform: uppercase;
-                                    border: 0;
-                                    border-radius: 10px;
-                                    font-size: 0.9rem;
-                                    color: white;
-                                    background-color: $grisBtn;
-                                    cursor: pointer;
-                                }
-                            }
-                        }
-
+                    }
+
+                    &>.btnAjout {
+                        width: 100px;
+                        height: 100px;
+                        margin-top: 50px;
+                        margin-right: 40px;
+                        color: rgb(22, 20, 20);
+                        font-size: 1rem;
+                        border: 1px solid white;
+                        border-radius: 100px;
+                        background-color: $remplissage;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
 
                     }
                 }
+
+                &>.articleList {
+                    width: 300px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 10px auto;
+                    text-align: center;
+
+                    &>h3 {
+                        width: 300px;
+                        padding-left: 0;
+                        text-align: center;
+                        font-size: 0.9rem;
+
+                    }
+
+                    &>.dernierAjoutMQ {
+                        width: 300px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        font-size: 0.9rem;
+                    }
+
+                    &>#bouton {
+                        width: 300px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        font-size: 0.9rem;
+
+
+                    }
+
+                }
+
+                /*formulaire ajout de livre*/
+
+                &>#formulaireAjout {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
+
+                    &>#formGauche {
+                        width: 100%;
+
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*formulaire modification livre*/
+
+                &>#formulaireModif {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 25px auto;
+
+                    &>#formGauche {
+                        width: 100%;
+
+                        &>.titre-auteur {
+                            width: 100%;
+
+                            &>.tripleInput {
+
+                                margin: 25px auto;
+                            }
+                        }
+
+                        &>.edition-date {
+                            width: 100%;
+
+                            &>.editeur {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 25px;
+
+                            }
+
+                            &>.genreChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+                            }
+
+                            &>.collectChoice {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+
+
+                            }
+
+
+                        }
+                    }
+
+                    &>.formMilieu {
+                        width: 100%;
+                        margin-top: 25px;
+
+                        &>.select {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+
+
+                            &>#id_category {
+                                width: 260px;
+                            }
+                        }
+
+                        &>.ajoutDate {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>.date {
+                                width: 240px;
+
+                            }
+                        }
+
+                        &>.imageChoice {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            &>#image {
+                                width: 240px;
+
+                            }
+                        }
+
+
+                    }
+
+                    &>.formDroite {
+                        width: 100%;
+                        margin-top: 25px;
+                        justify-content: center;
+
+
+                        &>.resume {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 25px;
+
+                            &>#summary {
+                                width: 50%;
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                margin: 12px auto;
+                            }
+                        }
+
+                        &>input {
+                            width: 200px;
+                            height: 50px;
+                            border-radius: 50px;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                            color: #26F904;
+                        }
+                    }
+
+                }
+
+                /*page des categorie*/
+
+                &>#ajoutCategorie {
+                    width: 300px;
+
+                    margin: 25px auto;
+
+
+
+
+                    &>.ajout {
+                        width: 300px;
+                        height: 250px;
+
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+                        flex-wrap: wrap;
+
+                        &>.newCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+                        &>.slugCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+
+                        &>.subCat {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                /*edit categorie*/
+                &>.titleEditCategory {
+                    width: 100%;
+                    text-align: center;
+
+                }
+
+                &>#editCategorie {
+                    width: 300px;
+
+                    margin: 25px auto;
+
+                    &>.edit {
+                        width: 300px;
+                        height: 250px;
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+
+                        &>.editCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+                        &>.editSlugCat {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+                        }
+
+                        &>.subEditCat {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                /*page des genres*/
+
+                >#ajoutGenre {
+                    width: 300px;
+
+                    margin: 25px auto;
+
+
+
+
+                    &>.ajout {
+                        width: 300px;
+                        height: 250px;
+
+                        background-color: $remplissage;
+                        border-radius: 15px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        justify-items: center;
+                        flex-wrap: wrap;
+
+                        &>.newGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+                        &>.slugGenre {
+                            width: 200px;
+                            height: 50px;
+                            border: 0;
+                            border-radius: 25px;
+                            text-align: center;
+                            font-size: 0.9rem;
+
+                        }
+
+
+                        &>.subGenre {
+                            width: 150px;
+                            height: 50px;
+                            text-transform: uppercase;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 0.9rem;
+                            color: white;
+                            background-color: $grisBtn;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                /*edit genre*/
+
+                &>.titleEditCategory {
+                    width: 100%;
+                    text-align: center;
+
+                }
+
+
 
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        &:nth-child(even) {
-            background-color: rgba(81, 87, 172, 0.432);
-            border-radius: 0.5rem;
-        }
     }
-}
-}
-
-#rentedBook {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 55rem;
-    display: flex;
-    border: 2px solid rgba(0, 0, 0, 0.507);
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-radius: 0.5rem;
-    flex-direction: row;
-    align-self: center;
-    align-items: center;
-    padding: 0.5rem 0.5rem;
-}
-
-#UserInfo {
-    height: 2rem;
-    width: fit-content;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-}
-
-#bookDits {
-    flex-grow: 4;
-}
-
-
-.inputRent {
-    background: none;
-    border: 2px solid rgba(0, 0, 0, 0.507);
-    color: black;
-    font: inherit;
-    line-height: 1;
-    padding: 0.5rem 1rem;
-    border-radius: 7.5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    cursor: pointer;
-}
-
-.inputRent:hover {
-    background-color: rgba(81, 87, 172, 0.432);
-    border: 2px solid rgba(255, 255, 255, 0.507);
-    color: white;
-}
-
-
-::-webkit-scrollbar {
-    opacity: 0;
-}
-
-::-webkit-scrollbar-track {
-    opacity: 0;
-
-}
-
-::-webkit-scrollbar-thumb {
-    opacity: 0;
-
-}
-
-::-webkit-scrollbar-thumb:hover {
-    opacity: 0;
-}
-
-::-webkit-scrollbar-corner {
-    opacity: 0;
 }

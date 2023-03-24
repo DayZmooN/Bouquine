@@ -25,7 +25,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 a {
@@ -408,7 +407,7 @@ a {
   cursor: pointer;
   color: #26F904;
 }
-.corp .multitaches > #formulairremodif {
+.corp .multitaches > #formulaireModif {
   width: 90%;
   margin: 0 auto;
   background-color: #FFF5EE;
@@ -418,17 +417,17 @@ a {
   border-radius: 50px;
   margin-top: 20px;
 }
-.corp .multitaches > #formulairremodif > #formGauche {
+.corp .multitaches > #formulaireModif > #formGauche {
   width: 30%;
   display: flex;
   flex-direction: column;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .titre-auteur {
+.corp .multitaches > #formulaireModif > #formGauche > .titre-auteur {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .titre-auteur > .tripleInput {
+.corp .multitaches > #formulaireModif > #formGauche > .titre-auteur > .tripleInput {
   width: 320px;
   height: 50px;
   margin-top: 50px;
@@ -437,16 +436,16 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .edition-date {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .edition-date > .editeur {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur {
   width: 320px;
   margin-top: 50px;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .edition-date > .editeur > #editor {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur > #editor {
   width: 320px;
   height: 50px;
   border: 0;
@@ -454,11 +453,11 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .edition-date > .genreChoice {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice {
   width: 320px;
   margin-top: 50px;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .edition-date > .genreChoice > #genre {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice > #genre {
   width: 320px;
   height: 50px;
   border: 0;
@@ -466,11 +465,11 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .edition-date > .collectChoice {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice {
   width: 320px;
   margin-top: 50px;
 }
-.corp .multitaches > #formulairremodif > #formGauche > .edition-date > .collectChoice > #collection {
+.corp .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice > #collection {
   width: 320px;
   height: 50px;
   border: 0;
@@ -478,23 +477,23 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu {
+.corp .multitaches > #formulaireModif > .formMilieu {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 100px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .select {
+.corp .multitaches > #formulaireModif > .formMilieu > .select {
   width: 320px;
   margin-top: 50px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .select > .selectCategory {
+.corp .multitaches > #formulaireModif > .formMilieu > .select > .selectCategory {
   width: 90px;
   height: 50px;
   margin-top: 15px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .select > #id_category {
+.corp .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
   width: 160px;
   height: 50px;
   border: 0;
@@ -502,18 +501,18 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .ajoutDate {
+.corp .multitaches > #formulaireModif > .formMilieu > .ajoutDate {
   width: 320px;
   margin-top: 50px;
   display: flex;
   flex-direction: row;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .ajoutDate > .publication {
+.corp .multitaches > #formulaireModif > .formMilieu > .ajoutDate > .publication {
   width: 90px;
   height: 50px;
   margin-top: 15px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .ajoutDate > .date {
+.corp .multitaches > #formulaireModif > .formMilieu > .ajoutDate > .date {
   width: 120px;
   height: 50px;
   border: 0;
@@ -522,17 +521,17 @@ a {
   padding-left: 10px;
   padding-right: 10px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .imageChoice {
+.corp .multitaches > #formulaireModif > .formMilieu > .imageChoice {
   width: 320px;
   margin-top: 25px;
   margin-left: 5px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .imageChoice > .image {
+.corp .multitaches > #formulaireModif > .formMilieu > .imageChoice > .image {
   width: 90px;
   height: 50px;
   margin-top: 15px;
 }
-.corp .multitaches > #formulairremodif > .formMilieu > .imageChoice > #image {
+.corp .multitaches > #formulaireModif > .formMilieu > .imageChoice > #image {
   width: 160px;
   height: 50px;
   border: 0;
@@ -540,14 +539,14 @@ a {
   background-color: #FFDAA4;
   padding-left: 10px;
 }
-.corp .multitaches > #formulairremodif > .formDroite {
+.corp .multitaches > #formulaireModif > .formDroite {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.corp .multitaches > #formulairremodif > .formDroite > .resume {
+.corp .multitaches > #formulaireModif > .formDroite > .resume {
   width: 100%;
   height: 400px;
   display: flex;
@@ -555,7 +554,7 @@ a {
   text-align: center;
   margin-top: 20px;
 }
-.corp .multitaches > #formulairremodif > .formDroite > .resume > #summary {
+.corp .multitaches > #formulaireModif > .formDroite > .resume > #summary {
   width: 320px;
   height: 400px;
   resize: none;
@@ -564,7 +563,7 @@ a {
   border-radius: 10px;
   padding: 5px 5px;
 }
-.corp .multitaches > #formulairremodif > .formDroite > input {
+.corp .multitaches > #formulaireModif > .formDroite > input {
   width: 200px;
   height: 50px;
   border-radius: 50px;
@@ -598,7 +597,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #ajoutCategorie > .ajout > .slugCat {
   width: 200px;
@@ -606,7 +605,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #ajoutCategorie > .ajout > .subCat {
   width: 150px;
@@ -614,7 +613,7 @@ a {
   text-transform: uppercase;
   border: 0;
   border-radius: 10px;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
   color: white;
   background-color: #696969;
   cursor: pointer;
@@ -669,7 +668,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #editCategorie > .edit > .editSlugCat {
   width: 200px;
@@ -677,7 +676,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #editCategorie > .edit > .subEditCat {
   width: 150px;
@@ -685,7 +684,7 @@ a {
   text-transform: uppercase;
   border: 0;
   border-radius: 10px;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
   color: white;
   background-color: #696969;
   cursor: pointer;
@@ -715,7 +714,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #ajoutGenre > .ajout > .slugGenre {
   width: 200px;
@@ -723,7 +722,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #ajoutGenre > .ajout > .subGenre {
   width: 150px;
@@ -731,7 +730,7 @@ a {
   text-transform: uppercase;
   border: 0;
   border-radius: 10px;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
   color: white;
   background-color: #696969;
   cursor: pointer;
@@ -786,7 +785,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #sectionEditGenre > .edit > .editSlugGenre {
   width: 200px;
@@ -794,7 +793,7 @@ a {
   border: 0;
   border-radius: 25px;
   text-align: center;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #sectionEditGenre > .edit > .subEditGenre {
   width: 150px;
@@ -802,7 +801,7 @@ a {
   text-transform: uppercase;
   border: 0;
   border-radius: 10px;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
   color: white;
   background-color: #696969;
   cursor: pointer;
@@ -843,19 +842,19 @@ a {
 .corp .multitaches > #tableUser > thead {
   background-color: #696969;
   height: 50px;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #tableUser > tbody > .contenuUser {
   background-color: #FFE7D6;
   height: 50px;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton {
   height: 50px;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton > td {
   height: 50px;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > #tableUser > tbody > .tdButton > td > button {
   width: 100%;
@@ -871,10 +870,11 @@ a {
   height: 50px;
   line-height: 50px;
   color: black;
-  font-size: 1.1rrem;
+  font-size: 1.1rem;
 }
 .corp .multitaches > .newsLetter {
   width: 100%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -916,6 +916,12 @@ a {
   align-items: center;
   border-radius: 1rem;
   overflow: scroll;
+}
+.corp .userLoan ul#oddcolors {
+  list-style: none;
+}
+.corp .userLoan ul#oddcolors li.oddcolors {
+  list-style: none;
 }
 .corp .userLoan ul#oddcolors li.oddcolors:nth-child(odd) {
   background-color: rgba(255, 255, 255, 0.274);
@@ -986,6 +992,7 @@ a {
 #sideVide {
   max-width: 500px;
   width: 25%;
+  height: 100vw;
   position: fixed;
   background-color: #858585;
 }
@@ -997,6 +1004,7 @@ a {
 .bodyConnexion {
   max-width: 1300px;
   width: 75%;
+  height: 100 vw;
   float: right;
 }
 .bodyConnexion > .connexion {
@@ -1057,7 +1065,7 @@ a {
   }
   body #side-bar > #menu-admin > nav > ul > li > a {
     color: black;
-    font-size: 1.3rrem;
+    font-size: 1.3rem;
     font-family: "QuattrocentoSans-Regular", sans-serif;
   }
   body > .corp {
@@ -1067,7 +1075,7 @@ a {
     width: 100%;
   }
   body > .corp > .multitaches > .multiTitre {
-    font-size: 2rrem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 1260px) and (min-width: 900px) {
@@ -1095,7 +1103,7 @@ a {
   }
   body #side-bar > #menu-admin > nav > ul > li > a {
     width: 100%;
-    font-size: 1rrem;
+    font-size: 1rem;
     font-family: "QuattrocentoSans-Regular", sans-serif;
   }
   body > .corp {
@@ -1111,7 +1119,7 @@ a {
     /*newsletter*/
   }
   body > .corp > .multitaches > .multiTitre {
-    font-size: 2rrem;
+    font-size: 2rem;
   }
   body > .corp > .multitaches > #compteurEtGraphique {
     display: none;
@@ -1128,7 +1136,7 @@ a {
     width: 420px;
     text-align: center;
     padding-left: 0;
-    font-size: 1rrem;
+    font-size: 1rem;
     justify-content: center;
   }
   body > .corp > .multitaches > .dernierAjout > .dernierAjoutMQ {
@@ -1137,7 +1145,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    font-size: 1rrem;
+    font-size: 1rem;
   }
   body > .corp > .multitaches > .dernierAjout > #bouton {
     width: 420px;
@@ -1165,7 +1173,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 1rrem;
+    font-size: 1rem;
   }
   body > .corp > .multitaches > .articleList > #bouton {
     width: 400px;
@@ -1263,89 +1271,89 @@ a {
     cursor: pointer;
     color: #26F904;
   }
-  body > .corp > .multitaches > #formulairremodif {
+  body > .corp > .multitaches > #formulaireModif {
     width: 90%;
     display: flex;
     flex-direction: column;
     margin: 25px auto;
   }
-  body > .corp > .multitaches > #formulairremodif > #formGauche {
+  body > .corp > .multitaches > #formulaireModif > #formGauche {
     width: 100%;
   }
-  body > .corp > .multitaches > #formulairremodif > #formGauche > .titre-auteur {
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .titre-auteur {
     width: 100%;
   }
-  body > .corp > .multitaches > #formulairremodif > #formGauche > .titre-auteur > .tripleInput {
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .titre-auteur > .tripleInput {
     margin: 25px auto;
   }
-  body > .corp > .multitaches > #formulairremodif > #formGauche > .edition-date {
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date {
     width: 100%;
   }
-  body > .corp > .multitaches > #formulairremodif > #formGauche > .edition-date > .editeur {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-  }
-  body > .corp > .multitaches > #formulairremodif > #formGauche > .edition-date > .genreChoice {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  body > .corp > .multitaches > #formulairremodif > #formGauche > .edition-date > .collectChoice {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  body > .corp > .multitaches > #formulairremodif > .formMilieu {
-    width: 100%;
-    margin-top: 25px;
-  }
-  body > .corp > .multitaches > #formulairremodif > .formMilieu > .select {
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 25px;
   }
-  body > .corp > .multitaches > #formulairremodif > .formMilieu > .select > #id_category {
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu {
+    width: 100%;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
     width: 260px;
   }
-  body > .corp > .multitaches > #formulairremodif > .formMilieu > .ajoutDate {
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .ajoutDate {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 25px;
   }
-  body > .corp > .multitaches > #formulairremodif > .formMilieu > .ajoutDate > .date {
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .ajoutDate > .date {
     width: 240px;
   }
-  body > .corp > .multitaches > #formulairremodif > .formMilieu > .imageChoice {
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .imageChoice {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  body > .corp > .multitaches > #formulairremodif > .formMilieu > .imageChoice > #image {
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .imageChoice > #image {
     width: 240px;
   }
-  body > .corp > .multitaches > #formulairremodif > .formDroite {
+  body > .corp > .multitaches > #formulaireModif > .formDroite {
     width: 100%;
     margin-top: 25px;
     justify-content: center;
   }
-  body > .corp > .multitaches > #formulairremodif > .formDroite > .resume {
+  body > .corp > .multitaches > #formulaireModif > .formDroite > .resume {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 25px;
   }
-  body > .corp > .multitaches > #formulairremodif > .formDroite > .resume > #summary {
+  body > .corp > .multitaches > #formulaireModif > .formDroite > .resume > #summary {
     width: 50%;
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 12px auto;
   }
-  body > .corp > .multitaches > #formulairremodif > .formDroite > input {
+  body > .corp > .multitaches > #formulaireModif > .formDroite > input {
     width: 200px;
     height: 50px;
     border-radius: 50px;
@@ -1358,28 +1366,28 @@ a {
   }
   body > .corp > .multitaches > #tableUser > thead {
     width: 50%;
-    font-size: 0.8rrem;
+    font-size: 0.8rem;
   }
   body > .corp > .multitaches > #tableUser > tbody {
     width: 50%;
   }
   body > .corp > .multitaches > #tableUser > tbody > .contenuUser {
     width: 50%;
-    font-size: 0.8rrem;
+    font-size: 0.8rem;
   }
   body > .corp > .multitaches > #tableUser > tbody > .tdButton {
     width: 50%;
   }
   body > .corp > .multitaches > #tableUser > tbody > .tdButton > td {
     width: 50%;
-    font-size: 0.8rrem;
+    font-size: 0.8rem;
   }
   body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button {
     width: 50%;
   }
   body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button > a {
     width: 50%;
-    font-size: 0.8rrem;
+    font-size: 0.8rem;
   }
   body > .corp > .multitaches > .newsLetter {
     width: 100%;
@@ -1418,7 +1426,7 @@ a {
   }
   body > .corp {
     width: 80%;
-    height: 100vh;
+    height: 100vw;
   }
   body > .corp > #headerDashboard {
     width: 100%;
@@ -1861,51 +1869,8 @@ a {
     background-color: #696969;
     cursor: pointer;
   }
-  body > .corp > .multitaches > .titleEditGenre {
+  body > .corp > .multitaches > .titleEditCategory {
     width: 100%;
     text-align: center;
-  }
-  body > .corp > .multitaches > #editCategorie {
-    width: 300px;
-    margin: 25px auto;
-  }
-  body > .corp > .multitaches > #editCategorie > .edit {
-    width: 300px;
-    height: 250px;
-    background-color: #FFDAA4;
-    border-radius: 15px;
-    box-shadow: 1px 1px 10px 1px grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-  }
-  body > .corp > .multitaches > #editCategorie > .edit > .editGenre {
-    width: 200px;
-    height: 50px;
-    border: 0;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  body > .corp > .multitaches > #editCategorie > .edit > .editSlugGenre {
-    width: 200px;
-    height: 50px;
-    border: 0;
-    border-radius: 25px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  body > .corp > .multitaches > #editCategorie > .edit > .subEditGenre {
-    width: 150px;
-    height: 50px;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 10px;
-    font-size: 0.9rem;
-    color: white;
-    background-color: #696969;
-    cursor: pointer;
   }
 }/*# sourceMappingURL=style-admin.css.map */
