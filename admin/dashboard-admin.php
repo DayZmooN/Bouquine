@@ -10,9 +10,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <h1 class="multiTitre">tableau de bord</h1>
 
-<div id="compteurEtGraphique">
-    <p>a venir en bonus graphique et affichage de compteurs</p>
-</div>
+
 
 <h2 id="titreAjout">liste des derniers ajouts</h2>
 <?php
