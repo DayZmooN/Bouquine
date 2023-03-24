@@ -5,9 +5,14 @@ try {
     if (isset($_GET['id'])) {
         // Récupérer l'ID de l'article à supprimer
         $id = $_GET['id'];
-        // Préparer la requête SQL pour supprimer l'article
+
         // Supprimer les enregistrements associés dans la table genre_book
         $query = $db->prepare('DELETE FROM genre_book WHERE id_book = :id');
+        $query->bindParam(':id', $id);
+        $query->execute();
+
+        // Supprimer les enregistrements associés dans la table loan
+        $query = $db->prepare('DELETE FROM loan WHERE id_book = :id');
         $query->bindParam(':id', $id);
         $query->execute();
 
@@ -17,7 +22,7 @@ try {
         $query->execute();
 
         // Rediriger l'utilisateur vers la page des articles
-        header('Location: article.php');
+        header('Location: ./article.php');
         // Afficher la modal si la suppression a réussi
         echo "<script>showSuccessModal();</script>";
     }

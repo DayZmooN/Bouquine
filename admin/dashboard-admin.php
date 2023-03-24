@@ -42,5 +42,3 @@ foreach ($result as $article) {
 }
 
 ?>
-
-<?php include './includeClose.php'  ?>

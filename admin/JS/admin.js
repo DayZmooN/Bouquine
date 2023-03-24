@@ -71,10 +71,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-btnConfirmed.addEventListener('click', function () {
-    // Effectuer la suppression en envoyant la demande à l'URL de suppression
 
-    // Créer une nouvelle modal pour afficher le message de confirmation de suppression réussie
+
+
+function showSuccessModal() {
+    // Récupérer le corps du document
+    const body = document.querySelector('body');
+
+    // Créer la modal pour la suppression réussie
     let modalSuccess = document.createElement('div');
     modalSuccess.classList.add('block-modal');
     body.append(modalSuccess);
@@ -88,7 +92,7 @@ btnConfirmed.addEventListener('click', function () {
     const successMsg = document.createElement("p");
     successMsg.setAttribute("id", "txt-box-success-delete-category");
     boxSuccess.appendChild(successMsg);
-    successMsg.innerHTML = `La suppression de ${dataTitle} a été effectuée avec succès.`;
+    successMsg.innerHTML = `La suppression a été effectuée avec succès.`;
 
     //bouton fermer modal
     const btnClose = document.createElement("a");
@@ -100,6 +104,5 @@ btnConfirmed.addEventListener('click', function () {
         modalSuccess.remove();
         history.back();
     });
-});
-
+}
 
