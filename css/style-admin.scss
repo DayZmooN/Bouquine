@@ -1,5 +1,5 @@
 $fondRose : #c8c8c8;
-$rremplissage : #FFDAA4;
+$remplissage : #FFDAA4;
 $grisBtn : #696969;
 $grisFiltre : #807373;
 $fondUser : #FFE7D6;
@@ -74,7 +74,7 @@ a {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-evenly;
-                    align-itrems: center;
+                    align-items: center;
                     background-color: #AAAAAA;
                     border-bottom: 1px solid black;
 
@@ -86,7 +86,7 @@ a {
                     &>a {
                         width: 150px;
                         color: black;
-                        font-size: 1.3rrem;
+                        font-size: 1.3rem;
                         font-family: 'QuattrocentoSans-Regular', sans-serif;
                         //background-color: #26F904;
                         text-align: center;
@@ -143,7 +143,7 @@ a {
             padding-top: 40px;
             text-transform: uppercase;
             text-align: center;
-            font-size: 4rrem;
+            font-size: 4rem;
             font-family: 'LRT Oksana Bold', sans-serif;
 
 
@@ -176,7 +176,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-itrems: center;
+        align-items: center;
         border: 1px solid black;
         background-color: #AAAAAA;
         margin: 10px auto;
@@ -210,7 +210,7 @@ a {
         width: 50%;
         display: flex;
         flex-direction: row;
-        align-itrems: center;
+        align-items: center;
         margin-left: 50px;
         margin: 0 auto;
         padding-top: 20px;
@@ -243,11 +243,11 @@ a {
             width: 300px;
             margin-top: 50px;
             color: rgb(22, 20, 20);
-            font-size: 1.2rrem;
+            font-size: 1.2rem;
             text-align: center;
             border: 1px solid white;
             border-radius: 25px;
-            background-color: $rremplissage;
+            background-color: $remplissage;
         }
 
 
@@ -264,7 +264,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-itrems: center;
+        align-items: center;
         border: 1px solid black;
         background-color: #AAAAAA;
         margin: 10px auto;
@@ -324,7 +324,7 @@ a {
                     margin-top: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
 
                 }
@@ -344,7 +344,7 @@ a {
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
-                        background-color: $rremplissage;
+                        background-color: $remplissage;
                         padding-left: 10px;
 
                     }
@@ -361,7 +361,7 @@ a {
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
-                        background-color: $rremplissage;
+                        background-color: $remplissage;
                         padding-left: 10px;
                     }
 
@@ -376,7 +376,7 @@ a {
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
-                        background-color: $rremplissage;
+                        background-color: $remplissage;
                         padding-left: 10px;
                     }
                 }
@@ -408,7 +408,7 @@ a {
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
 
                 }
@@ -431,7 +431,7 @@ a {
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
                     padding-right: 10px;
                 }
@@ -453,7 +453,7 @@ a {
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
                 }
             }
@@ -466,7 +466,7 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-itrems: center;
+            align-items: center;
 
             &>.resume {
                 width: 100%;
@@ -482,7 +482,7 @@ a {
                     height: 400px;
                     resize: none;
                     margin-top: 10px;
-                    border: 1px solid $rremplissage;
+                    border: 1px solid $remplissage;
                     border-radius: 10px;
                     padding: 5px 5px;
                 }
@@ -538,7 +538,7 @@ a {
                     margin-top: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
 
                 }
@@ -558,7 +558,7 @@ a {
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
-                        background-color: $rremplissage;
+                        background-color: $remplissage;
                         padding-left: 10px;
 
                     }
@@ -575,7 +575,7 @@ a {
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
-                        background-color: $rremplissage;
+                        background-color: $remplissage;
                         padding-left: 10px;
                     }
 
@@ -590,7 +590,7 @@ a {
                         height: 50px;
                         border: 0;
                         border-radius: 50px;
-                        background-color: $rremplissage;
+                        background-color: $remplissage;
                         padding-left: 10px;
                     }
                 }
@@ -622,7 +622,7 @@ a {
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
 
                 }
@@ -645,7 +645,7 @@ a {
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
                     padding-right: 10px;
                 }
@@ -667,7 +667,7 @@ a {
                     height: 50px;
                     border: 0;
                     border-radius: 50px;
-                    background-color: $rremplissage;
+                    background-color: $remplissage;
                     padding-left: 10px;
                 }
             }
@@ -680,7 +680,7 @@ a {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-itrems: center;
+            align-items: center;
 
             &>.resume {
                 width: 100%;
@@ -696,7 +696,7 @@ a {
                     height: 400px;
                     resize: none;
                     margin-top: 10px;
-                    border: 1px solid $rremplissage;
+                    border: 1px solid $remplissage;
                     border-radius: 10px;
                     padding: 5px 5px;
                 }
@@ -721,7 +721,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-itrems: center;
+        align-items: center;
         margin-top: 100px;
 
 
@@ -731,12 +731,12 @@ a {
 
             width: 700px;
             height: 100px;
-            background-color: $rremplissage;
+            background-color: $remplissage;
             border-radius: 15px;
             box-shadow: 1px 1px 10px 1px grey;
             display: flex;
             flex-direction: row;
-            align-itrems: center;
+            align-items: center;
             justify-content: space-evenly;
             justify-itrems: center;
             flex-wrap: wrap;
@@ -793,7 +793,7 @@ a {
             flex-direction: row;
             justify-content: space-evenly;
             justify-itrems: center;
-            align-itrems: center;
+            align-items: center;
             background-color: #AAAAAA;
             border: 1px solid black;
             margin: 10px 10px;
@@ -820,18 +820,18 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-itrems: center;
+        align-items: center;
         margin-top: 50px;
 
         &>.edit {
             width: 700px;
             height: 100px;
-            background-color: $rremplissage;
+            background-color: $remplissage;
             border-radius: 15px;
             box-shadow: 1px 1px 10px 1px grey;
             display: flex;
             flex-direction: row;
-            align-itrems: center;
+            align-items: center;
             justify-content: space-evenly;
             justify-itrems: center;
 
@@ -876,7 +876,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-itrems: center;
+        align-items: center;
         margin-top: 100px;
 
 
@@ -886,12 +886,12 @@ a {
 
             width: 700px;
             height: 100px;
-            background-color: $rremplissage;
+            background-color: $remplissage;
             border-radius: 15px;
             box-shadow: 1px 1px 10px 1px grey;
             display: flex;
             flex-direction: row;
-            align-itrems: center;
+            align-items: center;
             justify-content: space-evenly;
             justify-itrems: center;
 
@@ -947,7 +947,7 @@ a {
             flex-direction: row;
             justify-content: space-evenly;
             justify-itrems: center;
-            align-itrems: center;
+            align-items: center;
             background-color: #AAAAAA;
             border: 1px solid black;
             margin: 10px 10px;
@@ -970,18 +970,18 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-itrems: center;
+        align-items: center;
         margin-top: 50px;
 
         &>.edit {
             width: 700px;
             height: 100px;
-            background-color: $rremplissage;
+            background-color: $remplissage;
             border-radius: 15px;
             box-shadow: 1px 1px 10px 1px grey;
             display: flex;
             flex-direction: row;
-            align-itrems: center;
+            align-items: center;
             justify-content: space-evenly;
             justify-itrems: center;
 
@@ -1026,7 +1026,7 @@ a {
         width: 50%;
         display: flex;
         flex-direction: row;
-        align-itrems: center;
+        align-items: center;
         margin-left: 40px;
         padding-top: 50px;
 
@@ -1116,7 +1116,7 @@ a {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-itrems: center;
+        align-items: center;
         margin-top: 50px;
 
         &>textarea {
@@ -1181,7 +1181,7 @@ a {
         border-radius: 15px;
         margin-top: 200px;
         margin-left: 350px;
-        background-color: $rremplissage ;
+        background-color: $remplissage ;
 
         &>.Titre {
             width: 100%;
@@ -1344,7 +1344,7 @@ a {
                     height: 150px;
                     display: flex;
                     flex-direction: column;
-                    align-itrems: flex-start;
+                    align-items: flex-start;
                     margin: 10px auto;
 
                     &>h3 {
@@ -1381,7 +1381,7 @@ a {
                     height: 150px;
                     display: flex;
                     flex-direction: column;
-                    align-itrems: flex-start;
+                    align-items: flex-start;
                     margin: 10px auto;
                     text-align: center;
 
