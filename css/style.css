@@ -45,13 +45,8 @@ header#head {
     margin: 0 auto;
     height: 120px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
-}
-
-.logo {
-    height: 90px;
 }
 
 .logo img {
@@ -68,78 +63,84 @@ nav.header-nav {
     justify-content: center;
 }
 
-nav ul {
+.header-nav ul {
     display: flex;
     color: #000;
 }
 
 ul.menu {
-    width: 800px;
-}
+    width: 670px;
+    max-width: 1200px;
+   }
 
-nav li {
+.header-nav li {
     position: relative;
     margin: auto;
+
+    /* padding: 10px; */
 }
 
-nav a {
+.header-nav  {
     display: block;
-    padding: 10px;
+    /* padding: 10px; */
     color: black;
     font-size: 1rem;
     font-family: 'Quattrocento-Regular', sans-serif;
 }
 
-nav ul ul {
+.header-nav ul ul {
     height: 300px;
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
         rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-nav ul li a {
-    display: block;
+.menu ul li a {
+   
+    display:block;
     font-size: 1rem;
     transition: all 0.8s ease;
-
+   
 }
 
-nav ul li a:hover {
+/* .header-nav ul li a:hover {
+    
     color: black;
     background-color: #6b74eb;
     border-radius: 5px;
-}
+} */
 
-nav ul li:hover>ul {
+.header-nav ul li:hover>ul {
     display: block;
 
 }
 
-nav ul ul li {
+.header-nav ul ul li {
     position: relative;
 }
 
-nav ul ul a {
+.header-nav ul ul a {
     padding: 10px 15px;
     background-color: white;
 }
+li.search-box{
+    width:350px ;
 
-nav input[type="search"] {
+}
+.header-nav input[type="search"] {
     width: 300px;
     height: 35px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px #5a62be;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 24px 0px;
     background-color: white;
     margin-left: 20px;
 }
 
-
-#menu-icon {
+/* #menu-icon {
     display: none;
     width: 30px;
     height: 30px;
@@ -154,14 +155,18 @@ nav input[type="search"] {
     width: 10px;
     height: 10px;
     display: none;
+} */
+.header-btn{
+   
+    height: 70px;
+    width: 150px; 
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
-
-li.search-box {
-    width: 400px;
-}
-
 #form-header {
-    width: 550px;
+    width: 400px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -169,28 +174,32 @@ li.search-box {
     padding: 0;
 }
 
-#deconnect {
-    width: 150px;
+form#deconnect {
+    width: 50px;
     height: 50px;
     padding: 0;
-    margin: 0 auto;
+    margin-left: 30px;
+   
 }
 
 a.img-user {
-    width: 70px;
-    height: 80px;
-    margin: auto;
+    width: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    /* display: none; */
 }
 
-img.img-user {
+img.img-user1 {
     height: 60px;
-    margin-left: 20px;
+    margin: 0 auto;
+    padding: 0;
+    /* display: none; */
 }
 
 button#search-button1 {
     width: 120px;
     height: 35px;
-    margin-left: 20px;
+    margin-left: -20px;
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Quattrocento-Regular', sans-serif;
@@ -201,8 +210,12 @@ button#search-button1 {
     color: white;
     cursor: pointer;
 }
-
-input#user-connect {
+.btn-user a {
+    width: 150px;
+    height: 35px;
+    padding: 0;
+}
+button#user-connect {
     width: 120px;
     height: 35px;
     font-size: 1rem;
@@ -211,128 +224,69 @@ input#user-connect {
     background-color: #5a62be;
     padding: 0 10px;
     color: white;
-    margin: 0 auto;
     cursor: pointer;
     border-radius: 10px;
+    margin-top: 17px;
     margin-left: 60px;
+    border:none;
 }
+button#user-connect:hover {
+    opacity: 60%;
+} 
 
-#user-deconnect#user-connect {
-    width: 120px;
-    height: 35px;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: 'Quattrocento-Regular', sans-serif;
-    background-color: #5a62be;
-    color: white;
+input::placeholder {
+    padding-left: 10px;
+    font-style: italic;
+}
+img#deconnect1{
+    width: 60px;
+    height: 60px;
+    border: none;
+    /* margin: 0 auto; */
+    /* padding: 0; */
+}
+button#user-deconnect {
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     border-radius: 10px;
-}
+    border: none;
+   } 
 
-input#user-deconnect:hover {
-    opacity: 40%;
-}
+ button#user-deconnect:hover {
+    opacity: 60%;
+} 
 
-.user-name {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.nom {
+span.nom {
     width: 30px;
-    margin-left: 30px;
-}
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Quattrocento-Regular', sans-serif;
+    margin-left: 10px;
 
-.user-name a {
-    width: 100px;
-    height: 50px;
 }
 
 /* **************media queries header ********************/
 
 @media screen and (max-width: 400px) {
 
-    .logo {
-        display: none;
-    }
-
-    #menu-icon {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    #close-menu {
-        display: block;
-    }
-
-    #close-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    #menu-icon div {
-        width: 25px;
-        height: 3px;
-        background-color: #000;
-        margin: 5px;
-    }
-
+   
+    
     .menu ul {
         display: none;
     }
 
-    #menu-icon:hover+.menu,
-    .menu:hover ul {
-        display: block;
-    }
+    
 }
 
 /* Media query pour les écrans avec une largeur de 900px ou moins */
 @media screen and (max-width: 900px) {
-
-    #menu-icon {
-        display: block;
-    }
-
-    .menu {
+    
+        .menu ul {
         display: none;
     }
 
-    #close-menu {
-        display: block;
-    }
-
-    #close-menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    #menu-icon div {
-        width: 25px;
-        height: 3px;
-        background-color: #000;
-        margin: 5px;
-    }
-
-    .menu ul {
-        display: none;
-    }
-
-    #menu-icon:hover+.menu,
-    .menu:hover ul {
-        display: block;
-    }
+    
 }
 
 
@@ -357,22 +311,22 @@ input#user-deconnect:hover {
     width: 100%;
     height: 550px;
     background-image: url("../image/lecture.jpg");
-    opacity: 70%;
+    opacity: 80%;
 }
 
 h1 {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 4rem;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
     height: 80px;
     padding-top: 50px;
     color: white;
     margin-right: 50px;
+    text-shadow: 3px 3px black;
 }
 
 #explain {
-    /* width: 500px; */
     height: 300px;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     font-size: 2rem;
@@ -380,16 +334,10 @@ h1 {
     padding-top: 80px;
     color: white;
     margin-right: 50px;
+    text-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+    text-align: center;
 }
 
-/* *************RESPONSIVE PARTIE PARALAX**************** */
-
-@media only screen and (max-width: 400px),
-(min-width: 900px) {
-    .parallax-section .parallax1>img {
-        display: none;
-    }
-}
 
 /* ***************SECTION LES PLUS POPULAIRES************** */
 
@@ -450,7 +398,7 @@ h1 {
     border: none;
     border-radius: 50px;
     background-color: #5a62be;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 #resume a {
@@ -468,6 +416,7 @@ h1 {
     font-weight: 500;
     line-height: 16px;
     color: white;
+    margin-top: 10px;
 }
 
 .author {
@@ -516,28 +465,27 @@ h1 {
 
 #new {
     width: 100%;
-    height: 400px;
     /* background-color: #62c465e4; */
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #nouveautes {
     width: 100%;
     height: 40px;
+    margin-bottom: 20px;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: black;
     font-weight: bold;
     text-align: center;
 }
 
 .slider {
-    height: 420px;
     position: relative;
     overflow: hidden;
     max-width: 800px;
-    aspect-ratio: 16/9;
+    aspect-ratio: 21/9;
     margin: auto;
 }
 
@@ -765,7 +713,6 @@ hr.gender1:after {
     }
 }
 
-
 @media screen and (max-width: 900px) {
     #prefers {
         font-size: 20px;
@@ -990,7 +937,7 @@ hr.gender1:after {
 
 #text {
     max-width: 1200px;
-    height: 500px;
+    padding: 50px;
     display: flex;
     align-items: center;
     margin: auto;
@@ -1005,19 +952,17 @@ hr.gender1:after {
 }
 
 .texte {
-    width: 400px;
-    height: 400px;
     border: 2px solid black;
-    border-radius: 30px;
-    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .bouquine {
+    margin-top: 20px;
     font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
     color: black;
 }
 
@@ -1025,7 +970,6 @@ hr.gender1:after {
     height: 400px;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
-    margin-top: 20px;
     text-align: center;
     color: black;
 }
@@ -1061,10 +1005,11 @@ hr.gender1:after {
     width: 100%;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     text-align: center;
     padding-top: 32px;
+    text-shadow: 3px 3px black;
 }
 
 .formulaire {
@@ -1076,9 +1021,11 @@ hr.gender1:after {
 }
 
 .formulaire label {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
+    text-shadow: 3px 3px black;
+    padding-bottom: 32px;
 }
 
 input#email {
@@ -1086,6 +1033,7 @@ input#email {
     height: 35px;
     border-radius: 10px;
     background-color: white;
+
 }
 
 #send {
@@ -1105,14 +1053,15 @@ input#email {
 }
 
 .abonner {
-    width: 100%;
-    height: 100px;
-    font-size: 1.2rem;
+    max-width: 1200px;
+    /* height: 100px; */
+    font-size: 1.5rem;
     font-weight: 500;
     font-family: 'QuattrocentoSans-Regular', sans-serif;
     color: white;
-    margin-top: 30px;
+    margin: 0 auto;
     text-align: center;
+    text-shadow: 2px 2px black;
 }
 
 /***************** end section newsletter***************** */
@@ -1125,6 +1074,7 @@ input#email {
 }
 
 .container-contact {
+    max-width: 1200px;
     height: 250px;
     display: flex;
     align-items: center;
@@ -1167,10 +1117,14 @@ input#email {
 .horaire img {
     width: 80px;
 }
-
-.mail p a {
+.mail{
+    min-width: 200px;
     min-width: 200px;
     text-align: center;
+   
+}
+.mail p a {
+   
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold';
     color: white;
@@ -1178,7 +1132,7 @@ input#email {
 
 .mail img {
     width: 80px;
-    margin: 50px;
+    margin: 40px;
 }
 
 a {
@@ -1235,8 +1189,8 @@ a:hover {
     width: 250px;
     height: 250px;
     margin: 30px auto;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.05), -5px 5px 20px -3px rgba(0, 0, 0, 0.20);
     cursor: pointer;
     transition: 0.4s;
 }
@@ -1244,13 +1198,13 @@ a:hover {
 .card .card_image {
     width: inherit;
     height: inherit;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .card .card_image img {
     width: inherit;
     height: inherit;
-    border-radius: 40px;
+    border-radius: 20px;
     object-fit: cover;
 }
 
@@ -1262,6 +1216,7 @@ a:hover {
     line-height: 2rem;
     font-size: 2rem;
     margin-top: -150px;
+
 }
 
 .card:hover {
@@ -1307,7 +1262,7 @@ section#lecteur {
     margin-top: 50px;
     background: linear-gradient(90deg, #ff9966, #ff5e62);
     z-index: 10;
-    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 20px 2rem rgba(0, 0, 0, 0.15);
     border-radius: 100%;
     position: absolute;
     left: -10%;
@@ -1339,6 +1294,7 @@ h1#lector {
     margin-top: 32px;
     color: #333;
     padding: 0;
+    text-shadow: 0 0 0;
 }
 
 .container_copy p {
@@ -1394,7 +1350,7 @@ img.img1 {
     width: 150px;
     height: auto;
     font-family: 'QuattrocentoSans-regular', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 }
@@ -1407,7 +1363,7 @@ img.img1 {
     width: 400px;
     height: auto;
     font-family: 'QuattrocentoSans-regular', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -1417,7 +1373,7 @@ img.img1 {
 
 p#copy {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: white;
     height: 20px;
 }
@@ -1432,7 +1388,7 @@ p#copy {
 
 /* ------------------RESPONSIVE FOOTER----------------------- */
 
-/* @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     #end {
         text-align: center;
     }
@@ -1451,7 +1407,7 @@ p#copy {
         width: 25px;
         height: 25px;
     }
-} */
+}
 
 /* *******************PAGE RESUME LIVRE *********************/
 
@@ -1524,7 +1480,7 @@ hr.nb1 {
     overflow: visible;
     text-align: center;
     height: 5px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 hr.nb1:after {
@@ -1715,11 +1671,9 @@ p.author2 {
     body {
         font-size: 14px;
     }
-
-    #books img {
-        display: none;
+    header{
+        width: 70%;
     }
-
     #books .contain {
         display: flex;
         flex-direction: column;
@@ -2006,12 +1960,12 @@ ol.consignes li {
 @media screen and (max-width: 400px) {
 
     .consignes {
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 10px;
+        line-height: 1;
     }
 
     .infos {
-        font-size: 20px;
+        font-size: 12px;
         line-height: 1.2;
     }
 }
@@ -2156,25 +2110,25 @@ p.inscription {
     }
 
     .email {
-     display: none;
+        display: none;
     }
 
     .social-media i {
-     font-size: 16px;
+        font-size: 16px;
     }
 
     input[type=email],
     input[type=password] {
-     width: 90%;
+        width: 90%;
     }
 
     .inscription a:first-of-type {
-     font-size: 0.9rem;
+        font-size: 0.9rem;
     }
 
-    
+
     button[type=submit] {
-     margin-top: 10px;
+        margin-top: 10px;
     }
 }
 
@@ -2470,44 +2424,44 @@ body {
     text-transform: uppercase;
     margin-top: 10px;
     margin-left: 80px;
+    padding-left: 70px;
 }
 
 #user-nav {
     width: 350px;
-    height: 450px;
+    height: 400px;
     background-color: #3C4048;
     position: absolute;
     top: 120px;
     left: 0;
 }
-
 #user-nav ul {
     width: 350px;
     height: 400px;
     display: block;
 }
-
+#user-nav li{
+    width: 350px;
+    height: 100px;
+    text-align: center;
+     padding-top: 30px;
+ 
+}
 #user-nav li a {
     width: 350px;
     height: 100px;
-    display: block;
-    margin: auto;
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     color: white;
-    text-align: center;
-    /* padding: 0 10px; */
     transition: all 0.8s ease;
-
 }
 
-#user-nav li a:hover {
+#user-nav li:hover {
     background-color: #4950a1;
 }
 
 .info1 {
     width: 700px;
-    height: 400px;
     background-color: #3C4048;
     border: 1px solid white;
     border-radius: 20px;
@@ -2525,14 +2479,16 @@ body {
     font-family: 'QuattrocentoSans-Bold', sans-serif;
     text-align: center;
     color: white;
+    margin-top: 20px;
 }
 
 .names {
     width: 400px;
-    height: 35px;
+    height: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-right: 30px;
 }
 
 form#dash-form {
@@ -2546,7 +2502,7 @@ form#dash-form {
 label {
     font-size: 1.2rem;
     font-family: 'QuattrocentoSans-Bold', sans-serif;
-    display: block;
+    padding-top: 16px;
     color: white;
 }
 
@@ -2554,22 +2510,28 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="tel"] {
-    width: 250px;
+    width: 470px;
     height: 35px;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: white;
-    margin-top: 10px;
+    }
+
+input[type="email"]#email1 {
+    width: 470px;
+    height: 35px;
 }
 
 input[type="submit"] {
-    width: 150px;
+    width: 120px;
     height: 35px;
+    font-size: 1rem;
+    font-family: 'QuattrocentoSans-Bold', sans-serif;
     padding: 10px 20px;
     background-color: #5a62be;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    margin-top: 10px;
+    margin-top: 30px;
     color: white;
 }
 
@@ -2578,16 +2540,12 @@ input[type="submit"]:hover {
 }
 
 input.adress {
-    width: 450px;
+    width: 470px;
     margin: 0;
 }
 
-input[type="email"]#email1 {
-    width: 450px;
-}
-
 input[type="tel"]#telephone {
-    width: 450px;
+    width: 470px;
     padding: 10px;
     background-color: white;
 }

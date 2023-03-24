@@ -13,11 +13,11 @@ require_once './connect.php'
     <!-- HEADER -->
     <header id="head">
         <nav class="header-nav">
-            <div id="menu-icon">
+            <!-- <div id="menu-icon">
                 <a href="#"><img src="../image/burger.png" alt="menu burger"></a>
 
             </div>
-            <div id="close-menu">X</div>
+            <div id="close-menu">X</div> -->
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
@@ -37,7 +37,44 @@ require_once './connect.php'
                         <?php } ?>
                     </ul>
                 </li>
+                <li>
+                    <a href="#">Genre</a>
+                    <div class="genre">
+                        <ul>
+                            <li><a href="#">Poésie</a></li>
+                            <li><a href="#">Littérature</a></li>
+                            <li><a href="#">Naration</a></li>
+                            <li><a href="#">Théâtre</a></li>
+                        </ul>
+                    </div>
+                    <div class="genre">
+                        <ul>
+                            <li><a href="#">Poésie</a></li>
+                            <li><a href="#">Littérature</a></li>
+                            <li><a href="#">Naration</a></li>
+                            <li><a href="#">Théâtre</a></li>
 
+                        </ul>
+                    </div>
+                    <div class="genre">
+                        <ul>
+                            <li><a href="#">Poésie</a></li>
+                            <li><a href="#">Littérature</a></li>
+                            <li><a href="#">Naration</a></li>
+                            <li><a href="#">Théâtre</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="genre">
+                        <ul>
+                            <li><a href="#">Poésie</a></li>
+                            <li><a href="#">Littérature</a></li>
+                            <li><a href="#">Narration</a></li>
+                            <li><a href="#">Théâtre</a></li>
+
+                        </ul>
+                    </div>
+                </li>
                 <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">
@@ -48,24 +85,24 @@ require_once './connect.php'
                 </li>
             </ul>
 
+            <div class="header-btn">
+                <?php if (isset($_SESSION['user'])) { ?>
+                    <a href="./user-dashboard.php" class="img-user">
+                        <img class="img-user1" src="../image/user.png" alt="image user">
+                        <span class="nom"><?php echo $_SESSION['user']['username']; ?></span></a>
 
-            <?php if (isset($_SESSION['user'])) { ?>
-                <a href="./user-dashboard.php" class="img-user">
-                    <img class="img-user" src="../image/user.png" alt="image">
-                    <span class="nom"><?php echo $_SESSION['user']['username']; ?></span>
-                </a>
-                <form id="deconnect" action="../model/deconnexion.php" method="post">
-                    <input id="user-deconnect" type="submit" name="logout" value="Déconnexion">
-                </form>
-            <?php }
-            if (!isset($_SESSION['user'])) { ?>
+                    <form id="deconnect" action="../model/deconnexion.php" method="post">
+                        <button id="user-deconnect" type="submit" name="logout"><img id="deconnect1" src="../image/deconnexion-.png" alt="déconnexion"></button>
+                    </form>
+                <?php }
+                if (!isset($_SESSION['user'])) { ?>
 
 
-                <a href="./connexion.php">
-                    <input id="user-connect" type="submit" value="Connexion">
-                </a>
-            <?php } ?>
-
+                    <a href="./connexion.php" class="btn-user">
+                        <button id="user-connect" type="submit">Connexion</button>
+                    </a>
+                <?php } ?>
+            </div>
         </nav>
 
     </header>
