@@ -32,12 +32,11 @@ if (isset($_POST['cancelled'])) {
 
     <div id="UserInfo">
         <h2>Liste des emprunts de l'utilisateur :</h2>
-        
     </div>
     
-<ul id="oddcolors">
-    <?php foreach ($rent as $loan) { ?>  
+<ul id="oddcolors"> 
     <li class="oddcolors">
+    <?php foreach ($rent as $loan) { ?>  
       <div id="rentedBook">
         
         <div id="bookDits">
