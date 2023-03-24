@@ -70,7 +70,7 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
 
                 <div class="collectChoice">
                     <label for="collection"></label>
-                    <input type="text" name="genre" id="collection" value="<?= $article['collection'] ?>">
+                    <input type="text" name="collection" id="collection" value="<?= $article['collection'] ?>">
                 </div>
             </div>
         </div>
