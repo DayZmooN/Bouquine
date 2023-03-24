@@ -34,8 +34,9 @@ if (isset($_POST['cancelled'])) {
         <?php foreach ($rent as $loan) { ?>
             <h2>Liste des emprunts de l'utilisateur : <?= $loan['username'] ?></h2>
     </div>
-
-    <div id="rentedBook">
+<ul id="oddcolors">
+    <li class="oddcolors">
+      <div id="rentedBook">
         
         <div id="bookDits">
             <p><?= $loan['title'] ?></p>
@@ -49,6 +50,9 @@ if (isset($_POST['cancelled'])) {
             </form>
         </div>
 
-    </div>
+    </div>  
+    </li>
+</ul>
+    
 <?php } ?>
 </section>
