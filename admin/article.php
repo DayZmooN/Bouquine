@@ -10,9 +10,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <h1 class="multiTitre">menus articles</h1>
 
 <div id="articleSearchAjout">
-    <form action="" method="post">
-        <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
-        <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
+    <form action="./resultat-admin.php" method="GET">
+        <input class="recherche" type="text" name="search" placeholder="rechercher directement un ouvrage">
+        <button type="submit"><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
     </form>
     <a href="./articleadd.php">Ajouter de nouveaux livres</a>
 </div>
@@ -32,10 +32,24 @@ foreach ($result as $article) {
             <a class="btnGreen" href="./articleedit.php?id=<?= $article['id_book'] ?>" style="color:green">Modifier</a>
             <a class="btnRed" data-idbook="<?= $article['id_book'] ?>" data-title="<?= $article['title'] ?>" style="color:red">Supprimer</a>
 
-            <a href="./coverupload.php?id=<?= $article['id_book'] ?>" style="color:blueviolet">Cover</a>
-            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>" style="color:aqua" >Genres</a>
+            <a href=" ./coverupload.php?id=<?= $article['id_book'] ?>" style="color:blueviolet">Cover</a>
+            <a href="./articlelinkgenre?id=<?= $article['id_book'] ?>" style="color:aqua">Genres</a>
 
         </div>
     </div>
 <?php } ?>
+<?php if (isset($_SESSION['success'])) : ?>
+    <div class="success" style="background-color: #209f00a8;">
+        <p><?= $_SESSION["success"] ?></p>
+    </div>
+    <?php unset($_SESSION["success"]); ?>
+<?php endif; ?>
+<?php if (isset($_SESSION['error'])) : ?>
+    <div class="error" style="background-color: #b50000a8;">
+        <p><?= $_SESSION["error"] ?></p>
+    </div>
+    <?php unset($_SESSION["error"]); ?>
+<?php endif; ?>
+
+
 </body>

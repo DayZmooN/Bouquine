@@ -16,7 +16,8 @@ if (!isset($_SESSION["admin"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/style-admin.css">
-    <!-- <link rel="stylesheet" href="./JS/error.css"> -->
+    <link rel="import" href="../fonts/LRT Oksana Bold.ttf">
+
 </head>
 
 <body>
@@ -49,22 +50,11 @@ if (!isset($_SESSION["admin"])) {
         </header>
 
         <main class="multitaches">
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="modal-message"></p>
-                </div>
-            </div>
-            <!-- avant la fin du body de votre fichier PHP -->
 
 
-            <!-- ... -->
-            <!-- la modal -->
-            <div id="success-modal" class="modal">
-                <div class="modal-content">
-                    <p>Suppression réussie!</p>
-                </div>
-            </div>
-</body>
 
-<script src="./js/admin.js"></script>
+
+
+
+
+            <script src="./js/admin.js"></script>

@@ -30,9 +30,13 @@ foreach ($result as $article) {
                 <a class="btnGreen" href="#" style="color:green">modifier /</a>
                 <?php
                 if (isset($_SESSION['admin'])) { ?>
-                <a class="btnRed" data-idBook=<?= $article['id_book'] ?> data-title=<?= $article['title'] ?> style="color:red">supprimer</a>
+                    <a class="btnRed" data-idBook=<?= $article['id_book'] ?> data-title=<?= $article['title'] ?> style="color:red">supprimer</a>
                 <?php } ?>
             </p>
         </div>
     </div>
-<?php } ?>
+<?php
+
+}
+
+?>

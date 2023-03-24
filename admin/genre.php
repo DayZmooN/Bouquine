@@ -44,3 +44,15 @@ if (isset($_POST['submitAdd'])) {
             <a class="btnRed" data-idbook="<?= $genre['id_genre'] ?>" data-title="<?= $genre['libel_genre'] ?>" style="color:red">supprimer</a>
         </div>
     <?php } ?>
+    <?php if (isset($_SESSION['success'])) : ?>
+        <div class="success" style="background-color: #209f00a8;">
+            <p><?= $_SESSION["success"] ?></p>
+        </div>
+        <?php unset($_SESSION["success"]); ?>
+    <?php endif; ?>
+    <?php if (isset($_SESSION['error'])) : ?>
+        <div class="error" style="background-color: #b50000a8;">
+            <p><?= $_SESSION["error"] ?></p>
+        </div>
+        <?php unset($_SESSION["error"]); ?>
+    <?php endif; ?>

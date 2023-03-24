@@ -36,14 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.style.overflow = "auto";
                 boxDelete.remove();
                 modalBg.remove();
-
-
             })
-
 
             const btnConfirmed = document.createElement("a");
             btnConfirmed.setAttribute("id", "btn-confirmed-delete-book");
-
 
             if (window.location.href.includes("category.php")) {
                 deleteUrl = "./deletecategory.php?id=" + dataIdBook;
@@ -65,44 +61,64 @@ document.addEventListener('DOMContentLoaded', function () {
             boxDelete.appendChild(btnConfirmed);
             btnConfirmed.innerHTML = "Confirmer";
 
+            btnConfirmed.addEventListener('click', function (event) {
+                event.preventDefault();
+                deleteBook(dataIdBook);
+            });
 
-
-        })
+            function deleteBook(id) {
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "./admin/delete-book.php", true);
+                xhr.setRequestHeader("Content-Type", "./admin/article.php");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status === 200) {
+                            // Si la suppression réussit, afficher la modal de succès
+                            showSuccessModal();
+                        } else {
+                            // Si la suppression échoue, afficher un message d'erreur
+                            alert("Erreur lors de la suppression du livre.");
+                        }
+                    }
+                };
+                xhr.send(`id=${id}`);
+            }
+        });
     }
-})
-
-
-
+});
 
 function showSuccessModal() {
     // Récupérer le corps du document
-    const body = document.querySelector('body');
+    function showSuccessModal() {
+        // Récupérer le corps du document
+        const body = document.querySelector('body');
 
-    // Créer la modal pour la suppression réussie
-    let modalSuccess = document.createElement('div');
-    modalSuccess.classList.add('block-modal');
-    body.append(modalSuccess);
+        // Créer une div pour la fenêtre modale
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
 
-    const boxSuccess = document.createElement("div");
-    boxSuccess.setAttribute("id", "box-success-delete-book");
-    boxSuccess.classList.add("active-box-delete-book");
-    modalSuccess.append(boxSuccess);
+        // Créer une div pour le contenu de la fenêtre modale
+        const modalContent = document.createElement('div');
+        modalContent.classList.add('modal-content');
 
-    //p static
-    const successMsg = document.createElement("p");
-    successMsg.setAttribute("id", "txt-box-success-delete-category");
-    boxSuccess.appendChild(successMsg);
-    successMsg.innerHTML = `La suppression a été effectuée avec succès.`;
+        // Ajouter le texte de succès dans la fenêtre modale
+        const successText = document.createElement('p');
+        successText.textContent = 'Opération effectuée avec succès !';
+        modalContent.appendChild(successText);
 
-    //bouton fermer modal
-    const btnClose = document.createElement("a");
-    btnClose.setAttribute("id", "btn-close-success-modal");
-    boxSuccess.appendChild(btnClose);
-    btnClose.innerHTML = "Fermer";
+        // Ajouter le bouton de fermeture de la fenêtre modale
+        const closeButton = document.createElement('button');
+        closeButton.classList.add('close-button');
+        closeButton.textContent = 'Fermer';
+        closeButton.addEventListener('click', () => {
+            modal.remove();
+        });
+        modalContent.appendChild(closeButton);
 
-    btnClose.addEventListener('click', function () {
-        modalSuccess.remove();
-        history.back();
-    });
+        // Ajouter le contenu de la fenêtre modale à la div modale
+        modal.appendChild(modalContent);
+
+        // Ajouter la div modale au corps du document
+        body.appendChild(modal);
+    }
 }
-
