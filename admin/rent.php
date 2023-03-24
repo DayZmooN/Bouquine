@@ -34,25 +34,25 @@ if (isset($_POST['cancelled'])) {
         <?php foreach ($rent as $loan) { ?>
             <h2>Liste des emprunts de l'utilisateur : <?= $loan['username'] ?></h2>
     </div>
-<ul id="oddcolors">
-    <li class="oddcolors">
-      <div id="rentedBook">
-        
-        <div id="bookDits">
-            <p><?= $loan['title'] ?></p>
-        </div>
+    <ul id="oddcolors">
+        <li class="oddcolors">
+            <div id="rentedBook">
 
-        <div id="btnRentAdmin">
-            <form class="rentForm" action="" method="post">
-                <input type="hidden" name="id_loan" value="<?= $loan['id_loan'] ?>">
-                <input class="inputRent" type="submit" name="rented" value="Rented">
-                <input class="inputRent" type="submit" name="cancelled" value="Cancel">
-            </form>
-        </div>
+                <div id="bookDits">
+                    <p><?= $loan['title'] ?></p>
+                </div>
 
-    </div>  
-    </li>
-</ul>
-    
+                <div id="btnRentAdmin">
+                    <form class="rentForm" action="" method="post">
+                        <input type="hidden" name="id_loan" value="<?= $loan['id_loan'] ?>">
+                        <input class="inputRent" type="submit" name="rented" value="Rented">
+                        <input class="inputRent" type="submit" name="cancelled" value="Cancel">
+                    </form>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+
 <?php } ?>
 </section>
