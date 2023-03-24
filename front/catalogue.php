@@ -30,6 +30,8 @@ $query->execute();
         </div>
     </section>
 
+
+    <script src="../js/ajax.js"></script>
 </body>
 
 </html>

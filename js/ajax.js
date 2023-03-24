@@ -11,11 +11,12 @@ fetch('../front/resultats.php')
             bookElement.classList.add('books-catalog');
             bookElement.innerHTML = `
         <div class="item4">
-          <a href="./book.php?id=${book.id_book}">
+          <a href="../front/book.php?id=${book.id_book}">
             <img src="../image/${book.image}" alt="${book.title}">
           </a>
           <p class="titles">${book.title}</p>
           <p class="authors">${book.author}</p>
+          
         </div>
       `;
             // Ajout de l'élément HTML dans le conteneur

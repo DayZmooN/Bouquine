@@ -7,7 +7,7 @@ $datas = json_decode(file_get_contents('php://input'), true);
 // On vérifie si le filtre genre est défini
 $genre_filter = isset($datas["genre"]) ? $datas["genre"] : "";
 
-$query = $db->prepare('SELECT DISTINCT  `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` WHERE `genre` LIKE :genre');
+$query = $db->prepare('SELECT DISTINCT  `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`libel_genre` FROM `book` INNER JOIN `genre_book` ON `genre_book`.`id_book` = `book`.`id_book` INNER JOIN `genre` ON `genre`.`id_genre` = `genre_book`.`id_genre` WHERE `genre` LIKE :genre ');
 $query->bindValue(':genre', "%$genre_filter%", PDO::PARAM_STR);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -20,7 +20,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         </div>
         <div class="genre-filter">
             <?php foreach ($result as $datas) { ?>
-                <button class="genre-btn" data-genre="<?= $datas['genre'] ?>"><?= $datas['genre'] ?></button>
+                <button class="genre-btn" data-genre="<?= $datas['libel_genre'] ?>"><?= $datas['libel_genre'] ?></button>
 
             <?php } ?>
         </div>
