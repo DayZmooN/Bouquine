@@ -51,10 +51,4 @@ if (!isset($_SESSION["admin"])) {
 
         <main class="multitaches">
 
-
-
-
-
-
-
             <script src="./js/admin.js"></script>
