@@ -34,8 +34,7 @@ if (isset($_POST['submit'])) {
 include './header-admin.php';
 ?>
 
-<h1 class="multiTitre">formulaire ajout de livre</h1>
-
+<h1 class="multiTitre">Formulaire ajout de livre</h1>
 <form id="formulaireAjout" action="#" method="POST">
 
     <div id="formGauche">
@@ -57,25 +56,20 @@ include './header-admin.php';
             </div>
 
             <div class="genreChoice">
-
                 <label for="genre"></label>
                 <input type="text" name="genre" id="genre" placeholder="indiquez le genre">
             </div>
 
             <div class="collectChoice">
-
                 <label for="collection"></label>
-                <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
+                <input type="text" name="collection" id="collection" placeholder="indiquez la collection">
             </div>
         </div>
     </div>
 
     <div class="formMilieu">
-
         <div class="select">
-
             <label class="selectCategory" for="id_category">Catégorie :</label>
-
             <select name="id_category" id="id_category">
                 <?php
                 $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
@@ -91,12 +85,7 @@ include './header-admin.php';
             <label class="publication" for="publication_date">Publication : </label>
             <input class="date" type="date" name="publication_date" id="publication_date">
         </div>
-
-        <div class="collectChoice">
-            <label for="collection"></label>
-            <input type="text" name="genre" id="collection" placeholder="indiquez la collection">
-        </div>
-
+       
         <div class="imageChoice">
             <label class="image" for="image">Image :</label>
             <input type="text" name="image" id="image" placeholder="indiquer votre image">
@@ -108,6 +97,7 @@ include './header-admin.php';
             <label for="summary">Résumé</label>
             <textarea type="text" name="summary" id="summary">ecrivez votre resumé</textarea>
         </div>
+
         <input type="submit" name="submit" value="Envoyer le formulaire">
     </div>
 </form>
