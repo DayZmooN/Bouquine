@@ -10,9 +10,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 <h1 class="multiTitre">menus articles</h1>
 
 <div id="articleSearchAjout">
-    <form action="" method="post">
-        <input class="recherche" type="search" name="recherche" placeholder="rechercher directement un ouvrage">
-        <button><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
+    <form action="./resultat-admin.php" method="GET">
+        <input class="recherche" type="text" name="search" placeholder="rechercher directement un ouvrage">
+        <button type="submit"><img src="../image/loupe.png" alt="loupe clicable pour lancer la recherche" title="lancer la recherche"></button>
     </form>
     <a href="./articleadd.php">Ajouter de nouveaux livres</a>
 </div>
