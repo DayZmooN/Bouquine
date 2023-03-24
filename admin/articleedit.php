@@ -69,28 +69,30 @@ while ($article = $req->fetch(PDO::FETCH_ASSOC)) {
                 </div>
 
                 <div class="collectChoice">
+
                     <label for="collection"></label>
-                    <input type="text" name="collection" id="collection" value="<?= $article['collection'] ?>">
+                    <input type="text" name="genre" id="collection" value="collection mille fleur">
                 </div>
             </div>
-        </div>
 
-        <div class="formMilieu">
-            <div class="select">
-                <label class="selectCategory" for="id_category">Catégorie :</label>
-                <select name="id_category" id="id_category">
-                    <?php
-                    $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
-                    $reqCat->execute();
-                    while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
-                    ?>
-                        <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
-                    <?php } ?>
-                </select>
-            </div>
+            <div class="formMilieu">
+                <div class="select">
+                    <label class="selectCategory" for="id_category">Catégorie :</label>
+                    <select name="id_category" id="id_category">
+                        <?php
+                        $reqCat = $db->prepare("SELECT `id_category`, `libel_category`, `libel_slug` FROM `category`");
+                        $reqCat->execute();
+                        while ($category = $reqCat->fetch(PDO::FETCH_ASSOC)) {
+                        ?>
+                            <option name="<?= $category['id_category'] ?>" value="<?= $category['id_category'] ?>"><?= $category['libel_category'] ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
 
-            <div class="ajoutDate">
-                <label class="publication" for="publication_date">Publication : </label>
+                <div class="ajoutDate">
+                    <label class="publication" for="publication_date">Publication : </label>
+                    <input class="date" type="date" name="publication_date" id="publication_date" value="<?= $article['publication_date'] ?>">
+                </div>
                 <input class="date" type="date" name="publication_date" id="publication_date" value="<?= $article['publication_date'] ?>">
             </div>
 

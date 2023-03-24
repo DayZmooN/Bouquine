@@ -38,9 +38,10 @@ $resultUser = $reqUser->fetchAll(PDO::FETCH_ASSOC);
         <td><?= $user['mail'] ?></td>
         <td><?= $user['phone'] ?></td>
         <td><?= $user['birthdate'] ?></td>
-
+        <td>en ligne</td>
         <td><a class="btnRed" data-idbook="<?= $user['id_user'] ?>" data-title="<?= $user['username'] ?>" style="color:red">supprimer</a>
-        <a href="./rent.php?id=<?= $user['id_user'] ?>" class="btnRent">Emprunt</a></td>
+          <a href="./rent.php?id=<?= $user['id_user'] ?>" class="btnRent">Emprunt</a>
+        </td>
       </tr>
     <?php } ?>
   </tbody>
