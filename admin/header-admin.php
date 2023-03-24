@@ -18,8 +18,7 @@ if (!isset($_SESSION["admin"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/style-admin.css">
-    <!-- <link rel="stylesheet" href="./JS/error.css"> -->
-
+    <link rel="import" href="../fonts/LRT Oksana Bold.ttf">
 
 </head>
 
