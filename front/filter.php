@@ -1,3 +1,4 @@
+<!-- ajax created by dayzmoon -->
 <?php
 require_once './connect.php';
 

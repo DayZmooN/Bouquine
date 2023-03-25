@@ -1,3 +1,4 @@
+// ajax created by dayzmoon
 // Récupération de l'élément HTML où les livres seront affichés
 let container = document.querySelector('.container-books');
 
@@ -32,6 +33,7 @@ fetch('../front/resultats.php')
     });
 
 // Récupération des boutons de genre
+// ajax created by dayzmoon
 const genreButtons = document.querySelectorAll('.genre-btn');
 genreButtons.forEach(button => {
     button.addEventListener('click', () => {
