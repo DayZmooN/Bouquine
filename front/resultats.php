@@ -10,7 +10,7 @@ $datas = json_decode(file_get_contents('php://input'), true);
 // On vérifie si le filtre genre est défini
 $genre_filter = isset($datas["genre"]) ? $datas["genre"] : "";
 
-$query = $db->prepare('SELECT DISTINCT  `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`libel_genre` FROM `book` INNER JOIN `genre_book` ON `genre_book`.`id_book` = `book`.`id_book` INNER JOIN `genre` ON `genre`.`id_genre` = `genre_book`.`id_genre` WHERE `genre` LIKE :genre LIMIT 40 ');
+$query = $db->prepare('SELECT DISTINCT  `book`.`id_book`, `book`.`ISBN`, `book`.`image`, `book`.`title`, `book`.`author`, `book`.`editor`, `book`.`collection`, `book`.`publication_date`, `book`.`genre`, `book`.`id_category`, `book`.`summary`, `book`.`status`, `genre`.`libel_genre` FROM `book` INNER JOIN `genre_book` ON `genre_book`.`id_book` = `book`.`id_book` INNER JOIN `genre` ON `genre`.`id_genre` = `genre_book`.`id_genre` WHERE `genre` LIKE :genre  ');
 $query->bindValue(':genre', "%$genre_filter%", PDO::PARAM_STR);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -36,18 +36,35 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fill, 100px);
+        justify-items: center;
         grid-auto-rows: 30px;
         padding: 20px;
         margin: 0 auto;
         height: auto;
+        overflow: scroll;
+
+        max-height: 250px;
+        /* display: flex; */
         max-width: 1200px;
         border-radius: 8px;
-        background-color: #f1f1f2;
         border: none;
         width: 90%;
         text-align: center;
         align-items: center;
         box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+    }
+
+    .fleche {
+        position: absolute;
+        text-align: center;
+    }
+
+    ::-webkit-scrollbar-corner {
+        opacity: 0;
+    }
+
+    ::-webkit-scrollbar {
+        opacity: 0;
     }
 
     #filter {
@@ -56,11 +73,12 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         width: 100%;
         max-width: 100px;
         text-align: center;
-        padding: 2px;
+        padding: 5px;
         background-color: blueviolet;
         box-sizing: content-box;
         box-shadow: 1px 1px 4px black;
-        height: 30px;
+        height: 100%;
+        max-height: 70px;
         color: #f1f1f1;
         border-radius: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -70,9 +88,11 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     #filter:hover {
         background-color: white;
         color: orange;
+        max-height: 70px;
+        height: 100%;
         font: 900;
-        font-size: 1rem;
-        transform: scale(1.1);
+        font-size: 0.75rem;
+        transform: scale(1.2);
     }
 
     .books-catalog {
@@ -136,7 +156,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         }
 
         .books-catalog {
-            margin-top: 50px;
+            margin-top: 0px;
         }
 
 
@@ -147,6 +167,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             font-size: 1.3rem;
             transform: scale(1.1);
         }
+
 
     }
 </style>
@@ -163,6 +184,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                 <button id="filter" class="genre-btn" data-genre="<?= $datas['libel_genre'] ?>"><?= $datas['libel_genre'] ?></button>
 
             <?php } ?>
+
+        </div>
+        <div>
         </div>
         <div class="books">
             <div class="container-books">
