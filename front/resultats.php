@@ -26,8 +26,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     }
 
     .container-filter {
-        position: relative;
-        top: 50%;
+        position: sticky;
+        top: 0;
         left: 50%;
         transform: translate(-50%, -0%);
         top: 120px;
@@ -35,17 +35,16 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         justify-content: center;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: repeat(auto-fill, 100px);
-        justify-items: center;
-        grid-auto-rows: 30px;
+        grid-template-columns: repeat(200, 150px);
+        grid-auto-rows: auto;
         padding: 20px;
-        margin: 0 auto;
+        margin: 70px auto;
         height: auto;
+        max-height: 110px;
         overflow: scroll;
 
-        max-height: 250px;
         /* display: flex; */
-        max-width: 1200px;
+        max-width: 900px;
         border-radius: 8px;
         border: none;
         width: 90%;
@@ -73,12 +72,11 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         width: 100%;
         max-width: 100px;
         text-align: center;
-        padding: 5px;
+        padding: 2px;
         background-color: blueviolet;
         box-sizing: content-box;
         box-shadow: 1px 1px 4px black;
-        height: 100%;
-        max-height: 70px;
+        height: 50px;
         color: #f1f1f1;
         border-radius: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -88,11 +86,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     #filter:hover {
         background-color: white;
         color: orange;
-        max-height: 70px;
-        height: 100%;
         font: 900;
-        font-size: 0.75rem;
-        transform: scale(1.2);
+        font-size: 0.95rem;
+        transform: scale(1.1);
     }
 
     .books-catalog {
@@ -105,11 +101,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         margin: 150px auto;
     }
 
-    @media screen and (max-width:1200px) {
+    /* 
+    @media screen and (min-width:900px) {
         .container-filter {
-            grid-template-columns: repeat(auto-fill, 100px);
+            max-width: 900px;
+            grid-template-columns: repeat(auto-fill, 150px);
             padding: 5px;
-            max-height: 70px;
+            max-height: 100px;
             overflow: scroll;
             display: flex;
             width: 95%;
@@ -137,7 +135,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         }
     }
 
-    @media screen and (max-width:900px) {
+    @media screen and (max-width:500px) {
         .container-filter {
             grid-template-columns: repeat(auto-fill, 100px);
             padding: 5px;
@@ -156,7 +154,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         }
 
         .books-catalog {
-            margin-top: 0px;
+            margin-top: 50px;
         }
 
 
@@ -168,8 +166,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             transform: scale(1.1);
         }
 
-
-    }
+    } */
 </style>
 <!-- ajax created by dayzmoon -->
 <section id="catalogue">
