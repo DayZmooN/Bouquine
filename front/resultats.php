@@ -14,7 +14,7 @@ $query = $db->prepare('SELECT DISTINCT  `book`.`id_book`, `book`.`ISBN`, `book`.
 $query->bindValue(':genre', "%$genre_filter%", PDO::PARAM_STR);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
-echo json_encode($result);
+// echo json_encode($result);
 ?>
 
 <section id="catalogue">
