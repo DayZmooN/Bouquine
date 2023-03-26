@@ -1443,6 +1443,7 @@ a {
   }
   body > .corp > .multitaches {
     width: 100%;
+    height: 100%;
     /*tableau de bord*/
     /*page article*/
     /*formulaire ajout de livre*/
@@ -1451,6 +1452,8 @@ a {
     /*edit categorie*/
     /*page des genres*/
     /*edit genre*/
+    /*user*/
+    /*newsletter*/
   }
   body > .corp > .multitaches > .multiTitre {
     font-size: 1.4rem;
@@ -1867,11 +1870,11 @@ a {
     width: 100%;
     text-align: center;
   }
-  body > .corp > .multitaches > #editCategorie {
+  body > .corp > .multitaches > #sectionEditGenre {
     width: 300px;
     margin: 25px auto;
   }
-  body > .corp > .multitaches > #editCategorie > .edit {
+  body > .corp > .multitaches > #sectionEditGenre > .edit {
     width: 300px;
     height: 250px;
     background-color: #FFDAA4;
@@ -1883,7 +1886,7 @@ a {
     justify-content: space-evenly;
     justify-items: center;
   }
-  body > .corp > .multitaches > #editCategorie > .edit > .editGenre {
+  body > .corp > .multitaches > #sectionEditGenre > .edit > .editGenre {
     width: 200px;
     height: 50px;
     border: 0;
@@ -1891,7 +1894,7 @@ a {
     text-align: center;
     font-size: 0.9rem;
   }
-  body > .corp > .multitaches > #editCategorie > .edit > .editSlugGenre {
+  body > .corp > .multitaches > #sectionEditGenre > .edit > .editSlugGenre {
     width: 200px;
     height: 50px;
     border: 0;
@@ -1899,7 +1902,7 @@ a {
     text-align: center;
     font-size: 0.9rem;
   }
-  body > .corp > .multitaches > #editCategorie > .edit > .subEditGenre {
+  body > .corp > .multitaches > #sectionEditGenre > .edit > .subEditGenre {
     width: 150px;
     height: 50px;
     text-transform: uppercase;
@@ -1909,5 +1912,657 @@ a {
     color: white;
     background-color: #696969;
     cursor: pointer;
+  }
+  body > .corp > .multitaches > #tableUser {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  body > .corp > .multitaches > #tableUser > thead {
+    width: 50%;
+    font-size: 0.6rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .contenuUser {
+    font-size: 0.6rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton {
+    height: 50px;
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td {
+    height: 50px;
+    font-size: 0.6rem;
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button {
+    width: 50%;
+    height: 50px;
+    background-color: #696969;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 10px;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button > a {
+    display: block;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    font-size: 1.1rem;
+  }
+  body > .corp > .multitaches > .newsLetter {
+    width: 100%;
+  }
+  body > .corp > .multitaches > .newsLetter > textarea {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  body #side-bar {
+    max-width: 500px;
+    width: 20%;
+    height: 100%;
+    background-color: #858585;
+  }
+  body #side-bar > #menu-admin {
+    width: 100%;
+  }
+  body #side-bar > #menu-admin > nav {
+    width: 100%;
+  }
+  body #side-bar > #menu-admin > nav > ul {
+    width: 100%;
+  }
+  body #side-bar > #menu-admin > nav > ul > .none500 {
+    display: none;
+  }
+  body #side-bar > #menu-admin > nav > ul > li {
+    width: 100%;
+    height: 40px;
+  }
+  body #side-bar > #menu-admin > nav > ul > li > img {
+    display: none;
+  }
+  body #side-bar > #menu-admin > nav > ul > li > a {
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: "QuattrocentoSans-Regular", sans-serif;
+  }
+  body > .corp {
+    width: 80%;
+    height: 100%;
+  }
+  body > .corp > #headerDashboard {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+  }
+  body > .corp > #headerDashboard > .notif {
+    width: 32px;
+    height: 32px;
+    margin: 50px 10px;
+  }
+  body > .corp > #headerDashboard > .notif:hover {
+    cursor: pointer;
+  }
+  body > .corp > #headerDashboard > p {
+    margin-top: 55px;
+  }
+  body > .corp > .multitaches {
+    width: 100%;
+    height: 100%;
+    /*tableau de bord*/
+    /*page article*/
+    /*formulaire ajout de livre*/
+    /*formulaire modification livre*/
+    /*page des categorie*/
+    /*edit categorie*/
+    /*page des genres*/
+    /*edit genre*/
+    /*user*/
+    /*newsletter*/
+  }
+  body > .corp > .multitaches > .multiTitre {
+    font-size: 1rem;
+  }
+  body > .corp > .multitaches > #compteurEtGraphique {
+    display: none;
+  }
+  body > .corp > .multitaches > .dernierAjout {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px auto;
+  }
+  body > .corp > .multitaches > .dernierAjout > h3 {
+    width: 200px;
+    text-align: center;
+    padding-left: 0;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > .dernierAjout > .dernierAjoutMQ {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > .dernierAjout > #bouton {
+    width: 200px;
+    text-align: center;
+  }
+  body > .corp > .multitaches > #articleSearchAjout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #articleSearchAjout > form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+  body > .corp > .multitaches > #articleSearchAjout > form > .recherche {
+    padding-left: 10px;
+    border: 0;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    font-size: 0.9;
+  }
+  body > .corp > .multitaches > #articleSearchAjout > .btnAjout {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-right: 15%;
+    color: rgb(22, 20, 20);
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: #FFDAA4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > .articleList {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px auto;
+    text-align: center;
+  }
+  body > .corp > .multitaches > .articleList > h3 {
+    width: 200px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > .articleList > .dernierAjoutMQ {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > .articleList > #bouton {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #formulaireAjout {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .titre-auteur {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .titre-auteur > .tripleInput {
+    width: 150px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .editeur {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .editeur > #editor {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .genreChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .genreChoice > #genre {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .collectChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > #formGauche > .edition-date > .collectChoice > #collection {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu {
+    width: 100%;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .select > #id_category {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .ajoutDate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .ajoutDate > .date {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .imageChoice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formMilieu > .imageChoice > #image {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite {
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite > .resume {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite > .resume > #summary {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 12px auto;
+  }
+  body > .corp > .multitaches > #formulaireAjout > .formDroite > input {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #696969;
+    cursor: pointer;
+    color: #26F904;
+  }
+  body > .corp > .multitaches > #formulaireModif {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .titre-auteur {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .titre-auteur > .tripleInput {
+    width: 150px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date {
+    width: 100%;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .editeur > #editor {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .genreChoice > #genre {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > #formGauche > .edition-date > .collectChoice > #collection {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu {
+    width: 100%;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .select > #id_category {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .ajoutDate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .ajoutDate > .date {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .imageChoice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formMilieu > .imageChoice > #image {
+    width: 150px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite {
+    width: 100%;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite > .resume {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite > .resume > #summary {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 12px auto;
+  }
+  body > .corp > .multitaches > #formulaireModif > .formDroite > input {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #696969;
+    cursor: pointer;
+    color: #26F904;
+  }
+  body > .corp > .multitaches > #ajoutCategorie {
+    width: 200px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #ajoutCategorie > .ajout {
+    width: 200px;
+    height: 250px;
+    background-color: #FFDAA4;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-wrap: wrap;
+  }
+  body > .corp > .multitaches > #ajoutCategorie > .ajout > .newCat {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #ajoutCategorie > .ajout > .slugCat {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #ajoutCategorie > .ajout > .subCat {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #696969;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches > .titleEditCategory {
+    width: 100%;
+    text-align: center;
+  }
+  body > .corp > .multitaches > #editCategorie {
+    width: 200px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit {
+    width: 200px;
+    height: 250px;
+    background-color: #FFDAA4;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit > .editCat {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit > .editSlugCat {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #editCategorie > .edit > .subEditCat {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #696969;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches > #ajoutGenre {
+    width: 200px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout {
+    width: 200px;
+    height: 250px;
+    background-color: #FFDAA4;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-wrap: wrap;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout > .newGenre {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout > .slugGenre {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #ajoutGenre > .ajout > .subGenre {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #696969;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches > .titleEditGenre {
+    width: 100%;
+    text-align: center;
+  }
+  body > .corp > .multitaches > #sectionEditGenre {
+    width: 200px;
+    margin: 25px auto;
+  }
+  body > .corp > .multitaches > #sectionEditGenre > .edit {
+    width: 200px;
+    height: 250px;
+    background-color: #FFDAA4;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+  body > .corp > .multitaches > #sectionEditGenre > .edit > .editGenre {
+    width: 1500px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #sectionEditGenre > .edit > .editSlugGenre {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  body > .corp > .multitaches > #sectionEditGenre > .edit > .subEditGenre {
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #696969;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches > #tableUser {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }
+  body > .corp > .multitaches > #tableUser > thead {
+    width: 50%;
+    font-size: 0.6rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody {
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .contenuUser {
+    font-size: 0.6rem;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton {
+    height: 50px;
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td {
+    height: 50px;
+    font-size: 0.6rem;
+    width: 50%;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button {
+    width: 50%;
+    height: 50px;
+    background-color: #696969;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 10px;
+  }
+  body > .corp > .multitaches > #tableUser > tbody > .tdButton > td > button > a {
+    display: block;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+    font-size: 1.1rem;
+  }
+  body > .corp > .multitaches > .newsLetter {
+    width: 100%;
+  }
+  body > .corp > .multitaches > .newsLetter > textarea {
+    width: 50%;
   }
 }/*# sourceMappingURL=style-admin.css.map */
