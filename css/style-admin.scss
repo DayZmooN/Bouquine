@@ -1861,6 +1861,103 @@ a {
 
                     }
                 }
+                                /* ---------------------  Page remPRUNT  ------------------------ */
+                                .userLoan {
+                                    width: 80%;
+                                    height: 35rem;
+                                    margin: 0 auto;
+                                    background-color: rgba(81, 87, 172, 0.432);
+                                    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    border-radius: 1rem;
+                                    overflow: scroll;
+                                
+                                    ul#oddcolors{
+                                        li.oddcolors{
+                                            &:nth-child(odd) {
+                                                background-color: rgba(255, 255, 255, 0.274);
+                                                border-radius: 0.5rem;
+                                              }
+                                        
+                                              &:nth-child(even) {
+                                                background-color: rgba(81, 87, 172, 0.432);
+                                                border-radius: 0.5rem;
+                                              }
+                                        }
+                                    }
+                                }
+                                
+                                #rentedBook {
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    width: 55rem;
+                                    display: flex;
+                                    border: 2px solid rgba(0, 0, 0, 0.507);
+                                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                                    border-radius: 0.5rem;
+                                    flex-direction: row;
+                                    align-self: center;
+                                    align-items: center;
+                                    padding: 0.5rem 0.5rem;
+                                }
+                                
+                                #UserInfo {
+                                    height: 2rem;
+                                    width: fit-content;
+                                    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+                                    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+                                    margin: 0.5rem;
+                                    padding: 0.5rem 1rem;
+                                }
+                                
+                                #bookDits {
+                                    flex-grow: 4;
+                                }
+                                
+                                
+                                .inputRent {
+                                    background: none;
+                                    border: 2px solid rgba(0, 0, 0, 0.507);
+                                    color: black;
+                                    font: inherit;
+                                    line-height: 1;
+                                    padding: 0.5rem 1rem;
+                                    border-radius: 7.5px;
+                                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                                    cursor: pointer;
+                                }
+                                
+                                .inputRent:hover {
+                                    background-color: rgba(81, 87, 172, 0.432);
+                                    border: 2px solid rgba(255, 255, 255, 0.507);
+                                    color: white;
+                                }
+                                  
+                                
+                                ::-webkit-scrollbar {
+                                    opacity: 0;
+                                }
+                                
+                                ::-webkit-scrollbar-track {
+                                    opacity: 0;
+                                
+                                }
+                                
+                                ::-webkit-scrollbar-thumb {
+                                    opacity: 0;
+                                
+                                }
+                                
+                                ::-webkit-scrollbar-thumb:hover {
+                                    opacity: 0;
+                                }
+                                
+                                ::-webkit-scrollbar-corner{
+                                    opacity: 0;
+                                }
+                
             }
         }
 
@@ -2603,6 +2700,103 @@ a {
 
                     }
                 }
+                                /* ---------------------  Page remPRUNT  ------------------------ */
+                                .userLoan {
+                                    width: 80%;
+                                    height: 35rem;
+                                    margin: 0 auto;
+                                    background-color: rgba(81, 87, 172, 0.432);
+                                    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    border-radius: 1rem;
+                                    overflow: scroll;
+                                
+                                    ul#oddcolors{
+                                        li.oddcolors{
+                                            &:nth-child(odd) {
+                                                background-color: rgba(255, 255, 255, 0.274);
+                                                border-radius: 0.5rem;
+                                              }
+                                        
+                                              &:nth-child(even) {
+                                                background-color: rgba(81, 87, 172, 0.432);
+                                                border-radius: 0.5rem;
+                                              }
+                                        }
+                                    }
+                                }
+                                
+                                #rentedBook {
+                                    margin-top: 15px;
+                                    margin-bottom: 15px;
+                                    width: 55rem;
+                                    display: flex;
+                                    border: 2px solid rgba(0, 0, 0, 0.507);
+                                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                                    border-radius: 0.5rem;
+                                    flex-direction: row;
+                                    align-self: center;
+                                    align-items: center;
+                                    padding: 0.5rem 0.5rem;
+                                }
+                                
+                                #UserInfo {
+                                    height: 2rem;
+                                    width: fit-content;
+                                    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+                                    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+                                    margin: 0.5rem;
+                                    padding: 0.5rem 1rem;
+                                }
+                                
+                                #bookDits {
+                                    flex-grow: 4;
+                                }
+                                
+                                
+                                .inputRent {
+                                    background: none;
+                                    border: 2px solid rgba(0, 0, 0, 0.507);
+                                    color: black;
+                                    font: inherit;
+                                    line-height: 1;
+                                    padding: 0.5rem 1rem;
+                                    border-radius: 7.5px;
+                                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                                    cursor: pointer;
+                                }
+                                
+                                .inputRent:hover {
+                                    background-color: rgba(81, 87, 172, 0.432);
+                                    border: 2px solid rgba(255, 255, 255, 0.507);
+                                    color: white;
+                                }
+                                  
+                                
+                                ::-webkit-scrollbar {
+                                    opacity: 0;
+                                }
+                                
+                                ::-webkit-scrollbar-track {
+                                    opacity: 0;
+                                
+                                }
+                                
+                                ::-webkit-scrollbar-thumb {
+                                    opacity: 0;
+                                
+                                }
+                                
+                                ::-webkit-scrollbar-thumb:hover {
+                                    opacity: 0;
+                                }
+                                
+                                ::-webkit-scrollbar-corner{
+                                    opacity: 0;
+                                }
+                
 
 
 
@@ -3395,6 +3589,105 @@ a {
                         width: 50%;
 
                     }
+                }
+                .btnRent {
+                    color: #494fa1;
+                }
+                /* ---------------------  Page remPRUNT  ------------------------ */
+                .userLoan {
+                    width: 80%;
+                    height: 35rem;
+                    margin: 0 auto;
+                    background-color: rgba(81, 87, 172, 0.432);
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 1rem;
+                    overflow: scroll;
+                
+                    ul#oddcolors{
+                        li.oddcolors{
+                            &:nth-child(odd) {
+                                background-color: rgba(255, 255, 255, 0.274);
+                                border-radius: 0.5rem;
+                              }
+                        
+                              &:nth-child(even) {
+                                background-color: rgba(81, 87, 172, 0.432);
+                                border-radius: 0.5rem;
+                              }
+                        }
+                    }
+                }
+                
+                #rentedBook {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    width: 55rem;
+                    display: flex;
+                    border: 2px solid rgba(0, 0, 0, 0.507);
+                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                    border-radius: 0.5rem;
+                    flex-direction: row;
+                    align-self: center;
+                    align-items: center;
+                    padding: 0.5rem 0.5rem;
+                }
+                
+                #UserInfo {
+                    height: 2rem;
+                    width: fit-content;
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+                    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+                    margin: 0.5rem;
+                    padding: 0.5rem 1rem;
+                }
+                
+                #bookDits {
+                    flex-grow: 4;
+                }
+                
+                
+                .inputRent {
+                    background: none;
+                    border: 2px solid rgba(0, 0, 0, 0.507);
+                    color: black;
+                    font: inherit;
+                    line-height: 1;
+                    padding: 0.5rem 1rem;
+                    border-radius: 7.5px;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    cursor: pointer;
+                }
+                
+                .inputRent:hover {
+                    background-color: rgba(81, 87, 172, 0.432);
+                    border: 2px solid rgba(255, 255, 255, 0.507);
+                    color: white;
+                }
+                  
+                
+                ::-webkit-scrollbar {
+                    opacity: 0;
+                }
+                
+                ::-webkit-scrollbar-track {
+                    opacity: 0;
+                
+                }
+                
+                ::-webkit-scrollbar-thumb {
+                    opacity: 0;
+                
+                }
+                
+                ::-webkit-scrollbar-thumb:hover {
+                    opacity: 0;
+                }
+                
+                ::-webkit-scrollbar-corner{
+                    opacity: 0;
                 }
 
 

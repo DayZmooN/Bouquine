@@ -1111,6 +1111,7 @@ a {
     /*formulaire modification livre*/
     /*liste user*/
     /*newsletter*/
+    /* ---------------------  Page remPRUNT  ------------------------ */
   }
   body > .corp > .multitaches > .multiTitre {
     font-size: 2rem;
@@ -1389,6 +1390,82 @@ a {
   body > .corp > .multitaches > .newsLetter > textarea {
     width: 50%;
   }
+  body > .corp > .multitaches .userLoan {
+    width: 80%;
+    height: 35rem;
+    margin: 0 auto;
+    background-color: rgba(81, 87, 172, 0.432);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: scroll;
+  }
+  body > .corp > .multitaches .userLoan ul#oddcolors li.oddcolors:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 0.5rem;
+  }
+  body > .corp > .multitaches .userLoan ul#oddcolors li.oddcolors:nth-child(even) {
+    background-color: rgba(81, 87, 172, 0.432);
+    border-radius: 0.5rem;
+  }
+  body > .corp > .multitaches #rentedBook {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 55rem;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 0.5rem;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+  }
+  body > .corp > .multitaches #UserInfo {
+    height: 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  body > .corp > .multitaches #bookDits {
+    flex-grow: 4;
+  }
+  body > .corp > .multitaches .inputRent {
+    background: none;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    color: black;
+    font: inherit;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 7.5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches .inputRent:hover {
+    background-color: rgba(81, 87, 172, 0.432);
+    border: 2px solid rgba(255, 255, 255, 0.507);
+    color: white;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-track {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-thumb {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-corner {
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 900px) and (min-width: 500px) {
   body #side-bar {
@@ -1454,6 +1531,7 @@ a {
     /*edit genre*/
     /*user*/
     /*newsletter*/
+    /* ---------------------  Page remPRUNT  ------------------------ */
   }
   body > .corp > .multitaches > .multiTitre {
     font-size: 1.4rem;
@@ -1959,6 +2037,82 @@ a {
   body > .corp > .multitaches > .newsLetter > textarea {
     width: 50%;
   }
+  body > .corp > .multitaches .userLoan {
+    width: 80%;
+    height: 35rem;
+    margin: 0 auto;
+    background-color: rgba(81, 87, 172, 0.432);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: scroll;
+  }
+  body > .corp > .multitaches .userLoan ul#oddcolors li.oddcolors:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 0.5rem;
+  }
+  body > .corp > .multitaches .userLoan ul#oddcolors li.oddcolors:nth-child(even) {
+    background-color: rgba(81, 87, 172, 0.432);
+    border-radius: 0.5rem;
+  }
+  body > .corp > .multitaches #rentedBook {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 55rem;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 0.5rem;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+  }
+  body > .corp > .multitaches #UserInfo {
+    height: 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  body > .corp > .multitaches #bookDits {
+    flex-grow: 4;
+  }
+  body > .corp > .multitaches .inputRent {
+    background: none;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    color: black;
+    font: inherit;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 7.5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches .inputRent:hover {
+    background-color: rgba(81, 87, 172, 0.432);
+    border: 2px solid rgba(255, 255, 255, 0.507);
+    color: white;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-track {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-thumb {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-corner {
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 500px) and (orientation: portrait) {
   body #side-bar {
@@ -2027,6 +2181,7 @@ a {
     /*edit genre*/
     /*user*/
     /*newsletter*/
+    /* ---------------------  Page remPRUNT  ------------------------ */
   }
   body > .corp > .multitaches > .multiTitre {
     font-size: 1rem;
@@ -2564,5 +2719,84 @@ a {
   }
   body > .corp > .multitaches > .newsLetter > textarea {
     width: 50%;
+  }
+  body > .corp > .multitaches .btnRent {
+    color: #494fa1;
+  }
+  body > .corp > .multitaches .userLoan {
+    width: 80%;
+    height: 35rem;
+    margin: 0 auto;
+    background-color: rgba(81, 87, 172, 0.432);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: scroll;
+  }
+  body > .corp > .multitaches .userLoan ul#oddcolors li.oddcolors:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 0.5rem;
+  }
+  body > .corp > .multitaches .userLoan ul#oddcolors li.oddcolors:nth-child(even) {
+    background-color: rgba(81, 87, 172, 0.432);
+    border-radius: 0.5rem;
+  }
+  body > .corp > .multitaches #rentedBook {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 55rem;
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 0.5rem;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+  }
+  body > .corp > .multitaches #UserInfo {
+    height: 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.507);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 0px inset;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  body > .corp > .multitaches #bookDits {
+    flex-grow: 4;
+  }
+  body > .corp > .multitaches .inputRent {
+    background: none;
+    border: 2px solid rgba(0, 0, 0, 0.507);
+    color: black;
+    font: inherit;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 7.5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+  }
+  body > .corp > .multitaches .inputRent:hover {
+    background-color: rgba(81, 87, 172, 0.432);
+    border: 2px solid rgba(255, 255, 255, 0.507);
+    color: white;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-track {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-thumb {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-thumb:hover {
+    opacity: 0;
+  }
+  body > .corp > .multitaches ::-webkit-scrollbar-corner {
+    opacity: 0;
   }
 }/*# sourceMappingURL=style-admin.css.map */
