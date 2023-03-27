@@ -111,6 +111,11 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         background-color: #000000f5;
     }
 
+    .books {
+        overflow: auto;
+    }
+
+
     #filter:hover {
         background-color: white;
         color: orange;
@@ -136,9 +141,11 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         padding: 5px;
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.60), 0 4px 6px rgba(0, 0, 0, 0.14);
+        overflow: auto;
     }
 
     .item4 {
+        overflow: auto;
         width: 100%;
         height: 100%;
         box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .02), 0 5px 14px 0 rgba(0, 0, 0, .08);
@@ -181,6 +188,11 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             width: 100%;
             height: auto;
         }
+
+        .books {
+            overflow: auto;
+        }
+
 
         .container-filter {
             grid-template-columns: repeat(auto-fill, 150px);
@@ -252,7 +264,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         }
 
         .books-catalog {
-            margin-top: 50px;
+            margin-top: 70px;
             width: 100%;
             height: 100%;
             background-color: #f1f1f1a0;
@@ -269,6 +281,13 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             border-radius: 8px;
             padding: 2px;
 
+
+        }
+
+        .item4:hover {
+            transform: translateZ(1000px);
+            perspective: (2000);
+            overflow: hidden;
         }
 
         a {
@@ -286,9 +305,9 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
         }
 
-        img:active {
-            transform: scale(0.9);
+        img:hover {
             box-shadow: 0 4px 4px black;
+            overflow: hidden;
         }
 
     }
