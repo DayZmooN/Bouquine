@@ -26,7 +26,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     }
 
     .container-filter {
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 50%;
         transform: translate(-50%, -0%);
@@ -35,12 +35,10 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         justify-content: center;
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: repeat(200, 150px);
+        grid-template-columns: repeat(auto-fill, 150px);
         grid-auto-rows: auto;
         padding: 20px;
-        margin: 70px auto;
-        height: auto;
-        max-height: 110px;
+        height: 200px;
         overflow: scroll;
 
         /* display: flex; */
@@ -50,7 +48,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         width: 90%;
         text-align: center;
         align-items: center;
-        box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+        /* box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18); */
     }
 
     .fleche {
@@ -80,7 +78,37 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         color: #f1f1f1;
         border-radius: 5px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        animation: bom 2s ease-in-out infinite;
 
+    }
+
+    @keyframes bom {
+        0% {
+            transform: scale(1);
+            transform: translateY(0px);
+            border: 1px solid white;
+
+        }
+
+        50% {
+            transform: scale(1.1);
+            border: 1px solid red;
+            transform: translateY(5px);
+
+        }
+
+        100% {
+            transform: translateY(-4px);
+            border: 1px solid blue;
+
+            transform: scale(0.97);
+
+        }
+
+    }
+
+    body {
+        background-color: #000000f5;
     }
 
     #filter:hover {
@@ -91,28 +119,78 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         transform: scale(1.1);
     }
 
+
     .books-catalog {
-        display: grid;
+        /* display: grid; */
         grid-gap: 20px;
         justify-content: center;
-        grid-template-columns: repeat(auto-fill, 200px);
+        /* grid-template-columns: repeat(auto-fill, 400px); */
         grid-auto-rows: 30px;
         margin: 50px;
-        margin: 150px auto;
+        margin: 70px auto;
+        background-color: #090a20;
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        /* display: inline-block; */
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.60), 0 4px 6px rgba(0, 0, 0, 0.14);
     }
 
-    /* 
-    @media screen and (min-width:900px) {
+    .item4 {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .02), 0 5px 14px 0 rgba(0, 0, 0, .08);
+        border-radius: 8px;
+
+    }
+
+    .books-catalog:hover {
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    p.titles {
+        margin: 16px;
+        font: 800;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #a99aa9;
+    }
+
+    p.authors {
+        font: 400;
+        color: #a99aa9;
+    }
+
+    img:hover {
+        object-fit: fill;
+        transform: scale(1.1);
+        width: 100%;
+        height: 100%;
+        border: 1px solid #f1f1f1;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    }
+
+
+    @media screen and (min-width:950px) {
+        body {
+            background-color: #000000f5;
+            width: 100%;
+            height: auto;
+        }
+
         .container-filter {
-            max-width: 900px;
             grid-template-columns: repeat(auto-fill, 150px);
-            padding: 5px;
             max-height: 100px;
             overflow: scroll;
             display: flex;
             width: 95%;
+            /* background-color: darkcyan; */
+            align-items: center;
 
-            background-color: #f2f2f2;
         }
 
         ::-webkit-scrollbar-corner {
@@ -124,17 +202,98 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         }
 
         #filter {
+            height: 100%;
+            max-height: 70px;
             font-size: 0.87rem;
             color: yellow;
             width: 100%;
-            max-width: 450px;
+            max-width: 300px;
+            transition: bom .5s ease-in-out;
+            transition-duration: 1s;
+            animation: bom 2s ease-in-out infinite;
+
+
+        }
+
+        @keyframes bom {
+            0% {
+                transform: scale(1);
+                transform: translateX(0px);
+                border: 1px solid white;
+
+            }
+
+            50% {
+                transform: scale(1.1);
+                border: 1px solid red;
+                transform: translateX(10px);
+
+            }
+
+            100% {
+                transform: translateX(-10px);
+                border: 1px solid blue;
+
+                transform: scale(0.97);
+
+            }
+
+        }
+
+        #filter:hover {
+            animation: bom;
+            /* transform-origin: center;
+            transform: rotate(-370deg); */
+        }
+
+        .container-books {
+            width: fit-content;
+            height: fit-content;
         }
 
         .books-catalog {
             margin-top: 50px;
+            width: 100%;
+            height: 100%;
+            background-color: #f1f1f1a0;
+
+            justify-items: center;
         }
+
+        .item4 {
+            width: 100%;
+
+            height: 100%;
+            box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .02), 0 5px 14px 0 rgba(0, 0, 0, .08);
+            background-color: black;
+            border-radius: 8px;
+            padding: 2px;
+
+        }
+
+        a {
+            width: 100%;
+
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 10px auto;
+            box-shadow: 0 2px 2px black;
+
+
+        }
+
+        img:active {
+            transform: scale(0.9);
+            box-shadow: 0 4px 4px black;
+        }
+
     }
 
+    /* 
     @media screen and (max-width:500px) {
         .container-filter {
             grid-template-columns: repeat(auto-fill, 100px);
@@ -144,7 +303,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
             display: flex;
             width: 95%;
 
-            background-color: #f2f2f2;
+            background-color: blue;
         }
 
         #filter {
