@@ -13,7 +13,6 @@ $query->execute();
 
             <h2 class="catalog">Catalogue</h2>
 
-            
 
             <div class="container-books">
                 <?php foreach ($query as $book) { ?>
@@ -29,7 +28,9 @@ $query->execute();
             </div>
         </div>
     </section>
-    
+
+
+    <script src="../js/ajax.js"></script>
 </body>
 
 </html>

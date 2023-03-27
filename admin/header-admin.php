@@ -5,8 +5,6 @@ if (!isset($_SESSION["admin"])) {
     header("location: ./connexion-admin.php");
     exit;
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -18,13 +16,11 @@ if (!isset($_SESSION["admin"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/style-admin.css">
-    <!-- <link rel="stylesheet" href="./JS/error.css"> -->
-
+    <link rel="import" href="../fonts/LRT Oksana Bold.ttf">
 
 </head>
 
 <body>
-
     <aside id="side-bar">
         <div id="logo">
             <img src="../image/logoAdmin.png" alt="logo du site bouquine">
@@ -32,7 +28,8 @@ if (!isset($_SESSION["admin"])) {
         <div id="menu-admin">
             <nav>
                 <ul>
-                    <li><img src="../image/tableauDeBord.png" alt="icone du dashboard"> <a href="./dashboard-admin.php">Tableau de bord</a></li>
+                    <li><img src="../image/tableauDeBord.png" alt="icone du dashboard"> <a href="./dashboard-admin.php">Tableau de bord</a>
+                    </li>
                     <li><img src="../image/articleDashboard.png" alt="icone articles du dashboard"><a href="./article.php">Articles</a></li>
                     <li><img src="../image/catégorieDashboard.png" alt="icone catégorie du dashboard"><a href="./category.php">Catégories</a></li>
                     <li><img src="../image/genresDashboard.png" alt="icone genres du dashboard"><a href="./genre.php">Genre</a></li>
@@ -53,24 +50,5 @@ if (!isset($_SESSION["admin"])) {
         </header>
 
         <main class="multitaches">
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="modal-message"></p>
-                </div>
-            </div>
-            <!-- avant la fin du body de votre fichier PHP -->
-
-            <body>
-                <!-- ... -->
-                <!-- la modal -->
-                <div id="success-modal" class="modal">
-                    <div class="modal-content">
-                        <p>Suppression réussie!</p>
-                    </div>
-                </div>
-            </body>
-
-
 
             <script src="./js/admin.js"></script>

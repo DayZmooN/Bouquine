@@ -26,11 +26,10 @@ if (isset($_POST['submitAdd'])) {
 
 <div id="ajoutGenre">
     <form class="ajout" action="" method="post">
-
-        <input class="newGenre" type="text" name="libel_genre" placeholder="nouveau genre">
+        <input class="newGenre" type="text" name="libel_genre" placeholder="nouveau genre" required>
         <input class="slugGenre" type="text" name="genre_slug" placeholder="champ du slug">
-        <input class="subGenre" type="submit" name="submitAdd" value="Ajouter">
 
+        <input class="subGenre" type="submit" name="submitAdd" value="Ajouter">
     </form>
 </div>
 
@@ -40,9 +39,20 @@ if (isset($_POST['submitAdd'])) {
     ?>
         <div class="unite">
             <h3><?= $genre['libel_genre'] ?></h3>
-
+            
             <a class="btnGreen" href="./genreaddedit.php?id=<?= $genre['id_genre'] ?>" style="color:green">modifier</a>
             <a class="btnRed" data-idbook="<?= $genre['id_genre'] ?>" data-title="<?= $genre['libel_genre'] ?>" style="color:red">supprimer</a>
-
         </div>
     <?php } ?>
+    <?php if (isset($_SESSION['success'])) : ?>
+        <div class="success" style="background-color: #209f00a8;">
+            <p><?= $_SESSION["success"] ?></p>
+        </div>
+        <?php unset($_SESSION["success"]); ?>
+    <?php endif; ?>
+    <?php if (isset($_SESSION['error'])) : ?>
+        <div class="error" style="background-color: #b50000a8;">
+            <p><?= $_SESSION["error"] ?></p>
+        </div>
+        <?php unset($_SESSION["error"]); ?>
+    <?php endif; ?>

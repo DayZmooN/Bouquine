@@ -37,8 +37,8 @@ require_once './connect.php'
                         <?php } ?>
                     </ul>
                 </li>
-                
-                <li><a href='../front/infopratique.php'>Infos</a></li>
+
+                <li><a href='../front/infopratique.php'>Infos pratiques</a></li>
                 <!-- barre de recherche  -->
                 <li class="search-box">
                     <form id="form-header" method="GET" action="./recherche.php">
@@ -48,24 +48,24 @@ require_once './connect.php'
                 </li>
             </ul>
 
-             <div class="header-btn">              
-            <?php if (isset($_SESSION['user'])) { ?>
-                <a href="./user-dashboard.php" class="img-user">
-                    <img class="img-user1" src="../image/user.png" alt="image user">
-                    <span class="nom"><?php echo $_SESSION['user']['username']; ?></span></a>
-               
-                <form id="deconnect" action="../model/deconnexion.php" method="post">
-                    <button id="user-deconnect" type="submit" name="logout"><img id="deconnect1" src="../image/deconnexion-.png" alt="déconnexion"></button>
-                </form>
-            <?php }
-            if (!isset($_SESSION['user'])) { ?>
+            <div class="header-btn">
+                <?php if (isset($_SESSION['user'])) { ?>
+                    <a href="./user-dashboard.php" class="img-user">
+                        <img class="img-user1" src="../image/user.png" alt="image user">
+                        <span class="nom"><?php echo $_SESSION['user']['username']; ?></span></a>
+
+                    <form id="deconnect" action="../model/deconnexion.php" method="post">
+                        <button id="user-deconnect" type="submit" name="logout"><img id="deconnect1" src="../image/deconnexion-.png" alt="déconnexion"></button>
+                    </form>
+                <?php }
+                if (!isset($_SESSION['user'])) { ?>
 
 
-                <a href="./connexion.php" class="btn-user">
-                    <button id="user-connect" type="submit">Connexion</button>
-                </a>
-            <?php } ?>
-            </div> 
+                    <a href="./connexion.php" class="btn-user">
+                        <button id="user-connect" type="submit">Connexion</button>
+                    </a>
+                <?php } ?>
+            </div>
         </nav>
 
     </header>

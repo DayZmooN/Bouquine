@@ -1,6 +1,9 @@
 <?php
 //on démarre une session PHP
 require_once '../model/connexion.php';
+require_once './connect.php';
+
+
 
 
 ?>
@@ -21,7 +24,7 @@ require_once '../model/connexion.php';
 <body>
     <section id="connexion">
         <div class="lettreb">
-            
+
             <a href="./accueil.php"><img class="b" src="../image/logo1.png" alt="logo bouquine"></a>
 
         </div>
@@ -31,23 +34,29 @@ require_once '../model/connexion.php';
             <p><a href="https://www.google.com/intl/fr/gmail/about/"><i class='fab fa-google' style='font-size:24px'></i></p></a>
             <p><a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f" style='font-size:24px'></i></p></a>
             <p><a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter" style='font-size:24px'></i></p></a>
+
         </div>
+
         <p class="email">ou utiliser mon adresse e-mail :</p>
 
-        <form action="#" method="POST">
+        <form id="inscription" method="POST">
+            <?php if (isset($_GET['err'])) { ?>
+                <p style="color:red; text-align:center; ">Adresse e-mail ou mot de passe incorrect</p>
+            <?php } ?>
             <div class="inputs">
-                <input type="email" id="mail" name="mail" placeholder="Email" />
-                <input type="password" id="password" name="password" placeholder="Mot de passe">
+                <input type="email" id="mail" name="mail" placeholder="Email" required />
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
             </div>
 
             <p class="inscription"><a href="#">J'ai oublié mon mot de passe</a><br>
                 Je n'ai pas de compte.<a href="./inscription.php"> S'inscrire</a></p>
-           
-                <button id="btn-connect" type="submit">Se connecter</button>
+
+            <button id="btn-connect" type="submit">Se connecter</button>
             </div>
         </form>
     </section>
 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
