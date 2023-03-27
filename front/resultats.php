@@ -131,7 +131,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         background-color: #090a20;
         width: 100%;
         max-width: 250px;
-        height: 100%;
+        height: auto;
         /* display: inline-block; */
         padding: 5px;
         border-radius: 8px;
