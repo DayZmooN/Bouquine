@@ -2580,3 +2580,29 @@ input[type="tel"]#telephone {
 }
 
 /* *******END RESPONSIVE MOBILE DASHBOARD USER************* */
+
+/* **************media queries header ********************/
+
+@media screen and (max-width: 400px) {
+
+   
+    
+    .menu ul {
+        display: none;
+    }
+
+    
+}
+
+/* Media query pour les écrans avec une largeur de 900px ou moins */
+@media screen and (max-width: 900px) {
+    
+        .menu ul {
+        display: none;
+    }
+
+    
+}
+
+
+/* ******************fin media queries
