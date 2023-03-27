@@ -1077,6 +1077,67 @@ a {
   body > .corp > .multitaches > .multiTitre {
     font-size: 2rem;
   }
+  body #sideVide {
+    max-width: 1300px;
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    background-color: #858585;
+  }
+  body #sideVide > #logo > img {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  body .bodyConnexion {
+    width: 75%;
+    height: 100%;
+    float: right;
+  }
+  body .bodyConnexion > .connexion {
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 100px auto;
+    background-color: #FFDAA4;
+  }
+  body .bodyConnexion > .connexion > .Titre {
+    width: 100%;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  body .bodyConnexion > .connexion > #mail,
+  body .bodyConnexion > .connexion #pass {
+    width: 300px;
+    height: 50px;
+    margin: 30px 100px;
+  }
+  body .bodyConnexion > .connexion > #mail > input,
+  body .bodyConnexion > .connexion #pass > input {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect {
+    width: 100px;
+  }
+  body .bodyConnexion > .connexion > #connect > button {
+    width: 100px;
+    height: 25px;
+    margin: 50px 200px;
+    box-shadow: 1px 1px 10px 1px grey;
+    background-color: #81D9E5;
+    border: 0;
+    border-radius: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect > button:hover {
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 1260px) and (min-width: 900px) {
   body {
@@ -1471,6 +1532,67 @@ a {
   }
   body > .corp > .multitaches ::-webkit-scrollbar-corner {
     opacity: 0;
+  }
+  body #sideVide {
+    max-width: 1300px;
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    background-color: #858585;
+  }
+  body #sideVide > #logo > img {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  body .bodyConnexion {
+    width: 75%;
+    height: 100%;
+    float: right;
+  }
+  body .bodyConnexion > .connexion {
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 100px auto;
+    background-color: #FFDAA4;
+  }
+  body .bodyConnexion > .connexion > .Titre {
+    width: 100%;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  body .bodyConnexion > .connexion > #mail,
+  body .bodyConnexion > .connexion #pass {
+    width: 300px;
+    height: 50px;
+    margin: 30px 100px;
+  }
+  body .bodyConnexion > .connexion > #mail > input,
+  body .bodyConnexion > .connexion #pass > input {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect {
+    width: 100px;
+  }
+  body .bodyConnexion > .connexion > #connect > button {
+    width: 100px;
+    height: 25px;
+    margin: 50px 200px;
+    box-shadow: 1px 1px 10px 1px grey;
+    background-color: #81D9E5;
+    border: 0;
+    border-radius: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect > button:hover {
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 500px) {
@@ -2119,8 +2241,80 @@ a {
   body > .corp > .multitaches ::-webkit-scrollbar-corner {
     opacity: 0;
   }
+  body #sideVide {
+    max-width: 1300px;
+    width: 25%;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    background-color: #858585;
+  }
+  body #sideVide > #logo > img {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  body .bodyConnexion {
+    width: 75%;
+    height: 100%;
+    float: right;
+    background-color: #c8c8c8;
+  }
+  body .bodyConnexion > .connexion {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 50px auto;
+    background-color: #FFDAA4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .bodyConnexion > .connexion > .Titre {
+    width: 100%;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+  }
+  body .bodyConnexion > .connexion > #mail,
+  body .bodyConnexion > .connexion #pass {
+    width: 200px;
+    height: 50px;
+    margin: 0 0;
+  }
+  body .bodyConnexion > .connexion > #mail > input,
+  body .bodyConnexion > .connexion #pass > input {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  body .bodyConnexion > .connexion > #connect > button {
+    width: 100px;
+    height: 25px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 10px 1px grey;
+    background-color: #81D9E5;
+    border: 0;
+    border-radius: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect > button:hover {
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 500px) and (orientation: portrait) {
+  body {
+    /*page connexion*/
+  }
   body #side-bar {
     max-width: 500px;
     width: 20%;
@@ -2804,6 +2998,75 @@ a {
   }
   body > .corp > .multitaches ::-webkit-scrollbar-corner {
     opacity: 0;
+  }
+  body #sideVide {
+    max-width: 1300px;
+    width: 25%;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    background-color: #858585;
+  }
+  body #sideVide > #logo > img {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  body .bodyConnexion {
+    width: 75%;
+    height: 100%;
+    float: right;
+    background-color: #c8c8c8;
+  }
+  body .bodyConnexion > .connexion {
+    width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 50px auto;
+    background-color: #FFDAA4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .bodyConnexion > .connexion > .Titre {
+    width: 100%;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+  }
+  body .bodyConnexion > .connexion > #mail,
+  body .bodyConnexion > .connexion #pass {
+    width: 100px;
+    height: 50px;
+    margin: 0 0;
+  }
+  body .bodyConnexion > .connexion > #mail > input,
+  body .bodyConnexion > .connexion #pass > input {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  body .bodyConnexion > .connexion > #connect > button {
+    width: 100px;
+    height: 25px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 10px 1px grey;
+    background-color: #81D9E5;
+    border: 0;
+    border-radius: 20px;
+  }
+  body .bodyConnexion > .connexion > #connect > button:hover {
+    cursor: pointer;
   }
 }
 .success,

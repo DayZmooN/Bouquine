@@ -1432,6 +1432,88 @@ a {
             }
         }
 
+        #sideVide {
+
+            max-width: 1300px;
+            width: 25%;
+            height: 100%;
+            float: left;
+            position: fixed;
+            background-color: #858585;
+
+            &>#logo>img {
+                width: 100%;
+                border-bottom: 1px solid black;
+            }
+
+        }
+
+        .bodyConnexion {
+
+            width: 75%;
+            height: 100%;
+            float: right;
+
+
+
+
+            &>.connexion {
+                width: 500px;
+                height: 350px;
+                border-radius: 15px;
+                margin: 100px auto;
+                background-color: $remplissage ;
+
+                &>.Titre {
+                    width: 100%;
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                &>#mail,
+                #pass {
+                    width: 300px;
+                    height: 50px;
+                    margin: 30px 100px;
+
+
+                    &>input {
+                        width: 300px;
+                        height: 50px;
+                        border-radius: 50px;
+                        border: 0;
+                        background-color: white;
+                        padding-left: 10px;
+                        margin-top: 20px;
+
+                    }
+
+
+                }
+
+                &>#connect {
+                    width: 100px;
+
+                    &>button {
+                        width: 100px;
+                        height: 25px;
+                        margin: 50px 200px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        background-color: #81D9E5;
+                        border: 0;
+                        border-radius: 20px;
+
+                    }
+
+                    &>button:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
     }
 
 }
@@ -1976,6 +2058,90 @@ a {
 
             }
         }
+
+        #sideVide {
+
+            max-width: 1300px;
+            width: 25%;
+            height: 100%;
+            float: left;
+            position: fixed;
+            background-color: #858585;
+
+            &>#logo>img {
+                width: 100%;
+                border-bottom: 1px solid black;
+            }
+
+        }
+
+        .bodyConnexion {
+
+            width: 75%;
+            height: 100%;
+            float: right;
+
+
+
+
+            &>.connexion {
+                width: 500px;
+                height: 350px;
+                border-radius: 15px;
+                margin: 100px auto;
+                background-color: $remplissage ;
+
+                &>.Titre {
+                    width: 100%;
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                &>#mail,
+                #pass {
+                    width: 300px;
+                    height: 50px;
+                    margin: 30px 100px;
+
+
+                    &>input {
+                        width: 300px;
+                        height: 50px;
+                        border-radius: 50px;
+                        border: 0;
+                        background-color: white;
+                        padding-left: 10px;
+                        margin-top: 20px;
+
+                    }
+
+
+                }
+
+                &>#connect {
+                    width: 100px;
+
+                    &>button {
+                        width: 100px;
+                        height: 25px;
+                        margin: 50px 200px;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        background-color: #81D9E5;
+                        border: 0;
+                        border-radius: 20px;
+
+                    }
+
+                    &>button:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+
 
     }
 
@@ -2832,6 +2998,100 @@ a {
 
             }
         }
+
+        #sideVide {
+
+            max-width: 1300px;
+            width: 25%;
+            height: 100vh;
+            float: left;
+            position: fixed;
+            background-color: #858585;
+
+            &>#logo>img {
+                width: 100%;
+                border-bottom: 1px solid black;
+            }
+
+        }
+
+        .bodyConnexion {
+
+            width: 75%;
+            height: 100%;
+            float: right;
+            background-color: $fondRose;
+
+
+
+
+            &>.connexion {
+                width: 300px;
+                height: 350px;
+                border-radius: 15px;
+                margin: 50px auto;
+                background-color: $remplissage ;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+
+                &>.Titre {
+                    width: 100%;
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+
+                &>#mail,
+                #pass {
+                    width: 200px;
+                    height: 50px;
+                    margin: 0 0;
+
+
+                    &>input {
+                        width: 200px;
+                        height: 50px;
+                        border-radius: 50px;
+                        border: 0;
+                        background-color: white;
+                        padding-left: 10px;
+                        margin-top: 20px;
+
+                    }
+
+
+                }
+
+                &>#connect {
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+
+                    &>button {
+                        width: 100px;
+                        height: 25px;
+                        margin: 10px 0;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        background-color: #81D9E5;
+                        border: 0;
+                        border-radius: 20px;
+
+
+                    }
+
+                    &>button:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+
 
     }
 }
@@ -3740,6 +4000,100 @@ a {
 
 
             }
+        }
+
+        /*page connexion*/
+
+        #sideVide {
+
+            max-width: 1300px;
+            width: 25%;
+            height: 100vh;
+            float: left;
+            position: fixed;
+            background-color: #858585;
+
+            &>#logo>img {
+                width: 100%;
+                border-bottom: 1px solid black;
+            }
+
+        }
+
+        .bodyConnexion {
+
+            width: 75%;
+            height: 100%;
+            float: right;
+            background-color: $fondRose;
+
+
+
+
+            &>.connexion {
+                width: 200px;
+                height: 350px;
+                border-radius: 15px;
+                margin: 50px auto;
+                background-color: $remplissage ;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+
+                &>.Titre {
+                    width: 100%;
+                    padding-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+
+                &>#mail,
+                #pass {
+                    width: 100px;
+                    height: 50px;
+                    margin: 0 0;
+
+
+                    &>input {
+                        width: 100px;
+                        height: 50px;
+                        border-radius: 50px;
+                        border: 0;
+                        background-color: white;
+                        padding-left: 10px;
+                        margin-top: 20px;
+
+                    }
+
+
+                }
+
+                &>#connect {
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+
+                    &>button {
+                        width: 100px;
+                        height: 25px;
+                        margin: 10px 0;
+                        box-shadow: 1px 1px 10px 1px grey;
+                        background-color: #81D9E5;
+                        border: 0;
+                        border-radius: 20px;
+
+
+                    }
+
+                    &>button:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
         }
 
     }
