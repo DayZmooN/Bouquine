@@ -24,47 +24,14 @@ if (isset($_POST['submitEdit'])) {
 include './header-admin.php';
 ?>
 <h1 class="multiTitre">modifications genres</h1>
-
 <h2 class="titleEditGenre">Modification de <?= $genre['libel_genre'] ?></h2>
 
 <div id="sectionEditGenre">
-    
     <form class="edit" action="" method="post">
+        <input class="editGenre" type="text" name="libel_genre" value="<?= $genre['libel_genre'] ?>">
+        <input class="editSlugGenre" type="text" name="genre_slug" value="<?= $genre['genre_slug'] ?>">
         
-            <input class="editGenre" type="text" name="libel_genre" value="<?= $genre['libel_genre'] ?>">
-            <input class="editSlugGenre" type="text" name="genre_slug" value="<?= $genre['genre_slug'] ?>">      
-            <input class="subEditGenre"type="submit" name="submitEdit" value="Modifier">
-        </div>
-
-    </form>
-
+        <input class="subEditGenre" type="submit" name="submitEdit" value="Modifier">
 </div>
-
-<?php include './includeClose.php'  ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</form>
+</div>

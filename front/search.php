@@ -1,3 +1,9 @@
+<?php
+require_once './connect.php';
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +20,7 @@
         <div class="filter-container">
             <h2 class="search-filter">Recherche avancée</h2>
 
-            <form action="#" method="get">
+            <form id="filter-form" action="#" method="get">
                 <label for="titre">Titre:</label>
                 <input type="text" id="titre" name="titre">
 

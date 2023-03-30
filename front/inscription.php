@@ -31,16 +31,21 @@ require_once '../model/fonction-inscription.php';
                     <div class="input">
                         <label>Nom</label>
                         <input type="lastname" id="name" name="lastname" placeholder="Votre nom" />
+
                         <label>Prénom</label>
                         <input type="username" id="username" name="username" placeholder="Votre prénom" />
+
                         <label>Téléphone</label>
                         <input type="number" name="phone" id="phone" placeholder="0123456789">
+
                         <label>Date de naissance</label>
-                        <input type="birth" id="birth" name="birthdate" placeholder="Votre date de naissance" />
+                        <input type="date" id="birth" name="birthdate" placeholder="Votre date de naissance" />
+
                         <label>E-mail</label>
                         <!-- <input type="email" id="mail" name="mail" placeholder="Adresse mail" />
                         <label>Confirmez votre e-mail</label> -->
                         <input type="email" id="mail" name="mail" placeholder="Adresse mail" />
+
                         <label>Mot de passe (8 caractères minimum requis )</label>
                         <input type="password" id="password" name="password" placeholder="Mot de passe" minlength="8" required>
                         <!-- <div class="checkbox">
@@ -49,8 +54,8 @@ require_once '../model/fonction-inscription.php';
                                 et d'utilisation </label>
                         </div> -->
                     </div>
-                    <div align="center">
-                        <button type="submit"><a href=""> Créer mon compte</button></a>
+                    
+                        <button id="btn-create" type="submit"><a href=""> Créer mon compte</button></a>
                     </div>
                 </form>
 
@@ -58,24 +63,6 @@ require_once '../model/fonction-inscription.php';
 
         </div class="container-suscribe">
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 

@@ -31,28 +31,29 @@ if (isset($_POST['cancelled'])) {
 <section class="userLoan">
 
     <div id="UserInfo">
-        <?php foreach ($rent as $loan) { ?>
-            <h2>Liste des emprunts de l'utilisateur : <?= $loan['username'] ?></h2>
+        <h2>Liste des emprunts de l'utilisateur :</h2>
     </div>
-<ul id="oddcolors">
-    <li class="oddcolors">
-      <div id="rentedBook">
-        
-        <div id="bookDits">
-            <p><?= $loan['title'] ?></p>
-        </div>
 
-        <div id="btnRentAdmin">
-            <form class="rentForm" action="" method="post">
-                <input type="hidden" name="id_loan" value="<?= $loan['id_loan'] ?>">
-                <input class="inputRent" type="submit" name="rented" value="Rented">
-                <input class="inputRent" type="submit" name="cancelled" value="Cancel">
-            </form>
-        </div>
+    <ul id="oddcolors">
+        <li class="oddcolors">
+            <?php foreach ($rent as $loan) { ?>
+                <div id="rentedBook">
 
-    </div>  
-    </li>
-</ul>
-    
+                    <div id="bookDits">
+                        <p><?= $loan['title'] ?></p>
+                    </div>
+
+                    <div id="btnRentAdmin">
+                        <form class="rentForm" action="" method="post">
+                            <input type="hidden" name="id_loan" value="<?= $loan['id_loan'] ?>">
+                            <input class="inputRent" type="submit" name="rented" value="Rented">
+                            <input class="inputRent" type="submit" name="cancelled" value="Cancel">
+                        </form>
+                    </div>
+
+                </div>
+        </li>
+    </ul>
+
 <?php } ?>
 </section>

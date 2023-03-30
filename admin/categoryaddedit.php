@@ -40,24 +40,14 @@ if (isset($_POST['submitEdit'])) {
 include './header-admin.php';
 ?>
 
-
 <h1 class="multiTitre">edit catégories</h1>
-
 <h2 class="titleEditCategory">Modification de <?= $category['libel_category'] ?></h2>
 
 <div id="editCategorie">
-
     <form class="edit" action="" method="post">
-
-
         <input class="editCat" type="text" name="libel_category" value="<?= $category['libel_category'] ?>">
         <input class="editSlugCat" type="text" name="libel_slug" value="<?= $category['libel_slug'] ?>">
-
+        
         <input class="subEditCat" type="submit" name="submitEdit" value="Modifier">
-
-
     </form>
-
 </div>
-
-<?php include './includeClose.php'  ?>

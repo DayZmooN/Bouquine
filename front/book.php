@@ -1,24 +1,37 @@
 <?php
 require_once './header-front.php';
 require_once './connect.php';
-// require_once './footer-front.php';
+
 
 $id = $_GET['id'];
 $query = $db->prepare('SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` WHERE `id_book` = :id');
 $query->bindParam('id', $id, PDO::PARAM_INT);
 $query->execute();
 $result = $query->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $book) {
 
+    if (isset($_POST['rent'])) {
+        $id_user = $_SESSION["user"]["id"];
+        $loan_date = date('Y-m-d H:i:s');
+        $return_date = date('Y-m-d H:i:s', strtotime('+3 hours'));
+        $rent = $db->prepare("INSERT INTO loan (id_book, id_user, loan_date, return_date) VALUES (:id_book, :id_user, NOW(), '$return_date')");
+        $rent->bindParam(':id_book', $id, PDO::PARAM_INT);
+        $rent->bindParam(':id_user', $id_user, PDO::PARAM_INT);
+        $rent->execute();
+        $statusUpdate = $db->prepare("UPDATE `book` SET `status`='0' WHERE `id_book` = :id");
+        $statusUpdate->bindParam(':id', $id, PDO::PARAM_INT);
+        $statusUpdate->execute();
+        echo '<input type="submit" name="rent" value="Réserver">';
+        header('Location: ./book.php?id=' . $id);
+        exit();
+    }
 ?>
 
-<body>
-    <section id="books">
-        <?php foreach ($result as $book) { ?>
+    <body>
+        <section id="books">
             <div class="contain">
 
                 <div class="resume">
-
-
                     <img id="circe" src="../image/<?= $book['image'] ?>" alt="">
                 </div>
                 <div class="resum">
@@ -27,10 +40,18 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                         <?= $book['editor'] ?>
                     </h3>
                     <p><?= $book['summary'] ?></p>
-
                 </div>
-
             </div>
+
+
+            <form class="rentForm" action="" method="post">
+                <?php if ($book['status'] == 0) {
+                    echo '<input class="rentBtn" type="submit" name="rent" value="Indisponible" style="background-color:red;" disabled>';
+                } else {
+                    echo '<input class="rentBtn" type="submit" name="rent" value="Réserver">';
+                }
+                ?>
+            </form>
         <?php } ?>
 
         <hr class="nb1">
@@ -55,12 +76,8 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
                 <h3 class="describe">Description du produit</h3>
                 <h4 class="bio">Biographie de l'auteur</h4>
-                <p class="miller">Madeline Miller est passionnée par la Grèce antique.
-                    Après des études d'Histoire et de Littérature classique
-                    à Yale, elle devient professeur de grec ancien, de latin,<br>
-                    sans oublier les cours qu'elle anime sur l'œuvre
-                    de Shakespeare. Le Chant d'Achille est son premier
-                    roman, suivi de Circé.</p>
+                <p class="miller">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Asperiores suscipit non atque ipsa ullam quos aperiam debitis libero, accusamus vitae a alias quidem exercitationem neque perferendis quibusdam provident qui impedit!</p>
 
         </div>
         <div class="list">
@@ -70,7 +87,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                 <li>Langue Français</li>
                 <li>Poche: 480 pages</li>
                 <li>ISBN: <?= $book['ISBN'] ?></li>
-                <li>Poids de l'article : 236 g</li>
+                <li>Poids de l'book : 236 g</li>
                 <li>Dimensions: 10.9 x 2 x 17.8 cm
                 </li>
 
@@ -97,7 +114,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             <?php } ?>
         </div>
-    </section>
-</body>
 
-</html>
+        </html>
+        </section>
+    </body>

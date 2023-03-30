@@ -1,7 +1,7 @@
 <?php
 require_once './auth.php';
 
-    if (isset($_FILES['cover'])) {
+if (isset($_FILES['cover'])) {
     $id = $_GET['id'];
     $tmpname = $_FILES['cover']['tmp_name'];
     $name = $_FILES['cover']['name'];

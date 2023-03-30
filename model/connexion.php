@@ -31,7 +31,8 @@ if (!empty($_POST)) {
         $user = $query->fetch(PDO::FETCH_ASSOC);
 
         if (!$user) {
-            header('locatin ../front/connexion.php');
+            header('location: ../front/connexion.php');
+
             // die("L'email et/ou le mot de passe est incorrect.");
         }
 
@@ -48,11 +49,14 @@ if (!empty($_POST)) {
                     "lastname" => $user["lastname"],
                     "phone" => $user["phone"],
                     "birthdate" => $user["birthdate"],
+
                 ];
                 header("location: ../front/accueil.php");
             } else {
-                die("adresse email ou mot de passe incorecte");
+                die(header('Location: ../front/connexion.php?err=1'));
             }
+        } else {
+            header('Location: ../front/connexion.php?err=1');
         }
     }
 

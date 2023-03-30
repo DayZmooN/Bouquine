@@ -17,9 +17,7 @@ $id = $_GET['id'];
 $req = $db->prepare('SELECT `id_genre`, `libel_genre` FROM `genre`');
 $req->execute();
 $result = $req->fetchAll(PDO::FETCH_ASSOC);
-?>
 
-<?php
 $req = $db->prepare("SELECT `id_book`, `ISBN`, `image`, `title`, `author`, `editor`, `collection`, `publication_date`, `genre`, `id_category`, `summary`, `status` FROM `book` WHERE `id_book` = :id");
 $req->bindParam('id', $id, PDO::PARAM_INT);
 $req->execute();
