@@ -1,8 +1,8 @@
 <?php
-define("DBHOST", "localhost");
-define("DBUSER", "root");
-define("DBPASS", "");
-define("DBNAME", "bouquine");
+define("DBHOST", "db5012913602.hosting-data.io");
+define("DBUSER", "dbu2954860");
+define("DBPASS", "S006482o&");
+define("DBNAME", "dbs10845596");
 
 //ne rien changer ci-dessous 
 //on definit le dns (data source Name) de connexion

@@ -18,6 +18,7 @@ require_once './connect.php'
 
             </div>
             <div id="close-menu">X</div> -->
+            <button><a href="../admin/connexion-admin.php">ADMIN</a></button>
             <div class="logo">
                 <a href="../front/accueil.php"><img src="../image/logo1.png" alt="logo bouquine "></a>
             </div>
